@@ -21,9 +21,9 @@ public:
     std::vector<Point> getPoints();
     std::vector<Point> getCentroids();
     int getNumberOfIterationForConvergence();
-
-private:
     int numberOfIterationForConvergence;
+private:
+    
     int k;
     std::vector<Point> points;
     std::vector<Point> centroids;

@@ -132,7 +132,7 @@ int main() {
         outputFile << "Image path: " << path << std::endl;
         outputFile << "Number of colors: " << k << std::endl;
         outputFile << "Number of points: " << points.size() << std::endl;
-        outputFile << "Number of iterations: " << kmeans.getIterations() << std::endl;
+        outputFile << "Number of iterations: " << kmeans.numberOfIterationForConvergence << std::endl;
         outputFile << "Number of Processors: " << world_size << std::endl;
         outputFile << " ==>" << "Time: " << elapsed.count() << "s" << std::endl;
         outputFile << std::endl;

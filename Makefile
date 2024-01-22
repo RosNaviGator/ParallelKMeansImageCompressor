@@ -1,18 +1,3 @@
-# CC = g++
-# CFLAGS = -Wall -std=c++11
-# LIBS = -lutil `pkg-config --cflags --libs opencv4`
-# LDFLAGS = -rpath
-
-# all: main
-
-# main: main.cpp
-# 	$(CC) $(CFLAGS) $^ -o $@ $(LIBS)
-
-# clean:
-# 	rm -f main
-
-
-
 # Compiler
 CC = mpic++
 
@@ -28,22 +13,28 @@ LIBS = -lutil -lboost_iostreams -lboost_system -lboost_filesystem -L/usr/lib `pk
 
 LDFLAGS = -rpath
 
-# Target executable name
-TARGET = exe
+# Target executables
+ENCODER_TARGET = encoder
+DECODER_TARGET = decoder
 
 # Source files
-SRCS = $(wildcard $(SRC_DIR)/*.cpp)
-OBJS = $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(SRCS))
+ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoder.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeans.cpp
+DECODER_SRCS = $(wildcard $(SRC_DIR)/decoder.cpp)
 
+ENCODER_OBJS = $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(ENCODER_SRCS))
+DECODER_OBJS = $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(DECODER_SRCS))
 
-all: $(TARGET)
+all: $(ENCODER_TARGET) $(DECODER_TARGET)
 
-$(TARGET): $(OBJS)
-	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS) $(LIBS)
+$(ENCODER_TARGET): $(ENCODER_OBJS)
+	$(CC) $(CFLAGS) -o $(ENCODER_TARGET) $(ENCODER_OBJS) $(LIBS)
+
+$(DECODER_TARGET): $(DECODER_OBJS)
+	$(CC) $(CFLAGS) -o $(DECODER_TARGET) $(DECODER_OBJS) $(LIBS)
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
 	mkdir -p $(BUILD_DIR)
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
-	rm -rf $(BUILD_DIR) $(TARGET) $(OBJS)
+	rm -rf $(BUILD_DIR) $(ENCODER_TARGET) $(DECODER_TARGET) $(ENCODER_OBJS) $(DECODER_OBJS)

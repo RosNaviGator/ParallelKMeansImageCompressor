@@ -1,0 +1,110 @@
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/Perugia-1920x780.jpg
+Number of colors: 2
+Number of points: 1497600
+Number of iterations: 15
+Number of Processors: 1
+ ==>Time: 8.05219s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/PiazzaDuomo-612x612.jpg
+Number of colors: 3
+Number of points: 217872
+Number of iterations: 29
+Number of Processors: 4
+ ==>Time: 4.93431s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/PiazzaDuomo-612x612.jpg
+Number of colors: 3
+Number of points: 217872
+Number of iterations: 29
+Number of Processors: 4
+ ==>Time: 5.03897s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/Perugia-1920x780.jpg
+Number of colors: 3
+Number of points: 1497600
+Number of iterations: 21
+Number of Processors: 4
+ ==>Time: 35.9962s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/Perugia-1920x780.jpg
+Number of colors: 3
+Number of points: 1497600
+Number of iterations: 21
+Number of Processors: 4
+ ==>Time: 36.256s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/Perugia-1920x780.jpg
+Number of colors: 3
+Number of points: 1497600
+Number of iterations: 21
+Number of Processors: 4
+ ==>Time: 36.11s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/Perugia-1920x780.jpg
+Number of colors: 3
+Number of points: 1497600
+Number of iterations: 21
+Number of Processors: 4
+ ==>Time: 36.3249s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/Perugia-1920x780.jpg
+Number of colors: 3
+Number of points: 1497600
+Number of iterations: 21
+Number of Processors: 4
+ ==>Time: 37.2029s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/PiazzaDuomo-612x612.jpg
+Number of colors: 4
+Number of points: 217872
+Number of iterations: 29
+Number of Processors: 1
+ ==>Time: 2.44096s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/PiazzaDuomo-612x612.jpg
+Number of colors: 4
+Number of points: 217872
+Number of iterations: 29
+Number of Processors: 1
+ ==>Time: 2.49041s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/PiazzaDuomo-612x612.jpg
+Number of colors: 4
+Number of points: 217872
+Number of iterations: 29
+Number of Processors: 1
+ ==>Time: 2.38147s
+
+
+

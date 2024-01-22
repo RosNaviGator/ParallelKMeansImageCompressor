@@ -44,7 +44,7 @@ int main() {
         MPI_Bcast(path.data(), path.size() + 1, MPI_CHAR, 0, MPI_COMM_WORLD);
     } else {
         // Assuming a maximum size for the string
-        const int maxStringLength = 100;
+        const int maxStringLength = 200;
         char receivedString[maxStringLength];
         MPI_Bcast(receivedString, maxStringLength, MPI_CHAR, 0, MPI_COMM_WORLD);
         std::string receivedPath(receivedString);
@@ -125,8 +125,8 @@ int main() {
                 imageCompressed.at<cv::Vec3b>(y, x) = pixels.at(y * width + x);
             }
         }
-        cv::imshow("Test", imageCompressed);
-        cv::waitKey(0);
+        std::string outputPath = "outputImages/imageCompressed_" + std::to_string(k) + "_colors.jpg";
+        cv::imwrite(outputPath, imageCompressed);
         std::ofstream outputFile("performanceEvaluation.txt", std::ios::app);
         outputFile << "--------------------------------------"<< std::endl;
         outputFile << "Image path: " << path << std::endl;

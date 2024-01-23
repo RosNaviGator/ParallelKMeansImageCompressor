@@ -168,3 +168,23 @@ Number of Processors: 1
 
 
 
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/PiazzaDuomo-612x612.jpg
+Number of colors: 3
+Number of points: 217872
+Number of iterations: 29
+Number of Processors: 1
+ ==>Time: 1.70599s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/PiazzaDuomo-612x612.jpg
+Number of colors: 4
+Number of points: 217872
+Number of iterations: 29
+Number of Processors: 1
+ ==>Time: 1.8083s
+
+
+

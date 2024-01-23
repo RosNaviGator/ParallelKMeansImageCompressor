@@ -8,6 +8,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <zlib.h>
 
 int main()
 {
@@ -37,22 +38,40 @@ int main()
     double width = 0;
     double height = 0;
 
-    std::ifstream file(path);
-    if (!file.is_open())
+    gzFile fileComp = gzopen(path.c_str(), "rb");
+    if (!fileComp)
     {
         std::cerr << "Error opening the file." << std::endl;
         return 1;
     }
+
+    std::stringstream decompressedData;
+
+    char buffer[1024];
+    int bytesRead;
+
+
+    while ((bytesRead = gzread(fileComp, buffer, sizeof(buffer))) > 0) {
+        decompressedData.write(buffer, bytesRead);
+    }
+
+    // Close the compressed file
+    gzclose(fileComp);
+
+    // Get the decompressed data as a string
+    std::string result = decompressedData.str();
+
+    std::istringstream outputFile(result);
+
     std::string line;
     std::vector<std::vector<double>> clustersColors;
     std::vector<cv::Vec3b> pixels;
-    while (std::getline(file, line))
+    while (std::getline(outputFile, line))
     {
         
         if (count == 0)
         {
             std::istringstream iss(line);
-            std::cout << "-------" << std::endl;
             std::string token;
             std::getline(iss, token, ',');
             width = std::stoi(token);

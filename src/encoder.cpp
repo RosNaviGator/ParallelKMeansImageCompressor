@@ -144,8 +144,6 @@ int main() {
         {
             outputFile << p.clusterId << std::endl;
         }
-
-        outputPath = outputPath + "c";
         
         outputData = outputData + std::to_string(width) + "," + std::to_string(height) + "," + std::to_string(k) + "\n";
         for (int i = 0 ; i < k ; i++)

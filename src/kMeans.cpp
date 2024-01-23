@@ -111,7 +111,7 @@
                         centroids[i].setFeature(j, centroids[i].getFeature(j) / counts[i]);
                     }
                 }
-                std::cout << "Iteration " << iter + 1 << ":\n";
+                std::cout << "." << std::flush;
             }
             for (int i = 0; i < k; ++i)
             {

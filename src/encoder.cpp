@@ -172,6 +172,9 @@ int main() {
         // cv::waitKey(1);
         // cv::imshow("Compressed", imageCompressed);
         // cv::waitKey(0);
+
+        std::cout << std::endl;
+        std::cout << "Work done!" << std::endl;
         
     }
     MPI_Finalize();

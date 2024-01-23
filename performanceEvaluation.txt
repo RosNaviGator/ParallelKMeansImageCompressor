@@ -1,0 +1,80 @@
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/BelloFigo-1170x585.jpg
+Number of colors: 10
+Number of points: 684450
+Number of iterations: 41
+Number of Processors: 6
+ ==>Time: 43.4241s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/BelloFigo-1170x585.jpg
+Number of colors: 3
+Number of points: 684450
+Number of iterations: 14
+Number of Processors: 6
+ ==>Time: 14.8585s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/BelloFigo-1170x585.jpg
+Number of colors: 3
+Number of points: 684450
+Number of iterations: 14
+Number of Processors: 6
+ ==>Time: 12.3088s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/BelloFigo-1170x585.jpg
+Number of colors: 3
+Number of points: 684450
+Number of iterations: 14
+Number of Processors: 6
+ ==>Time: 12.8496s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/BelloFigo-1170x585.jpg
+Number of colors: 10
+Number of points: 684450
+Number of iterations: 41
+Number of Processors: 6
+ ==>Time: 46.6402s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/BelloFigo-1170x585.jpg
+Number of colors: 5
+Number of points: 684450
+Number of iterations: 20
+Number of Processors: 6
+ ==>Time: 19.3149s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/odettte.jpg
+Number of colors: 4
+Number of points: 12000000
+Number of iterations: 19
+Number of Processors: 1
+ ==>Time: 86.4401s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/odettte.jpg
+Number of colors: 10
+Number of points: 12000000
+Number of iterations: 63
+Number of Processors: 2
+ ==>Time: 447.391s
+
+
+

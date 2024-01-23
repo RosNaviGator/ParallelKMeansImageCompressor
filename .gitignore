@@ -8,3 +8,7 @@ decoder
 # ignore outputs
 outputs/*
 
+# ignore python_test directory
+python_test
+
+

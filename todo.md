@@ -1,0 +1,10 @@
+0. work on compressed Images
+1. ~~add gitignore~~
+2. remove compilation alert 
+3. constraint on inputs 
+4. performance evaluation 
+5. openmp parallelization 
+6. datastructure on kmeans(?)
+7. OS string + conversion
+
+

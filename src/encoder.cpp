@@ -125,6 +125,8 @@ int main() {
 
     // Display the image
 
+    MPI_Barrier(MPI_COMM_WORLD);
+
     if(rank == 0)
     {   
         std::cout << std::endl;

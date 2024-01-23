@@ -1,4 +1,4 @@
-0. work on compressed Images
+0. ~~work on compressed Images~~
 1. ~~add gitignore~~
 2. remove compilation alert 
 3. constraint on inputs 

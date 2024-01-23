@@ -9,7 +9,7 @@ BUILD_DIR = ./build
 CFLAGS = -std=c++20 -I/usr/include/boost -I$(INC_DIR) -Wall `pkg-config --cflags opencv4`
 
 # Libraries
-LIBS = -lutil -lboost_iostreams -lboost_system -lboost_filesystem -L/usr/lib `pkg-config --libs opencv4`
+LIBS = -lutil -lboost_iostreams -lz -lboost_system -lboost_filesystem -L/usr/lib `pkg-config --libs opencv4`
 
 LDFLAGS = -rpath
 

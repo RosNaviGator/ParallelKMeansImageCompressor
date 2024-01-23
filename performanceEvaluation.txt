@@ -78,3 +78,93 @@ Number of Processors: 2
 
 
 
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/Perugia-1920x780.jpg
+Number of colors: 25
+Number of points: 1497600
+Number of iterations: 167
+Number of Processors: 8
+ ==>Time: 495.596s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: 60
+Number of Processors: 8
+ ==>Time: 20.7261s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: 60
+Number of Processors: 7
+ ==>Time: 20.4607s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: 60
+Number of Processors: 1
+ ==>Time: 7.38932s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 70
+Number of points: 262144
+Number of iterations: 269
+Number of Processors: 1
+ ==>Time: 140.139s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 70
+Number of points: 262144
+Number of iterations: 269
+Number of Processors: 4
+ ==>Time: 126.361s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/PiazzaDuomo-612x612.jpg
+Number of colors: 5
+Number of points: 217872
+Number of iterations: 31
+Number of Processors: 1
+ ==>Time: 1.98914s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/Perugia-1920x780.jpg
+Number of colors: 25
+Number of points: 1497600
+Number of iterations: 167
+Number of Processors: 1
+ ==>Time: 186.176s
+
+
+
+--------------------------------------
+Image path: /home/leo/Desktop/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/PiazzaDuomo-612x612.jpg
+Number of colors: 12
+Number of points: 217872
+Number of iterations: 155
+Number of Processors: 1
+ ==>Time: 15.7744s
+
+
+

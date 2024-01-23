@@ -11,6 +11,7 @@
 #include "point.hpp"
 #include "kMeans.hpp"
 #include <mpi.h>
+#include <zlib.h>
 
 
 int main() {
@@ -22,6 +23,7 @@ int main() {
     int k;
     std::string path;
     std::string outputPath;
+    std::string outputData = "";
 
      if(rank == 0)
     {
@@ -142,19 +144,40 @@ int main() {
         {
             outputFile << p.clusterId << std::endl;
         }
-        
-            
 
-        // cv::Mat imageCompressed = cv::Mat(height, width, CV_8UC3);
-        // for(int y = 0 ; y < height ; y++)
-        // {
-        //     for (int x = 0 ; x < width ; x++)
-        //     {
-        //         imageCompressed.at<cv::Vec3b>(y, x) = pixels.at(y * width + x);
-        //     }
-        // }
-        // std::string outputPath = "outputImages/imageCompressed_" + std::to_string(k) + "_colors.jpg";
-        // cv::imwrite(outputPath, imageCompressed);
+        outputPath = outputPath + "c";
+        
+        outputData = outputData + std::to_string(width) + "," + std::to_string(height) + "," + std::to_string(k) + "\n";
+        for (int i = 0 ; i < k ; i++)
+        {
+            outputData = outputData + std::to_string(kmeans.getCentroids()[i].features[0]) + "," + std::to_string(kmeans.getCentroids()[i].features[1]) + "," + std::to_string(kmeans.getCentroids()[i].features[2]) + "\n";
+        }
+        for (Point &p : kmeans.getPoints())
+        {
+            outputData = outputData + std::to_string(p.clusterId) + "\n";
+        }
+        //---------------------
+        gzFile compressedFile = gzopen(outputPath.c_str(), "wb");
+        if (compressedFile == NULL) {
+            std::cerr << "Error opening compressed file." << std::endl;
+            return 1;
+        }
+
+        // Write the input data to the compressed file
+        if (gzwrite(compressedFile, outputData.c_str(), outputData.size()) != static_cast<int>(outputData.size())) {
+            std::cerr << "Error writing compressed data." << std::endl;
+            return 1;
+        }
+
+    // Close the compressed file
+        gzclose(compressedFile);
+
+        std::cout << "Compression successful. Compressed file with custom extension: " << outputPath << std::endl;
+
+
+        //---------------------
+
+
 
         std::ofstream perfEval("performanceEvaluation.txt", std::ios::app);
         perfEval << "--------------------------------------"<< std::endl;

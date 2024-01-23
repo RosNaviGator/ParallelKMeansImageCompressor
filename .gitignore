@@ -1,0 +1,10 @@
+# ignore executable files
+encoder
+decoder
+
+# ignore .vscode
+.vscode
+
+# ignore outputs
+outputs/*
+

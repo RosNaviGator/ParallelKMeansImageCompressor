@@ -131,21 +131,7 @@ int main() {
     {   
         std::cout << std::endl;
         std::cout << "Saving the Compressed Image..." << std::endl;
-        std::ofstream outputFile(outputPath, std::ios::app);
-        outputFile  << width << ","<< height << "," << k << std::endl;
-        for (int i = 0 ; i < k ; i++)
-        {
-            outputFile << kmeans.getCentroids()[i].features[0];
-            outputFile << ",";
-            outputFile << kmeans.getCentroids()[i].features[1];
-            outputFile << ",";
-            outputFile << kmeans.getCentroids()[i].features[2] << std::endl;
-        }
-
-        for (Point &p : kmeans.getPoints())
-        {
-            outputFile << p.clusterId << std::endl;
-        }
+        
         
         outputData = outputData + std::to_string(width) + "," + std::to_string(height) + "," + std::to_string(k) + "\n";
         for (int i = 0 ; i < k ; i++)

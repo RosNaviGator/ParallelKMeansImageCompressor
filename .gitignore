@@ -8,4 +8,7 @@ decoder
 # ignore outputs
 outputs/*
 
+# ignore build
+build/*
+
 

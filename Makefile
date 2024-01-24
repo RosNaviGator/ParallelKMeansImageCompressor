@@ -4,9 +4,10 @@ CC = mpic++
 SRC_DIR = ./src
 INC_DIR = ./include
 BUILD_DIR = ./build
+OUTPUTS_DIR = ./Outputs
 
 # Compiler flags
-CFLAGS = -std=c++20 -I/usr/include/boost -I$(INC_DIR) -Wall `pkg-config --cflags opencv4`
+CFLAGS = -std=c++20 -I/usr/include/boost -I$(INC_DIR) `pkg-config --cflags opencv4` -Wno-deprecated
 
 # Libraries
 LIBS = -lutil -lboost_iostreams -lz -lboost_system -lboost_filesystem -L/usr/lib `pkg-config --libs opencv4`
@@ -34,6 +35,7 @@ $(DECODER_TARGET): $(DECODER_OBJS)
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
 	mkdir -p $(BUILD_DIR)
+	mkdir -p $(OUTPUTS_DIR)
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 clean:

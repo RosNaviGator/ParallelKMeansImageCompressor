@@ -248,3 +248,140 @@ Number of Processors: 8
 
 
 
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+From here starts OpenMP  !!!!!!!!!!!!!!!!!!!!!!!!
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------
+Image path: /home/franco/Desktop/KrossCompressor/benchmarkImages/Perugia-1920x780.jpg
+Number of colors: 3
+Number of points: 1497600
+Number of iterations: 21
+ ==>Time: 12.2932s
+
+
+
+--------------------------------------
+Image path: /home/franco/Desktop/KrossCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 5
+Number of points: 262144
+Number of iterations: 37
+ ==>Time: 3.88925s
+
+
+
+--------------------------------------
+Image path: /home/franco/Desktop/KrossCompressor/benchmarkImages/BelloFigo-1170x585.jpg
+Number of colors: 3
+Number of points: 684450
+Number of iterations: 14
+ ==>Time: 3.92816s
+
+
+
+--------------------------------------
+Image path: /home/franco/Desktop/KrossCompressor/benchmarkImages/PiazzaDuomo-612x612.jpg
+Number of colors: 10
+Number of points: 217872
+Number of iterations: 192
+ ==>Time: 20.1704s
+
+
+
+--------------------------------------
+Image path: /home/franco/Desktop/KrossCompressor/benchmarkImages/PiazzaDuomo-612x612.jpg
+Number of colors: 100
+Number of points: 217872
+Number of iterations: 246
+ ==>Time: 108.139s
+
+
+
+--------------------------------------
+Image path: /home/franco/Desktop/KrossCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: 71
+ ==>Time: 7.26546s
+
+
+
+--------------------------------------
+Image path: /home/franco/Desktop/KrossCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 10
+Number of points: 262144
+Number of iterations: 64
+ ==>Time: 8.15987s
+
+
+
+--------------------------------------
+Image path: /home/franco/Desktop/KrossCompressor/benchmarkImages/BelloFigo-1170x585.jpg
+Number of colors: 3
+Number of points: 684450
+Number of iterations: 14
+ ==>Time: 3.9649s
+
+
+
+--------------------------------------
+Image path: /home/franco/Desktop/glassBall.jpg
+Number of colors: 3
+Number of points: 5335488
+Number of iterations: 15
+ ==>Time: 34.1644s
+
+
+
+--------------------------------------
+Image path: /home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/benchmarkImages/odettte3000x4000.jpg
+Number of colors: 3
+Number of points: 12000000
+Number of iterations: 19
+ ==>Time: 99.9301s
+
+
+
+--------------------------------------
+Image path: /home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/benchmarkImages/odettte3000x4000.jpg
+Number of colors: 10
+Number of points: 12000000
+Number of iterations: 63
+ ==>Time: 381.465s
+
+
+
+--------------------------------------
+Image path: /home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/benchmarkImages/Perugia-1920x780.jpg
+Number of colors: 10
+Number of points: 1497600
+Number of iterations: 70
+ ==>Time: 50.892s
+
+
+
+--------------------------------------
+Image path: /home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/benchmarkImages/PiazzaDuomo-612x612.jpg
+Number of colors: 3
+Number of points: 217872
+Number of iterations: 29
+ ==>Time: 2.49483s
+
+
+
+--------------------------------------
+Image path: /home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/benchmarkImages/PiazzaDuomo-612x612.jpg
+Number of colors: 50
+Number of points: 217872
+Number of iterations: 217
+ ==>Time: 51.0198s
+
+
+

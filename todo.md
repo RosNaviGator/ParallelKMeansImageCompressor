@@ -7,4 +7,4 @@
 6. datastructure on kmeans(?)
 7. OS string + conversion
 8. /encoder MUST throw an error if you run without mpirun
-9. App does NOT work on Francesco's computer
+9. ~~App does NOT work on Francesco's computer~~

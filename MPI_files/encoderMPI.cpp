@@ -1,29 +1,30 @@
-
+#include <opencv2/opencv.hpp>
 #include <iostream>
 #include <vector>
 #include <cmath>
 #include <limits>
-
-#include <filesystem>
-
 #include <fstream>
 #include <sstream>
-
 #include <random>
 #include <thread>
 #include <chrono>
-
 #include <point.hpp>
-#include <kMeans.hpp>
-
-#include <opencv2/opencv.hpp>
+#include <kMeansMPI.hpp>
+#include <mpi.h>
 
 
 int main() {
-
+    MPI_Init(NULL, NULL);
+    int world_size;
+    MPI_Comm_size(MPI_COMM_WORLD, &world_size);
+    int rank;
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     int k;
     std::string path;
     std::string outputPath;
+
+     if(rank == 0)
+    {
         
         std::cout << "##########################################################################################" << std::endl;
         std::cout << "#                                                                                        #" << std::endl;
@@ -42,39 +43,48 @@ int main() {
         std::cout << "Now please enter the global path of the image you want to compress" << std::endl;
         std::cout << "--> ";
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        std::getline(std::cin, path); // std::ws manages paths too long or with blankspaces
+        std::getline(std::cin, path); 
         std::cout << std::endl;
+        MPI_Bcast(path.data(), path.size() + 1, MPI_CHAR, 0, MPI_COMM_WORLD);
         std::cout << "Choose a name for your output (note that the output will be saved in the outputs directory)" << std::endl;
         std::cout << "You don't need to give any extension" << std::endl;
         std::cout << "--> ";
-        std::getline(std::cin, outputPath);
-
-        // create outputs if doesn't exist
-        // Ensure "outputs" directory exists
-        std::filesystem::path outputsDir = "./outputs";
-        if (!std::filesystem::exists(outputsDir))
-        {   std::cout << std::endl << "outputs directory doesn't exist, let's create it" << std::endl;
-
-            if (!std::filesystem::create_directory(outputsDir))
-            {
-                std::cerr << "Error creating outputs directory." << std::endl;
-                return 1; // Return an error code if directory creation fails
-            }
-        }
-
-        outputPath = "./outputs/" + outputPath + ".kc";
+        std::getline(std::cin, outputPath); 
+        outputPath = "outputs/" + outputPath + ".kc";
+    } else {
+        // Assuming a maximum size for the string
+        const int maxStringLength = 200;
+        char receivedString[maxStringLength];
+        MPI_Bcast(receivedString, maxStringLength, MPI_CHAR, 0, MPI_COMM_WORLD);
+        std::string receivedPath(receivedString);
+        path = receivedPath;
+    }
+    MPI_Bcast(&k, 1, MPI_INT, 0, MPI_COMM_WORLD);
 
     // Read an image from file
     cv::Mat image = cv::imread(path);
 
     // Check if the image was loaded successfully
     while (image.empty()) {
+        if (rank == 0)
+        {
             std::cerr << "Error: Unable to load the image." << std::endl;
             std::cout << "Please enter the correct global path of the image you want to compress" << std::endl<< std::endl;
             std::cout << "--> ";
             std::getline(std::cin, path);
             std::cout << std::endl;
+            MPI_Bcast(path.data(), path.size() + 1, MPI_CHAR, 0, MPI_COMM_WORLD);
             cv::Mat image = cv::imread(path);
+        }else{
+            path = "";
+            // Assuming a maximum size for the string
+            const int maxStringLength = 100;
+            char receivedString[maxStringLength];
+            MPI_Bcast(receivedString, maxStringLength, MPI_CHAR, 0, MPI_COMM_WORLD);
+            std::string receivedPath(receivedString);
+            path = receivedPath;
+            cv::Mat image = cv::imread(path);
+        }
         std::cout<< "-------------------------" << path << std::endl;
     }
     std::vector<Point> points;
@@ -82,7 +92,10 @@ int main() {
     // Get the image dimensions
     int height = image.rows;
     int width = image.cols;
+    if(rank == 0)
+    {
         std::cout << "Creating the data structure..." << std::endl;
+    }
     std::vector<cv::Vec3b> pixels;
 
     for(int y = 0 ; y < height ; y++)
@@ -98,15 +111,20 @@ int main() {
     }
 
     auto start = std::chrono::high_resolution_clock::now();
+    if(rank == 0)
+    {
         std::cout << "Starting the Compression..." << std::endl;
+    }
     
     KMeans kmeans(k, points);
-    kmeans.run();
+    kmeans.run(rank, world_size);
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end - start;
 
     // Display the image
- 
+
+    if(rank == 0)
+    {   
         std::cout << std::endl;
         std::cout << "Saving the Compressed Image..." << std::endl;
         std::ofstream outputFile(outputPath, std::ios::app);
@@ -120,7 +138,6 @@ int main() {
             outputFile << kmeans.getCentroids()[i].features[2] << std::endl;
         }
 
-        // this is the part that takes a lot of time
         for (Point &p : kmeans.getPoints())
         {
             outputFile << p.clusterId << std::endl;
@@ -145,6 +162,7 @@ int main() {
         perfEval << "Number of colors: " << k << std::endl;
         perfEval << "Number of points: " << points.size() << std::endl;
         perfEval << "Number of iterations: " << kmeans.numberOfIterationForConvergence << std::endl;
+        perfEval << "Number of Processors: " << world_size << std::endl;
         perfEval << " ==>" << "Time: " << elapsed.count() << "s" << std::endl;
         perfEval << std::endl;
         perfEval << std::endl;
@@ -157,4 +175,7 @@ int main() {
 
         std::cout << std::endl;
         std::cout << "Work done!" << std::endl;
+        
+    }
+    MPI_Finalize();
 }

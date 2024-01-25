@@ -3,11 +3,10 @@
 
 #include <random>
 #include <iostream>
-#include <omp.h>
-
+#include <mpi.h>
 #include <thread>
-#include "gnuplot-iostream.h"
-#include "point.hpp"
+// #include "gnuplot-iostream.h"
+#include <../include/point.hpp>
 
 
 
@@ -16,7 +15,7 @@ class KMeans
 public:
     KMeans(const int& k, const std::vector<Point> points);
 
-    void run();
+    void run(const int& rank, const int& world_size);
     void printClusters() const;
     void plotClusters();
     std::vector<Point> getPoints();
@@ -24,10 +23,11 @@ public:
     int getNumberOfIterationForConvergence();
     int numberOfIterationForConvergence;
 private:
+    
     int k;
     std::vector<Point> points;
     std::vector<Point> centroids;
-    Gnuplot gp;
+    // Gnuplot gp;
 };
 
 

@@ -14,10 +14,10 @@ LIBS = -lutil -lboost_iostreams -lz -lboost_system -lboost_filesystem -L/usr/lib
 LDFLAGS = -rpath
 
 # Target executables, different kmeans have different targets
-SEQ_ENCODER_TARGET = seqEncoder
-OMP_ENCODER_TARGET = ompEncoder
-MPI_ENCODER_TARGET = mpiEncoder
-DECODER_TARGET = decoder
+SEQ_ENCODER_TARGET = $(BUILD_DIR)/seqEncoder
+OMP_ENCODER_TARGET = $(BUILD_DIR)/ompEncoder
+MPI_ENCODER_TARGET = $(BUILD_DIR)/mpiEncoder
+DECODER_TARGET = $(BUILD_DIR)/decoder
 
 # Source files, different kmenas have different source files
 SEQ_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoder.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeans.cpp

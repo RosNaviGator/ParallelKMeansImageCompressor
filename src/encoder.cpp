@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
 
     // create outputs if doesn't exist
     // Ensure "outputs" directory exists
-    std::filesystem::path outputsDir = "./outputs";
+    std::filesystem::path outputsDir = "../outputs";
     if (!std::filesystem::exists(outputsDir))
     {
         std::cout << std::endl
@@ -117,7 +117,7 @@ int main(int argc, char *argv[])
     }
 
     // create output file path and extension
-    outputPath = "./outputs/" + outputPath + ".kc";
+    outputPath = "../outputs/" + outputPath + ".kc";
 
 
 
@@ -239,7 +239,7 @@ int main(int argc, char *argv[])
 
     // create performanceSheets if doesn't exist
     // Ensure "performanceSheets" directory exists
-    std::filesystem::path sheetsDir = "./performanceSheets";
+    std::filesystem::path sheetsDir = "../performanceSheets";
     if (!std::filesystem::exists(sheetsDir))
     {
         std::cout << std::endl
@@ -265,7 +265,7 @@ int main(int argc, char *argv[])
         // Extract the substring before the last '.'
         std::string imgName = fileName.substr(0, lastDotPos);
 
-    std::ofstream outFile("./performanceSheets/KrossCompressorTimesSheet.csv", std::ios_base::app); // Open file in append mode
+    std::ofstream outFile("../performSheet/kcPerformSheet.csv", std::ios_base::app); // Open file in append mode
     if (outFile.is_open())
     {
         outFile << imgName << ","

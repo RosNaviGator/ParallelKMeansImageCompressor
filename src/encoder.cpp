@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <string>
 #include <vector>
 #include <cmath>
 #include <limits>
@@ -18,23 +19,64 @@
 
 #include <opencv2/opencv.hpp>
 
+int main(int argc, char *argv[])
+{
 
-int main(int argc, char *argv[]){
-
+    // BEWARE WE'D BETTER ADD AN INDEX TO APPEND TO THE OUTPUT NAME SO THAT MULTIPLE RUNS WON'T OVERWRITE
     int k;
     std::string path;
     std::string outputPath;
-        
+
+    // we can run the function with no argv or with two (needed for pefromance evaluation)
+    if (3 < argc || 2 == argc)
+    {
+        std::cout << "Wrong number of arguments!\n"
+                  << "Either no arguments (you will be asked to prompt info at runtime) or the following two:\n"
+                  << "./seqEncoder <path_to_image> <number_of_colors>"
+                  << std::endl
+                  << std::endl;
+        return 1;
+    }
+
+    // no runtime std::cin if we already passed <path_to_image> <number_of_colors> as argv
+    if (3 == argc)
+    {
+
+        // set number of clusters
+        k = std::stoi(argv[2]); // if you wrote arguments in inverted order, it will crash (works as sanity check)
+        // set path
+        path = argv[1];
+
+        // EXTRACT OUTPUT NAME FROM INPUT STRING
+        // Find the position of the last '/' in the path
+        size_t lastSlashPos = path.find_last_of('/');
+        // Extract the substring after the last '/'
+        std::string fileName = path.substr(lastSlashPos + 1);
+        // Find the position of the last '.' in the filename
+        size_t lastDotPos = fileName.find_last_of('.');
+        // Extract the substring before the last '.'
+        outputPath = fileName.substr(0, lastDotPos);
+
+        // debug
+        // std::cout << std::endl << outputPath << std::endl;
+    }
+
+    // if no arguments were given, we'll ask them at runtime
+    if (1 == argc)
+    {
+
         std::cout << "##########################################################################################" << std::endl;
         std::cout << "#                                                                                        #" << std::endl;
         std::cout << "#                    Parallel Kmeans Images Encoder (Sequential)                         #" << std::endl;
         std::cout << "#                                                                                        #" << std::endl;
-        std::cout << "##########################################################################################" << std::endl<< std::endl;
+        std::cout << "##########################################################################################" << std::endl
+                  << std::endl;
         std::cout << "------------------------------------------------------------------------------------------" << std::endl;
         std::cout << "| This program allows you to compress an image by reducing the number of colors in it    |" << std::endl;
         std::cout << "| The output of this Encoder is a file .kc that you need to decode to obtain your image  |" << std::endl;
-        std::cout << "------------------------------------------------------------------------------------------" << std::endl<< std::endl;
-        std::cout << "Please enter the number of colors you want to keep in the compressed image"<< std::endl;
+        std::cout << "------------------------------------------------------------------------------------------" << std::endl
+                  << std::endl;
+        std::cout << "Please enter the number of colors you want to keep in the compressed image" << std::endl;
         std::cout << "--> ";
         std::cin >> k;
         std::cout << std::endl;
@@ -48,46 +90,78 @@ int main(int argc, char *argv[]){
         std::cout << "You don't need to give any extension" << std::endl;
         std::cout << "--> ";
         std::getline(std::cin, outputPath);
+    }  
+    
+    // -----------------------------------------------------------------------------------------
+    // -----------------------------------------------------------------------------------------
+    
+    // FOLLOWS CODE COMMON TO THE TWO VARIANTS OF INPUT
 
-        // create outputs if doesn't exist
-        // Ensure "outputs" directory exists
-        std::filesystem::path outputsDir = "./outputs";
-        if (!std::filesystem::exists(outputsDir))
-        {   std::cout << std::endl << "outputs directory doesn't exist, let's create it" << std::endl;
+    // -----------------------------------------------------------------------------------------
+    // -----------------------------------------------------------------------------------------
 
-            if (!std::filesystem::create_directory(outputsDir))
-            {
-                std::cerr << "Error creating outputs directory." << std::endl;
-                return 1; // Return an error code if directory creation fails
-            }
+
+    // create outputs if doesn't exist
+    // Ensure "outputs" directory exists
+    std::filesystem::path outputsDir = "./outputs";
+    if (!std::filesystem::exists(outputsDir))
+    {
+        std::cout << std::endl
+                  << "outputs directory doesn't exist, let's create it" << std::endl;
+
+        if (!std::filesystem::create_directory(outputsDir))
+        {
+            std::cerr << "Error creating outputs directory." << std::endl;
+            return 1; // Return an error code if directory creation fails
         }
+    }
 
-        outputPath = "./outputs/" + outputPath + ".kc";
+    // create output file path and extension
+    outputPath = "./outputs/" + outputPath + ".kc";
+
+
+
+
+    // -----------------------------------------------------------------------------------------
+    // FIRST PART: reading (may have sense to evaluate performance if we parallelize)
 
     // Read an image from file
-    cv::Mat image = cv::imread(path);
+    cv::Mat image = cv::imread(path); // CAN BE PARALLELIZED IN OpenMP and CUDA! (with a gui or with a parallel region?)
 
     // Check if the image was loaded successfully
-    while (image.empty()) {
-            std::cerr << "Error: Unable to load the image." << std::endl;
-            std::cout << "Please enter the correct global path of the image you want to compress" << std::endl<< std::endl;
-            std::cout << "--> ";
-            std::getline(std::cin, path);
-            std::cout << std::endl;
-            cv::Mat image = cv::imread(path);
-        std::cout<< "-------------------------" << path << std::endl;
+    while (image.empty())
+    {
+        std::cerr << "Error: Unable to load the image." << std::endl;
+        std::cout << "Please enter the correct global path of the image you want to compress" << std::endl
+                  << std::endl;
+        std::cout << "--> ";
+        std::getline(std::cin, path);
+        std::cout << std::endl;
+        cv::Mat image = cv::imread(path);
+        std::cout << "-------------------------" << path << std::endl;
     }
+
+
+
+
+    // -----------------------------------------------------------------------------------------
+    // SECOND PART: creating the points structure
+
     std::vector<Point> points;
 
     // Get the image dimensions
     int height = image.rows;
     int width = image.cols;
-        std::cout << "Creating the data structure..." << std::endl;
+
+    // CREATING DATA STRUCTURE (first time evaluation)
+    std::cout << "Creating the data structure..." << std::endl;
+    auto startPixels = std::chrono::high_resolution_clock::now();
+
     std::vector<cv::Vec3b> pixels;
 
-    for(int y = 0 ; y < height ; y++)
+    for (int y = 0; y < height; y++)
     {
-        for (int x = 0 ; x < width ; x++)
+        for (int x = 0; x < width; x++)
         {
             pixels.emplace_back(image.at<cv::Vec3b>(y, x));
             std::vector<double> rgb = {static_cast<double>(pixels.at(y * width + x)[0]), static_cast<double>(pixels.at(y * width + x)[1]), static_cast<double>(pixels.at(y * width + x)[2])};
@@ -97,65 +171,138 @@ int main(int argc, char *argv[]){
         }
     }
 
-    auto start = std::chrono::high_resolution_clock::now();
-        std::cout << "Starting the Compression..." << std::endl;
-    
+    auto endPixels = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> elapsedPixels = endPixels - startPixels;
+
+
+
+
+    // -----------------------------------------------------------------------------------------
+    // THIRD PART: kmeans clustering
+
+    // CLUSTERING (second time evaluation)
+    std::cout << "Starting the Compression..." << std::endl;
+    auto startKmeans = std::chrono::high_resolution_clock::now();
+
     KMeans kmeans(k, points);
     kmeans.run();
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> elapsed = end - start;
 
-    // Display the image
+    auto endKmeans = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> elapsedKmeans = endKmeans - startKmeans;
+
  
-        std::cout << std::endl;
-        std::cout << "Saving the Compressed Image..." << std::endl;
-        std::ofstream outputFile(outputPath, std::ios::app);
-        outputFile  << width << ","<< height << "," << k << std::endl;
-        for (int i = 0 ; i < k ; i++)
-        {
-            outputFile << kmeans.getCentroids()[i].features[0];
-            outputFile << ",";
-            outputFile << kmeans.getCentroids()[i].features[1];
-            outputFile << ",";
-            outputFile << kmeans.getCentroids()[i].features[2] << std::endl;
-        }
 
-        // this is the part that takes a lot of time
-        for (Point &p : kmeans.getPoints())
+    // -----------------------------------------------------------------------------------------
+    // FOURTH PART: saving encoded data (ENCODING STILL HAS TO BE CORRECTED)
+
+    std::cout << std::endl;
+    std::cout << "Saving the Compressed Image..." << std::endl;
+    std::ofstream outputFile(outputPath, std::ios::app);
+    outputFile << width << "," << height << "," << k << std::endl;
+    for (int i = 0; i < k; i++)
+    {
+        outputFile << kmeans.getCentroids()[i].features[0];
+        outputFile << ",";
+        outputFile << kmeans.getCentroids()[i].features[1];
+        outputFile << ",";
+        outputFile << kmeans.getCentroids()[i].features[2] << std::endl;
+    }
+
+    
+    // CREATING OUTPUT FILE .kc (third time evaluation)
+    auto startEncoding = std::chrono::high_resolution_clock::now();
+
+    for (Point &p : kmeans.getPoints())
+    {
+        outputFile << p.clusterId << std::endl; // this is the part that takes a lot of time
+    }
+
+    auto endEncoding = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> elapsedEncoding = endEncoding - startEncoding;
+
+    // cv::Mat imageCompressed = cv::Mat(height, width, CV_8UC3);
+    // for(int y = 0 ; y < height ; y++)
+    // {
+    //     for (int x = 0 ; x < width ; x++)
+    //     {
+    //         imageCompressed.at<cv::Vec3b>(y, x) = pixels.at(y * width + x);
+    //     }
+    // }
+    // std::string outputPath = "outputImages/imageCompressed_" + std::to_string(k) + "_colors.jpg";
+    // cv::imwrite(outputPath, imageCompressed);
+
+
+
+    // -----------------------------------------------------------------------------------------
+    // FIFTH PART: write performance evaluation files
+
+
+    // create performanceSheets if doesn't exist
+    // Ensure "performanceSheets" directory exists
+    std::filesystem::path sheetsDir = "./performanceSheets";
+    if (!std::filesystem::exists(sheetsDir))
+    {
+        std::cout << std::endl
+                  << "outputs directory doesn't exist, let's create it" << std::endl;
+
+        if (!std::filesystem::create_directory(sheetsDir))
         {
-            outputFile << p.clusterId << std::endl;
+            std::cerr << "Error creating outputs directory." << std::endl;
+            return 1; // Return an error code if directory creation fails
         }
+    }
+
+    //save in a file the times:
+
+    // we need image file name
+    // EXTRACT OUTPUT NAME FROM INPUT STRING
+        // Find the position of the last '/' in the path
+        size_t lastSlashPos = path.find_last_of('/');
+        // Extract the substring after the last '/'
+        std::string fileName = path.substr(lastSlashPos + 1);
+        // Find the position of the last '.' in the filename
+        size_t lastDotPos = fileName.find_last_of('.');
+        // Extract the substring before the last '.'
+        std::string imgName = fileName.substr(0, lastDotPos);
+
+    std::ofstream outFile("./performanceSheets/KrossCompressorTimesSheet.csv", std::ios_base::app); // Open file in append mode
+    if (outFile.is_open())
+    {
+        outFile << imgName << ","
+                << k << ","
+                << argv[0] << ","
+                << std::fixed << std::setprecision(20) << elapsedPixels.count() << ","
+                << std::fixed << std::setprecision(20) << elapsedKmeans.count() << ","
+                << std::fixed << std::setprecision(20) << elapsedEncoding.count() << ","
+                << std::endl;
         
-            
+        outFile.close();
+    }
+    else
+    {
+        std::cout << "Unable to open file";
+    }
 
-        // cv::Mat imageCompressed = cv::Mat(height, width, CV_8UC3);
-        // for(int y = 0 ; y < height ; y++)
-        // {
-        //     for (int x = 0 ; x < width ; x++)
-        //     {
-        //         imageCompressed.at<cv::Vec3b>(y, x) = pixels.at(y * width + x);
-        //     }
-        // }
-        // std::string outputPath = "outputImages/imageCompressed_" + std::to_string(k) + "_colors.jpg";
-        // cv::imwrite(outputPath, imageCompressed);
 
-        std::ofstream perfEval("performanceEvaluation.txt", std::ios::app);
-        perfEval << argv[0] << std::endl;
-        perfEval << "--------------------------------------"<< std::endl;
-        perfEval << "Image path: " << path << std::endl;
-        perfEval << "Number of colors: " << k << std::endl;
-        perfEval << "Number of points: " << points.size() << std::endl;
-        perfEval << "Number of iterations: " << kmeans.numberOfIterationForConvergence << std::endl;
-        perfEval << " ==>" << "Time: " << elapsed.count() << "s" << std::endl;
-        perfEval << std::endl;
-        perfEval << std::endl;
-        perfEval << std::endl;
 
-        // cv::imshow("Original", image);
-        // cv::waitKey(1);
-        // cv::imshow("Compressed", imageCompressed);
-        // cv::waitKey(0);
+    std::ofstream perfEval("performanceEvaluation.txt", std::ios::app);
+    perfEval << argv[0] << std::endl;
+    perfEval << "--------------------------------------" << std::endl;
+    perfEval << "Image path: " << path << std::endl;
+    perfEval << "Number of colors: " << k << std::endl;
+    perfEval << "Number of points: " << points.size() << std::endl;
+    perfEval << "Number of iterations: " << kmeans.numberOfIterationForConvergence << std::endl;
+    perfEval << " ==>"
+             << "Kmeans time: " << elapsedKmeans.count() << "s" << std::endl;
+    perfEval << std::endl;
+    perfEval << std::endl;
+    perfEval << std::endl;
 
-        std::cout << std::endl;
-        std::cout << "Work done!" << std::endl;
+    // cv::imshow("Original", image);
+    // cv::waitKey(1);
+    // cv::imshow("Compressed", imageCompressed);
+    // cv::waitKey(0);
+
+    std::cout << std::endl;
+    std::cout << "Work done!" << std::endl;
 }

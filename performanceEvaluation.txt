@@ -476,3 +476,83 @@ Number of iterations: 58
 
 
 
+./seqEncoder
+--------------------------------------
+Image path: ./benchmarkImages/Perugia-1920x780.jpg
+Number of colors: 5
+Number of points: 1497600
+Number of iterations: 27
+ ==>Time: 24.1919s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ./benchmarkImages/Perugia-1920x780.jpg
+Number of colors: 5
+Number of points: 1497600
+Number of iterations: 27
+ ==>Kmeans time: 23.6894s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ./benchmarkImages/Perugia-1920x780.jpg
+Number of colors: 5
+Number of points: 1497600
+Number of iterations: 27
+ ==>Kmeans time: 24.5108s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ./benchmarkImages/BelloFigo-1170x585.jpg
+Number of colors: 10
+Number of points: 684450
+Number of iterations: 41
+ ==>Kmeans time: 22.3175s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ./benchmarkImages/BelloFigo-1170x585.jpg
+Number of colors: 2
+Number of points: 684450
+Number of iterations: 14
+ ==>Kmeans time: 4.78941s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ./benchmarkImages/BelloFigo-1170x585.jpg
+Number of colors: 2
+Number of points: 684450
+Number of iterations: 14
+ ==>Kmeans time: 4.65847s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ./benchmarkImages/leosFace-1272x1696.jpeg
+Number of colors: 4
+Number of points: 2157312
+Number of iterations: 17
+ ==>Kmeans time: 21.1006s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ./benchmarkImages/leosFace-1272x1696.jpeg
+Number of colors: 20
+Number of points: 2157312
+Number of iterations: 67
+ ==>Kmeans time: 189.549s
+
+
+

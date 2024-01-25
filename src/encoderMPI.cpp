@@ -1,4 +1,5 @@
 #include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -7,13 +8,17 @@
 #include <sstream>
 #include <random>
 #include <thread>
+
 #include <chrono>
+
 #include <point.hpp>
 #include <kMeansMPI.hpp>
+
+
 #include <mpi.h>
 
 
-int main() {
+int main(int argc, char *argv[]) {
     MPI_Init(NULL, NULL);
     int world_size;
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
@@ -28,7 +33,7 @@ int main() {
         
         std::cout << "##########################################################################################" << std::endl;
         std::cout << "#                                                                                        #" << std::endl;
-        std::cout << "#                            Parallel Kmeans Images Encoder                              #" << std::endl;
+        std::cout << "#                Parallel Kmeans Images Encoder (MPI: did you use mpirun?)               #" << std::endl;
         std::cout << "#                                                                                        #" << std::endl;
         std::cout << "##########################################################################################" << std::endl<< std::endl;
         std::cout << "------------------------------------------------------------------------------------------" << std::endl;
@@ -157,6 +162,7 @@ int main() {
         // cv::imwrite(outputPath, imageCompressed);
 
         std::ofstream perfEval("performanceEvaluation.txt", std::ios::app);
+        perfEval << argv[0] << std::endl;
         perfEval << "--------------------------------------"<< std::endl;
         perfEval << "Image path: " << path << std::endl;
         perfEval << "Number of colors: " << k << std::endl;

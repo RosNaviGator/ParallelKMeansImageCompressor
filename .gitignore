@@ -1,5 +1,7 @@
 # ignore executable files
-encoder
+seqEncoder
+ompEncoder
+mpiEncoder
 decoder
 
 # ignore .vscode

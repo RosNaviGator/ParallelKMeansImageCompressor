@@ -14,7 +14,7 @@
 #include <chrono>
 
 #include <point.hpp>
-#include <kMeans.hpp>
+#include <kMeansOMP.hpp>
 
 #include <opencv2/opencv.hpp>
 
@@ -27,7 +27,7 @@ int main(int argc, char *argv[]){
         
         std::cout << "##########################################################################################" << std::endl;
         std::cout << "#                                                                                        #" << std::endl;
-        std::cout << "#                    Parallel Kmeans Images Encoder (Sequential)                         #" << std::endl;
+        std::cout << "#                        Parallel Kmeans Images Encoder (omp)                            #" << std::endl;
         std::cout << "#                                                                                        #" << std::endl;
         std::cout << "##########################################################################################" << std::endl<< std::endl;
         std::cout << "------------------------------------------------------------------------------------------" << std::endl;

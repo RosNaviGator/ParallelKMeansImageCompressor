@@ -1,4 +1,4 @@
-#include <kMeans.hpp>
+#include <kMeansOMP.hpp>
 
 KMeans::KMeans(const int& k, const std::vector<Point> points) : k(k), points(points), gp("gnuplot -persist")
 {
@@ -15,55 +15,82 @@ KMeans::KMeans(const int& k, const std::vector<Point> points) : k(k), points(poi
 
 void KMeans::run()
 {
-    bool change = true;
+    bool change = true; // boolean initialize to true (change=true loop continues)
     int iter = 0;
-    int iter_max = 1000;
+    int iter_max = 1000;  // max number of iterations
     std::vector<int> counts(k, 0);
     while (change && iter < iter_max)
     {
-        change = false;
+        change = false; 
+        // if no point will change this to true, no point has changed centroid
+        // we break the while, kmeans is done
         // --------------------------------------------
-        for (Point &p : points)
+
+        #pragma omp parallel 
+        
         {
-            double minDist = std::numeric_limits<double>::max();
-            int nearest = 0;
-            for (int j = 0; j < k; ++j)
+            #pragma omp for
+            for (Point &p : points) // loop through all points
             {
-                double tempDist = p.distance(centroids[j]);
-                if (tempDist < minDist)
+                // init. minDist to a very large value, nearest = 0
+                double minDist = std::numeric_limits<double>::max();
+                int nearest = 0;
+                for (int j = 0; j < k; ++j) // loop through all centroids
                 {
-                    minDist = tempDist;
-                    nearest = j;
+                    // compute distance between p and centroid[j]
+                    double tempDist = p.distance(centroids[j]);
+                    // update if we found closer than previous iter closer centroid
+                    if (tempDist < minDist)
+                    {
+                        minDist = tempDist;
+                        nearest = j;
+                    }
+                }
+                // update clusterId of point there's a new nearest
+                if (p.clusterId != nearest)
+                {
+                    // denugging print
+                    //std::cout << "Point " << p.id << " changed cluster from " << p.clusterId << " to " << nearest << std::endl;
+                    //std::cout << "omp: thread " << omp_get_thread_num() << " out of " << omp_get_num_threads() << std::endl;
+
+                    p.clusterId = nearest;
+                    change = true;  // boolean: mark that change happened
                 }
             }
-            if (p.clusterId != nearest)
-            {
-                p.clusterId = nearest;
-                change = true;
-            }
+
         }
 
+        
+        // create a vector of k integers, all initialized to 0 for each centroid we'll count how many points are assigned to it
         counts = std::vector<int>(k, 0);
+        // create a vect of k points, initialized with Point construtor
         centroids = std::vector<Point>(k, Point(points[0].numberOfFeatures));
-        for (Point p : points)
+
+        for (Point p : points) // loop through all points
         {
-            for (int i = 0; i < p.numberOfFeatures; ++i)
+            for (int i = 0; i < p.numberOfFeatures; ++i) // loop through all features of the current point
             {
+                // each feature of the current centroid for CURRENT POINT is "moved" by CURRENT POINT feature's value
+                // PARALLELIZATION NOTE: can't parallelize, concurrent write to same centroid
                 centroids[p.clusterId].setFeature(i, centroids[p.clusterId].getFeature(i) + p.getFeature(i));
             }
-            counts[p.clusterId] += 1;
+            counts[p.clusterId] += 1; // we count how many points
         }
 
-        for (int i = 0; i < k; ++i)
+        #pragma omp parallel
         {
-            for (int j = 0; j < centroids[i].numberOfFeatures; ++j)
+            #pragma omp for                    
+            for (int i = 0; i < k; ++i) // loop through all centroids
             {
-                centroids[i].setFeature(j, centroids[i].getFeature(j) / counts[i]);
+                for (int j = 0; j < centroids[i].numberOfFeatures; ++j) // loop through all features of the current centroid
+                {
+                    // we divide each feature of the current centroid by the number of points assigned to it
+                    centroids[i].setFeature(j, centroids[i].getFeature(j) / counts[i]);
+                }
             }
         }
-
-        iter++;
         std::cout << "." << std::flush;
+        iter++;
     }
     numberOfIterationForConvergence = iter;
 }

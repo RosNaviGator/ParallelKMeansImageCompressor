@@ -385,3 +385,94 @@ Number of iterations: 217
 
 
 
+--------------------------------------
+Image path: /home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/benchmarkImages/glassBall-1888x2826.jpg
+Number of colors: 5
+Number of points: 5335488
+Number of iterations: 41
+ ==>Time: 91.375s
+
+
+
+--------------------------------------
+Image path: /home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/benchmarkImages/glassBall-1888x2826.jpg
+Number of colors: 5
+Number of points: 5335488
+Number of iterations: 41
+Number of Processors: 2
+ ==>Time: 228.437s
+
+
+
+--------------------------------------
+Image path: /home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: 71
+Number of Processors: 2
+ ==>Time: 15.8372s
+
+
+
+--------------------------------------
+Image path: /home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: 71
+Number of Processors: 3
+ ==>Time: 25.5643s
+
+
+
+--------------------------------------
+Image path: /home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/benchmarkImages/Perugia-1920x780.jpg
+Number of colors: 3
+Number of points: 1497600
+Number of iterations: 21
+Number of Processors: 4
+ ==>Time: 58.4186s
+
+
+
+MPI
+--------------------------------------
+Image path: /home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/benchmarkImages/PiazzaDuomo-612x612.jpg
+Number of colors: 3
+Number of points: 217872
+Number of iterations: 29
+Number of Processors: 3
+ ==>Time: 8.72577s
+
+
+
+omp
+--------------------------------------
+Image path: /home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/benchmarkImages/glassBall-1888x2826.jpg
+Number of colors: 10
+Number of points: 5335488
+Number of iterations: 58
+ ==>Time: 165.815s
+
+
+
+MPI
+--------------------------------------
+Image path: /home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/benchmarkImages/glassBall-1888x2826.jpg
+Number of colors: 10
+Number of points: 5335488
+Number of iterations: 58
+Number of Processors: 3
+ ==>Time: 473.299s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: /home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/benchmarkImages/glassBall-1888x2826.jpg
+Number of colors: 10
+Number of points: 5335488
+Number of iterations: 58
+ ==>Time: 278.089s
+
+
+

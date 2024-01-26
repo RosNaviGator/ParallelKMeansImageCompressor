@@ -311,7 +311,12 @@ int main(int argc, char *argv[])
 
 
 
+
 /*
+
+VERSION before performance evaluation
+
+
 int main(int argc, char *argv[]){
 
     int k;

@@ -100,9 +100,22 @@ int main(int argc, char *argv[])
     // -----------------------------------------------------------------------------------------
 
 
+    // I need to retrieve executable path so that output paths don't get messed up
+
+     // Obtain the path of the executable file
+    std::filesystem::path exePath = std::filesystem::canonical("/proc/self/exe");
+    // Get the parent path of the executable, which represents the directory containing the executable
+    std::filesystem::path  buildPath = exePath.parent_path();
+
+
+
+
+
+
+
     // create outputs if doesn't exist
     // Ensure "outputs" directory exists
-    std::filesystem::path outputsDir = "../outputs";
+    std::filesystem::path outputsDir = buildPath/".."/"outputs";
     if (!std::filesystem::exists(outputsDir))
     {
         std::cout << std::endl
@@ -116,8 +129,8 @@ int main(int argc, char *argv[])
     }
 
     // create output file path and extension
-    outputPath = "../outputs/" + outputPath + ".kc";
-
+    outputPath = buildPath /".."/ "outputs" / outputPath;
+    outputPath += ".kc";
 
 
 
@@ -239,7 +252,7 @@ int main(int argc, char *argv[])
 
     // create performSheet if doesn't exist
     // Ensure "performSheet" directory exists
-    std::filesystem::path sheetsDir = "../performSheet";
+    std::filesystem::path sheetsDir = buildPath / ".." / "performSheet";
     if (!std::filesystem::exists(sheetsDir))
     {
         std::cout << std::endl
@@ -265,7 +278,7 @@ int main(int argc, char *argv[])
         // Extract the substring before the last '.'
         std::string imgName = fileName.substr(0, lastDotPos);
 
-    std::ofstream outFile("../performSheet/kcPerformSheet.csv", std::ios_base::app); // Open file in append mode
+    std::ofstream outFile(buildPath / ".." / "performSheet/kcPerformSheet.csv", std::ios_base::app); // Open file in append mode
     if (outFile.is_open())
     {
         outFile << imgName << ","
@@ -285,7 +298,7 @@ int main(int argc, char *argv[])
 
 
 
-    std::ofstream perfEval("../performanceEvaluation.txt", std::ios::app);
+    std::ofstream perfEval(buildPath / ".." / "performanceEvaluation.txt", std::ios::app);
     perfEval << argv[0] << std::endl;
     perfEval << "--------------------------------------" << std::endl;
     perfEval << "Image path: " << path << std::endl;

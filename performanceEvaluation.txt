@@ -1376,3 +1376,103 @@ Number of iterations: 60
 
 
 
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/leosFace-1272x1696.jpeg
+Number of colors: 4
+Number of points: 2157312
+Number of iterations: 17
+ ==>Kmeans time: 20.3344s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/leosFace-1272x1696.jpeg
+Number of colors: 4
+Number of points: 2157312
+Number of iterations: 17
+ ==>Kmeans time: 20.7378s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/leosFace-1272x1696.jpeg
+Number of colors: 4
+Number of points: 2157312
+Number of iterations: 17
+ ==>Kmeans time: 20.442s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/leosFace-1272x1696.jpeg
+Number of colors: 4
+Number of points: 2157312
+Number of iterations: 17
+ ==>Kmeans time: 20.3778s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/leosFace-1272x1696.jpeg
+Number of colors: 4
+Number of points: 2157312
+Number of iterations: 17
+ ==>Kmeans time: 20.4178s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/leosFace-1272x1696.jpeg
+Number of colors: 4
+Number of points: 2157312
+Number of iterations: 17
+ ==>Kmeans time: 20.5243s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/glassBall-1888x2826.jpg
+Number of colors: 3
+Number of points: 5335488
+Number of iterations: 15
+ ==>Kmeans time: 50.596s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/glassBall-1888x2826.jpg
+Number of colors: 3
+Number of points: 5335488
+Number of iterations: 15
+ ==>Kmeans time: 38.6211s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/glassBall-1888x2826.jpg
+Number of colors: 5
+Number of points: 5335488
+Number of iterations: 41
+ ==>Kmeans time: 137.569s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/glassBall-1888x2826.jpg
+Number of colors: 5
+Number of points: 5335488
+Number of iterations: 41
+ ==>Kmeans time: 99.5075s
+
+
+

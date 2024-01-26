@@ -23,29 +23,29 @@ fi
 path=../benchmarkImages/glassBall-1888x2826.jpg
 
 
-for m in 1 2; do
-	if [ $m -eq 1 ]; then
-		exe=seqEncoder
-	fi
-	if [ $m -eq 2 ]; then
-		exe=ompEncoder
-	fi
-	if [ $m -eq 3 ]; then
-		exe=mpiEncoder
-	fi	
+# Outer loop with index k number of colors/clusters
+for k in 3 5; do
+    echo "k=$k"
 
-	# Outer loop with index k number of colors/clusters
-	for k in 3 5 8; do
-		echo "k=$k"
+    # Inner loop with index m: choose exe
+    for m in 1 2; do
+        if [ $m -eq 1 ]; then
+            exe=seqEncoder
+        elif [ $m -eq 2 ]; then
+            exe=ompEncoder
+        elif [ $m -eq 3 ]; then
+            exe=mpiEncoder
+        fi
 
-		# Inner loop with index N: repeat same k for N times
-		for N in {1..1}; do
-			echo "."
-			# echo "Running $exe with $k iteration $j"
-			./$exe $path $k
-		done
-	done
-	
+        echo "exe=$exe"
+
+        # Loop N: repeat same k for N times
+        for N in {1..1}; do
+            echo "."
+            # echo "Running $exe with $k iteration $j"
+            ./$exe $path $k
+        done
+    done
 done
 
 cd ..

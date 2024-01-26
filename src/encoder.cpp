@@ -22,7 +22,6 @@
 int main(int argc, char *argv[])
 {
 
-    // BEWARE WE'D BETTER ADD AN INDEX TO APPEND TO THE OUTPUT NAME SO THAT MULTIPLE RUNS WON'T OVERWRITE
     int k;
     std::string path;
     std::string outputPath;
@@ -197,7 +196,7 @@ int main(int argc, char *argv[])
 
     std::cout << std::endl;
     std::cout << "Saving the Compressed Image..." << std::endl;
-    std::ofstream outputFile(outputPath, std::ios::app);
+    std::ofstream outputFile(outputPath, std::ios::trunc);
     outputFile << width << "," << height << "," << k << std::endl;
     for (int i = 0; i < k; i++)
     {
@@ -233,17 +232,18 @@ int main(int argc, char *argv[])
 
 
 
+
     // -----------------------------------------------------------------------------------------
     // FIFTH PART: write performance evaluation files
 
 
-    // create performanceSheets if doesn't exist
-    // Ensure "performanceSheets" directory exists
-    std::filesystem::path sheetsDir = "../performanceSheets";
+    // create performSheet if doesn't exist
+    // Ensure "performSheet" directory exists
+    std::filesystem::path sheetsDir = "../performSheet";
     if (!std::filesystem::exists(sheetsDir))
     {
         std::cout << std::endl
-                  << "outputs directory doesn't exist, let's create it" << std::endl;
+                  << "performSheet directory doesn't exist, let's create it" << std::endl;
 
         if (!std::filesystem::create_directory(sheetsDir))
         {
@@ -285,7 +285,7 @@ int main(int argc, char *argv[])
 
 
 
-    std::ofstream perfEval("performanceEvaluation.txt", std::ios::app);
+    std::ofstream perfEval("../performanceEvaluation.txt", std::ios::app);
     perfEval << argv[0] << std::endl;
     perfEval << "--------------------------------------" << std::endl;
     perfEval << "Image path: " << path << std::endl;

@@ -89,33 +89,26 @@ int main(int argc, char *argv[])
         std::cout << "You don't need to give any extension" << std::endl;
         std::cout << "--> ";
         std::getline(std::cin, outputPath);
-    }  
-    
+    }
+
     // -----------------------------------------------------------------------------------------
     // -----------------------------------------------------------------------------------------
-    
+
     // FOLLOWS CODE COMMON TO THE TWO VARIANTS OF INPUT
 
     // -----------------------------------------------------------------------------------------
     // -----------------------------------------------------------------------------------------
 
-
     // I need to retrieve executable path so that output paths don't get messed up
 
-     // Obtain the path of the executable file
+    // Obtain the path of the executable file
     std::filesystem::path exePath = std::filesystem::canonical("/proc/self/exe");
     // Get the parent path of the executable, which represents the directory containing the executable
-    std::filesystem::path  buildPath = exePath.parent_path();
-
-
-    
-
-
-
+    std::filesystem::path buildPath = exePath.parent_path();
 
     // create outputs if doesn't exist
     // Ensure "outputs" directory exists
-    std::filesystem::path outputsDir = buildPath/".."/"outputs";
+    std::filesystem::path outputsDir = buildPath / ".." / "outputs";
     if (!std::filesystem::exists(outputsDir))
     {
         std::cout << std::endl
@@ -129,10 +122,8 @@ int main(int argc, char *argv[])
     }
 
     // create output file path and extension
-    outputPath = buildPath /".."/ "outputs" / outputPath;
+    outputPath = buildPath / ".." / "outputs" / outputPath;
     outputPath += ".kc";
-
-
 
     // -----------------------------------------------------------------------------------------
     // FIRST PART: reading (may have sense to evaluate performance if we parallelize)
@@ -152,9 +143,6 @@ int main(int argc, char *argv[])
         cv::Mat image = cv::imread(path);
         std::cout << "-------------------------" << path << std::endl;
     }
-
-
-
 
     // -----------------------------------------------------------------------------------------
     // SECOND PART: creating the points structure
@@ -186,24 +174,20 @@ int main(int argc, char *argv[])
     auto endPixels = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsedPixels = endPixels - startPixels;
 
-
-
-
     // -----------------------------------------------------------------------------------------
     // THIRD PART: kmeans clustering
+    KMeans kmeans(k, points);
 
     // CLUSTERING (second time evaluation)
     std::cout << "Starting the Compression..." << std::endl;
     auto startKmeans = std::chrono::high_resolution_clock::now();
 
-    KMeans kmeans(k, points);
     kmeans.run();
 
     auto endKmeans = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsedKmeans = endKmeans - startKmeans;
 
- 
-
+    /*
     // -----------------------------------------------------------------------------------------
     // FOURTH PART: saving encoded data (ENCODING STILL HAS TO BE CORRECTED)
 
@@ -220,7 +204,7 @@ int main(int argc, char *argv[])
         outputFile << kmeans.getCentroids()[i].features[2] << std::endl;
     }
 
-    
+
     // CREATING OUTPUT FILE .kc (third time evaluation)
     auto startEncoding = std::chrono::high_resolution_clock::now();
 
@@ -229,8 +213,11 @@ int main(int argc, char *argv[])
         outputFile << p.clusterId << std::endl; // this is the part that takes a lot of time
     }
 
+
     auto endEncoding = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsedEncoding = endEncoding - startEncoding;
+
+    */
 
     // cv::Mat imageCompressed = cv::Mat(height, width, CV_8UC3);
     // for(int y = 0 ; y < height ; y++)
@@ -243,12 +230,49 @@ int main(int argc, char *argv[])
     // std::string outputPath = "outputImages/imageCompressed_" + std::to_string(k) + "_colors.jpg";
     // cv::imwrite(outputPath, imageCompressed);
 
+    // -----------------------------------------------------------------------------------------
+    // ***NEW*** PART: opencv jpeg compression
 
+    std::cout << "Saving the Compressed Image..." << std::endl;
+    auto startCompression = std::chrono::high_resolution_clock::now();
 
+    std::vector<cv::Vec3b> newPixels;
+    for (Point &p : kmeans.getPoints())
+    {
+        for (int i = 0; i < k; i++)
+        {
+            if (p.clusterId == i)
+            {
+                newPixels.emplace_back(cv::Vec3b(static_cast<uchar>(kmeans.getCentroids()[i].features[0]),
+                                                 static_cast<uchar>(kmeans.getCentroids()[i].features[1]),
+                                                 static_cast<uchar>(kmeans.getCentroids()[i].features[2])));
+            }
+        }
+    }
+
+    auto endCompression = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> elapsedCompression = endCompression - startCompression;
+
+    // we now need to create a new image with the new pixels
+    cv::Mat imageCompressed = cv::Mat(height, width, CV_8UC3);
+    for (int y = 0; y < height; y++)
+    {
+        for (int x = 0; x < width; x++)
+        {
+            imageCompressed.at<cv::Vec3b>(y, x) = newPixels.at(y * width + x);
+        }
+    }
+
+    // we now need to save the image
+    std::string outputPathJpeg = buildPath / ".." / "outputs" / outputPath;
+    // remove .kc extension
+    outputPathJpeg.erase(outputPathJpeg.size() - 3, 3);
+    outputPathJpeg += ".jpg";
+
+    cv::imwrite(outputPathJpeg, imageCompressed);
 
     // -----------------------------------------------------------------------------------------
     // FIFTH PART: write performance evaluation files
-
 
     // create performSheet if doesn't exist
     // Ensure "performSheet" directory exists
@@ -265,18 +289,18 @@ int main(int argc, char *argv[])
         }
     }
 
-    //save in a file the times:
+    // save in a file the times:
 
     // we need image file name
     // EXTRACT OUTPUT NAME FROM INPUT STRING
-        // Find the position of the last '/' in the path
-        size_t lastSlashPos = path.find_last_of('/');
-        // Extract the substring after the last '/'
-        std::string fileName = path.substr(lastSlashPos + 1);
-        // Find the position of the last '.' in the filename
-        size_t lastDotPos = fileName.find_last_of('.');
-        // Extract the substring before the last '.'
-        std::string imgName = fileName.substr(0, lastDotPos);
+    // Find the position of the last '/' in the path
+    size_t lastSlashPos = path.find_last_of('/');
+    // Extract the substring after the last '/'
+    std::string fileName = path.substr(lastSlashPos + 1);
+    // Find the position of the last '.' in the filename
+    size_t lastDotPos = fileName.find_last_of('.');
+    // Extract the substring before the last '.'
+    std::string imgName = fileName.substr(0, lastDotPos);
 
     std::ofstream outFile(buildPath / ".." / "performSheet/kcPerformSheet.csv", std::ios_base::app); // Open file in append mode
     if (outFile.is_open())
@@ -286,17 +310,15 @@ int main(int argc, char *argv[])
                 << argv[0] << ","
                 << std::fixed << std::setprecision(20) << elapsedPixels.count() << ","
                 << std::fixed << std::setprecision(20) << elapsedKmeans.count() << ","
-                << std::fixed << std::setprecision(20) << elapsedEncoding.count() << ","
+                << std::fixed << std::setprecision(20) << elapsedCompression.count() << ","
                 << std::endl;
-        
+
         outFile.close();
     }
     else
     {
         std::cout << "Unable to open file";
     }
-
-
 
     std::ofstream perfEval(buildPath / ".." / "performanceEvaluation.txt", std::ios::app);
     perfEval << argv[0] << std::endl;

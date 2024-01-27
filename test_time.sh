@@ -20,11 +20,13 @@ fi
 
 
 # choose the image path
-path=../benchmarkImages/glassBall-1888x2826.jpg
+path=../benchmarkImages/odettte3000x4000.jpg
+
+# glassBall-1888x2826.jpg  --  piazzaDuomo-612x612.jpg  --  odettte3000x4000.jpg
 
 
 # Outer loop with index k number of colors/clusters
-for k in 3 5; do
+for k in 6; do
     echo "k=$k"
 
     # Inner loop with index m: choose exe
@@ -40,7 +42,7 @@ for k in 3 5; do
         echo "exe=$exe"
 
         # Loop N: repeat same k for N times
-        for N in {1..1}; do
+        for N in {1..5}; do
             echo "."
             # echo "Running $exe with $k iteration $j"
             ./$exe $path $k

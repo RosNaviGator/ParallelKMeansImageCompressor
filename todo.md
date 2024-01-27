@@ -9,7 +9,7 @@
 8. ~~/encoder MUST throw an error if you run without mpirun~~ NOT TRUE
 9. ~~App does NOT work on Francesco's computer~~ NOT TRUE
 10. ~~file only works if run form inside build folder~~
-11. make an actual compression algortihm (WHY DON"T WE SIMPLY USE OPENCV???!!!)
+11. ~~make an actual compression algortihm (WHY DON"T WE SIMPLY USE OPENCV???!!!)~~ I did do it with opencv but IT WASN'T SIMPLE AT ALL :( also not efficent
 12. fix mpi kmeans
 13. try kd-tree (instead of kmeans)
 14. CUDA? (makes no sense unless we find massive number of super "simple" operation to parallelize?)

@@ -1476,3 +1476,313 @@ Number of iterations: 41
 
 
 
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 2
+Number of points: 217872
+Number of iterations: 19
+ ==>Kmeans time: 2.09538s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 2
+Number of points: 217872
+Number of iterations: 19
+ ==>Kmeans time: 2.12842s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 2
+Number of points: 217872
+Number of iterations: 19
+ ==>Kmeans time: 1.87898s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 2
+Number of points: 217872
+Number of iterations: 19
+ ==>Kmeans time: 1.91069s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 2
+Number of points: 217872
+Number of iterations: 19
+ ==>Kmeans time: 1.96644s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 2
+Number of points: 217872
+Number of iterations: 19
+ ==>Kmeans time: 1.88911s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 2
+Number of points: 217872
+Number of iterations: 19
+ ==>Kmeans time: 1.89846s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 2
+Number of points: 217872
+Number of iterations: 19
+ ==>Kmeans time: 1.85521s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 2
+Number of points: 217872
+Number of iterations: 19
+ ==>Kmeans time: 1.82699s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 2
+Number of points: 217872
+Number of iterations: 19
+ ==>Kmeans time: 1.87317s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 1
+Number of points: 217872
+Number of iterations: 2
+ ==>Kmeans time: 0.185416s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 1
+Number of points: 217872
+Number of iterations: 2
+ ==>Kmeans time: 0.190064s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 2
+Number of points: 217872
+Number of iterations: 19
+ ==>Kmeans time: 1.85295s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 4
+Number of points: 217872
+Number of iterations: 29
+ ==>Kmeans time: 3.53665s
+
+
+
+/home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/build/seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 4
+Number of points: 217872
+Number of iterations: 29
+ ==>Kmeans time: 3.28214s
+
+
+
+/home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/build/seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 4
+Number of points: 217872
+Number of iterations: 29
+ ==>Kmeans time: 3.34822s
+
+
+
+/home/franco/Dropbox/AA_Fra_Rosnati/B_Education/AA_University/AA_PoliMi/AA_Ing/01_Magistrale/HPC_engineering/Linux_HPC-coding/AMSC_KrossCompressor/build/seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 4
+Number of points: 217872
+Number of iterations: 29
+ ==>Kmeans time: 3.37739s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/glassBall-1888x2826.jpg
+Number of colors: 4
+Number of points: 5335488
+Number of iterations: 30
+ ==>Kmeans time: 87.3968s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/glassBall-1888x2826.jpg
+Number of colors: 4
+Number of points: 5335488
+Number of iterations: 30
+ ==>Kmeans time: 95.1007s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 4
+Number of points: 217872
+Number of iterations: 29
+ ==>Kmeans time: 3.41383s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 4
+Number of points: 217872
+Number of iterations: 29
+ ==>Kmeans time: 2.58156s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 6
+Number of points: 217872
+Number of iterations: 51
+ ==>Kmeans time: 6.96156s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 6
+Number of points: 217872
+Number of iterations: 51
+ ==>Kmeans time: 6.92475s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 6
+Number of points: 217872
+Number of iterations: 51
+ ==>Kmeans time: 9.17463s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 6
+Number of points: 217872
+Number of iterations: 51
+ ==>Kmeans time: 11.1568s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 6
+Number of points: 217872
+Number of iterations: 51
+ ==>Kmeans time: 10.5128s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 6
+Number of points: 217872
+Number of iterations: 51
+ ==>Kmeans time: 10.252s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 6
+Number of points: 217872
+Number of iterations: 51
+ ==>Kmeans time: 10.886s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 6
+Number of points: 217872
+Number of iterations: 51
+ ==>Kmeans time: 10.6423s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 6
+Number of points: 217872
+Number of iterations: 51
+ ==>Kmeans time: 8.83929s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 6
+Number of points: 217872
+Number of iterations: 51
+ ==>Kmeans time: 5.93038s
+
+
+

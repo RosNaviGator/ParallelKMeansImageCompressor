@@ -1786,3 +1786,103 @@ Number of iterations: 51
 
 
 
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/odettte3000x4000.jpg
+Number of colors: 6
+Number of points: 12000000
+Number of iterations: 49
+ ==>Kmeans time: 363.093s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/odettte3000x4000.jpg
+Number of colors: 6
+Number of points: 12000000
+Number of iterations: 49
+ ==>Kmeans time: 366.398s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/odettte3000x4000.jpg
+Number of colors: 6
+Number of points: 12000000
+Number of iterations: 49
+ ==>Kmeans time: 362.918s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/odettte3000x4000.jpg
+Number of colors: 6
+Number of points: 12000000
+Number of iterations: 49
+ ==>Kmeans time: 365.337s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/odettte3000x4000.jpg
+Number of colors: 6
+Number of points: 12000000
+Number of iterations: 49
+ ==>Kmeans time: 364.775s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/odettte3000x4000.jpg
+Number of colors: 6
+Number of points: 12000000
+Number of iterations: 49
+ ==>Kmeans time: 257.345s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/odettte3000x4000.jpg
+Number of colors: 6
+Number of points: 12000000
+Number of iterations: 49
+ ==>Kmeans time: 260.892s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/odettte3000x4000.jpg
+Number of colors: 6
+Number of points: 12000000
+Number of iterations: 49
+ ==>Kmeans time: 256.797s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/odettte3000x4000.jpg
+Number of colors: 6
+Number of points: 12000000
+Number of iterations: 49
+ ==>Kmeans time: 256.962s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/odettte3000x4000.jpg
+Number of colors: 6
+Number of points: 12000000
+Number of iterations: 49
+ ==>Kmeans time: 258.466s
+
+
+

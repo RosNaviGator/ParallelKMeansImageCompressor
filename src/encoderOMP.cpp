@@ -267,7 +267,7 @@ int main(int argc, char *argv[])
     std::string outputPathJpeg = buildPath / ".." / "outputs" / outputPath;
     // remove .kc extension
     outputPathJpeg.erase(outputPathJpeg.size() - 3, 3);
-    outputPathJpeg += ".jpg";
+    outputPathJpeg = outputPathJpeg + "-Compr-omp-k" + std::to_string(k) + ".jpg";
 
     cv::imwrite(outputPathJpeg, imageCompressed);
 

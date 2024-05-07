@@ -9,12 +9,12 @@
 8. ~~/encoder MUST throw an error if you run without mpirun~~ NOT TRUE
 9. ~~App does NOT work on Francesco's computer~~ NOT TRUE
 10. ~~file only works if run form inside build folder~~
-11. make an actual compression algortihm (WHY DON"T WE SIMPLY USE OPENCV???!!!)
+11. ~~make an actual compression algortihm (WHY DON"T WE SIMPLY USE OPENCV???!!!)~~ I did do it with opencv but IT WASN'T SIMPLE AT ALL :( also not efficent
 12. fix mpi kmeans
 13. try kd-tree (instead of kmeans)
 14. CUDA? (makes no sense unless we find massive number of super "simple" operation to parallelize?)
 15. better stopping criteria for kmeans
-
+16. paralellelize re-creation of .jpeg after kmeans (don't use emplace_back, preallocate memory and access with points index, they are always in same order)
 
 
 
@@ -37,6 +37,7 @@ n_init -> we can use MPI to run with different seeds, then at the end we'll gath
 I = sum(points): { sum(clusters): (x_i,c_i)^2 } where x_i point value, c_i centroid value
 
 
+!!! PROBLEM: if you split processes on all the CPUs you might lose speed with OpenMP mulithreading because processors are all taken :(
 
 
 

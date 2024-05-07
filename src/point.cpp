@@ -1,4 +1,4 @@
-#include "../include/point.hpp"
+#include <point.hpp>
 
 Point::Point(int features_size)
 {

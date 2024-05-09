@@ -66,26 +66,7 @@ int main(int argc, char *argv[])
                   << std::endl;
         return 1;
     }
-  // FIRST PART: reading (may have sense to evaluate performance if we parallelize)
-
-    // Read an image from file
-    cv::Mat image = cv::imread(path); // CAN BE PARALLELIZED IN OpenMP and CUDA! (with a gui or with a parallel region?)
-
-    // Check if the image was loaded successfully
-    while (image.empty())
-    {
-        std::cerr << "Error: Unable to load the image." << std::endl;
-        std::cout << "Please enter the correct global path of the image you want to compress" << std::endl
-                  << std::endl;
-        std::cout << "--> ";
-        std::getline(std::cin, path);
-        std::cout << std::endl;
-        cv::Mat image = cv::imread(path);
-        std::cout << "-------------------------" << path << std::endl;
-    }
-
-    // ---------------------------------------------
-    // no runtime std::cin if we already passed <path_to_image> <number_of_colors> as argv
+  
     if (3 == argc)
     {
         useCallArguments(k, path, outputPath, argv);

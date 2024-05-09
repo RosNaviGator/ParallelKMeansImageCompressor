@@ -19,6 +19,36 @@
 
 #include <opencv2/opencv.hpp>
 
+
+void useCallArguments(int &k, std::string &path, std::string &outputPath, char *argv[])
+{
+
+    // set number of clusters
+    k = std::stoi(argv[2]); // if you wrote arguments in inverted order, it will crash (works as sanity check)
+
+    // set path
+    path = argv[1];
+
+    // EXTRACT OUTPUT NAME FROM INPUT STRING
+
+    // Find the position of the last '/' in the path
+    size_t lastSlashPos = path.find_last_of('/');
+    
+    // Extract the substring after the last '/'
+    std::string fileName = path.substr(lastSlashPos + 1);
+    
+    // Find the position of the last '.' in the filename
+    size_t lastDotPos = fileName.find_last_of('.');
+    
+    // Extract the substring before the last '.'
+    outputPath = fileName.substr(0, lastDotPos);
+
+    // debug
+    // std::cout << std::endl << outputPath << std::endl;
+}
+
+
+
 int main(int argc, char *argv[])
 {
 
@@ -36,28 +66,29 @@ int main(int argc, char *argv[])
                   << std::endl;
         return 1;
     }
+  // FIRST PART: reading (may have sense to evaluate performance if we parallelize)
 
+    // Read an image from file
+    cv::Mat image = cv::imread(path); // CAN BE PARALLELIZED IN OpenMP and CUDA! (with a gui or with a parallel region?)
+
+    // Check if the image was loaded successfully
+    while (image.empty())
+    {
+        std::cerr << "Error: Unable to load the image." << std::endl;
+        std::cout << "Please enter the correct global path of the image you want to compress" << std::endl
+                  << std::endl;
+        std::cout << "--> ";
+        std::getline(std::cin, path);
+        std::cout << std::endl;
+        cv::Mat image = cv::imread(path);
+        std::cout << "-------------------------" << path << std::endl;
+    }
+
+    // ---------------------------------------------
     // no runtime std::cin if we already passed <path_to_image> <number_of_colors> as argv
     if (3 == argc)
     {
-
-        // set number of clusters
-        k = std::stoi(argv[2]); // if you wrote arguments in inverted order, it will crash (works as sanity check)
-        // set path
-        path = argv[1];
-
-        // EXTRACT OUTPUT NAME FROM INPUT STRING
-        // Find the position of the last '/' in the path
-        size_t lastSlashPos = path.find_last_of('/');
-        // Extract the substring after the last '/'
-        std::string fileName = path.substr(lastSlashPos + 1);
-        // Find the position of the last '.' in the filename
-        size_t lastDotPos = fileName.find_last_of('.');
-        // Extract the substring before the last '.'
-        outputPath = fileName.substr(0, lastDotPos);
-
-        // debug
-        // std::cout << std::endl << outputPath << std::endl;
+        useCallArguments(k, path, outputPath, argv);
     }
 
     // if no arguments were given, we'll ask them at runtime

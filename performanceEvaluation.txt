@@ -5496,3 +5496,63 @@ Number of iterations: 693
 
 
 
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: 71
+ ==>Kmeans time: 9.56311s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: 71
+ ==>Kmeans time: 8.16792s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/lena-512x512.png
+Number of colors: 6
+Number of points: 262144
+Number of iterations: 63
+ ==>Kmeans time: 10.651s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/lena-512x512.png
+Number of colors: 6
+Number of points: 262144
+Number of iterations: 63
+ ==>Kmeans time: 8.717s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/lena-512x512.png
+Number of colors: 9
+Number of points: 262144
+Number of iterations: 49
+ ==>Kmeans time: 10.7584s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/lena-512x512.png
+Number of colors: 9
+Number of points: 262144
+Number of iterations: 49
+ ==>Kmeans time: 7.55565s
+
+
+

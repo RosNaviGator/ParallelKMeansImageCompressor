@@ -26,7 +26,7 @@ path=../benchmarkImages/lena-512x512.png
 
 
 # Outer loop with index k number of colors/clusters
-for k in 3 6 9 18 32 64; do
+for k in 3 6 9 ; do
     echo "k=$k"
 
     # Inner loop with index m: choose exe
@@ -42,7 +42,7 @@ for k in 3 6 9 18 32 64; do
         echo "exe=$exe"
 
         # Loop N: repeat same k for N times
-        for N in {1..25}; do
+        for N in {1..1}; do
             echo "."
             # echo "Running $exe with $k iteration $j"
             ./$exe $path $k

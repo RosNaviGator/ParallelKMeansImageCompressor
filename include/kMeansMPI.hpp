@@ -16,9 +16,9 @@
 class KMeans
 {
 public:
-    KMeans(const int& k, const std::vector<Point> points);
+    KMeans(const int& k, const int& rank, const int& n_features,  const std::vector<Point> points);
 
-    void run(const int& rank, const int& world_size);
+    void run(const int& rank, const int& world_size, int 1);
     void printClusters() const;
     void plotClusters();
     std::vector<Point> getPoints();

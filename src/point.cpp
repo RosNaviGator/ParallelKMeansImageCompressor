@@ -19,7 +19,7 @@ Point::Point(const int& id, const std::vector<double>& coordinates)
 }
 
 double Point::distance(const Point& p) const
-{
+{    // Destructor code here
     double sum = 0.0;
     for (int i = 0; i < features.size(); ++i)
     {
@@ -36,4 +36,13 @@ double& Point::getFeature(int index)
 void Point::setFeature(int index, double value)
 {
     this->features[index] = value;
+}
+
+void MPI_Bcast(Point& point, int count, MPI_Datatype datatype, int root, MPI_Comm communicator)
+{
+    MPI_Bcast(&point.id, 1, MPI_INT, root, communicator);
+    MPI_Bcast(&point.clusterId, 1, MPI_INT, root, communicator);
+    MPI_Bcast(&point.numberOfFeatures, 1, MPI_INT, root, communicator);
+    MPI_Bcast(point.features.data(), count, datatype, root, communicator);
+    MPI_Bcast(point.centroidFeatures.data(), count, datatype, root, communicator);
 }

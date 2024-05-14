@@ -1,118 +1,196 @@
 #include <kMeansMPI.hpp>
 
-    KMeans::KMeans(const int& k, const std::vector<Point> points) : k(k), points(points)/*,gp("gnuplot -persist")*/
+    KMeans::KMeans(const int& k, const int& rank, const int& n_features)
     {
+        this->k = k;
+        this->centroids = std::vector<Point>(k, Point(n_features));     
+        
+    }
+    KMeans::KMeans(const int& k, const int& rank, const int& n_features,  const std::vector<Point> points) : points(points) {
+        
+        this->k = k;
+        centroids = std::vector<Point>(k, Point(n_features));     
         int size = points.size();
-        std::random_device rd;                            // Initialize a random device
-        std::mt19937 gen(23456789);                       // Initialize a Mersenne Twister random number generator with the random device
-        std::uniform_int_distribution<> dis(0, size - 1); // Create a uniform distribution between 0 and size - 1
-
+        std::random_device rd;                              // Initialize a random device
+        std::mt19937 gen(23456789);                         // Initialize a Mersenne Twister random number generator with the random device
+        std::uniform_int_distribution<> dis(0, size - 1);   // Create a uniform distribution between 0 and size - 1
         for (int i = 0; i < k; ++i)
         {
-            centroids.emplace_back(points[dis(gen)]); // Generate a random index and use it to select a point
+            centroids[i]=points[dis(gen)];       // Generate a random index and use it to select a point
         }
+        
     }
 
-    void KMeans::run(const int& rank, const int& world_size)
+
+    void KMeans::run(const int& rank,  const int& world_size, std::vector < std::pair < int , Point > >local_points)
     {
-        bool change = true;
+        bool changed = true;
         int iter = 0;
         int iter_max = 1000;
-        std::vector<int> counts(k, 0);
-        while (change && iter < iter_max)
+        
+
+        for(int i = 0; i < k; ++i)
         {
-            if (rank == 0)
-            change = false;
-            // --------------------------------------------
-            for (Point &p : points)
+            MPI_Bcast(&(centroids[i].features[0]), 1, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+            MPI_Bcast(&(centroids[i].features[1]), 1, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+            MPI_Bcast(&(centroids[i].features[2]), 1, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+        }
+        // std::cout << "staaart" << std::endl;
+
+        while (iter < iter_max && changed)
+        {
+            std::vector<int> changed_points(world_size, 0);
+            changed = false;
+            for(auto& p : local_points)
             {
-                int points_per_cluster = points.size() / world_size;
-                int start = rank * points_per_cluster;
-                int end = (rank == world_size - 1) ? points.size() : (rank + 1) * points_per_cluster;
-                if (p.id >= start && p.id < end)
-                {
-                    double minDist = std::numeric_limits<double>::max();
-                    int nearest = 0;
-                    for (int j = 0; j < k; ++j)
-                    {
-                        double tempDist = p.distance(centroids[j]);
-                        if (tempDist < minDist)
-                        {
-                            minDist = tempDist;
-                            nearest = j;
-                        }
-                    }
-                    if (p.clusterId != nearest)
-                    {
-                        p.clusterId = nearest;
-                        // p.minDist = minDist;
-                        change = true;
-                    }
-                    p.centroidFeatures = centroids[p.clusterId].features;
-                    if (rank != 0)
-                    {
-                        MPI_Send(&p.id, 1, MPI_INT, 0, 1, MPI_COMM_WORLD);
-                        for (int i = 0; i < p.numberOfFeatures; ++i)
-                        {
-                            MPI_Send(&p.centroidFeatures[i], 1, MPI_DOUBLE, 0, 4+i, MPI_COMM_WORLD);
-                        }
-                        MPI_Send(&p.clusterId, 1, MPI_INT, 0, 3, MPI_COMM_WORLD);
-
-                        //std::cout << "---------------inviati dati del punto " << p.id << std::endl;
-                    }
-                }
-                if (rank == 0)
-                {
-                    int whosend = std::min(p.id / points_per_cluster, world_size - 1);
-                    if (whosend != 0)
-                    {
-                        //std::cout << "who send: " << whosend << std::endl;
-                        //std::cout << "p.id: " << p.id << std::endl;
-                        int id;
-                        // int minDist;
-                        int newCluster;
-                        MPI_Recv(&id, 1, MPI_INT, whosend, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-                        for (int i = 0; i < p.numberOfFeatures; ++i)
-                        {
-                            MPI_Recv(&p.centroidFeatures[i], 1, MPI_DOUBLE, whosend, 4+i, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-                        }
-                        MPI_Recv(&newCluster, 1, MPI_INT, whosend, 3, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-
-                        //std::cout << "---------------ricevuti dati da " << whosend << std::endl;
-
-                        if (p.clusterId != newCluster)
-                        {
-                            p.clusterId = newCluster;
-                            // p.minDist = minDist;
-                            change = true;
-                        }
-                    }
-                }
-            }
-
-            if (rank == 0)
-            {
-                //std::cout << " bonaaa " << std::endl;
-                counts = std::vector<int>(k, 0);
-                centroids = std::vector<Point>(k, Point(points[0].numberOfFeatures));
-                for (Point p : points)
-                {
-                    for (int i = 0; i < p.numberOfFeatures; ++i)
-                    {
-                        centroids[p.clusterId].setFeature(i, centroids[p.clusterId].getFeature(i) + p.getFeature(i));
-                    }
-                    counts[p.clusterId] += 1;
-                }
-
+                //std::cout << "point " << p.second.id << " clusterId " << p.second.clusterId << std::endl;
+                p.first = 0;
+                double minDist = std::numeric_limits<double>::max();
                 for (int i = 0; i < k; ++i)
                 {
-                    for (int j = 0; j < centroids[i].numberOfFeatures; ++j)
+                    double dist = p.second.distance(centroids[i]);
+                    if (dist < minDist)
                     {
-                        centroids[i].setFeature(j, centroids[i].getFeature(j) / counts[i]);
+                        minDist = dist;
+                        if (p.second.clusterId != i)
+                        {
+                            // std::cout << "point " << p.second.id << " changed cluster " << "from " << p.second.clusterId << " to " << i << std::endl;
+
+                            p.second.clusterId = i;
+                            p.first = 1;
+
+                        }
                     }
                 }
-                std::cout << "." << std::flush;
             }
+            for (int i = 0 ; i < local_points.size(); i++)
+            {
+                changed_points[rank] += local_points[i].first;
+            }
+
+            
+            for (int i = 0 ; i < world_size; i++)
+            {
+                int changed = changed_points[rank];
+                MPI_Bcast(&changed, 1, MPI_INT, i, MPI_COMM_WORLD);
+                changed_points[i] = changed;
+            }
+            
+            changed_points.insert(changed_points.begin(), 0);
+            
+            for (int i = 1 ; i < changed_points.size(); ++i )
+            {
+                changed_points[i] = changed_points[i]*2 + changed_points[i-1];
+            }
+            // std::cout << "-------------- LEO DEBUGGER ----------------"<< std::endl;
+            int comm_counter = changed_points[rank];
+
+            // changed_poits[wordrank] ha il numero totale di comunicazioni che devono essere eseguite 
+            // Possiamo usarlo per dichiarare l'MPI_Request
+            int num_operations = changed_points[world_size];
+
+            for (int i = 0 ; i < local_points.size(); i++)
+            {
+                if(local_points[i].first == 1)
+                {
+                    MPI_Send(&local_points[i].second.id, 1, MPI_INT, 0, comm_counter, MPI_COMM_WORLD);
+                    MPI_Send(&local_points[i].second.clusterId, 1, MPI_INT, 0, comm_counter + 1, MPI_COMM_WORLD);
+
+                    comm_counter += 2;
+                }
+                // std::cout << "ultimo valore di comm_counter per rank " << rank << " è " << comm_counter + 1 << std::endl;
+            }
+            
+
+            if (rank == 0)
+            {
+                for (int i = 0; i < world_size; i++)
+                {
+                    for (int j = changed_points[i]; j < changed_points[i+1]; j+=2)
+                    {
+                        int id, clusterId;
+                        // std::cout << "valore atteso di comm_count " << j + 1 << " from process " << i << std::endl;
+                        MPI_Recv(&id, 1, MPI_INT, i, j, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+                        MPI_Recv(&clusterId, 1, MPI_INT, i, j + 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+
+
+                        points[id].clusterId = clusterId;
+
+                    }
+                }
+            }
+
+
+            // calcolo dei centroidi
+
+            // calcolo delle somme parziali per ogni processo 
+
+            std::vector<std::vector<double> > partial_sum(k, {0.0,0.0,0.0});
+            std::vector<int> cluster_size(k,0);
+
+            for (int i = 0 ; i < k ; ++i)
+            {
+                for (int j = 0 ; j < local_points.size(); j++)
+                {
+                    if(local_points[j].second.clusterId == i)
+                    {
+                        for (int x = 0 ; x < 3; x++)
+                        {
+                            partial_sum[i][x] += local_points[j].second.getFeature(x);
+                        }
+                        cluster_size[i]++;
+                    }
+                }
+            }
+            
+            if (rank != 0)
+            {
+                for (int i = 0 ; i < k ; ++i)
+                {
+                    MPI_Send(partial_sum[i].data(), 3, MPI_DOUBLE, 0, k*rank+i, MPI_COMM_WORLD);
+                }
+                int max_index = k*world_size+k-1; // rappresenta il massimo indice che può essere usato per inviare le somme parziali
+                // a partire da questo punto si inviano i cluster size
+                MPI_Send(cluster_size.data(), k, MPI_INT, 0, max_index + rank, MPI_COMM_WORLD);
+            }
+
+            if (rank == 0)
+            {
+                
+                for (int i = 1; i < world_size; i++)
+                {
+                    std::vector<std::vector<double> > partial_sum_recived(k,{0.0,0.0,0.0});
+                    for (int j = 0 ; j < k ; ++j)
+                    {
+                        MPI_Recv(partial_sum_recived[j].data(), 3, MPI_DOUBLE, i, k*i+j, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+                    }
+                    std::vector<int> cluster_size_recived(k,0);
+                    int max_index = k*world_size+k-1;
+                    MPI_Recv(cluster_size_recived.data(), k, MPI_INT, i, max_index + i, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+                    for (int j = 0 ; j < k ; ++j)
+                    {
+                        for (int x = 0 ; x < 3; x++)
+                        {
+                            partial_sum[j][x] += partial_sum_recived[j][x];
+                        }
+                        cluster_size[j] += cluster_size_recived[j];
+                    }
+                }
+            }
+
+            // calcolo dei nuovi centroidi
+            std::vector<Point> old_centroids = centroids;
+            if (rank == 0)
+            {
+                for (int i = 0 ; i < k ; ++i)
+                {
+                    for (int j = 0 ; j < 3; j++)
+                    {
+                        centroids[i].features[j] = partial_sum[i][j]/cluster_size[i];
+                    }
+                }
+            }
+
             for (int i = 0; i < k; ++i)
             {
                 for (int j = 0; j < centroids[i].numberOfFeatures; ++j)
@@ -120,10 +198,18 @@
                     MPI_Bcast(&centroids[i].features[j], 1, MPI_DOUBLE, 0, MPI_COMM_WORLD);
                 }
             }
-            MPI_Bcast(&change, 1, MPI_C_BOOL, 0, MPI_COMM_WORLD);
+
             iter++;
+
+            for (int i = 0; i < k; ++i)
+            {
+                if (centroids[i].distance(old_centroids[i]) > 0) // approssimato?
+                {
+                    changed = true;
+                    break;
+                }
+            }
         }
-        numberOfIterationForConvergence = iter;
     }
     void KMeans::printClusters()  const
     {
@@ -170,12 +256,12 @@
     //     gp << "plot ";
     //     for (int i = 0; i < k; ++i)
     //     {
-    //         std::vector<std::pair<double, double>> pts;
+    //         std::vector<std::std::pair<double, double>> pts;
     //         for (Point p : points)
     //         {
     //             if (p.clusterId == i)
     //             {
-    //                 pts.emplace_back(std::make_pair(p.getFeature(0), p.getFeature(1)));
+    //                 pts.emplace_back(std::make_std::pair(p.getFeature(0), p.getFeature(1)));
     //             }
     //         }
     //         gp << "'-' with points pointtype 7 pointsize 1 lc rgb '" << colors[i % colors.size()] << "' title 'Cluster " << i + 1 << "'"; // Add a title to each plot command
@@ -188,20 +274,20 @@
     //     gp << "\n";
     //     for (int i = 0; i < k; ++i)
     //     {
-    //         std::vector<std::pair<double, double>> pts;
+    //         std::vector<std::std::pair<double, double>> pts;
     //         for (Point p : points)
     //         {
     //             if (p.clusterId == i)
     //             {
-    //                 pts.push_back(std::make_pair(p.getFeature(0), p.getFeature(1)));
+    //                 pts.push_back(std::make_std::pair(p.getFeature(0), p.getFeature(1)));
     //             }
     //         }
     //         gp.send1d(pts);
     //     }
-    //     std::vector<std::pair<double, double>> centroid_pts;
+    //     std::vector<std::std::pair<double, double>> centroid_pts;
     //     for (Point c : centroids)
     //     {
-    //         centroid_pts.push_back(std::make_pair(c.getFeature(0), c.getFeature(1)));
+    //         centroid_pts.push_back(std::make_std::pair(c.getFeature(0), c.getFeature(1)));
     //     }
     //     gp.send1d(centroid_pts);
     // }
@@ -209,4 +295,4 @@
     int KMeans::getNumberOfIterationForConvergence()
     {
         return numberOfIterationForConvergence;
-    }
+    } 

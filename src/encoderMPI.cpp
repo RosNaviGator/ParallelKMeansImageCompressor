@@ -8,6 +8,7 @@
 #include <sstream>
 #include <random>
 #include <thread>
+#include <memory>
 
 #include <chrono>
 
@@ -31,6 +32,7 @@ int main(int argc, char *argv[]) {
     std::string outputPath;
     int height;
     int width;
+    std::vector<std::pair<int, Point> > local_points;
 
      if(rank == 0)
     {
@@ -80,15 +82,16 @@ int main(int argc, char *argv[]) {
         width = image.cols;
         std::cout << "Creating the data structure..." << std::endl;
         std::vector<cv::Vec3b> pixels;
+        int id = 0;
         for(int y = 0 ; y < height ; y++)
         {
             for (int x = 0 ; x < width ; x++)
             {
                 pixels.emplace_back(image.at<cv::Vec3b>(y, x));
                 std::vector<double> rgb = {static_cast<double>(pixels.at(y * width + x)[0]), static_cast<double>(pixels.at(y * width + x)[1]), static_cast<double>(pixels.at(y * width + x)[2])};
-                int id = y * width + x;
                 Point pixel(id, rgb);
                 points.push_back(pixel);
+                id += 1;
             }
         }
         n_points = points.size();
@@ -104,7 +107,7 @@ int main(int argc, char *argv[]) {
         
         if (rank == 0)
         {
-            for (int j = 1; j < world_size; j++)
+            for (int j = 0; j < world_size; j++)
             {
                 if (i >= j*points_per_cluster && i <  (j + 1) * points_per_cluster)
                 {
@@ -114,42 +117,33 @@ int main(int argc, char *argv[]) {
                     MPI_Send(&points[i].getFeature(2), 1, MPI_DOUBLE, j, 4, MPI_COMM_WORLD);
                 }
             }
-        }else{
-            if(i >= rank*points_per_cluster && i <  (rank + 1) * points_per_cluster)
-            {
-                int id;
-                std::vector<double> rgb(3);
-                double r, g, b;
-                MPI_Recv(&id, 1, MPI_INT, 0, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-                MPI_Recv(&r, 1, MPI_DOUBLE, 0, 2, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-                MPI_Recv(&g, 1, MPI_DOUBLE, 0, 3, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-                MPI_Recv(&b, 1, MPI_DOUBLE, 0, 4, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-
-                rgb[0] = r;
-                rgb[1] = g;
-                rgb[2] = b;
-                Point pixel(id, rgb);
-                points.push_back(pixel);
-                
-            }
         }
+
+        if (i >= rank*points_per_cluster && i <  (rank + 1) * points_per_cluster)
+        {
+            int id;
+            std::vector<double> rgb(3);
+            double r, g, b;
+            MPI_Recv(&id, 1, MPI_INT, 0, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            MPI_Recv(&r, 1, MPI_DOUBLE, 0, 2, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            MPI_Recv(&g, 1, MPI_DOUBLE, 0, 3, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            MPI_Recv(&b, 1, MPI_DOUBLE, 0, 4, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+
+            rgb[0] = r;
+            rgb[1] = g;
+            rgb[2] = b;
+            Point pixel(id, rgb);
+            local_points.push_back({0,pixel});
+            
+        }
+    
     }
 
     // if (rank == 0)
     // {
     //     // Get the image dimensions
     //     if(rank == 0)
-    //     {
-    //         std::cout << "Creating the data structure..." << std::endl;
-    //     }
-    //     std::vector<cv::Vec3b> pixels;
-
-    //     for(int y = 0 ; y < height ; y++)
-    //     {
-    //         for (int x = 0 ; x < width ; x++)
-    //         {
-    //             pixels.emplace_back(image.at<cv::Vec3b>(y, x));
-    //             std::vector<double> rgb = {static_cast<double>(pixels.at(y * width + x)[0]), static_cast<double>(pixels.at(y * width + x)[1]), static_cast<double>(pixels.at(y * width + x)[2])};
+    //     {local_pointsor<double> rgb = {static_cast<double>(pixels.at(y * width + x)[0]), static_cast<double>(pixels.at(y * width + x)[1]), static_cast<double>(pixels.at(y * width + x)[2])};
     //             int id = y * width + x;
     //             Point pixel(id, rgb);
     //             points.push_back(pixel);
@@ -188,8 +182,17 @@ int main(int argc, char *argv[]) {
         std::cout << "Starting the Compression..." << std::endl;
     }
 
-    KMeans kmeans(k,rank,3, points);
-    kmeans.run(rank, world_size);
+    std::unique_ptr<KMeans> kmeans;
+
+
+
+    if (rank == 0)
+    {
+        kmeans = std::unique_ptr<KMeans>(new KMeans(k,rank,3, points));
+    }else{
+        kmeans = std::unique_ptr<KMeans>(new KMeans(k,rank,3));
+    }
+    kmeans->run(rank, world_size,local_points);
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end - start;
 
@@ -197,20 +200,22 @@ int main(int argc, char *argv[]) {
 
     if(rank == 0)
     {   
+        std::cout << "Compression done in "<< elapsed << std::endl;
         std::cout << std::endl;
         std::cout << "Saving the Compressed Image..." << std::endl;
         std::ofstream outputFile(outputPath, std::ios::app);
         outputFile  << width << ","<< height << "," << k << std::endl;
         for (int i = 0 ; i < k ; i++)
         {
-            outputFile << kmeans.getCentroids()[i].features[0];
+            Point centroid = kmeans->getCentroids()[i];
+            outputFile << centroid.features[0];
             outputFile << ",";
-            outputFile << kmeans.getCentroids()[i].features[1];
+            outputFile << centroid.features[1];
             outputFile << ",";
-            outputFile << kmeans.getCentroids()[i].features[2] << std::endl;
+            outputFile << centroid.features[2] << std::endl;
         }
 
-        for (Point &p : kmeans.getPoints())
+        for (Point &p : kmeans->getPoints())
         {
             outputFile << p.clusterId << std::endl;
         }    
@@ -232,7 +237,7 @@ int main(int argc, char *argv[]) {
         perfEval << "Image path: " << path << std::endl;
         perfEval << "Number of colors: " << k << std::endl;
         perfEval << "Number of points: " << points.size() << std::endl;
-        perfEval << "Number of iterations: " << kmeans.numberOfIterationForConvergence << std::endl;
+        perfEval << "Number of iterations: " << kmeans->numberOfIterationForConvergence << std::endl;
         perfEval << "Number of Processors: " << world_size << std::endl;
         perfEval << " ==>" << "Time: " << elapsed.count() << "s" << std::endl;
         perfEval << std::endl;

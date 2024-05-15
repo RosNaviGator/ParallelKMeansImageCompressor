@@ -9,6 +9,7 @@
 #include <random>
 #include <thread>
 #include <memory>
+#include <set>
 
 #include <chrono>
 
@@ -82,6 +83,7 @@ int main(int argc, char *argv[]) {
         width = image.cols;
         std::cout << "Creating the data structure..." << std::endl;
         std::vector<cv::Vec3b> pixels;
+        std::set < std::vector<double> > different_colors; 
         int id = 0;
         for(int y = 0 ; y < height ; y++)
         {
@@ -89,11 +91,15 @@ int main(int argc, char *argv[]) {
             {
                 pixels.emplace_back(image.at<cv::Vec3b>(y, x));
                 std::vector<double> rgb = {static_cast<double>(pixels.at(y * width + x)[0]), static_cast<double>(pixels.at(y * width + x)[1]), static_cast<double>(pixels.at(y * width + x)[2])};
+                different_colors.insert(rgb);
                 Point pixel(id, rgb);
                 points.push_back(pixel);
                 id += 1;
             }
         }
+        std::cout << "-----------------------------------------"<< std::endl;
+        std::cout << "Number of different colors in the image: " << different_colors.size() << std::endl;
+        std::cout << "-----------------------------------------"<< std::endl;
         n_points = points.size();
     }
     
@@ -143,7 +149,7 @@ int main(int argc, char *argv[]) {
             local_points.push_back({0,pixel});
             
         }
-        std::cout << "Rank: " << rank << " Start: " << start << " End: " << end << std::endl;
+        //std::cout << "Rank: " << rank << " Start: " << start << " End: " << end << std::endl;
     
     }
 
@@ -208,7 +214,7 @@ int main(int argc, char *argv[]) {
 
     if(rank == 0)
     {   
-        std::cout << "Compression done in "<< elapsed << std::endl;
+        std::cout << "Compression done in " << elapsed.count() << std::endl;
         std::cout << std::endl;
         std::cout << "Saving the Compressed Image..." << std::endl;
         std::ofstream outputFile(outputPath, std::ios::app);

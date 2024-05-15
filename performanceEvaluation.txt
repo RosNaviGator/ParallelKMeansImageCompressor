@@ -6094,3 +6094,47 @@ Number of Processors: 10
 
 
 
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 30
+Number of points: 262144
+Number of iterations: -924882144
+Number of Processors: 10
+ ==>Time: 91.2224s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: 1086492465
+Number of Processors: 10
+ ==>Time: 7.78109s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/perugia-1920x780.jpg
+Number of colors: 50
+Number of points: 1497600
+Number of iterations: -1107606276
+Number of Processors: 10
+ ==>Time: 301.641s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/perugia-1920x780.jpg
+Number of colors: 100
+Number of points: 1497600
+Number of iterations: -1980362296
+Number of Processors: 14
+ ==>Time: 568.001s
+
+
+

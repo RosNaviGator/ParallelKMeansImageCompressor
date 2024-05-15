@@ -19,7 +19,6 @@
 
 
 
-
 POSSIBLE MPI PARALLELIZATION
 In the context of the scikit-learn library, the KMeans class is used for performing k-means clustering.
 Let's discuss the two arguments you mentioned:
@@ -41,4 +40,11 @@ I = sum(points): { sum(clusters): (x_i,c_i)^2 } where x_i point value, c_i centr
 
 
 
+INDEPENDENT COLORS:
+another idea found online is to treat independently the colors, you find different centroids for different colors ( so clusters are different from color to color).
+At the end of the process we set each color to match the color of it's proper centroid (for that color), then you simply have RGB as a sum of values coming from different clustering.
 
+
+
+RANDOM SET PRECONDITIONING:
+what if we took a random set of points from the image, sparse, just a fraction of the starting ones, compute the kmeans and use the resulting centroids as starting centroids for the "big computation"

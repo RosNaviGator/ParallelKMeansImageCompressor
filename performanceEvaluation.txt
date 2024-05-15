@@ -5496,3 +5496,645 @@ Number of iterations: 693
 
 
 
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: 71
+ ==>Kmeans time: 9.56311s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: 71
+ ==>Kmeans time: 8.16792s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/lena-512x512.png
+Number of colors: 6
+Number of points: 262144
+Number of iterations: 63
+ ==>Kmeans time: 10.651s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/lena-512x512.png
+Number of colors: 6
+Number of points: 262144
+Number of iterations: 63
+ ==>Kmeans time: 8.717s
+
+
+
+./seqEncoder
+--------------------------------------
+Image path: ../benchmarkImages/lena-512x512.png
+Number of colors: 9
+Number of points: 262144
+Number of iterations: 49
+ ==>Kmeans time: 10.7584s
+
+
+
+./ompEncoder
+--------------------------------------
+Image path: ../benchmarkImages/lena-512x512.png
+Number of colors: 9
+Number of points: 262144
+Number of iterations: 49
+ ==>Kmeans time: 7.55565s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: 1592983330
+Number of Processors: 1
+ ==>Time: 0.880705s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: -1661434687
+Number of Processors: 1
+ ==>Time: 0.434834s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: -2107059240
+Number of Processors: 1
+ ==>Time: 0.468989s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: 891237622
+Number of Processors: 1
+ ==>Time: 0.564566s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: -1718518902
+Number of Processors: 1
+ ==>Time: 5.35074s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: 973627845
+Number of Processors: 1
+ ==>Time: 5.56102s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 20
+Number of points: 262144
+Number of iterations: -143286367
+Number of Processors: 1
+ ==>Time: 5.52404s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: -1938075112
+Number of Processors: 1
+ ==>Time: 1.79808s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: -1451395041
+Number of Processors: 1
+ ==>Time: 0.131373s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: -2029043115
+Number of Processors: 1
+ ==>Time: 6.35659s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 20
+Number of points: 262144
+Number of iterations: 1987613851
+Number of Processors: 1
+ ==>Time: 6.08295s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 20
+Number of points: 262144
+Number of iterations: -1314098657
+Number of Processors: 1
+ ==>Time: 0.897745s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 45
+Number of points: 262144
+Number of iterations: 1409188443
+Number of Processors: 1
+ ==>Time: 0.892097s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 789
+Number of points: 262144
+Number of iterations: -786190129
+Number of Processors: 1
+ ==>Time: 0.894408s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 89
+Number of points: 262144
+Number of iterations: -1069184244
+Number of Processors: 1
+ ==>Time: 18.2451s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 4
+Number of points: 262144
+Number of iterations: 132284456
+Number of Processors: 1
+ ==>Time: 3.56227s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 4
+Number of points: 262144
+Number of iterations: 131648107
+Number of Processors: 1
+ ==>Time: 0.740052s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 56
+Number of points: 262144
+Number of iterations: -1953370028
+Number of Processors: 1
+ ==>Time: 6.82648s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: 374502299
+Number of Processors: 1
+ ==>Time: 1.04895s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: -1947791271
+Number of Processors: 1
+ ==>Time: 1.04964s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: 992998202
+Number of Processors: 1
+ ==>Time: 7.64488s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: 648948073
+Number of Processors: 4
+ ==>Time: 6.75208s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: -1809553396
+Number of Processors: 1
+ ==>Time: 5.7432s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: 432753321
+Number of Processors: 4
+ ==>Time: 8.00663s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: 678945799
+Number of Processors: 1
+ ==>Time: 5.53815s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: -709729103
+Number of Processors: 4
+ ==>Time: 6.29605s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: -1587582176
+Number of Processors: 10
+ ==>Time: 7.59268s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: -1840345787
+Number of Processors: 4
+ ==>Time: 8.65516s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 5
+Number of points: 262144
+Number of iterations: 893660104
+Number of Processors: 4
+ ==>Time: 4.76499s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 5
+Number of points: 262144
+Number of iterations: 1031091567
+Number of Processors: 4
+ ==>Time: 4.83314s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 5
+Number of points: 262144
+Number of iterations: -1613270623
+Number of Processors: 4
+ ==>Time: 4.9011s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 5
+Number of points: 262144
+Number of iterations: 297757472
+Number of Processors: 10
+ ==>Time: 5.56237s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 5
+Number of points: 262144
+Number of iterations: -1019253984
+Number of Processors: 10
+ ==>Time: 5.55245s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 5
+Number of points: 262144
+Number of iterations: -834104357
+Number of Processors: 1
+ ==>Time: 7.03818s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 5
+Number of points: 262144
+Number of iterations: -789862624
+Number of Processors: 4
+ ==>Time: 5.0173s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 50
+Number of points: 262144
+Number of iterations: -215165736
+Number of Processors: 4
+ ==>Time: 70.8776s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 5
+Number of points: 262144
+Number of iterations: -1514181856
+Number of Processors: 10
+ ==>Time: 5.5331s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 50
+Number of points: 262144
+Number of iterations: 637496096
+Number of Processors: 10
+ ==>Time: 59.9491s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 50
+Number of points: 262144
+Number of iterations: -807441632
+Number of Processors: 14
+ ==>Time: 55.582s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 30
+Number of points: 262144
+Number of iterations: -64766136
+Number of Processors: 4
+ ==>Time: 97.8792s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: benchmarkImages/lena-512x512.png
+Number of colors: 30
+Number of points: 262144
+Number of iterations: -1753257184
+Number of Processors: 8
+ ==>Time: 88.9118s
+
+
+
+./build/seqEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 30
+Number of points: 262144
+Number of iterations: 386
+ ==>Kmeans time: 151.558s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 20
+Number of points: 262144
+Number of iterations: 979331872
+Number of Processors: 10
+ ==>Time: 16.2306s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 20
+Number of points: 262144
+Number of iterations: -553686240
+Number of Processors: 10
+ ==>Time: 17.9666s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 20
+Number of points: 262144
+Number of iterations: -1411421408
+Number of Processors: 10
+ ==>Time: 18.41s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: -75535584
+Number of Processors: 10
+ ==>Time: 8.54556s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: 304048928
+Number of Processors: 10
+ ==>Time: 8.66885s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: 899640096
+Number of Processors: 10
+ ==>Time: 8.85672s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 3
+Number of points: 262144
+Number of iterations: -448828640
+Number of Processors: 10
+ ==>Time: 9.88573s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 30
+Number of points: 262144
+Number of iterations: -924882144
+Number of Processors: 10
+ ==>Time: 91.2224s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/GitHub_leonardopagliochini/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 8
+Number of points: 262144
+Number of iterations: 1086492465
+Number of Processors: 10
+ ==>Time: 7.78109s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/perugia-1920x780.jpg
+Number of colors: 50
+Number of points: 1497600
+Number of iterations: -1107606276
+Number of Processors: 10
+ ==>Time: 301.641s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/perugia-1920x780.jpg
+Number of colors: 100
+Number of points: 1497600
+Number of iterations: -1980362296
+Number of Processors: 14
+ ==>Time: 568.001s
+
+
+

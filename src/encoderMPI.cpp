@@ -101,7 +101,7 @@ int main(int argc, char *argv[]) {
     MPI_Bcast(&n_points, 1, MPI_INT, 0, MPI_COMM_WORLD);
 
     int points_per_cluster = n_points / world_size;
-    
+
     for (int i = 0; i < n_points; i++)
     {
         
@@ -109,7 +109,10 @@ int main(int argc, char *argv[]) {
         {
             for (int j = 0; j < world_size; j++)
             {
-                if (i >= j*points_per_cluster && i <  (j + 1) * points_per_cluster)
+                int start = j * points_per_cluster;
+                int end = (j == world_size - 1) ? n_points : (j + 1) * points_per_cluster;
+
+                if (i >= start && i <  end)
                 {
                     MPI_Send(&i, 1, MPI_INT, j, 1, MPI_COMM_WORLD);
                     MPI_Send(&points[i].getFeature(0), 1, MPI_DOUBLE, j, 2, MPI_COMM_WORLD);
@@ -118,8 +121,12 @@ int main(int argc, char *argv[]) {
                 }
             }
         }
+        int start = rank * points_per_cluster;
+        int end = (rank == world_size - 1) ? n_points : (rank + 1) * points_per_cluster;
+        
 
-        if (i >= rank*points_per_cluster && i <  (rank + 1) * points_per_cluster)
+
+        if (i >= start && i <  end)
         {
             int id;
             std::vector<double> rgb(3);
@@ -136,6 +143,7 @@ int main(int argc, char *argv[]) {
             local_points.push_back({0,pixel});
             
         }
+        std::cout << "Rank: " << rank << " Start: " << start << " End: " << end << std::endl;
     
     }
 

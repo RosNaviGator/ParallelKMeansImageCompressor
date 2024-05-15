@@ -200,6 +200,10 @@
             }
 
             iter++;
+            if (rank == 0)
+            {
+                std::cout << "." << std::flush;
+            }
 
             for (int i = 0; i < k; ++i)
             {

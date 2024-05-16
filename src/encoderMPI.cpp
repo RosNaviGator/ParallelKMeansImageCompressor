@@ -218,22 +218,53 @@ int main(int argc, char *argv[]) {
         std::cout << std::endl;
         std::cout << "Saving the Compressed Image..." << std::endl;
         std::ofstream outputFile(outputPath, std::ios::app);
-        outputFile  << width << ","<< height << "," << k << std::endl;
-        for (int i = 0 ; i < k ; i++)
-        {
-            Point centroid = kmeans->getCentroids()[i];
-            outputFile << centroid.features[0];
-            outputFile << ",";
-            outputFile << centroid.features[1];
-            outputFile << ",";
-            outputFile << centroid.features[2] << std::endl;
+
+             std::cout << "Compression done in " << elapsed.count() << std::endl;
+        std::cout << std::endl;
+        std::cout << "Saving the Compressed Image..." << std::endl;
+        std::ofstream outputFile(outputPath, std::ios::app);
+
+        outputFile.write(reinterpret_cast<const char*>(&width), sizeof(width));
+        outputFile.write(reinterpret_cast<const char*>(&height), sizeof(height));
+        outputFile.write(reinterpret_cast<const char*>(&k), sizeof(k));
+
+        // Scrivi i centroidi
+        for (const Point& centroid : kmeans->getCentroids()) {
+            for (float feature : centroid.features) {
+                outputFile.write(reinterpret_cast<const char*>(&feature), sizeof(feature));
+            }
         }
 
-        for (Point &p : kmeans->getPoints())
+        // Determina il numero di bit necessari per rappresentare k colori
+        int bitsPerColor = std::ceil(std::log2(k));
+        int bytesPerColor = std::ceil(bitsPerColor / 8.0);
+        
+        // Scrivi i clusterId per ogni punto
+        for (const Point& p : points) 
         {
-            outputFile << p.clusterId << std::endl;
-        }    
+            uint32_t clusterId = p.clusterId;
+            outputFile.write(reinterpret_cast<const char*>(&clusterId), bytesPerColor);
+        }
 
+        // outputFile  << width << ","<< height << "," << k << std::endl;
+        // for (int i = 0 ; i < k ; i++)
+        // {
+        //     Point centroid = kmeans->getCentroids()[i];
+        //     outputFile << centroid.features[0];
+        //     outputFile << ",";
+        //     outputFile << centroid.features[1];
+        //     outputFile << ",";
+        //     outputFile << centroid.features[2] << std::endl;
+        // }
+
+        // for (Point &p : kmeans->getPoints())
+        // {
+        //     outputFile << p.clusterId << std::endl;
+        // }    
+
+        // cv::Mat imageCompressed = cv::Mat(height, width, CV_8UC3);
+        // for(int y = 0 ; y < height ; y++)
+      
         // cv::Mat imageCompressed = cv::Mat(height, width, CV_8UC3);
         // for(int y = 0 ; y < height ; y++)
         // {

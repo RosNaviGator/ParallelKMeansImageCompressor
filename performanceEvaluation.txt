@@ -6138,3 +6138,146 @@ Number of Processors: 14
 
 
 
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 8
+Number of points: 217872
+Number of iterations: -292655970
+Number of Processors: 4
+ ==>Time: 12.5979s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 8
+Number of points: 217872
+Number of iterations: -1926384159
+Number of Processors: 4
+ ==>Time: 12.9595s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 4
+Number of points: 217872
+Number of iterations: -60039282
+Number of Processors: 4
+ ==>Time: 1.71786s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 4
+Number of points: 217872
+Number of iterations: -2131809055
+Number of Processors: 4
+ ==>Time: 1.76297s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 4
+Number of points: 217872
+Number of iterations: 140782773
+Number of Processors: 4
+ ==>Time: 1.78838s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 4
+Number of points: 217872
+Number of iterations: -1197084889
+Number of Processors: 4
+ ==>Time: 1.71079s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 8
+Number of points: 217872
+Number of iterations: 657640797
+Number of Processors: 4
+ ==>Time: 13.1738s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 16
+Number of points: 217872
+Number of iterations: 790631640
+Number of Processors: 4
+ ==>Time: 10.4175s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 32
+Number of points: 217872
+Number of iterations: -1759094329
+Number of Processors: 4
+ ==>Time: 26.4619s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/piazzaDuomo-612x612.jpg
+Number of colors: 128
+Number of points: 217872
+Number of iterations: 701079663
+Number of Processors: 4
+ ==>Time: 50.5453s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/lena-512x512.png
+Number of colors: 64
+Number of points: 262144
+Number of iterations: -1503838678
+Number of Processors: 10
+ ==>Time: 169.371s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/leosFace-1272x1696.jpeg
+Number of colors: 64
+Number of points: 2157312
+Number of iterations: -676975144
+Number of Processors: 4
+ ==>Time: 115.22s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/perugia-1920x780.jpg
+Number of colors: 64
+Number of points: 1497600
+Number of iterations: -1371298121
+Number of Processors: 4
+ ==>Time: 448.002s
+
+
+

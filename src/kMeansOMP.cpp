@@ -64,15 +64,15 @@ void KMeans::run()
         // create a vector of k integers, all initialized to 0 for each centroid we'll count how many points are assigned to it
         counts = std::vector<int>(k, 0);
         // create a vect of k points, initialized with Point construtor
-        centroids = std::vector<Point>(k, Point(points[0].numberOfFeatures));
+        centroids = std::vector<Point>(k, Point(3));
 
         for (Point p : points) // loop through all points
         {
-            for (int i = 0; i < p.numberOfFeatures; ++i) // loop through all features of the current point
+            for (int i = 0; i < 3; ++i) // loop through all features of the current point
             {
                 // each feature of the current centroid for CURRENT POINT is "moved" by CURRENT POINT feature's value
                 // PARALLELIZATION NOTE: can't parallelize, concurrent write to same centroid
-                centroids[p.clusterId].setFeature(i, centroids[p.clusterId].getFeature(i) + p.getFeature(i));
+                centroids[p.clusterId].setFeature(i, static_cast<unsigned char>(centroids[p.clusterId].getFeature(i) + p.getFeature(i)));
             }
             counts[p.clusterId] += 1; // we count how many points
         }
@@ -82,10 +82,10 @@ void KMeans::run()
             #pragma omp for                    
             for (int i = 0; i < k; ++i) // loop through all centroids
             {
-                for (int j = 0; j < centroids[i].numberOfFeatures; ++j) // loop through all features of the current centroid
+                for (int j = 0; j < 3; ++j) // loop through all features of the current centroid
                 {
                     // we divide each feature of the current centroid by the number of points assigned to it
-                    centroids[i].setFeature(j, centroids[i].getFeature(j) / counts[i]);
+                    centroids[i].setFeature(j, static_cast<unsigned char>(centroids[i].getFeature(j) / counts[i]));
                 }
             }
         }
@@ -105,10 +105,10 @@ void KMeans::printClusters() const
             if (p.clusterId == i)
             {
                 std::cout << "Point " << p.id << ": (";
-                for (int j = 0; j < p.numberOfFeatures; ++j)
+                for (int j = 0; j < 3; ++j)
                 {
                     std::cout << p.getFeature(j);
-                    if (j < p.numberOfFeatures - 1)
+                    if (j < 3 - 1)
                         std::cout << ", ";
                 }
                 std::cout << ")" << std::endl;
@@ -119,7 +119,7 @@ void KMeans::printClusters() const
 
 void KMeans::plotClusters()
 {
-    if (centroids[0].numberOfFeatures != 2)
+    if (3 != 2)
     {
         std::cout << "Cannot plot clusters with more than 2 features" << std::endl;
         return;

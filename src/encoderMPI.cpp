@@ -10,8 +10,9 @@
 #include <thread>
 #include <memory>
 #include <set>
-
 #include <chrono>
+#include <cstdint>
+#include <zlib.h>
 
 #include <point.hpp>
 #include <kMeansMPI.hpp>
@@ -82,24 +83,24 @@ int main(int argc, char *argv[]) {
         height = image.rows;
         width = image.cols;
         std::cout << "Creating the data structure..." << std::endl;
-        std::vector<cv::Vec3b> pixels;
-        std::set < std::vector<double> > different_colors; 
+        //std::set < std::vector<unsigned char> > different_colors; 
         int id = 0;
         for(int y = 0 ; y < height ; y++)
         {
             for (int x = 0 ; x < width ; x++)
             {
-                pixels.emplace_back(image.at<cv::Vec3b>(y, x));
-                std::vector<double> rgb = {static_cast<double>(pixels.at(y * width + x)[0]), static_cast<double>(pixels.at(y * width + x)[1]), static_cast<double>(pixels.at(y * width + x)[2])};
-                different_colors.insert(rgb);
-                Point pixel(id, rgb);
-                points.push_back(pixel);
+                points.emplace_back(Point(id, {static_cast<unsigned char>(image.at<cv::Vec3b>(y, x)[0]), static_cast<unsigned char>(image.at<cv::Vec3b>(y, x)[1]), static_cast<unsigned char>(image.at<cv::Vec3b>(y, x)[2])}));
                 id += 1;
             }
         }
+
         std::cout << "-----------------------------------------"<< std::endl;
-        std::cout << "Number of different colors in the image: " << different_colors.size() << std::endl;
-        std::cout << "-----------------------------------------"<< std::endl;
+        // std::cout << "Number of different colors in the image: " << different_colors.size() << std::endl;
+        // std::cout << "-----------------------------------------"<< std::endl;
+
+        // different_colors.clear();
+
+
         n_points = points.size();
     }
     
@@ -135,8 +136,8 @@ int main(int argc, char *argv[]) {
         if (i >= start && i <  end)
         {
             int id;
-            std::vector<double> rgb(3);
-            double r, g, b;
+            std::vector<unsigned char> rgb(3);
+            unsigned char r, g, b;
             MPI_Recv(&id, 1, MPI_INT, 0, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             MPI_Recv(&r, 1, MPI_DOUBLE, 0, 2, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             MPI_Recv(&g, 1, MPI_DOUBLE, 0, 3, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
@@ -218,33 +219,60 @@ int main(int argc, char *argv[]) {
         std::cout << std::endl;
         std::cout << "Saving the Compressed Image..." << std::endl;
         std::ofstream outputFile(outputPath, std::ios::app);
+        std::vector<uint8_t> buffer;
 
-             std::cout << "Compression done in " << elapsed.count() << std::endl;
-        std::cout << std::endl;
-        std::cout << "Saving the Compressed Image..." << std::endl;
-        std::ofstream outputFile(outputPath, std::ios::app);
+        // Helper function to write data to buffer
+    auto writeToBuffer = [&buffer](const void* data, size_t size) {
+        const uint8_t* byteData = static_cast<const uint8_t*>(data);
+        buffer.insert(buffer.end(), byteData, byteData + size);
+    };
 
-        outputFile.write(reinterpret_cast<const char*>(&width), sizeof(width));
-        outputFile.write(reinterpret_cast<const char*>(&height), sizeof(height));
-        outputFile.write(reinterpret_cast<const char*>(&k), sizeof(k));
+    // Scrivi width, height e k
+    writeToBuffer(&width, sizeof(width));
+    writeToBuffer(&height, sizeof(height));
+    writeToBuffer(&k, sizeof(k));
 
-        // Scrivi i centroidi
-        for (const Point& centroid : kmeans->getCentroids()) {
-            for (float feature : centroid.features) {
-                outputFile.write(reinterpret_cast<const char*>(&feature), sizeof(feature));
-            }
-        }
-
-        // Determina il numero di bit necessari per rappresentare k colori
-        int bitsPerColor = std::ceil(std::log2(k));
-        int bytesPerColor = std::ceil(bitsPerColor / 8.0);
-        
-        // Scrivi i clusterId per ogni punto
-        for (const Point& p : points) 
+    // Scrivi i centroidi
+    for (const Point& centroid : kmeans->getCentroids()) 
+    {
+        for (float feature : centroid.features) 
         {
-            uint32_t clusterId = p.clusterId;
-            outputFile.write(reinterpret_cast<const char*>(&clusterId), bytesPerColor);
+            writeToBuffer(&feature, sizeof(feature));
         }
+    }
+
+    // Determina il numero di bit necessari per rappresentare k colori
+    int bitsPerColor = std::ceil(std::log2(k));
+    int bytesPerColor = (bitsPerColor + 7) / 8; // Arrotonda per eccesso
+
+    // Scrivi i clusterId per ogni punto usando il numero minimo di byte
+    for (Point &p : kmeans->getPoints()) 
+    {
+        uint32_t clusterId = p.clusterId;
+        for (int byte = 0; byte < bytesPerColor; ++byte) 
+        {
+            uint8_t currentByte = (clusterId >> (byte * 8)) & 0xFF;
+            writeToBuffer(&currentByte, sizeof(currentByte));
+        }
+    }
+
+    // Comprimi il buffer usando zlib
+    uLong sourceLen = buffer.size();
+    uLong destLen = compressBound(sourceLen);
+    std::cout << "SourceLen: " << sourceLen << std::endl;
+    std::vector<uint8_t> compressedData(destLen);
+
+    int result = compress(compressedData.data(), &destLen, buffer.data(), sourceLen);
+    if (result != Z_OK) 
+    {
+        std::cerr << "Compression failed with error code: " << result << std::endl;
+    }
+
+    // Ridimensiona il vettore al reale numero di byte compressi
+    compressedData.resize(destLen);
+
+    // Scrivi i dati compressi su file
+    outputFile.write(reinterpret_cast<const char*>(compressedData.data()), compressedData.size());
 
         // outputFile  << width << ","<< height << "," << k << std::endl;
         // for (int i = 0 ; i < k ; i++)

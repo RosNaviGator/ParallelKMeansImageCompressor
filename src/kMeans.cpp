@@ -44,10 +44,10 @@ void KMeans::run()
         }
 
         counts = std::vector<int>(k, 0);
-        centroids = std::vector<Point>(k, Point(points[0].numberOfFeatures));
+        centroids = std::vector<Point>(k, Point(3));
         for (Point p : points)
         {
-            for (int i = 0; i < p.numberOfFeatures; ++i)
+            for (int i = 0; i < 3; ++i)
             {
                 centroids[p.clusterId].setFeature(i, centroids[p.clusterId].getFeature(i) + p.getFeature(i));
             }
@@ -56,9 +56,9 @@ void KMeans::run()
 
         for (int i = 0; i < k; ++i)
         {
-            for (int j = 0; j < centroids[i].numberOfFeatures; ++j)
+            for (int j = 0; j < 3; ++j)
             {
-                centroids[i].setFeature(j, centroids[i].getFeature(j) / counts[i]);
+                centroids[i].setFeature(j, static_cast<unsigned char>(centroids[i].getFeature(j) / counts[i]));
             }
         }
 
@@ -78,10 +78,10 @@ void KMeans::printClusters() const
             if (p.clusterId == i)
             {
                 std::cout << "Point " << p.id << ": (";
-                for (int j = 0; j < p.numberOfFeatures; ++j)
+                for (int j = 0; j < 3; ++j)
                 {
                     std::cout << p.getFeature(j);
-                    if (j < p.numberOfFeatures - 1)
+                    if (j < 3 - 1)
                         std::cout << ", ";
                 }
                 std::cout << ")" << std::endl;
@@ -92,7 +92,7 @@ void KMeans::printClusters() const
 
 void KMeans::plotClusters()
 {
-    if (centroids[0].numberOfFeatures != 2)
+    if (3 != 2)
     {
         std::cout << "Cannot plot clusters with more than 2 features" << std::endl;
         return;

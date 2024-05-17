@@ -4,18 +4,21 @@ Point::Point(int features_size)
 {
     this->id = 0;
     this->clusterId = -1;
-    this->features = std::vector<double>(features_size, 0.0);
-    this->centroidFeatures = std::vector<double>(features_size, -1.0);
-    this->numberOfFeatures = features_size;
+    this->features = std::vector<unsigned char>(features_size, 0.0);
 }
 //Point::Point(const int& id, const double& x, const double& y) : id(id), x(x), y(y), clusterId(-1) /*, minDist(std::numeric_limits<double>::max())*/ {}
-Point::Point(const int& id, const std::vector<double>& coordinates)
+Point::Point(const int& id, const std::vector<unsigned char>& coordinates)
 {
     this->id = id;
     this->features = coordinates;
     this->clusterId = -1;
-    this->centroidFeatures = std::vector<double>(coordinates.size(), -1.0);
-    this->numberOfFeatures = coordinates.size();
+}
+
+Point::~Point() {
+    // Destructor code - std::vector automatically handles memory cleanup
+    features.clear();
+    // Use swap trick to ensure memory is released
+    std::vector<unsigned char>().swap(features);
 }
 
 double Point::distance(const Point& p) const
@@ -28,12 +31,12 @@ double Point::distance(const Point& p) const
     return sqrt(sum);
 }
 
-double& Point::getFeature(int index) 
+unsigned char& Point::getFeature(int index) 
 {
     return features[index];
 }
 
-void Point::setFeature(int index, double value)
+void Point::setFeature(int index, unsigned char value)
 {
     this->features[index] = value;
 }
@@ -42,7 +45,5 @@ void MPI_Bcast(Point& point, int count, MPI_Datatype datatype, int root, MPI_Com
 {
     MPI_Bcast(&point.id, 1, MPI_INT, root, communicator);
     MPI_Bcast(&point.clusterId, 1, MPI_INT, root, communicator);
-    MPI_Bcast(&point.numberOfFeatures, 1, MPI_INT, root, communicator);
     MPI_Bcast(point.features.data(), count, datatype, root, communicator);
-    MPI_Bcast(point.centroidFeatures.data(), count, datatype, root, communicator);
 }

@@ -159,7 +159,7 @@
                 
                 for (int i = 1; i < world_size; i++)
                 {
-                    std::vector<std::vector<double> > partial_sum_recived(k,{0.0,0.0,0.0});
+                    std::vector<std::vector<int> > partial_sum_recived(k,{0,0,0});
                     for (int j = 0 ; j < k ; ++j)
                     {
                         MPI_Recv(partial_sum_recived[j].data(), 3, MPI_DOUBLE, i, k*i+j, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
@@ -186,24 +186,22 @@
                 {
                     for (int j = 0 ; j < 3; j++)
                     {
-                        centroids[i].features[j] = partial_sum[i][j]/cluster_size[i];
+                        centroids[i].features[j] = static_cast<unsigned char>(partial_sum[i][j]/cluster_size[i]);
                     }
                 }
             }
 
             for (int i = 0; i < k; ++i)
             {
-                for (int j = 0; j < centroids[i].numberOfFeatures; ++j)
+                for (int j = 0; j < 3; ++j)
                 {
                     MPI_Bcast(&centroids[i].features[j], 1, MPI_DOUBLE, 0, MPI_COMM_WORLD);
                 }
             }
 
             iter++;
-            if (rank == 0)
-            {
-                std::cout << "." << std::flush;
-            }
+            
+            std::cout << "." << std::flush;
 
             for (int i = 0; i < k; ++i)
             {
@@ -225,10 +223,10 @@
                 if (p.clusterId == i)
                 {
                     std::cout << "Point " << p.id << ": (";
-                    for (int j = 0; j < p.numberOfFeatures; ++j)
+                    for (int j = 0; j < 3; ++j)
                     {
                         std::cout << p.getFeature(j);
-                        if (j < p.numberOfFeatures - 1)
+                        if (j < 3 - 1)
                             std::cout << ", ";
                     }
                     std::cout << ")"<< std::endl;

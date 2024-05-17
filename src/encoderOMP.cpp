@@ -157,16 +157,13 @@ int main(int argc, char *argv[])
     auto startPixels = std::chrono::high_resolution_clock::now();
 
     std::vector<cv::Vec3b> pixels;
-
+    int id = 0;
     for (int y = 0; y < height; y++)
     {
         for (int x = 0; x < width; x++)
         {
-            pixels.emplace_back(image.at<cv::Vec3b>(y, x));
-            std::vector<double> rgb = {static_cast<double>(pixels.at(y * width + x)[0]), static_cast<double>(pixels.at(y * width + x)[1]), static_cast<double>(pixels.at(y * width + x)[2])};
-            int id = y * width + x;
-            Point pixel(id, rgb);
-            points.push_back(pixel);
+            points.emplace_back(Point(id, {static_cast<unsigned char>(image.at<cv::Vec3b>(y, x)[0]), static_cast<unsigned char>(image.at<cv::Vec3b>(y, x)[1]), static_cast<unsigned char>(image.at<cv::Vec3b>(y, x)[2])}));
+            id += 1;
         }
     }
 

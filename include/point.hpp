@@ -11,20 +11,19 @@ class Point
 
 public:
     int id;
-    std::vector<double> features;
-    std::vector<double> centroidFeatures;
-    int numberOfFeatures;
+    std::vector<unsigned char> features;
     int clusterId;
     // double minDist;
 
     Point(int features_size);
-    Point(const int& id, const std::vector<double>& coordinates);
+    Point(const int& id, const std::vector<unsigned char>& coordinates);
+    ~Point(); // Destructor
     double distance(const Point& p) const;
 
     friend void MPI_Bcast(Point& point, int count, MPI_Datatype datatype, int root, MPI_Comm communicator);
 
-    double& getFeature(int index) ;
-    void setFeature(int index, double x);
+    unsigned char& getFeature(int index) ;
+    void setFeature(int index, unsigned char x);
 };
 
 

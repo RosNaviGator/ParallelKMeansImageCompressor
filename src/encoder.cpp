@@ -164,7 +164,7 @@ int main(int argc, char *argv[])
         for (int x = 0; x < width; x++)
         {
             pixels.emplace_back(image.at<cv::Vec3b>(y, x));
-            std::vector<double> rgb = {static_cast<double>(pixels.at(y * width + x)[0]), static_cast<double>(pixels.at(y * width + x)[1]), static_cast<double>(pixels.at(y * width + x)[2])};
+            std::vector<unsigned char> rgb = {static_cast<unsigned char>(pixels.at(y * width + x)[0]), static_cast<unsigned char>(pixels.at(y * width + x)[1]), static_cast<unsigned char>(pixels.at(y * width + x)[2])};
             int id = y * width + x;
             Point pixel(id, rgb);
             points.push_back(pixel);

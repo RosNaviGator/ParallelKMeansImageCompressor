@@ -218,6 +218,7 @@ int main(int argc, char *argv[]) {
         std::cout << std::endl;
         std::cout << "Saving the Compressed Image..." << std::endl;
         std::ofstream outputFile(outputPath, std::ios::app);
+        auto startcompression = std::chrono::high_resolution_clock::now();
         std::vector<uint8_t> buffer;
 
         // Helper function to write data to buffer
@@ -241,19 +242,27 @@ int main(int argc, char *argv[]) {
         }
     }
 
+    std::cout <<"writed centroids"<< std::endl;
+
     // Determina il numero di bit necessari per rappresentare k colori
     int bitsPerColor = std::ceil(std::log2(k));
     int bytesPerColor = (bitsPerColor + 7) / 8; // Arrotonda per eccesso
-
-    // Scrivi i clusterId per ogni punto usando il numero minimo di byte
-    for (Point &p : kmeans->getPoints()) 
+    int pointId = 0;
+    std::vector<Point> points = kmeans->getPoints();
+    while (pointId < n_points)
     {
-        uint32_t clusterId = p.clusterId;
-        for (int byte = 0; byte < bytesPerColor; ++byte) 
+        std::cout << "PointId: " << pointId << std::endl;
+        int pointId_start = pointId;
+        uint8_t clusterId = static_cast<uint8_t>(points[pointId_start].clusterId);
+        while(pointId < n_points && points[pointId].clusterId == clusterId && pointId - pointId_start < 254)
         {
-            uint8_t currentByte = (clusterId >> (byte * 8)) & 0xFF;
-            writeToBuffer(&currentByte, sizeof(currentByte));
+            ++pointId;
         }
+        uint8_t count = pointId - pointId_start;
+        std::cout << "ClusterId: " << static_cast<int>(clusterId)<< " Count: " << static_cast<int>(count) << std::endl;
+        writeToBuffer(&count, sizeof(count));
+        writeToBuffer(&clusterId, sizeof(clusterId));
+        std::cout << "cluster: " << clusterId << std::endl;
     }
 
     // Comprimi il buffer usando zlib
@@ -265,7 +274,7 @@ int main(int argc, char *argv[]) {
     int result = compress(compressedData.data(), &destLen, buffer.data(), sourceLen);
     if (result != Z_OK) 
     {
-        std::cerr << "Compression failed with error code: " << result << std::endl;
+        std::cerr << "Compression failed wpointIdith error code: " << result << std::endl;
     }
 
     // Ridimensiona il vettore al reale numero di byte compressi
@@ -273,6 +282,10 @@ int main(int argc, char *argv[]) {
 
     // Scrivi i dati compressi su file
     outputFile.write(reinterpret_cast<const char*>(compressedData.data()), compressedData.size());
+    auto endcompression = std::chrono::high_resolution_clock::now();
+
+    std::chrono::duration<double> elapsedcompression = endcompression - startcompression;
+    std::cout << "Compression done in " << elapsedcompression.count() << std::endl;
 
         // outputFile  << width << ","<< height << "," << k << std::endl;
         // for (int i = 0 ; i < k ; i++)

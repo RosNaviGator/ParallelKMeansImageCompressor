@@ -82,27 +82,26 @@ int main()
         clustersColors.push_back(features);
     }
 
-    for(int i = 0; i < k; i++)
-    {
-        std::cout << "Cluster " << i << ": (" << clustersColors.at(i).at(0) << ", " << clustersColors.at(i).at(1) << ", " << clustersColors.at(i).at(2) << ")" << std::endl;
-    }
-
     int bitsPerColor = std::ceil(std::log2(k));
 
     int bytesPerColor = (bitsPerColor + 7) / 8;
 
     int n_points = width * height;
 
-    for (int id = 0; id < n_points; ++id) 
+    int pointId = 0;
+
+    while (pointId < n_points) 
     {
-        uint32_t clusterId = 0;
-        for (int byte = 0; byte < bytesPerColor; ++byte) 
+        uint8_t counter;
+        uint8_t clusterId = 0;
+        readFromBuffer(&counter, sizeof(counter));
+        readFromBuffer(&clusterId, sizeof(clusterId));
+        std::cout << "Point " << pointId << " - Cluster " << static_cast<int>(clusterId) << " - Counter " << static_cast<int>(counter) << std::endl;
+        for (int i = 0; i < static_cast<int> (counter); ++i) 
         {
-            uint8_t currentByte;
-            readFromBuffer(&currentByte, sizeof(currentByte));
-            clusterId |= (currentByte << (byte * 8));
+            pixels.emplace_back(clustersColors.at(clusterId).at(0), clustersColors.at(clusterId).at(1), clustersColors.at(clusterId).at(2));
+            pointId++;
         }
-        pixels.emplace_back(clustersColors.at(clusterId).at(0), clustersColors.at(clusterId).at(1), clustersColors.at(clusterId).at(2));
     }
 
     cv::Mat imageCompressed = cv::Mat(height, width, CV_8UC3);

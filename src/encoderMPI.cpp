@@ -259,10 +259,8 @@ int main(int argc, char *argv[]) {
             ++pointId;
         }
         uint8_t count = pointId - pointId_start;
-        std::cout << "ClusterId: " << static_cast<int>(clusterId)<< " Count: " << static_cast<int>(count) << std::endl;
         writeToBuffer(&count, sizeof(count));
         writeToBuffer(&clusterId, sizeof(clusterId));
-        std::cout << "cluster: " << clusterId << std::endl;
     }
 
     // Comprimi il buffer usando zlib
@@ -279,6 +277,8 @@ int main(int argc, char *argv[]) {
 
     // Ridimensiona il vettore al reale numero di byte compressi
     compressedData.resize(destLen);
+
+    std::cout << "destLen: " << destLen << std::endl;
 
     // Scrivi i dati compressi su file
     outputFile.write(reinterpret_cast<const char*>(compressedData.data()), compressedData.size());

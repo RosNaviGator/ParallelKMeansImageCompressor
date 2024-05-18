@@ -49,7 +49,7 @@ void KMeans::run()
         {
             for (int i = 0; i < 3; ++i)
             {
-                centroids[p.clusterId].setFeature(i, centroids[p.clusterId].getFeature(i) + p.getFeature(i));
+                centroids[p.clusterId].setFeature(i, centroids[p.clusterId].getFeature_int(i) + p.getFeature_int(i));
             }
             counts[p.clusterId] += 1;
         }
@@ -58,7 +58,7 @@ void KMeans::run()
         {
             for (int j = 0; j < 3; ++j)
             {
-                centroids[i].setFeature(j, static_cast<unsigned char>(centroids[i].getFeature(j) / counts[i]));
+                centroids[i].setFeature(j,(centroids[i].getFeature_int(j) / counts[i]));
             }
         }
 

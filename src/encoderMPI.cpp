@@ -82,14 +82,13 @@ int main(int argc, char *argv[]) {
         std::cout<< "-------------------------" << path << std::endl;
         height = image.rows;
         width = image.cols;
-        std::cout << "Creating the data structure..." << std::endl;
         //std::set < std::vector<unsigned char> > different_colors; 
         int id = 0;
         for(int y = 0 ; y < height ; y++)
         {
             for (int x = 0 ; x < width ; x++)
             {
-                points.emplace_back(Point(id, {static_cast<unsigned char>(image.at<cv::Vec3b>(y, x)[0]), static_cast<unsigned char>(image.at<cv::Vec3b>(y, x)[1]), static_cast<unsigned char>(image.at<cv::Vec3b>(y, x)[2])}));
+                points.emplace_back(Point(id, {image.at<cv::Vec3b>(y, x)[0],image.at<cv::Vec3b>(y, x)[1],image.at<cv::Vec3b>(y, x)[2]}));
                 id += 1;
             }
         }
@@ -122,9 +121,9 @@ int main(int argc, char *argv[]) {
                 if (i >= start && i <  end)
                 {
                     MPI_Send(&i, 1, MPI_INT, j, 1, MPI_COMM_WORLD);
-                    MPI_Send(&points[i].getFeature(0), 1, MPI_DOUBLE, j, 2, MPI_COMM_WORLD);
-                    MPI_Send(&points[i].getFeature(1), 1, MPI_DOUBLE, j, 3, MPI_COMM_WORLD);
-                    MPI_Send(&points[i].getFeature(2), 1, MPI_DOUBLE, j, 4, MPI_COMM_WORLD);
+                    MPI_Send(&points[i].getFeature(0), 1, MPI_UNSIGNED_CHAR, j, 2, MPI_COMM_WORLD);
+                    MPI_Send(&points[i].getFeature(1), 1, MPI_UNSIGNED_CHAR, j, 3, MPI_COMM_WORLD);
+                    MPI_Send(&points[i].getFeature(2), 1, MPI_UNSIGNED_CHAR, j, 4, MPI_COMM_WORLD);
                 }
             }
         }
@@ -136,16 +135,16 @@ int main(int argc, char *argv[]) {
         if (i >= start && i <  end)
         {
             int id;
-            std::vector<unsigned char> rgb(3);
+            std::vector<int> rgb(3);
             unsigned char r, g, b;
             MPI_Recv(&id, 1, MPI_INT, 0, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-            MPI_Recv(&r, 1, MPI_DOUBLE, 0, 2, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-            MPI_Recv(&g, 1, MPI_DOUBLE, 0, 3, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-            MPI_Recv(&b, 1, MPI_DOUBLE, 0, 4, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            MPI_Recv(&r, 1, MPI_UNSIGNED_CHAR, 0, 2, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            MPI_Recv(&g, 1, MPI_UNSIGNED_CHAR, 0, 3, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            MPI_Recv(&b, 1, MPI_UNSIGNED_CHAR, 0, 4, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
-            rgb[0] = r;
-            rgb[1] = g;
-            rgb[2] = b;
+            rgb[0] = static_cast<int>(r);
+            rgb[1] = static_cast<int>(g);
+            rgb[2] = static_cast<int>(b);
             Point pixel(id, rgb);
             local_points.push_back({0,pixel});
             
@@ -233,10 +232,11 @@ int main(int argc, char *argv[]) {
     writeToBuffer(&k, sizeof(k));
 
     // Scrivi i centroidi
-    for (const Point& centroid : kmeans->getCentroids()) 
+    for (Point& centroid : kmeans->getCentroids()) 
     {
-        for (float feature : centroid.features) 
+        for (int i = 0; i < 3; ++i) 
         {
+            int feature = centroid.getFeature_int(i);
             writeToBuffer(&feature, sizeof(feature));
         }
     }

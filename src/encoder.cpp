@@ -164,7 +164,7 @@ int main(int argc, char *argv[])
         for (int x = 0; x < width; x++)
         {
             pixels.emplace_back(image.at<cv::Vec3b>(y, x));
-            std::vector<unsigned char> rgb = {static_cast<unsigned char>(pixels.at(y * width + x)[0]), static_cast<unsigned char>(pixels.at(y * width + x)[1]), static_cast<unsigned char>(pixels.at(y * width + x)[2])};
+            std::vector<int> rgb = {pixels.at(y * width + x)[0],pixels.at(y * width + x)[1],pixels.at(y * width + x)[2]};
             int id = y * width + x;
             Point pixel(id, rgb);
             points.push_back(pixel);
@@ -243,9 +243,9 @@ int main(int argc, char *argv[])
         {
             if (p.clusterId == i)
             {
-                newPixels.emplace_back(cv::Vec3b(static_cast<uchar>(kmeans.getCentroids()[i].features[0]),
-                                                 static_cast<uchar>(kmeans.getCentroids()[i].features[1]),
-                                                 static_cast<uchar>(kmeans.getCentroids()[i].features[2])));
+                newPixels.emplace_back(cv::Vec3b(static_cast<uchar>(kmeans.getCentroids()[i].getFeature(0)),
+                                                 static_cast<uchar>(kmeans.getCentroids()[i].getFeature(1)),
+                                                 static_cast<uchar>(kmeans.getCentroids()[i].getFeature(2))));
             }
         }
     }

@@ -1,49 +1,83 @@
 #include <point.hpp>
+#include <stdexcept>
 
 Point::Point(int features_size)
 {
     this->id = 0;
     this->clusterId = -1;
-    this->features = std::vector<unsigned char>(features_size, 0.0);
+    this->r = 0;
+    this->g = 0;
+    this->b = 0;
 }
 //Point::Point(const int& id, const double& x, const double& y) : id(id), x(x), y(y), clusterId(-1) /*, minDist(std::numeric_limits<double>::max())*/ {}
-Point::Point(const int& id, const std::vector<unsigned char>& coordinates)
+Point::Point(const int& id, const std::vector<int>& coordinates)
 {
     this->id = id;
-    this->features = coordinates;
+    this->r=static_cast<unsigned char>(coordinates[0]);
+    this->g=static_cast<unsigned char>(coordinates[1]);
+    this->b=static_cast<unsigned char>(coordinates[2]);
     this->clusterId = -1;
 }
 
-Point::~Point() {
-    // Destructor code - std::vector automatically handles memory cleanup
-    features.clear();
-    // Use swap trick to ensure memory is released
-    std::vector<unsigned char>().swap(features);
-}
-
-double Point::distance(const Point& p) const
-{    // Destructor code here
-    double sum = 0.0;
-    for (int i = 0; i < features.size(); ++i)
-    {
-        sum += (features[i] - p.features[i]) * (features[i] - p.features[i]);
-    }
-    return sqrt(sum);
+Point::~Point() 
+{
+    
 }
 
 unsigned char& Point::getFeature(int index) 
 {
-    return features[index];
+     switch (index) 
+     {
+        case 0:
+            return this->r;
+        case 1:
+            return this->g;
+        case 2:
+            return this->b;
+        default:
+            throw std::out_of_range("Index out of range");
+     }
 }
 
-void Point::setFeature(int index, unsigned char value)
+int Point::getFeature_int(int index) const
 {
-    this->features[index] = value;
+    switch (index) 
+    {
+        case 0:
+            return static_cast<int>(this->r);
+        case 1:
+            return static_cast<int>(this->g);
+        case 2:
+            return static_cast<int>(this->b);
+        default:
+            throw std::out_of_range("Index out of range");
+    }
+}
+
+double Point::distance(const Point& p) const
+{
+    double sum = 0.0;
+    sum += pow(static_cast<int>(r) - static_cast<int>(p.r), 2);
+    sum += pow(static_cast<int>(g) - static_cast<int>(p.g), 2);
+    sum += pow(static_cast<int>(b) - static_cast<int>(p.b), 2);
+    return sqrt(sum);
+}
+
+
+void Point::setFeature(int index, int value)
+{
+    if (index == 0)
+        this->r = static_cast<unsigned char>(value);
+    else if (index == 1)
+        this->g = static_cast<unsigned char>(value);
+    else if (index == 2)
+        this->b = static_cast<unsigned char>(value);
 }
 
 void MPI_Bcast(Point& point, int count, MPI_Datatype datatype, int root, MPI_Comm communicator)
 {
+    std::vector<unsigned char> features = {point.r, point.g, point.b};
     MPI_Bcast(&point.id, 1, MPI_INT, root, communicator);
     MPI_Bcast(&point.clusterId, 1, MPI_INT, root, communicator);
-    MPI_Bcast(point.features.data(), count, datatype, root, communicator);
+    MPI_Bcast(features.data(), count, datatype, root, communicator);
 }

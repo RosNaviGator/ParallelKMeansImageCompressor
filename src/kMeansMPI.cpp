@@ -31,9 +31,9 @@
 
         for(int i = 0; i < k; ++i)
         {
-            MPI_Bcast(&(centroids[i].features[0]), 1, MPI_DOUBLE, 0, MPI_COMM_WORLD);
-            MPI_Bcast(&(centroids[i].features[1]), 1, MPI_DOUBLE, 0, MPI_COMM_WORLD);
-            MPI_Bcast(&(centroids[i].features[2]), 1, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+            MPI_Bcast(&(centroids[i].getFeature(0)), 1, MPI_UNSIGNED_CHAR, 0, MPI_COMM_WORLD);
+            MPI_Bcast(&(centroids[i].getFeature(1)), 1, MPI_UNSIGNED_CHAR, 0, MPI_COMM_WORLD);
+            MPI_Bcast(&(centroids[i].getFeature(2)), 1, MPI_UNSIGNED_CHAR, 0, MPI_COMM_WORLD);
         }
         // std::cout << "staaart" << std::endl;
 
@@ -136,7 +136,7 @@
                     {
                         for (int x = 0 ; x < 3; x++)
                         {
-                            partial_sum[i][x] += local_points[j].second.getFeature(x);
+                            partial_sum[i][x] += local_points[j].second.getFeature_int(x);
                         }
                         cluster_size[i]++;
                     }
@@ -159,7 +159,7 @@
                 
                 for (int i = 1; i < world_size; i++)
                 {
-                    std::vector<std::vector<int> > partial_sum_recived(k,{0,0,0});
+                    std::vector<std::vector<double> > partial_sum_recived(k,{0.0,0.0,0.0});
                     for (int j = 0 ; j < k ; ++j)
                     {
                         MPI_Recv(partial_sum_recived[j].data(), 3, MPI_DOUBLE, i, k*i+j, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
@@ -186,22 +186,23 @@
                 {
                     for (int j = 0 ; j < 3; j++)
                     {
-                        centroids[i].features[j] = static_cast<unsigned char>(partial_sum[i][j]/cluster_size[i]);
+                        int  result = partial_sum[i][j]/cluster_size[i];
+                        centroids[i].setFeature(j,result);
                     }
                 }
             }
+
+
 
             for (int i = 0; i < k; ++i)
             {
                 for (int j = 0; j < 3; ++j)
                 {
-                    MPI_Bcast(&centroids[i].features[j], 1, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+                    MPI_Bcast(&centroids[i].getFeature(j), 1, MPI_UNSIGNED_CHAR, 0, MPI_COMM_WORLD);
                 }
             }
 
             iter++;
-            
-            std::cout << "." << std::flush;
 
             for (int i = 0; i < k; ++i)
             {
@@ -211,6 +212,7 @@
                     break;
                 }
             }
+            std::cout << "." << std::flush;
         }
     }
     void KMeans::printClusters()  const

@@ -65,17 +65,26 @@ int main()
     readFromBuffer(&height, sizeof(height));
     readFromBuffer(&k, sizeof(k));
 
-    std::vector<std::vector<float>> clustersColors;
+    std::cout << "Width: " << width << std::endl;
+    std::cout << "Height: " << height << std::endl;
+    std::cout << "Number of clusters: " << k << std::endl;
+
+    std::vector<std::vector<int>> clustersColors;
     std::vector<cv::Vec3b> pixels;
 
     for (int i = 0; i < k; ++i) 
     {
-        std::vector<float> features(3);
-        for (float& feature : features) 
+        std::vector<int> features(3);
+        for (int& feature : features) 
         {
             readFromBuffer(&feature, sizeof(feature));
         }
         clustersColors.push_back(features);
+    }
+
+    for(int i = 0; i < k; i++)
+    {
+        std::cout << "Cluster " << i << ": (" << clustersColors.at(i).at(0) << ", " << clustersColors.at(i).at(1) << ", " << clustersColors.at(i).at(2) << ")" << std::endl;
     }
 
     int bitsPerColor = std::ceil(std::log2(k));

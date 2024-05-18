@@ -6281,3 +6281,69 @@ Number of Processors: 4
 
 
 
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/perugia-1920x780.jpg
+Number of colors: 3
+Number of points: 1497600
+Number of iterations: 553550911
+Number of Processors: 4
+ ==>Time: 4.16341s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/perugia-1920x780.jpg
+Number of colors: 4
+Number of points: 1497600
+Number of iterations: -451221388
+Number of Processors: 4
+ ==>Time: 6.87914s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/perugia-1920x780.jpg
+Number of colors: 3
+Number of points: 1497600
+Number of iterations: -463532235
+Number of Processors: 4
+ ==>Time: 4.51587s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/perugia-1920x780.jpg
+Number of colors: 5
+Number of points: 1497600
+Number of iterations: -925215436
+Number of Processors: 4
+ ==>Time: 16.6655s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/perugia-1920x780.jpg
+Number of colors: 3
+Number of points: 1497600
+Number of iterations: -1048427734
+Number of Processors: 4
+ ==>Time: 3.7813s
+
+
+
+./build/mpiEncoder
+--------------------------------------
+Image path: /home/leo/ParallelKMeansImageCompressor/benchmarkImages/perugia-1920x780.jpg
+Number of colors: 64
+Number of points: 1497600
+Number of iterations: -1887062178
+Number of Processors: 4
+ ==>Time: 282.509s
+
+
+

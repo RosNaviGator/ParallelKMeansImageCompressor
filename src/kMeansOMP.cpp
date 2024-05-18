@@ -85,7 +85,7 @@ void KMeans::run()
                 for (int j = 0; j < 3; ++j) // loop through all features of the current centroid
                 {
                     // we divide each feature of the current centroid by the number of points assigned to it
-                    centroids[i].setFeature(j, static_cast<unsigned char>(centroids[i].getFeature(j) / counts[i]));
+                    centroids[i].setFeature(j,(centroids[i].getFeature_int(j) / counts[i]));
                 }
             }
         }

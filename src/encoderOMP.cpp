@@ -156,13 +156,12 @@ int main(int argc, char *argv[])
     std::cout << "Creating the data structure..." << std::endl;
     auto startPixels = std::chrono::high_resolution_clock::now();
 
-    std::vector<cv::Vec3b> pixels;
     int id = 0;
     for (int y = 0; y < height; y++)
     {
         for (int x = 0; x < width; x++)
         {
-            points.emplace_back(Point(id, {static_cast<unsigned char>(image.at<cv::Vec3b>(y, x)[0]), static_cast<unsigned char>(image.at<cv::Vec3b>(y, x)[1]), static_cast<unsigned char>(image.at<cv::Vec3b>(y, x)[2])}));
+            points.emplace_back(Point(id, {image.at<cv::Vec3b>(y, x)[0],image.at<cv::Vec3b>(y, x)[1], image.at<cv::Vec3b>(y, x)[2]}));
             id += 1;
         }
     }
@@ -240,9 +239,9 @@ int main(int argc, char *argv[])
         {
             if (p.clusterId == i)
             {
-                newPixels.emplace_back(cv::Vec3b(static_cast<uchar>(kmeans.getCentroids()[i].features[0]),
-                                                 static_cast<uchar>(kmeans.getCentroids()[i].features[1]),
-                                                 static_cast<uchar>(kmeans.getCentroids()[i].features[2])));
+                newPixels.emplace_back(cv::Vec3b(static_cast<uchar>(kmeans.getCentroids()[i].getFeature(0)),
+                                                 static_cast<uchar>(kmeans.getCentroids()[i].getFeature(1)),
+                                                 static_cast<uchar>(kmeans.getCentroids()[i].getFeature(2))));
             }
         }
     }

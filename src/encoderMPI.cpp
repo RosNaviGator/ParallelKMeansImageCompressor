@@ -241,9 +241,8 @@ int main(int argc, char *argv[]) {
         {
             for (int i = 0; i < 3; ++i) 
             {
-                int feature = centroid.getFeature_int(i);
-                writeToBuffer(&feature, sizeof(feature));
-            }
+                int feature = centroid.getFeature(i);
+                writeToBuffer(&feature, sizeof(feature))
         }
 
         std::cout <<"writed centroids"<< std::endl;
@@ -255,7 +254,6 @@ int main(int argc, char *argv[]) {
         std::vector<Point> points = kmeans->getPoints();
         while (pointId < n_points)
         {
-            std::cout << "PointId: " << pointId << std::endl;
             int pointId_start = pointId;
             uint8_t clusterId = static_cast<uint8_t>(points[pointId_start].clusterId);
             while(pointId < n_points && points[pointId].clusterId == clusterId && pointId - pointId_start < 254)
@@ -265,10 +263,13 @@ int main(int argc, char *argv[]) {
             uint8_t count = pointId - pointId_start;
             writeToBuffer(&count, sizeof(count));
             writeToBuffer(&clusterId, sizeof(clusterId));
+
         }
 
         // Scrivi i dati compressi su file
+        
         //outputFile.write(reinterpret_cast<const char*>(compressedData.data()), compressedData.size());
+        std::cout << "buffer size: " << buffer.size() << std::endl;
         outputFile.write(reinterpret_cast<const char*>(buffer.data()), buffer.size());
         auto endcompression = std::chrono::high_resolution_clock::now();
 

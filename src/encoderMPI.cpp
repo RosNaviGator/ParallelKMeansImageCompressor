@@ -202,121 +202,79 @@ int main(int argc, char *argv[]) {
 
     if (rank == 0)
     {
-        kmeans = std::unique_ptr<KMeans>(new KMeans(k,rank,3, points));
-    }else{
-        kmeans = std::unique_ptr<KMeans>(new KMeans(k,rank,3));
-    }
-    kmeans->run(rank, world_size,local_points);
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> elapsed = end - start;
-
-    // Display the image
-
-    if(rank == 0)
-    {   
-        std::cout << "Compression done in " << elapsed.count() << std::endl;
-        std::cout << std::endl;
-        std::cout << "Saving the Compressed Image..." << std::endl;
-        std::ofstream outputFile(outputPath, std::ios::app);
-        auto startcompression = std::chrono::high_resolution_clock::now();
-        std::vector<uint8_t> buffer;
-
-        // Helper function to write data to buffer
-    auto writeToBuffer = [&buffer](const void* data, size_t size) {
-        const uint8_t* byteData = static_cast<const uint8_t*>(data);
-        buffer.insert(buffer.end(), byteData, byteData + size);
-    };
-
-    // Scrivi width, height e k
-    writeToBuffer(&width, sizeof(width));
-    writeToBuffer(&height, sizeof(height));
-    writeToBuffer(&k, sizeof(k));
-
-    // Scrivi i centroidi
-    for (Point& centroid : kmeans->getCentroids()) 
-    {
-        for (int i = 0; i < 3; ++i) 
-        {
-            int feature = centroid.getFeature_int(i);
-            writeToBuffer(&feature, sizeof(feature));
+            kmeans = std::unique_ptr<KMeans>(new KMeans(k,rank,3, points));
+        }else{
+            kmeans = std::unique_ptr<KMeans>(new KMeans(k,rank,3));
         }
-    }
+        kmeans->run(rank, world_size,local_points);
+        auto end = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double> elapsed = end - start;
 
-    std::cout <<"writed centroids"<< std::endl;
+        // Display the image
 
-    // Determina il numero di bit necessari per rappresentare k colori
-    int bitsPerColor = std::ceil(std::log2(k));
-    int bytesPerColor = (bitsPerColor + 7) / 8; // Arrotonda per eccesso
-    int pointId = 0;
-    std::vector<Point> points = kmeans->getPoints();
-    while (pointId < n_points)
-    {
-        std::cout << "PointId: " << pointId << std::endl;
-        int pointId_start = pointId;
-        uint8_t clusterId = static_cast<uint8_t>(points[pointId_start].clusterId);
-        while(pointId < n_points && points[pointId].clusterId == clusterId && pointId - pointId_start < 254)
+        if(rank == 0)
+        {   
+            std::cout << "Compression done in " << elapsed.count() << std::endl;
+            std::cout << std::endl;
+            std::cout << "Saving the Compressed Image..." << std::endl;
+            std::ofstream outputFile(outputPath, std::ios::app);
+            auto startcompression = std::chrono::high_resolution_clock::now();
+            std::vector<uint8_t> buffer;
+
+            // Helper function to write data to buffer
+        auto writeToBuffer = [&buffer](const void* data, size_t size) {
+            const uint8_t* byteData = static_cast<const uint8_t*>(data);
+            buffer.insert(buffer.end(), byteData, byteData + size);
+        };
+
+        u_int16_t width16bit = static_cast<u_int16_t>(width);
+        u_int16_t height16bit = static_cast<u_int16_t>(height);
+        u_int16_t k16bit = static_cast<u_int16_t>(k);
+
+        // Scrivi width, height e k
+        writeToBuffer(&width16bit, sizeof(width16bit));
+        writeToBuffer(&height16bit, sizeof(height16bit));
+        writeToBuffer(&k16bit, sizeof(k16bit));
+
+        // Scrivi i centroidi
+        for (Point& centroid : kmeans->getCentroids()) 
         {
-            ++pointId;
+            for (int i = 0; i < 3; ++i) 
+            {
+                int feature = centroid.getFeature_int(i);
+                writeToBuffer(&feature, sizeof(feature));
+            }
         }
-        uint8_t count = pointId - pointId_start;
-        writeToBuffer(&count, sizeof(count));
-        writeToBuffer(&clusterId, sizeof(clusterId));
-    }
 
-    // Comprimi il buffer usando zlib
-    uLong sourceLen = buffer.size();
-    uLong destLen = compressBound(sourceLen);
-    std::cout << "SourceLen: " << sourceLen << std::endl;
-    std::vector<uint8_t> compressedData(destLen);
+        std::cout <<"writed centroids"<< std::endl;
 
-    int result = compress(compressedData.data(), &destLen, buffer.data(), sourceLen);
-    if (result != Z_OK) 
-    {
-        std::cerr << "Compression failed wpointIdith error code: " << result << std::endl;
-    }
+        // Determina il numero di bit necessari per rappresentare k colori
+        int bitsPerColor = std::ceil(std::log2(k));
+        int bytesPerColor = (bitsPerColor + 7) / 8; // Arrotonda per eccesso
+        int pointId = 0;
+        std::vector<Point> points = kmeans->getPoints();
+        while (pointId < n_points)
+        {
+            std::cout << "PointId: " << pointId << std::endl;
+            int pointId_start = pointId;
+            uint8_t clusterId = static_cast<uint8_t>(points[pointId_start].clusterId);
+            while(pointId < n_points && points[pointId].clusterId == clusterId && pointId - pointId_start < 254)
+            {
+                ++pointId;
+            }
+            uint8_t count = pointId - pointId_start;
+            writeToBuffer(&count, sizeof(count));
+            writeToBuffer(&clusterId, sizeof(clusterId));
+        }
 
-    // Ridimensiona il vettore al reale numero di byte compressi
-    compressedData.resize(destLen);
+        // Scrivi i dati compressi su file
+        //outputFile.write(reinterpret_cast<const char*>(compressedData.data()), compressedData.size());
+        outputFile.write(reinterpret_cast<const char*>(buffer.data()), buffer.size());
+        auto endcompression = std::chrono::high_resolution_clock::now();
 
-    std::cout << "destLen: " << destLen << std::endl;
-
-    // Scrivi i dati compressi su file
-    outputFile.write(reinterpret_cast<const char*>(compressedData.data()), compressedData.size());
-    auto endcompression = std::chrono::high_resolution_clock::now();
-
-    std::chrono::duration<double> elapsedcompression = endcompression - startcompression;
-    std::cout << "Compression done in " << elapsedcompression.count() << std::endl;
-
-        // outputFile  << width << ","<< height << "," << k << std::endl;
-        // for (int i = 0 ; i < k ; i++)
-        // {
-        //     Point centroid = kmeans->getCentroids()[i];
-        //     outputFile << centroid.features[0];
-        //     outputFile << ",";
-        //     outputFile << centroid.features[1];
-        //     outputFile << ",";
-        //     outputFile << centroid.features[2] << std::endl;
-        // }
-
-        // for (Point &p : kmeans->getPoints())
-        // {
-        //     outputFile << p.clusterId << std::endl;
-        // }    
-
-        // cv::Mat imageCompressed = cv::Mat(height, width, CV_8UC3);
-        // for(int y = 0 ; y < height ; y++)
-      
-        // cv::Mat imageCompressed = cv::Mat(height, width, CV_8UC3);
-        // for(int y = 0 ; y < height ; y++)
-        // {
-        //     for (int x = 0 ; x < width ; x++)
-        //     {
-        //         imageCompressed.at<cv::Vec3b>(y, x) = pixels.at(y * width + x);
-        //     }
-        // }
-        // std::string outputPath = "outputImages/imageCompressed_" + std::to_string(k) + "_colors.jpg";
-        // cv::imwrite(outputPath, imageCompressed);
-
+        std::chrono::duration<double> elapsedcompression = endcompression - startcompression;
+        std::cout << "Compression done in " << elapsedcompression.count() << std::endl;
+    
         std::ofstream perfEval("performanceEvaluation.txt", std::ios::app);
         perfEval << argv[0] << std::endl;
         perfEval << "--------------------------------------"<< std::endl;

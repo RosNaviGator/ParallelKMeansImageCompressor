@@ -39,18 +39,7 @@ int main()
         return 1;
     }
     
-    std::vector<uint8_t> compressedData((std::istreambuf_iterator<char>(inputFile)), std::istreambuf_iterator<char>());
-
-    uLong destLen = 100000000; // You may need to adjust this value
-    std::vector<uint8_t> buffer(destLen);
-
-    int result = uncompress(buffer.data(), &destLen, compressedData.data(), compressedData.size());
-    if (result != Z_OK) {
-        std::cerr << "Decompression failed with error code: " << result << std::endl;
-        return 2;
-    }
-
-    buffer.resize(destLen);
+    std::vector<uint8_t> buffer((std::istreambuf_iterator<char>(inputFile)), std::istreambuf_iterator<char>());
 
     size_t pos = 0;
     auto readFromBuffer = [&buffer, &pos] (void* data, size_t size)
@@ -60,12 +49,12 @@ int main()
     pos += size;
     };
 
-    int width, height, k;
+    uint16_t width, height, k;
     readFromBuffer(&width, sizeof(width));
     readFromBuffer(&height, sizeof(height));
     readFromBuffer(&k, sizeof(k));
 
-    std::cout << "Width: " << width << std::endl;
+    std::cout << "Width: " << static_cast<int> (width) << std::endl;
     std::cout << "Height: " << height << std::endl;
     std::cout << "Number of clusters: " << k << std::endl;
 

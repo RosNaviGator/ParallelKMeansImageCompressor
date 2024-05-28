@@ -1,6 +1,6 @@
 #include <kMeansOMP.hpp>
 
-KMeans::KMeans(const int& k, const std::vector<Point> points) : k(k), points(points), gp("gnuplot -persist")
+KMeans::KMeans(const int& k, const std::vector<Point> points) : k(k), points(points)
 {
     int size = points.size();
     std::random_device rd;                            // Initialize a random device
@@ -18,16 +18,17 @@ void KMeans::run()
     bool change = true; // boolean initialize to true (change=true loop continues)
     int iter = 0;
     int iter_max = 1000;  // max number of iterations
-    std::vector<int> counts(k, 0);
+    
     while (change && iter < iter_max)
     {
+        std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
+        std::vector<int> counts(k, 0);
         change = false; 
         // if no point will change this to true, no point has changed centroid
         // we break the while, kmeans is done
         // --------------------------------------------
-
+        counts = std::vector<int>(k, 0);
         #pragma omp parallel 
-        
         {
             #pragma omp for
             for (Point &p : points) // loop through all points
@@ -56,114 +57,49 @@ void KMeans::run()
                     p.clusterId = nearest;
                     change = true;  // boolean: mark that change happened
                 }
+
+                
             }
-
-        }
-
-        
-        // create a vector of k integers, all initialized to 0 for each centroid we'll count how many points are assigned to it
-        counts = std::vector<int>(k, 0);
-        // create a vect of k points, initialized with Point construtor
-        centroids = std::vector<Point>(k, Point(points[0].numberOfFeatures));
-
-        for (Point p : points) // loop through all points
-        {
-            for (int i = 0; i < p.numberOfFeatures; ++i) // loop through all features of the current point
+            #pragma omp master
             {
-                // each feature of the current centroid for CURRENT POINT is "moved" by CURRENT POINT feature's value
-                // PARALLELIZATION NOTE: can't parallelize, concurrent write to same centroid
-                centroids[p.clusterId].setFeature(i, centroids[p.clusterId].getFeature(i) + p.getFeature(i));
-            }
-            counts[p.clusterId] += 1; // we count how many points
-        }
+                std::vector<std::vector<double> > partial_sum(k, {0.0,0.0,0.0});
+                std::vector<int> cluster_size(k,0);
 
-        #pragma omp parallel
-        {
-            #pragma omp for                    
-            for (int i = 0; i < k; ++i) // loop through all centroids
-            {
-                for (int j = 0; j < centroids[i].numberOfFeatures; ++j) // loop through all features of the current centroid
+                for (int i = 0 ; i < k ; ++i)
                 {
-                    // we divide each feature of the current centroid by the number of points assigned to it
-                    centroids[i].setFeature(j, centroids[i].getFeature(j) / counts[i]);
+                    for (int j = 0 ; j < points.size(); j++)
+                    {
+                        if(points[j].clusterId == i)
+                        {
+                            for (int x = 0 ; x < 3; x++)
+                            {
+                                partial_sum[i][x] += points[j].getFeature_int(x);
+                            }
+                            cluster_size[i]++;
+                        }
+                    }
                 }
+
+                for (int i = 0 ; i < k ; ++i)
+                {
+                    for (int j = 0 ; j < 3; j++)
+                    {
+                        int  result = partial_sum[i][j]/cluster_size[i];
+                        centroids[i].setFeature(j,result);
+                    }
+                }
+               
             }
         }
-        std::cout << "." << std::flush;
         iter++;
+        #pragma omp master 
+        {
+            std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
+            std::cout << "Iteration " << iter << " completed in " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() << "ms" << std::endl;
+        }
+        
     }
     numberOfIterationForConvergence = iter;
-}
-
-void KMeans::printClusters() const
-{
-    for (int i = 0; i < k; ++i)
-    {
-        std::cout << "Cluster " << i + 1 << ":\n";
-        for (Point p : points)
-        {
-            if (p.clusterId == i)
-            {
-                std::cout << "Point " << p.id << ": (";
-                for (int j = 0; j < p.numberOfFeatures; ++j)
-                {
-                    std::cout << p.getFeature(j);
-                    if (j < p.numberOfFeatures - 1)
-                        std::cout << ", ";
-                }
-                std::cout << ")" << std::endl;
-            }
-        }
-    }
-}
-
-void KMeans::plotClusters()
-{
-    if (centroids[0].numberOfFeatures != 2)
-    {
-        std::cout << "Cannot plot clusters with more than 2 features" << std::endl;
-        return;
-    }
-    gp << "set xrange [20:70]\nset yrange [0:30]\n";
-    gp << "set key outside\n"; // Add this line to place the legend outside the plot
-    std::vector<std::string> colors = {"red", "blue", "green", "brown", "purple", "orange", "cyan", "violet"};
-    gp << "plot ";
-    for (int i = 0; i < k; ++i)
-    {
-        std::vector<std::pair<double, double>> pts;
-        for (Point p : points)
-        {
-            if (p.clusterId == i)
-            {
-                pts.emplace_back(std::make_pair(p.getFeature(0), p.getFeature(1)));
-            }
-        }
-        gp << "'-' with points pointtype 7 pointsize 1 lc rgb '" << colors[i % colors.size()] << "' title 'Cluster " << i + 1 << "'"; // Add a title to each plot command
-        if (i < k - 1)
-        {
-            gp << ", ";
-        }
-    }
-    gp << ", '-' with points pointtype 7 pointsize 2 lc rgb 'black' title 'Centroids'"; // Add a title to the centroids \ command
-    gp << "\n";
-    for (int i = 0; i < k; ++i)
-    {
-        std::vector<std::pair<double, double>> pts;
-        for (Point p : points)
-        {
-            if (p.clusterId == i)
-            {
-                pts.push_back(std::make_pair(p.getFeature(0), p.getFeature(1)));
-            }
-        }
-        gp.send1d(pts);
-    }
-    std::vector<std::pair<double, double>> centroid_pts;
-    for (Point c : centroids)
-    {
-        centroid_pts.push_back(std::make_pair(c.getFeature(0), c.getFeature(1)));
-    }
-    gp.send1d(centroid_pts);
 }
 
 std::vector<Point> KMeans::getCentroids()

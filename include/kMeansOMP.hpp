@@ -6,7 +6,6 @@
 #include <omp.h>
 
 #include <thread>
-#include "gnuplot-iostream.h"
 #include "point.hpp"
 
 
@@ -17,7 +16,6 @@ public:
     KMeans(const int& k, const std::vector<Point> points);
 
     void run();
-    void printClusters() const;
     void plotClusters();
     std::vector<Point> getPoints();
     std::vector<Point> getCentroids();
@@ -27,7 +25,6 @@ private:
     int k;
     std::vector<Point> points;
     std::vector<Point> centroids;
-    Gnuplot gp;
 };
 
 

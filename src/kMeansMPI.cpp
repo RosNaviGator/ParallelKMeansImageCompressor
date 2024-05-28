@@ -1,14 +1,17 @@
 #include <kMeansMPI.hpp>
+#include <algorithm>
+#include <chrono>
 
-    KMeans::KMeans(const int& k, const int& rank, const int& n_features)
+    KMeans::KMeans(const int& k, const int& rank, const int& n_features, const int& batch_size)
     {
         this->k = k;
-        this->centroids = std::vector<Point>(k, Point(n_features));     
-        
+        this->centroids = std::vector<Point>(k, Point(n_features));
+        this->batch_size = batch_size;
     }
-    KMeans::KMeans(const int& k, const int& rank, const int& n_features,  const std::vector<Point> points) : points(points) {
+    KMeans::KMeans(const int& k, const int& rank, const int& n_features,  const std::vector<Point> points, const int& batch_size) : points(points) {
         
         this->k = k;
+        this -> batch_size = batch_size;
         centroids = std::vector<Point>(k, Point(n_features));     
         int size = points.size();
         std::random_device rd;                              // Initialize a random device
@@ -27,7 +30,7 @@
         bool changed = true;
         int iter = 0;
         int iter_max = 1000;
-        
+        std::vector<int> changed_points(world_size, 0);
 
         for(int i = 0; i < k; ++i)
         {
@@ -39,12 +42,12 @@
 
         while (iter < iter_max && changed)
         {
-            std::vector<int> changed_points(world_size, 0);
+            std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
+            std::fill(changed_points.begin(), changed_points.end(), 0);
             changed = false;
             for(auto& p : local_points)
             {
                 //std::cout << "point " << p.second.id << " clusterId " << p.second.clusterId << std::endl;
-                p.first = 0;
                 double minDist = std::numeric_limits<double>::max();
                 for (int i = 0; i < k; ++i)
                 {
@@ -63,6 +66,7 @@
                     }
                 }
             }
+
             for (int i = 0 ; i < local_points.size(); i++)
             {
                 changed_points[rank] += local_points[i].first;
@@ -83,43 +87,86 @@
                 changed_points[i] = changed_points[i]*2 + changed_points[i-1];
             }
             // std::cout << "-------------- LEO DEBUGGER ----------------"<< std::endl;
-            int comm_counter = changed_points[rank];
 
-            // changed_poits[wordrank] ha il numero totale di comunicazioni che devono essere eseguite 
-            // Possiamo usarlo per dichiarare l'MPI_Request
-            int num_operations = changed_points[world_size];
+             auto maxSequentialDifference = [&changed_points]() 
+             {
 
-            for (int i = 0 ; i < local_points.size(); i++)
-            {
-                if(local_points[i].first == 1)
-                {
-                    MPI_Send(&local_points[i].second.id, 1, MPI_INT, 0, comm_counter, MPI_COMM_WORLD);
-                    MPI_Send(&local_points[i].second.clusterId, 1, MPI_INT, 0, comm_counter + 1, MPI_COMM_WORLD);
+                int maxDiff = 0;
+                std::for_each(changed_points.begin() + 1, changed_points.end(), [&](int curr) {
+                    static int prev = changed_points[0];
+                    maxDiff = std::max(maxDiff, std::abs(curr - prev));
+                    prev = curr; 
+                });
 
-                    comm_counter += 2;
-                }
-                // std::cout << "ultimo valore di comm_counter per rank " << rank << " è " << comm_counter + 1 << std::endl;
-            }
+                return maxDiff;
+            };
+
             
+            int maxNumOfChanges = maxSequentialDifference();
+            int num_of_batches = maxNumOfChanges / batch_size;
+            int batch_counter = 0;
+            int comm_counter = 0;
+
+            while (batch_counter <= num_of_batches)
+            {
+                comm_counter = rank * batch_size;
+                int communications_done = 0;
+                if (rank != 0)
+                {
+                    for (int i = 0 ; i < local_points.size() && communications_done < batch_size; i++)
+                    {
+                        if(local_points[i].first == 1)
+                        {
+                            MPI_Send(&local_points[i].second.id, 1, MPI_INT, 0, comm_counter, MPI_COMM_WORLD);
+                            MPI_Send(&local_points[i].second.clusterId, 1, MPI_INT, 0, comm_counter + 1, MPI_COMM_WORLD);
+
+                            local_points[i].first = 0;
+
+                            comm_counter += 2;
+                            communications_done += 2;
+                        }
+                        // std::cout << "ultimo valore di comm_counter per rank " << rank << " è " << comm_counter + 1 << std::endl;
+                    }
+                } 
+
+                    
+                if (rank == 0)
+                {
+                    
+                    for (int i = 1; i < world_size; i++)
+                    {
+                        int start = batch_counter * batch_size;
+                        int end = changed_points[i+1] - changed_points[i];
+                        for (int j = start; j < end && j < (batch_counter+1)*batch_size; j+=2)
+                        {
+                            int comm_count = (i * batch_size) + (j-start);
+                            int id, clusterId;
+                            // std::cout << "valore atteso di comm_count " << j + 1 << " from process " << i << std::endl;
+                            MPI_Recv(&id, 1, MPI_INT, i, comm_count, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+                            MPI_Recv(&clusterId, 1, MPI_INT, i, comm_count + 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+
+                            points[id].clusterId = clusterId;
+
+                        }
+                    }
+                    
+                }
+                batch_counter++;
+            }
 
             if (rank == 0)
             {
-                for (int i = 0; i < world_size; i++)
+                
+                for (int i = 0 ; i < local_points.size(); i++)
                 {
-                    for (int j = changed_points[i]; j < changed_points[i+1]; j+=2)
+                    if(local_points[i].first == 1)
                     {
-                        int id, clusterId;
-                        // std::cout << "valore atteso di comm_count " << j + 1 << " from process " << i << std::endl;
-                        MPI_Recv(&id, 1, MPI_INT, i, j, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-                        MPI_Recv(&clusterId, 1, MPI_INT, i, j + 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-
-
-                        points[id].clusterId = clusterId;
-
+                        points[local_points[i].second.id].clusterId = local_points[i].second.clusterId;
+                        local_points[i].first = 0;
                     }
                 }
+                
             }
-
 
             // calcolo dei centroidi
 
@@ -157,6 +204,7 @@
             if (rank == 0)
             {
                 
+                
                 for (int i = 1; i < world_size; i++)
                 {
                     std::vector<std::vector<double> > partial_sum_recived(k,{0.0,0.0,0.0});
@@ -176,6 +224,7 @@
                         cluster_size[j] += cluster_size_recived[j];
                     }
                 }
+             
             }
 
             // calcolo dei nuovi centroidi
@@ -212,7 +261,13 @@
                     break;
                 }
             }
-            std::cout << "." << std::flush;
+
+            if (rank == 0)
+            {
+                std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
+                std::cout << "Iteration " << iter << " completed in " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() << "ms" << std::endl;
+            }
+
         }
     }
     void KMeans::printClusters()  const
@@ -246,55 +301,6 @@
     {
         return points;
     }
-
-    // void KMeans::plotClusters()
-    // {
-    //     if(centroids[0].numberOfFeatures != 2)
-    //     {
-    //         std::cout << "Cannot plot clusters with more than 2 features" << std::endl;
-    //         return;
-    //     }
-    //     gp << "set xrange [20:70]\nset yrange [0:30]\n";
-    //     gp << "set key outside\n"; // Add this line to place the legend outside the plot
-    //     std::vector<std::string> colors = {"red", "blue", "green", "brown", "purple", "orange", "cyan", "violet"};
-    //     gp << "plot ";
-    //     for (int i = 0; i < k; ++i)
-    //     {
-    //         std::vector<std::std::pair<double, double>> pts;
-    //         for (Point p : points)
-    //         {
-    //             if (p.clusterId == i)
-    //             {
-    //                 pts.emplace_back(std::make_std::pair(p.getFeature(0), p.getFeature(1)));
-    //             }
-    //         }
-    //         gp << "'-' with points pointtype 7 pointsize 1 lc rgb '" << colors[i % colors.size()] << "' title 'Cluster " << i + 1 << "'"; // Add a title to each plot command
-    //         if (i < k - 1)
-    //         {
-    //             gp << ", ";
-    //         }
-    //     }
-    //     gp << ", '-' with points pointtype 7 pointsize 2 lc rgb 'black' title 'Centroids'"; // Add a title to the centroids \ command
-    //     gp << "\n";
-    //     for (int i = 0; i < k; ++i)
-    //     {
-    //         std::vector<std::std::pair<double, double>> pts;
-    //         for (Point p : points)
-    //         {
-    //             if (p.clusterId == i)
-    //             {
-    //                 pts.push_back(std::make_std::pair(p.getFeature(0), p.getFeature(1)));
-    //             }
-    //         }
-    //         gp.send1d(pts);
-    //     }
-    //     std::vector<std::std::pair<double, double>> centroid_pts;
-    //     for (Point c : centroids)
-    //     {
-    //         centroid_pts.push_back(std::make_std::pair(c.getFeature(0), c.getFeature(1)));
-    //     }
-    //     gp.send1d(centroid_pts);
-    // }
 
     int KMeans::getNumberOfIterationForConvergence()
     {

@@ -1,6 +1,7 @@
 #include <opencv2/opencv.hpp>
 
 #include <iostream>
+#include <string>
 #include <vector>
 #include <cmath>
 #include <limits>
@@ -11,17 +12,20 @@
 #include <memory>
 #include <set>
 #include <chrono>
-#include <cstdint>
 #include <zlib.h>
 
 #include <point.hpp>
 #include <kMeansMPI.hpp>
+#include <configReader.hpp>
+#include <utilsCLI.hpp>
+#include <imagesUtils.hpp>
+#include <filesUtils.hpp>
 
 
 #include <mpi.h>
 
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {    
     MPI_Init(NULL, NULL);
     int world_size;
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
@@ -35,72 +39,36 @@ int main(int argc, char *argv[]) {
     int height;
     int width;
     std::vector<std::pair<int, Point> > local_points;
+    int levelsColorsChioce;
+    int typeCompressionChoice;
+    ConfigReader configReader;
+    int batch_size = configReader.getBatchSize();
+    cv::Mat image;
 
      if(rank == 0)
     {
-        std::cout << "##########################################################################################" << std::endl;
-        std::cout << "#                                                                                        #" << std::endl;
-        std::cout << "#                Parallel Kmeans Images Encoder (MPI: did you use mpirun?)               #" << std::endl;
-        std::cout << "#                                                                                        #" << std::endl;
-        std::cout << "##########################################################################################" << std::endl<< std::endl;
-        std::cout << "------------------------------------------------------------------------------------------" << std::endl;
-        std::cout << "| This program allows you to compress an image by reducing the number of colors in it    |" << std::endl;
-        std::cout << "| The output of this Encoder is a file .kc that you need to decode to obtain your image  |" << std::endl;
-        std::cout << "------------------------------------------------------------------------------------------" << std::endl<< std::endl;
-        std::cout << "Please enter the number of colors you want to keep in the compressed image"<< std::endl;
-        std::cout << "--> ";
-        std::cin >> k;
-        std::cout << std::endl;
-        std::cout << std::endl;
-        std::cout << "Now please enter the global path of the image you want to compress" << std::endl;
-        std::cout << "--> ";
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        std::getline(std::cin, path); 
-        std::cout << std::endl;
-        std::cout << "Choose a name for your output (note that the output will be saved in the outputs directory)" << std::endl;
-        std::cout << "You don't need to give any extension" << std::endl;
-        std::cout << "--> ";
-        std::getline(std::cin, outputPath); 
-        outputPath = "outputs/" + outputPath + ".kc";
+        UtilsCLI::compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image,2);
 
-        cv::Mat image = cv::imread(path);
-    // Read an image from file
-    
+        int originalHeight = image.rows;
+        int originalWidth = image.cols;
 
-    // Check if the image was loaded successfully
-        while (image.empty()) 
-        {
-            std::cerr << "Error: Unable to load the image." << std::endl;
-            std::cout << "Please enter the correct global path of the image you want to compress" << std::endl<< std::endl;
-            std::cout << "--> ";
-            std::getline(std::cin, path);
-            std::cout << std::endl;
-            MPI_Bcast(path.data(), path.size() + 1, MPI_CHAR, 0, MPI_COMM_WORLD);
-            cv::Mat image = cv::imread(path);
-        }
+        ImageUtils::preprocessing(image, typeCompressionChoice);
 
-        std::cout<< "-------------------------" << path << std::endl;
         height = image.rows;
         width = image.cols;
-        //std::set < std::vector<unsigned char> > different_colors; 
-        int id = 0;
-        for(int y = 0 ; y < height ; y++)
-        {
-            for (int x = 0 ; x < width ; x++)
-            {
-                points.emplace_back(Point(id, {image.at<cv::Vec3b>(y, x)[0],image.at<cv::Vec3b>(y, x)[1],image.at<cv::Vec3b>(y, x)[2]}));
-                id += 1;
-            }
-        }
 
-        std::cout << "-----------------------------------------"<< std::endl;
-        // std::cout << "Number of different colors in the image: " << different_colors.size() << std::endl;
-        // std::cout << "-----------------------------------------"<< std::endl;
+        std::set < std::vector<unsigned char> > different_colors;
 
-        // different_colors.clear();
-
+        ImageUtils::pointsFromImage(image, points, different_colors);
 
         n_points = points.size();
+
+        ImageUtils::defineKValue(k, levelsColorsChioce, different_colors);
+
+        int different_colors_size = different_colors.size();
+
+        UtilsCLI::printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
+     
     }
     
     MPI_Bcast(&k, 1, MPI_INT, 0, MPI_COMM_WORLD);
@@ -148,51 +116,14 @@ int main(int argc, char *argv[]) {
             Point pixel(id, rgb);
             local_points.push_back({0,pixel});
             
-        }
-        //std::cout << "Rank: " << rank << " Start: " << start << " End: " << end << std::endl;
-    
+        }   
     }
-
-    // if (rank == 0)
-    // {
-    //     // Get the image dimensions
-    //     if(rank == 0)
-    //     {local_pointsor<double> rgb = {static_cast<double>(pixels.at(y * width + x)[0]), static_cast<double>(pixels.at(y * width + x)[1]), static_cast<double>(pixels.at(y * width + x)[2])};
-    //             int id = y * width + x;
-    //             Point pixel(id, rgb);
-    //             points.push_back(pixel);
-
-    //             for (int i = 1; i < rank; i++)
-    //             {
-    //                 if (i*points_per_cluster <= id && id < (i == world_size - 1) ? points.size() : (i + 1) * points_per_cluster)
-    //                 {
-    //                     MPI_Send(id, 1, MPI_INT, i, 1, MPI_COMM_WORLD);
-    //                     MPI_Send(rgb, 3, MPI_DOUBLE, i, id, MPI_COMM_WORLD);
-    //                 }
-    //             }
-    //         }
-    //     }
-
-    // }else {
-    //     for (int i = 0 ; i < points_per_cluster; i++)
-    //     {
-    //         int id;
-    //         MPI_Recv(&id, 1, MPI_INT, 0, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-    //         std::vector<double> rgb(3);
-    //         for (int j = 0; j < 3; ++j)
-    //         {
-    //             MPI_Recv(&rgb[j], 1, MPI_DOUBLE, 0, 4+j, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-    //         }
-    //         Point pixel(id, rgb);
-    //         points.push_back(pixel);
-    //     }
-    // }
-
-    
 
     auto start = std::chrono::high_resolution_clock::now();
     if(rank == 0)
     {
+        std::cout << "Press a key to start the compression..."<< std::endl;
+        std::cin.ignore();
         std::cout << "Starting the Compression..." << std::endl;
     }
 
@@ -202,9 +133,9 @@ int main(int argc, char *argv[]) {
 
     if (rank == 0)
     {
-            kmeans = std::unique_ptr<KMeans>(new KMeans(k,rank,3, points));
+            kmeans = std::unique_ptr<KMeans>(new KMeans(k,rank,3, points, batch_size));
         }else{
-            kmeans = std::unique_ptr<KMeans>(new KMeans(k,rank,3));
+            kmeans = std::unique_ptr<KMeans>(new KMeans(k,rank,3, batch_size));
         }
         kmeans->run(rank, world_size,local_points);
         auto end = std::chrono::high_resolution_clock::now();
@@ -214,89 +145,16 @@ int main(int argc, char *argv[]) {
 
         if(rank == 0)
         {   
+            FilesUtils::createOutputDirectories();
+
+            FilesUtils::writeBinaryFile(outputPath, width, height, k, *kmeans);
+
+            FilesUtils::writePerformanceEvaluation(outputPath, "MPI", k, points, *kmeans, elapsed);
+
+            UtilsCLI::workDone();
             std::cout << "Compression done in " << elapsed.count() << std::endl;
             std::cout << std::endl;
-            std::cout << "Saving the Compressed Image..." << std::endl;
-            std::ofstream outputFile(outputPath, std::ios::app);
-            auto startcompression = std::chrono::high_resolution_clock::now();
-            std::vector<uint8_t> buffer;
-
-            // Helper function to write data to buffer
-        auto writeToBuffer = [&buffer](const void* data, size_t size) {
-            const uint8_t* byteData = static_cast<const uint8_t*>(data);
-            buffer.insert(buffer.end(), byteData, byteData + size);
-        };
-
-        u_int16_t width16bit = static_cast<u_int16_t>(width);
-        u_int16_t height16bit = static_cast<u_int16_t>(height);
-        u_int16_t k16bit = static_cast<u_int16_t>(k);
-
-        // Scrivi width, height e k
-        writeToBuffer(&width16bit, sizeof(width16bit));
-        writeToBuffer(&height16bit, sizeof(height16bit));
-        writeToBuffer(&k16bit, sizeof(k16bit));
-
-        // Scrivi i centroidi
-        for (Point& centroid : kmeans->getCentroids()) 
-        {
-            for (int i = 0; i < 3; ++i) 
-            {
-                int feature = centroid.getFeature(i);
-                writeToBuffer(&feature, sizeof(feature))
+            std::cout << "The compressed image has been saved in the outputs directory." << std::endl;
         }
-
-        std::cout <<"writed centroids"<< std::endl;
-
-        // Determina il numero di bit necessari per rappresentare k colori
-        int bitsPerColor = std::ceil(std::log2(k));
-        int bytesPerColor = (bitsPerColor + 7) / 8; // Arrotonda per eccesso
-        int pointId = 0;
-        std::vector<Point> points = kmeans->getPoints();
-        while (pointId < n_points)
-        {
-            int pointId_start = pointId;
-            uint8_t clusterId = static_cast<uint8_t>(points[pointId_start].clusterId);
-            while(pointId < n_points && points[pointId].clusterId == clusterId && pointId - pointId_start < 254)
-            {
-                ++pointId;
-            }
-            uint8_t count = pointId - pointId_start;
-            writeToBuffer(&count, sizeof(count));
-            writeToBuffer(&clusterId, sizeof(clusterId));
-
-        }
-
-        // Scrivi i dati compressi su file
-        
-        //outputFile.write(reinterpret_cast<const char*>(compressedData.data()), compressedData.size());
-        std::cout << "buffer size: " << buffer.size() << std::endl;
-        outputFile.write(reinterpret_cast<const char*>(buffer.data()), buffer.size());
-        auto endcompression = std::chrono::high_resolution_clock::now();
-
-        std::chrono::duration<double> elapsedcompression = endcompression - startcompression;
-        std::cout << "Compression done in " << elapsedcompression.count() << std::endl;
-    
-        std::ofstream perfEval("performanceEvaluation.txt", std::ios::app);
-        perfEval << argv[0] << std::endl;
-        perfEval << "--------------------------------------"<< std::endl;
-        perfEval << "Image path: " << path << std::endl;
-        perfEval << "Number of colors: " << k << std::endl;
-        perfEval << "Number of points: " << points.size() << std::endl;
-        perfEval << "Number of iterations: " << kmeans->numberOfIterationForConvergence << std::endl;
-        perfEval << "Number of Processors: " << world_size << std::endl;
-        perfEval << " ==>" << "Time: " << elapsed.count() << "s" << std::endl;
-        perfEval << std::endl;
-        perfEval << std::endl;
-        perfEval << std::endl;
-
-        // cv::imshow("Original", image);
-        // cv::waitKey(1);
-        // cv::imshow("Compressed", imageCompressed);
-        // cv::waitKey(0);
-
-        std::cout << std::endl;
-        std::cout << "Work done!" << std::endl;
-        
-    }
     MPI_Finalize();
 }

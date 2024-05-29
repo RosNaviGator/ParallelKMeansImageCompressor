@@ -5,7 +5,6 @@
 #include <iostream>
 
 #include <thread>
-#include <gnuplot-iostream.h>
 #include <point.hpp>
 
 
@@ -26,7 +25,6 @@ private:
     int k;
     std::vector<Point> points;
     std::vector<Point> centroids;
-    Gnuplot gp;
 };
 
 

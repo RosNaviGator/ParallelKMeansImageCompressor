@@ -7559,3 +7559,181 @@ Number of iterations: 9
 
 
 
+OMP
+--------------------------------------
+Image path: outputs/lena.kc
+Number of colors: 29
+Number of points: 262144
+Number of iterations: 30
+ ==>Time: 29.4649s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/lenacolorata.kc
+Number of colors: 67
+Number of points: 262144
+Number of iterations: 35
+ ==>Time: 5.06647s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/odette1.kc
+Number of colors: 61
+Number of points: 12000000
+Number of iterations: 55
+ ==>Time: 218.394s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/odette2.kc
+Number of colors: 61
+Number of points: 12000000
+Number of iterations: 1977645534
+ ==>Time: 456.754s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/odette3.kc
+Number of colors: 61
+Number of points: 12000000
+Number of iterations: 1627327367
+ ==>Time: 300.741s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/odette4.kc
+Number of colors: 61
+Number of points: 12000000
+Number of iterations: 1434818510
+ ==>Time: 208.81s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/odette5.kc
+Number of colors: 61
+Number of points: 12000000
+Number of iterations: -861116788
+ ==>Time: 204.887s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/edi.kc
+Number of colors: 61
+Number of points: 12000000
+ ==>Time: 205.917s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/kk.kc
+Number of colors: 61
+Number of points: 12000000
+ ==>Time: 205.515s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/nnnn.kc
+Number of colors: 4
+Number of points: 3000000
+ ==>Time: 1.50651s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/lll.kc
+Number of colors: 61
+Number of points: 12000000
+ ==>Time: 180.335s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/lena1.kc
+Number of colors: 7
+Number of points: 262144
+ ==>Time: 0.160606s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/lena2.kc
+Number of colors: 14
+Number of points: 262144
+ ==>Time: 0.252376s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/lena3.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.418726s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/lena4.kc
+Number of colors: 52
+Number of points: 262144
+ ==>Time: 0.920947s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/lena5.kc
+Number of colors: 67
+Number of points: 262144
+ ==>Time: 0.905196s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/milano1.kc
+Number of colors: 8
+Number of points: 217872
+ ==>Time: 0.0758083s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/milano2.kc
+Number of colors: 33
+Number of points: 217872
+ ==>Time: 0.466523s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/milano3.kc
+Number of colors: 75
+Number of points: 217872
+ ==>Time: 1.32269s
+
+
+

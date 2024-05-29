@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
     int levelsColorsChioce;
     int typeCompressionChoice;
     ConfigReader configReader;
-    int batch_size = configReader.getBatchSize();
+    long long int batch_size = configReader.getBatchSize();
     cv::Mat image;
 
      if(rank == 0)
@@ -119,7 +119,6 @@ int main(int argc, char *argv[]) {
         }   
     }
 
-    auto start = std::chrono::high_resolution_clock::now();
     if(rank == 0)
     {
         std::cout << "Press a key to start the compression..."<< std::endl;
@@ -137,6 +136,7 @@ int main(int argc, char *argv[]) {
         }else{
             kmeans = std::unique_ptr<KMeans>(new KMeans(k,rank,3, batch_size));
         }
+        auto start = std::chrono::high_resolution_clock::now();
         kmeans->run(rank, world_size,local_points);
         auto end = std::chrono::high_resolution_clock::now();
         std::chrono::duration<double> elapsed = end - start;

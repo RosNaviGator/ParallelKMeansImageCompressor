@@ -105,7 +105,7 @@
             int maxNumOfChanges = maxSequentialDifference();
             int num_of_batches = maxNumOfChanges / batch_size;
             int batch_counter = 0;
-            int comm_counter = 0;
+            long long int comm_counter = 0;
 
             while (batch_counter <= num_of_batches)
             {

@@ -64,10 +64,12 @@ int main(int argc, char *argv[])
     KMeans kmeans(k, points);
 
     // CLUSTERING (second time evaluation)
-    auto startKmeans = std::chrono::high_resolution_clock::now();
+    
     std::cout << "Press a key to start the compression..."<< std::endl;
     std::cin.ignore();
     std::cout << "Starting the Compression..." << std::endl;
+
+    auto startKmeans = std::chrono::high_resolution_clock::now();
 
     kmeans.run();
 

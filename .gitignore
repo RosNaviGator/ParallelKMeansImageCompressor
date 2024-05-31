@@ -3,6 +3,8 @@ seqEncoder
 ompEncoder
 mpiEncoder
 decoder
+exe
+wexe
 
 # ignore .vscode
 .vscode

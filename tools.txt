@@ -1,7 +1,0 @@
-Used Tools 
-- Open CV 
-- boost
-- OpenMP
-- MPI
-
-

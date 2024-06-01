@@ -6,11 +6,6 @@ This program compresses images by reducing the number of colors using k-means cl
 ## Prerequisites 
 In order to be able to compile and run the program, there are a few programs that need to be installed.
 
-### Boost C++ Library
-A powerful C++ library for enhanced performance and productivity
-
-You can refer to the [official page](https://www.boost.org/users/download/) to download.
-
 ### OpenCV C++ Library
 A comprehensive library for computer vision and image processing tasks.
 

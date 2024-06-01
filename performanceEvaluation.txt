@@ -7737,3 +7737,30 @@ Number of points: 217872
 
 
 
+OMP
+--------------------------------------
+Image path: outputs/seda.kc
+Number of colors: 35
+Number of points: 684450
+ ==>Time: 2.00176s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/swed.kc
+Number of colors: 8
+Number of points: 684450
+ ==>Time: 0.531999s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/wer.kc
+Number of colors: 16
+Number of points: 683280
+ ==>Time: 2.06438s
+
+
+

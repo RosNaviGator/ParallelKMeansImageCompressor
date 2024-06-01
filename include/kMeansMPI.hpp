@@ -32,7 +32,6 @@ class KMeans
         int batch_size;
         std::vector<Point> points;
         std::vector<Point> centroids;
-    // Gnuplot gp;
 };
 
 

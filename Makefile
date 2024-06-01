@@ -6,10 +6,10 @@ INC_DIR = ./include
 BUILD_DIR = ./build
 
 # Compiler flags
-CFLAGS = -std=c++20 -I/usr/include/boost -I$(INC_DIR) `pkg-config --cflags opencv4` -Wno-deprecated -fopenmp -O3
+CFLAGS = -std=c++20 -I$(INC_DIR) `pkg-config --cflags opencv4` -fopenmp -O3
 
 # Libraries
-LIBS = -lutil -lboost_iostreams -lz -lboost_system -lboost_filesystem -L/usr/lib `pkg-config --libs opencv4`
+LIBS = -lutil -lz -L/usr/lib `pkg-config --libs opencv4`
 
 LDFLAGS = -rpath
 

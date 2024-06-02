@@ -47,7 +47,7 @@ int main(int argc, char *argv[]) {
 
      if(rank == 0)
     {
-        UtilsCLI::compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image,2);
+        UtilsCLI::compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image, 2);
 
         int originalHeight = image.rows;
         int originalWidth = image.cols;
@@ -68,7 +68,6 @@ int main(int argc, char *argv[]) {
         int different_colors_size = different_colors.size();
 
         UtilsCLI::printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
-     
     }
     
     MPI_Bcast(&k, 1, MPI_INT, 0, MPI_COMM_WORLD);
@@ -89,12 +88,13 @@ int main(int argc, char *argv[]) {
                 if (i >= start && i <  end)
                 {
                     MPI_Send(&i, 1, MPI_INT, j, 1, MPI_COMM_WORLD);
-                    MPI_Send(&points[i].getFeature(0), 1, MPI_UNSIGNED_CHAR, j, 2, MPI_COMM_WORLD);
-                    MPI_Send(&points[i].getFeature(1), 1, MPI_UNSIGNED_CHAR, j, 3, MPI_COMM_WORLD);
-                    MPI_Send(&points[i].getFeature(2), 1, MPI_UNSIGNED_CHAR, j, 4, MPI_COMM_WORLD);
+                    MPI_Send(&points.at(i).getFeature(0), 1, MPI_UNSIGNED_CHAR, j, 2, MPI_COMM_WORLD);
+                    MPI_Send(&points.at(i).getFeature(1), 1, MPI_UNSIGNED_CHAR, j, 3, MPI_COMM_WORLD);
+                    MPI_Send(&points.at(i).getFeature(2), 1, MPI_UNSIGNED_CHAR, j, 4, MPI_COMM_WORLD);
                 }
             }
         }
+
         int start = rank * points_per_cluster;
         int end = (rank == world_size - 1) ? n_points : (rank + 1) * points_per_cluster;
         
@@ -110,9 +110,9 @@ int main(int argc, char *argv[]) {
             MPI_Recv(&g, 1, MPI_UNSIGNED_CHAR, 0, 3, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             MPI_Recv(&b, 1, MPI_UNSIGNED_CHAR, 0, 4, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
-            rgb[0] = static_cast<int>(r);
-            rgb[1] = static_cast<int>(g);
-            rgb[2] = static_cast<int>(b);
+            rgb.at(0) = static_cast<int>(r);
+            rgb.at(1) = static_cast<int>(g);
+            rgb.at(2) = static_cast<int>(b);
             Point pixel(id, rgb);
             local_points.push_back({0,pixel});
             
@@ -128,10 +128,8 @@ int main(int argc, char *argv[]) {
 
     std::unique_ptr<KMeans> kmeans;
 
-
-
-    if (rank == 0)
-    {
+        if (rank == 0)
+        {
             kmeans = std::unique_ptr<KMeans>(new KMeans(k,rank,3, points, batch_size));
         }else{
             kmeans = std::unique_ptr<KMeans>(new KMeans(k,rank,3, batch_size));

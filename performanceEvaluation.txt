@@ -7764,3 +7764,12 @@ Number of points: 683280
 
 
 
+MPI
+--------------------------------------
+Image path: outputs/asder.kc
+Number of colors: 30
+Number of points: 4460544
+ ==>Time: 147.505s
+
+
+

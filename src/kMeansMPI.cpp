@@ -15,7 +15,7 @@
         centroids = std::vector<Point>(k, Point(n_features));     
         int size = points.size();
         std::random_device rd;                              // Initialize a random device
-        std::mt19937 gen(23456789);                         // Initialize a Mersenne Twister random number generator with the random device
+        std::mt19937 gen(rd());                               // Initialize a Mersenne Twister random number generator with the random device
         std::uniform_int_distribution<> dis(0, size - 1);   // Create a uniform distribution between 0 and size - 1
         for (int i = 0; i < k; ++i)
         {
@@ -45,28 +45,33 @@
             std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
             std::fill(changed_points.begin(), changed_points.end(), 0);
             changed = false;
-            for(auto& p : local_points)
-            {
-                //std::cout << "point " << p.second.id << " clusterId " << p.second.clusterId << std::endl;
-                double minDist = std::numeric_limits<double>::max();
-                for (int i = 0; i < k; ++i)
+            #pragma omp parallel
+            {   
+                #pragma omp for
+                for(auto& p : local_points)
                 {
-                    double dist = p.second.distance(centroids[i]);
-                    if (dist < minDist)
+                    //std::cout << "point " << p.second.id << " clusterId " << p.second.clusterId << std::endl;
+                    double minDist = std::numeric_limits<double>::max();
+                    for (int i = 0; i < k; ++i)
                     {
-                        minDist = dist;
-                        if (p.second.clusterId != i)
+                        double dist = p.second.distance(centroids[i]);
+                        if (dist < minDist)
                         {
-                            // std::cout << "point " << p.second.id << " changed cluster " << "from " << p.second.clusterId << " to " << i << std::endl;
+                            minDist = dist;
+                            if (p.second.clusterId != i)
+                            {
+                                // std::cout << "point " << p.second.id << " changed cluster " << "from " << p.second.clusterId << " to " << i << std::endl;
 
-                            p.second.clusterId = i;
-                            p.first = 1;
+                                p.second.clusterId = i;
+                                p.first = 1;
 
+                            }
                         }
                     }
                 }
             }
-
+            
+            
             for (int i = 0 ; i < local_points.size(); i++)
             {
                 changed_points[rank] += local_points[i].first;
@@ -288,7 +293,7 @@
                     }
                     std::cout << ")"<< std::endl;
                 }
-            }
+            }           
         }
     }
 

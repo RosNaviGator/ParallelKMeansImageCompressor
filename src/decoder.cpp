@@ -6,7 +6,6 @@
 #include <sstream>
 #include <cmath>
 #include <cstdint>
-#include <zlib.h>
 #include <filesystem>
 #include <filesUtils.hpp>
 #include <utilsCLI.hpp>

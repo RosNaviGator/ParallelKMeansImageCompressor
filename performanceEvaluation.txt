@@ -7773,3 +7773,318 @@ Number of points: 4460544
 
 
 
+Sequential
+--------------------------------------
+Image path: outputs/performance.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 5.13273s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/performance.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 6.98623s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 5.4432s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 6.26717s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 5.78952s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 5.62526s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.71836s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 4.33175s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 2.73619s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 2.81639s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 11.8119s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 15.6028s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 7.33117s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 5.08953s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.22916s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.28987s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.30498s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.28427s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.22711s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.27039s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.23572s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.28468s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 30.8924s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 0.674717s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 0.612757s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/goosw.jpg.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 2.46619s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/odettte3000x4000.jpg.kc
+Number of colors: 48
+Number of points: 12000000
+ ==>Time: 70.5844s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.jpg.kc
+Number of colors: 48
+Number of points: 12000000
+ ==>Time: 12.6918s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.jpg.kc
+Number of colors: 48
+Number of points: 12000000
+ ==>Time: 12.7042s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.jpg.kc
+Number of colors: 48
+Number of points: 12000000
+ ==>Time: 5.65632s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.jpg.kc
+Number of colors: 48
+Number of points: 12000000
+ ==>Time: 5.48051s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.jpg.kc
+Number of colors: 31
+Number of points: 3000000
+ ==>Time: 1.94041s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/odettte3000x4000.jpg.kc
+Number of colors: 31
+Number of points: 3000000
+ ==>Time: 20.4144s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.jpg.kc
+Number of colors: 31
+Number of points: 3000000
+ ==>Time: 1.99006s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.jpg.kc
+Number of colors: 31
+Number of points: 3000000
+ ==>Time: 1.98847s
+
+
+

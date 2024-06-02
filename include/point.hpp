@@ -4,7 +4,6 @@
 
 #include <cmath>
 #include <vector>
-#include <mpi.h>
 
 class Point
 {
@@ -21,8 +20,6 @@ public:
     Point(const int& id, const std::vector <int>& coordinates);
     ~Point(); // Destructor
     double distance(const Point& p) const;
-
-    friend void MPI_Bcast(Point& point, int count, MPI_Datatype datatype, int root, MPI_Comm communicator);
 
     unsigned char& getFeature(int index) ;
     int getFeature_int(int index) const;

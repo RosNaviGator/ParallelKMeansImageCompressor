@@ -3,19 +3,14 @@
 #include <vector>
 #include <cmath>
 #include <limits>
-
 #include <filesystem>
-
 #include <fstream>
 #include <sstream>
-
 #include <random>
 #include <thread>
 #include <chrono>
-
-
 #include <point.hpp>
-#include <kMeansOMP.hpp>
+#include <kMeansCUDA.hpp>
 #include <utilsCLI.hpp>
 #include <imagesUtils.hpp>
 #include <filesUtils.hpp>
@@ -65,11 +60,20 @@ void appendToCSV(const std::string& filename, const std::string& imgName, const 
 }
 
 
+
+
 int main(int argc, char *argv[])
 {
 
+    int deviceID;
+    cudaGetDevice(&deviceID);
+    cudaDeviceProp props;
+    cudaGetDeviceProperties(&props, deviceID);
+    std::cout << "Device: " << props.name << std::endl;
+
+
     int k;
-    std::string path;
+    //std::string path;
     std::string outputPath;
     std::vector<Point> points;
     int height;
@@ -78,20 +82,20 @@ int main(int argc, char *argv[])
     std::vector<std::pair<int, Point> > local_points;
     int levelsColorsChioce;
     int typeCompressionChoice;
-    cv::Mat image; 
-
-    UtilsCLI::compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image, 3);
+    cv::Mat image;
+   
+    UtilsCLI::compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image,1);
 
     int originalHeight = image.rows;
     int originalWidth = image.cols;
 
-    ImageUtils::preprocessing(image, typeCompressionChoice);
+    ImageUtils::preprocessing(image, typeCompressionChoice);   
 
     height = image.rows;
     width = image.cols;
 
-    std::set < std::vector<unsigned char> > different_colors;  
-
+    std::set < std::vector<unsigned char> > different_colors; 
+    
     ImageUtils::pointsFromImage(image, points, different_colors);
 
     n_points = points.size();
@@ -101,20 +105,20 @@ int main(int argc, char *argv[])
     int different_colors_size = different_colors.size();
 
     UtilsCLI::printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
-
+    
     KMeans kmeans(k, points);
 
     // CLUSTERING (second time evaluation)
-    
+
     //std::cout << "Press a key to start the compression..."<< std::endl;
     //std::cin.ignore();
     std::cout << "Starting the Compression..." << std::endl;
 
     auto startKmeans = std::chrono::high_resolution_clock::now();
 
+
     kmeans.run();
 
-    
     auto endKmeans = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsedKmeans = endKmeans - startKmeans;
 
@@ -122,7 +126,7 @@ int main(int argc, char *argv[])
 
     FilesUtils::writeBinaryFile(outputPath, width, height, k, kmeans.getPoints(), kmeans.getCentroids());
 
-    FilesUtils::writePerformanceEvaluation(outputPath, "OMP", k, points, elapsedKmeans);
+    FilesUtils::writePerformanceEvaluation(outputPath, "CUDA", k, points, elapsedKmeans);
 
 
     // performanceData
@@ -148,10 +152,27 @@ int main(int argc, char *argv[])
             break;
     }
 
-    appendToCSV(filename, imgName, "OpenMP", different_colors_size, k, n_points, compType, elapsedKmeans.count());
+    appendToCSV(filename, imgName, "CUDA", different_colors_size, k, n_points, compType, elapsedKmeans.count());
 
+    
     UtilsCLI::workDone();
     std::cout << "Compression done in " << elapsedKmeans.count() << std::endl;
     std::cout << std::endl;
     std::cout << "The compressed image has been saved in the outputs directory." << std::endl;
+
+
+    cudaError_t lastError;
+    lastError = cudaGetLastError();
+    if (lastError != cudaSuccess) {
+        std::cerr << "CUDA error: " << cudaGetErrorString(lastError) << std::endl;
+    }
+
+
+    std::string command = "sl";
+    int result = system(command.c_str());
+    if (result != 0) {
+        std::cerr << "Error executing command: " << command << std::endl;
+    }
+    
+    return 0;
 }

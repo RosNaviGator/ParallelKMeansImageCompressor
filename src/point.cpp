@@ -74,10 +74,5 @@ void Point::setFeature(int index, int value)
         this->b = static_cast<unsigned char>(value);
 }
 
-void MPI_Bcast(Point& point, int count, MPI_Datatype datatype, int root, MPI_Comm communicator)
-{
-    std::vector<unsigned char> features = {point.r, point.g, point.b};
-    MPI_Bcast(&point.id, 1, MPI_INT, root, communicator);
-    MPI_Bcast(&point.clusterId, 1, MPI_INT, root, communicator);
-    MPI_Bcast(features.data(), count, datatype, root, communicator);
-}
+
+

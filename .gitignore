@@ -5,6 +5,7 @@ mpiEncoder
 decoder
 exe
 wexe
+perfomanceData.csv
 
 # ignore .vscode
 .vscode

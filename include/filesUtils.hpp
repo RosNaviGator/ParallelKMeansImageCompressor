@@ -8,7 +8,6 @@
 #include <chrono>
 #include <filesystem>
 #include <point.hpp>
-#include <kMeans.hpp>
 #include <opencv2/opencv.hpp>
 
 
@@ -49,7 +48,7 @@ class FilesUtils
                 }
             }
         }
-        static void writeBinaryFile(std::string& outputPath, int& width, int& height, int& k, KMeans& kmeans)
+        static void writeBinaryFile(std::string& outputPath, int& width, int& height, int& k, std::vector<Point> points , std::vector<Point> centroids)
         {
             std::cout << "Saving the Compressed Image..." << std::endl;
         std::ofstream outputFile(outputPath, std::ios::app);
@@ -72,7 +71,7 @@ class FilesUtils
         writeToBuffer(&k16bit, sizeof(k16bit));
 
         // Scrivi i centroidi
-        for (Point& centroid : kmeans.getCentroids()) 
+        for (Point& centroid : centroids) 
         {
             for (int i = 0; i < 3; ++i) 
             {
@@ -85,7 +84,6 @@ class FilesUtils
         int bitsPerColor = std::ceil(std::log2(k));
         int bytesPerColor = (bitsPerColor + 7) / 8; // Arrotonda per eccesso
         int pointId = 0;
-        std::vector<Point> points = kmeans.getPoints();
         int n_points = points.size();
         while (pointId < n_points)
         {
@@ -109,7 +107,7 @@ class FilesUtils
 
         std::chrono::duration<double> elapsedcompression = endcompression - startcompression;
         std::cout << "Compression done in " << elapsedcompression.count() << std::endl;}
-            static void writePerformanceEvaluation(std::string path, std::string program_name, int k, std::vector<Point> points, KMeans& kmeans, std::chrono::duration<double> elapsedKmeans)
+            static void writePerformanceEvaluation(std::string path, std::string program_name, int k, std::vector<Point> points, std::chrono::duration<double> elapsedKmeans)
             {
                 std::ofstream perfEval("performanceEvaluation.txt", std::ios::app);
                 perfEval << program_name<< std::endl;

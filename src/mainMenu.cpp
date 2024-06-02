@@ -1,7 +1,8 @@
 #include <iostream>
 #include <utilsCLI.hpp>
-int main()
+int main(int argc, char** nargv)
 {
+    
     UtilsCLI::mainMenuHeader();
     int encodeOrDecode;
     std::cout << "This is the Main Menu of the Image Compressor! What do you want to do?" << std::endl;

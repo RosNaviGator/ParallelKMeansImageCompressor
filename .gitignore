@@ -3,8 +3,7 @@ seqEncoder
 ompEncoder
 mpiEncoder
 decoder
-exe
-wexe
+menu
 
 # ignore performance data
 performanceData.csv

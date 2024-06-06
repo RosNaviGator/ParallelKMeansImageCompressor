@@ -19,45 +19,7 @@
 #include <configReader.hpp>
 
 
-std::string extractFileName(const std::string& outputPath) {
-    // Find the position of the last '/' character
-    size_t lastSlashPos = outputPath.find_last_of('/');
-    
-    // Find the position of the ".kc" extension
-    size_t extensionPos = outputPath.find(".kc");
-
-    // If both positions are found
-    if (lastSlashPos != std::string::npos && extensionPos != std::string::npos) {
-        // Extract the substring between the last '/' and ".kc"
-        return outputPath.substr(lastSlashPos + 1, extensionPos - lastSlashPos - 1);
-    }
-
-    // If either position is not found, return an empty string
-    return "";
-}
-
-void createOrOpenCSV(const std::string& filename) {
-    std::ifstream infile(filename);
-    if (!infile.good()) {
-        std::ofstream outfile(filename);
-        if (!outfile.is_open()) {
-            std::cerr << "Error creating file!" << std::endl;
-            return;
-        }
-        outfile << "img, method, staring colors, k, n_points, comp type, time" << std::endl; // Write custom header
-        outfile.close(); // Close the file after creating it
-    }
-}
-
-void appendToCSV(const std::string& filename, const std::string& imgName, const std::string& methodUsed,
-                 int n_diff_colors, int k, int n, const std::string& compType, double time) {
-    std::ofstream file(filename, std::ios::app); // Open file for appending
-    if (!file.is_open()) {
-        std::cerr << "Error opening file for appending!" << std::endl;
-        return;
-    }
-    file << imgName << "," << methodUsed << "," << n_diff_colors << "," << k << "," << n << "," << compType << "," << time << std::endl;
-}
+#include <performanceEvaluation.hpp>
 
 
 
@@ -65,8 +27,9 @@ void appendToCSV(const std::string& filename, const std::string& imgName, const 
 int main(int argc, char *argv[])
 {
     int k;
-    //std::string path;
+    std::string path;
     std::string outputPath;
+    std::string fileName;
     std::vector<Point> points;
     int height;
     int width;
@@ -75,8 +38,34 @@ int main(int argc, char *argv[])
     int levelsColorsChioce;
     int typeCompressionChoice;
     cv::Mat image;
-   
-    UtilsCLI::compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image,1);
+    Performance performance;
+
+
+    // pass inputs as args for performance evaluation
+    if (4 == argc)
+    {   
+        path = argv[1];
+        levelsColorsChioce = std::stoi(argv[2]);
+        typeCompressionChoice = std::stoi(argv[3]);
+
+        fileName = Performance::extractFileName(path);
+        outputPath = "outputs/" + fileName + ".kc";
+
+        image = cv::imread(path);
+        if (image.empty())
+        {
+            std::cerr << "Error: Image not found." << std::endl;
+            return 1;
+        }
+
+        performance.fillPerformance(typeCompressionChoice, fileName, "Sequential");
+
+    }
+    else
+    {
+        // ask inputs at runtime
+        UtilsCLI::compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image,1);
+    }
 
     int originalHeight = image.rows;
     int originalWidth = image.cols;
@@ -121,32 +110,13 @@ int main(int argc, char *argv[])
     FilesUtils::writePerformanceEvaluation(outputPath, "Sequential", k, points, elapsedKmeans);
 
 
-    // performanceData
-    std::string filename = "performanceData.csv";
-    createOrOpenCSV(filename);
-
-    std::string imgName = extractFileName(outputPath);
-    
-    std::string compType;
-    switch (typeCompressionChoice) {
-        case 1:
-            compType = "light";
-            break;
-        case 2:
-            compType = "medium";
-            break;
-        case 3:
-            compType = "heavy";
-            break;
-        default:
-            std::cout << "something went wrong, typeCompressionChoice is not 1, 2 nor 3";
-            exit(-1776);
-            break;
+    // write perfomance data to csv
+    if (4 == argc)
+    {   
+        performance.writeCSV(different_colors_size, k, n_points, elapsedKmeans.count());
     }
 
-    appendToCSV(filename, imgName, "Sequential", different_colors_size, k, n_points, compType, elapsedKmeans.count());
 
-    
     UtilsCLI::workDone();
     std::cout << "Compression done in " << elapsedKmeans.count() << std::endl;
     std::cout << std::endl;

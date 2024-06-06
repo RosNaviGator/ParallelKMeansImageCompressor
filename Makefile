@@ -22,7 +22,7 @@ OMP_ENCODER_TARGET = $(BUILD_DIR)/ompEncoder
 MPI_ENCODER_TARGET = $(BUILD_DIR)/mpiEncoder
 CUDA_ENCODER_TARGET = $(BUILD_DIR)/cudaEncoder
 DECODER_TARGET = $(BUILD_DIR)/decoder
-MAINMENU_TARGET = wexe
+MAINMENU_TARGET = menu
 
 # Source files, different kmenas have different source files
 SEQ_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoder.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeans.cpp $(SRC_DIR)/configReader.cpp
@@ -67,6 +67,9 @@ $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cu
 	mkdir -p $(BUILD_DIR)
 	$(NVCC) $(NVCCFLAGS) -c -o $@ $<
+
+run: menu
+		./$(MAINMENU_TARGET)
 
 clean:
 	rm -rf $(BUILD_DIR) $(SEQ_ENCODER_TARGET) $(OMP_ENCODER_TARGET) $(MPI_ENCODER_TARGET) $(DECODER_TARGET) $(MAINMENU_TARGET) $(SEQ_ENCODER_OBJS) $(OMP_ENCODER_OBJS) $(MPI_ENCODER_OBJS) $(DECODER_OBJS) $(MAINMENU_OBJS) $(CUDA_ENCODER_OBJS) && sl

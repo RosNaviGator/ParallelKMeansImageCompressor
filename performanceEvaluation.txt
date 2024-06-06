@@ -8088,3 +8088,1866 @@ Number of points: 3000000
 
 
 
+OMP
+--------------------------------------
+Image path: 202406051801_goosw
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.41015s
+
+
+
+OMP
+--------------------------------------
+Image path: 202406051802_goosw
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.42351s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.5001s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 4.63638s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/goosw.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 4.09264s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/goosw.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 4.11077s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/goosw.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.52933s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/202406051831_goosw.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.58536s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/202406060033_goosw.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 2.91492s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/goosw.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.54295s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/goosw.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 4.25562s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/goosw.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.51938s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/leosFace-1272x1696.kc
+Number of colors: 3
+Number of points: 2157312
+ ==>Time: 1.53876s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/goosw.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 4.09282s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/leosFace-1272x1696.kc
+Number of colors: 3
+Number of points: 2157312
+ ==>Time: 1.02994s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/leosFace-1272x1696.kc
+Number of colors: 3
+Number of points: 2157312
+ ==>Time: 1.00202s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/leosFace-1272x1696.kc
+Number of colors: 3
+Number of points: 2157312
+ ==>Time: 1.12544s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/leosFace-1272x1696.kc
+Number of colors: 3
+Number of points: 2157312
+ ==>Time: 1.1557s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/goosw.kc
+Number of colors: 15
+Number of points: 4460544
+ ==>Time: 3.57182s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.38233s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 14.0388s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 7.51188s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.40613s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 5.11373s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 11.7297s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 7.66372s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.45345s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.78506s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 11.4039s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 7.29005s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.34361s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.79194s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 11.3619s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 7.32781s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.518s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 7
+Number of points: 1333872
+ ==>Time: 1.16708s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 7
+Number of points: 1333872
+ ==>Time: 2.28039s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 7
+Number of points: 1333872
+ ==>Time: 1.50637s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 7
+Number of points: 1333872
+ ==>Time: 1.27651s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 7
+Number of points: 1333872
+ ==>Time: 1.05361s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 7
+Number of points: 1333872
+ ==>Time: 2.28618s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 7
+Number of points: 1333872
+ ==>Time: 1.51883s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 7
+Number of points: 1333872
+ ==>Time: 1.28146s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 21
+Number of points: 5335488
+ ==>Time: 14.7806s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 21
+Number of points: 5335488
+ ==>Time: 32.119s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 21
+Number of points: 5335488
+ ==>Time: 20.1436s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 21
+Number of points: 5335488
+ ==>Time: 16.0874s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 21
+Number of points: 5335488
+ ==>Time: 14.7885s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 21
+Number of points: 5335488
+ ==>Time: 32.4314s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 21
+Number of points: 5335488
+ ==>Time: 20.0714s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 21
+Number of points: 5335488
+ ==>Time: 16.1136s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 20
+Number of points: 5335488
+ ==>Time: 12.3206s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 20
+Number of points: 5335488
+ ==>Time: 28.3694s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 20
+Number of points: 5335488
+ ==>Time: 16.8656s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 20
+Number of points: 5335488
+ ==>Time: 13.6489s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 20
+Number of points: 5335488
+ ==>Time: 12.4287s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 20
+Number of points: 5335488
+ ==>Time: 27.3055s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 20
+Number of points: 5335488
+ ==>Time: 16.9111s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 20
+Number of points: 5335488
+ ==>Time: 13.5536s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 15
+Number of points: 1333872
+ ==>Time: 2.52056s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 15
+Number of points: 1333872
+ ==>Time: 5.12108s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 15
+Number of points: 1333872
+ ==>Time: 3.22587s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 15
+Number of points: 1333872
+ ==>Time: 2.67171s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 15
+Number of points: 1333872
+ ==>Time: 2.59136s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 15
+Number of points: 1333872
+ ==>Time: 5.15184s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 15
+Number of points: 1333872
+ ==>Time: 3.2931s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 15
+Number of points: 1333872
+ ==>Time: 2.67525s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 43
+Number of points: 5335488
+ ==>Time: 17.2806s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 43
+Number of points: 5335488
+ ==>Time: 39.419s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 43
+Number of points: 5335488
+ ==>Time: 24.103s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 43
+Number of points: 5335488
+ ==>Time: 19.0852s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 43
+Number of points: 5335488
+ ==>Time: 17.2492s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 43
+Number of points: 5335488
+ ==>Time: 39.446s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 43
+Number of points: 5335488
+ ==>Time: 24.3352s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 43
+Number of points: 5335488
+ ==>Time: 19.0737s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 41
+Number of points: 5335488
+ ==>Time: 19.2324s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 41
+Number of points: 5335488
+ ==>Time: 43.362s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 41
+Number of points: 5335488
+ ==>Time: 26.6434s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 41
+Number of points: 5335488
+ ==>Time: 21.2043s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 41
+Number of points: 5335488
+ ==>Time: 19.226s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 41
+Number of points: 5335488
+ ==>Time: 43.5867s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 41
+Number of points: 5335488
+ ==>Time: 26.6605s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 41
+Number of points: 5335488
+ ==>Time: 21.4002s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 30
+Number of points: 1333872
+ ==>Time: 3.21504s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 30
+Number of points: 1333872
+ ==>Time: 6.75385s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 30
+Number of points: 1333872
+ ==>Time: 4.31979s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 30
+Number of points: 1333872
+ ==>Time: 3.53595s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 30
+Number of points: 1333872
+ ==>Time: 3.13478s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 30
+Number of points: 1333872
+ ==>Time: 6.7606s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 30
+Number of points: 1333872
+ ==>Time: 4.27954s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 30
+Number of points: 1333872
+ ==>Time: 3.4452s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 75
+Number of points: 5335488
+ ==>Time: 57.9771s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 75
+Number of points: 5335488
+ ==>Time: 129.839s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 75
+Number of points: 5335488
+ ==>Time: 78.8539s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 75
+Number of points: 5335488
+ ==>Time: 61.4221s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 75
+Number of points: 5335488
+ ==>Time: 57.5768s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 75
+Number of points: 5335488
+ ==>Time: 128.939s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 75
+Number of points: 5335488
+ ==>Time: 78.72s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 75
+Number of points: 5335488
+ ==>Time: 61.489s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 72
+Number of points: 5335488
+ ==>Time: 65.5836s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 72
+Number of points: 5335488
+ ==>Time: 149.36s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 72
+Number of points: 5335488
+ ==>Time: 107.012s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 72
+Number of points: 5335488
+ ==>Time: 87.3482s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 72
+Number of points: 5335488
+ ==>Time: 85.5264s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 72
+Number of points: 5335488
+ ==>Time: 164s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 72
+Number of points: 5335488
+ ==>Time: 91.2278s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 72
+Number of points: 5335488
+ ==>Time: 87.848s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 52
+Number of points: 1333872
+ ==>Time: 9.84776s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 52
+Number of points: 1333872
+ ==>Time: 21.1599s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 52
+Number of points: 1333872
+ ==>Time: 13.2151s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 52
+Number of points: 1333872
+ ==>Time: 9.59531s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 52
+Number of points: 1333872
+ ==>Time: 9.8834s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 52
+Number of points: 1333872
+ ==>Time: 19.2554s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 52
+Number of points: 1333872
+ ==>Time: 10.6437s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 52
+Number of points: 1333872
+ ==>Time: 7.90963s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 97
+Number of points: 5335488
+ ==>Time: 76.2058s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.94474s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 0.975687s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 7.22301s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 7.86341s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 0.955884s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 8.49281s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 0.806743s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 7
+Number of points: 1333872
+ ==>Time: 1.35426s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 7
+Number of points: 1333872
+ ==>Time: 0.20444s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 21
+Number of points: 5335488
+ ==>Time: 24.0115s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 21
+Number of points: 5335488
+ ==>Time: 1.83689s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 20
+Number of points: 5335488
+ ==>Time: 24.7088s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 20
+Number of points: 5335488
+ ==>Time: 1.60872s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 15
+Number of points: 1333872
+ ==>Time: 4.59717s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 15
+Number of points: 1333872
+ ==>Time: 0.318593s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 43
+Number of points: 5335488
+ ==>Time: 33.6366s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 43
+Number of points: 5335488
+ ==>Time: 1.41957s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 41
+Number of points: 5335488
+ ==>Time: 36.8387s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 41
+Number of points: 5335488
+ ==>Time: 1.56928s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 30
+Number of points: 1333872
+ ==>Time: 5.22308s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 30
+Number of points: 1333872
+ ==>Time: 0.283818s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 75
+Number of points: 5335488
+ ==>Time: 110.493s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 75
+Number of points: 5335488
+ ==>Time: 3.8374s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 8
+Number of points: 217872
+ ==>Time: 0.0773555s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 6
+Number of points: 217872
+ ==>Time: 0.0896105s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 2
+Number of points: 54468
+ ==>Time: 0.0621505s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 16
+Number of points: 217872
+ ==>Time: 0.114366s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 13
+Number of points: 217872
+ ==>Time: 0.0987978s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 5
+Number of points: 54468
+ ==>Time: 0.0647773s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 33
+Number of points: 217872
+ ==>Time: 0.131728s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 27
+Number of points: 217872
+ ==>Time: 0.115622s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 11
+Number of points: 54468
+ ==>Time: 0.0660422s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 58
+Number of points: 217872
+ ==>Time: 0.190568s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 48
+Number of points: 217872
+ ==>Time: 0.229214s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 20
+Number of points: 54468
+ ==>Time: 0.0706598s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 75
+Number of points: 217872
+ ==>Time: 0.249785s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 62
+Number of points: 217872
+ ==>Time: 0.226958s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 26
+Number of points: 54468
+ ==>Time: 0.0722881s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 8
+Number of points: 217872
+ ==>Time: 0.0735893s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 8
+Number of points: 217872
+ ==>Time: 0.133693s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 8
+Number of points: 217872
+ ==>Time: 0.0743139s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/piazzaDuomo-612x612.kc
+Number of colors: 8
+Number of points: 217872
+ ==>Time: 0.130208s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 0.917117s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 8.32007s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 1.058s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 8.40586s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 0.962447s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 8.49822s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 0.966856s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 8.29071s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 1.02355s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 8.3873s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 0.96175s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 8.34635s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 1.02017s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 8.37317s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 0.979406s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 8.40844s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 1.00502s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 8.43148s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 0.962475s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 8.37235s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 0.956421s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/odettte3000x4000.kc
+Number of colors: 6
+Number of points: 12000000
+ ==>Time: 8.4379s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.64355s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 12.7801s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.7593s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 11.7081s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.74508s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 11.6293s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.76785s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.58903s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.27181s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.91021s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.48709s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.90452s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.31759s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.77477s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.23443s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.85981s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.24696s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.34049s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.13377s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.78078s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.17861s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.7075s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.24487s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.85103s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.28518s
+
+
+
+OMP
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 4.7276s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.31007s
+
+
+

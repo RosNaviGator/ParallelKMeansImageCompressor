@@ -4,7 +4,6 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
 #include <filesUtils.hpp>
-#include <filesystem>
 
 class UtilsCLI
 {
@@ -118,24 +117,6 @@ public:
     static void compressionChoices(int &levelsColorsChioce, int &typeCompressionChoice, std::string &outputPath, cv::Mat &image, int executionStandard)
     {
         std::string path;
-
-        // performance evaluation
-        bool flag = true;
-        if (true == flag)
-        {
-            std::string exePath = std::filesystem::canonical("/proc/self/exe").parent_path().string();
-            path = exePath + "/../benchmarkImages/odettte3000x4000.jpg";
-            std::filesystem::path fullPath(path);
-            std::string fileName = fullPath.filename().string();
-            outputPath = "outputs/" + fileName + ".kc";
-
-            levelsColorsChioce = 4;
-            typeCompressionChoice = 3;
-            
-            image = cv::imread(path);
-            
-            return;
-        }
 
         if (executionStandard == 1)
         {

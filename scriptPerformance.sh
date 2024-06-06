@@ -6,14 +6,14 @@ image_path="./benchmarkImages/glassBall-1888x2826.jpg"
 
 
 # Define with metohods to test
-seqFlag=0;
+seqFlag=1;
 ompFlag=1;
-cudaFlag=0; 
+cudaFlag=1; 
 mpiFLag=1;
 
 
 # Define how many times to run each single test (beware: life is short)
-M=5;
+M=1;
 
 # Define percentage of colors (1-5)
 colorsStart=1;

@@ -24,7 +24,7 @@ CUDA_ENCODER_TARGET = $(BUILD_DIR)/cudaEncoder
 DECODER_TARGET = $(BUILD_DIR)/decoder
 MAINMENU_TARGET = menu
 
-# Source files, different kmenas have different source files
+# Source files, different kmeans have different source files
 SEQ_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoder.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeans.cpp $(SRC_DIR)/configReader.cpp
 OMP_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoderOMP.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeansOMP.cpp $(SRC_DIR)/configReader.cpp
 MPI_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoderMPI.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeansMPI.cpp $(SRC_DIR)/configReader.cpp
@@ -46,7 +46,10 @@ endif
 DECODER_OBJS = $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(DECODER_SRCS))
 MAINMENU_OBJS = $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(MAINMENU_SRCS))
 
-all: $(SEQ_ENCODER_TARGET) $(OMP_ENCODER_TARGET) $(MPI_ENCODER_TARGET) $(DECODER_TARGET) $(MAINMENU_TARGET) $(CUDA_ENCODER_TARGET)
+all: $(SEQ_ENCODER_TARGET) $(OMP_ENCODER_TARGET) $(MPI_ENCODER_TARGET) $(DECODER_TARGET) $(MAINMENU_TARGET)
+ifeq ($(ENABLE_CUDA),1)
+all: $(CUDA_ENCODER_TARGET)
+endif
 
 $(SEQ_ENCODER_TARGET): $(SEQ_ENCODER_OBJS)
 	$(MPICC) $(CFLAGS) -o $(SEQ_ENCODER_TARGET) $(SEQ_ENCODER_OBJS) $(LIBS)
@@ -57,9 +60,10 @@ $(OMP_ENCODER_TARGET): $(OMP_ENCODER_OBJS)
 $(MPI_ENCODER_TARGET): $(MPI_ENCODER_OBJS)
 	$(MPICC) $(CFLAGS) -o $(MPI_ENCODER_TARGET) $(MPI_ENCODER_OBJS) $(LIBS)
 
-
+ifeq ($(ENABLE_CUDA),1)
 $(CUDA_ENCODER_TARGET): $(CUDA_ENCODER_OBJS)
 	$(NVCC) $(NVCCFLAGS) -o $(CUDA_ENCODER_TARGET) $(CUDA_ENCODER_OBJS) $(NVCCLIBS)
+endif
 
 $(DECODER_TARGET): $(DECODER_OBJS)
 	$(MPICC) $(CFLAGS) -o $(DECODER_TARGET) $(DECODER_OBJS) $(LIBS)

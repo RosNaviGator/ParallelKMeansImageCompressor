@@ -9951,3 +9951,120 @@ Number of points: 5335488
 
 
 
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.42023s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.44127s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.52757s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.5044s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 6.53894s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 0.895662s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 0.84726s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 0.843928s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 0.846055s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 0.850234s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 0.936083s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 0.859294s
+
+
+
+CUDA
+--------------------------------------
+Image path: outputs/glassBall-1888x2826.kc
+Number of colors: 10
+Number of points: 5335488
+ ==>Time: 0.872831s
+
+
+

@@ -8,6 +8,7 @@ wexe
 
 # ignore performance data
 performanceData.csv
+performanceEvaluation.txt
 
 # ignore .vscode
 .vscode

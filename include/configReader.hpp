@@ -19,19 +19,19 @@ private:
     std::regex pattern;
 
     
-    bool checkVariableExists(const std::string& variableName) const;
+    auto checkVariableExists(const std::string& variableName) const -> bool;
 
 public:
     ConfigReader();
     ~ConfigReader();
-    double getFirstLevelCompressionColor() const;
-    double getSecondLevelCompressionColor() const;
-    double getThirdLevelCompressionColor() const;
-    double getFourthLevelCompressionColor() const;
-    double getFifthLevelCompressionColor() const;
-    long long int getBatchSize() const;
-    double getResizingFactor() const;
-    bool readConfigFile();
+    auto getFirstLevelCompressionColor() const -> double;
+    auto getSecondLevelCompressionColor() const -> double;
+    auto getThirdLevelCompressionColor() const -> double;
+    auto getFourthLevelCompressionColor() const -> double;
+    auto getFifthLevelCompressionColor() const -> double;
+    auto getBatchSize() const -> long long int;
+    auto getResizingFactor() const -> double;
+    auto readConfigFile() -> bool;
 };
 
 #endif // CONFIG_READER_HPP

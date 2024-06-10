@@ -19,10 +19,10 @@ public:
     Point(int features_size);
     Point(const int& id, const std::vector <int>& coordinates);
     ~Point(); // Destructor
-    double distance(const Point& p) const;
+    [[nodiscard]] auto distance(const Point &p) const -> double;
 
-    unsigned char& getFeature(int index) ;
-    int getFeature_int(int index) const;
+    auto getFeature(int index) -> unsigned char &;
+    [[nodiscard]] auto getFeature_int(int index) const -> int;
     void setFeature(int index, int x);
 };
 

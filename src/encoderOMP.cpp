@@ -22,35 +22,34 @@
 #include <opencv2/opencv.hpp>
 #include <configReader.hpp>
 
-
 #include <performanceEvaluation.hpp>
 
+#include <span>
 
-
-
-int main(int argc, char *argv[])
+auto main(int argc, char *argv[]) -> int
 {
 
-    int k;
+    int k = 0;
     std::string path;
     std::string outputPath;
     std::string fileName;
     std::vector<Point> points;
-    int height;
-    int width;
-    int n_points;
+    int height = 0;
+    int width = 0;
+    size_t n_points = 0;
     std::vector<std::pair<int, Point>> local_points;
-    int levelsColorsChioce;
-    int typeCompressionChoice;
+    int levelsColorsChioce = 0;
+    int typeCompressionChoice = 0;
     cv::Mat image;
     Performance performance;
 
     // pass inputs as args for performance evaluation
     if (4 == argc)
-    {   
-        path = argv[1];
-        levelsColorsChioce = std::stoi(argv[2]);
-        typeCompressionChoice = std::stoi(argv[3]);
+    {
+        std::span<char *> args(argv, argc);
+        path = args[1];
+        levelsColorsChioce = std::stoi(args[2]);
+        typeCompressionChoice = std::stoi(args[3]);
 
         fileName = Performance::extractFileName(path);
         outputPath = "outputs/" + fileName + ".kc";
@@ -58,12 +57,11 @@ int main(int argc, char *argv[])
         image = cv::imread(path);
         if (image.empty())
         {
-            std::cerr << "Error: Image not found." << std::endl;
+            std::cerr << "Error: Image not found." << '\n';
             return 1;
         }
 
         performance.fillPerformance(typeCompressionChoice, fileName, "OMP");
-
     }
     else
     {
@@ -87,7 +85,7 @@ int main(int argc, char *argv[])
 
     ImageUtils::defineKValue(k, levelsColorsChioce, different_colors);
 
-    int different_colors_size = different_colors.size();
+    size_t different_colors_size = different_colors.size();
 
     UtilsCLI::printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
 
@@ -97,7 +95,7 @@ int main(int argc, char *argv[])
 
     // std::cout << "Press a key to start the compression..."<< std::endl;
     // std::cin.ignore();
-    std::cout << "Starting the Compression..." << std::endl;
+    std::cout << "Starting the Compression..." << '\n';
 
     auto startKmeans = std::chrono::high_resolution_clock::now();
 
@@ -112,16 +110,18 @@ int main(int argc, char *argv[])
 
     FilesUtils::writePerformanceEvaluation(outputPath, "OMP", k, points, elapsedKmeans);
 
-
     // write perfomance data to csv
     if (4 == argc)
-    {   
+    {
         performance.writeCSV(different_colors_size, k, n_points, elapsedKmeans.count());
     }
-    
 
     UtilsCLI::workDone();
-    std::cout << "Compression done in " << elapsedKmeans.count() << std::endl;
-    std::cout << std::endl;
-    std::cout << "The compressed image has been saved in the outputs directory." << std::endl;
+    std::cout << "Compression done in " << elapsedKmeans.count() << '\n';
+    std::cout << '\n';
+    std::cout << "The compressed image has been saved in the outputs directory." << '\n';
+
+
+
+    return 0;
 }

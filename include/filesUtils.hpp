@@ -27,43 +27,44 @@ class FilesUtils
             std::filesystem::path outputsDirJpg = buildPath / ".." / "outputs" / "outputsjpg";
             if (!std::filesystem::exists(outputsDir))
             {
-                std::cout << std::endl
-                        << "outputs directory doesn't exist, let's create it" << std::endl;
+                std::cout << '\n'
+                        << "outputs directory doesn't exist, let's create it" << '\n';
 
                 if (!std::filesystem::create_directory(outputsDir))
                 {
-                    std::cerr << "Error creating outputs directory." << std::endl;
+                    std::cerr << "Error creating outputs directory." << '\n';
                     exit(1); // Return an error code if directory creation fails
                 }
             }
              if (!std::filesystem::exists(outputsDirJpg))
             {
-                std::cout << std::endl
-                        << "outputs directory for .jpg images doesn't exist, let's create it" << std::endl;
+                std::cout << "\n"
+                        << "outputs directory for .jpg images doesn't exist, let's create it" << '\n';
 
                 if (!std::filesystem::create_directory(outputsDirJpg))
                 {
-                    std::cerr << "Error creating outputs directory." << std::endl;
+                    std::cerr << "Error creating outputs directory." << '\n';
                     exit(1); // Return an error code if directory creation fails
                 }
             }
         }
         static void writeBinaryFile(std::string& outputPath, int& width, int& height, int& k, std::vector<Point> points , std::vector<Point> centroids)
         {
-            std::cout << "Saving the Compressed Image..." << std::endl;
+            std::cout << "Saving the Compressed Image..." << '\n';
         std::ofstream outputFile(outputPath, std::ios::app);
         auto startcompression = std::chrono::high_resolution_clock::now();
         std::vector<uint8_t> buffer;
 
         // Helper function to write data to buffer
-        auto writeToBuffer = [&buffer](const void* data, size_t size) {
-            const uint8_t* byteData = static_cast<const uint8_t*>(data);
+        auto writeToBuffer = [&buffer](const void *data, size_t size)
+        {
+            const auto *byteData = static_cast<const uint8_t *>(data);
             buffer.insert(buffer.end(), byteData, byteData + size);
         };
 
-        u_int16_t width16bit = static_cast<u_int16_t>(width);
-        u_int16_t height16bit = static_cast<u_int16_t>(height);
-        u_int16_t k16bit = static_cast<u_int16_t>(k);
+        auto width16bit = static_cast<u_int16_t>(width);
+        auto height16bit = static_cast<u_int16_t>(height);
+        auto k16bit = static_cast<u_int16_t>(k);
 
         // Scrivi width, height e k
         writeToBuffer(&width16bit, sizeof(width16bit));
@@ -80,16 +81,15 @@ class FilesUtils
             }
         }
 
-        // Determina il numero di bit necessari per rappresentare k colori
-        int bitsPerColor = std::ceil(std::log2(k));
-        int bytesPerColor = (bitsPerColor + 7) / 8; // Arrotonda per eccesso
+
         int pointId = 0;
-        int n_points = points.size();
+        size_t n_points = points.size();
+        const uint8_t MAX_POINT_DIFF = 254;
         while (pointId < n_points)
         {
             int pointId_start = pointId;
-            uint8_t clusterId = static_cast<uint8_t>(points[pointId_start].clusterId);
-            while(pointId < n_points && points[pointId].clusterId == clusterId && pointId - pointId_start < 254)
+            auto clusterId = static_cast<uint8_t>(points[pointId_start].clusterId);
+            while(pointId < n_points && points[pointId].clusterId == clusterId && pointId - pointId_start < MAX_POINT_DIFF)
             {
                 ++pointId;
             }
@@ -106,21 +106,21 @@ class FilesUtils
         auto endcompression = std::chrono::high_resolution_clock::now();
 
         std::chrono::duration<double> elapsedcompression = endcompression - startcompression;
-        std::cout << "Compression done in " << elapsedcompression.count() << std::endl;}
-            static void writePerformanceEvaluation(std::string path, std::string program_name, int k, std::vector<Point> points, std::chrono::duration<double> elapsedKmeans)
-            {
-                std::ofstream perfEval("performanceEvaluation.txt", std::ios::app);
-                perfEval << program_name<< std::endl;
-                perfEval << "--------------------------------------"<< std::endl;
-                perfEval << "Image path: " << path << std::endl;
-                perfEval << "Number of colors: " << k << std::endl;
-                perfEval << "Number of points: " << points.size() << std::endl;
-                perfEval << " ==>" << "Time: " << elapsedKmeans.count() << "s" << std::endl;
-                perfEval << std::endl;
-                perfEval << std::endl;
-                perfEval << std::endl;
+        std::cout << "Compression done in " << elapsedcompression.count() << '\n';}
+        static void writePerformanceEvaluation(const std::string &path, const std::string &program_name, int k, const std::vector<Point> &points, std::chrono::duration<double> elapsedKmeans)
+        {
+            std::ofstream perfEval("performanceEvaluation.txt", std::ios::app);
+            perfEval << program_name << '\n';
+            perfEval << "--------------------------------------" << '\n';
+            perfEval << "Image path: " << path << '\n';
+            perfEval << "Number of colors: " << k << '\n';
+            perfEval << "Number of points: " << points.size() << '\n';
+            perfEval << " ==>" << "Time: " << elapsedKmeans.count() << "s" << '\n';
+            perfEval << '\n';
+            perfEval << '\n';
+            perfEval << '\n';
         }
-        static bool isCorrectExtension(const std::filesystem::path &filePath, const std::string &correctExtension)
+        static auto isCorrectExtension(const std::filesystem::path &filePath, const std::string &correctExtension) -> bool
         {
             static const std::vector<std::string> imageExtensions = {correctExtension};
             const std::string extension = filePath.extension().string();
@@ -154,17 +154,17 @@ class FilesUtils
             // Check if no images were found
             if (imageNames.empty())
             {
-                std::cerr << "No images found in the directory." << std::endl;
+                std::cerr << "No images found in the directory." << '\n';
                 exit(1); // Return 1 to indicate an error
             }
 
         }
-        static int readBinaryFile(std::string& path, cv::Mat& imageCompressed)
+        static auto readBinaryFile(std::string& path, cv::Mat& imageCompressed) -> int
         {
             std::ifstream inputFile(path, std::ios::binary);
             if (!inputFile.is_open())
             {
-                std::cerr << "Error opening the file." << std::endl;
+                std::cerr << "Error opening the file." << '\n';
                 return 1;
             }
             
@@ -173,12 +173,12 @@ class FilesUtils
             size_t pos = 0;
             auto readFromBuffer = [&buffer, &pos] (void* data, size_t size)
             {
-            uint8_t* byteData = static_cast<uint8_t*>(data);
+            auto byteData = static_cast<uint8_t*>(data);
             std::copy(buffer.begin() + pos, buffer.begin() + pos + size, byteData);
             pos += size;
             };
 
-            uint16_t width, height, k;
+            uint16_t width=0, height=0, k=0;
             readFromBuffer(&width, sizeof(width));
             readFromBuffer(&height, sizeof(height));
             readFromBuffer(&k, sizeof(k));
@@ -196,9 +196,6 @@ class FilesUtils
                 clustersColors.push_back(features);
             }
 
-            int bitsPerColor = std::ceil(std::log2(k));
-
-            int bytesPerColor = (bitsPerColor + 7) / 8;
 
             int n_points = width * height;
 
@@ -206,7 +203,7 @@ class FilesUtils
 
             while (pointId < n_points) 
             {
-                uint8_t counter;
+                uint8_t counter = 0;
                 uint8_t clusterId = 0;
                 readFromBuffer(&counter, sizeof(counter));
                 readFromBuffer(&clusterId, sizeof(clusterId));

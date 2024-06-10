@@ -25,8 +25,8 @@ private:
         std::cout << " |_____/ \\___|\\__, |\\__,_|\\___|_| |_|\\__|_|\\__,_|_|     \\/ \\___|_|  |___/_|\\___/|_| |_|                                            \n";
         std::cout << "                 | |                                                                                                               \n";
         std::cout << "                 |_|                                                                                                               \n";
-        std::cout << std::endl;
-        std::cout << std::endl;
+        std::cout << '\n';
+        std::cout << '\n';
     }
     static void mpiEncoderHeader()
     {
@@ -44,8 +44,8 @@ private:
         std::cout << " | |  | | |    _| |_      \\  /  __/ |  \\__ \\ | (_) | | | |                                                                          \n";
         std::cout << " |_|  |_|_|   |_____|      \\/ \\___|_|  |___/_|\\___/|_| |_|                                                                          \n";
 
-        std::cout << std::endl;
-        std::cout << std::endl;
+        std::cout << '\n';
+        std::cout << '\n';
     }
     static void ompEncoderHeader()
     {
@@ -64,8 +64,8 @@ private:
         std::cout << "  \\____/|_|  |_|_|          \\/ \\___|_|  |___/_|\\___/|_| |_|                                                                        \n";
         std::cout << "                                                                                                                                    \n";
         std::cout << "                                                                                                                                    \n";
-        std::cout << std::endl;
-        std::cout << std::endl;
+        std::cout << '\n';
+        std::cout << '\n';
     }
 
 public:
@@ -80,8 +80,8 @@ public:
         std::cout << " |_|   \\__,_|_|  \\__,_|_|_|\\___|_| |_|\\_\\_| |_| |_|\\___|\\__,_|_| |_|___/  \\_____\\___/|_| |_| |_| .__/|_|  \\___||___/___/\\___/|_|   \n";
         std::cout << "                                                                                               | |                                 \n";
         std::cout << "                                                                                               |_|                                 \n";
-        std::cout << std::endl;
-        std::cout << std::endl;
+        std::cout << '\n';
+        std::cout << '\n';
     }
     static void decoderHeader()
     {
@@ -111,8 +111,8 @@ public:
                      "     \\/  \\/ \\___/|_|  |_|\\_\\ |_____/ \\___/|_| |_|\\___| (_)\n"
                      "                                                          \n"
                      "                                                          \n";
-        std::cout << std::endl;
-        std::cout << std::endl;
+        std::cout << '\n';
+        std::cout << '\n';
     }
     static void compressionChoices(int &levelsColorsChioce, int &typeCompressionChoice, std::string &outputPath, cv::Mat &image, int executionStandard)
     {
@@ -130,28 +130,31 @@ public:
         {
             UtilsCLI::ompEncoderHeader();
         }
-        std::cout << "The following program will reduce the number of colors int he original image in order to decrease its size." << std::endl;
-        std::cout << std::endl;
+        std::cout << "The following program will reduce the number of colors int he original image in order to decrease its size.\n";
+        std::cout << '\n';
         std::cout << "Now you can select the desired level of color preservation for your image:\n"
-                  << "*You can modiify the percentage of colors preserved for each level in the config file*" << std::endl
-                  << "\n"
+                  << "*You can modiify the percentage of colors preserved for each level in the config file*\n"
+                  << '\n'
                   << "(1)\tLow color preservation\n"
                   << "(2)\tMedium-low color preservation\n"
                   << "(3)\tModerate color preservation\n"
                   << "(4)\tMedium-high color preservation\n"
                   << "(5)\tHigh color preservation\n"
-                  << "\n"
-                  << "Please choose the level that best fits your needs" << std::endl;
-        std::cout << std::endl;
-        std::cout << std::endl;
-        do
+                  << '\n'
+                  << "Please choose the level that best fits your needs\n";
+        std::cout << '\n';
+        std::cout << '\n';
+
+        constexpr int levelsColorsChioceMin = 1;
+        constexpr int levelsColorsChioceMax = 5;
+        while (levelsColorsChioce < levelsColorsChioceMin || levelsColorsChioce > levelsColorsChioceMax)
         {
             std::cin >> levelsColorsChioce;
-            if (levelsColorsChioce < 1 || levelsColorsChioce > 5)
+            if (levelsColorsChioce < levelsColorsChioceMin || levelsColorsChioce > levelsColorsChioceMax)
             {
-                std::cout << "Invalid input. Please choose a level between 1 and 5." << std::endl;
+                std::cout << "Invalid input. Please choose a level between 1 and 5.\n";
             }
-        } while (levelsColorsChioce < 1 || levelsColorsChioce > 5);
+        }
 
         if (executionStandard == 1)
         {
@@ -165,21 +168,23 @@ public:
         {
             UtilsCLI::ompEncoderHeader();
         }
-        std::cout << "Perfect! Now let's choose the type of compression for your image." << std::endl
-                  << "\n"
+        std::cout << "Perfect! Now let's choose the type of compression for your image.\n";
+        std::cout << '\n'
                   << "(1)\tLight Compression (it may take more time bot the result will be more defined) <-- Suggested for Small Images\n"
                   << "(2)\tMedium Compression (it applies chroma subsampling to reduce the dimension of the image and the time needed for the computation)\n"
                   << "(3)\tHeavy Compression (it applies chroma subsampling and image resizing) <-- Suggested for Big Images\n";
-        std::cout << std::endl;
-        std::cout << std::endl;
-        do
+        std::cout << '\n';
+        std::cout << '\n';
+        constexpr char typeCompressionChoiceMin = 1;
+        constexpr char typeCompressionChoiceMax = 3;
+        while (typeCompressionChoice < typeCompressionChoiceMin || typeCompressionChoice > typeCompressionChoiceMax)
         {
             std::cin >> typeCompressionChoice;
-            if (typeCompressionChoice < 1 || typeCompressionChoice > 3)
+            if (typeCompressionChoice < typeCompressionChoiceMin || typeCompressionChoice > typeCompressionChoiceMax)
             {
-                std::cout << "Invalid input. Please choose a type between 1 and 3." << std::endl;
+                std::cout << "Invalid input. Please choose a type between 1 and 3.\n";
             }
-        } while (typeCompressionChoice < 1 || typeCompressionChoice > 3);
+        }
         if (executionStandard == 1)
         {
             UtilsCLI::sequentialEncoderHeader();
@@ -192,9 +197,9 @@ public:
         {
             UtilsCLI::ompEncoderHeader();
         }
-        std::cout << "Now please enter the global path of the image you want to compress" << std::endl;
-        std::cout << std::endl;
-        std::cout << std::endl;
+        std::cout << "Now please enter the global path of the image you want to compress\n";
+        std::cout << '\n';
+        std::cout << '\n';
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         std::getline(std::cin, path);
         if (executionStandard == 1)
@@ -209,21 +214,21 @@ public:
         {
             UtilsCLI::ompEncoderHeader();
         }
-        std::cout << "Choose a name for your output (note that the output will be saved in the outputs directory)" << std::endl;
-        std::cout << "You don't need to give any extension" << std::endl;
-        std::cout << std::endl;
-        std::cout << std::endl;
+        std::cout << "Choose a name for your output (note that the output will be saved in the outputs directory)\n";
+        std::cout << "You don't need to give any extension\n";
+        std::cout << '\n';
+        std::cout << '\n';
         std::getline(std::cin, outputPath);
         outputPath = "outputs/" + outputPath + ".kc";
         image = cv::imread(path);
         while (image.empty())
         {
-            std::cerr << "Error: Unable to load the image." << std::endl;
-            std::cout << "Please enter the correct global path of the image you want to compress" << std::endl
-                      << std::endl;
+            std::cerr << "Error: Unable to load the image.\n";
+            std::cout << "Please enter the correct global path of the image you want to compress\n"
+                      << '\n';
             std::cout << "--> ";
             std::getline(std::cin, path);
-            std::cout << std::endl;
+            std::cout << '\n';
             cv::Mat image = cv::imread(path);
         }
 
@@ -239,31 +244,31 @@ public:
         {
             UtilsCLI::ompEncoderHeader();
         }
-        std::cout << "Well done! The program is now ready to compress your image." << std::endl;
-        std::cout << std::endl;
+        std::cout << "Well done! The program is now ready to compress your image." << '\n';
+        std::cout << '\n';
     }
-    static void printCompressionInformations(int &originalWidth, int &originalHeight, int &width, int &height, int &k, int &different_colors_size)
+    static void printCompressionInformations(int &originalWidth, int &originalHeight, int &width, int &height, int &k, size_t &different_colors_size)
     {
-        std::cout << "Your original image was " << originalWidth << "x" << originalHeight << " pixels and it has " << different_colors_size << " different colors." << std::endl;
-        std::cout << std::endl;
-        std::cout << "The compressed image will be " << width << "x" << height << " pixels and it will have " << k << " different colors." << std::endl;
-        std::cout << std::endl;
-        std::cout << std::endl;
+        std::cout << "Your original image was " << originalWidth << "x" << originalHeight << " pixels and it has " << different_colors_size << " different colors." << '\n';
+        std::cout << '\n';
+        std::cout << "The compressed image will be " << width << "x" << height << " pixels and it will have " << k << " different colors." << '\n';
+        std::cout << '\n';
+        std::cout << '\n';
     }
 
     static void displayDecodingMenu(std::string &path, std::vector<std::filesystem::path> &imageNames, std::filesystem::path &decodeDir)
     {
 
-        std::cout << "Select an image:" << std::endl;
-        std::cout << std::endl;
+        std::cout << "Select an image:" << '\n';
+        std::cout << '\n';
         for (size_t i = 0; i < imageNames.size(); ++i)
         {
-            std::cout << "(" << i + 1 << ") " << imageNames[i] << std::endl;
+            std::cout << "(" << i + 1 << ") " << imageNames[i] << '\n';
         }
 
-        int choice;
-        std::cout << std::endl
-                  << "Enter your choice (write only the number {1, 2, 3, ...}):" << std::endl;
+        int choice=0;
+        std::cout << '\n'
+                  << "Enter your choice (write only the number {1, 2, 3, ...}):" << '\n';
         std::cin >> choice;
 
         // check if choice makes sense

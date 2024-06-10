@@ -265,7 +265,7 @@
             if (rank == 0)
             {
                 std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-                std::cout << "Iteration " << iter << " completed in " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() << "ms" << std::endl;
+                std::cout << "Iteration " << iter << " completed in " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() << "ms" << '\n';
             }
 
         }
@@ -284,7 +284,7 @@
                 int end = (i == world_size - 1) ? points.size() : (i + 1) * points_per_cluster;
                 for (int j = start; j < end; j++)
                 {
-                    int clusterId;
+                    int clusterId = 0;
                     MPI_Recv(&clusterId, 1, MPI_INT, i, j, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
                     points[j].clusterId = clusterId;
                 }
@@ -379,7 +379,7 @@
                         if (j < 3 - 1)
                             std::cout << ", ";
                     }
-                    std::cout << ")"<< std::endl;
+                    std::cout << ")" << '\n';
                 }
             }
         }

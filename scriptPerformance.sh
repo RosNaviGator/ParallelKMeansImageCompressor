@@ -8,7 +8,7 @@ image_path="./benchmarkImages/glassBall-1888x2826.jpg"
 # Define with metohods to test
 seqFlag=1;
 ompFlag=1;
-cudaFlag=1; 
+cudaFlag=0; 
 mpiFLag=1;
 
 

@@ -10,7 +10,7 @@ class Performance
 {
 public:
     Performance(); // Default constructor
-    void writeCSV(int different_colors_size, int k, int n_points, double elapsedKmeans, int num_processes = 0);
+    void writeCSV(size_t different_colors_size, int k, size_t n_points, double elapsedKmeans, int num_processes = 0);
     static std::string extractFileName(const std::string &outputPath);
     void fillPerformance(int choice, std::string img, std::string method);
 
@@ -20,7 +20,7 @@ private:
     
 
     std::string img;
-    int choice;
+    int choice = 0;
     std::string method;
 };
 
@@ -35,7 +35,7 @@ void Performance::fillPerformance(int choice, std::string img, std::string metho
     this->method = method;
 }
 
-void Performance::writeCSV(int different_colors_size, int k, int n_points, double elapsedKmeans, int num_processes)
+void Performance::writeCSV(size_t different_colors_size, int k, size_t n_points, double elapsedKmeans, int num_processes)
 {
     std::string filename = "performanceData.csv";
     createOrOpenCSV(filename);
@@ -68,10 +68,10 @@ void Performance::createOrOpenCSV(const std::string &filename)
         std::ofstream outfile(filename);
         if (!outfile.is_open())
         {
-            std::cerr << "Error creating file!" << std::endl;
+            std::cerr << "Error creating file!" << '\n';
             return;
         }
-        outfile << "img, method, starting colors, k, n_points, comp type, time, world_size" << std::endl; // Write custom header
+        outfile << "img, method, starting colors, k, n_points, comp type, time, world_size" << '\n'; // Write custom header
         outfile.close();                                                                     // Close the file after creating it
     }
 }
@@ -81,10 +81,10 @@ void Performance::appendToCSV(std::string filename, int startingColors, int rema
     std::ofstream file(filename, std::ios::app); // Open file for appending
     if (!file.is_open())
     {
-        std::cerr << "Error opening file for appending!" << std::endl;
+        std::cerr << "Error opening file for appending!" << '\n';
         return;
     }
-    file << this->img << "," << this->method << "," << startingColors << "," << remainingColors << "," << num_points << "," << compType << "," << time << "," << num_processes << std::endl;
+    file << this->img << "," << this->method << "," << startingColors << "," << remainingColors << "," << num_points << "," << compType << "," << time << "," << num_processes << '\n';
 }
 
 

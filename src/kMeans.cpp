@@ -86,7 +86,7 @@ void KMeans::run()
         iter++;
 
         std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-        std::cout << "Iteration " << iter << " completed in " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() << "ms" << std::endl;
+        std::cout << "Iteration " << iter << " completed in " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() << "ms" << '\n';
     }
     numberOfIterationForConvergence = iter;
 }

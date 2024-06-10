@@ -21,10 +21,11 @@ ConfigReader::ConfigReader() {
 
 ConfigReader::~ConfigReader() = default;
 
-bool ConfigReader::readConfigFile() {
+auto ConfigReader::readConfigFile() -> bool
+{
     std::ifstream file(".config");
     if (!file.is_open()) {
-        std::cerr << "Error: .config file not found." << std::endl;
+        std::cerr << "Error: .config file not found." << '\n';
         return false;
     }
 
@@ -55,10 +56,10 @@ bool ConfigReader::readConfigFile() {
             } else if (variableName == "resizing_factor") {
                 resizing_factor = std::stod(variableValue);
             } else {
-                std::cerr << "Warning: Unknown variable '" << variableName << "' in .config file." << std::endl;
+                std::cerr << "Warning: Unknown variable '" << variableName << "' in .config file." << '\n';
             }
         } else {
-            std::cerr << "Error: Invalid format in line: " << line << std::endl;
+            std::cerr << "Error: Invalid format in line: " << line << '\n';
             return false;
         }
     }
@@ -68,7 +69,7 @@ bool ConfigReader::readConfigFile() {
     // Check if any required variables are missing
     for (const std::string& var : requiredVariables) {
         if (!checkVariableExists(var)) {
-            std::cerr << "Error: Required variable '" << var << "' is missing in .config file." << std::endl;
+            std::cerr << "Error: Required variable '" << var << "' is missing in .config file." << '\n';
             return false;
         }
     }
@@ -76,7 +77,8 @@ bool ConfigReader::readConfigFile() {
     return true;
 }
 
-bool ConfigReader::checkVariableExists(const std::string& variableName) const {
+auto ConfigReader::checkVariableExists(const std::string &variableName) const -> bool
+{
     if (variableName == "first_level_compression_color") {
         return true;
     } else if (variableName == "second_level_compression_color") {
@@ -95,30 +97,30 @@ bool ConfigReader::checkVariableExists(const std::string& variableName) const {
     return false;
 }
 
-double ConfigReader::getFirstLevelCompressionColor() const {
+auto ConfigReader::getFirstLevelCompressionColor() const -> double {
     return first_level_compression_color;
 }
 
-double ConfigReader::getSecondLevelCompressionColor() const {
+auto ConfigReader::getSecondLevelCompressionColor() const -> double {
     return second_level_compression_color;
 }
 
-double ConfigReader::getThirdLevelCompressionColor() const {
+auto ConfigReader::getThirdLevelCompressionColor() const -> double {
     return third_level_compression_color;
 }
 
-double ConfigReader::getFourthLevelCompressionColor() const {
+auto ConfigReader::getFourthLevelCompressionColor() const -> double {
     return fourth_level_compression_color;
 }
 
-double ConfigReader::getFifthLevelCompressionColor() const {
+auto ConfigReader::getFifthLevelCompressionColor() const -> double {
     return fifth_level_compression_color;
 }
 
-long long int ConfigReader::getBatchSize() const {
+auto ConfigReader::getBatchSize() const -> long long int {
     return batch_size;
 }
 
-double ConfigReader::getResizingFactor() const {
+auto ConfigReader::getResizingFactor() const -> double {
     return resizing_factor;
 }

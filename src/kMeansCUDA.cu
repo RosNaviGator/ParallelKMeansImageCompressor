@@ -64,8 +64,9 @@ __global__ void average_centroids(int *centroids, int *counts, int k, int dim) {
 
 void KMeans::run()
 {
-    int MAX_ITER = 100;
-    int n = points.size();
+    const int MAX_ITER = 100;
+    int n = 0;
+    n = points.size();
     int dim = 3;
     int* labels = new int[n];
     int* centroids_data =  new int[k*dim];
@@ -88,9 +89,8 @@ void KMeans::run()
         }
     }
 
-
-    int *d_data, *d_centroids;
-    int *d_labels, *d_counts;
+    int *d_data = nullptr, *d_centroids = nullptr;
+    int *d_labels = nullptr, *d_counts = nullptr;
     int* temp = new int[k * dim];
     memccpy(temp, centroids_data, sizeof(int) * k * dim, sizeof(int) * k * dim);
     
@@ -103,7 +103,7 @@ void KMeans::run()
     cudaMemcpy(d_data, points_data, sizeof(int) * n * dim, cudaMemcpyHostToDevice);
     cudaMemcpy(d_centroids, centroids_data, sizeof(int) * k * dim, cudaMemcpyHostToDevice);
 
-    int blockSize = 256;
+    const int blockSize = 256;
     int numBlocksN = (n + blockSize - 1) / blockSize;
     int numBlocksK = (k + blockSize - 1) / blockSize;
 
@@ -122,8 +122,7 @@ void KMeans::run()
         average_centroids<<<numBlocksK, blockSize>>>(d_centroids, d_counts, k, dim);
         cudaDeviceSynchronize();
 
-
-        int* returnedCentroids;
+        int *returnedCentroids = nullptr;
         returnedCentroids = new int[k * dim];
         cudaMemcpy(returnedCentroids, d_centroids, sizeof(int) * k * dim, cudaMemcpyDeviceToHost);
 

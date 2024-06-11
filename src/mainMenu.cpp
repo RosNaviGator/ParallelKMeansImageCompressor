@@ -1,10 +1,12 @@
 #include <iostream>
 #include <utilsCLI.hpp>
+#include <filesystem>
 int main(int argc, char** nargv)
 {
     
     UtilsCLI::mainMenuHeader();
     int encodeOrDecode;
+    std::filesystem::path cuda_path = "./build/cudaEncoder";
     std::cout << "This is the Main Menu of the Image Compressor! What do you want to do?" << std::endl;
     std::cout << std::endl;
     std::cout << std::endl;
@@ -34,13 +36,27 @@ int main(int argc, char** nargv)
         std::cout << "(1)\tSequential Compressor \n";
         std::cout << "(2)\tMPI Compressor \n";
         std::cout << "(3)\tOpenMP Compressor \n";
+        if(std::filesystem::exists(cuda_path))
+        {
+            std::cout << "(4)\tCUDA Compressor \n";
+        }else
+        {
+            std::cout << "CUDA Compressor not available, make sure you have complied the program with the right flag!\n";
+        }
         std::cout << std::endl;
         std::cout << std::endl;
         std::cin >> compressorChoice;
-        while (compressorChoice != 1 && compressorChoice != 2 && compressorChoice != 3) {
+        if(std::filesystem::exists(cuda_path))
+        {
+            while (compressorChoice != 1 && compressorChoice != 2 && compressorChoice != 3 && compressorChoice != 4) {
+            std::cout << "Invalid input. Please enter 1, 2, 3 or 4: ";
+            std::cin >> compressorChoice;
+        }else{
+            while (compressorChoice != 1 && compressorChoice != 2 && compressorChoice != 3) {
             std::cout << "Invalid input. Please enter 1, 2 or 3: ";
             std::cin >> compressorChoice;
         }
+        
         if (compressorChoice == 1)
         {
             std::system("./build/seqEncoder");
@@ -60,6 +76,10 @@ int main(int argc, char** nargv)
         }else if (compressorChoice == 3)
         {
             std::system("./build/ompEncoder");
+        }
+        else if (compressorChoice == 4)
+        {
+            std::system("./build/cudaEncoder");
         }
         
     }

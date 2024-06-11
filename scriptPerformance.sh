@@ -1,4 +1,4 @@
-image_path="./benchmarkImages/glassBall-1888x2826.jpg"
+image_path="./benchmarkImages/goosw.jpg"
 # ./benchmarkImages/glassBall-1888x2826.jpg
 # ./benchmarkImages/piazzaDuomo-612x612.jpg
 # ./benchmarkImages/odettte3000x4000.jpg
@@ -8,24 +8,24 @@ image_path="./benchmarkImages/glassBall-1888x2826.jpg"
 # Define with metohods to test
 seqFlag=1;
 ompFlag=1;
-cudaFlag=1; 
+cudaFlag=0; 
 mpiFLag=1;
 
 
 # Define how many times to run each single test (beware: life is short)
-M=1;
+M=4;
 
 # Define percentage of colors (1-5)
 colorsStart=1;
-colorsEnd=1;
+colorsEnd=5;
 
 # Define compression type (1-3)
 compressionStart=1;
-compressionEnd=1;
+compressionEnd=3;
 
 # Define number of processes (only MPI)
-processorStart=4;
-processorEnd=4;
+processorStart=2;
+processorEnd=10;
 
 # Loop over colors
 for ((colors=colorsStart; colors<=colorsEnd; colors++))

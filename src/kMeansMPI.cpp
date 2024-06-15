@@ -2,16 +2,14 @@
 #include <algorithm>
 #include <chrono>
 
-    KMeans::KMeans(const int& k, const int& rank, const int& n_features, const int& batch_size)
+    KMeans::KMeans(const int& k, const int& rank, const int& n_features)
     {
         this->k = k;
         this->centroids = std::vector<Point>(k, Point(n_features));
-        this->batch_size = batch_size;
     }
-    KMeans::KMeans(const int& k, const int& rank, const int& n_features,  const std::vector<Point> points, const int& batch_size) : points(points) {
+    KMeans::KMeans(const int& k, const int& rank, const int& n_features,  const std::vector<Point> points) : points(points) {
         
         this->k = k;
-        this -> batch_size = batch_size;
         centroids = std::vector<Point>(k, Point(n_features));     
         int size = points.size();
         std::random_device rd;                              // Initialize a random device
@@ -38,7 +36,6 @@
             MPI_Bcast(&(centroids[i].getFeature(1)), 1, MPI_UNSIGNED_CHAR, 0, MPI_COMM_WORLD);
             MPI_Bcast(&(centroids[i].getFeature(2)), 1, MPI_UNSIGNED_CHAR, 0, MPI_COMM_WORLD);
         }
-        // std::cout << "staaart" << std::endl;
 
         while (iter < iter_max && changed)
         {
@@ -57,8 +54,6 @@
                         minDist = dist;
                         if (p.second.clusterId != i)
                         {
-                            // std::cout << "point " << p.second.id << " changed cluster " << "from " << p.second.clusterId << " to " << i << std::endl;
-
                             p.second.clusterId = i;
                             p.first = 1;
 
@@ -66,108 +61,6 @@
                     }
                 }
             }
-
-            // for (int i = 0 ; i < local_points.size(); i++)
-            // {
-            //     changed_points[rank] += local_points[i].first;
-            // }
-
-            
-            // for (int i = 0 ; i < world_size; i++)
-            // {
-            //     int changed = changed_points[rank];
-            //     MPI_Bcast(&changed, 1, MPI_INT, i, MPI_COMM_WORLD);
-            //     changed_points[i] = changed;
-            // }
-            
-            // changed_points.insert(changed_points.begin(), 0);
-            
-            // for (int i = 1 ; i < changed_points.size(); ++i )
-            // {
-            //     changed_points[i] = changed_points[i]*2 + changed_points[i-1];
-            // }
-            // // std::cout << "-------------- LEO DEBUGGER ----------------"<< std::endl;
-
-            //  auto maxSequentialDifference = [&changed_points]() 
-            //  {
-
-            //     int maxDiff = 0;
-            //     std::for_each(changed_points.begin() + 1, changed_points.end(), [&](int curr) {
-            //         static int prev = changed_points[0];
-            //         maxDiff = std::max(maxDiff, std::abs(curr - prev));
-            //         prev = curr; 
-            //     });
-
-            //     return maxDiff;
-            // };
-
-            
-            // int maxNumOfChanges = maxSequentialDifference();
-            // int num_of_batches = maxNumOfChanges / batch_size;
-            // int batch_counter = 0;
-            // long long int comm_counter = 0;
-
-            // while (batch_counter <= num_of_batches)
-            // {
-            //     comm_counter = rank * batch_size;
-            //     int communications_done = 0;
-            //     if (rank != 0)
-            //     {
-            //         for (int i = 0 ; i < local_points.size() && communications_done < batch_size; i++)
-            //         {
-            //             if(local_points[i].first == 1)
-            //             {
-            //                 MPI_Send(&local_points[i].second.id, 1, MPI_INT, 0, comm_counter, MPI_COMM_WORLD);
-            //                 MPI_Send(&local_points[i].second.clusterId, 1, MPI_INT, 0, comm_counter + 1, MPI_COMM_WORLD);
-
-            //                 local_points[i].first = 0;
-
-            //                 comm_counter += 2;
-            //                 communications_done += 2;
-            //             }
-            //             // std::cout << "ultimo valore di comm_counter per rank " << rank << " è " << comm_counter + 1 << std::endl;
-            //         }
-            //     } 
-
-                    
-            //     if (rank == 0)
-            //     {
-                    
-            //         for (int i = 1; i < world_size; i++)
-            //         {
-            //             int start = batch_counter * batch_size;
-            //             int end = changed_points[i+1] - changed_points[i];
-            //             for (int j = start; j < end && j < (batch_counter+1)*batch_size; j+=2)
-            //             {
-            //                 int comm_count = (i * batch_size) + (j-start);
-            //                 int id, clusterId;
-            //                 // std::cout << "valore atteso di comm_count " << j + 1 << " from process " << i << std::endl;
-            //                 MPI_Recv(&id, 1, MPI_INT, i, comm_count, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-            //                 MPI_Recv(&clusterId, 1, MPI_INT, i, comm_count + 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-
-            //                 points[id].clusterId = clusterId;
-
-            //             }
-            //         }
-                    
-            //     }
-            //     batch_counter++;
-            // }
-
-            // if (rank == 0)
-            // {
-                
-            //     for (int i = 0 ; i < local_points.size(); i++)
-            //     {
-            //         if(local_points[i].first == 1)
-            //         {
-            //             points[local_points[i].second.id].clusterId = local_points[i].second.clusterId;
-            //             local_points[i].first = 0;
-            //         }
-            //     }
-                
-            // }
-
             // calcolo dei centroidi
 
             // calcolo delle somme parziali per ogni processo 
@@ -294,73 +187,6 @@
 
 
         
-            // int num_of_batches = local_points.size() / batch_size;
-            // if (rank == 0)
-            // {
-            //     num_of_batches = points.size() / batch_size;
-            // }
-            // int batch_counter = 0;
-            // long long int comm_counter = 0;
-
-            // while (batch_counter <= num_of_batches)
-            // {
-            //     comm_counter = rank * batch_size;
-            //     int communications_done = 0;
-            //     if (rank != 0)
-            //     {
-            //         for (int i = 0 ; i < local_points.size() && communications_done < batch_size; i++)
-            //         {
-            //                 MPI_Send(&local_points[i].second.id, 1, MPI_INT, 0, comm_counter, MPI_COMM_WORLD);
-            //                 MPI_Send(&local_points[i].second.clusterId, 1, MPI_INT, 0, comm_counter + 1, MPI_COMM_WORLD);
-
-            //                 comm_counter += 2;
-            //                 communications_done += 2;
-            //             }
-            //             // std::cout << "ultimo valore di comm_counter per rank " << rank << " è " << comm_counter + 1 << std::endl;
-            //         }
-            //     } 
-
-                    
-            //     if (rank == 0)
-            //     {
-                    
-            //         for (int i = 1; i < world_size; i++)
-            //         {
-            //             int start = batch_counter * batch_size;
-            //             int end = points.size()/world_size;
-            //             if (i == world_size - 1)
-            //             {
-            //                 end = points.size()-(world_size-1)*(points.size()/world_size);
-            //             }
-            //             for (int j = start; j < end && j < (batch_counter+1)*batch_size; j+=2)
-            //             {
-            //                 int comm_count = (i * batch_size) + (j-start);
-            //                 int id, clusterId;
-            //                 // std::cout << "valore atteso di comm_count " << j + 1 << " from process " << i << std::endl;
-            //                 MPI_Recv(&id, 1, MPI_INT, i, comm_count, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-            //                 MPI_Recv(&clusterId, 1, MPI_INT, i, comm_count + 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-
-            //                 points[id].clusterId = clusterId;
-
-            //             }
-            //         }
-                    
-            //     }
-            //     batch_counter++;
-
-            // if (rank == 0)
-            // {
-                
-            //     for (int i = 0 ; i < local_points.size(); i++)
-            //     {
-            //         if(local_points[i].first == 1)
-            //         {
-            //             points[local_points[i].second.id].clusterId = local_points[i].second.clusterId;
-            //             local_points[i].first = 0;
-            //         }
-            //     }
-                
-            // }
 
     }
     void KMeans::printClusters()  const

@@ -10,7 +10,6 @@ ConfigReader::ConfigReader() {
         "third_level_compression_color",
         "fourth_level_compression_color",
         "fifth_level_compression_color",
-        "batch_size",
         "resizing_factor"
     };
 
@@ -50,11 +49,15 @@ bool ConfigReader::readConfigFile() {
                 fourth_level_compression_color = std::stod(variableValue);
             } else if (variableName == "fifth_level_compression_color") {
                 fifth_level_compression_color = std::stod(variableValue);
-            } else if (variableName == "batch_size") {
-                batch_size = std::stoll(variableValue);
             } else if (variableName == "resizing_factor") {
                 resizing_factor = std::stod(variableValue);
-            } else {
+            } else if (variableName == "color_choice") {
+                color_choice = std::stoi(variableValue);
+            } else if (variableName == "compression_choice") {
+                compression_choice = std::stoi(variableValue);
+            } else if (variableName == "input_image_file_path") {
+                inputImageFilePath = variableValue;
+            }else {
                 std::cerr << "Warning: Unknown variable '" << variableName << "' in .config file." << std::endl;
             }
         } else {
@@ -87,8 +90,6 @@ bool ConfigReader::checkVariableExists(const std::string& variableName) const {
         return true;
     } else if (variableName == "fifth_level_compression_color") {
         return true;
-    } else if (variableName == "batch_size") {
-        return true;
     } else if (variableName == "resizing_factor") {
         return true;
     }
@@ -115,10 +116,18 @@ double ConfigReader::getFifthLevelCompressionColor() const {
     return fifth_level_compression_color;
 }
 
-long long int ConfigReader::getBatchSize() const {
-    return batch_size;
-}
-
 double ConfigReader::getResizingFactor() const {
     return resizing_factor;
+}
+
+int ConfigReader::getColorChoice() const {
+    return color_choice;
+}
+
+int ConfigReader::getCompressionChoice() const {
+    return compression_choice;
+}
+
+std::filesystem::path ConfigReader::getInputImageFilePath() const {
+    return inputImageFilePath;
 }

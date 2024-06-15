@@ -25,12 +25,13 @@ DECODER_TARGET = $(BUILD_DIR)/decoder
 MAINMENU_TARGET = menu
 
 # Source files, different kmeans have different source files
-SEQ_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoder.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeans.cpp $(SRC_DIR)/configReader.cpp
-OMP_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoderOMP.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeansOMP.cpp $(SRC_DIR)/configReader.cpp
-MPI_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoderMPI.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeansMPI.cpp $(SRC_DIR)/configReader.cpp
-CUDA_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoderCUDA.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeansCUDA.cu $(SRC_DIR)/configReader.cpp
-DECODER_SRCS = $(wildcard $(SRC_DIR)/decoder.cpp)
-MAINMENU_SRCS = $(wildcard $(SRC_DIR)/mainMenu.cpp)
+
+SEQ_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoder.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeans.cpp $(SRC_DIR)/configReader.cpp $(SRC_DIR)/performanceEvaluation.cpp $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/filesUtils.cpp $(SRC_DIR)/imagesUtils.cpp
+OMP_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoderOMP.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeansOMP.cpp $(SRC_DIR)/configReader.cpp $(SRC_DIR)/performanceEvaluation.cpp $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/filesUtils.cpp $(SRC_DIR)/imagesUtils.cpp
+MPI_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoderMPI.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeansMPI.cpp $(SRC_DIR)/configReader.cpp $(SRC_DIR)/performanceEvaluation.cpp $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/filesUtils.cpp $(SRC_DIR)/imagesUtils.cpp
+CUDA_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoderCUDA.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeansCUDA.cu $(SRC_DIR)/configReader.cpp $(SRC_DIR)/performanceEvaluation.cpp $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/filesUtils.cpp $(SRC_DIR)/imagesUtils.cpp
+DECODER_SRCS = $(wildcard $(SRC_DIR)/decoder.cpp) $(SRC_DIR)/filesUtils.cpp $(SRC_DIR)/imagesUtils.cpp $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/point.cpp $(SRC_DIR)/configReader.cpp
+MAINMENU_SRCS = $(wildcard $(SRC_DIR)/mainMenu.cpp) $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/configReader.cpp
 
 # Object files that will be created, different kmeans have different object files
 SEQ_ENCODER_OBJS = $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(SEQ_ENCODER_SRCS))

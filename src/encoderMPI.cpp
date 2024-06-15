@@ -43,7 +43,6 @@ int main(int argc, char *argv[])
     int levelsColorsChioce;
     int typeCompressionChoice;
     ConfigReader configReader;
-    long long int batch_size = configReader.getBatchSize();
     cv::Mat image;
     int different_colors_size;
     Performance performance;
@@ -151,11 +150,11 @@ int main(int argc, char *argv[])
 
     if (rank == 0)
     {
-        kmeans = std::unique_ptr<KMeans>(new KMeans(k, rank, 3, points, batch_size));
+        kmeans = std::unique_ptr<KMeans>(new KMeans(k, rank, 3, points));
     }
     else
     {
-        kmeans = std::unique_ptr<KMeans>(new KMeans(k, rank, 3, batch_size));
+        kmeans = std::unique_ptr<KMeans>(new KMeans(k, rank, 3));
     }
     auto start = std::chrono::high_resolution_clock::now();
     kmeans->run(rank, world_size, local_points);

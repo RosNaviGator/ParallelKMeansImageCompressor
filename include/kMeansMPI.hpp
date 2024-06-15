@@ -14,9 +14,8 @@
 class KMeans
 {
     public:
-        KMeans(const int& k, const int& rank, const int& n_features, const std::vector<Point> points, const int& batch_size);    
-        KMeans(const int& k, const int& rank, const int& n_features, const int& batch_size);
-        
+        KMeans(const int& k, const int& rank, const int& n_features, const std::vector<Point> points);    
+        KMeans(const int& k, const int& rank, const int& n_features);
 
         void run(const int& rank, const int& world_size, const std::vector<std::pair<int, Point> > local_points);
         void printClusters() const;
@@ -29,7 +28,6 @@ class KMeans
     private:
         
         int k;
-        int batch_size;
         std::vector<Point> points;
         std::vector<Point> centroids;
 };

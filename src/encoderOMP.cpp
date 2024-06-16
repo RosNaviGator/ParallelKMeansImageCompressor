@@ -25,35 +25,48 @@
 
 #include <performanceEvaluation.hpp>
 
-
-
-
-int main(int argc, char *argv[])
+auto main(int argc, char *argv[]) -> int
 {
 
-    int k;
+    int num_threads = 0;
+
+    int k = 0;
     std::string path;
     std::string outputPath;
     std::string fileName;
     std::vector<Point> points;
-    int height;
-    int width;
-    int n_points;
+    int height = 0;
+    int width = 0;
+    int n_points = 0;
     std::vector<std::pair<int, Point>> local_points;
-    int levelsColorsChioce;
-    int typeCompressionChoice;
+    int levelsColorsChioce = 0;
+    int typeCompressionChoice = 0;
     cv::Mat image;
     Performance performance;
 
-    // pass inputs as args for performance evaluation
-    if (4 == argc)
+    
+    const int NUMBER_OF_ARGS_WITHOUT_THREADS = 4;
+    const int NUMBER_OF_ARGS_DEFINING_THREADS = 5;
+
+    auto args = std::span(argv, size_t(argc));
+
+    if (argc == NUMBER_OF_ARGS_DEFINING_THREADS)
+    {
+        num_threads = std::stoi(args.at(4));
+        omp_set_num_threads(num_threads);
+    }
+        
+
+    
+
+    if (argc == NUMBER_OF_ARGS_DEFINING_THREADS || argc == NUMBER_OF_ARGS_WITHOUT_THREADS)
     {   
-        path = argv[1];
-        levelsColorsChioce = std::stoi(argv[2]);
-        typeCompressionChoice = std::stoi(argv[3]);
+        path = args.at(1);
+        levelsColorsChioce = std::stoi(args.at(2));
+        typeCompressionChoice = std::stoi(args.at(3));
 
         fileName = Performance::extractFileName(path);
-        outputPath = "outputs/" + fileName + ".kc";
+        outputPath = std::string("outputs/") + fileName + std::string(".kc");
 
         image = cv::imread(path);
         if (image.empty())
@@ -67,8 +80,8 @@ int main(int argc, char *argv[])
     }
     else
     {
-        // ask inputs at runtime
-        UtilsCLI::compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image, 3);
+        std::cerr << "Error: Invalid number of arguments." << std::endl;
+        return 1;
     }
 
     int originalHeight = image.rows;
@@ -87,7 +100,7 @@ int main(int argc, char *argv[])
 
     ImageUtils::defineKValue(k, levelsColorsChioce, different_colors);
 
-    int different_colors_size = different_colors.size();
+    size_t different_colors_size = different_colors.size();
 
     UtilsCLI::printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
 
@@ -110,15 +123,7 @@ int main(int argc, char *argv[])
 
     FilesUtils::writeBinaryFile(outputPath, width, height, k, kmeans.getPoints(), kmeans.getCentroids());
 
-    FilesUtils::writePerformanceEvaluation(outputPath, "OMP", k, points, elapsedKmeans);
-
-
-    // write perfomance data to csv
-    if (4 == argc)
-    {   
-        performance.writeCSV(different_colors_size, k, n_points, elapsedKmeans.count());
-    }
-    
+    performance.writeCSV(different_colors_size, k, n_points, elapsedKmeans.count(),num_threads);
 
     UtilsCLI::workDone();
     std::cout << "Compression done in " << elapsedKmeans.count() << std::endl;

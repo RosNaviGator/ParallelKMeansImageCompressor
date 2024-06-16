@@ -23,40 +23,42 @@
 #include <mpi.h>
 
 #include <performanceEvaluation.hpp>
+#include <span>
 
-int main(int argc, char *argv[])
+auto main(int argc, char *argv[]) -> int
 {
-    MPI_Init(NULL, NULL);
-    int world_size;
+    MPI_Init(nullptr, nullptr);
+    int world_size = 0;
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
-    int rank;
+    int rank = 0;
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-    int k;
-    int n_points;
+    int k = 0;
+    int n_points = 0;
     std::vector<Point> points;
-    std::string path;
-    std::string outputPath;
-    std::string fileName;
-    int height;
-    int width;
+    std::string path = "";
+    std::string outputPath = "";
+    std::string fileName = "";
+    int height = 0;
+    int width = 0;
     std::vector<std::pair<int, Point>> local_points;
-    int levelsColorsChioce;
-    int typeCompressionChoice;
+    int levelsColorsChioce = 0;
+    int typeCompressionChoice = 0;
     ConfigReader configReader;
     cv::Mat image;
-    int different_colors_size;
+    size_t different_colors_size = 0;
     Performance performance;
 
     if (rank == 0)
     {
+        auto args = std::span(argv, size_t(argc));
         if (4 == argc)
         {
-            path = argv[1];
-            levelsColorsChioce = std::stoi(argv[2]);
-            typeCompressionChoice = std::stoi(argv[3]);
+            path = std::string(args.at(1));
+            levelsColorsChioce = std::stoi(args.at(2));
+            typeCompressionChoice = std::stoi(args.at(3));
 
             fileName = Performance::extractFileName(path);
-            outputPath = "outputs/" + fileName + ".kc";
+            outputPath = std::string("outputs/") + fileName + std::string(".kc");
 
             image = cv::imread(path);
             if (image.empty())
@@ -69,7 +71,9 @@ int main(int argc, char *argv[])
         }
         else
         {
-            UtilsCLI::compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image, 2);
+            std::cerr << "Error: Invalid number of arguments." << std::endl;
+            MPI_Finalize();
+            return 1;
         }
 
         int originalHeight = image.rows;
@@ -123,9 +127,9 @@ int main(int argc, char *argv[])
 
         if (i >= start && i < end)
         {
-            int id;
+            int id = 0;
             std::vector<int> rgb(3);
-            unsigned char r, g, b;
+            unsigned char r = 0, g = 0, b = 0;
             MPI_Recv(&id, 1, MPI_INT, 0, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             MPI_Recv(&r, 1, MPI_UNSIGNED_CHAR, 0, 2, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             MPI_Recv(&g, 1, MPI_UNSIGNED_CHAR, 0, 3, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
@@ -150,11 +154,11 @@ int main(int argc, char *argv[])
 
     if (rank == 0)
     {
-        kmeans = std::unique_ptr<KMeans>(new KMeans(k, rank, 3, points));
+        kmeans = std::unique_ptr<KMeans>(new KMeans(k, points));
     }
     else
     {
-        kmeans = std::unique_ptr<KMeans>(new KMeans(k, rank, 3));
+        kmeans = std::unique_ptr<KMeans>(new KMeans(k));
     }
     auto start = std::chrono::high_resolution_clock::now();
     kmeans->run(rank, world_size, local_points);
@@ -168,8 +172,6 @@ int main(int argc, char *argv[])
         FilesUtils::createOutputDirectories();
 
         FilesUtils::writeBinaryFile(outputPath, width, height, k, kmeans->getPoints(), kmeans->getCentroids());
-
-        FilesUtils::writePerformanceEvaluation(outputPath, "MPI", k, points, elapsed);
 
         // write perfomance data to csv
         if (4 == argc)

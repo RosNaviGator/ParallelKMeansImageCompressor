@@ -1,3 +1,4 @@
+
 #include <configReader.hpp>
 #include <iostream>
 #include <fstream>
@@ -13,17 +14,18 @@ ConfigReader::ConfigReader() {
         "resizing_factor"
     };
 
-    pattern = std::regex("^(\\w+)\\s*=\\s*([^\\s]+)\\s*$");
+    pattern = std::regex(R"(^(\w+)\s*=\s*([^\s]+)\s*$)");
 
-    readConfigFile();
+    if (!readConfigFile()) {
+        std::cerr << "Error: Failed to read .config file." << '\n';
+    }
 }
 
-ConfigReader::~ConfigReader() = default;
-
-bool ConfigReader::readConfigFile() {
-    std::ifstream file(".config");
+auto ConfigReader::readConfigFile() -> bool
+{
+    std::ifstream file("./.config");
     if (!file.is_open()) {
-        std::cerr << "Error: .config file not found." << std::endl;
+        std::cerr << "Error: .config file not found." << '\n';
         return false;
     }
 
@@ -58,10 +60,10 @@ bool ConfigReader::readConfigFile() {
             } else if (variableName == "input_image_file_path") {
                 inputImageFilePath = variableValue;
             }else {
-                std::cerr << "Warning: Unknown variable '" << variableName << "' in .config file." << std::endl;
+                std::cerr << "Warning: Unknown variable '" << variableName << "' in .config file." << '\n';
             }
         } else {
-            std::cerr << "Error: Invalid format in line: " << line << std::endl;
+            std::cerr << "Error: Invalid format in line: " << line << '\n';
             return false;
         }
     }
@@ -71,7 +73,7 @@ bool ConfigReader::readConfigFile() {
     // Check if any required variables are missing
     for (const std::string& var : requiredVariables) {
         if (!checkVariableExists(var)) {
-            std::cerr << "Error: Required variable '" << var << "' is missing in .config file." << std::endl;
+            std::cerr << "Error: Required variable '" << var << "' is missing in .config file." << '\n';
             return false;
         }
     }
@@ -79,7 +81,8 @@ bool ConfigReader::readConfigFile() {
     return true;
 }
 
-bool ConfigReader::checkVariableExists(const std::string& variableName) const {
+auto ConfigReader::checkVariableExists(const std::string &variableName) const -> bool
+{
     if (variableName == "first_level_compression_color") {
         return true;
     } else if (variableName == "second_level_compression_color") {
@@ -96,38 +99,38 @@ bool ConfigReader::checkVariableExists(const std::string& variableName) const {
     return false;
 }
 
-double ConfigReader::getFirstLevelCompressionColor() const {
+auto ConfigReader::getFirstLevelCompressionColor() const -> double {
     return first_level_compression_color;
 }
 
-double ConfigReader::getSecondLevelCompressionColor() const {
+auto ConfigReader::getSecondLevelCompressionColor() const -> double {
     return second_level_compression_color;
 }
 
-double ConfigReader::getThirdLevelCompressionColor() const {
+auto ConfigReader::getThirdLevelCompressionColor() const -> double{
     return third_level_compression_color;
 }
 
-double ConfigReader::getFourthLevelCompressionColor() const {
+auto ConfigReader::getFourthLevelCompressionColor() const -> double {
     return fourth_level_compression_color;
 }
 
-double ConfigReader::getFifthLevelCompressionColor() const {
+auto ConfigReader::getFifthLevelCompressionColor() const -> double{
     return fifth_level_compression_color;
 }
 
-double ConfigReader::getResizingFactor() const {
+auto ConfigReader::getResizingFactor() const -> double{
     return resizing_factor;
 }
 
-int ConfigReader::getColorChoice() const {
+auto ConfigReader::getColorChoice() const -> int{
     return color_choice;
 }
 
-int ConfigReader::getCompressionChoice() const {
+auto ConfigReader::getCompressionChoice() const -> int{
     return compression_choice;
 }
 
-std::filesystem::path ConfigReader::getInputImageFilePath() const {
+auto ConfigReader::getInputImageFilePath() const -> std::filesystem::path{
     return inputImageFilePath;
 }

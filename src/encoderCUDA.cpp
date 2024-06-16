@@ -10,7 +10,7 @@
 #include <thread>
 #include <chrono>
 #include <point.hpp>
-#include <kMeansCUDA.hpp>
+#include <kMeansCUDA.cuh>
 #include <utilsCLI.hpp>
 #include <imagesUtils.hpp>
 #include <filesUtils.hpp>

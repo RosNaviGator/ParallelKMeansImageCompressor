@@ -6,8 +6,8 @@ decoder
 menu
 
 # ignore performance data
-performanceData.csv
-performanceEvaluation.txt
+performanceEvaluation
+docs
 
 # ignore .vscode
 .vscode

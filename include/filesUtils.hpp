@@ -1,3 +1,8 @@
+/**
+ * @file filesUtils.hpp
+ * @brief Utility functions for file handling
+ */
+
 #ifndef FILESUTILS_HPP
 #define FILESUTILS_HPP
 
@@ -10,15 +15,51 @@
 #include <point.hpp>
 #include <opencv2/opencv.hpp>
 
+/**
+ * @class FilesUtils
+ * @brief Provides utility functions for file handling
+ */
 class FilesUtils
 {
 public:
-    static void createOutputDirectories();
-    static void writeBinaryFile(std::string& outputPath, int& width, int& height, int& k, std::vector<Point> points, std::vector<Point> centroids);
-    static void writePerformanceEvaluation(std::string path, std::string program_name, int k, std::vector<Point> points, std::chrono::duration<double> elapsedKmeans);
-    static bool isCorrectExtension(const std::filesystem::path &filePath, const std::string &correctExtension);
-    static void createDecodingMenu(std::filesystem::path& decodeDir, std::vector<std::filesystem::path>& imageNames);
-    static int readBinaryFile(std::string& path, cv::Mat& imageCompressed);
+    /**
+     * @brief Creates output directories
+     */
+    static auto createOutputDirectories() -> void;
+
+    /**
+     * @brief Writes data to a binary file
+     * @param outputPath Path of the output file
+     * @param width Width of the image
+     * @param height Height of the image
+     * @param k Number of clusters
+     * @param points Vector of points
+     * @param centroids Vector of centroids
+     */
+    static auto writeBinaryFile(std::string& outputPath, int& width, int& height, int& k, std::vector<Point> points, std::vector<Point> centroids) -> void;
+
+    /**
+     * @brief Checks if a file has the correct extension
+     * @param filePath Path of the file
+     * @param correctExtension Correct extension to check
+     * @return True if the file has the correct extension, false otherwise
+     */
+    static auto isCorrectExtension(const std::filesystem::path &filePath, const std::string &correctExtension) -> bool;
+
+    /**
+     * @brief Creates a decoding menu
+     * @param decodeDir Directory for decoding
+     * @param imageNames Vector of image names
+     */
+    static auto createDecodingMenu(std::filesystem::path& decodeDir, std::vector<std::filesystem::path>& imageNames) -> void;
+
+    /**
+     * @brief Reads a binary file and reconstructs the compressed image
+     * @param path Path of the binary file
+     * @param imageCompressed Compressed image matrix
+     * @return Number of clusters
+     */
+    static auto readBinaryFile(std::string& path, cv::Mat& imageCompressed) -> int;
 };
 
 #endif // FILESUTILS_HPP

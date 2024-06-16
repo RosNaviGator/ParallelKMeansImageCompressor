@@ -1,7 +1,4 @@
 image_path="./benchmarkImages/goosw.jpg"
-# ./benchmarkImages/glassBall-1888x2826.jpg
-# ./benchmarkImages/piazzaDuomo-612x612.jpg
-# ./benchmarkImages/odettte3000x4000.jpg
 
 
 

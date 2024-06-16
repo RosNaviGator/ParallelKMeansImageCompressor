@@ -3,7 +3,7 @@
 #include <filesystem>
 #include <configReader.hpp>
 
-int main(int argc, char** nargv)
+auto main() -> int
 {
 
     int color_choice = 0 ;
@@ -15,7 +15,7 @@ int main(int argc, char** nargv)
     inputImageFilePath = configReader.getInputImageFilePath();
     
     UtilsCLI::mainMenuHeader();
-    int encodeOrDecode;
+    int encodeOrDecode = 0;
     std::filesystem::path cuda_path = "./build/cudaEncoder";
     std::cout << "This is the Main Menu of the Image Compressor! What do you want to do?" << "\n";
     std::cout << "\n";
@@ -61,14 +61,13 @@ int main(int argc, char** nargv)
                     << "Please choose the level that best fits your needs" << std::endl;
             std::cout << std::endl;
             std::cout << std::endl;
-            do
-            {
+            std::cin >> color_choice;
+            const int MIN_COLOR_CHOICE = 1;
+            const int MAX_COLOR_CHOICE = 5;
+            while (color_choice < MIN_COLOR_CHOICE || color_choice > MAX_COLOR_CHOICE) {
+                std::cout << "Invalid input. Please choose a level between 1 and 5." << std::endl;
                 std::cin >> color_choice;
-                if (color_choice < 1 || color_choice > 5)
-                {
-                    std::cout << "Invalid input. Please choose a level between 1 and 5." << std::endl;
-                }
-            } while (color_choice < 1 || color_choice > 5);
+            }
         }else
         {
             std::cout << "The color preservation level you chose is: " << color_choice << "\n";
@@ -83,20 +82,16 @@ int main(int argc, char** nargv)
                     << "(3)\tHeavy Compression (it applies chroma subsampling and image resizing) <-- Suggested for Big Images\n";
             std::cout << std::endl;
             std::cout << std::endl;
-            do
-            {
+
+            std::cin >> compressionChoice;
+
+            const int MIN_COMPRESSION_CHOICE = 1;
+            const int MAX_COMPRESSION_CHOICE = 3;
+            while (compressionChoice < MIN_COMPRESSION_CHOICE || compressionChoice > MAX_COMPRESSION_CHOICE) {
+                std::cout << "Invalid input. Please choose a type between 1 and 3." << std::endl;
                 std::cin >> compressionChoice;
-                if (compressionChoice < 1 || compressionChoice > 3)
-                {
-                    std::cout << "Invalid input. Please choose a type between 1 and 3." << std::endl;
-                }
-            } while (compressionChoice < 1 || compressionChoice > 3);
+            }
         }
-
-
-
-
-
 
         std::cout << "Now please choose what type of compressor you want to use:" << "\n";
         std::cout << "\n";
@@ -112,7 +107,7 @@ int main(int argc, char** nargv)
         }
         std::cout << std::endl;
         std::cout << std::endl;
-        int compressorChoice;
+        int compressorChoice = 0;
         std::cin >> compressorChoice;
         if(std::filesystem::exists(cuda_path))
         {
@@ -140,7 +135,7 @@ int main(int argc, char** nargv)
             std::cout << "Now please choose the number of cores you want to use for the computation" << std::endl;
             std::cout << std::endl;
             std::cout << std::endl;
-            int cores;
+            int cores = 0;
             std::cin >> cores;
             command = "mpirun -np " + std::to_string(cores) + " ./build/mpiEncoder ";
         }else if (compressorChoice == 3)

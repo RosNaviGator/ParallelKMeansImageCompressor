@@ -2,24 +2,23 @@
 #include <algorithm>
 #include <chrono>
 
-    KMeans::KMeans(const int& k, const int& rank, const int& n_features)
+    KMeans::KMeans(const int& k)
+        : k(k)
     {
-        this->k = k;
-        this->centroids = std::vector<Point>(k, Point(n_features));
+        this->centroids = std::vector<Point>(k, Point());
     }
-    KMeans::KMeans(const int& k, const int& rank, const int& n_features,  const std::vector<Point> points) : points(points) {
-        
-        this->k = k;
-        centroids = std::vector<Point>(k, Point(n_features));     
-        int size = points.size();
-        std::random_device rd;                              // Initialize a random device
-        std::mt19937 gen(23456789);                         // Initialize a Mersenne Twister random number generator with the random device
-        std::uniform_int_distribution<> dis(0, size - 1);   // Create a uniform distribution between 0 and size - 1
+    KMeans::KMeans(const int& k, const std::vector<Point>& points)
+        : k(k), points(points)
+    {
+        centroids = std::vector<Point>(k, Point());     
+        size_t size = points.size();
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_int_distribution<size_t> dis(0, size - 1);
         for (int i = 0; i < k; ++i)
         {
-            centroids[i]=points[dis(gen)];       // Generate a random index and use it to select a point
+            centroids[i] = points[dis(gen)];
         }
-        
     }
 
 
@@ -27,7 +26,7 @@
     {
         bool changed = true;
         int iter = 0;
-        int iter_max = 1000;
+        const int iter_max = 1000;
         std::vector<int> changed_points(world_size, 0);
 
         for(int i = 0; i < k; ++i)
@@ -68,15 +67,15 @@
             std::vector<std::vector<double> > partial_sum(k, {0.0,0.0,0.0});
             std::vector<int> cluster_size(k,0);
 
-            for (int i = 0 ; i < k ; ++i)
+            for (const auto& point : local_points)
             {
-                for (int j = 0 ; j < local_points.size(); j++)
+                for (int i = 0; i < k; ++i)
                 {
-                    if(local_points[j].second.clusterId == i)
+                    if (point.second.clusterId == i)
                     {
-                        for (int x = 0 ; x < 3; x++)
+                        for (int x = 0; x < 3; x++)
                         {
-                            partial_sum[i][x] += local_points[j].second.getFeature_int(x);
+                            partial_sum[i][x] += point.second.getFeature_int(x);
                         }
                         cluster_size[i]++;
                     }
@@ -128,8 +127,8 @@
                 {
                     for (int j = 0 ; j < 3; j++)
                     {
-                        int  result = partial_sum[i][j]/cluster_size[i];
-                        centroids[i].setFeature(j,result);
+                        int result = static_cast<int>(partial_sum[i][j] / cluster_size[i]);
+                        centroids[i].setFeature(j, result);
                     }
                 }
             }
@@ -158,7 +157,7 @@
             if (rank == 0)
             {
                 std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-                std::cout << "Iteration " << iter << " completed in " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() << "ms" << std::endl;
+                std::cout << "Iteration " << iter << " completed in " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() << "ms\n";
             }
 
         }
@@ -170,58 +169,27 @@
 
         if (rank == 0)
         {
-            int points_per_cluster = points.size() / world_size;
+            int points_per_cluster = static_cast<int>(points.size()) / world_size;
             for (int i = 0; i < world_size; i++)
             {
                 int start = i * points_per_cluster;
-                int end = (i == world_size - 1) ? points.size() : (i + 1) * points_per_cluster;
+                int end = (i == world_size - 1) ? static_cast<int>(points.size()) : (i + 1) * points_per_cluster;
                 for (int j = start; j < end; j++)
                 {
-                    int clusterId;
+                    int clusterId = 0;
                     MPI_Recv(&clusterId, 1, MPI_INT, i, j, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
                     points[j].clusterId = clusterId;
                 }
             }
         }
-
-
-
-        
-
-    }
-    void KMeans::printClusters()  const
-    {
-        for (int i = 0; i < k; ++i)
-        {
-            std::cout << "Cluster " << i + 1 << ":\n";
-            for (Point p : points)
-            {
-                if (p.clusterId == i)
-                {
-                    std::cout << "Point " << p.id << ": (";
-                    for (int j = 0; j < 3; ++j)
-                    {
-                        std::cout << p.getFeature(j);
-                        if (j < 3 - 1)
-                            std::cout << ", ";
-                    }
-                    std::cout << ")"<< std::endl;
-                }
-            }
-        }
     }
 
-    std::vector<Point> KMeans::getCentroids()
+    auto KMeans::getCentroids() -> std::vector<Point>
     {
         return centroids;
     }
 
-    std::vector<Point> KMeans::getPoints()
+    auto KMeans::getPoints() -> std::vector<Point>
     {
         return points;
     }
-
-    int KMeans::getNumberOfIterationForConvergence()
-    {
-        return numberOfIterationForConvergence;
-    } 

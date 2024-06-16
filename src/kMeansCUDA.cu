@@ -1,10 +1,10 @@
-#include <kMeansCUDA.hpp>
+#include <kMeansCUDA.cuh>
 
 KMeans::KMeans(const int &k, const std::vector<Point> points) : k(k), points(points)
 {
     int size = points.size();
     std::random_device rd;                            // Initialize a random device
-    std::mt19937 gen(23456789);                       // Initialize a Mersenne Twister random number generator with the random device
+    std::mt19937 gen(rd());                       // Initialize a Mersenne Twister random number generator with the random device
     std::uniform_int_distribution<> dis(0, size - 1); // Create a uniform distribution between 0 and size - 1
 
     for (int i = 0; i < k; ++i)
@@ -139,10 +139,8 @@ void KMeans::run()
             }
         }
 
-        if (converged) {
-            numberOfIterationForConvergence = iter;
+        if (converged) 
             break;
-        }
 
     }
 
@@ -176,9 +174,4 @@ std::vector<Point> KMeans::getCentroids()
 std::vector<Point> KMeans::getPoints()
 {
     return points;
-}
-
-int KMeans::getNumberOfIterationForConvergence()
-{
-    return numberOfIterationForConvergence;
 }

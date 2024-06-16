@@ -1,0 +1,3 @@
+img,method,starting colors,k,n_points,comp type,time,world_size
+goosw,OMP,143481,57,4460544,medium,15.0881,0
+goosw,MPI,149403,59,4460544,medium,11.133,6

@@ -158,6 +158,7 @@
             {
                 std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
                 std::cout << "Iteration " << iter << " completed in " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() << "ms\n";
+                number_of_iterations = iter;
             }
 
         }
@@ -192,4 +193,9 @@
     auto KMeans::getPoints() -> std::vector<Point>
     {
         return points;
+    }
+
+    auto KMeans::getIterations() -> int
+    {
+        return number_of_iterations;
     }

@@ -110,7 +110,7 @@ int main(int argc, char *argv[])
     // write perfomance data to csv
     if (4 == argc)
     {
-        performance.writeCSV(different_colors_size, k, n_points, elapsedKmeans.count());
+        performance.writeCSV(different_colors_size, k, n_points, elapsedKmeans.count(),kmeans.getIterations());
     }
 
     UtilsCLI::workDone();

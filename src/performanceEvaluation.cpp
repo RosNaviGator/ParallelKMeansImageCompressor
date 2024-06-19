@@ -10,7 +10,7 @@ void Performance::fillPerformance(int choice, const std::string &img, const std:
     this->method = std::move(method);
 }
 
-void Performance::writeCSV(int different_colors_size, int k, int n_points, double elapsedKmeans, int num_processes)
+void Performance::writeCSV(int different_colors_size, int k, int n_points, double elapsedKmeans, int number_of_iterations, int num_processes)
 {
     std::string filename = "./performanceData.csv";
     createOrOpenCSV(filename);
@@ -30,7 +30,7 @@ void Performance::writeCSV(int different_colors_size, int k, int n_points, doubl
             compType = "choice";
             break;
     }
-    appendToCSV(filename, different_colors_size, k, n_points, compType, elapsedKmeans, num_processes);
+    appendToCSV(filename, different_colors_size, k, n_points, compType, elapsedKmeans, number_of_iterations, num_processes);
 }
 
 void Performance::createOrOpenCSV(const std::string &filename)
@@ -49,7 +49,7 @@ void Performance::createOrOpenCSV(const std::string &filename)
     }
 }
 
-void Performance::appendToCSV(const std::string &filename, int startingColors, int remainingColors, int num_points, const std::string &compType, double time, int num_processes)
+void Performance::appendToCSV(const std::string &filename, int startingColors, int remainingColors, int num_points, const std::string &compType, double time, int number_of_iterations, int num_processes)
 {
     std::ofstream file(filename, std::ios::app); // Open file for appending
     if (!file.is_open())
@@ -57,7 +57,8 @@ void Performance::appendToCSV(const std::string &filename, int startingColors, i
         std::cerr << "Error opening file for appending!" << std::endl;
         return;
     }
-    file << this->img << "," << this->method << "," << startingColors << "," << remainingColors << "," << num_points << "," << compType << "," << time << "," << num_processes << std::endl;
+    double time_per_iteration = time / number_of_iterations;
+    file << this->img << "," << this->method << "," << startingColors << "," << remainingColors << "," << num_points << "," << compType << "," << time_per_iteration << "," << num_processes << std::endl;
 }
 
 auto Performance::extractFileName(const std::string &outputPath) -> std::string

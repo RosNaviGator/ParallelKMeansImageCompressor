@@ -56,10 +56,17 @@ public:
      */
     auto getCentroids() -> std::vector<Point>;
 
+    /**
+     * @brief Gets the number of iterations
+     * @return Number of iterations
+     */
+    auto getIterations() -> int;
+
 private:
     int k; ///< Number of clusters
     std::vector<Point> points; ///< Vector of points
     std::vector<Point> centroids; ///< Vector of centroids
+    int number_of_iterations; ///< Number of iterations
 };
 
 #endif // KMEANS_HPP

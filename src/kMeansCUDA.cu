@@ -139,8 +139,11 @@ void KMeans::run()
             }
         }
 
-        if (converged) 
+        if (converged)
+        {
+            number_of_iterations = iter;
             break;
+        } 
 
     }
 
@@ -174,4 +177,9 @@ std::vector<Point> KMeans::getCentroids()
 std::vector<Point> KMeans::getPoints()
 {
     return points;
+}
+
+int KMeans::getIterations()
+{
+    return number_of_iterations;
 }

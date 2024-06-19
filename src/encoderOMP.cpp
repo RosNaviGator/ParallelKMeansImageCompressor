@@ -123,10 +123,12 @@ auto main(int argc, char *argv[]) -> int
 
     FilesUtils::writeBinaryFile(outputPath, width, height, k, kmeans.getPoints(), kmeans.getCentroids());
 
-    performance.writeCSV(different_colors_size, k, n_points, elapsedKmeans.count(),num_threads);
+    performance.writeCSV(different_colors_size, k, n_points, elapsedKmeans.count(), kmeans.getIterations(),num_threads);
 
     UtilsCLI::workDone();
     std::cout << "Compression done in " << elapsedKmeans.count() << std::endl;
     std::cout << std::endl;
     std::cout << "The compressed image has been saved in the outputs directory." << std::endl;
 }
+
+

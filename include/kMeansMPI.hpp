@@ -31,9 +31,6 @@ public:
 
     /**
      * @brief Runs the K-means clustering algorithm using MPI
-     * @param rank Rank of the MPI process
-     * @param world_size Number of MPI processes
-     * @param local_points Vector of local points
      */
     void run() override;
 private:

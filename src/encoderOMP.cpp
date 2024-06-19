@@ -104,7 +104,7 @@ auto main(int argc, char *argv[]) -> int
 
     UtilsCLI::printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
 
-    KMeans kmeans(k, points);
+    KMeansOMP kmeans(k, points);
 
     // CLUSTERING (second time evaluation)
 

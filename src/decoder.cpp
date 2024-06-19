@@ -55,12 +55,4 @@ auto main() -> int
     std::cout << "Enjoy your Compressed Image!" << std::endl;
     cv::imshow("Compressed Image", imageCompressed);
     cv::waitKey(0);
-
-
-    std::string command = "sl";
-    int result = system(command.c_str());
-    if (result != 0)
-    {
-        std::cerr << "Error executing command: " << command << std::endl;
-    }
 }

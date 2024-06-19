@@ -3,55 +3,31 @@
  * @brief Implementation of the K-means clustering algorithm using OpenMP
  */
 
-#ifndef KMEANS_HPP
-#define KMEANS_HPP
+#ifndef KMEANS_OMP_HPP
+#define KMEANS_OMP_HPP
 
-#include <random>
-#include <iostream>
+#include "kMeansBase.hpp"
 #include <omp.h>
-#include <thread>
-#include "point.hpp"
 
 /**
- * @class KMeans
+ * @class KMeansOMP
  * @brief Represents the K-means clustering algorithm using OpenMP
  */
-class KMeans
+class KMeansOMP : public KMeansBase
 {
 public:
     /**
-     * @brief Constructor for KMeans
+     * @brief Constructor for KMeansOMP
      * @param k Number of clusters
      * @param points Vector of points
      */
-    KMeans(const int& k, const std::vector<Point> &points);
+    KMeansOMP(const int& k, const std::vector<Point>& points);
 
     /**
      * @brief Runs the K-means clustering algorithm using OpenMP
      */
-    auto run() -> void;
+    void run() override;
 
-    /**
-     * @brief Plots the clusters
-     */
-    auto plotClusters() -> void;
-
-    /**
-     * @brief Gets the points
-     * @return Vector of points
-     */
-    auto getPoints() -> std::vector<Point>;
-
-    /**
-     * @brief Gets the centroids
-     * @return Vector of centroids
-     */
-    auto getCentroids() -> std::vector<Point>;
-
-private:
-    int k; ///< Number of clusters
-    std::vector<Point> points; ///< Vector of points
-    std::vector<Point> centroids; ///< Vector of centroids
 };
 
-#endif // KMEANS_HPP
+#endif // KMEANS_OMP_HPP

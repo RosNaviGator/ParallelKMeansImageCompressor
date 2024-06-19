@@ -27,10 +27,10 @@ MAINMENU_TARGET = menu
 
 # Source files, different kmeans have different source files
 
-SEQ_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoder.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeans.cpp $(SRC_DIR)/configReader.cpp $(SRC_DIR)/performanceEvaluation.cpp $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/filesUtils.cpp $(SRC_DIR)/imagesUtils.cpp
-OMP_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoderOMP.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeansOMP.cpp $(SRC_DIR)/configReader.cpp $(SRC_DIR)/performanceEvaluation.cpp $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/filesUtils.cpp $(SRC_DIR)/imagesUtils.cpp
-MPI_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoderMPI.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeansMPI.cpp $(SRC_DIR)/configReader.cpp $(SRC_DIR)/performanceEvaluation.cpp $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/filesUtils.cpp $(SRC_DIR)/imagesUtils.cpp
-CUDA_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoderCUDA.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeansCUDA.cu $(SRC_DIR)/configReader.cpp $(SRC_DIR)/performanceEvaluation.cpp $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/filesUtils.cpp $(SRC_DIR)/imagesUtils.cpp
+SEQ_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoder.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeansSequential.cpp $(SRC_DIR)/configReader.cpp $(SRC_DIR)/performanceEvaluation.cpp $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/filesUtils.cpp $(SRC_DIR)/imagesUtils.cpp $(SRC_DIR)/kMeansBase.cpp
+OMP_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoderOMP.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeansOMP.cpp $(SRC_DIR)/configReader.cpp $(SRC_DIR)/performanceEvaluation.cpp $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/filesUtils.cpp $(SRC_DIR)/imagesUtils.cpp $(SRC_DIR)/kMeansBase.cpp
+MPI_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoderMPI.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeansMPI.cpp $(SRC_DIR)/configReader.cpp $(SRC_DIR)/performanceEvaluation.cpp $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/filesUtils.cpp $(SRC_DIR)/imagesUtils.cpp $(SRC_DIR)/kMeansBase.cpp
+CUDA_ENCODER_SRCS = $(wildcard $(SRC_DIR)/encoderCUDA.cpp) $(SRC_DIR)/point.cpp $(SRC_DIR)/kMeansCUDA.cu $(SRC_DIR)/configReader.cpp $(SRC_DIR)/performanceEvaluation.cpp $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/filesUtils.cpp $(SRC_DIR)/imagesUtils.cpp $(SRC_DIR)/kMeansBase.cpp
 DECODER_SRCS = $(wildcard $(SRC_DIR)/decoder.cpp) $(SRC_DIR)/filesUtils.cpp $(SRC_DIR)/imagesUtils.cpp $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/point.cpp $(SRC_DIR)/configReader.cpp
 MAINMENU_SRCS = $(wildcard $(SRC_DIR)/mainMenu.cpp) $(SRC_DIR)/utilsCLI.cpp $(SRC_DIR)/configReader.cpp
 

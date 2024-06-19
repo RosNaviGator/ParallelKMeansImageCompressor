@@ -8,7 +8,6 @@ menu
 # ignore performance data
 performanceEvaluation/performanceImages
 performanceEvaluation/plots
-docs
 
 # ignore .vscode
 .vscode

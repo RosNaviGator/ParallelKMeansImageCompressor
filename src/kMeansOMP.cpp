@@ -1,11 +1,11 @@
 #include <kMeansOMP.hpp>
 
-KMeans::KMeans(const int& k, const std::vector<Point> points) : k(k), points(points)
+KMeans::KMeans(const int& k, const std::vector<Point> &points) : k(k), points(points)
 {
-    int size = points.size();
+    size_t size = points.size();
     std::random_device rd;                            // Initialize a random device
-    std::mt19937 gen(23456789);                       // Initialize a Mersenne Twister random number generator with the random device
-    std::uniform_int_distribution<> dis(0, size - 1); // Create a uniform distribution between 0 and size - 1
+    std::mt19937 gen(rd());                       // Initialize a Mersenne Twister random number generator with the random device
+    std::uniform_int_distribution<size_t> dis(0, size - 1); // Create a uniform distribution between 0 and size - 1
 
     for (int i = 0; i < k; ++i)
     {
@@ -17,7 +17,7 @@ void KMeans::run()
 {
     bool change = true; // boolean initialize to true (change=true loop continues)
     int iter = 0;
-    int iter_max = 1000;  // max number of iterations
+    const int iter_max = 1000;  // max number of iterations
     
     while (change && iter < iter_max)
     {
@@ -67,13 +67,13 @@ void KMeans::run()
 
                 for (int i = 0 ; i < k ; ++i)
                 {
-                    for (int j = 0 ; j < points.size(); j++)
+                    for (auto &point : points)
                     {
-                        if(points[j].clusterId == i)
+                        if (point.clusterId == i)
                         {
                             for (int x = 0 ; x < 3; x++)
                             {
-                                partial_sum[i][x] += points[j].getFeature_int(x);
+                                partial_sum[i][x] += point.getFeature_int(x);
                             }
                             cluster_size[i]++;
                         }
@@ -84,8 +84,8 @@ void KMeans::run()
                 {
                     for (int j = 0 ; j < 3; j++)
                     {
-                        int  result = partial_sum[i][j]/cluster_size[i];
-                        centroids[i].setFeature(j,result);
+                        int result = static_cast<int>(partial_sum[i][j] / cluster_size[i]);
+                        centroids[i].setFeature(j, result);
                     }
                 }
                
@@ -95,24 +95,24 @@ void KMeans::run()
         #pragma omp master 
         {
             std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-            std::cout << "Iteration " << iter << " completed in " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() << "ms" << std::endl;
+            std::cout << "Iteration " << iter << " completed in " << std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() << "ms" << '\n';
+            number_of_iterations = iter;
         }
         
     }
-    numberOfIterationForConvergence = iter;
 }
 
-std::vector<Point> KMeans::getCentroids()
-    {
-        return centroids;
-    }
-
-std::vector<Point> KMeans::getPoints()
-    {
-        return points;
-    }
-
-int KMeans::getNumberOfIterationForConvergence()
+auto KMeans::getCentroids() -> std::vector<Point>
 {
-    return numberOfIterationForConvergence;
+return centroids;
+}
+
+auto KMeans::getPoints() -> std::vector<Point>
+{
+    return points;
+}
+
+auto KMeans::getIterations() -> int
+{
+    return number_of_iterations;
 }

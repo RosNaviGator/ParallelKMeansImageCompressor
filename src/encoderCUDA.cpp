@@ -3,18 +3,14 @@
 #include <vector>
 #include <cmath>
 #include <limits>
-
 #include <filesystem>
-
 #include <fstream>
 #include <sstream>
-
 #include <random>
 #include <thread>
 #include <chrono>
-
 #include <point.hpp>
-#include <kMeansOMP.hpp>
+#include <kMeansCUDA.cuh>
 #include <utilsCLI.hpp>
 #include <imagesUtils.hpp>
 #include <filesUtils.hpp>
@@ -22,51 +18,40 @@
 #include <opencv2/opencv.hpp>
 #include <configReader.hpp>
 
-
 #include <performanceEvaluation.hpp>
 
-auto main(int argc, char *argv[]) -> int
+int main(int argc, char *argv[])
 {
 
-    int num_threads = 0;
+    int deviceID;
+    cudaGetDevice(&deviceID);
+    cudaDeviceProp props;
+    cudaGetDeviceProperties(&props, deviceID);
+    std::cout << "Device: " << props.name << std::endl;
 
-    int k = 0;
+    int k;
     std::string path;
     std::string outputPath;
     std::string fileName;
     std::vector<Point> points;
-    int height = 0;
-    int width = 0;
-    int n_points = 0;
+    int height;
+    int width;
+    int n_points;
     std::vector<std::pair<int, Point>> local_points;
-    int levelsColorsChioce = 0;
-    int typeCompressionChoice = 0;
+    int levelsColorsChioce;
+    int typeCompressionChoice;
     cv::Mat image;
     Performance performance;
 
-    
-    const int NUMBER_OF_ARGS_WITHOUT_THREADS = 4;
-    const int NUMBER_OF_ARGS_DEFINING_THREADS = 5;
-
-    auto args = std::span(argv, size_t(argc));
-
-    if (argc == NUMBER_OF_ARGS_DEFINING_THREADS)
+    // pass inputs as args for performance evaluation
+    if (4 == argc)
     {
-        num_threads = std::stoi(args.at(4));
-        omp_set_num_threads(num_threads);
-    }
-        
-
-    
-
-    if (argc == NUMBER_OF_ARGS_DEFINING_THREADS || argc == NUMBER_OF_ARGS_WITHOUT_THREADS)
-    {   
-        path = args.at(1);
-        levelsColorsChioce = std::stoi(args.at(2));
-        typeCompressionChoice = std::stoi(args.at(3));
+        path = argv[1];
+        levelsColorsChioce = std::stoi(argv[2]);
+        typeCompressionChoice = std::stoi(argv[3]);
 
         fileName = Performance::extractFileName(path);
-        outputPath = std::string("outputs/") + fileName + std::string(".kc");
+        outputPath = "outputs/" + fileName + ".kc";
 
         image = cv::imread(path);
         if (image.empty())
@@ -75,15 +60,12 @@ auto main(int argc, char *argv[]) -> int
             return 1;
         }
 
-        performance.fillPerformance(typeCompressionChoice, fileName, "OMP");
-
+        performance.fillPerformance(typeCompressionChoice, fileName, "CUDA");
     }
     else
     {
-        std::cerr << "Error: Invalid number of arguments." << std::endl;
-        return 1;
+        UtilsCLI::compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image, 1);
     }
-
     int originalHeight = image.rows;
     int originalWidth = image.cols;
 
@@ -100,7 +82,7 @@ auto main(int argc, char *argv[]) -> int
 
     ImageUtils::defineKValue(k, levelsColorsChioce, different_colors);
 
-    size_t different_colors_size = different_colors.size();
+    int different_colors_size = different_colors.size();
 
     UtilsCLI::printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
 
@@ -123,12 +105,27 @@ auto main(int argc, char *argv[]) -> int
 
     FilesUtils::writeBinaryFile(outputPath, width, height, k, kmeans.getPoints(), kmeans.getCentroids());
 
-    performance.writeCSV(different_colors_size, k, n_points, elapsedKmeans.count(), kmeans.getIterations(),num_threads);
+    FilesUtils::writePerformanceEvaluation(outputPath, "CUDA", k, points, elapsedKmeans);
+
+    // write perfomance data to csv
+    if (4 == argc)
+    {
+        performance.writeCSV(different_colors_size, k, n_points, elapsedKmeans.count(),kmeans.getIterations());
+    }
 
     UtilsCLI::workDone();
     std::cout << "Compression done in " << elapsedKmeans.count() << std::endl;
     std::cout << std::endl;
     std::cout << "The compressed image has been saved in the outputs directory." << std::endl;
+
+    cudaError_t lastError;
+    lastError = cudaGetLastError();
+    if (lastError != cudaSuccess)
+    {
+        std::cerr << "CUDA error: " << cudaGetErrorString(lastError) << std::endl;
+    }
+
+    
+
+    return 0;
 }
-
-

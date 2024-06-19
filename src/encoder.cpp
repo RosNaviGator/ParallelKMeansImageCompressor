@@ -19,21 +19,50 @@
 #include <configReader.hpp>
 
 
-int main(int argc, char *argv[])
+#include <performanceEvaluation.hpp>
+
+auto main(int argc, char *argv[]) -> int
 {
-    int k;
+    int k = 0;
     std::string path;
     std::string outputPath;
+    std::string fileName;
     std::vector<Point> points;
-    int height;
-    int width;
-    int n_points;
+    int height = 0;
+    int width = 0;
+    int n_points = 0;
     std::vector<std::pair<int, Point> > local_points;
-    int levelsColorsChioce;
-    int typeCompressionChoice;
+    int levelsColorsChioce = 0;
+    int typeCompressionChoice = 0;
     cv::Mat image;
-   
-    UtilsCLI::compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image,1);
+    Performance performance;
+
+    auto args = std::span(argv, size_t(argc));
+    // pass inputs as args for performance evaluation
+    if (4 == argc)
+    {   
+        path = args.at(1);
+        levelsColorsChioce = std::stoi(args.at(2));
+        typeCompressionChoice = std::stoi(args.at(3));
+
+        fileName = Performance::extractFileName(path);
+        outputPath = std::string("outputs/") + fileName + std::string(".kc");
+
+        image = cv::imread(path);
+        if (image.empty())
+        {
+            std::cerr << "Error: Image not found." << std::endl;
+            return 1;
+        }
+
+        performance.fillPerformance(typeCompressionChoice, fileName, "Sequential");
+
+    }
+    else
+    {
+        // ask inputs at runtime
+        UtilsCLI::compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image,1);
+    }
 
     int originalHeight = image.rows;
     int originalWidth = image.cols;
@@ -51,7 +80,7 @@ int main(int argc, char *argv[])
 
     ImageUtils::defineKValue(k, levelsColorsChioce, different_colors);
 
-    int different_colors_size = different_colors.size();
+    size_t different_colors_size = different_colors.size();
 
     UtilsCLI::printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
     
@@ -59,8 +88,8 @@ int main(int argc, char *argv[])
 
     // CLUSTERING (second time evaluation)
 
-    std::cout << "Press a key to start the compression..."<< std::endl;
-    std::cin.ignore();
+    //std::cout << "Press a key to start the compression..."<< std::endl;
+    //std::cin.ignore();
     std::cout << "Starting the Compression..." << std::endl;
 
     auto startKmeans = std::chrono::high_resolution_clock::now();
@@ -73,12 +102,19 @@ int main(int argc, char *argv[])
 
     FilesUtils::createOutputDirectories();
 
-    FilesUtils::writeBinaryFile(outputPath, width, height, k, kmeans);
+    FilesUtils::writeBinaryFile(outputPath, width, height, k, kmeans.getPoints(), kmeans.getCentroids());
 
-    FilesUtils::writePerformanceEvaluation(outputPath, "Sequential", k, points, kmeans, elapsedKmeans);
+    // write perfomance data to csv
+    if (4 == argc)
+    {   
+        performance.writeCSV(different_colors_size, k, n_points, elapsedKmeans.count(), 0, kmeans.getIterations());
+    }
+
 
     UtilsCLI::workDone();
     std::cout << "Compression done in " << elapsedKmeans.count() << std::endl;
     std::cout << std::endl;
     std::cout << "The compressed image has been saved in the outputs directory." << std::endl;
+
+    return 0;
 }

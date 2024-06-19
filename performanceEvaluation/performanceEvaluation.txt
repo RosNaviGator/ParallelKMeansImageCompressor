@@ -1,0 +1,7398 @@
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 19
+Number of points: 131044
+ ==>Time: 0.209248s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 24
+Number of points: 196249
+ ==>Time: 0.236983s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.537504s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 30
+Number of points: 327184
+ ==>Time: 0.445995s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 32
+Number of points: 393129
+ ==>Time: 0.482525s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/7.kc
+Number of colors: 35
+Number of points: 458329
+ ==>Time: 0.633928s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/8.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.642387s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/9.kc
+Number of colors: 38
+Number of points: 589824
+ ==>Time: 0.537665s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 19
+Number of points: 131044
+ ==>Time: 0.191416s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 24
+Number of points: 196249
+ ==>Time: 0.236588s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.360676s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 30
+Number of points: 327184
+ ==>Time: 0.406601s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 32
+Number of points: 393129
+ ==>Time: 0.397569s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/7.kc
+Number of colors: 35
+Number of points: 458329
+ ==>Time: 0.653074s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/8.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.649945s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/9.kc
+Number of colors: 38
+Number of points: 589824
+ ==>Time: 0.574737s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 12
+Number of points: 65536
+ ==>Time: 0.0930415s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 19
+Number of points: 131044
+ ==>Time: 0.225134s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 24
+Number of points: 196249
+ ==>Time: 0.237169s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.418777s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 30
+Number of points: 327184
+ ==>Time: 0.327372s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 32
+Number of points: 393129
+ ==>Time: 0.348099s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/7.kc
+Number of colors: 35
+Number of points: 458329
+ ==>Time: 0.691481s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/8.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.641326s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/9.kc
+Number of colors: 38
+Number of points: 589824
+ ==>Time: 0.543724s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/10.kc
+Number of colors: 40
+Number of points: 654481
+ ==>Time: 0.776632s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.11697s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.15754s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 3.49505s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.96264s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.08968s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.8023s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/7.kc
+Number of colors: 55
+Number of points: 1833316
+ ==>Time: 3.18782s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/8.kc
+Number of colors: 57
+Number of points: 2096704
+ ==>Time: 4.14348s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/9.kc
+Number of colors: 59
+Number of points: 2359296
+ ==>Time: 3.61558s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/10.kc
+Number of colors: 61
+Number of points: 2621161
+ ==>Time: 7.29746s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.06468s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.19708s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 3.10543s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.01345s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.11691s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.80211s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.12832s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.34061s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 3.51241s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.98326s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.14759s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.82545s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.05095s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.16788s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 4.68012s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 3.01024s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 3.02838s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.82261s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.08848s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.3797s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 3.57362s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.01696s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.15809s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.80669s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.06994s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.36731s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 3.60226s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.9648s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.12572s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.85931s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.06007s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.2456s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 3.47288s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.2353s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 3.51367s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.66347s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.05796s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.38972s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 3.66227s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.82589s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.79185s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 0.936508s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 4.96608s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.48628s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 4.78933s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.9973s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.916511s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 0.903203s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 3.18569s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.37448s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.34435s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.38034s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 0.955572s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.14108s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.11113s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.36015s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.05049s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.27158s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.71509s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.55948s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.8817s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.2931s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.31046s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.02979s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.11847s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.50379s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.18144s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.74899s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.14078s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.979756s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.21214s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.39416s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.78947s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 6.61346s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.4415s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.44745s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.43758s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.93689s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.46115s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.5587s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.422942s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 2.40715s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.62238s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 3.0457s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.48243s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 4.27608s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.792165s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.4256s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 0.930079s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.48568s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.78972s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.33176s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.61703s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.68635s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.80562s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 5.37214s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.59849s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 4.86161s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.669946s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 2.86584s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 0.773359s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.78888s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.70392s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.44848s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 2.05355s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.909881s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.82084s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.32513s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.6246s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.40809s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.4875s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.07963s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.60913s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.3178s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.88331s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.39584s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.992916s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.86492s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.94527s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.60264s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.71457s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.20707s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.83193s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.07666s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.42673s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.80457s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.79009s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.38613s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.836508s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.911788s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.16657s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.70287s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.66241s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 4.55224s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.722329s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.02901s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 2.03178s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 4.13845s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.29199s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 4.83517s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.74479s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 2.77901s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.75217s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.57881s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 3.39038s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.75954s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.13922s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.24655s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.88546s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.28412s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.6303s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.54015s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.95125s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.23818s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 2.15459s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 0.827527s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.64331s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.21515s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.686057s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 3.15535s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.32637s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.14446s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.8151s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.54547s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.961022s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.60517s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.21227s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 3.07211s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.62502s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.81533s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.648202s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.694364s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.3845s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 4.14985s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 3.6227s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 4.3081s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.73872s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.816418s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.4618s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.13656s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.5081s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.22443s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.871957s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.660965s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.93726s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.8436s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.32575s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.4361s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.27101s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.22748s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.04494s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 4.07125s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 3.5108s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.56538s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.981946s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 2.09375s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.46268s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.42494s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.42522s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.4493s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.977608s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.13216s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 2.59328s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 4.17078s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 3.61615s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.93817s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.812267s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 3.59428s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 2.31591s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 3.30577s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.00053s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.35975s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.692848s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.2621s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.22472s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.19927s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.13707s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.62539s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.954733s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.85978s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.44073s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.32629s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.93996s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.18295s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.611786s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.46274s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.76466s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.24117s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.48661s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.8642s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.578983s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.18862s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.65583s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.21544s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.93315s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.50661s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.84524s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.4388s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.04844s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 3.82011s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.76789s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.50772s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.861897s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.97758s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.12646s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.45262s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.68004s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.13806s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.6215s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.87532s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.96446s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.84151s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.38268s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.45542s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.907476s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.44896s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.67455s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.50617s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.349s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.03157s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.854029s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.16241s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.96159s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.30615s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.30281s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.03901s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.15316s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.875713s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.68438s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.27887s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.66249s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.86535s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.976383s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.65177s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.78724s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 4.31741s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 3.58185s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 4.2431s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.08001s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.65148s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 0.981567s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.98584s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 4.01028s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.31066s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.652676s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.04758s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 2.46444s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.17462s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.43833s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.40727s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.731802s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.75454s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.21091s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.76593s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.79542s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 4.09069s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.938405s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.962693s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.15821s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.28697s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 4.52614s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.83184s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.877663s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.05454s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.97645s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 3.95943s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 3.69985s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.97992s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.83319s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.04835s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.929s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.34775s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.68899s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 4.15053s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.22141s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.17235s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.73614s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.3758s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.76752s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.56221s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.885109s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.46167s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.40379s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 3.52211s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.82052s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.88036s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.66194s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.996266s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 2.17682s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.77028s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.78737s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 4.69218s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.731547s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.0369s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.45277s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.33336s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.12412s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.53918s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.593s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.914761s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.2234s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.41453s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.15747s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 4.69567s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.76574s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.06007s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.88624s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.62234s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.17069s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.31106s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.81619s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.9392s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.43207s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 3.79558s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 4.93872s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.23419s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.04382s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.10685s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.23995s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.09793s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.25835s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 5.03411s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.741153s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.953713s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 0.986614s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.69761s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.61019s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 2.27102s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.21299s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.06355s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 2.24081s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.52855s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.43195s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.74382s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.800144s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.56071s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 3.01577s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.18411s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 3.42246s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.83859s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.645374s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.771894s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.80479s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 3.01704s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 3.36153s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.04531s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.01136s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 0.925568s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.6859s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.26187s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.94084s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.55245s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.959278s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.56363s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 2.29287s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.37393s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.52722s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.68236s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 1.29029s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.86623s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.63909s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 1.78813s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 2.03267s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 3.35223s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/1.kc
+Number of colors: 29
+Number of points: 262144
+ ==>Time: 0.645336s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/2.kc
+Number of colors: 36
+Number of points: 524176
+ ==>Time: 1.0688s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/3.kc
+Number of colors: 43
+Number of points: 784996
+ ==>Time: 1.90008s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/4.kc
+Number of colors: 47
+Number of points: 1048576
+ ==>Time: 2.18584s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/5.kc
+Number of colors: 50
+Number of points: 1308736
+ ==>Time: 1.7906s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/6.kc
+Number of colors: 53
+Number of points: 1572516
+ ==>Time: 1.86949s
+
+
+
+Sequential
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 21.4416s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.17102s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 40.4441s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 14.3837s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 17.7954s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 18.2345s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.48463s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.09878s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 26.06s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 13.7347s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.8647s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.83781s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.75289s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 11.2954s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 29.8314s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 15.4309s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.75094s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 11.5788s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.26638s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.13527s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 48.2051s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 15.1039s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 11.5484s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.064s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.46464s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.63907s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 36.4298s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 14.868s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.85679s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.08366s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.4411s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.1692s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.03531s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.83479s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.82189s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.19982s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.34569s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.59238s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.30352s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.74648s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 32.5512s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 25.5581s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.54569s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.3534s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.00372s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.41649s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.98359s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.89267s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 16.1689s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.64036s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.23234s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.17512s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.04857s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.0497s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 24.7248s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 19.5667s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.70305s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.3499s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.9653s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.51678s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.95382s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.25001s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.68228s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.7419s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.6694s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.17354s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 14.5622s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.98507s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 29.2316s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 13.9701s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.02182s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.4184s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.33553s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.09831s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.22841s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.18994s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.64489s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.95918s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.86052s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.13636s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 11.6154s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.6561s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 24.97s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 23.9249s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 16.3464s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.29618s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.62963s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.93352s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.3556s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.4695s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.05441s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.07903s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.925s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.0624s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 4.55647s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.24544s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 41.3014s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 23.8386s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.44822s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.77411s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.41387s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 13.1541s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 16.918s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.34281s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.3419s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.84239s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.11025s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.81305s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.3695s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.765s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 33.7298s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 17.6355s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.88008s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 11.843s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.70594s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.98946s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.79713s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.96037s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 11.8271s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.15317s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.69256s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.31803s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.02268s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.6628s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 28.7445s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 15.0178s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.0441s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.8581s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 18.8816s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 13.2543s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 14.5451s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.998s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.0631s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.44438s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.99317s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 13.1596s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.46713s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.61702s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 31.4499s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 23.7183s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.9505s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 13.7669s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.43886s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.1568s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.5849s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.76046s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.1898s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.34086s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.58304s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.18673s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.64479s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.51823s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 29.5622s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 14.7835s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.81459s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 13.737s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.1154s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.9987s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.04785s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.48316s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.80333s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.62334s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.48502s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.97101s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.20406s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.14226s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 32.1883s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 15.3426s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.90132s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.76758s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.0855s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.00177s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.65969s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.988s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.2659s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.00209s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.55104s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.28891s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.34669s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.01621s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 18.4004s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.46859s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 16.5955s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.4695s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.85779s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.48317s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 15.4247s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 13.4649s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 4.54741s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.05541s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.0842s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.84739s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.95309s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.74974s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 35.8891s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 31.2061s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 14.8349s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.17423s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 13.7234s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.27724s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.16091s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.81103s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.13144s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.52228s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 13.0877s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.27819s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.17093s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.06187s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 20.2163s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 21.6319s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 17.7002s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.33606s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.30954s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.49563s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 11.8484s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.3138s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.6877s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.19745s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.70217s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.07326s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.99654s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.35525s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 37.2124s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 25.9492s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.65588s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 16.4383s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.62118s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.44844s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.42973s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.38914s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.59115s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.11485s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.67207s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 4.94732s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.85098s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.84273s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 32.6846s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 18.6477s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.5779s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.69152s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.26141s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.57952s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.8159s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.59476s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.00258s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.22746s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.49666s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.75104s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.16013s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.15179s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 22.0144s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 16.5523s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 11.566s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.35467s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.8156s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.39648s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.812s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 11.4617s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.45316s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.45398s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.47138s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.46381s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.89263s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.18172s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 41.0124s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 16.5638s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.2444s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 13.5407s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.79002s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.88841s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.12846s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.59771s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.21958s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.6831s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.01461s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.13706s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.80763s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.08179s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 26.2183s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 14.6306s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 14.85s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.7066s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 16.3859s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.09062s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.06245s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.03349s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.96877s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.42253s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.53243s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.46829s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.1828s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.27849s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 32.7952s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 24.4017s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 14.6863s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.5291s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.35667s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.80766s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.83923s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.14958s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.26961s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.02658s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.27134s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.5841s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.5497s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.9107s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 38.2985s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 14.09s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 15.1631s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.4107s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 11.2142s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.70791s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.83504s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.77352s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.6738s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.66726s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.48769s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.37896s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.27864s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 4.70596s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 48.893s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 19.6404s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.89574s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.13004s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.0364s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.00902s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 13.5s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.26453s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.2048s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.02165s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.11673s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.21667s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 4.01377s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 4.98387s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 25.2142s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 14.8486s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.05609s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.3153s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.77304s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.56511s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.74475s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.02373s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.53769s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 9.36729s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.65429s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.46161s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.20167s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.08982s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 28.2098s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.0224s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 16.6492s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.86026s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.6869s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.79456s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.68229s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.8615s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.57868s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.79387s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.8525s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.99349s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.28998s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 4.40962s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 33.3424s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 21.7253s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 15.1972s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 7.53994s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 16.341s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.31552s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 8.73453s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.11128s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 12.2079s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 11.2079s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 10.9556s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.66568s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 6.10323s
+
+
+
+MPI
+--------------------------------------
+Image path: outputs/strong.kc
+Number of colors: 66
+Number of points: 4000000
+ ==>Time: 5.95755s
+
+
+

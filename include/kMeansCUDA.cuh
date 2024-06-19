@@ -1,19 +1,20 @@
 /**
- * @file kMeans.hpp
- * @brief Implementation of the K-means clustering algorithm
+ * @file kMeansCUDA.hpp
+ * @brief Implementation of the K-means clustering algorithm using CUDA
  */
 
-#ifndef KMEANS_HPP
-#define KMEANS_HPP
+#ifndef KMEANS_CUDA_HPP
+#define KMEANS_CUDA_HPP
 
 #include <random>
 #include <iostream>
-#include <thread>
-#include <point.hpp>
+#include <vector>
+#include <cuda_runtime.h>
+#include "point.hpp"
 
 /**
  * @class KMeans
- * @brief Represents the K-means clustering algorithm
+ * @brief Represents the K-means clustering algorithm using CUDA
  */
 class KMeans
 {
@@ -26,7 +27,7 @@ public:
     KMeans(const int& k, const std::vector<Point> &points);
 
     /**
-     * @brief Runs the K-means clustering algorithm
+     * @brief Runs the K-means clustering algorithm using CUDA
      */
     void run();
 
@@ -44,13 +45,13 @@ public:
      * @brief Gets the points
      * @return Vector of points
      */
-    auto getPoints() -> std::vector<Point>;
+    std::vector<Point> getPoints();
 
     /**
      * @brief Gets the centroids
      * @return Vector of centroids
      */
-    auto getCentroids() -> std::vector<Point>;
+    std::vector<Point> getCentroids();
 
     /**
      * @brief Gets the number of iterations
@@ -59,10 +60,10 @@ public:
     auto getIterations() -> int;
 
 private:
-    int k = 0; ///< Number of clusters
+    int k; ///< Number of clusters
     std::vector<Point> points; ///< Vector of points
     std::vector<Point> centroids; ///< Vector of centroids
-    int number_of_iterations = 0; ///< Number of iterations
+    int number_of_iterations; ///< Number of iterations
 };
 
-#endif // KMEANS_HPP
+#endif // KMEANS_CUDA_HPP

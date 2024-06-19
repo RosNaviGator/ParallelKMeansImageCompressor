@@ -1,30 +1,13 @@
 #include <point.hpp>
 #include <stdexcept>
 
-Point::Point(int features_size)
-{
-    this->id = 0;
-    this->clusterId = -1;
-    this->r = 0;
-    this->g = 0;
-    this->b = 0;
-}
+Point::Point() = default;
 //Point::Point(const int& id, const double& x, const double& y) : id(id), x(x), y(y), clusterId(-1) /*, minDist(std::numeric_limits<double>::max())*/ {}
-Point::Point(const int& id, const std::vector<int>& coordinates)
+Point::Point(const int &id, const std::vector<int> &coordinates) : id(id), r(static_cast<unsigned char>(coordinates[0])), g(static_cast<unsigned char>(coordinates[1])), b(static_cast<unsigned char>(coordinates[2])) 
 {
-    this->id = id;
-    this->r=static_cast<unsigned char>(coordinates[0]);
-    this->g=static_cast<unsigned char>(coordinates[1]);
-    this->b=static_cast<unsigned char>(coordinates[2]);
-    this->clusterId = -1;
 }
 
-Point::~Point() 
-{
-    
-}
-
-unsigned char& Point::getFeature(int index) 
+auto Point::getFeature(int index) -> unsigned char&
 {
      switch (index) 
      {
@@ -39,7 +22,7 @@ unsigned char& Point::getFeature(int index)
      }
 }
 
-int Point::getFeature_int(int index) const
+auto Point::getFeature_int(int index) const -> int
 {
     switch (index) 
     {
@@ -54,7 +37,7 @@ int Point::getFeature_int(int index) const
     }
 }
 
-double Point::distance(const Point& p) const
+auto Point::distance(const Point &p) const -> double
 {
     double sum = 0.0;
     sum += pow(static_cast<int>(r) - static_cast<int>(p.r), 2);
@@ -74,10 +57,5 @@ void Point::setFeature(int index, int value)
         this->b = static_cast<unsigned char>(value);
 }
 
-void MPI_Bcast(Point& point, int count, MPI_Datatype datatype, int root, MPI_Comm communicator)
-{
-    std::vector<unsigned char> features = {point.r, point.g, point.b};
-    MPI_Bcast(&point.id, 1, MPI_INT, root, communicator);
-    MPI_Bcast(&point.clusterId, 1, MPI_INT, root, communicator);
-    MPI_Bcast(features.data(), count, datatype, root, communicator);
-}
+
+

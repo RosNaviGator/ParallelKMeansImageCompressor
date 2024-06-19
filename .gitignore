@@ -3,8 +3,12 @@ seqEncoder
 ompEncoder
 mpiEncoder
 decoder
-exe
-wexe
+menu
+
+# ignore performance data
+performanceEvaluation/performanceImages
+performanceEvaluation/plots
+docs
 
 # ignore .vscode
 .vscode

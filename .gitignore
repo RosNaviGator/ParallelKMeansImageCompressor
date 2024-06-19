@@ -6,7 +6,8 @@ decoder
 menu
 
 # ignore performance data
-performanceEvaluation
+performanceEvaluation/performanceImages
+performanceEvaluation/plots
 docs
 
 # ignore .vscode

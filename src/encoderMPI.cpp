@@ -21,13 +21,13 @@
 #include <filesUtils.hpp>
 
 #include <mpi.h>
-
+\
 #include <performanceEvaluation.hpp>
 #include <span>
 
 auto main(int argc, char *argv[]) -> int
 {
-    MPI_Init(nullptr, nullptr);
+    MPI_Init(NULL, NULL);
     int world_size = 0;
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
     int rank = 0;
@@ -143,6 +143,7 @@ auto main(int argc, char *argv[]) -> int
         }
     }
 
+
     if (rank == 0)
     {
         // std::cout << "Press a key to start the compression..." << std::endl;
@@ -150,22 +151,23 @@ auto main(int argc, char *argv[]) -> int
         std::cout << "Starting the Compression..." << std::endl;
     }
 
-    std::unique_ptr<KMeans> kmeans;
+
+    std::unique_ptr<KMeansMPI> kmeans;
 
     if (rank == 0)
     {
-        kmeans = std::unique_ptr<KMeans>(new KMeans(k, points));
+        kmeans = std::unique_ptr<KMeansMPI>(new KMeansMPI(k, points, local_points));
     }
     else
     {
-        kmeans = std::unique_ptr<KMeans>(new KMeans(k));
+        
+        kmeans = std::unique_ptr<KMeansMPI>(new KMeansMPI(k, local_points));
     }
+
     auto start = std::chrono::high_resolution_clock::now();
-    kmeans->run(rank, world_size, local_points);
+    kmeans->run();
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end - start;
-
-    // Display the image
 
     if (rank == 0)
     {

@@ -3,70 +3,38 @@
  * @brief Implementation of the K-means clustering algorithm using MPI
  */
 
-#ifndef KMEANS_HPP
-#define KMEANS_HPP
+#ifndef KMEANS_MPI_HPP
+#define KMEANS_MPI_HPP
 
-#include <random>
-#include <iostream>
-#include <algorithm>
+#include "kMeansBase.hpp"
 #include <mpi.h>
-#include <point.hpp>
 
 /**
- * @class KMeans
+ * @class KMeansMPI
  * @brief Represents the K-means clustering algorithm using MPI
  */
-class KMeans
+class KMeansMPI : public KMeansBase
 {
 public:
     /**
-     * @brief Constructor for KMeans
+     * @brief Constructor for KMeansMPI
      * @param k Number of clusters
-     * @param rank Rank of the MPI process
-     * @param n_features Number of features
      * @param points Vector of points
      */
-    KMeans(const int& k, const std::vector<Point>& points);
+    KMeansMPI(const int& k, const std::vector<Point>& points,std::vector<std::pair<int, Point>> local_points);
 
     /**
-     * @brief Constructor for KMeans
+     * @brief Constructor for KMeansMPI
      * @param k Number of clusters
-     * @param rank Rank of the MPI process
-     * @param n_features Number of features
      */
-    KMeans(const int& k);
+    KMeansMPI(const int& k,std::vector<std::pair<int, Point>> local_points);
 
     /**
      * @brief Runs the K-means clustering algorithm using MPI
-     * @param rank Rank of the MPI process
-     * @param world_size Number of MPI processes
-     * @param local_points Vector of local points
      */
-    void run(const int& rank, const int& world_size, const std::vector<std::pair<int, Point> > local_points);
-
-    /**
-     * @brief Gets the points
-     * @return Vector of points
-     */
-    auto getPoints() -> std::vector<Point>; 
-
-    /**
-     * @brief Gets the centroids
-     * @return Vector of centroids
-     */
-    auto getCentroids() -> std::vector<Point>;
-
-    /**
-     * @brief Gets the number of iterations
-     * @return Number of iterations
-     */
-    auto getIterations() -> int;
-
+    void run() override;
 private:
-    int k; ///< Number of clusters
-    std::vector<Point> points; ///< Vector of points
-    std::vector<Point> centroids; ///< Vector of centroids
-    int number_of_iterations; ///< Number of iterations
+    std::vector<std::pair<int, Point>> local_points; ///< Vector of local points
 };
 
-#endif // KMEANS_HPP
+#endif // KMEANS_MPI_HPP

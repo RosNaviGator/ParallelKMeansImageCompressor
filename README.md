@@ -56,9 +56,8 @@ The project is organized as follows:
 
 ## How does it work?
 The program compresses images by reducing the number of colors in the image. It does this by clustering the pixels into k color groups using the k-means clustering algorithm. The k-means algorithm is an unsupervised learning algorithm that partitions the data into k clusters based on the similarity of the data points. In the context of image compression, the data points are the pixels of the image, and the clusters are the colors that represent the image.
-<div align="center">
-    <img src=".readmePictures/Albero-removebg-preview.png" width=400>
-</div>
+
+![tree](.readmePictures/Albero-removebg-preview.png)
 
 The k-means algorithm works as follows:
 1. Initialize k centroids randomly.

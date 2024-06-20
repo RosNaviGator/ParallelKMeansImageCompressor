@@ -3,6 +3,9 @@
 
 This program compresses images by reducing the number of colors using k-means clustering. It offers enhanced performance through the implementation of several parallelization techniques. By clustering pixels into k color groups, the program reduces the image's color palette, thereby compressing the image while maintaining visual quality.
 
+## Doxygen Documentation
+The documentation of the project can be found [here](docs/html/index.html).
+
 ## Prerequisites 
 In order to be able to compile and run the program, there are a few programs that need to be installed.
 

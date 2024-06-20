@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
 
     defineKValue(k, levelsColorsChioce, different_colors);
 
-    int different_colors_size = different_colors.size();
+    size_t different_colors_size = different_colors.size();
 
     printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
 
@@ -110,8 +110,6 @@ int main(int argc, char *argv[])
     createOutputDirectories();
 
     writeBinaryFile(outputPath, width, height, k, kmeans.getPoints(), kmeans.getCentroids());
-    
-    writePerformanceEvaluation(outputPath, "CUDA", k, points, elapsedKmeans);
 
     // write perfomance data to csv
     if (4 == argc)

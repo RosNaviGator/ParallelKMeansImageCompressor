@@ -1,6 +1,6 @@
 #include <kMeansCUDA.cuh>
 
-km::KMeans::KMeans(const int &k, const std::vector<Point> points) : k(k), points(points)
+km::KMeans::KMeans(const int &k, const std::vector<Point> &points) : k(k), points(points)
 {
     int size = points.size();
     std::random_device rd;                            // Initialize a random device
@@ -179,7 +179,7 @@ auto km::KMeans::getPoints() -> std::vector<Point>
     return points;
 }
 
-auto KMeans::getIterations() -> int
+auto km::KMeans::getIterations() -> int
 {
     return number_of_iterations;
 }

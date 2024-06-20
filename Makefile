@@ -8,7 +8,7 @@ BUILD_DIR = ./build
 
 # Compiler flags
 CFLAGS = -std=c++20 -I$(INC_DIR) `pkg-config --cflags opencv4` -fopenmp -O3 -Wall -Wextra -Wno-deprecated-anon-enum-enum-conversion -Wno-deprecated-enum-enum-conversion
-NVCCFLAGS = -std=c++17 -I$(INC_DIR) `pkg-config --cflags opencv4` -O3 -Wno-deprecated-anon-enum-enum-conversion -Wno-deprecated-enum-enum-conversion
+NVCCFLAGS = -std=c++17 -I$(INC_DIR) `pkg-config --cflags opencv4` -O3
 
 
 # Libraries

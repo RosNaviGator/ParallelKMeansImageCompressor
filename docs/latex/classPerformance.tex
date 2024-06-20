@@ -1,0 +1,97 @@
+\doxysection{Performance Class Reference}
+\hypertarget{classPerformance}{}\label{classPerformance}\index{Performance@{Performance}}
+
+
+Represents the performance evaluation.  
+
+
+
+
+{\ttfamily \#include $<$performance\+Evaluation.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPerformance_ac3f9a91ae5b8488e75385901497b0636}\label{classPerformance_ac3f9a91ae5b8488e75385901497b0636} 
+{\bfseries Performance} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classPerformance_add9092287561b96831ae165ad80e7cb7}{write\+CSV}} (int different\+\_\+colors\+\_\+size, int k, int n\+\_\+points, double elapsed\+Kmeans, int number\+\_\+of\+\_\+iterations, int num\+\_\+processes=0) -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Writes performance data to a CSV file. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classPerformance_a1dc3ae7519b60e53bacffe5f9f5d8769}{fill\+Performance}} (int choice, const std\+::string \&img, const std\+::string \&method) -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Fills the performance data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static auto \mbox{\hyperlink{classPerformance_a3e40f86c68687ed02b748a7f91ebdb4a}{extract\+File\+Name}} (const std\+::string \&output\+Path) -\/$>$ std\+::string
+\begin{DoxyCompactList}\small\item\em Extracts the file name from the output path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the performance evaluation. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPerformance_a3e40f86c68687ed02b748a7f91ebdb4a}\index{Performance@{Performance}!extractFileName@{extractFileName}}
+\index{extractFileName@{extractFileName}!Performance@{Performance}}
+\doxysubsubsection{\texorpdfstring{extractFileName()}{extractFileName()}}
+{\footnotesize\ttfamily \label{classPerformance_a3e40f86c68687ed02b748a7f91ebdb4a} 
+static auto Performance\+::extract\+File\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{output\+Path}{}\end{DoxyParamCaption}) -\/$>$  std\+::string\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Extracts the file name from the output path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+Path} & Output path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Extracted file name 
+\end{DoxyReturn}
+\Hypertarget{classPerformance_a1dc3ae7519b60e53bacffe5f9f5d8769}\index{Performance@{Performance}!fillPerformance@{fillPerformance}}
+\index{fillPerformance@{fillPerformance}!Performance@{Performance}}
+\doxysubsubsection{\texorpdfstring{fillPerformance()}{fillPerformance()}}
+{\footnotesize\ttfamily \label{classPerformance_a1dc3ae7519b60e53bacffe5f9f5d8769} 
+auto Performance\+::fill\+Performance (\begin{DoxyParamCaption}\item[{int}]{choice}{, }\item[{const std\+::string \&}]{img}{, }\item[{const std\+::string \&}]{method}{}\end{DoxyParamCaption}) -\/$>$  void}
+
+
+
+Fills the performance data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choice} & Choice of performance evaluation \\
+\hline
+{\em img} & Image name \\
+\hline
+{\em method} & Method used \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classPerformance_add9092287561b96831ae165ad80e7cb7}\index{Performance@{Performance}!writeCSV@{writeCSV}}
+\index{writeCSV@{writeCSV}!Performance@{Performance}}
+\doxysubsubsection{\texorpdfstring{writeCSV()}{writeCSV()}}
+{\footnotesize\ttfamily \label{classPerformance_add9092287561b96831ae165ad80e7cb7} 
+auto Performance\+::write\+CSV (\begin{DoxyParamCaption}\item[{int}]{different\+\_\+colors\+\_\+size}{, }\item[{int}]{k}{, }\item[{int}]{n\+\_\+points}{, }\item[{double}]{elapsed\+Kmeans}{, }\item[{int}]{number\+\_\+of\+\_\+iterations}{, }\item[{int}]{num\+\_\+processes}{ = {\ttfamily 0}}\end{DoxyParamCaption}) -\/$>$  void}
+
+
+
+Writes performance data to a CSV file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em different\+\_\+colors\+\_\+size} & Number of different colors \\
+\hline
+{\em k} & Number of clusters \\
+\hline
+{\em n\+\_\+points} & Number of points \\
+\hline
+{\em elapsed\+Kmeans} & Elapsed time for K-\/means clustering \\
+\hline
+{\em num\+\_\+processes} & Number of processes (optional, default=0) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{performanceEvaluation_8hpp}{performance\+Evaluation.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,56 @@
+\doxysection{config\+Reader.\+hpp}
+\hypertarget{configReader_8hpp_source}{}\label{configReader_8hpp_source}\index{include/configReader.hpp@{include/configReader.hpp}}
+\mbox{\hyperlink{configReader_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CONFIG\_READER\_HPP}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CONFIG\_READER\_HPP}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <regex>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <unordered\_set>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classConfigReader}{ConfigReader}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{double}\ first\_level\_compression\_color\ =\ 0.;\ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{double}\ second\_level\_compression\_color\ =\ 0.\ ;\ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{double}\ third\_level\_compression\_color\ =\ 0.;\ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{double}\ fourth\_level\_compression\_color\ =\ 0.;\ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{double}\ fifth\_level\_compression\_color\ =\ 0.;\ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{double}\ resizing\_factor\ =\ 0.;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ color\_choice\ =\ 0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ compression\_choice\ =\ 0;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ std::filesystem::path\ inputImageFilePath;\ \ }
+\DoxyCodeLine{00029\ \ \ \ \ std::regex\ pattern;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ std::unordered\_set<std::string>\ requiredVariables\ =\ \{\};\ \ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{auto}\ checkVariableExists(\textcolor{keyword}{const}\ std::string\&\ variableName)\ \textcolor{keyword}{const}\ -\/>\ bool;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classConfigReader_afff5e14a43d2ecaab6f2e3ad21516296}{getFirstLevelCompressionColor}}()\ const\ -\/>\ \textcolor{keywordtype}{double};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classConfigReader_a275ee8bc7ffa5cfdfb9f89cb371f039c}{getSecondLevelCompressionColor}}()\ const\ -\/>\ \textcolor{keywordtype}{double};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classConfigReader_a67fd8b4339b5f71e5a9eb7179b1f926f}{getThirdLevelCompressionColor}}()\ const\ -\/>\ \textcolor{keywordtype}{double};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classConfigReader_ad0e89e4edfbd9251b27d507407c4cda6}{getFourthLevelCompressionColor}}()\ const\ -\/>\ \textcolor{keywordtype}{double};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classConfigReader_acae0dbedcb91e6bf5237cdfd700b13c9}{getFifthLevelCompressionColor}}()\ const\ -\/>\ \textcolor{keywordtype}{double};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classConfigReader_aa24009897fe69739d6b064e5bcbb2ffb}{getColorChoice}}()\ const\ -\/>\ \textcolor{keywordtype}{int};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classConfigReader_ae1338c1d653726dee2e4da6e3d543748}{getCompressionChoice}}()\ const\ -\/>\ \textcolor{keywordtype}{int};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00082\ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classConfigReader_aeedbb6aad68aca4c70d879fb75f1e422}{getInputImageFilePath}}()\ const\ -\/>\ std::filesystem::path;}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00088\ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classConfigReader_aff1168702f36bf2f2c71346b4825fd48}{getResizingFactor}}()\ const\ -\/>\ \textcolor{keywordtype}{double};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00094\ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classConfigReader_a96258db6d909c8403b318f3d5d532862}{readConfigFile}}()\ -\/>\ \textcolor{keywordtype}{bool};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{classConfigReader}{ConfigReader}}();}
+\DoxyCodeLine{00097\ \};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONFIG\_READER\_HPP}}
+
+\end{DoxyCode}

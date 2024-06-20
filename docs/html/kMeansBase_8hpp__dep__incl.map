@@ -1,0 +1,9 @@
+<map id="include/kMeansBase.hpp" name="include/kMeansBase.hpp">
+<area shape="rect" id="Node000001" title="Base class for K&#45;means clustering algorithm." alt="" coords="203,5,386,33"/>
+<area shape="rect" id="Node000002" href="$kMeansMPI_8hpp.html" title="Implementation of the K&#45;means clustering algorithm using MPI." alt="" coords="5,81,181,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,41,130,83,128,78,243,36"/>
+<area shape="rect" id="Node000003" href="$kMeansOMP_8hpp.html" title="Implementation of the K&#45;means clustering algorithm using OpenMP." alt="" coords="205,81,384,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="297,49,297,81,292,81,292,49"/>
+<area shape="rect" id="Node000004" href="$kMeansSequential_8hpp.html" title="Implementation of the K&#45;means clustering algorithm." alt="" coords="408,81,629,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="350,36,479,78,477,83,348,41"/>
+</map>

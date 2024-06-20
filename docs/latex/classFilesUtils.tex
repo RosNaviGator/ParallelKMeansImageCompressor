@@ -1,0 +1,118 @@
+\doxysection{Files\+Utils Class Reference}
+\hypertarget{classFilesUtils}{}\label{classFilesUtils}\index{FilesUtils@{FilesUtils}}
+
+
+Provides utility functions for file handling.  
+
+
+
+
+{\ttfamily \#include $<$files\+Utils.\+hpp$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classFilesUtils_a32c90aac7b3383d99568214792cf9b0c}\label{classFilesUtils_a32c90aac7b3383d99568214792cf9b0c} 
+static auto {\bfseries create\+Output\+Directories} () -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Creates output directories. \end{DoxyCompactList}\item 
+static auto \mbox{\hyperlink{classFilesUtils_a6113304a241ecd3fb4edd62e0ecdaf03}{write\+Binary\+File}} (std\+::string \&output\+Path, int \&width, int \&height, int \&k, std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $>$ points, std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $>$ centroids) -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Writes data to a binary file. \end{DoxyCompactList}\item 
+static auto \mbox{\hyperlink{classFilesUtils_a20bfca472e72899986f4cd8613aa9906}{is\+Correct\+Extension}} (const std\+::filesystem\+::path \&file\+Path, const std\+::string \&correct\+Extension) -\/$>$ bool
+\begin{DoxyCompactList}\small\item\em Checks if a file has the correct extension. \end{DoxyCompactList}\item 
+static auto \mbox{\hyperlink{classFilesUtils_a84573f9e5f8b8ba58d3753caa5d20c35}{create\+Decoding\+Menu}} (std\+::filesystem\+::path \&decode\+Dir, std\+::vector$<$ std\+::filesystem\+::path $>$ \&image\+Names) -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Creates a decoding menu. \end{DoxyCompactList}\item 
+static auto \mbox{\hyperlink{classFilesUtils_ac0f5652cc4870601153f05d5fdaab39c}{read\+Binary\+File}} (std\+::string \&path, cv\+::\+Mat \&image\+Compressed) -\/$>$ int
+\begin{DoxyCompactList}\small\item\em Reads a binary file and reconstructs the compressed image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides utility functions for file handling. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFilesUtils_a84573f9e5f8b8ba58d3753caa5d20c35}\index{FilesUtils@{FilesUtils}!createDecodingMenu@{createDecodingMenu}}
+\index{createDecodingMenu@{createDecodingMenu}!FilesUtils@{FilesUtils}}
+\doxysubsubsection{\texorpdfstring{createDecodingMenu()}{createDecodingMenu()}}
+{\footnotesize\ttfamily \label{classFilesUtils_a84573f9e5f8b8ba58d3753caa5d20c35} 
+static auto Files\+Utils\+::create\+Decoding\+Menu (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path \&}]{decode\+Dir}{, }\item[{std\+::vector$<$ std\+::filesystem\+::path $>$ \&}]{image\+Names}{}\end{DoxyParamCaption}) -\/$>$  void\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a decoding menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em decode\+Dir} & Directory for decoding \\
+\hline
+{\em image\+Names} & Vector of image names \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classFilesUtils_a20bfca472e72899986f4cd8613aa9906}\index{FilesUtils@{FilesUtils}!isCorrectExtension@{isCorrectExtension}}
+\index{isCorrectExtension@{isCorrectExtension}!FilesUtils@{FilesUtils}}
+\doxysubsubsection{\texorpdfstring{isCorrectExtension()}{isCorrectExtension()}}
+{\footnotesize\ttfamily \label{classFilesUtils_a20bfca472e72899986f4cd8613aa9906} 
+static auto Files\+Utils\+::is\+Correct\+Extension (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{file\+Path}{, }\item[{const std\+::string \&}]{correct\+Extension}{}\end{DoxyParamCaption}) -\/$>$  bool\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if a file has the correct extension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & Path of the file \\
+\hline
+{\em correct\+Extension} & Correct extension to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the file has the correct extension, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classFilesUtils_ac0f5652cc4870601153f05d5fdaab39c}\index{FilesUtils@{FilesUtils}!readBinaryFile@{readBinaryFile}}
+\index{readBinaryFile@{readBinaryFile}!FilesUtils@{FilesUtils}}
+\doxysubsubsection{\texorpdfstring{readBinaryFile()}{readBinaryFile()}}
+{\footnotesize\ttfamily \label{classFilesUtils_ac0f5652cc4870601153f05d5fdaab39c} 
+static auto Files\+Utils\+::read\+Binary\+File (\begin{DoxyParamCaption}\item[{std\+::string \&}]{path}{, }\item[{cv\+::\+Mat \&}]{image\+Compressed}{}\end{DoxyParamCaption}) -\/$>$  int\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reads a binary file and reconstructs the compressed image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path of the binary file \\
+\hline
+{\em image\+Compressed} & Compressed image matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of clusters 
+\end{DoxyReturn}
+\Hypertarget{classFilesUtils_a6113304a241ecd3fb4edd62e0ecdaf03}\index{FilesUtils@{FilesUtils}!writeBinaryFile@{writeBinaryFile}}
+\index{writeBinaryFile@{writeBinaryFile}!FilesUtils@{FilesUtils}}
+\doxysubsubsection{\texorpdfstring{writeBinaryFile()}{writeBinaryFile()}}
+{\footnotesize\ttfamily \label{classFilesUtils_a6113304a241ecd3fb4edd62e0ecdaf03} 
+static auto Files\+Utils\+::write\+Binary\+File (\begin{DoxyParamCaption}\item[{std\+::string \&}]{output\+Path}{, }\item[{int \&}]{width}{, }\item[{int \&}]{height}{, }\item[{int \&}]{k}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $>$}]{points}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $>$}]{centroids}{}\end{DoxyParamCaption}) -\/$>$  void\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Writes data to a binary file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+Path} & Path of the output file \\
+\hline
+{\em width} & Width of the image \\
+\hline
+{\em height} & Height of the image \\
+\hline
+{\em k} & Number of clusters \\
+\hline
+{\em points} & Vector of points \\
+\hline
+{\em centroids} & Vector of centroids \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{filesUtils_8hpp}{files\+Utils.\+hpp}}\end{DoxyCompactItemize}

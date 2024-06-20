@@ -1,0 +1,40 @@
+\doxysection{performance\+Evaluation.\+hpp}
+\hypertarget{performanceEvaluation_8hpp_source}{}\label{performanceEvaluation_8hpp_source}\index{include/performanceEvaluation.hpp@{include/performanceEvaluation.hpp}}
+\mbox{\hyperlink{performanceEvaluation_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ PERFORMANCE\_HPP}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ PERFORMANCE\_HPP}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <opencv2/opencv.hpp>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPerformance}{Performance}}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classPerformance_ac3f9a91ae5b8488e75385901497b0636}{Performance}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classPerformance_add9092287561b96831ae165ad80e7cb7}{writeCSV}}(\textcolor{keywordtype}{int}\ different\_colors\_size,\ \textcolor{keywordtype}{int}\ k,\ \textcolor{keywordtype}{int}\ n\_points,\ \textcolor{keywordtype}{double}\ elapsedKmeans,\ \textcolor{keywordtype}{int}\ number\_of\_iterations,\ \textcolor{keywordtype}{int}\ num\_processes\ =\ 0)\ -\/>\ void;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classPerformance_a3e40f86c68687ed02b748a7f91ebdb4a}{extractFileName}}(\textcolor{keyword}{const}\ std::string\ \&outputPath)\ -\/>\ std::string;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classPerformance_a1dc3ae7519b60e53bacffe5f9f5d8769}{fillPerformance}}(\textcolor{keywordtype}{int}\ choice,\ \textcolor{keyword}{const}\ std::string\ \&img,\ \textcolor{keyword}{const}\ std::string\ \&method)\ -\/>\ void;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{auto}\ createOrOpenCSV(\textcolor{keyword}{const}\ std::string\ \&filename)\ -\/>\ void;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{auto}\ appendToCSV(\textcolor{keyword}{const}\ std::string\ \&filename,\ \textcolor{keywordtype}{int}\ n\_diff\_colors,\ \textcolor{keywordtype}{int}\ k,\ \textcolor{keywordtype}{int}\ n\_colors,\ \textcolor{keyword}{const}\ std::string\ \&compType,\ \textcolor{keywordtype}{double}\ time,\ \textcolor{keywordtype}{int}\ num\_processes,\ \textcolor{keywordtype}{int}\ number\_of\_iteratios)\ -\/>\ void;}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ std::string\ img;\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{int}\ choice\{\};\ \ \ \ }
+\DoxyCodeLine{00075\ \ \ \ \ std::string\ method;\ }
+\DoxyCodeLine{00076\ \};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PERFORMANCE\_HPP}}
+
+\end{DoxyCode}

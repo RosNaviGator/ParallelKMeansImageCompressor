@@ -1,0 +1,175 @@
+\doxysection{Config\+Reader Class Reference}
+\hypertarget{classConfigReader}{}\label{classConfigReader}\index{ConfigReader@{ConfigReader}}
+
+
+Reads and stores configuration values from a file.  
+
+
+
+
+{\ttfamily \#include $<$config\+Reader.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+auto \mbox{\hyperlink{classConfigReader_afff5e14a43d2ecaab6f2e3ad21516296}{get\+First\+Level\+Compression\+Color}} () const -\/$>$ double
+\begin{DoxyCompactList}\small\item\em Gets the first level compression color value. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classConfigReader_a275ee8bc7ffa5cfdfb9f89cb371f039c}{get\+Second\+Level\+Compression\+Color}} () const -\/$>$ double
+\begin{DoxyCompactList}\small\item\em Gets the second level compression color value. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classConfigReader_a67fd8b4339b5f71e5a9eb7179b1f926f}{get\+Third\+Level\+Compression\+Color}} () const -\/$>$ double
+\begin{DoxyCompactList}\small\item\em Gets the third level compression color value. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classConfigReader_ad0e89e4edfbd9251b27d507407c4cda6}{get\+Fourth\+Level\+Compression\+Color}} () const -\/$>$ double
+\begin{DoxyCompactList}\small\item\em Gets the fourth level compression color value. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classConfigReader_acae0dbedcb91e6bf5237cdfd700b13c9}{get\+Fifth\+Level\+Compression\+Color}} () const -\/$>$ double
+\begin{DoxyCompactList}\small\item\em Gets the fifth level compression color value. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classConfigReader_aa24009897fe69739d6b064e5bcbb2ffb}{get\+Color\+Choice}} () const -\/$>$ int
+\begin{DoxyCompactList}\small\item\em Gets the color choice. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classConfigReader_ae1338c1d653726dee2e4da6e3d543748}{get\+Compression\+Choice}} () const -\/$>$ int
+\begin{DoxyCompactList}\small\item\em Gets the compression choice. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classConfigReader_aeedbb6aad68aca4c70d879fb75f1e422}{get\+Input\+Image\+File\+Path}} () const -\/$>$ std\+::filesystem\+::path
+\begin{DoxyCompactList}\small\item\em Gets the input image file path. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classConfigReader_aff1168702f36bf2f2c71346b4825fd48}{get\+Resizing\+Factor}} () const -\/$>$ double
+\begin{DoxyCompactList}\small\item\em Gets the resizing factor. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classConfigReader_a96258db6d909c8403b318f3d5d532862}{read\+Config\+File}} () -\/$>$ bool
+\begin{DoxyCompactList}\small\item\em Reads the configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reads and stores configuration values from a file. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classConfigReader_aa24009897fe69739d6b064e5bcbb2ffb}\index{ConfigReader@{ConfigReader}!getColorChoice@{getColorChoice}}
+\index{getColorChoice@{getColorChoice}!ConfigReader@{ConfigReader}}
+\doxysubsubsection{\texorpdfstring{getColorChoice()}{getColorChoice()}}
+{\footnotesize\ttfamily \label{classConfigReader_aa24009897fe69739d6b064e5bcbb2ffb} 
+auto Config\+Reader\+::get\+Color\+Choice (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  int\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Gets the color choice. 
+
+\begin{DoxyReturn}{Returns}
+Color choice 
+\end{DoxyReturn}
+\Hypertarget{classConfigReader_ae1338c1d653726dee2e4da6e3d543748}\index{ConfigReader@{ConfigReader}!getCompressionChoice@{getCompressionChoice}}
+\index{getCompressionChoice@{getCompressionChoice}!ConfigReader@{ConfigReader}}
+\doxysubsubsection{\texorpdfstring{getCompressionChoice()}{getCompressionChoice()}}
+{\footnotesize\ttfamily \label{classConfigReader_ae1338c1d653726dee2e4da6e3d543748} 
+auto Config\+Reader\+::get\+Compression\+Choice (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  int\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Gets the compression choice. 
+
+\begin{DoxyReturn}{Returns}
+Compression choice 
+\end{DoxyReturn}
+\Hypertarget{classConfigReader_acae0dbedcb91e6bf5237cdfd700b13c9}\index{ConfigReader@{ConfigReader}!getFifthLevelCompressionColor@{getFifthLevelCompressionColor}}
+\index{getFifthLevelCompressionColor@{getFifthLevelCompressionColor}!ConfigReader@{ConfigReader}}
+\doxysubsubsection{\texorpdfstring{getFifthLevelCompressionColor()}{getFifthLevelCompressionColor()}}
+{\footnotesize\ttfamily \label{classConfigReader_acae0dbedcb91e6bf5237cdfd700b13c9} 
+auto Config\+Reader\+::get\+Fifth\+Level\+Compression\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  double\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Gets the fifth level compression color value. 
+
+\begin{DoxyReturn}{Returns}
+Fifth level compression color value 
+\end{DoxyReturn}
+\Hypertarget{classConfigReader_afff5e14a43d2ecaab6f2e3ad21516296}\index{ConfigReader@{ConfigReader}!getFirstLevelCompressionColor@{getFirstLevelCompressionColor}}
+\index{getFirstLevelCompressionColor@{getFirstLevelCompressionColor}!ConfigReader@{ConfigReader}}
+\doxysubsubsection{\texorpdfstring{getFirstLevelCompressionColor()}{getFirstLevelCompressionColor()}}
+{\footnotesize\ttfamily \label{classConfigReader_afff5e14a43d2ecaab6f2e3ad21516296} 
+auto Config\+Reader\+::get\+First\+Level\+Compression\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  double\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Gets the first level compression color value. 
+
+\begin{DoxyReturn}{Returns}
+First level compression color value 
+\end{DoxyReturn}
+\Hypertarget{classConfigReader_ad0e89e4edfbd9251b27d507407c4cda6}\index{ConfigReader@{ConfigReader}!getFourthLevelCompressionColor@{getFourthLevelCompressionColor}}
+\index{getFourthLevelCompressionColor@{getFourthLevelCompressionColor}!ConfigReader@{ConfigReader}}
+\doxysubsubsection{\texorpdfstring{getFourthLevelCompressionColor()}{getFourthLevelCompressionColor()}}
+{\footnotesize\ttfamily \label{classConfigReader_ad0e89e4edfbd9251b27d507407c4cda6} 
+auto Config\+Reader\+::get\+Fourth\+Level\+Compression\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  double\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Gets the fourth level compression color value. 
+
+\begin{DoxyReturn}{Returns}
+Fourth level compression color value 
+\end{DoxyReturn}
+\Hypertarget{classConfigReader_aeedbb6aad68aca4c70d879fb75f1e422}\index{ConfigReader@{ConfigReader}!getInputImageFilePath@{getInputImageFilePath}}
+\index{getInputImageFilePath@{getInputImageFilePath}!ConfigReader@{ConfigReader}}
+\doxysubsubsection{\texorpdfstring{getInputImageFilePath()}{getInputImageFilePath()}}
+{\footnotesize\ttfamily \label{classConfigReader_aeedbb6aad68aca4c70d879fb75f1e422} 
+auto Config\+Reader\+::get\+Input\+Image\+File\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  std\+::filesystem\+::path\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Gets the input image file path. 
+
+\begin{DoxyReturn}{Returns}
+Input image file path 
+\end{DoxyReturn}
+\Hypertarget{classConfigReader_aff1168702f36bf2f2c71346b4825fd48}\index{ConfigReader@{ConfigReader}!getResizingFactor@{getResizingFactor}}
+\index{getResizingFactor@{getResizingFactor}!ConfigReader@{ConfigReader}}
+\doxysubsubsection{\texorpdfstring{getResizingFactor()}{getResizingFactor()}}
+{\footnotesize\ttfamily \label{classConfigReader_aff1168702f36bf2f2c71346b4825fd48} 
+auto Config\+Reader\+::get\+Resizing\+Factor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  double\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Gets the resizing factor. 
+
+\begin{DoxyReturn}{Returns}
+Resizing factor 
+\end{DoxyReturn}
+\Hypertarget{classConfigReader_a275ee8bc7ffa5cfdfb9f89cb371f039c}\index{ConfigReader@{ConfigReader}!getSecondLevelCompressionColor@{getSecondLevelCompressionColor}}
+\index{getSecondLevelCompressionColor@{getSecondLevelCompressionColor}!ConfigReader@{ConfigReader}}
+\doxysubsubsection{\texorpdfstring{getSecondLevelCompressionColor()}{getSecondLevelCompressionColor()}}
+{\footnotesize\ttfamily \label{classConfigReader_a275ee8bc7ffa5cfdfb9f89cb371f039c} 
+auto Config\+Reader\+::get\+Second\+Level\+Compression\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  double\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Gets the second level compression color value. 
+
+\begin{DoxyReturn}{Returns}
+Second level compression color value 
+\end{DoxyReturn}
+\Hypertarget{classConfigReader_a67fd8b4339b5f71e5a9eb7179b1f926f}\index{ConfigReader@{ConfigReader}!getThirdLevelCompressionColor@{getThirdLevelCompressionColor}}
+\index{getThirdLevelCompressionColor@{getThirdLevelCompressionColor}!ConfigReader@{ConfigReader}}
+\doxysubsubsection{\texorpdfstring{getThirdLevelCompressionColor()}{getThirdLevelCompressionColor()}}
+{\footnotesize\ttfamily \label{classConfigReader_a67fd8b4339b5f71e5a9eb7179b1f926f} 
+auto Config\+Reader\+::get\+Third\+Level\+Compression\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  double\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Gets the third level compression color value. 
+
+\begin{DoxyReturn}{Returns}
+Third level compression color value 
+\end{DoxyReturn}
+\Hypertarget{classConfigReader_a96258db6d909c8403b318f3d5d532862}\index{ConfigReader@{ConfigReader}!readConfigFile@{readConfigFile}}
+\index{readConfigFile@{readConfigFile}!ConfigReader@{ConfigReader}}
+\doxysubsubsection{\texorpdfstring{readConfigFile()}{readConfigFile()}}
+{\footnotesize\ttfamily \label{classConfigReader_a96258db6d909c8403b318f3d5d532862} 
+auto Config\+Reader\+::read\+Config\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) -\/$>$  bool\hspace{0.3cm}{\ttfamily [nodiscard]}}
+
+
+
+Reads the configuration file. 
+
+\begin{DoxyReturn}{Returns}
+True if the configuration file is read successfully, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{configReader_8hpp}{config\+Reader.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,38 @@
+\doxysection{k\+Means\+Base.\+hpp}
+\hypertarget{kMeansBase_8hpp_source}{}\label{kMeansBase_8hpp_source}\index{include/kMeansBase.hpp@{include/kMeansBase.hpp}}
+\mbox{\hyperlink{kMeansBase_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ KMEANS\_BASE\_HPP}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ KMEANS\_BASE\_HPP}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{point_8hpp}{point.hpp}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classKMeansBase}{KMeansBase}}}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{classKMeansBase_a4763de84aaeee03ed652843fc2a6acf5}{KMeansBase}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classKMeansBase_ac0595b0301db46ef02824763eaf3e6d3}{k}},\ \textcolor{keyword}{const}\ std::vector<Point>\&\ \mbox{\hyperlink{classKMeansBase_add6779175408b8942717fd4b423cd124}{points}});}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{classKMeansBase_a5417324d317bf7e1dd6ca0ad48dba27a}{KMeansBase}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classKMeansBase_ac0595b0301db46ef02824763eaf3e6d3}{k}});}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classKMeansBase_af041b8b0a79d9fc458982ffac80dfc5f}{\string~KMeansBase}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKMeansBase_a5b0f0e440e11d62b21b07bc8c21edca8}{run}}()\ =\ 0;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ std::vector<Point>\ \mbox{\hyperlink{classKMeansBase_afb693a3403f639c540b63b53fbddb8c6}{getPoints}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ std::vector<Point>\ \mbox{\hyperlink{classKMeansBase_a2eb67f705c5fd03b9b61d310e49fc03d}{getCentroids}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classKMeansBase_a1054ae74622c069ef43681d9662f1145}{getIterations}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classKMeansBase_ac0595b0301db46ef02824763eaf3e6d3}{k}};\ }
+\DoxyCodeLine{00063\ \ \ \ \ std::vector<Point>\ \mbox{\hyperlink{classKMeansBase_add6779175408b8942717fd4b423cd124}{points}};\ }
+\DoxyCodeLine{00064\ \ \ \ \ std::vector<Point>\ \mbox{\hyperlink{classKMeansBase_abe1db249dd44a4341310ea1ff8b9ee5d}{centroids}};\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classKMeansBase_ab2bc6e85c94673886b417483498aadd4}{number\_of\_iterations}};\ }
+\DoxyCodeLine{00066\ \};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ KMEANS\_BASE\_HPP}}
+
+\end{DoxyCode}

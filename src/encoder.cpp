@@ -113,7 +113,7 @@ auto main(int argc, char *argv[]) -> int
     // write perfomance data to csv
     if (4 == argc)
     {   
-        performance.writeCSV(different_colors_size, k, n_points, elapsedKmeans.count(), 0, kmeans.getIterations());
+        performance.writeCSV(different_colors_size, k, n_points, elapsedKmeans.count(), kmeans.getIterations());
     }
 
 

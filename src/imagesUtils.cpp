@@ -1,6 +1,6 @@
 #include <imagesUtils.hpp>
 
-void ImageUtils::preprocessing(cv::Mat& image, int& typeCompressionChoice)
+void km::imageUtils::preprocessing(cv::Mat& image, int& typeCompressionChoice)
 {
     ConfigReader configReader;
     double resizing_factor = configReader.getResizingFactor();
@@ -19,7 +19,7 @@ void ImageUtils::preprocessing(cv::Mat& image, int& typeCompressionChoice)
     }
 }
 
-void ImageUtils::defineKValue(int& k, int levelsColorsChoice, std::set<std::vector<unsigned char>>& different_colors)
+void km::imageUtils::defineKValue(int& k, int levelsColorsChoice, std::set<std::vector<unsigned char>>& different_colors)
 {
     const int PERCENTAGE_SCALING_FACTOR = 100;
 
@@ -47,7 +47,7 @@ void ImageUtils::defineKValue(int& k, int levelsColorsChoice, std::set<std::vect
     }
 }
 
-void ImageUtils::pointsFromImage(cv::Mat& image, std::vector<Point>& points, std::set<std::vector<unsigned char>>& different_colors)
+void km::imageUtils::pointsFromImage(cv::Mat& image, std::vector<Point>& points, std::set<std::vector<unsigned char>>& different_colors)
 {
     int height = image.rows;
     int width = image.cols;

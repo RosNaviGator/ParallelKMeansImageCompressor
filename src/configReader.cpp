@@ -4,7 +4,7 @@
 #include <fstream>
 #include <string>
 
-ConfigReader::ConfigReader() {
+km::ConfigReader::ConfigReader() {
     requiredVariables = {
         "first_level_compression_color",
         "second_level_compression_color",
@@ -21,7 +21,7 @@ ConfigReader::ConfigReader() {
     }
 }
 
-auto ConfigReader::readConfigFile() -> bool
+auto km::ConfigReader::readConfigFile() -> bool
 {
     std::ifstream file("./.config");
     if (!file.is_open()) {
@@ -81,7 +81,7 @@ auto ConfigReader::readConfigFile() -> bool
     return true;
 }
 
-auto ConfigReader::checkVariableExists(const std::string &variableName) const -> bool
+auto km::ConfigReader::checkVariableExists(const std::string &variableName) const -> bool
 {
     if (variableName == "first_level_compression_color") {
         return true;
@@ -99,38 +99,42 @@ auto ConfigReader::checkVariableExists(const std::string &variableName) const ->
     return false;
 }
 
-auto ConfigReader::getFirstLevelCompressionColor() const -> double {
+auto km::ConfigReader::getFirstLevelCompressionColor() const -> double
+{
     return first_level_compression_color;
 }
 
-auto ConfigReader::getSecondLevelCompressionColor() const -> double {
+auto km::ConfigReader::getSecondLevelCompressionColor() const -> double
+{
     return second_level_compression_color;
 }
 
-auto ConfigReader::getThirdLevelCompressionColor() const -> double{
+auto km::ConfigReader::getThirdLevelCompressionColor() const -> double
+{
     return third_level_compression_color;
 }
 
-auto ConfigReader::getFourthLevelCompressionColor() const -> double {
+auto km::ConfigReader::getFourthLevelCompressionColor() const -> double
+{
     return fourth_level_compression_color;
 }
 
-auto ConfigReader::getFifthLevelCompressionColor() const -> double{
+auto km::ConfigReader::getFifthLevelCompressionColor() const -> double{
     return fifth_level_compression_color;
 }
 
-auto ConfigReader::getResizingFactor() const -> double{
+auto km::ConfigReader::getResizingFactor() const -> double{
     return resizing_factor;
 }
 
-auto ConfigReader::getColorChoice() const -> int{
+auto km::ConfigReader::getColorChoice() const -> int{
     return color_choice;
 }
 
-auto ConfigReader::getCompressionChoice() const -> int{
+auto km::ConfigReader::getCompressionChoice() const -> int{
     return compression_choice;
 }
 
-auto ConfigReader::getInputImageFilePath() const -> std::filesystem::path{
+auto km::ConfigReader::getInputImageFilePath() const -> std::filesystem::path{
     return inputImageFilePath;
 }

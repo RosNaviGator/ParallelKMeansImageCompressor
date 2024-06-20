@@ -4,10 +4,10 @@
 #include <chrono>
 #include <iostream>
 
-KMeansSequential::KMeansSequential(const int& k, const std::vector<Point>& points)
+km::KMeansSequential::KMeansSequential(const int& k, const std::vector<Point>& points)
     : KMeansBase(k, points) {}
 
-void KMeansSequential::run()
+void km::KMeansSequential::run()
 {
     bool change = true;
     int iter = 0;

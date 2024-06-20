@@ -25,6 +25,12 @@
 
 #include <performanceEvaluation.hpp>
 
+using namespace km;
+using namespace km::filesUtils;
+using namespace km::utilsCLI;
+using namespace km::imageUtils;
+
+
 auto main(int argc, char *argv[]) -> int
 {
 
@@ -87,22 +93,22 @@ auto main(int argc, char *argv[]) -> int
     int originalHeight = image.rows;
     int originalWidth = image.cols;
 
-    ImageUtils::preprocessing(image, typeCompressionChoice);
+    preprocessing(image, typeCompressionChoice);
 
     height = image.rows;
     width = image.cols;
 
     std::set<std::vector<unsigned char>> different_colors;
 
-    ImageUtils::pointsFromImage(image, points, different_colors);
+    pointsFromImage(image, points, different_colors);
 
     n_points = points.size();
 
-    ImageUtils::defineKValue(k, levelsColorsChioce, different_colors);
+    defineKValue(k, levelsColorsChioce, different_colors);
 
     size_t different_colors_size = different_colors.size();
 
-    UtilsCLI::printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
+    printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
 
     KMeansOMP kmeans(k, points);
 
@@ -119,13 +125,13 @@ auto main(int argc, char *argv[]) -> int
     auto endKmeans = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsedKmeans = endKmeans - startKmeans;
 
-    FilesUtils::createOutputDirectories();
+    createOutputDirectories();
 
-    FilesUtils::writeBinaryFile(outputPath, width, height, k, kmeans.getPoints(), kmeans.getCentroids());
+    writeBinaryFile(outputPath, width, height, k, kmeans.getPoints(), kmeans.getCentroids());
 
     performance.writeCSV(different_colors_size, k, n_points, elapsedKmeans.count(), kmeans.getIterations(),num_threads);
 
-    UtilsCLI::workDone();
+    workDone();
     std::cout << "Compression done in " << elapsedKmeans.count() << std::endl;
     std::cout << std::endl;
     std::cout << "The compressed image has been saved in the outputs directory." << std::endl;

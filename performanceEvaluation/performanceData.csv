@@ -1502,3 +1502,9 @@ strong,MPI,116687,46,1000000,light,0.0347593,14
 3,OMP,106577,42,784996,light,0.0440257,3
 4,OMP,123746,49,1048576,light,0.0552604,4
 5,OMP,129243,51,1308736,light,0.0751575,5
+h
+strong,Sequential,116687,46,1000000,light,inf,47
+strong,Sequential,116687,46,1000000,light,inf,31
+strong,Sequential,116687,46,1000000,light,inf,37
+strong,Sequential,116687,46,1000000,light,inf,30
+strong,Sequential,116687,46,1000000,light,inf,22

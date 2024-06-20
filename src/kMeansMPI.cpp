@@ -5,7 +5,7 @@
 #include <iostream>
 #include <random>
 
-KMeansMPI::KMeansMPI(const int& k, const std::vector<Point>& points, std::vector<std::pair<int, Point>> local_points)
+km::KMeansMPI::KMeansMPI(const int& k, const std::vector<Point>& points, std::vector<std::pair<int, Point>> local_points)
     : KMeansBase(k, points) , local_points(local_points) {
         centroids = std::vector<Point>(k, Point());     
         size_t size = points.size();
@@ -17,12 +17,12 @@ KMeansMPI::KMeansMPI(const int& k, const std::vector<Point>& points, std::vector
             centroids[i] = points[dis(gen)];
         }
     }
-KMeansMPI::KMeansMPI(const int& k, std::vector<std::pair<int, Point>> local_points)
+km::KMeansMPI::KMeansMPI(const int& k, std::vector<std::pair<int, Point>> local_points)
     : KMeansBase(k) , local_points(local_points) {
         this->centroids = std::vector<Point>(k, Point());
     }
 
-void KMeansMPI::run()
+void km::KMeansMPI::run()
 {
     int rank = 0 , world_size = 0;
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);

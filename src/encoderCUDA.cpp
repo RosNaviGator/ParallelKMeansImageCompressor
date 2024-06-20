@@ -20,6 +20,12 @@
 
 #include <performanceEvaluation.hpp>
 
+using namespace km;
+using namespace km::filesUtils;
+using namespace km::utilsCLI;
+using namespace km::imageUtils;
+
+
 int main(int argc, char *argv[])
 {
 
@@ -64,27 +70,27 @@ int main(int argc, char *argv[])
     }
     else
     {
-        UtilsCLI::compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image, 1);
+        compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image, 1);
     }
     int originalHeight = image.rows;
     int originalWidth = image.cols;
 
-    ImageUtils::preprocessing(image, typeCompressionChoice);
+    preprocessing(image, typeCompressionChoice);
 
     height = image.rows;
     width = image.cols;
 
     std::set<std::vector<unsigned char>> different_colors;
 
-    ImageUtils::pointsFromImage(image, points, different_colors);
+    pointsFromImage(image, points, different_colors);
 
     n_points = points.size();
 
-    ImageUtils::defineKValue(k, levelsColorsChioce, different_colors);
+    defineKValue(k, levelsColorsChioce, different_colors);
 
     int different_colors_size = different_colors.size();
 
-    UtilsCLI::printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
+    printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
 
     KMeans kmeans(k, points);
 
@@ -101,11 +107,11 @@ int main(int argc, char *argv[])
     auto endKmeans = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsedKmeans = endKmeans - startKmeans;
 
-    FilesUtils::createOutputDirectories();
+    createOutputDirectories();
 
-    FilesUtils::writeBinaryFile(outputPath, width, height, k, kmeans.getPoints(), kmeans.getCentroids());
-
-    FilesUtils::writePerformanceEvaluation(outputPath, "CUDA", k, points, elapsedKmeans);
+    writeBinaryFile(outputPath, width, height, k, kmeans.getPoints(), kmeans.getCentroids());
+    
+    writePerformanceEvaluation(outputPath, "CUDA", k, points, elapsedKmeans);
 
     // write perfomance data to csv
     if (4 == argc)
@@ -113,7 +119,7 @@ int main(int argc, char *argv[])
         performance.writeCSV(different_colors_size, k, n_points, elapsedKmeans.count(),kmeans.getIterations());
     }
 
-    UtilsCLI::workDone();
+    workDone();
     std::cout << "Compression done in " << elapsedKmeans.count() << std::endl;
     std::cout << std::endl;
     std::cout << "The compressed image has been saved in the outputs directory." << std::endl;

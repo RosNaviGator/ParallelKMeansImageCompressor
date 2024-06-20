@@ -25,6 +25,12 @@
 #include <performanceEvaluation.hpp>
 #include <span>
 
+using namespace km;
+using namespace km::filesUtils;
+using namespace km::utilsCLI;
+using namespace km::imageUtils;
+
+
 auto main(int argc, char *argv[]) -> int
 {
     MPI_Init(NULL, NULL);
@@ -79,22 +85,22 @@ auto main(int argc, char *argv[]) -> int
         int originalHeight = image.rows;
         int originalWidth = image.cols;
 
-        ImageUtils::preprocessing(image, typeCompressionChoice);
+        preprocessing(image, typeCompressionChoice);
 
         height = image.rows;
         width = image.cols;
 
         std::set<std::vector<unsigned char>> different_colors;
 
-        ImageUtils::pointsFromImage(image, points, different_colors);
+        pointsFromImage(image, points, different_colors);
 
         n_points = points.size();
 
-        ImageUtils::defineKValue(k, levelsColorsChioce, different_colors);
+        defineKValue(k, levelsColorsChioce, different_colors);
 
         different_colors_size = different_colors.size();
 
-        UtilsCLI::printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
+        printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
     }
 
     MPI_Bcast(&k, 1, MPI_INT, 0, MPI_COMM_WORLD);
@@ -171,9 +177,9 @@ auto main(int argc, char *argv[]) -> int
 
     if (rank == 0)
     {
-        FilesUtils::createOutputDirectories();
+        createOutputDirectories();
 
-        FilesUtils::writeBinaryFile(outputPath, width, height, k, kmeans->getPoints(), kmeans->getCentroids());
+        writeBinaryFile(outputPath, width, height, k, kmeans->getPoints(), kmeans->getCentroids());
 
         // write perfomance data to csv
         if (4 == argc)
@@ -181,7 +187,7 @@ auto main(int argc, char *argv[]) -> int
             performance.writeCSV(different_colors_size, k, n_points, elapsed.count(), kmeans->getIterations(), world_size);
         }
 
-        UtilsCLI::workDone();
+        workDone();
         std::cout << "Compression done in " << elapsed.count() << std::endl;
         std::cout << std::endl;
         std::cout << "The compressed image has been saved in the outputs directory." << std::endl;

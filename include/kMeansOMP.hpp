@@ -13,6 +13,9 @@
  * @class KMeansOMP
  * @brief Represents the K-means clustering algorithm using OpenMP
  */
+
+namespace km
+{
 class KMeansOMP : public KMeansBase
 {
 public:
@@ -29,5 +32,6 @@ public:
     void run() override;
 
 };
+} // namespace km
 
 #endif // KMEANS_OMP_HPP

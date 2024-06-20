@@ -1,7 +1,0 @@
-<map id="include/point.hpp" name="include/point.hpp">
-<area shape="rect" id="Node000001" title="Point class representing a point in a feature space." alt="" coords="13,5,146,33"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,68,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,35,54,69,49,66,69,32"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="92,81,154,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="89,32,110,66,105,69,85,35"/>
-</map>

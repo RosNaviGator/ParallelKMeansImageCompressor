@@ -1,6 +1,6 @@
 #include <filesUtils.hpp>
 
-void FilesUtils::createOutputDirectories()
+void km::filesUtils::createOutputDirectories()
 {
     // Obtain the path of the executable file
     std::filesystem::path exePath = std::filesystem::canonical("/proc/self/exe");
@@ -35,7 +35,7 @@ void FilesUtils::createOutputDirectories()
     }
 }
 
-void FilesUtils::writeBinaryFile(std::string& outputPath, int& width, int& height, int& k, std::vector<Point> points , std::vector<Point> centroids)
+void km::filesUtils::writeBinaryFile(std::string& outputPath, int& width, int& height, int& k, std::vector<Point> points , std::vector<Point> centroids)
 {
     std::cout << "Saving the Compressed Image..." << std::endl;
     std::ofstream outputFile(outputPath, std::ios::app);
@@ -92,7 +92,7 @@ void FilesUtils::writeBinaryFile(std::string& outputPath, int& width, int& heigh
     std::cout << "Compression done in " << elapsedcompression.count() << std::endl;
 }
 
-auto FilesUtils::isCorrectExtension(const std::filesystem::path &filePath, const std::string &correctExtension) -> bool
+auto km::filesUtils::isCorrectExtension(const std::filesystem::path &filePath, const std::string &correctExtension) -> bool
 {
     static const std::vector<std::string> imageExtensions = {correctExtension};
     const std::string extension = filePath.extension().string();
@@ -101,7 +101,7 @@ auto FilesUtils::isCorrectExtension(const std::filesystem::path &filePath, const
                         { return extension == ext; }) != imageExtensions.end();
 }
 
-void FilesUtils::createDecodingMenu(std::filesystem::path& decodeDir, std::vector<std::filesystem::path>& imageNames)
+void km::filesUtils::createDecodingMenu(std::filesystem::path& decodeDir, std::vector<std::filesystem::path>& imageNames)
 {
     std::filesystem::path exePath = std::filesystem::canonical("/proc/self/exe");
     std::filesystem::path buildPath = exePath.parent_path();
@@ -132,7 +132,7 @@ void FilesUtils::createDecodingMenu(std::filesystem::path& decodeDir, std::vecto
     }
 }
 
-auto FilesUtils::readBinaryFile(std::string &path, cv::Mat &imageCompressed) -> int
+auto km::filesUtils::readBinaryFile(std::string &path, cv::Mat &imageCompressed) -> int
 {
     std::ifstream inputFile(path, std::ios::binary);
     if (!inputFile.is_open())

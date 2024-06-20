@@ -3,7 +3,7 @@
 #include <chrono>
 #include <iostream>
 
-KMeansBase::KMeansBase(const int& k, const std::vector<Point>& points)
+km::KMeansBase::KMeansBase(const int& k, const std::vector<km::Point>& points)
     : k(k), points(points), number_of_iterations(0)
 {
     size_t size = points.size();
@@ -17,22 +17,22 @@ KMeansBase::KMeansBase(const int& k, const std::vector<Point>& points)
     }
 }
 
-KMeansBase::KMeansBase(const int& k)
+km::KMeansBase::KMeansBase(const int& k)
     : k(k), number_of_iterations(0)
 {
 }
 
-std::vector<Point> KMeansBase::getPoints() const
+std::vector<km::Point> km::KMeansBase::getPoints() const
 {
     return points;
 }
 
-std::vector<Point> KMeansBase::getCentroids() const
+std::vector<km::Point> km::KMeansBase::getCentroids() const
 {
     return centroids;
 }
 
-int KMeansBase::getIterations() const
+int km::KMeansBase::getIterations() const
 {
     return number_of_iterations;
 }

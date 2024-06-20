@@ -1,6 +1,6 @@
 #include <utilsCLI.hpp>
 
-void UtilsCLI::sequentialEncoderHeader()
+void km::utilsCLI::sequentialEncoderHeader()
 {
     system("clear -x");
         std::cout << "  _____                _ _      _   _  __                                  _____                                                   \n";
@@ -20,7 +20,7 @@ void UtilsCLI::sequentialEncoderHeader()
         std::cout << std::endl;
 }
 
-void UtilsCLI::mpiEncoderHeader()
+void km::utilsCLI::mpiEncoderHeader()
 {
     system("clear -x");
         std::cout << "  _____                _ _      _   _  __                                  _____                                                    \n";
@@ -40,7 +40,7 @@ void UtilsCLI::mpiEncoderHeader()
         std::cout << std::endl;
 }
 
-void UtilsCLI::ompEncoderHeader()
+void km::utilsCLI::ompEncoderHeader()
 {
     system("clear -x");
         std::cout << "  _____                _ _      _   _  __                                  _____                                                   \n";
@@ -61,7 +61,7 @@ void UtilsCLI::ompEncoderHeader()
         std::cout << std::endl;
 }
 
-void UtilsCLI::mainMenuHeader()
+void km::utilsCLI::mainMenuHeader()
 {
     std::system("clear -x");
         std::cout << "  _____                _ _      _   _  __                                  _____                                                   \n";
@@ -76,7 +76,7 @@ void UtilsCLI::mainMenuHeader()
         std::cout << std::endl;
 }
 
-void UtilsCLI::decoderHeader()
+void km::utilsCLI::decoderHeader()
 {
    system("clear -x");
         std::cout << "  _____                _ _      _   _  __                                  _____                                                   \n";
@@ -95,7 +95,7 @@ void UtilsCLI::decoderHeader()
     
 }
 
-void UtilsCLI::workDone()
+void km::utilsCLI::workDone()
 {
     system("clear -x");
         std::cout << " __          __        _      _____                     _ \n"
@@ -110,21 +110,21 @@ void UtilsCLI::workDone()
         std::cout << std::endl;
 }
 
-void UtilsCLI::compressionChoices(int &levelsColorsChoice, int &typeCompressionChoice, std::string &outputPath, cv::Mat &image, int executionStandard)
+void km::utilsCLI::compressionChoices(int &levelsColorsChoice, int &typeCompressionChoice, std::string &outputPath, cv::Mat &image, int executionStandard)
 {
     std::string path;
 
         if (executionStandard == 1)
         {
-            UtilsCLI::sequentialEncoderHeader();
+            km::utilsCLI::sequentialEncoderHeader();
         }
         else if (executionStandard == 2)
         {
-            UtilsCLI::mpiEncoderHeader();
+            km::utilsCLI::mpiEncoderHeader();
         }
         else if (executionStandard == 3)
         {
-            UtilsCLI::ompEncoderHeader();
+            km::utilsCLI::ompEncoderHeader();
         }
         std::cout << "The following program will reduce the number of colors int he original image in order to decrease its size." << std::endl;
         std::cout << std::endl;
@@ -153,15 +153,15 @@ void UtilsCLI::compressionChoices(int &levelsColorsChoice, int &typeCompressionC
 
         if (executionStandard == 1)
         {
-            UtilsCLI::sequentialEncoderHeader();
+            km::utilsCLI::sequentialEncoderHeader();
         }
         else if (executionStandard == 2)
         {
-            UtilsCLI::mpiEncoderHeader();
+            km::utilsCLI::mpiEncoderHeader();
         }
         else if (executionStandard == 3)
         {
-            UtilsCLI::ompEncoderHeader();
+            km::utilsCLI::ompEncoderHeader();
         }
         std::cout << "Perfect! Now let's choose the type of compression for your image." << std::endl
                   << "\n"
@@ -183,15 +183,15 @@ void UtilsCLI::compressionChoices(int &levelsColorsChoice, int &typeCompressionC
 
         if (executionStandard == 1)
         {
-            UtilsCLI::sequentialEncoderHeader();
+            km::utilsCLI::sequentialEncoderHeader();
         }
         else if (executionStandard == 2)
         {
-            UtilsCLI::mpiEncoderHeader();
+            km::utilsCLI::mpiEncoderHeader();
         }
         else if (executionStandard == 3)
         {
-            UtilsCLI::ompEncoderHeader();
+            km::utilsCLI::ompEncoderHeader();
         }
         std::cout << "Now please enter the global path of the image you want to compress" << std::endl;
         std::cout << std::endl;
@@ -200,15 +200,15 @@ void UtilsCLI::compressionChoices(int &levelsColorsChoice, int &typeCompressionC
         std::getline(std::cin, path);
         if (executionStandard == 1)
         {
-            UtilsCLI::sequentialEncoderHeader();
+            km::utilsCLI::sequentialEncoderHeader();
         }
         else if (executionStandard == 2)
         {
-            UtilsCLI::mpiEncoderHeader();
+            km::utilsCLI::mpiEncoderHeader();
         }
         else if (executionStandard == 3)
         {
-            UtilsCLI::ompEncoderHeader();
+            km::utilsCLI::ompEncoderHeader();
         }
         std::cout << "Choose a name for your output (note that the output will be saved in the outputs directory)" << std::endl;
         std::cout << "You don't need to give any extension" << std::endl;
@@ -230,21 +230,21 @@ void UtilsCLI::compressionChoices(int &levelsColorsChoice, int &typeCompressionC
 
         if (executionStandard == 1)
         {
-            UtilsCLI::sequentialEncoderHeader();
+            km::utilsCLI::sequentialEncoderHeader();
         }
         else if (executionStandard == 2)
         {
-            UtilsCLI::mpiEncoderHeader();
+            km::utilsCLI::mpiEncoderHeader();
         }
         else if (executionStandard == 3)
         {
-            UtilsCLI::ompEncoderHeader();
+            km::utilsCLI::ompEncoderHeader();
         }
         std::cout << "Well done! The program is now ready to compress your image." << std::endl;
         std::cout << std::endl;
 }
 
-void UtilsCLI::printCompressionInformations(int &originalWidth, int &originalHeight, int &width, int &height, int &k, size_t &different_colors_size)
+void km::utilsCLI::printCompressionInformations(int &originalWidth, int &originalHeight, int &width, int &height, int &k, size_t &different_colors_size)
 {
     std::cout << "Your original image was " << originalWidth << "x" << originalHeight << " pixels and it has " << different_colors_size << " different colors." << std::endl;
     std::cout << std::endl;
@@ -253,7 +253,7 @@ void UtilsCLI::printCompressionInformations(int &originalWidth, int &originalHei
     std::cout << std::endl;
 }
 
-void UtilsCLI::displayDecodingMenu(std::string &path, std::vector<std::filesystem::path> &imageNames, std::filesystem::path &decodeDir)
+void km::utilsCLI::displayDecodingMenu(std::string &path, std::vector<std::filesystem::path> &imageNames, std::filesystem::path &decodeDir)
 {
     std::cout << "Select an image:" << std::endl;
         std::cout << std::endl;

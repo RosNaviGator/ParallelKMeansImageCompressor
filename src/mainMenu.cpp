@@ -3,6 +3,10 @@
 #include <filesystem>
 #include <configReader.hpp>
 
+using namespace km;
+using namespace km::utilsCLI;
+using namespace km::filesUtils;
+
 auto main() -> int
 {
 
@@ -14,7 +18,7 @@ auto main() -> int
     compressionChoice = configReader.getCompressionChoice();
     inputImageFilePath = configReader.getInputImageFilePath();
     
-    UtilsCLI::mainMenuHeader();
+    mainMenuHeader();
     int encodeOrDecode = 0;
     std::filesystem::path cuda_path = "./build/cudaEncoder";
     std::cout << "This is the Main Menu of the Image Compressor! What do you want to do?" << "\n";
@@ -128,7 +132,7 @@ auto main() -> int
             command = "./build/seqEncoder ";
         }else if (compressorChoice == 2)
         {
-            UtilsCLI::mainMenuHeader();
+            mainMenuHeader();
             std::cout << "You chose the MPI compressor!" << std::endl;
             std::cout << std::endl;
             std::cout << std::endl;

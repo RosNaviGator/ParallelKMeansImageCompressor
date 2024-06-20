@@ -16,50 +16,52 @@
 #include <opencv2/opencv.hpp>
 
 /**
- * @class FilesUtils
+ * @namespace fileUtils
  * @brief Provides utility functions for file handling
  */
-class FilesUtils
+namespace km
 {
-public:
-    /**
-     * @brief Creates output directories
-     */
-    static auto createOutputDirectories() -> void;
+    namespace filesUtils
+    {
+        /**
+         * @brief Creates output directories
+         */
+        auto createOutputDirectories() -> void;
 
-    /**
-     * @brief Writes data to a binary file
-     * @param outputPath Path of the output file
-     * @param width Width of the image
-     * @param height Height of the image
-     * @param k Number of clusters
-     * @param points Vector of points
-     * @param centroids Vector of centroids
-     */
-    static auto writeBinaryFile(std::string& outputPath, int& width, int& height, int& k, std::vector<Point> points, std::vector<Point> centroids) -> void;
+        /**
+         * @brief Writes data to a binary file
+         * @param outputPath Path of the output file
+         * @param width Width of the image
+         * @param height Height of the image
+         * @param k Number of clusters
+         * @param points Vector of points
+         * @param centroids Vector of centroids
+         */
+        auto writeBinaryFile(std::string& outputPath, int& width, int& height, int& k, std::vector<Point> points, std::vector<Point> centroids) -> void;
 
-    /**
-     * @brief Checks if a file has the correct extension
-     * @param filePath Path of the file
-     * @param correctExtension Correct extension to check
-     * @return True if the file has the correct extension, false otherwise
-     */
-    static auto isCorrectExtension(const std::filesystem::path &filePath, const std::string &correctExtension) -> bool;
+        /**
+         * @brief Checks if a file has the correct extension
+         * @param filePath Path of the file
+         * @param correctExtension Correct extension to check
+         * @return True if the file has the correct extension, false otherwise
+         */
+        auto isCorrectExtension(const std::filesystem::path &filePath, const std::string &correctExtension) -> bool;
 
-    /**
-     * @brief Creates a decoding menu
-     * @param decodeDir Directory for decoding
-     * @param imageNames Vector of image names
-     */
-    static auto createDecodingMenu(std::filesystem::path& decodeDir, std::vector<std::filesystem::path>& imageNames) -> void;
+        /**
+         * @brief Creates a decoding menu
+         * @param decodeDir Directory for decoding
+         * @param imageNames Vector of image names
+         */
+        auto createDecodingMenu(std::filesystem::path& decodeDir, std::vector<std::filesystem::path>& imageNames) -> void;
 
-    /**
-     * @brief Reads a binary file and reconstructs the compressed image
-     * @param path Path of the binary file
-     * @param imageCompressed Compressed image matrix
-     * @return Number of clusters
-     */
-    static auto readBinaryFile(std::string& path, cv::Mat& imageCompressed) -> int;
-};
+        /**
+         * @brief Reads a binary file and reconstructs the compressed image
+         * @param path Path of the binary file
+         * @param imageCompressed Compressed image matrix
+         * @return Number of clusters
+         */
+        auto readBinaryFile(std::string& path, cv::Mat& imageCompressed) -> int;
+    };
+}
 
 #endif // FILESUTILS_HPP

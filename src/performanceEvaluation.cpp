@@ -1,16 +1,16 @@
 #include <performanceEvaluation.hpp>
 #include <utility>
 
-Performance::Performance() = default;
+km::Performance::Performance() = default;
 
-void Performance::fillPerformance(int choice, const std::string &img, const std::string &method)
+void km::Performance::fillPerformance(int choice, const std::string &img, const std::string &method)
 {
     this->choice = choice;
     this->img = std::move(img);
     this->method = std::move(method);
 }
 
-void Performance::writeCSV(int different_colors_size, int k, int n_points, double elapsedKmeans, int number_of_iterations, int num_processes)
+void km::Performance::writeCSV(int different_colors_size, int k, int n_points, double elapsedKmeans, int number_of_iterations, int num_processes)
 {
     std::string filename = "./performanceData.csv";
     createOrOpenCSV(filename);
@@ -33,7 +33,7 @@ void Performance::writeCSV(int different_colors_size, int k, int n_points, doubl
     appendToCSV(filename, different_colors_size, k, n_points, compType, elapsedKmeans, number_of_iterations, num_processes);
 }
 
-void Performance::createOrOpenCSV(const std::string &filename)
+void km::Performance::createOrOpenCSV(const std::string &filename)
 {
     std::ifstream infile(filename);
     if (!infile.good())
@@ -49,7 +49,7 @@ void Performance::createOrOpenCSV(const std::string &filename)
     }
 }
 
-void Performance::appendToCSV(const std::string &filename, int startingColors, int remainingColors, int num_points, const std::string &compType, double time, int number_of_iterations, int num_processes)
+void km::Performance::appendToCSV(const std::string &filename, int startingColors, int remainingColors, int num_points, const std::string &compType, double time, int number_of_iterations, int num_processes)
 {
     std::ofstream file(filename, std::ios::app); // Open file for appending
     if (!file.is_open())
@@ -61,7 +61,7 @@ void Performance::appendToCSV(const std::string &filename, int startingColors, i
     file << this->img << "," << this->method << "," << startingColors << "," << remainingColors << "," << num_points << "," << compType << "," << time_per_iteration << "," << num_processes << std::endl;
 }
 
-auto Performance::extractFileName(const std::string &outputPath) -> std::string
+auto km::Performance::extractFileName(const std::string &outputPath) -> std::string
 {
     // Find the position of the last '/' character
     size_t lastSlashPos = outputPath.find_last_of('/');

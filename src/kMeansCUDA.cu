@@ -1,6 +1,6 @@
 #include <kMeansCUDA.cuh>
 
-KMeans::KMeans(const int &k, const std::vector<Point> points) : k(k), points(points)
+km::KMeans::KMeans(const int &k, const std::vector<Point> points) : k(k), points(points)
 {
     int size = points.size();
     std::random_device rd;                            // Initialize a random device
@@ -62,7 +62,7 @@ __global__ void average_centroids(int *centroids, int *counts, int k, int dim) {
     }
 }
 
-void KMeans::run()
+void km::KMeans::run()
 {
     int MAX_ITER = 100;
     int n = points.size();
@@ -169,17 +169,17 @@ void KMeans::run()
     cudaFree(d_counts);
 }
 
-std::vector<Point> KMeans::getCentroids()
+auto km::KMeans::getCentroids() -> std::vector<Point>
 {
     return centroids;
 }
 
-std::vector<Point> KMeans::getPoints()
+auto km::KMeans::getPoints() -> std::vector<Point>
 {
     return points;
 }
 
-int KMeans::getIterations()
+auto KMeans::getIterations() -> int
 {
     return number_of_iterations;
 }

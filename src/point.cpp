@@ -1,13 +1,13 @@
 #include <point.hpp>
 #include <stdexcept>
 
-Point::Point() = default;
+km::Point::Point() = default;
 //Point::Point(const int& id, const double& x, const double& y) : id(id), x(x), y(y), clusterId(-1) /*, minDist(std::numeric_limits<double>::max())*/ {}
-Point::Point(const int &id, const std::vector<int> &coordinates) : id(id), r(static_cast<unsigned char>(coordinates[0])), g(static_cast<unsigned char>(coordinates[1])), b(static_cast<unsigned char>(coordinates[2])) 
+km::Point::Point(const int &id, const std::vector<int> &coordinates) : id(id), r(static_cast<unsigned char>(coordinates[0])), g(static_cast<unsigned char>(coordinates[1])), b(static_cast<unsigned char>(coordinates[2])) 
 {
 }
 
-auto Point::getFeature(int index) -> unsigned char&
+auto km::Point::getFeature(int index) -> unsigned char&
 {
      switch (index) 
      {
@@ -22,7 +22,7 @@ auto Point::getFeature(int index) -> unsigned char&
      }
 }
 
-auto Point::getFeature_int(int index) const -> int
+auto km::Point::getFeature_int(int index) const -> int
 {
     switch (index) 
     {
@@ -37,7 +37,7 @@ auto Point::getFeature_int(int index) const -> int
     }
 }
 
-auto Point::distance(const Point &p) const -> double
+auto km::Point::distance(const Point &p) const -> double
 {
     double sum = 0.0;
     sum += pow(static_cast<int>(r) - static_cast<int>(p.r), 2);
@@ -47,7 +47,7 @@ auto Point::distance(const Point &p) const -> double
 }
 
 
-void Point::setFeature(int index, int value)
+void km::Point::setFeature(int index, int value)
 {
     if (index == 0)
         this->r = static_cast<unsigned char>(value);

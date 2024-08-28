@@ -59,9 +59,9 @@ auto main(int argc, char *argv[]) -> int
         auto args = std::span(argv, size_t(argc));
         if (4 == argc)
         {
-            path = std::string(args.at(1));
-            levelsColorsChioce = std::stoi(args.at(2));
-            typeCompressionChoice = std::stoi(args.at(3));
+            path = std::string(args[1]);
+            levelsColorsChioce = std::stoi(args[2]);
+            typeCompressionChoice = std::stoi(args[3]);
 
             fileName = Performance::extractFileName(path);
             outputPath = std::string("outputs/") + fileName + std::string(".kc");

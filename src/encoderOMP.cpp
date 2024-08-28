@@ -58,7 +58,7 @@ auto main(int argc, char *argv[]) -> int
 
     if (argc == NUMBER_OF_ARGS_DEFINING_THREADS)
     {
-        num_threads = std::stoi(args.at(4));
+        num_threads = std::stoi(args[4]);
         omp_set_num_threads(num_threads);
     }
         
@@ -67,9 +67,9 @@ auto main(int argc, char *argv[]) -> int
 
     if (argc == NUMBER_OF_ARGS_DEFINING_THREADS || argc == NUMBER_OF_ARGS_WITHOUT_THREADS)
     {   
-        path = args.at(1);
-        levelsColorsChioce = std::stoi(args.at(2));
-        typeCompressionChoice = std::stoi(args.at(3));
+        path = args[1];
+        levelsColorsChioce = std::stoi(args[2]);
+        typeCompressionChoice = std::stoi(args[3]);
 
         fileName = Performance::extractFileName(path);
         outputPath = std::string("outputs/") + fileName + std::string(".kc");

@@ -47,9 +47,9 @@ auto main(int argc, char *argv[]) -> int
     // pass inputs as args for performance evaluation
     if (4 == argc)
     {   
-        path = args.at(1);
-        levelsColorsChioce = std::stoi(args.at(2));
-        typeCompressionChoice = std::stoi(args.at(3));
+        path = args[1];
+        levelsColorsChioce = std::stoi(args[2]);
+        typeCompressionChoice = std::stoi(args[3]);
 
         fileName = Performance::extractFileName(path);
         outputPath = std::string("outputs/") + fileName + std::string(".kc");

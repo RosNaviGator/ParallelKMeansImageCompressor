@@ -1,0 +1,9 @@
+img,method,starting colors,k,n_points,comp type,time,world_size
+goosw,MPI,149403,59,4460544,medium,0.580383,6
+belloFigo-1170x585,MPI,88318,35,684450,medium,0.056665,6
+belloFigo-1170x585,MPI,88318,79,684450,medium,0.110175,6
+lena-512x512,MPI,66118,26,262144,medium,0.0308232,6
+lena-512x512,MPI,66118,26,262144,medium,0.038987,2
+lena-512x512,MPI,74563,29,262144,choice,0.0100035,4
+lena-512x512,MPI,66118,26,262144,medium,0.0557741,4
+lena-512x512,MPI,66118,26,262144,medium,0.0139537,4

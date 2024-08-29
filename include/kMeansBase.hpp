@@ -41,10 +41,10 @@ class KMeansBase
         /**
          * @brief Runs the K-means clustering algorithm
          */
-        virtual void run();
+        virtual void run() = 0;
 
         /**
-         * @brief Gets the points
+         * @brief Gets the poinots
          * @return Vector of points
          */
         [[nodiscard]] auto getPoints() const -> std::vector<Point>;

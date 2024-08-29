@@ -1,0 +1,138 @@
+\doxysection{include/files\+Utils.hpp File Reference}
+\hypertarget{filesUtils_8hpp}{}\label{filesUtils_8hpp}\index{include/filesUtils.hpp@{include/filesUtils.hpp}}
+
+
+Utility functions for file handling.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$filesystem$>$}\newline
+{\ttfamily \#include $<$point.\+hpp$>$}\newline
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
+Include dependency graph for files\+Utils.\+hpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{filesUtils_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{filesUtils_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacefileUtils}{file\+Utils}}
+\begin{DoxyCompactList}\small\item\em Provides utility functions for file handling. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{filesUtils_8hpp_a7adae051e53e3d42b24cfdd07623189d}\label{filesUtils_8hpp_a7adae051e53e3d42b24cfdd07623189d} 
+auto {\bfseries km\+::files\+Utils\+::create\+Output\+Directories} () -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Creates output directories. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{filesUtils_8hpp_a34a5a4c62531771f506584e29d033484}{km\+::files\+Utils\+::write\+Binary\+File}} (std\+::string \&output\+Path, int \&width, int \&height, int \&k, std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ points, std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ centroids) -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Writes data to a binary file. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{filesUtils_8hpp_ae4460cd35ec43306592474e9dd919a16}{km\+::files\+Utils\+::is\+Correct\+Extension}} (const std\+::filesystem\+::path \&file\+Path, const std\+::string \&correct\+Extension) -\/$>$ bool
+\begin{DoxyCompactList}\small\item\em Checks if a file has the correct extension. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{filesUtils_8hpp_a57a5180e651f1cfe50f2eadeea1f0438}{km\+::files\+Utils\+::create\+Decoding\+Menu}} (std\+::filesystem\+::path \&decode\+Dir, std\+::vector$<$ std\+::filesystem\+::path $>$ \&image\+Names) -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Creates a decoding menu. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{filesUtils_8hpp_a210cdb1e22d18e8fa05c3a4c0d9708e2}{km\+::files\+Utils\+::read\+Binary\+File}} (std\+::string \&path, cv\+::\+Mat \&image\+Compressed) -\/$>$ int
+\begin{DoxyCompactList}\small\item\em Reads a binary file and reconstructs the compressed image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility functions for file handling. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{filesUtils_8hpp_a57a5180e651f1cfe50f2eadeea1f0438}\index{filesUtils.hpp@{filesUtils.hpp}!createDecodingMenu@{createDecodingMenu}}
+\index{createDecodingMenu@{createDecodingMenu}!filesUtils.hpp@{filesUtils.hpp}}
+\doxysubsubsection{\texorpdfstring{createDecodingMenu()}{createDecodingMenu()}}
+{\footnotesize\ttfamily \label{filesUtils_8hpp_a57a5180e651f1cfe50f2eadeea1f0438} 
+auto km\+::files\+Utils\+::create\+Decoding\+Menu (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path \&}]{decode\+Dir}{, }\item[{std\+::vector$<$ std\+::filesystem\+::path $>$ \&}]{image\+Names}{}\end{DoxyParamCaption}) -\/$>$  void}
+
+
+
+Creates a decoding menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em decode\+Dir} & Directory for decoding \\
+\hline
+{\em image\+Names} & Vector of image names \\
+\hline
+\end{DoxyParams}
+\Hypertarget{filesUtils_8hpp_ae4460cd35ec43306592474e9dd919a16}\index{filesUtils.hpp@{filesUtils.hpp}!isCorrectExtension@{isCorrectExtension}}
+\index{isCorrectExtension@{isCorrectExtension}!filesUtils.hpp@{filesUtils.hpp}}
+\doxysubsubsection{\texorpdfstring{isCorrectExtension()}{isCorrectExtension()}}
+{\footnotesize\ttfamily \label{filesUtils_8hpp_ae4460cd35ec43306592474e9dd919a16} 
+auto km\+::files\+Utils\+::is\+Correct\+Extension (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{file\+Path}{, }\item[{const std\+::string \&}]{correct\+Extension}{}\end{DoxyParamCaption}) -\/$>$  bool}
+
+
+
+Checks if a file has the correct extension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & Path of the file \\
+\hline
+{\em correct\+Extension} & Correct extension to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the file has the correct extension, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{filesUtils_8hpp_a210cdb1e22d18e8fa05c3a4c0d9708e2}\index{filesUtils.hpp@{filesUtils.hpp}!readBinaryFile@{readBinaryFile}}
+\index{readBinaryFile@{readBinaryFile}!filesUtils.hpp@{filesUtils.hpp}}
+\doxysubsubsection{\texorpdfstring{readBinaryFile()}{readBinaryFile()}}
+{\footnotesize\ttfamily \label{filesUtils_8hpp_a210cdb1e22d18e8fa05c3a4c0d9708e2} 
+auto km\+::files\+Utils\+::read\+Binary\+File (\begin{DoxyParamCaption}\item[{std\+::string \&}]{path}{, }\item[{cv\+::\+Mat \&}]{image\+Compressed}{}\end{DoxyParamCaption}) -\/$>$  int}
+
+
+
+Reads a binary file and reconstructs the compressed image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path of the binary file \\
+\hline
+{\em image\+Compressed} & Compressed image matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of clusters 
+\end{DoxyReturn}
+\Hypertarget{filesUtils_8hpp_a34a5a4c62531771f506584e29d033484}\index{filesUtils.hpp@{filesUtils.hpp}!writeBinaryFile@{writeBinaryFile}}
+\index{writeBinaryFile@{writeBinaryFile}!filesUtils.hpp@{filesUtils.hpp}}
+\doxysubsubsection{\texorpdfstring{writeBinaryFile()}{writeBinaryFile()}}
+{\footnotesize\ttfamily \label{filesUtils_8hpp_a34a5a4c62531771f506584e29d033484} 
+auto km\+::files\+Utils\+::write\+Binary\+File (\begin{DoxyParamCaption}\item[{std\+::string \&}]{output\+Path}{, }\item[{int \&}]{width}{, }\item[{int \&}]{height}{, }\item[{int \&}]{k}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$}]{points}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$}]{centroids}{}\end{DoxyParamCaption}) -\/$>$  void}
+
+
+
+Writes data to a binary file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+Path} & Path of the output file \\
+\hline
+{\em width} & Width of the image \\
+\hline
+{\em height} & Height of the image \\
+\hline
+{\em k} & Number of clusters \\
+\hline
+{\em points} & Vector of points \\
+\hline
+{\em centroids} & Vector of centroids \\
+\hline
+\end{DoxyParams}

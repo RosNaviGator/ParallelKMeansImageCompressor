@@ -6,21 +6,10 @@
 #include <random>
 
 km::KMeansMPI::KMeansMPI(const int& k, const std::vector<Point>& points, std::vector<std::pair<int, Point>> local_points)
-    : KMeansBase(k, points) , local_points(local_points) {
-        centroids = std::vector<Point>(k, Point());     
-        size_t size = points.size();
-        std::random_device rd;
-        std::mt19937 gen(rd());
-        std::uniform_int_distribution<size_t> dis(0, size - 1);
-        for (int i = 0; i < k; ++i)
-        {
-            centroids[i] = points[dis(gen)];
-        }
-    }
+    : KMeansBase(k, points) , local_points(local_points){}
+
 km::KMeansMPI::KMeansMPI(const int& k, std::vector<std::pair<int, Point>> local_points)
-    : KMeansBase(k) , local_points(local_points) {
-        this->centroids = std::vector<Point>(k, Point());
-    }
+    : KMeansBase(k) , local_points(local_points) {}
 
 void km::KMeansMPI::run()
 {

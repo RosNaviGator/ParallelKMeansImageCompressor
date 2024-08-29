@@ -19,7 +19,7 @@
 
 namespace km
 {
-    class KMeans
+    class KMeansCUDA
     {
     public:
         /**
@@ -27,7 +27,7 @@ namespace km
          * @param k Number of clusters
          * @param points Vector of points
          */
-        KMeans(const int& k, const std::vector<Point> &points);
+        KMeansCUDA(const int& k, const std::vector<Point> &points);
 
         /**
          * @brief Runs the K-means clustering algorithm using CUDA

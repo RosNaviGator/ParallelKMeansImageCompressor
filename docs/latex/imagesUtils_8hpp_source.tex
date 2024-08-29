@@ -1,0 +1,31 @@
+\doxysection{images\+Utils.\+hpp}
+\hypertarget{imagesUtils_8hpp_source}{}\label{imagesUtils_8hpp_source}\index{include/imagesUtils.hpp@{include/imagesUtils.hpp}}
+\mbox{\hyperlink{imagesUtils_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ IMAGEUTILS\_HPP}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ IMAGEUTILS\_HPP}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <opencv2/opencv.hpp>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{configReader_8hpp}{configReader.hpp}}>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{point_8hpp}{point.hpp}}>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{namespace\ }km}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceimageUtils}{imageUtils}}}
+\DoxyCodeLine{00023\ \ \ \ \ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{imagesUtils_8hpp_aa01205ffe26b0f4c815d5750a4ff0e1c}{preprocessing}}(cv::Mat\&\ image,\ \textcolor{keywordtype}{int}\&\ typeCompressionChoice);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{imagesUtils_8hpp_aef1b51decbf6f0f0ca5c53e20ebbfadb}{defineKValue}}(\textcolor{keywordtype}{int}\&\ k,\ \textcolor{keywordtype}{int}\ levelsColorsChoice,\ std::set<std::vector<unsigned\ char>>\&\ different\_colors);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{imagesUtils_8hpp_a5a09c5c3205050498f807852bafe244f}{pointsFromImage}}(cv::Mat\&\ image,\ std::vector<Point>\&\ points,\ std::set<std::vector<unsigned\ char>>\&\ different\_colors);}
+\DoxyCodeLine{00046\ \ \ \ \ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ IMAGEUTILS\_HPP}}
+
+\end{DoxyCode}

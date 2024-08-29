@@ -4,8 +4,8 @@
 #include <chrono>
 #include <iostream>
 
-km::KMeansOMP::KMeansOMP(const int& k, const std::vector<Point>& points)
-    : KMeansBase(k, points) {}
+    km::KMeansOMP::KMeansOMP(const int& k, const std::vector<Point>& points)
+        : KMeansBase(k, points) {}
 
 void km::KMeansOMP::run()
 {

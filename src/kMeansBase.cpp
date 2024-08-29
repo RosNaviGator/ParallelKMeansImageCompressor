@@ -20,6 +20,7 @@ km::KMeansBase::KMeansBase(const int& k, const std::vector<km::Point>& points)
 km::KMeansBase::KMeansBase(const int& k)
     : k(k), number_of_iterations(0)
 {
+    this->centroids = std::vector<Point>(k, Point());
 }
 
 std::vector<km::Point> km::KMeansBase::getPoints() const

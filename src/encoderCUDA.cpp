@@ -92,7 +92,7 @@ int main(int argc, char *argv[])
 
     printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
 
-    KMeans kmeans(k, points);
+    KMeansCUDA kmeans(k, points);
 
     // CLUSTERING (second time evaluation)
 

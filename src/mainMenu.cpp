@@ -27,7 +27,9 @@ auto main() -> int
     std::cout   << "(1)\tCompress an image \t \t \t \t \t (2)\tDecode a .kc file\n";
     std::cout << "\n";
     std::cin >> encodeOrDecode;
-    while (encodeOrDecode != 1 && encodeOrDecode != 2) {
+    while (std::cin.fail() || (encodeOrDecode != 1 && encodeOrDecode != 2)) {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
         std::cout << "Invalid input. Please enter 1 or 2: ";
         std::cin >> encodeOrDecode;
     }
@@ -36,7 +38,7 @@ auto main() -> int
     if(encodeOrDecode == 2)
     {
         std::system("./build/decoder");
-    }else if (encodeOrDecode == 1)
+    }else if (encodeOrDecode == 1)                      
     {
         std::cout << "You chose to compress an image!"<< "\n";
         std::cout << "\n";
@@ -46,6 +48,11 @@ auto main() -> int
             std::cout << "Please enter the path of the image you want to compress: ";
             std::cin >> inputImageFilePath;
             std::cout << "\n";
+            while (!std::filesystem::exists(inputImageFilePath)) {
+                std::cout << "The path you entered does not exist. Please enter a valid path: ";
+                std::cin >> inputImageFilePath;
+                std::cout << "\n";
+            }
         }else
         {
             std::cout << "The path of the image you want to compress is: " << inputImageFilePath.string() << "\n";
@@ -68,9 +75,11 @@ auto main() -> int
             std::cin >> color_choice;
             const int MIN_COLOR_CHOICE = 1;
             const int MAX_COLOR_CHOICE = 5;
-            while (color_choice < MIN_COLOR_CHOICE || color_choice > MAX_COLOR_CHOICE) {
-                std::cout << "Invalid input. Please choose a level between 1 and 5." << std::endl;
-                std::cin >> color_choice;
+            while (std::cin.fail() || (color_choice < MIN_COLOR_CHOICE || color_choice > MAX_COLOR_CHOICE)) {
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+                std::cout << "Invalid input. Please choose a level between 1 and 5 ";
+                std::cin >> encodeOrDecode;
             }
         }else
         {
@@ -88,10 +97,11 @@ auto main() -> int
             std::cout << std::endl;
 
             std::cin >> compressionChoice;
-
             const int MIN_COMPRESSION_CHOICE = 1;
             const int MAX_COMPRESSION_CHOICE = 3;
-            while (compressionChoice < MIN_COMPRESSION_CHOICE || compressionChoice > MAX_COMPRESSION_CHOICE) {
+            while (std::cin.fail()|| (compressionChoice < MIN_COMPRESSION_CHOICE || compressionChoice > MAX_COMPRESSION_CHOICE)) {
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
                 std::cout << "Invalid input. Please choose a type between 1 and 3." << std::endl;
                 std::cin >> compressionChoice;
             }
@@ -113,17 +123,29 @@ auto main() -> int
         std::cout << std::endl;
         int compressorChoice = 0;
         std::cin >> compressorChoice;
+        while (std::cin.fail()) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+            std::cout << "Invalid input";
+            std::cin >> compressorChoice;
+        }
         if(std::filesystem::exists(cuda_path))
         {
-            while (compressorChoice != 1 && compressorChoice != 2 && compressorChoice != 3 && compressorChoice != 4) {
-            std::cout << "Invalid input. Please enter 1, 2, 3 or 4: ";
-            std::cin >> compressorChoice;
+            while ((compressorChoice != 1 && compressorChoice != 2 && compressorChoice != 3 && compressorChoice != 4) || std::cin.fail()) 
+            {
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+                std::cout << "Invalid input. Please enter a number between 1 and 4: ";
+                std::cin >> compressorChoice;    
             }
         }else{
-            while (compressorChoice != 1 && compressorChoice != 2 && compressorChoice != 3) 
+            while ((compressorChoice != 1 && compressorChoice != 2 && compressorChoice != 3) || std::cin.fail()) 
             {
-            std::cout << "Invalid input. Please enter 1, 2 or 3: ";
-            std::cin >> compressorChoice;
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+                std::cout << "Invalid input. Please enter a number between 1 and 3: ";
+                std::cin >> compressorChoice;
+            
             }
         }
         std::string command;
@@ -141,6 +163,12 @@ auto main() -> int
             std::cout << std::endl;
             int cores = 0;
             std::cin >> cores;
+            while (std::cin.fail()) {
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+                std::cout << "Invalid input. Please enter a number: ";
+                std::cin >> cores;
+            }
             command = "mpirun -np " + std::to_string(cores) + " ./build/mpiEncoder ";
         }else if (compressorChoice == 3)
         {

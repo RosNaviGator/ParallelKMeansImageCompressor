@@ -16,7 +16,13 @@ void km::imageUtils::preprocessing(cv::Mat& image, int& typeCompressionChoice)
         const int REDUCTION_FACTOR_CHROMA = 2;
         cv::resize(image, image, cv::Size(), REDUCTION_FACTOR_CHROMA, REDUCTION_FACTOR_CHROMA, cv::INTER_LINEAR);
         cv::resize(image, image, cv::Size(), 1./REDUCTION_FACTOR_CHROMA, 1./REDUCTION_FACTOR_CHROMA, cv::INTER_LINEAR);
-    }
+    }else if (typeCompressionChoice == 1)
+    {
+        // do nothing
+    }else{
+        std::cerr << "Invalid compression type." << std::endl;
+        exit(1);
+    } 
 }
 
 void km::imageUtils::defineKValue(int& k, int levelsColorsChoice, std::set<std::vector<unsigned char>>& different_colors)
@@ -42,7 +48,8 @@ void km::imageUtils::defineKValue(int& k, int levelsColorsChoice, std::set<std::
             k = configReader.getFifthLevelCompressionColor() * different_colors.size() / PERCENTAGE_SCALING_FACTOR;
             break;
         default:
-            // Handle invalid levelsColorsChoice here
+            std::cerr << "Invalid color preservation level." << std::endl;
+            exit(1);
             break;
     }
 }

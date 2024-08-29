@@ -11,7 +11,7 @@
 #include <filesUtils.hpp>
 
 /**
- * @class UtilsCLI
+ * @namespace UtilsCLI
  * @brief Provides utility functions for the command-line interface
  */
 

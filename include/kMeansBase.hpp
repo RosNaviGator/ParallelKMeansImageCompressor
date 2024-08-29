@@ -41,7 +41,7 @@ class KMeansBase
         /**
          * @brief Runs the K-means clustering algorithm
          */
-        virtual void run() = 0;
+        virtual void run();
 
         /**
          * @brief Gets the points

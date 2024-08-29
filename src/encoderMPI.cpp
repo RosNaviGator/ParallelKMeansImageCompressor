@@ -21,7 +21,7 @@
 #include <filesUtils.hpp>
 
 #include <mpi.h>
-\
+
 #include <performanceEvaluation.hpp>
 #include <span>
 

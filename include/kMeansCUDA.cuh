@@ -10,7 +10,7 @@
 #include <iostream>
 #include <vector>
 #include <cuda_runtime.h>
-#include "point.hpp"
+#include <point.hpp>
 
 /**
  * @class KMeans

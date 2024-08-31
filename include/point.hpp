@@ -20,7 +20,8 @@ namespace km
     {
     public:
         int id{0};       ///< ID of the point
-        unsigned char r{0}; ///< Red component
+        unsigned
+        char r{0}; ///< Red component
         unsigned char g{0}; ///< Green component
         unsigned char b{0}; ///< Blue component
         int clusterId{-1}; ///< ID of the cluster the point belongs to

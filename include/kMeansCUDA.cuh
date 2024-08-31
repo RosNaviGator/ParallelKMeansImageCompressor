@@ -48,13 +48,14 @@ namespace km
          * @brief Gets the points
          * @return Vector of points
          */
-        std::vector<Point> getPoints();
+        auto getPoints() -> std::vector<Point>;
 
         /**
          * @brief Gets the centroids
          * @return Vector of centroids
+         * 
          */
-        std::vector<Point> getCentroids();
+        auto getCentroids() -> std::vector<Point>;
 
         /**
          * @brief Gets the number of iterations

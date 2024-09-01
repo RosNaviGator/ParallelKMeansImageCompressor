@@ -16,7 +16,7 @@
 namespace km
 {
     /**
-     * @class KMeans
+     * @class KMeansCUDA
      * @brief Represents the K-means clustering algorithm using CUDA
      */
 

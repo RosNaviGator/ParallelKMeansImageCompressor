@@ -1,5 +1,24 @@
 \doxysection{km\+::Point Class Reference}
 \hypertarget{classkm_1_1Point}{}\label{classkm_1_1Point}\index{km::Point@{km::Point}}
+
+
+Represents a point in a feature space.  
+
+
+
+
+{\ttfamily \#include $<$point.\+hpp$>$}
+
+
+
+Collaboration diagram for km\+::Point\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classkm_1_1Point__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -18,29 +37,27 @@ auto \mbox{\hyperlink{classkm_1_1Point_a64d17ea345411db2662d787fb1d8f0cb}{set\+F
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classkm_1_1Point_a78bc9496fa3123aae641e8bb343b35f3}\label{classkm_1_1Point_a78bc9496fa3123aae641e8bb343b35f3} 
-int {\bfseries id} \{0\}
+int \mbox{\hyperlink{classkm_1_1Point_a78bc9496fa3123aae641e8bb343b35f3}{id}} \{0\}
 \begin{DoxyCompactList}\small\item\em ID of the point. \end{DoxyCompactList}\item 
-\Hypertarget{classkm_1_1Point_a75a4010e07878ca708794bc2be9f8d86}\label{classkm_1_1Point_a75a4010e07878ca708794bc2be9f8d86} 
-unsigned char {\bfseries r} \{0\}
+unsigned char \mbox{\hyperlink{classkm_1_1Point_a75a4010e07878ca708794bc2be9f8d86}{r}} \{0\}
 \begin{DoxyCompactList}\small\item\em Red component. \end{DoxyCompactList}\item 
-\Hypertarget{classkm_1_1Point_a9b903fb82f68a86d5a5460ff29f1c825}\label{classkm_1_1Point_a9b903fb82f68a86d5a5460ff29f1c825} 
-unsigned char {\bfseries g} \{0\}
+unsigned char \mbox{\hyperlink{classkm_1_1Point_a9b903fb82f68a86d5a5460ff29f1c825}{g}} \{0\}
 \begin{DoxyCompactList}\small\item\em Green component. \end{DoxyCompactList}\item 
-\Hypertarget{classkm_1_1Point_a81a6a8b6c7e827efae6f9dc7413db1fe}\label{classkm_1_1Point_a81a6a8b6c7e827efae6f9dc7413db1fe} 
-unsigned char {\bfseries b} \{0\}
+unsigned char \mbox{\hyperlink{classkm_1_1Point_a81a6a8b6c7e827efae6f9dc7413db1fe}{b}} \{0\}
 \begin{DoxyCompactList}\small\item\em Blue component. \end{DoxyCompactList}\item 
-\Hypertarget{classkm_1_1Point_a93075cb10459f938ec93e351617d8f8a}\label{classkm_1_1Point_a93075cb10459f938ec93e351617d8f8a} 
-int {\bfseries cluster\+Id} \{-\/1\}
+int \mbox{\hyperlink{classkm_1_1Point_a93075cb10459f938ec93e351617d8f8a}{cluster\+Id}} \{-\/1\}
 \begin{DoxyCompactList}\small\item\em ID of the cluster the point belongs to. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Represents a point in a feature space. 
+
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classkm_1_1Point_aa891dfb4d34712d231583e513d08333e}\index{km::Point@{km::Point}!Point@{Point}}
+\Hypertarget{classkm_1_1Point_aa891dfb4d34712d231583e513d08333e}\label{classkm_1_1Point_aa891dfb4d34712d231583e513d08333e} 
+\index{km::Point@{km::Point}!Point@{Point}}
 \index{Point@{Point}!km::Point@{km::Point}}
 \doxysubsubsection{\texorpdfstring{Point()}{Point()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \label{classkm_1_1Point_aa891dfb4d34712d231583e513d08333e} 
-km\+::\+Point\+::\+Point (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily km\+::\+Point\+::\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -51,11 +68,11 @@ Constructor for \doxylink{classkm_1_1Point}{Point}.
 {\em features\+\_\+size} & Number of features \\
 \hline
 \end{DoxyParams}
-\Hypertarget{classkm_1_1Point_af027bc12e0fa059a646f7c2f55037593}\index{km::Point@{km::Point}!Point@{Point}}
+\Hypertarget{classkm_1_1Point_af027bc12e0fa059a646f7c2f55037593}\label{classkm_1_1Point_af027bc12e0fa059a646f7c2f55037593} 
+\index{km::Point@{km::Point}!Point@{Point}}
 \index{Point@{Point}!km::Point@{km::Point}}
 \doxysubsubsection{\texorpdfstring{Point()}{Point()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \label{classkm_1_1Point_af027bc12e0fa059a646f7c2f55037593} 
-km\+::\+Point\+::\+Point (\begin{DoxyParamCaption}\item[{const int \&}]{id}{, }\item[{const std\+::vector$<$ int $>$ \&}]{coordinates}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily km\+::\+Point\+::\+Point (\begin{DoxyParamCaption}\item[{const int \&}]{id,  }\item[{const std\+::vector$<$ int $>$ \&}]{coordinates }\end{DoxyParamCaption})}
 
 
 
@@ -71,11 +88,11 @@ Constructor for \doxylink{classkm_1_1Point}{Point}.
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classkm_1_1Point_a28d9829e3fe624bd511814ab7a1cd445}\index{km::Point@{km::Point}!distance@{distance}}
+\Hypertarget{classkm_1_1Point_a28d9829e3fe624bd511814ab7a1cd445}\label{classkm_1_1Point_a28d9829e3fe624bd511814ab7a1cd445} 
+\index{km::Point@{km::Point}!distance@{distance}}
 \index{distance@{distance}!km::Point@{km::Point}}
 \doxysubsubsection{\texorpdfstring{distance()}{distance()}}
-{\footnotesize\ttfamily \label{classkm_1_1Point_a28d9829e3fe624bd511814ab7a1cd445} 
-auto km\+::\+Point\+::distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classkm_1_1Point}{Point}} \&}]{p}{}\end{DoxyParamCaption}) const -\/$>$  double\hspace{0.3cm}{\ttfamily [nodiscard]}}
+{\footnotesize\ttfamily auto km\+::\+Point\+::distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classkm_1_1Point}{Point}} \&}]{p }\end{DoxyParamCaption}) const -\/$>$  double}
 
 
 
@@ -89,11 +106,11 @@ Calculates the distance between this point and another point.
 \begin{DoxyReturn}{Returns}
 Distance between the points 
 \end{DoxyReturn}
-\Hypertarget{classkm_1_1Point_aec4f3b16b34bbc2b8badf5f8ddab25fd}\index{km::Point@{km::Point}!getFeature@{getFeature}}
+\Hypertarget{classkm_1_1Point_aec4f3b16b34bbc2b8badf5f8ddab25fd}\label{classkm_1_1Point_aec4f3b16b34bbc2b8badf5f8ddab25fd} 
+\index{km::Point@{km::Point}!getFeature@{getFeature}}
 \index{getFeature@{getFeature}!km::Point@{km::Point}}
 \doxysubsubsection{\texorpdfstring{getFeature()}{getFeature()}}
-{\footnotesize\ttfamily \label{classkm_1_1Point_aec4f3b16b34bbc2b8badf5f8ddab25fd} 
-auto km\+::\+Point\+::get\+Feature (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption}) -\/$>$  unsigned char \&}
+{\footnotesize\ttfamily auto km\+::\+Point\+::get\+Feature (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) -\/$>$  unsigned char \&}
 
 
 
@@ -107,11 +124,11 @@ Gets a feature value at the specified index.
 \begin{DoxyReturn}{Returns}
 Feature value 
 \end{DoxyReturn}
-\Hypertarget{classkm_1_1Point_a365fe57674e245fd49e300cddb6050d1}\index{km::Point@{km::Point}!getFeature\_int@{getFeature\_int}}
+\Hypertarget{classkm_1_1Point_a365fe57674e245fd49e300cddb6050d1}\label{classkm_1_1Point_a365fe57674e245fd49e300cddb6050d1} 
+\index{km::Point@{km::Point}!getFeature\_int@{getFeature\_int}}
 \index{getFeature\_int@{getFeature\_int}!km::Point@{km::Point}}
 \doxysubsubsection{\texorpdfstring{getFeature\_int()}{getFeature\_int()}}
-{\footnotesize\ttfamily \label{classkm_1_1Point_a365fe57674e245fd49e300cddb6050d1} 
-auto km\+::\+Point\+::get\+Feature\+\_\+int (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption}) const -\/$>$  int\hspace{0.3cm}{\ttfamily [nodiscard]}}
+{\footnotesize\ttfamily auto km\+::\+Point\+::get\+Feature\+\_\+int (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const -\/$>$  int}
 
 
 
@@ -125,11 +142,11 @@ Gets a feature value as an integer at the specified index.
 \begin{DoxyReturn}{Returns}
 Feature value as an integer 
 \end{DoxyReturn}
-\Hypertarget{classkm_1_1Point_a64d17ea345411db2662d787fb1d8f0cb}\index{km::Point@{km::Point}!setFeature@{setFeature}}
+\Hypertarget{classkm_1_1Point_a64d17ea345411db2662d787fb1d8f0cb}\label{classkm_1_1Point_a64d17ea345411db2662d787fb1d8f0cb} 
+\index{km::Point@{km::Point}!setFeature@{setFeature}}
 \index{setFeature@{setFeature}!km::Point@{km::Point}}
 \doxysubsubsection{\texorpdfstring{setFeature()}{setFeature()}}
-{\footnotesize\ttfamily \label{classkm_1_1Point_a64d17ea345411db2662d787fb1d8f0cb} 
-auto km\+::\+Point\+::set\+Feature (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{int}]{x}{}\end{DoxyParamCaption}) -\/$>$  void}
+{\footnotesize\ttfamily auto km\+::\+Point\+::set\+Feature (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{x }\end{DoxyParamCaption}) -\/$>$  void}
 
 
 
@@ -142,6 +159,59 @@ Sets a feature value at the specified index.
 {\em x} & Feature value \\
 \hline
 \end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classkm_1_1Point_a81a6a8b6c7e827efae6f9dc7413db1fe}\label{classkm_1_1Point_a81a6a8b6c7e827efae6f9dc7413db1fe} 
+\index{km::Point@{km::Point}!b@{b}}
+\index{b@{b}!km::Point@{km::Point}}
+\doxysubsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily unsigned char km\+::\+Point\+::b \{0\}}
+
+
+
+Blue component. 
+
+\Hypertarget{classkm_1_1Point_a93075cb10459f938ec93e351617d8f8a}\label{classkm_1_1Point_a93075cb10459f938ec93e351617d8f8a} 
+\index{km::Point@{km::Point}!clusterId@{clusterId}}
+\index{clusterId@{clusterId}!km::Point@{km::Point}}
+\doxysubsubsection{\texorpdfstring{clusterId}{clusterId}}
+{\footnotesize\ttfamily int km\+::\+Point\+::cluster\+Id \{-\/1\}}
+
+
+
+ID of the cluster the point belongs to. 
+
+\Hypertarget{classkm_1_1Point_a9b903fb82f68a86d5a5460ff29f1c825}\label{classkm_1_1Point_a9b903fb82f68a86d5a5460ff29f1c825} 
+\index{km::Point@{km::Point}!g@{g}}
+\index{g@{g}!km::Point@{km::Point}}
+\doxysubsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily unsigned char km\+::\+Point\+::g \{0\}}
+
+
+
+Green component. 
+
+\Hypertarget{classkm_1_1Point_a78bc9496fa3123aae641e8bb343b35f3}\label{classkm_1_1Point_a78bc9496fa3123aae641e8bb343b35f3} 
+\index{km::Point@{km::Point}!id@{id}}
+\index{id@{id}!km::Point@{km::Point}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int km\+::\+Point\+::id \{0\}}
+
+
+
+ID of the point. 
+
+\Hypertarget{classkm_1_1Point_a75a4010e07878ca708794bc2be9f8d86}\label{classkm_1_1Point_a75a4010e07878ca708794bc2be9f8d86} 
+\index{km::Point@{km::Point}!r@{r}}
+\index{r@{r}!km::Point@{km::Point}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily unsigned char km\+::\+Point\+::r \{0\}}
+
+
+
+Red component. 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

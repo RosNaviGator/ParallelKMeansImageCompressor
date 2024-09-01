@@ -11,28 +11,29 @@
 #include <unordered_set>
 #include <filesystem>
 
-/**
- * @class ConfigReader
- * @brief Reads and stores configuration values from a file
- */
-
 namespace km
 {
-    class ConfigReader {
-    private:
-        double first_level_compression_color = 0.;   ///< First level compression color value
-        double second_level_compression_color = 0. ;  ///< Second level compression color value
-        double third_level_compression_color = 0.;   ///< Third level compression color value
-        double fourth_level_compression_color = 0.;  ///< Fourth level compression color value
-        double fifth_level_compression_color = 0.;   ///< Fifth level compression color value
-        double resizing_factor = 0.;                 ///< Resizing factor
-        int color_choice = 0;                   ///< Color choice
-        int compression_choice = 0;             ///< Compression choice
-        std::filesystem::path inputImageFilePath;  ///< Input image file path
-        std::regex pattern;                     ///< Regular expression pattern
-        std::unordered_set<std::string> requiredVariables = {};  ///< Set of required variables
+    /**
+     * @class ConfigReader
+     * @brief Reads and stores configuration values from a file
+     */
 
-        [[nodiscard]] auto checkVariableExists(const std::string& variableName) const -> bool;
+    class ConfigReader
+    {
+    private:
+        double first_level_compression_color = 0.;              ///< First level compression color value
+        double second_level_compression_color = 0.;             ///< Second level compression color value
+        double third_level_compression_color = 0.;              ///< Third level compression color value
+        double fourth_level_compression_color = 0.;             ///< Fourth level compression color value
+        double fifth_level_compression_color = 0.;              ///< Fifth level compression color value
+        double resizing_factor = 0.;                            ///< Resizing factor
+        int color_choice = 0;                                   ///< Color choice
+        int compression_choice = 0;                             ///< Compression choice
+        std::filesystem::path inputImageFilePath;               ///< Input image file path
+        std::regex pattern;                                     ///< Regular expression pattern
+        std::unordered_set<std::string> requiredVariables = {}; ///< Set of required variables
+
+        [[nodiscard]] auto checkVariableExists(const std::string &variableName) const -> bool;
 
         /**
          * @brief Gets the first level compression color value
@@ -98,6 +99,6 @@ namespace km
 
         ConfigReader();
     };
-}  // namespace km
+} // namespace km
 
 #endif // CONFIG_READER_HPP

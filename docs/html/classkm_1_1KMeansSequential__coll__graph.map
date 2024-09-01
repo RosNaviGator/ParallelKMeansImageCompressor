@@ -1,5 +1,5 @@
 <map id="km::KMeansSequential" name="km::KMeansSequential">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,162,107"/>
-<area shape="rect" id="Node000002" href="$classkm_1_1KMeansBase.html" title=" " alt="" coords="21,5,146,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,48,86,80,81,80,81,48"/>
+<area shape="rect" id="Node000001" title="Represents the K&#45;means clustering algorithm." alt="" coords="11,431,201,545"/>
+<area shape="rect" id="Node000002" href="$classkm_1_1KMeansBase.html" title="Base class for K&#45;means clustering algorithm." alt="" coords="5,5,207,383"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,396,109,430,103,430,103,396"/>
 </map>

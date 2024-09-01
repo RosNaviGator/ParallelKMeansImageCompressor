@@ -1,12 +1,12 @@
 <map id="include/kMeansSequential.hpp" name="include/kMeansSequential.hpp">
-<area shape="rect" id="Node000001" title="Implementation of the K&#45;means clustering algorithm." alt="" coords="5,5,204,32"/>
-<area shape="rect" id="Node000002" href="$kMeansBase_8hpp.html" title="Base class for K&#45;means clustering algorithm." alt="" coords="43,80,166,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,33,107,64,102,64,102,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="38,229,96,256"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,108,77,215,71,214,99,107"/>
-<area shape="rect" id="Node000004" href="$point_8hpp.html" title="Point class representing a point in a feature space." alt="" coords="105,155,179,181"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="113,106,131,140,126,142,109,108"/>
-<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="131,184,93,221,89,217,127,180"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="120,229,177,256"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="146,182,149,213,143,214,140,182"/>
+<area shape="rect" id="Node000001" title="Implementation of the K&#45;means clustering algorithm." alt="" coords="5,5,227,31"/>
+<area shape="rect" id="Node000002" href="$kMeansBase_8hpp.html" title="Base class for K&#45;means clustering algorithm." alt="" coords="49,79,183,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,31,119,65,113,65,113,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="46,225,109,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,105,87,213,81,211,110,104"/>
+<area shape="rect" id="Node000004" href="$point_8hpp.html" title="Point class representing a point in a feature space." alt="" coords="115,152,197,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="125,103,145,139,140,141,120,106"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="145,179,102,218,98,214,142,175"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="133,225,195,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="160,177,164,212,159,212,155,178"/>
 </map>

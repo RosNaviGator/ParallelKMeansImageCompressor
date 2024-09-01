@@ -9,29 +9,28 @@
 #include "kMeansBase.hpp"
 #include <omp.h>
 
-/**
- * @class KMeansOMP
- * @brief Represents the K-means clustering algorithm using OpenMP
- */
-
 namespace km
 {
-class KMeansOMP : public KMeansBase
-{
-public:
     /**
-     * @brief Constructor for KMeansOMP
-     * @param k Number of clusters
-     * @param points Vector of points
+     * @class KMeansOMP
+     * @brief Represents the K-means clustering algorithm using OpenMP
      */
-    KMeansOMP(const int& k, const std::vector<Point>& points);
 
-    /**
-     * @brief Runs the K-means clustering algorithm using OpenMP
-     */
-    void run() override;
+    class KMeansOMP : public KMeansBase
+    {
+    public:
+        /**
+         * @brief Constructor for KMeansOMP
+         * @param k Number of clusters
+         * @param points Vector of points
+         */
+        KMeansOMP(const int &k, const std::vector<Point> &points);
 
-};
+        /**
+         * @brief Runs the K-means clustering algorithm using OpenMP
+         */
+        void run() override;
+    };
 } // namespace km
 
 #endif // KMEANS_OMP_HPP

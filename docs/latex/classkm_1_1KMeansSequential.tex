@@ -2,20 +2,31 @@
 \hypertarget{classkm_1_1KMeansSequential}{}\label{classkm_1_1KMeansSequential}\index{km::KMeansSequential@{km::KMeansSequential}}
 
 
-Inheritance diagram for km\+::KMeans\+Sequential\+:\nopagebreak
+Represents the K-\/means clustering algorithm.  
+
+
+
+
+{\ttfamily \#include $<$k\+Means\+Sequential.\+hpp$>$}
+
+
+
+Inheritance diagram for km\+::KMeans\+Sequential\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=197pt]{classkm_1_1KMeansSequential__inherit__graph}
+\includegraphics[width=231pt]{classkm_1_1KMeansSequential__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for km\+::KMeans\+Sequential\+:\nopagebreak
+Collaboration diagram for km\+::KMeans\+Sequential\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=197pt]{classkm_1_1KMeansSequential__coll__graph}
+\includegraphics[width=231pt]{classkm_1_1KMeansSequential__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -32,7 +43,7 @@ void \mbox{\hyperlink{classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208f901
 \begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classkm_1_1KMeansBase}{KMeans\+Base}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classkm_1_1KMeansBase_a6fd298e173124aa1ed7c11be7d451a1a}{KMeans\+Base}} (const int \&\mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}})
 \begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classkm_1_1KMeansBase}{KMeans\+Base} object only with the specified number of clusters. \end{DoxyCompactList}\item 
-virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+KMeans\+Base} ()=default
+virtual \mbox{\hyperlink{classkm_1_1KMeansBase_a295d214db11a3c799cb70b86baeb26ee}{\texorpdfstring{$\sim$}{\string~}\+KMeans\+Base}} ()=default
 \begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classkm_1_1KMeansBase}{KMeans\+Base}. \end{DoxyCompactList}\item 
 auto \mbox{\hyperlink{classkm_1_1KMeansBase_af5fa8fabf72ebb17b4b711609946d74f}{get\+Points}} () const -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
 \begin{DoxyCompactList}\small\item\em Gets the poinots. \end{DoxyCompactList}\item 
@@ -44,22 +55,25 @@ auto \mbox{\hyperlink{classkm_1_1KMeansBase_a73e8e4656d66217a8890c48942800daa}{g
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classkm_1_1KMeansBase}{km\+::\+KMeans\+Base}}}
 \begin{DoxyCompactItemize}
 \item 
-int {\bfseries k}
+int \mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}}
 \begin{DoxyCompactList}\small\item\em Number of clusters. \end{DoxyCompactList}\item 
-std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ {\bfseries points}
+std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \mbox{\hyperlink{classkm_1_1KMeansBase_a73dfe23dfbb0c544cd128255e291aa05}{points}}
 \begin{DoxyCompactList}\small\item\em Vector of points. \end{DoxyCompactList}\item 
-std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ {\bfseries centroids}
+std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \mbox{\hyperlink{classkm_1_1KMeansBase_ab23d5830a45ba956fc43b549884b327b}{centroids}}
 \begin{DoxyCompactList}\small\item\em Vector of centroids. \end{DoxyCompactList}\item 
-int {\bfseries number\+\_\+of\+\_\+iterations}
+int \mbox{\hyperlink{classkm_1_1KMeansBase_a1a41bedae67c0ae03bca35fba3ff8aa3}{number\+\_\+of\+\_\+iterations}}
 \begin{DoxyCompactList}\small\item\em Number of iterations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Represents the K-\/means clustering algorithm. 
+
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classkm_1_1KMeansSequential_a0c8a679e5df18f0ec4050a66d2a62a74}\index{km::KMeansSequential@{km::KMeansSequential}!KMeansSequential@{KMeansSequential}}
+\Hypertarget{classkm_1_1KMeansSequential_a0c8a679e5df18f0ec4050a66d2a62a74}\label{classkm_1_1KMeansSequential_a0c8a679e5df18f0ec4050a66d2a62a74} 
+\index{km::KMeansSequential@{km::KMeansSequential}!KMeansSequential@{KMeansSequential}}
 \index{KMeansSequential@{KMeansSequential}!km::KMeansSequential@{km::KMeansSequential}}
 \doxysubsubsection{\texorpdfstring{KMeansSequential()}{KMeansSequential()}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansSequential_a0c8a679e5df18f0ec4050a66d2a62a74} 
-km\+::\+KMeans\+Sequential\+::\+KMeans\+Sequential (\begin{DoxyParamCaption}\item[{const int \&}]{k}{, }\item[{const std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&}]{points}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily km\+::\+KMeans\+Sequential\+::\+KMeans\+Sequential (\begin{DoxyParamCaption}\item[{const int \&}]{k,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&}]{points }\end{DoxyParamCaption})}
 
 
 
@@ -75,11 +89,11 @@ Constructor for \doxylink{classkm_1_1KMeansSequential}{KMeans\+Sequential}.
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208f901a7b}\index{km::KMeansSequential@{km::KMeansSequential}!run@{run}}
+\Hypertarget{classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208f901a7b}\label{classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208f901a7b} 
+\index{km::KMeansSequential@{km::KMeansSequential}!run@{run}}
 \index{run@{run}!km::KMeansSequential@{km::KMeansSequential}}
 \doxysubsubsection{\texorpdfstring{run()}{run()}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208f901a7b} 
-void km\+::\+KMeans\+Sequential\+::run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void km\+::\+KMeans\+Sequential\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 

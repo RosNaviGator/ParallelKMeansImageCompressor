@@ -14,9 +14,10 @@
 #include <point.hpp>
 
 /**
- * @namespace imageUtils
+ * @namespace km::imageUtils
  * @brief Provides utility functions for image processing
  */
+
 namespace km
 {
     namespace imageUtils

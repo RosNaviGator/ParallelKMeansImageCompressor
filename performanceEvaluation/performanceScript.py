@@ -26,28 +26,33 @@ class PerformancePlotter:
             (self.data['img'] != 'strong')
         ]
 
+        omp_data.loc[:, 'img'] = pd.to_numeric(omp_data['img'], errors='coerce').astype('Int64')
+        mpi_data.loc[:, 'img'] = pd.to_numeric(mpi_data['img'], errors='coerce').astype('Int64')
+        sequential_data.loc[:, 'img'] = pd.to_numeric(sequential_data['img'], errors='coerce').astype('Int64')
 
-        #sequential_data = sequential_data.rename(columns={'time': 'time_seq'})
-
-        # make bothe image columns int64 type 
-        mpi_data['img'] = mpi_data['img'].str.replace('.png', '').astype('int64')
-        omp_data['img'] = omp_data['img'].str.replace('.png', '').astype('int64')
-        sequential_data['img'] = sequential_data['img'].str.replace('.png', '').astype('int64')
-
+        # Calculate mean time grouped by 'img'
         mpi_data = mpi_data.groupby('img')['time'].mean().reset_index()
         omp_data = omp_data.groupby('img')['time'].mean().reset_index()
         sequential_data = sequential_data.groupby('img')['time'].mean().reset_index()
 
-        # create new  empty speedup databases 
+        # Create new empty DataFrames for speedup calculations
         mpi_data_speedup = pd.DataFrame(columns=['img', 'speedup'])
         omp_data_speedup = pd.DataFrame(columns=['img', 'speedup'])
 
-        for i in range(14):
-            mpi_data_speedup = mpi_data_speedup.append({'img': i+1, 'speedup': sequential_data['time'][i] / mpi_data['time'][i]}, ignore_index=True)
-        
-        for i in range(20):
-            omp_data_speedup = omp_data_speedup.append({'img': i+1, 'speedup': sequential_data['time'][i] / omp_data['time'][i]}, ignore_index=True)
-        
+        # Calculate speedup for MPI and OMP
+        for i in range(len(mpi_data)):
+            if i < len(sequential_data):  # Ensure no out-of-bounds error
+                speedup = sequential_data['time'].iloc[i] / mpi_data['time'].iloc[i]
+                new_row = pd.DataFrame({'img': [mpi_data['img'].iloc[i]], 'speedup': [speedup]})
+                mpi_data_speedup = pd.concat([mpi_data_speedup, new_row], ignore_index=True)
+
+        for i in range(len(omp_data)):
+            if i < len(sequential_data):  # Ensure no out-of-bounds error
+                speedup = sequential_data['time'].iloc[i] / omp_data['time'].iloc[i]
+                new_row = pd.DataFrame({'img': [omp_data['img'].iloc[i]], 'speedup': [speedup]})
+                omp_data_speedup = pd.concat([omp_data_speedup, new_row], ignore_index=True)
+
+        # Plotting the speedup
         plt.figure(figsize=(8, 6))
         plt.plot(mpi_data_speedup['img'], mpi_data_speedup['speedup'], marker='o', linestyle='-', label='MPI')
         plt.plot(omp_data_speedup['img'], omp_data_speedup['speedup'], marker='o', linestyle='-', label='OMP')
@@ -56,8 +61,10 @@ class PerformancePlotter:
         plt.title('Speedup vs Number of Processes/Threads')
         plt.legend()
         plt.grid(True)
-        plt.show()
+
+        # Save and show the plot
         plt.savefig('plots/weakScalability.png')
+        plt.show()
         plt.close()
 
 
@@ -105,11 +112,11 @@ class ImageGenerator:
             # print(f"Number of unique colors in the image: {unique_colors}")
         print("Image generation completed.")
 
-weakScalability = False
+weakScalability = True
 strongScalability = False
 generalPerformanceEvaluation = False
 plotWeakScalability = True
-plotStrongScalability = True
+plotStrongScalability = False
 
 if weakScalability:
 
@@ -117,7 +124,7 @@ if weakScalability:
 
     # Define number of simulations
     OMP = True
-    MPI = False
+    MPI = True
 
     # Define number of processes (only MPI)
     processorStart = 1
@@ -128,7 +135,7 @@ if weakScalability:
     threadsEnd = 20
 
     # number of simulations
-    M = 1
+    M = 4
 
     # Define percentage of colors (1-5)
     colorsStart = 3
@@ -147,7 +154,7 @@ if weakScalability:
                     for threads in range(threadsStart, threadsEnd + 1):
                         file_path = folder_path + "/" + str(threads) + ".png"
                         os.system(f"../build/ompEncoder {file_path} {colors} {compression} {threads}")
-                        #os.system(f"../build/seqEncoder {file_path} {colors} {compression}")
+                        os.system(f"../build/seqEncoder {file_path} {colors} {compression}")
         os.system("rm -rf performanceImages/")
 
     if MPI:

@@ -23,31 +23,31 @@ namespace km
         /**
          * @brief Displays the header for the sequential encoder
          */
-         void sequentialEncoderHeader();
+        void sequentialEncoderHeader();
 
         /**
          * @brief Displays the header for the MPI encoder
          */
-         void mpiEncoderHeader();
+        void mpiEncoderHeader();
 
         /**
          * @brief Displays the header for the OpenMP encoder
          */
-         void ompEncoderHeader();
+        void ompEncoderHeader();
         /**
          * @brief Displays the main menu header
          */
-         void mainMenuHeader();
+        void mainMenuHeader();
 
         /**
          * @brief Displays the decoder header
          */
-         void decoderHeader();
+        void decoderHeader();
 
         /**
          * @brief Displays the work done message
          */
-         void workDone();
+        void workDone();
 
         /**
          * @brief Handles the compression choices
@@ -57,7 +57,7 @@ namespace km
          * @param image Input image
          * @param executionStandard Execution standard
          */
-         void compressionChoices(int &levelsColorsChoice, int &typeCompressionChoice, std::string &outputPath, cv::Mat &image, int executionStandard);
+        void compressionChoices(int &levelsColorsChoice, int &typeCompressionChoice, std::string &outputPath, cv::Mat &image, int executionStandard);
 
         /**
          * @brief Prints the compression information
@@ -68,7 +68,7 @@ namespace km
          * @param k Number of clusters
          * @param different_colors_size Number of different colors
          */
-         void printCompressionInformations(int &originalWidth, int &originalHeight, int &width, int &height, int &k, size_t &different_colors_size);
+        void printCompressionInformations(int &originalWidth, int &originalHeight, int &width, int &height, int &k, size_t &different_colors_size);
 
         /**
          * @brief Displays the decoding menu
@@ -76,7 +76,7 @@ namespace km
          * @param imageNames Vector of image names
          * @param decodeDir Path of the decoding directory
          */
-         void displayDecodingMenu(std::string &path, std::vector<std::filesystem::path> &imageNames, std::filesystem::path &decodeDir);
+        void displayDecodingMenu(std::string &path, std::vector<std::filesystem::path> &imageNames, std::filesystem::path &decodeDir);
     };
 }
 

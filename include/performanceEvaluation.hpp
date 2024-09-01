@@ -14,13 +14,13 @@
 #include <filesystem>
 #include <opencv2/opencv.hpp>
 
-/**
- * @class Performance
- * @brief Represents the performance evaluation
- */
-
 namespace km
 {
+    /**
+     * @class Performance
+     * @brief Represents the performance evaluation
+     */
+
     class Performance
     {
     public:
@@ -73,8 +73,8 @@ namespace km
          */
         auto appendToCSV(const std::string &filename, int n_diff_colors, int k, int n_colors, const std::string &compType, double time, int num_processes, int number_of_iteratios) -> void;
 
-        std::string img; ///< Image name
-        int choice{};    ///< Choice of performance evaluation
+        std::string img;    ///< Image name
+        int choice{};       ///< Choice of performance evaluation
         std::string method; ///< Method used
     };
 }

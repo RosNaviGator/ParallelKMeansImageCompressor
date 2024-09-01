@@ -9,29 +9,30 @@
 #include <vector>
 #include "point.hpp"
 
-/**
- * @class KMeansBase
- * @brief Base class for K-means clustering algorithm
- */
-
 namespace km
 {
-class KMeansBase
-{
+    /**
+     * @class KMeansBase
+     * @brief Base class for K-means clustering algorithm
+     */
+    
+    class KMeansBase
+    {
+
     public:
         /**
          * @brief Constructor for KMeansBase
          * @param k Number of clusters
          * @param points Vector of points
          */
-        KMeansBase(const int& k, const std::vector<Point>& points);
+        KMeansBase(const int &k, const std::vector<Point> &points);
 
         /**
          * @brief Constructs a KMeansBase object only with the specified number of clusters.
-         * 
+         *
          * @param k The number of clusters.
          */
-        KMeansBase(const int& k);
+        KMeansBase(const int &k);
 
         /**
          * @brief Virtual destructor for KMeansBase
@@ -62,10 +63,10 @@ class KMeansBase
         [[nodiscard]] auto getIterations() const -> int;
 
     protected:
-        int k; ///< Number of clusters
-        std::vector<Point> points; ///< Vector of points
+        int k;                        ///< Number of clusters
+        std::vector<Point> points;    ///< Vector of points
         std::vector<Point> centroids; ///< Vector of centroids
-        int number_of_iterations; ///< Number of iterations
+        int number_of_iterations;     ///< Number of iterations
     };
 } // namespace k
 

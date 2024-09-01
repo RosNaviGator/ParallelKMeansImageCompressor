@@ -12,13 +12,14 @@
 #include <cuda_runtime.h>
 #include <point.hpp>
 
-/**
- * @class KMeans
- * @brief Represents the K-means clustering algorithm using CUDA
- */
 
 namespace km
 {
+    /**
+     * @class KMeans
+     * @brief Represents the K-means clustering algorithm using CUDA
+     */
+
     class KMeansCUDA
     {
     public:
@@ -27,7 +28,7 @@ namespace km
          * @param k Number of clusters
          * @param points Vector of points
          */
-        KMeansCUDA(const int& k, const std::vector<Point> &points);
+        KMeansCUDA(const int &k, const std::vector<Point> &points);
 
         /**
          * @brief Runs the K-means clustering algorithm using CUDA
@@ -53,7 +54,7 @@ namespace km
         /**
          * @brief Gets the centroids
          * @return Vector of centroids
-         * 
+         *
          */
         auto getCentroids() -> std::vector<Point>;
 
@@ -64,10 +65,10 @@ namespace km
         auto getIterations() -> int;
 
     private:
-        int k; ///< Number of clusters
-        std::vector<Point> points; ///< Vector of points
+        int k;                        ///< Number of clusters
+        std::vector<Point> points;    ///< Vector of points
         std::vector<Point> centroids; ///< Vector of centroids
-        int number_of_iterations; ///< Number of iterations
+        int number_of_iterations;     ///< Number of iterations
     };
 } // namespace km
 

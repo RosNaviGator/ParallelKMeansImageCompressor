@@ -1,0 +1,39 @@
+\doxysection{point.\+hpp}
+\hypertarget{point_8hpp_source}{}\label{point_8hpp_source}\index{include/point.hpp@{include/point.hpp}}
+\mbox{\hyperlink{point_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ POINT\_HPP}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ POINT\_HPP}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacekm}{km}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classkm_1_1Point}{Point}}}
+\DoxyCodeLine{00020\ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id}\{0\};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classkm_1_1Point_a75a4010e07878ca708794bc2be9f8d86}{r}}\{0\};\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classkm_1_1Point_a9b903fb82f68a86d5a5460ff29f1c825}{g}}\{0\};\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classkm_1_1Point_a81a6a8b6c7e827efae6f9dc7413db1fe}{b}}\{0\};\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classkm_1_1Point_a93075cb10459f938ec93e351617d8f8a}{clusterId}}\{-\/1\};\ \ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classkm_1_1Point_aa891dfb4d34712d231583e513d08333e}{Point}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classkm_1_1Point_af027bc12e0fa059a646f7c2f55037593}{Point}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&\textcolor{keywordtype}{id},\ \textcolor{keyword}{const}\ std::vector<int>\ \&coordinates);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classkm_1_1Point_a28d9829e3fe624bd511814ab7a1cd445}{distance}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classkm_1_1Point}{Point}}\ \&p)\ \textcolor{keyword}{const}\ -\/>\ double;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classkm_1_1Point_aec4f3b16b34bbc2b8badf5f8ddab25fd}{getFeature}}(\textcolor{keywordtype}{int}\ index)\ -\/>\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \&;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classkm_1_1Point_a365fe57674e245fd49e300cddb6050d1}{getFeature\_int}}(\textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const}\ -\/>\ int;}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classkm_1_1Point_a64d17ea345411db2662d787fb1d8f0cb}{setFeature}}(\textcolor{keywordtype}{int}\ index,\ \textcolor{keywordtype}{int}\ x)\ -\/>\ void;}
+\DoxyCodeLine{00068\ \ \ \ \ \};}
+\DoxyCodeLine{00069\ \}\ \textcolor{comment}{//\ namespace\ km}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ POINT\_HPP}}
+
+\end{DoxyCode}

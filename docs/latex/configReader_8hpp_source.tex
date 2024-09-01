@@ -1,0 +1,60 @@
+\doxysection{config\+Reader.\+hpp}
+\hypertarget{configReader_8hpp_source}{}\label{configReader_8hpp_source}\index{include/configReader.hpp@{include/configReader.hpp}}
+\mbox{\hyperlink{configReader_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CONFIG\_READER\_HPP}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CONFIG\_READER\_HPP}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <regex>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <unordered\_set>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacekm}{km}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classkm_1_1ConfigReader}{ConfigReader}}}
+\DoxyCodeLine{00022\ \ \ \ \ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classkm_1_1ConfigReader_a2068117fca492601c2bdea51d628e403}{first\_level\_compression\_color}}\ =\ 0.;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classkm_1_1ConfigReader_ac68a0595ce6e941c2d165dda38e56acc}{second\_level\_compression\_color}}\ =\ 0.;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classkm_1_1ConfigReader_a85f23106986e88109c7af53f960fed52}{third\_level\_compression\_color}}\ =\ 0.;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classkm_1_1ConfigReader_aedb6422ed367c11d148156d4aa11aac8}{fourth\_level\_compression\_color}}\ =\ 0.;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classkm_1_1ConfigReader_a7d4e359f89affe179aef35f37dd8d6f0}{fifth\_level\_compression\_color}}\ =\ 0.;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classkm_1_1ConfigReader_a3e33469633eb5220b3556b76682856ed}{resizing\_factor}}\ =\ 0.;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classkm_1_1ConfigReader_afb9a5ea5b0483648b04f7f52049d44a3}{color\_choice}}\ =\ 0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classkm_1_1ConfigReader_aaa3378e3a63d79ed891d6949d64bc16c}{compression\_choice}}\ =\ 0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::filesystem::path\ \mbox{\hyperlink{classkm_1_1ConfigReader_a86572dc7ec14e871223278dc090c7bd1}{inputImageFilePath}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::regex\ \mbox{\hyperlink{classkm_1_1ConfigReader_a4ea327118b44faeebb08e385d5e15de8}{pattern}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ std::unordered\_set<std::string>\ \mbox{\hyperlink{classkm_1_1ConfigReader_acaf9b9f64500ea2a143a227528ca62d5}{requiredVariables}}\ =\ \{\};\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classkm_1_1ConfigReader_ac0003067ed39059f86c42be35a5d32d7}{checkVariableExists}}(\textcolor{keyword}{const}\ std::string\ \&variableName)\ \textcolor{keyword}{const}\ -\/>\ bool;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classkm_1_1ConfigReader_a787856a51a8817148108650a664f5738}{getFirstLevelCompressionColor}}()\ const\ -\/>\ \textcolor{keywordtype}{double};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classkm_1_1ConfigReader_a12968b54f38b17586d6e65be5158d275}{getSecondLevelCompressionColor}}()\ const\ -\/>\ \textcolor{keywordtype}{double};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classkm_1_1ConfigReader_a0e355597d2a6f4c1f01e91da11fbd577}{getThirdLevelCompressionColor}}()\ const\ -\/>\ \textcolor{keywordtype}{double};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classkm_1_1ConfigReader_a0a13dd20b33346486e13a87a9a52e4e5}{getFourthLevelCompressionColor}}()\ const\ -\/>\ \textcolor{keywordtype}{double};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classkm_1_1ConfigReader_a532eced302fd72113c7359aa1d08faab}{getFifthLevelCompressionColor}}()\ const\ -\/>\ \textcolor{keywordtype}{double};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classkm_1_1ConfigReader_a15bc4894d9b8398a19ced91b3b75867e}{getColorChoice}}()\ const\ -\/>\ \textcolor{keywordtype}{int};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classkm_1_1ConfigReader_acbca77b6a8383ac0ae6c28f1a34e2259}{getCompressionChoice}}()\ const\ -\/>\ \textcolor{keywordtype}{int};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classkm_1_1ConfigReader_a237ced5b25d092bc8de9b55953f923be}{getInputImageFilePath}}()\ const\ -\/>\ std::filesystem::path;}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classkm_1_1ConfigReader_a6067e8491ad1fdbb5f62b33ef215208e}{getResizingFactor}}()\ const\ -\/>\ \textcolor{keywordtype}{double};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classkm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50}{readConfigFile}}()\ -\/>\ \textcolor{keywordtype}{bool};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classkm_1_1ConfigReader}{ConfigReader}}();}
+\DoxyCodeLine{00101\ \ \ \ \ \};}
+\DoxyCodeLine{00102\ \}\ \textcolor{comment}{//\ namespace\ km}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONFIG\_READER\_HPP}}
+
+\end{DoxyCode}

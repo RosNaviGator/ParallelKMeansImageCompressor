@@ -1,0 +1,89 @@
+\chapter{Parallel Kmeans Images Compressor}
+\hypertarget{index}{}\label{index}\index{Parallel Kmeans Images Compressor@{Parallel Kmeans Images Compressor}}
+\label{index_md_README}%
+\Hypertarget{index_md_README}%
+ 
+\begin{DoxyInlineImage}
+\includegraphics[height=\baselineskip,keepaspectratio=true]{milanoCompressed.png}%milano
+\end{DoxyInlineImage}
+   
+
+This program compresses images by reducing the number of colors using k-\/means clustering. It offers enhanced performance through the implementation of several parallelization techniques. By clustering pixels into k color groups, the program reduces the image\textquotesingle{}s color palette, thereby compressing the image while maintaining visual quality.\hypertarget{index_autotoc_md1}{}\doxysection{\texorpdfstring{Doxygen Documentation}{Doxygen Documentation}}\label{index_autotoc_md1}
+The documentation of the project can be found \href{docs/html/index.html}{\texttt{ here}}.\hypertarget{index_autotoc_md2}{}\doxysection{\texorpdfstring{Prerequisites}{Prerequisites}}\label{index_autotoc_md2}
+In order to be able to compile and run the program, there are a few programs that need to be installed.\hypertarget{index_autotoc_md3}{}\doxysubsection{\texorpdfstring{Open\+CV C++ Library}{OpenCV C++ Library}}\label{index_autotoc_md3}
+A comprehensive library for computer vision and image processing tasks.
+
+You can refer to the \href{https://opencv.org/releases/}{\texttt{ official page}} to download.\hypertarget{index_autotoc_md4}{}\doxysubsection{\texorpdfstring{Mpicc}{Mpicc}}\label{index_autotoc_md4}
+A C compiler wrapper for parallel programming with the MPI library.\hypertarget{index_autotoc_md5}{}\doxysubsection{\texorpdfstring{Open\+MP}{OpenMP}}\label{index_autotoc_md5}
+A C++ API for parallel programming on shared-\/memory systems.\hypertarget{index_autotoc_md6}{}\doxysection{\texorpdfstring{Getting Started}{Getting Started}}\label{index_autotoc_md6}
+To compile the project, navigate to the project root directory in your terminal and run the following command\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make}
+
+\end{DoxyCode}
+
+
+Once you have compiled you can execute the main program by\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./exe}
+
+\end{DoxyCode}
+\hypertarget{index_autotoc_md7}{}\doxysection{\texorpdfstring{What to expect}{What to expect}}\label{index_autotoc_md7}
+Once the program is started, the following screen appears, through which it is possible to compress a new image or decompress an already compressed image.
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{mainMenuScreenshot.png}
+\doxyfigcaption{alt text}
+\end{DoxyImage}
+   
+
+If you choose the "{}\+Compress an image"{} option you can select one type of compressor (sequential, MPI or Open\+MP), the type of compression and the path of the original image.
+
+The result image will be created in the output folder and you can rerun {\ttfamily ./exe} selecting the decoding function to decode it.\hypertarget{index_autotoc_md8}{}\doxysection{\texorpdfstring{Project Structure}{Project Structure}}\label{index_autotoc_md8}
+The project is organized as follows\+: \hypertarget{index_autotoc_md9}{}\doxysubsubsection{\texorpdfstring{Folders}{Folders}}\label{index_autotoc_md9}
+
+\begin{DoxyItemize}
+\item {\ttfamily benchmark\+Images}\+: This folder contains the images used for benchmarking the program. It can be used to test the program\textquotesingle{}s performance.
+\item {\ttfamily outputs}\+: This folder contains the compressed images. After installing the program, you may notice that the outputs folder is not present. However, don\textquotesingle{}t worry! It will be automatically created during the first execution of the program.
+\item {\ttfamily include}\+: This folder contains the header files of the project. These define the classes and functions that are used in the program.
+\item {\ttfamily src}\+: This folder contains the source files of the project. These files contain the implementation of the classes and functions defined in the header files.
+\item {\ttfamily build}\+: This folder contains the object files generated during the compilation process.
+\end{DoxyItemize}\hypertarget{index_autotoc_md10}{}\doxysubsubsection{\texorpdfstring{Files and Executables}{Files and Executables}}\label{index_autotoc_md10}
+
+\begin{DoxyItemize}
+\item {\ttfamily exe}\+: This is the executable file generated after compiling the project. It is the main program that can be executed to compress or decompress images.
+\item {\ttfamily Makefile}\+: This file contains the instructions for compiling the project. It specifies the dependencies and the commands to compile the project.
+\item {\ttfamily .config}\+: This file contains the configuration of the program. It is used to store some hyperparameters that can be modified to change the behavior of the program.
+\end{DoxyItemize}\hypertarget{index_autotoc_md11}{}\doxysection{\texorpdfstring{How does it work?}{How does it work?}}\label{index_autotoc_md11}
+The program compresses images by reducing the number of colors in the image. It does this by clustering the pixels into k color groups using the k-\/means clustering algorithm. The k-\/means algorithm is an unsupervised learning algorithm that partitions the data into k clusters based on the similarity of the data points. In the context of image compression, the data points are the pixels of the image, and the clusters are the colors that represent the image.
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{Albero-removebg-preview.png}
+\doxyfigcaption{tree}
+\end{DoxyImage}
+   
+
+The k-\/means algorithm works as follows\+:
+\begin{DoxyEnumerate}
+\item Initialize k centroids randomly.
+\item Assign each data point to the nearest centroid.
+\item Recompute the centroids based on the data points assigned to them.
+\item Repeat steps 2 and 3 until convergence.
+\end{DoxyEnumerate}
+
+The k-\/means algorithm is an iterative algorithm that converges to a local minimum. The quality of the compression depends on the value of k, the number of clusters. A higher value of k will result in a better representation of the image but will require more memory to store the centroids.\hypertarget{index_autotoc_md12}{}\doxysection{\texorpdfstring{Parallelization Techniques}{Parallelization Techniques}}\label{index_autotoc_md12}
+The program uses several parallelization techniques to enhance performance. These techniques include\+:
+\begin{DoxyItemize}
+\item {\bfseries{Open\+MP}}\+: Open\+MP is an API for parallel programming on shared-\/memory systems. It allows the program to parallelize the computation of the k-\/means algorithm by distributing the work among multiple threads.
+\item {\bfseries{MPI}}\+: MPI is a message-\/passing library for parallel programming on distributed-\/memory systems. It allows the program to parallelize the computation of the k-\/means algorithm by distributing the work among multiple processes running on different nodes.
+\end{DoxyItemize}\hypertarget{index_autotoc_md13}{}\doxysection{\texorpdfstring{Benchmarking}{Benchmarking}}\label{index_autotoc_md13}
+The program includes a benchmarking feature that allows you to test the performance of the program on different images. The benchmarking feature measures the time taken to compress an image using different compression techniques and different values of k. The benchmarking results are displayed in a table that shows the time taken to compress the image for each value of k and each compression technique.\hypertarget{index_autotoc_md14}{}\doxysection{\texorpdfstring{Authors}{Authors}}\label{index_autotoc_md14}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/leonardopagliochini}{\texttt{ Leonardo Ignazio Pagliochini}}
+\item \href{https://github.com/RosNaviGator}{\texttt{ Francesco Rosnati}} 
+\end{DoxyItemize}

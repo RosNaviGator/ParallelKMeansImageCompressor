@@ -28,6 +28,7 @@ namespace km
          * @param k Number of clusters
          * @param points Vector of points
          */
+        
         KMeansCUDA(const int &k, const std::vector<Point> &points);
 
         /**

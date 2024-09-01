@@ -1,5 +1,5 @@
 /**
- * @file kMeansCUDA.hpp
+ * @file kMeansCUDA.cuh
  * @brief Implementation of the K-means clustering algorithm using CUDA
  */
 

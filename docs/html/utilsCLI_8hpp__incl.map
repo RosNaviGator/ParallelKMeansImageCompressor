@@ -1,25 +1,25 @@
 <map id="include/utilsCLI.hpp" name="include/utilsCLI.hpp">
-<area shape="rect" id="Node000001" title="Utility functions for the command&#45;line interface." alt="" coords="112,5,261,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,152,85,177"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,33,68,144,64,140,173,29"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="109,152,264,177"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,31,189,138,184,138,184,31"/>
-<area shape="rect" id="Node000004" href="$filesUtils_8hpp.html" title="Utility functions for file handling." alt="" coords="346,79,454,104"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="222,28,353,72,352,77,220,33"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="346,106,99,154,98,149,345,100"/>
-<area shape="poly" id="edge13_Node000004_Node000003" title=" " alt="" coords="367,107,235,150,233,145,365,101"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="289,152,362,177"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="390,106,349,144,346,141,386,102"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="403,225,466,251"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="405,104,431,211,426,213,400,105"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="507,225,570,251"/>
-<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="455,101,498,119,518,133,534,150,542,165,545,181,546,211,540,212,540,182,537,167,530,154,514,137,495,123,453,106"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="595,152,661,177"/>
-<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="437,101,582,146,580,151,436,107"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="685,152,776,177"/>
-<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="454,101,673,148,672,153,453,107"/>
-<area shape="rect" id="Node000010" href="$point_8hpp.html" title="Point class representing a point in a feature space." alt="" coords="437,152,520,177"/>
-<area shape="poly" id="edge10_Node000004_Node000010" title=" " alt="" coords="414,102,458,141,454,145,411,106"/>
-<area shape="poly" id="edge12_Node000010_Node000006" title=" " alt="" coords="474,179,451,215,447,212,469,176"/>
-<area shape="poly" id="edge11_Node000010_Node000007" title=" " alt="" coords="491,176,522,213,518,217,487,179"/>
+<area shape="rect" id="Node000001" title="Utility functions for the command&#45;line interface." alt="" coords="102,5,238,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,155,77,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,34,64,145,60,141,157,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="100,155,240,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,33,173,139,168,139,168,33"/>
+<area shape="rect" id="Node000004" href="$filesUtils_8hpp.html" title="Utility functions for file handling." alt="" coords="319,80,416,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,30,320,72,318,77,204,35"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="319,107,92,156,91,151,318,102"/>
+<area shape="poly" id="edge13_Node000004_Node000003" title=" " alt="" coords="334,110,220,151,218,146,332,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="264,155,330,181"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="357,109,322,145,318,142,353,105"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="372,229,430,256"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="373,107,397,214,392,215,368,108"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="471,229,528,256"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="418,103,459,122,478,136,494,153,505,183,506,214,501,214,500,184,489,156,475,140,456,126,416,108"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="555,155,615,181"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="406,105,541,149,539,154,405,110"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="639,155,720,181"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="417,103,624,151,623,156,416,109"/>
+<area shape="rect" id="Node000010" href="$point_8hpp.html" title="Point class representing a point in a feature space." alt="" coords="405,155,480,181"/>
+<area shape="poly" id="edge10_Node000004_Node000010" title=" " alt="" coords="383,105,421,142,417,146,379,109"/>
+<area shape="poly" id="edge12_Node000010_Node000006" title=" " alt="" coords="437,183,418,217,413,215,433,181"/>
+<area shape="poly" id="edge11_Node000010_Node000007" title=" " alt="" coords="454,180,482,215,478,219,450,184"/>
 </map>

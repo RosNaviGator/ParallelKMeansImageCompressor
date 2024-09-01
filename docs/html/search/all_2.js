@@ -9,7 +9,7 @@ var searchData=
   ['compression_5fchoice_6',['compression_choice',['../classkm_1_1ConfigReader.html#aaa3378e3a63d79ed891d6949d64bc16c',1,'km::ConfigReader']]],
   ['compressionchoices_7',['compressionChoices',['../namespacekm_1_1utilsCLI.html#a520989c4e32a67049da3ebe712c6a18d',1,'km::utilsCLI']]],
   ['compressor_8',['Parallel Kmeans Images Compressor',['../index.html',1,'']]],
-  ['configreader_9',['configreader',['../classkm_1_1ConfigReader.html',1,'km::ConfigReader'],['../classkm_1_1ConfigReader.html#a90c639b06e53c898c9f394deee245a36',1,'km::ConfigReader::ConfigReader()']]],
+  ['configreader_9',['ConfigReader',['../classkm_1_1ConfigReader.html',1,'km::ConfigReader'],['../classkm_1_1ConfigReader.html#a90c639b06e53c898c9f394deee245a36',1,'km::ConfigReader::ConfigReader()']]],
   ['configreader_2ehpp_10',['configReader.hpp',['../configReader_8hpp.html',1,'']]],
   ['createdecodingmenu_11',['createDecodingMenu',['../namespacekm_1_1filesUtils.html#a57a5180e651f1cfe50f2eadeea1f0438',1,'km::filesUtils']]],
   ['createoropencsv_12',['createOrOpenCSV',['../classkm_1_1Performance.html#ab52d96c1a1146a332f409ae0bf23c59a',1,'km::Performance']]],

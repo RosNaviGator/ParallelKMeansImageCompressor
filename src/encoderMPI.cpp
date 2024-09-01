@@ -192,5 +192,5 @@ auto main(int argc, char *argv[]) -> int
         std::cout << std::endl;
         std::cout << "The compressed image has been saved in the outputs directory." << std::endl;
     }
-    MPI_Finalize();
+    MPI_Finalize();  
 }

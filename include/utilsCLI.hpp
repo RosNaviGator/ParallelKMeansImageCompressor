@@ -9,6 +9,7 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
 #include <filesUtils.hpp>
+#include <boost/process.hpp>
 
 /**
  * @namespace km::utilsCLI
@@ -19,21 +20,7 @@ namespace km
 {
     namespace utilsCLI
     {
-
-        /**
-         * @brief Displays the header for the sequential encoder
-         */
-        void sequentialEncoderHeader();
-
-        /**
-         * @brief Displays the header for the MPI encoder
-         */
-        void mpiEncoderHeader();
-
-        /**
-         * @brief Displays the header for the OpenMP encoder
-         */
-        void ompEncoderHeader();
+        
         /**
          * @brief Displays the main menu header
          */
@@ -48,16 +35,6 @@ namespace km
          * @brief Displays the work done message
          */
         void workDone();
-
-        /**
-         * @brief Handles the compression choices
-         * @param levelsColorsChoice Choice of color levels
-         * @param typeCompressionChoice Choice of compression type
-         * @param outputPath Output path
-         * @param image Input image
-         * @param executionStandard Execution standard
-         */
-        void compressionChoices(int &levelsColorsChoice, int &typeCompressionChoice, std::string &outputPath, cv::Mat &image, int executionStandard);
 
         /**
          * @brief Prints the compression information

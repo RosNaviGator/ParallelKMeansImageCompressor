@@ -67,10 +67,9 @@ int main(int argc, char *argv[])
         }
 
         performance.fillPerformance(typeCompressionChoice, fileName, "CUDA");
-    }
-    else
-    {
-        compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image, 1);
+    }else{
+        std::cerr << "Error: Invalid number of arguments." << std::endl;
+        return 1;
     }
     int originalHeight = image.rows;
     int originalWidth = image.cols;

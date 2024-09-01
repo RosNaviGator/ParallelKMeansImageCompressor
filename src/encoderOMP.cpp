@@ -61,8 +61,6 @@ auto main(int argc, char *argv[]) -> int
         num_threads = std::stoi(args[4]);
         omp_set_num_threads(num_threads);
     }
-        
-
     
 
     if (argc == NUMBER_OF_ARGS_DEFINING_THREADS || argc == NUMBER_OF_ARGS_WITHOUT_THREADS)

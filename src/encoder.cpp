@@ -63,13 +63,10 @@ auto main(int argc, char *argv[]) -> int
 
         performance.fillPerformance(typeCompressionChoice, fileName, "Sequential");
 
+    }else{
+        std::cerr << "Error: Invalid number of arguments." << std::endl;
+        return 1;
     }
-    else
-    {
-        // ask inputs at runtime
-        compressionChoices(levelsColorsChioce, typeCompressionChoice, outputPath, image,1);
-    }
-
     int originalHeight = image.rows;
     int originalWidth = image.cols;
 

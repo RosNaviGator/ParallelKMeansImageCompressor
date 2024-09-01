@@ -2,6 +2,7 @@
 #include <utilsCLI.hpp>
 #include <filesystem>
 #include <configReader.hpp>
+#include <boost/process.hpp>
 
 using namespace km;
 using namespace km::utilsCLI;
@@ -9,7 +10,7 @@ using namespace km::filesUtils;
 
 auto main() -> int
 {
-
+    namespace bp = boost::process;
     int color_choice = 0 ;
     int compressionChoice = 0;
     std::filesystem::path inputImageFilePath;
@@ -176,11 +177,11 @@ auto main() -> int
         }
         else if (compressorChoice == 4)
         {
-            std::system("./build/cudaEncoder");
+            command = "./build/cudaEncoder ";
         }
 
         command += inputImageFilePath.string() + " " + std::to_string(color_choice) + " " + std::to_string(compressionChoice);
-        system(command.c_str());
+        bp::system(command);
     }
 
     

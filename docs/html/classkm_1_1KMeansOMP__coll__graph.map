@@ -1,5 +1,5 @@
 <map id="km::KMeansOMP" name="km::KMeansOMP">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,131,107"/>
-<area shape="rect" id="Node000002" href="$classkm_1_1KMeansBase.html" title=" " alt="" coords="5,5,131,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,48,71,80,65,80,65,48"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="20,431,192,545"/>
+<area shape="rect" id="Node000002" href="$classkm_1_1KMeansBase.html" title=" " alt="" coords="5,5,207,383"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,396,109,430,103,430,103,396"/>
 </map>

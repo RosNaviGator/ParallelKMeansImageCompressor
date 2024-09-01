@@ -11,7 +11,8 @@ Utility functions for image processing.
 {\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
 {\ttfamily \#include $<$config\+Reader.\+hpp$>$}\newline
 {\ttfamily \#include $<$point.\+hpp$>$}\newline
-Include dependency graph for images\+Utils.\+hpp\+:\nopagebreak
+Include dependency graph for images\+Utils.\+hpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,77 +22,21 @@ Include dependency graph for images\+Utils.\+hpp\+:\nopagebreak
 \doxysubsubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
-namespace \mbox{\hyperlink{namespaceimageUtils}{image\+Utils}}
-\begin{DoxyCompactList}\small\item\em Provides utility functions for image processing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+namespace \mbox{\hyperlink{namespacekm_1_1imageUtils}{km\+::image\+Utils}}
+\begin{DoxyCompactList}\small\item\em Provides utility functions for image processing. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespacekm}{km}}
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{imagesUtils_8hpp_aa01205ffe26b0f4c815d5750a4ff0e1c}{km\+::image\+Utils\+::preprocessing}} (cv\+::\+Mat \&image, int \&type\+Compression\+Choice)
+void \mbox{\hyperlink{namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c}{km\+::image\+Utils\+::preprocessing}} (cv\+::\+Mat \&image, int \&type\+Compression\+Choice)
 \begin{DoxyCompactList}\small\item\em Performs preprocessing on an image. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{imagesUtils_8hpp_aef1b51decbf6f0f0ca5c53e20ebbfadb}{km\+::image\+Utils\+::define\+KValue}} (int \&k, int levels\+Colors\+Choice, std\+::set$<$ std\+::vector$<$ unsigned char $>$ $>$ \&different\+\_\+colors)
+void \mbox{\hyperlink{namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb}{km\+::image\+Utils\+::define\+KValue}} (int \&k, int levels\+Colors\+Choice, std\+::set$<$ std\+::vector$<$ unsigned char $>$ $>$ \&different\+\_\+colors)
 \begin{DoxyCompactList}\small\item\em Defines the value of K based on the color levels choice. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{imagesUtils_8hpp_a5a09c5c3205050498f807852bafe244f}{km\+::image\+Utils\+::points\+From\+Image}} (cv\+::\+Mat \&image, std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&points, std\+::set$<$ std\+::vector$<$ unsigned char $>$ $>$ \&different\+\_\+colors)
+void \mbox{\hyperlink{namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244f}{km\+::image\+Utils\+::points\+From\+Image}} (cv\+::\+Mat \&image, std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&points, std\+::set$<$ std\+::vector$<$ unsigned char $>$ $>$ \&different\+\_\+colors)
 \begin{DoxyCompactList}\small\item\em Extracts points from an image. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Utility functions for image processing. 
 
-
-
-\doxysubsection{Function Documentation}
-\Hypertarget{imagesUtils_8hpp_aef1b51decbf6f0f0ca5c53e20ebbfadb}\index{imagesUtils.hpp@{imagesUtils.hpp}!defineKValue@{defineKValue}}
-\index{defineKValue@{defineKValue}!imagesUtils.hpp@{imagesUtils.hpp}}
-\doxysubsubsection{\texorpdfstring{defineKValue()}{defineKValue()}}
-{\footnotesize\ttfamily \label{imagesUtils_8hpp_aef1b51decbf6f0f0ca5c53e20ebbfadb} 
-void km\+::image\+Utils\+::define\+KValue (\begin{DoxyParamCaption}\item[{int \&}]{k}{, }\item[{int}]{levels\+Colors\+Choice}{, }\item[{std\+::set$<$ std\+::vector$<$ unsigned char $>$ $>$ \&}]{different\+\_\+colors}{}\end{DoxyParamCaption})}
-
-
-
-Defines the value of K based on the color levels choice. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em k} & Value of K \\
-\hline
-{\em levels\+Colors\+Choice} & Levels of colors choice \\
-\hline
-{\em different\+\_\+colors} & Set of different colors in the image \\
-\hline
-\end{DoxyParams}
-\Hypertarget{imagesUtils_8hpp_a5a09c5c3205050498f807852bafe244f}\index{imagesUtils.hpp@{imagesUtils.hpp}!pointsFromImage@{pointsFromImage}}
-\index{pointsFromImage@{pointsFromImage}!imagesUtils.hpp@{imagesUtils.hpp}}
-\doxysubsubsection{\texorpdfstring{pointsFromImage()}{pointsFromImage()}}
-{\footnotesize\ttfamily \label{imagesUtils_8hpp_a5a09c5c3205050498f807852bafe244f} 
-void km\+::image\+Utils\+::points\+From\+Image (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{image}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&}]{points}{, }\item[{std\+::set$<$ std\+::vector$<$ unsigned char $>$ $>$ \&}]{different\+\_\+colors}{}\end{DoxyParamCaption})}
-
-
-
-Extracts points from an image. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em image} & Input image \\
-\hline
-{\em points} & Vector of points \\
-\hline
-{\em different\+\_\+colors} & Set of different colors in the image \\
-\hline
-\end{DoxyParams}
-\Hypertarget{imagesUtils_8hpp_aa01205ffe26b0f4c815d5750a4ff0e1c}\index{imagesUtils.hpp@{imagesUtils.hpp}!preprocessing@{preprocessing}}
-\index{preprocessing@{preprocessing}!imagesUtils.hpp@{imagesUtils.hpp}}
-\doxysubsubsection{\texorpdfstring{preprocessing()}{preprocessing()}}
-{\footnotesize\ttfamily \label{imagesUtils_8hpp_aa01205ffe26b0f4c815d5750a4ff0e1c} 
-void km\+::image\+Utils\+::preprocessing (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{image}{, }\item[{int \&}]{type\+Compression\+Choice}{}\end{DoxyParamCaption})}
-
-
-
-Performs preprocessing on an image. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em image} & Input image \\
-\hline
-{\em type\+Compression\+Choice} & Type of compression choice \\
-\hline
-\end{DoxyParams}

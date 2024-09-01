@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['points_0',['points',['../classkm_1_1KMeansBase.html#a73dfe23dfbb0c544cd128255e291aa05',1,'km::KMeansBase']]]
+  ['local_5fpoints_0',['local_points',['../classkm_1_1KMeansMPI.html#a063b181134bb8869bcc3b30d963e1f5e',1,'km::KMeansMPI']]]
 ];

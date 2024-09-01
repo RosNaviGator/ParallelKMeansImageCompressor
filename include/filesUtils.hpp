@@ -16,7 +16,7 @@
 #include <opencv2/opencv.hpp>
 
 /**
- * @namespace fileUtils
+ * @namespace km::filesUtils
  * @brief Provides utility functions for file handling
  */
 namespace km

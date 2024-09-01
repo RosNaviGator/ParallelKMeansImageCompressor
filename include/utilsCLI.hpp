@@ -11,7 +11,7 @@
 #include <filesUtils.hpp>
 
 /**
- * @namespace UtilsCLI
+ * @namespace km::utilsCLI
  * @brief Provides utility functions for the command-line interface
  */
 

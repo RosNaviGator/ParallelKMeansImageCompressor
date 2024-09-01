@@ -1,0 +1,118 @@
+\doxysection{km\+::files\+Utils Namespace Reference}
+\hypertarget{namespacekm_1_1filesUtils}{}\label{namespacekm_1_1filesUtils}\index{km::filesUtils@{km::filesUtils}}
+
+
+Provides utility functions for file handling.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+auto \mbox{\hyperlink{namespacekm_1_1filesUtils_a7adae051e53e3d42b24cfdd07623189d}{create\+Output\+Directories}} () -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Creates output directories. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespacekm_1_1filesUtils_a34a5a4c62531771f506584e29d033484}{write\+Binary\+File}} (std\+::string \&output\+Path, int \&width, int \&height, int \&k, std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ points, std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ centroids) -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Writes data to a binary file. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespacekm_1_1filesUtils_ae4460cd35ec43306592474e9dd919a16}{is\+Correct\+Extension}} (const std\+::filesystem\+::path \&file\+Path, const std\+::string \&correct\+Extension) -\/$>$ bool
+\begin{DoxyCompactList}\small\item\em Checks if a file has the correct extension. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespacekm_1_1filesUtils_a57a5180e651f1cfe50f2eadeea1f0438}{create\+Decoding\+Menu}} (std\+::filesystem\+::path \&decode\+Dir, std\+::vector$<$ std\+::filesystem\+::path $>$ \&image\+Names) -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Creates a decoding menu. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespacekm_1_1filesUtils_a210cdb1e22d18e8fa05c3a4c0d9708e2}{read\+Binary\+File}} (std\+::string \&path, cv\+::\+Mat \&image\+Compressed) -\/$>$ int
+\begin{DoxyCompactList}\small\item\em Reads a binary file and reconstructs the compressed image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides utility functions for file handling. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacekm_1_1filesUtils_a57a5180e651f1cfe50f2eadeea1f0438}\label{namespacekm_1_1filesUtils_a57a5180e651f1cfe50f2eadeea1f0438} 
+\index{km::filesUtils@{km::filesUtils}!createDecodingMenu@{createDecodingMenu}}
+\index{createDecodingMenu@{createDecodingMenu}!km::filesUtils@{km::filesUtils}}
+\doxysubsubsection{\texorpdfstring{createDecodingMenu()}{createDecodingMenu()}}
+{\footnotesize\ttfamily auto km\+::files\+Utils\+::create\+Decoding\+Menu (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path \&}]{decode\+Dir,  }\item[{std\+::vector$<$ std\+::filesystem\+::path $>$ \&}]{image\+Names }\end{DoxyParamCaption}) -\/$>$  void}
+
+
+
+Creates a decoding menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em decode\+Dir} & Directory for decoding \\
+\hline
+{\em image\+Names} & Vector of image names \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacekm_1_1filesUtils_a7adae051e53e3d42b24cfdd07623189d}\label{namespacekm_1_1filesUtils_a7adae051e53e3d42b24cfdd07623189d} 
+\index{km::filesUtils@{km::filesUtils}!createOutputDirectories@{createOutputDirectories}}
+\index{createOutputDirectories@{createOutputDirectories}!km::filesUtils@{km::filesUtils}}
+\doxysubsubsection{\texorpdfstring{createOutputDirectories()}{createOutputDirectories()}}
+{\footnotesize\ttfamily auto km\+::files\+Utils\+::create\+Output\+Directories (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$  void}
+
+
+
+Creates output directories. 
+
+\Hypertarget{namespacekm_1_1filesUtils_ae4460cd35ec43306592474e9dd919a16}\label{namespacekm_1_1filesUtils_ae4460cd35ec43306592474e9dd919a16} 
+\index{km::filesUtils@{km::filesUtils}!isCorrectExtension@{isCorrectExtension}}
+\index{isCorrectExtension@{isCorrectExtension}!km::filesUtils@{km::filesUtils}}
+\doxysubsubsection{\texorpdfstring{isCorrectExtension()}{isCorrectExtension()}}
+{\footnotesize\ttfamily auto km\+::files\+Utils\+::is\+Correct\+Extension (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{file\+Path,  }\item[{const std\+::string \&}]{correct\+Extension }\end{DoxyParamCaption}) -\/$>$  bool}
+
+
+
+Checks if a file has the correct extension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & Path of the file \\
+\hline
+{\em correct\+Extension} & Correct extension to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the file has the correct extension, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{namespacekm_1_1filesUtils_a210cdb1e22d18e8fa05c3a4c0d9708e2}\label{namespacekm_1_1filesUtils_a210cdb1e22d18e8fa05c3a4c0d9708e2} 
+\index{km::filesUtils@{km::filesUtils}!readBinaryFile@{readBinaryFile}}
+\index{readBinaryFile@{readBinaryFile}!km::filesUtils@{km::filesUtils}}
+\doxysubsubsection{\texorpdfstring{readBinaryFile()}{readBinaryFile()}}
+{\footnotesize\ttfamily auto km\+::files\+Utils\+::read\+Binary\+File (\begin{DoxyParamCaption}\item[{std\+::string \&}]{path,  }\item[{cv\+::\+Mat \&}]{image\+Compressed }\end{DoxyParamCaption}) -\/$>$  int}
+
+
+
+Reads a binary file and reconstructs the compressed image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path of the binary file \\
+\hline
+{\em image\+Compressed} & Compressed image matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of clusters 
+\end{DoxyReturn}
+\Hypertarget{namespacekm_1_1filesUtils_a34a5a4c62531771f506584e29d033484}\label{namespacekm_1_1filesUtils_a34a5a4c62531771f506584e29d033484} 
+\index{km::filesUtils@{km::filesUtils}!writeBinaryFile@{writeBinaryFile}}
+\index{writeBinaryFile@{writeBinaryFile}!km::filesUtils@{km::filesUtils}}
+\doxysubsubsection{\texorpdfstring{writeBinaryFile()}{writeBinaryFile()}}
+{\footnotesize\ttfamily auto km\+::files\+Utils\+::write\+Binary\+File (\begin{DoxyParamCaption}\item[{std\+::string \&}]{output\+Path,  }\item[{int \&}]{width,  }\item[{int \&}]{height,  }\item[{int \&}]{k,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$}]{points,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$}]{centroids }\end{DoxyParamCaption}) -\/$>$  void}
+
+
+
+Writes data to a binary file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+Path} & Path of the output file \\
+\hline
+{\em width} & Width of the image \\
+\hline
+{\em height} & Height of the image \\
+\hline
+{\em k} & Number of clusters \\
+\hline
+{\em points} & Vector of points \\
+\hline
+{\em centroids} & Vector of centroids \\
+\hline
+\end{DoxyParams}

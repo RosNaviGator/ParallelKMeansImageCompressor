@@ -38,7 +38,7 @@ auto main() -> int
 
     if(encodeOrDecode == 2)
     {
-        std::system("./build/decoder");
+        bp::system("./build/decoder");
     }else if (encodeOrDecode == 1)                      
     {
         std::cout << "You chose to compress an image!"<< "\n";

@@ -1,5 +1,5 @@
 <map id="km::KMeansOMP" name="km::KMeansOMP">
-<area shape="rect" id="Node000001" title="Represents the K&#45;means clustering algorithm using OpenMP." alt="" coords="17,459,173,581"/>
-<area shape="rect" id="Node000002" href="$classkm_1_1KMeansBase.html" title="Base class for K&#45;means clustering algorithm." alt="" coords="5,5,185,411"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="17,459,173,581"/>
+<area shape="rect" id="Node000002" href="$classkm_1_1KMeansBase.html" title=" " alt="" coords="5,5,185,411"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,426,98,459,93,459,93,426"/>
 </map>

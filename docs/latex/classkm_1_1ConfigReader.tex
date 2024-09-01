@@ -79,6 +79,8 @@ std\+::unordered\+\_\+set$<$ std\+::string $>$ \mbox{\hyperlink{classkm_1_1Confi
 \doxysubsection{Detailed Description}
 Reads and stores configuration values from a file. 
 
+The \doxylink{classkm_1_1ConfigReader}{Config\+Reader} class, located within the km namespace, is designed to handle the reading and storage of configuration settings from a file. This class is particularly focused on managing settings for image processing and compression. It holds various parameters such as compression color values for different levels, resizing factors, color choices, and compression choices, which are essential for tailoring the behavior of image processing operations. The class also manages the input image file path, allowing it to reference the specific files needed for processing. A regular expression pattern is included for validating or extracting configuration details, and a set of required variables is maintained to ensure that all necessary configuration options are present. The class provides several getter methods to access these stored settings, ensuring that they can be easily retrieved by other parts of the application. Additionally, it includes a method to read and validate the configuration file, ensuring that all required parameters are correctly set up before proceeding with any image processing tasks. 
+
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{classkm_1_1ConfigReader_a90c639b06e53c898c9f394deee245a36}\index{km::ConfigReader@{km::ConfigReader}!ConfigReader@{ConfigReader}}
 \index{ConfigReader@{ConfigReader}!km::ConfigReader@{km::ConfigReader}}
@@ -86,6 +88,14 @@ Reads and stores configuration values from a file.
 {\footnotesize\ttfamily \label{classkm_1_1ConfigReader_a90c639b06e53c898c9f394deee245a36} 
 km\+::\+Config\+Reader\+::\+Config\+Reader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkm_1_1ConfigReader_a90c639b06e53c898c9f394deee245a36_cgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Function Documentation}
@@ -93,13 +103,13 @@ km\+::\+Config\+Reader\+::\+Config\+Reader (\begin{DoxyParamCaption}{}{}\end{Dox
 \index{checkVariableExists@{checkVariableExists}!km::ConfigReader@{km::ConfigReader}}
 \doxysubsubsection{\texorpdfstring{checkVariableExists()}{checkVariableExists()}}
 {\footnotesize\ttfamily \label{classkm_1_1ConfigReader_ac0003067ed39059f86c42be35a5d32d7} 
-auto km\+::\+Config\+Reader\+::check\+Variable\+Exists (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{variable\+Name}{}\end{DoxyParamCaption}) const -\/$>$  bool\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [private]}}
+auto km\+::\+Config\+Reader\+::check\+Variable\+Exists (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{variable\+Name}{}\end{DoxyParamCaption}) const -\/$>$ bool\hspace{0.3cm}{\ttfamily [nodiscard]}, {\ttfamily [private]}}
 
 \Hypertarget{classkm_1_1ConfigReader_a15bc4894d9b8398a19ced91b3b75867e}\index{km::ConfigReader@{km::ConfigReader}!getColorChoice@{getColorChoice}}
 \index{getColorChoice@{getColorChoice}!km::ConfigReader@{km::ConfigReader}}
 \doxysubsubsection{\texorpdfstring{getColorChoice()}{getColorChoice()}}
 {\footnotesize\ttfamily \label{classkm_1_1ConfigReader_a15bc4894d9b8398a19ced91b3b75867e} 
-auto km\+::\+Config\+Reader\+::get\+Color\+Choice (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  int\hspace{0.3cm}{\ttfamily [nodiscard]}}
+auto km\+::\+Config\+Reader\+::get\+Color\+Choice (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$ int\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
@@ -108,11 +118,19 @@ Gets the color choice.
 \begin{DoxyReturn}{Returns}
 Color choice 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{classkm_1_1ConfigReader_a15bc4894d9b8398a19ced91b3b75867e_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classkm_1_1ConfigReader_acbca77b6a8383ac0ae6c28f1a34e2259}\index{km::ConfigReader@{km::ConfigReader}!getCompressionChoice@{getCompressionChoice}}
 \index{getCompressionChoice@{getCompressionChoice}!km::ConfigReader@{km::ConfigReader}}
 \doxysubsubsection{\texorpdfstring{getCompressionChoice()}{getCompressionChoice()}}
 {\footnotesize\ttfamily \label{classkm_1_1ConfigReader_acbca77b6a8383ac0ae6c28f1a34e2259} 
-auto km\+::\+Config\+Reader\+::get\+Compression\+Choice (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  int\hspace{0.3cm}{\ttfamily [nodiscard]}}
+auto km\+::\+Config\+Reader\+::get\+Compression\+Choice (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$ int\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
@@ -121,11 +139,19 @@ Gets the compression choice.
 \begin{DoxyReturn}{Returns}
 Compression choice 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classkm_1_1ConfigReader_acbca77b6a8383ac0ae6c28f1a34e2259_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classkm_1_1ConfigReader_a532eced302fd72113c7359aa1d08faab}\index{km::ConfigReader@{km::ConfigReader}!getFifthLevelCompressionColor@{getFifthLevelCompressionColor}}
 \index{getFifthLevelCompressionColor@{getFifthLevelCompressionColor}!km::ConfigReader@{km::ConfigReader}}
 \doxysubsubsection{\texorpdfstring{getFifthLevelCompressionColor()}{getFifthLevelCompressionColor()}}
 {\footnotesize\ttfamily \label{classkm_1_1ConfigReader_a532eced302fd72113c7359aa1d08faab} 
-auto km\+::\+Config\+Reader\+::get\+Fifth\+Level\+Compression\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  double\hspace{0.3cm}{\ttfamily [nodiscard]}}
+auto km\+::\+Config\+Reader\+::get\+Fifth\+Level\+Compression\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$ double\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
@@ -134,11 +160,19 @@ Gets the fifth level compression color value.
 \begin{DoxyReturn}{Returns}
 Fifth level compression color value 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkm_1_1ConfigReader_a532eced302fd72113c7359aa1d08faab_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classkm_1_1ConfigReader_a787856a51a8817148108650a664f5738}\index{km::ConfigReader@{km::ConfigReader}!getFirstLevelCompressionColor@{getFirstLevelCompressionColor}}
 \index{getFirstLevelCompressionColor@{getFirstLevelCompressionColor}!km::ConfigReader@{km::ConfigReader}}
 \doxysubsubsection{\texorpdfstring{getFirstLevelCompressionColor()}{getFirstLevelCompressionColor()}}
 {\footnotesize\ttfamily \label{classkm_1_1ConfigReader_a787856a51a8817148108650a664f5738} 
-auto km\+::\+Config\+Reader\+::get\+First\+Level\+Compression\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  double\hspace{0.3cm}{\ttfamily [nodiscard]}}
+auto km\+::\+Config\+Reader\+::get\+First\+Level\+Compression\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$ double\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
@@ -147,11 +181,19 @@ Gets the first level compression color value.
 \begin{DoxyReturn}{Returns}
 First level compression color value 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkm_1_1ConfigReader_a787856a51a8817148108650a664f5738_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classkm_1_1ConfigReader_a0a13dd20b33346486e13a87a9a52e4e5}\index{km::ConfigReader@{km::ConfigReader}!getFourthLevelCompressionColor@{getFourthLevelCompressionColor}}
 \index{getFourthLevelCompressionColor@{getFourthLevelCompressionColor}!km::ConfigReader@{km::ConfigReader}}
 \doxysubsubsection{\texorpdfstring{getFourthLevelCompressionColor()}{getFourthLevelCompressionColor()}}
 {\footnotesize\ttfamily \label{classkm_1_1ConfigReader_a0a13dd20b33346486e13a87a9a52e4e5} 
-auto km\+::\+Config\+Reader\+::get\+Fourth\+Level\+Compression\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  double\hspace{0.3cm}{\ttfamily [nodiscard]}}
+auto km\+::\+Config\+Reader\+::get\+Fourth\+Level\+Compression\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$ double\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
@@ -160,11 +202,19 @@ Gets the fourth level compression color value.
 \begin{DoxyReturn}{Returns}
 Fourth level compression color value 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkm_1_1ConfigReader_a0a13dd20b33346486e13a87a9a52e4e5_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classkm_1_1ConfigReader_a237ced5b25d092bc8de9b55953f923be}\index{km::ConfigReader@{km::ConfigReader}!getInputImageFilePath@{getInputImageFilePath}}
 \index{getInputImageFilePath@{getInputImageFilePath}!km::ConfigReader@{km::ConfigReader}}
 \doxysubsubsection{\texorpdfstring{getInputImageFilePath()}{getInputImageFilePath()}}
 {\footnotesize\ttfamily \label{classkm_1_1ConfigReader_a237ced5b25d092bc8de9b55953f923be} 
-auto km\+::\+Config\+Reader\+::get\+Input\+Image\+File\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  std\+::filesystem\+::path\hspace{0.3cm}{\ttfamily [nodiscard]}}
+auto km\+::\+Config\+Reader\+::get\+Input\+Image\+File\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$ std\+::filesystem\+::path\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
@@ -173,11 +223,19 @@ Gets the input image file path.
 \begin{DoxyReturn}{Returns}
 Input image file path 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classkm_1_1ConfigReader_a237ced5b25d092bc8de9b55953f923be_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classkm_1_1ConfigReader_a6067e8491ad1fdbb5f62b33ef215208e}\index{km::ConfigReader@{km::ConfigReader}!getResizingFactor@{getResizingFactor}}
 \index{getResizingFactor@{getResizingFactor}!km::ConfigReader@{km::ConfigReader}}
 \doxysubsubsection{\texorpdfstring{getResizingFactor()}{getResizingFactor()}}
 {\footnotesize\ttfamily \label{classkm_1_1ConfigReader_a6067e8491ad1fdbb5f62b33ef215208e} 
-auto km\+::\+Config\+Reader\+::get\+Resizing\+Factor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  double\hspace{0.3cm}{\ttfamily [nodiscard]}}
+auto km\+::\+Config\+Reader\+::get\+Resizing\+Factor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$ double\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
@@ -186,11 +244,19 @@ Gets the resizing factor.
 \begin{DoxyReturn}{Returns}
 Resizing factor 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkm_1_1ConfigReader_a6067e8491ad1fdbb5f62b33ef215208e_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classkm_1_1ConfigReader_a12968b54f38b17586d6e65be5158d275}\index{km::ConfigReader@{km::ConfigReader}!getSecondLevelCompressionColor@{getSecondLevelCompressionColor}}
 \index{getSecondLevelCompressionColor@{getSecondLevelCompressionColor}!km::ConfigReader@{km::ConfigReader}}
 \doxysubsubsection{\texorpdfstring{getSecondLevelCompressionColor()}{getSecondLevelCompressionColor()}}
 {\footnotesize\ttfamily \label{classkm_1_1ConfigReader_a12968b54f38b17586d6e65be5158d275} 
-auto km\+::\+Config\+Reader\+::get\+Second\+Level\+Compression\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  double\hspace{0.3cm}{\ttfamily [nodiscard]}}
+auto km\+::\+Config\+Reader\+::get\+Second\+Level\+Compression\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$ double\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
@@ -199,11 +265,19 @@ Gets the second level compression color value.
 \begin{DoxyReturn}{Returns}
 Second level compression color value 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkm_1_1ConfigReader_a12968b54f38b17586d6e65be5158d275_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classkm_1_1ConfigReader_a0e355597d2a6f4c1f01e91da11fbd577}\index{km::ConfigReader@{km::ConfigReader}!getThirdLevelCompressionColor@{getThirdLevelCompressionColor}}
 \index{getThirdLevelCompressionColor@{getThirdLevelCompressionColor}!km::ConfigReader@{km::ConfigReader}}
 \doxysubsubsection{\texorpdfstring{getThirdLevelCompressionColor()}{getThirdLevelCompressionColor()}}
 {\footnotesize\ttfamily \label{classkm_1_1ConfigReader_a0e355597d2a6f4c1f01e91da11fbd577} 
-auto km\+::\+Config\+Reader\+::get\+Third\+Level\+Compression\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  double\hspace{0.3cm}{\ttfamily [nodiscard]}}
+auto km\+::\+Config\+Reader\+::get\+Third\+Level\+Compression\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$ double\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
@@ -212,11 +286,19 @@ Gets the third level compression color value.
 \begin{DoxyReturn}{Returns}
 Third level compression color value 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkm_1_1ConfigReader_a0e355597d2a6f4c1f01e91da11fbd577_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classkm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50}\index{km::ConfigReader@{km::ConfigReader}!readConfigFile@{readConfigFile}}
 \index{readConfigFile@{readConfigFile}!km::ConfigReader@{km::ConfigReader}}
 \doxysubsubsection{\texorpdfstring{readConfigFile()}{readConfigFile()}}
 {\footnotesize\ttfamily \label{classkm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50} 
-auto km\+::\+Config\+Reader\+::read\+Config\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) -\/$>$  bool\hspace{0.3cm}{\ttfamily [nodiscard]}}
+auto km\+::\+Config\+Reader\+::read\+Config\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) -\/$>$ bool\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
@@ -225,6 +307,14 @@ Reads the configuration file.
 \begin{DoxyReturn}{Returns}
 True if the configuration file is read successfully, false otherwise 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50_icgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Data Documentation}
@@ -340,6 +430,7 @@ Third level compression color value.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/\mbox{\hyperlink{configReader_8hpp}{config\+Reader.\+hpp}}\end{DoxyCompactItemize}
+include/\mbox{\hyperlink{configReader_8hpp}{config\+Reader.\+hpp}}\item 
+src/\mbox{\hyperlink{configReader_8cpp}{config\+Reader.\+cpp}}\end{DoxyCompactItemize}

@@ -16,6 +16,7 @@ namespace km
     /**
      * @class ConfigReader
      * @brief Reads and stores configuration values from a file
+     * @details The ConfigReader class, located within the km namespace, is designed to handle the reading and storage of configuration settings from a file. This class is particularly focused on managing settings for image processing and compression. It holds various parameters such as compression color values for different levels, resizing factors, color choices, and compression choices, which are essential for tailoring the behavior of image processing operations. The class also manages the input image file path, allowing it to reference the specific files needed for processing. A regular expression pattern is included for validating or extracting configuration details, and a set of required variables is maintained to ensure that all necessary configuration options are present. The class provides several getter methods to access these stored settings, ensuring that they can be easily retrieved by other parts of the application. Additionally, it includes a method to read and validate the configuration file, ensuring that all required parameters are correctly set up before proceeding with any image processing tasks.
      */
 
     class ConfigReader

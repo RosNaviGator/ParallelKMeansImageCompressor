@@ -1,0 +1,5 @@
+<map id="km::filesUtils::createDecodingMenu" name="km::filesUtils::createDecodingMenu">
+<area shape="rect" id="Node000001" title="Creates a decoding menu." alt="" coords="5,13,235,40"/>
+<area shape="rect" id="Node000002" href="$namespacekm_1_1filesUtils.html#ae4460cd35ec43306592474e9dd919a16" title="Checks if a file has the correct extension." alt="" coords="283,5,442,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,24,267,24,267,29,235,29"/>
+</map>

@@ -1,0 +1,28 @@
+\usepackage{etoolbox}
+
+% Adjust space before and after section titles
+\patchcmd{\section}
+  {\vspace{-3.5ex plus -1ex minus -.2ex}}
+  {\vspace{-3.5ex plus -1ex minus -.2ex} \vspace{1em}}
+  {}{}
+
+\patchcmd{\subsection}
+  {\vspace{-3.25ex plus -1ex minus -.2ex}}
+  {\vspace{-3.25ex plus -1ex minus -.2ex} \vspace{0.75em}}
+  {}{}
+
+\patchcmd{\subsubsection}
+  {\vspace{-3ex plus -1ex minus -.2ex}}
+  {\vspace{-3ex plus -1ex minus -.2ex} \vspace{0.5em}}
+  {}{}
+
+\renewcommand{\tiny}{\fontsize{5}{6}\selectfont}
+\renewcommand{\scriptsize}{\fontsize{6}{7}\selectfont}
+\renewcommand{\footnotesize}{\fontsize{7}{8}\selectfont}
+\renewcommand{\small}{\fontsize{8}{9.5}\selectfont}
+\renewcommand{\normalsize}{\fontsize{9}{11}\selectfont}
+\renewcommand{\large}{\fontsize{10}{12}\selectfont}
+\renewcommand{\Large}{\fontsize{12}{14}\selectfont}
+\renewcommand{\LARGE}{\fontsize{14}{16}\selectfont}
+\renewcommand{\huge}{\fontsize{16}{18}\selectfont}
+\renewcommand{\Huge}{\fontsize{18}{20}\selectfont}

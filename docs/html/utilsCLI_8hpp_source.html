@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ParallelKmenasIgnageCompressor: include/utilsCLI.hpp Source File</title>
+<title>ParallelKmeansImageCompressor: include/utilsCLI.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ParallelKmenasIgnageCompressor
+   <div id="projectname">ParallelKmeansImageCompressor
    </div>
   </td>
  </tr>
@@ -98,47 +98,37 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;opencv2/opencv.hpp&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="filesUtils_8hpp.html">filesUtils.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacekm.html">km</a></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">namespace </span>utilsCLI</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespacekm_1_1utilsCLI.html#ae7ea0f57b4253f4e2f78104cb862b5d4">   26</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespacekm_1_1utilsCLI.html#ae7ea0f57b4253f4e2f78104cb862b5d4">sequentialEncoderHeader</a>();</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="namespacekm_1_1utilsCLI.html#a1d81d20821e6036179418f619d9fa936">   31</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespacekm_1_1utilsCLI.html#a1d81d20821e6036179418f619d9fa936">mpiEncoderHeader</a>();</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="namespacekm_1_1utilsCLI.html#ac8bfc1efcbc6bd6460864b7323e39c41">   36</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespacekm_1_1utilsCLI.html#ac8bfc1efcbc6bd6460864b7323e39c41">ompEncoderHeader</a>();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespacekm_1_1utilsCLI.html#a587fc1cc3f9761ff58bd6e70f90bd1a1">   40</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespacekm_1_1utilsCLI.html#a587fc1cc3f9761ff58bd6e70f90bd1a1">mainMenuHeader</a>();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespacekm_1_1utilsCLI.html#a49ee3c94571b62a729a2ba98db2b1a52">   45</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespacekm_1_1utilsCLI.html#a49ee3c94571b62a729a2ba98db2b1a52">decoderHeader</a>();</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="namespacekm_1_1utilsCLI.html#ac67f75f5e367779691a03add1dceaaa7">   50</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespacekm_1_1utilsCLI.html#ac67f75f5e367779691a03add1dceaaa7">workDone</a>();</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="namespacekm_1_1utilsCLI.html#a520989c4e32a67049da3ebe712c6a18d">   60</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespacekm_1_1utilsCLI.html#a520989c4e32a67049da3ebe712c6a18d">compressionChoices</a>(<span class="keywordtype">int</span> &amp;levelsColorsChoice, <span class="keywordtype">int</span> &amp;typeCompressionChoice, std::string &amp;outputPath, cv::Mat &amp;image, <span class="keywordtype">int</span> executionStandard);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="namespacekm_1_1utilsCLI.html#ae362e74bbc04f2d92c857f4cb9c1373d">   71</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespacekm_1_1utilsCLI.html#ae362e74bbc04f2d92c857f4cb9c1373d">printCompressionInformations</a>(<span class="keywordtype">int</span> &amp;originalWidth, <span class="keywordtype">int</span> &amp;originalHeight, <span class="keywordtype">int</span> &amp;width, <span class="keywordtype">int</span> &amp;height, <span class="keywordtype">int</span> &amp;k, <span class="keywordtype">size_t</span> &amp;different_colors_size);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="namespacekm_1_1utilsCLI.html#abc310e29d2e842694962a675c676c718">   79</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespacekm_1_1utilsCLI.html#abc310e29d2e842694962a675c676c718">displayDecodingMenu</a>(std::string &amp;path, std::vector&lt;std::filesystem::path&gt; &amp;imageNames, std::filesystem::path &amp;decodeDir);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    };</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif </span><span class="comment">// UTILSCLI_HPP</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;boost/process.hpp&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacekm.html">km</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">namespace </span>utilsCLI</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespacekm_1_1utilsCLI.html#a587fc1cc3f9761ff58bd6e70f90bd1a1">mainMenuHeader</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespacekm_1_1utilsCLI.html#a49ee3c94571b62a729a2ba98db2b1a52">decoderHeader</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespacekm_1_1utilsCLI.html#ac67f75f5e367779691a03add1dceaaa7">workDone</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespacekm_1_1utilsCLI.html#ae362e74bbc04f2d92c857f4cb9c1373d">printCompressionInformations</a>(<span class="keywordtype">int</span> &amp;originalWidth, <span class="keywordtype">int</span> &amp;originalHeight, <span class="keywordtype">int</span> &amp;width, <span class="keywordtype">int</span> &amp;height, <span class="keywordtype">int</span> &amp;k, <span class="keywordtype">size_t</span> &amp;different_colors_size);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespacekm_1_1utilsCLI.html#abc310e29d2e842694962a675c676c718">displayDecodingMenu</a>(std::string &amp;path, std::vector&lt;std::filesystem::path&gt; &amp;imageNames, std::filesystem::path &amp;decodeDir);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    };</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif </span><span class="comment">// UTILSCLI_HPP</span></div>
 <div class="ttc" id="afilesUtils_8hpp_html"><div class="ttname"><a href="filesUtils_8hpp.html">filesUtils.hpp</a></div><div class="ttdoc">Utility functions for file handling.</div></div>
-<div class="ttc" id="anamespacekm_1_1utilsCLI_html_a1d81d20821e6036179418f619d9fa936"><div class="ttname"><a href="namespacekm_1_1utilsCLI.html#a1d81d20821e6036179418f619d9fa936">km::utilsCLI::mpiEncoderHeader</a></div><div class="ttdeci">void mpiEncoderHeader()</div><div class="ttdoc">Displays the header for the MPI encoder.</div></div>
-<div class="ttc" id="anamespacekm_1_1utilsCLI_html_a49ee3c94571b62a729a2ba98db2b1a52"><div class="ttname"><a href="namespacekm_1_1utilsCLI.html#a49ee3c94571b62a729a2ba98db2b1a52">km::utilsCLI::decoderHeader</a></div><div class="ttdeci">void decoderHeader()</div><div class="ttdoc">Displays the decoder header.</div></div>
-<div class="ttc" id="anamespacekm_1_1utilsCLI_html_a520989c4e32a67049da3ebe712c6a18d"><div class="ttname"><a href="namespacekm_1_1utilsCLI.html#a520989c4e32a67049da3ebe712c6a18d">km::utilsCLI::compressionChoices</a></div><div class="ttdeci">void compressionChoices(int &amp;levelsColorsChoice, int &amp;typeCompressionChoice, std::string &amp;outputPath, cv::Mat &amp;image, int executionStandard)</div><div class="ttdoc">Handles the compression choices.</div></div>
-<div class="ttc" id="anamespacekm_1_1utilsCLI_html_a587fc1cc3f9761ff58bd6e70f90bd1a1"><div class="ttname"><a href="namespacekm_1_1utilsCLI.html#a587fc1cc3f9761ff58bd6e70f90bd1a1">km::utilsCLI::mainMenuHeader</a></div><div class="ttdeci">void mainMenuHeader()</div><div class="ttdoc">Displays the main menu header.</div></div>
-<div class="ttc" id="anamespacekm_1_1utilsCLI_html_abc310e29d2e842694962a675c676c718"><div class="ttname"><a href="namespacekm_1_1utilsCLI.html#abc310e29d2e842694962a675c676c718">km::utilsCLI::displayDecodingMenu</a></div><div class="ttdeci">void displayDecodingMenu(std::string &amp;path, std::vector&lt; std::filesystem::path &gt; &amp;imageNames, std::filesystem::path &amp;decodeDir)</div><div class="ttdoc">Displays the decoding menu.</div></div>
-<div class="ttc" id="anamespacekm_1_1utilsCLI_html_ac67f75f5e367779691a03add1dceaaa7"><div class="ttname"><a href="namespacekm_1_1utilsCLI.html#ac67f75f5e367779691a03add1dceaaa7">km::utilsCLI::workDone</a></div><div class="ttdeci">void workDone()</div><div class="ttdoc">Displays the work done message.</div></div>
-<div class="ttc" id="anamespacekm_1_1utilsCLI_html_ac8bfc1efcbc6bd6460864b7323e39c41"><div class="ttname"><a href="namespacekm_1_1utilsCLI.html#ac8bfc1efcbc6bd6460864b7323e39c41">km::utilsCLI::ompEncoderHeader</a></div><div class="ttdeci">void ompEncoderHeader()</div><div class="ttdoc">Displays the header for the OpenMP encoder.</div></div>
-<div class="ttc" id="anamespacekm_1_1utilsCLI_html_ae362e74bbc04f2d92c857f4cb9c1373d"><div class="ttname"><a href="namespacekm_1_1utilsCLI.html#ae362e74bbc04f2d92c857f4cb9c1373d">km::utilsCLI::printCompressionInformations</a></div><div class="ttdeci">void printCompressionInformations(int &amp;originalWidth, int &amp;originalHeight, int &amp;width, int &amp;height, int &amp;k, size_t &amp;different_colors_size)</div><div class="ttdoc">Prints the compression information.</div></div>
-<div class="ttc" id="anamespacekm_1_1utilsCLI_html_ae7ea0f57b4253f4e2f78104cb862b5d4"><div class="ttname"><a href="namespacekm_1_1utilsCLI.html#ae7ea0f57b4253f4e2f78104cb862b5d4">km::utilsCLI::sequentialEncoderHeader</a></div><div class="ttdeci">void sequentialEncoderHeader()</div><div class="ttdoc">Displays the header for the sequential encoder.</div></div>
+<div class="ttc" id="anamespacekm_1_1utilsCLI_html_a49ee3c94571b62a729a2ba98db2b1a52"><div class="ttname"><a href="namespacekm_1_1utilsCLI.html#a49ee3c94571b62a729a2ba98db2b1a52">km::utilsCLI::decoderHeader</a></div><div class="ttdeci">void decoderHeader()</div><div class="ttdoc">Displays the decoder header.</div><div class="ttdef"><b>Definition</b> utilsCLI.cpp:20</div></div>
+<div class="ttc" id="anamespacekm_1_1utilsCLI_html_a587fc1cc3f9761ff58bd6e70f90bd1a1"><div class="ttname"><a href="namespacekm_1_1utilsCLI.html#a587fc1cc3f9761ff58bd6e70f90bd1a1">km::utilsCLI::mainMenuHeader</a></div><div class="ttdeci">void mainMenuHeader()</div><div class="ttdoc">Displays the main menu header.</div><div class="ttdef"><b>Definition</b> utilsCLI.cpp:3</div></div>
+<div class="ttc" id="anamespacekm_1_1utilsCLI_html_abc310e29d2e842694962a675c676c718"><div class="ttname"><a href="namespacekm_1_1utilsCLI.html#abc310e29d2e842694962a675c676c718">km::utilsCLI::displayDecodingMenu</a></div><div class="ttdeci">void displayDecodingMenu(std::string &amp;path, std::vector&lt; std::filesystem::path &gt; &amp;imageNames, std::filesystem::path &amp;decodeDir)</div><div class="ttdoc">Displays the decoding menu.</div><div class="ttdef"><b>Definition</b> utilsCLI.cpp:66</div></div>
+<div class="ttc" id="anamespacekm_1_1utilsCLI_html_ac67f75f5e367779691a03add1dceaaa7"><div class="ttname"><a href="namespacekm_1_1utilsCLI.html#ac67f75f5e367779691a03add1dceaaa7">km::utilsCLI::workDone</a></div><div class="ttdeci">void workDone()</div><div class="ttdoc">Displays the work done message.</div><div class="ttdef"><b>Definition</b> utilsCLI.cpp:40</div></div>
+<div class="ttc" id="anamespacekm_1_1utilsCLI_html_ae362e74bbc04f2d92c857f4cb9c1373d"><div class="ttname"><a href="namespacekm_1_1utilsCLI.html#ae362e74bbc04f2d92c857f4cb9c1373d">km::utilsCLI::printCompressionInformations</a></div><div class="ttdeci">void printCompressionInformations(int &amp;originalWidth, int &amp;originalHeight, int &amp;width, int &amp;height, int &amp;k, size_t &amp;different_colors_size)</div><div class="ttdoc">Prints the compression information.</div><div class="ttdef"><b>Definition</b> utilsCLI.cpp:57</div></div>
 <div class="ttc" id="anamespacekm_html"><div class="ttname"><a href="namespacekm.html">km</a></div><div class="ttdoc">Main namespace for the project.</div><div class="ttdef"><b>Definition</b> configReader.hpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 1 2024 17:01:40 for ParallelKmenasIgnageCompressor by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

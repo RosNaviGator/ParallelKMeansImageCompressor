@@ -19,6 +19,10 @@ void \mbox{\hyperlink{namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244
 \doxysubsection{Detailed Description}
 Provides utility functions for image processing. 
 
+The \doxylink{namespacekm_1_1imageUtils}{image\+Utils} namespace within the km namespace provides a suite of utility functions aimed at facilitating various image processing tasks. This namespace encompasses functions designed to preprocess images, determine the appropriate number of clusters for color-\/based compression, and extract points from images for further analysis.
+
+The preprocessing function is responsible for preparing an image for subsequent processing steps, adjusting it according to the specified type of compression. The define\+KValue function calculates the number of clusters, or K, based on the chosen levels of colors and the distinct colors present in the image. This function helps in determining the optimal number of clusters for tasks such as color quantization. Lastly, the points\+From\+Image function extracts points from the image and organizes them into a vector, using the set of distinct colors found in the image to aid in this process. These functions collectively support various aspects of image processing, ensuring efficient handling and analysis of image data. 
+
 \doxysubsection{Function Documentation}
 \Hypertarget{namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb}\index{km::imageUtils@{km::imageUtils}!defineKValue@{defineKValue}}
 \index{defineKValue@{defineKValue}!km::imageUtils@{km::imageUtils}}
@@ -39,6 +43,22 @@ Defines the value of K based on the color levels choice.
 {\em different\+\_\+colors} & Set of different colors in the image \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244f}\index{km::imageUtils@{km::imageUtils}!pointsFromImage@{pointsFromImage}}
 \index{pointsFromImage@{pointsFromImage}!km::imageUtils@{km::imageUtils}}
 \doxysubsubsection{\texorpdfstring{pointsFromImage()}{pointsFromImage()}}
@@ -58,6 +78,14 @@ Extracts points from an image.
 {\em different\+\_\+colors} & Set of different colors in the image \\
 \hline
 \end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244f_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c}\index{km::imageUtils@{km::imageUtils}!preprocessing@{preprocessing}}
 \index{preprocessing@{preprocessing}!km::imageUtils@{km::imageUtils}}
 \doxysubsubsection{\texorpdfstring{preprocessing()}{preprocessing()}}
@@ -75,3 +103,19 @@ Performs preprocessing on an image.
 {\em type\+Compression\+Choice} & Type of compression choice \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c_icgraph}
+\end{center}
+\end{figure}

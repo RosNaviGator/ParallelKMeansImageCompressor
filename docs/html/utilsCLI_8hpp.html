@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ParallelKmenasIgnageCompressor: include/utilsCLI.hpp File Reference</title>
+<title>ParallelKmeansImageCompressor: include/utilsCLI.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ParallelKmenasIgnageCompressor
+   <div id="projectname">ParallelKmeansImageCompressor
    </div>
   </td>
  </tr>
@@ -100,34 +100,59 @@ $(function(){ initResizable(false); });
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;opencv2/opencv.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="filesUtils_8hpp_source.html">filesUtils.hpp</a>&gt;</code><br />
+<code>#include &lt;boost/process.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for utilsCLI.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="utilsCLI_8hpp__incl.png" border="0" usemap="#ainclude_2utilsCLI_8hpp" alt=""/></div>
 <map name="ainclude_2utilsCLI_8hpp" id="ainclude_2utilsCLI_8hpp">
-<area shape="rect" title="Utility functions for the command&#45;line interface." alt="" coords="102,5,238,32"/>
+<area shape="rect" title="Utility functions for the command&#45;line interface." alt="" coords="202,5,338,32"/>
 <area shape="rect" title=" " alt="" coords="5,155,77,181"/>
-<area shape="poly" title=" " alt="" coords="161,34,64,145,60,141,157,31"/>
+<area shape="poly" title=" " alt="" coords="252,35,74,148,71,144,249,30"/>
 <area shape="rect" title=" " alt="" coords="100,155,240,181"/>
-<area shape="poly" title=" " alt="" coords="173,33,173,139,168,139,168,33"/>
-<area shape="rect" href="filesUtils_8hpp.html" title="Utility functions for file handling." alt="" coords="319,80,416,107"/>
-<area shape="poly" title=" " alt="" coords="206,30,320,72,318,77,204,35"/>
-<area shape="poly" title=" " alt="" coords="319,107,92,156,91,151,318,102"/>
-<area shape="poly" title=" " alt="" coords="334,110,220,151,218,146,332,105"/>
+<area shape="poly" title=" " alt="" coords="264,34,190,143,185,140,260,31"/>
+<area shape="rect" href="filesUtils_8hpp.html" title="Utility functions for file handling." alt="" coords="283,80,380,107"/>
+<area shape="poly" title=" " alt="" coords="283,31,313,66,309,70,279,34"/>
+<area shape="rect" title=" " alt="" coords="405,80,533,107"/>
+<area shape="poly" title=" " alt="" coords="306,30,421,72,419,77,304,35"/>
+<area shape="poly" title=" " alt="" coords="283,109,92,156,91,151,282,104"/>
+<area shape="poly" title=" " alt="" coords="305,110,213,150,211,145,302,105"/>
 <area shape="rect" title=" " alt="" coords="264,155,330,181"/>
-<area shape="poly" title=" " alt="" coords="357,109,322,145,318,142,353,105"/>
+<area shape="poly" title=" " alt="" coords="328,108,312,142,307,139,323,106"/>
 <area shape="rect" title=" " alt="" coords="372,229,430,256"/>
-<area shape="poly" title=" " alt="" coords="373,107,397,214,392,215,368,108"/>
+<area shape="poly" title=" " alt="" coords="340,106,391,214,386,216,335,108"/>
 <area shape="rect" title=" " alt="" coords="471,229,528,256"/>
-<area shape="poly" title=" " alt="" coords="418,103,459,122,478,136,494,153,505,183,506,214,501,214,500,184,489,156,475,140,456,126,416,108"/>
+<area shape="poly" title=" " alt="" coords="381,104,448,126,476,139,494,153,502,167,506,183,507,213,502,214,501,184,497,169,490,156,473,143,446,131,380,109"/>
 <area shape="rect" title=" " alt="" coords="555,155,615,181"/>
-<area shape="poly" title=" " alt="" coords="406,105,541,149,539,154,405,110"/>
+<area shape="poly" title=" " alt="" coords="377,105,541,151,539,156,375,110"/>
 <area shape="rect" title=" " alt="" coords="639,155,720,181"/>
-<area shape="poly" title=" " alt="" coords="417,103,624,151,623,156,416,109"/>
+<area shape="poly" title=" " alt="" coords="381,102,625,151,624,157,380,107"/>
 <area shape="rect" href="point_8hpp.html" title="Point class representing a point in a feature space." alt="" coords="405,155,480,181"/>
-<area shape="poly" title=" " alt="" coords="383,105,421,142,417,146,379,109"/>
+<area shape="poly" title=" " alt="" coords="352,105,412,144,409,148,349,109"/>
 <area shape="poly" title=" " alt="" coords="437,183,418,217,413,215,433,181"/>
 <area shape="poly" title=" " alt="" coords="454,180,482,215,478,219,450,184"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="utilsCLI_8hpp__dep__incl.png" border="0" usemap="#ainclude_2utilsCLI_8hppdep" alt=""/></div>
+<map name="ainclude_2utilsCLI_8hppdep" id="ainclude_2utilsCLI_8hppdep">
+<area shape="rect" title="Utility functions for the command&#45;line interface." alt="" coords="460,5,596,32"/>
+<area shape="rect" href="decoder_8cpp.html" title="The main program for decoding .kc files generated by the Encoder." alt="" coords="5,80,120,107"/>
+<area shape="poly" title=" " alt="" coords="445,35,132,83,120,85,120,79,131,77,444,30"/>
+<area shape="rect" href="encoder_8cpp.html" title=" " alt="" coords="144,80,258,107"/>
+<area shape="poly" title=" " alt="" coords="456,39,259,82,258,77,455,33"/>
+<area shape="rect" href="encoderCUDA_8cpp.html" title=" " alt="" coords="282,80,435,107"/>
+<area shape="poly" title=" " alt="" coords="485,41,389,82,387,77,483,36"/>
+<area shape="rect" href="encoderMPI_8cpp.html" title=" " alt="" coords="459,80,597,107"/>
+<area shape="poly" title=" " alt="" coords="530,48,530,80,525,80,525,48"/>
+<area shape="rect" href="encoderOMP_8cpp.html" title=" " alt="" coords="621,80,763,107"/>
+<area shape="poly" title=" " alt="" coords="571,36,664,77,662,82,569,41"/>
+<area shape="rect" href="mainMenu_8cpp.html" title=" " alt="" coords="788,80,916,107"/>
+<area shape="poly" title=" " alt="" coords="600,33,796,77,795,82,599,39"/>
+<area shape="rect" href="utilsCLI_8cpp.html" title=" " alt="" coords="940,80,1054,107"/>
+<area shape="poly" title=" " alt="" coords="612,29,928,77,940,79,940,85,927,83,611,35"/>
 </map>
 </div>
 </div>
@@ -144,15 +169,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae7ea0f57b4253f4e2f78104cb862b5d4" id="r_ae7ea0f57b4253f4e2f78104cb862b5d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekm_1_1utilsCLI.html#ae7ea0f57b4253f4e2f78104cb862b5d4">km::utilsCLI::sequentialEncoderHeader</a> ()</td></tr>
-<tr class="memdesc:ae7ea0f57b4253f4e2f78104cb862b5d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the header for the sequential encoder.  <br /></td></tr>
-<tr class="separator:ae7ea0f57b4253f4e2f78104cb862b5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d81d20821e6036179418f619d9fa936" id="r_a1d81d20821e6036179418f619d9fa936"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekm_1_1utilsCLI.html#a1d81d20821e6036179418f619d9fa936">km::utilsCLI::mpiEncoderHeader</a> ()</td></tr>
-<tr class="memdesc:a1d81d20821e6036179418f619d9fa936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the header for the MPI encoder.  <br /></td></tr>
-<tr class="separator:a1d81d20821e6036179418f619d9fa936"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8bfc1efcbc6bd6460864b7323e39c41" id="r_ac8bfc1efcbc6bd6460864b7323e39c41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekm_1_1utilsCLI.html#ac8bfc1efcbc6bd6460864b7323e39c41">km::utilsCLI::ompEncoderHeader</a> ()</td></tr>
-<tr class="memdesc:ac8bfc1efcbc6bd6460864b7323e39c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the header for the OpenMP encoder.  <br /></td></tr>
-<tr class="separator:ac8bfc1efcbc6bd6460864b7323e39c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a587fc1cc3f9761ff58bd6e70f90bd1a1" id="r_a587fc1cc3f9761ff58bd6e70f90bd1a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekm_1_1utilsCLI.html#a587fc1cc3f9761ff58bd6e70f90bd1a1">km::utilsCLI::mainMenuHeader</a> ()</td></tr>
 <tr class="memdesc:a587fc1cc3f9761ff58bd6e70f90bd1a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the main menu header.  <br /></td></tr>
 <tr class="separator:a587fc1cc3f9761ff58bd6e70f90bd1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,9 +178,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ac67f75f5e367779691a03add1dceaaa7" id="r_ac67f75f5e367779691a03add1dceaaa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekm_1_1utilsCLI.html#ac67f75f5e367779691a03add1dceaaa7">km::utilsCLI::workDone</a> ()</td></tr>
 <tr class="memdesc:ac67f75f5e367779691a03add1dceaaa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the work done message.  <br /></td></tr>
 <tr class="separator:ac67f75f5e367779691a03add1dceaaa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a520989c4e32a67049da3ebe712c6a18d" id="r_a520989c4e32a67049da3ebe712c6a18d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekm_1_1utilsCLI.html#a520989c4e32a67049da3ebe712c6a18d">km::utilsCLI::compressionChoices</a> (int &amp;levelsColorsChoice, int &amp;typeCompressionChoice, std::string &amp;outputPath, cv::Mat &amp;image, int executionStandard)</td></tr>
-<tr class="memdesc:a520989c4e32a67049da3ebe712c6a18d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the compression choices.  <br /></td></tr>
-<tr class="separator:a520989c4e32a67049da3ebe712c6a18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae362e74bbc04f2d92c857f4cb9c1373d" id="r_ae362e74bbc04f2d92c857f4cb9c1373d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekm_1_1utilsCLI.html#ae362e74bbc04f2d92c857f4cb9c1373d">km::utilsCLI::printCompressionInformations</a> (int &amp;originalWidth, int &amp;originalHeight, int &amp;width, int &amp;height, int &amp;k, size_t &amp;different_colors_size)</td></tr>
 <tr class="memdesc:ae362e74bbc04f2d92c857f4cb9c1373d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the compression information.  <br /></td></tr>
 <tr class="separator:ae362e74bbc04f2d92c857f4cb9c1373d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,7 +190,7 @@ Functions</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 1 2024 17:01:40 for ParallelKmenasIgnageCompressor by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -1,0 +1,9 @@
+<map id="km::ConfigReader::getThirdLevelCompressionColor" name="km::ConfigReader::getThirdLevelCompressionColor">
+<area shape="rect" id="Node000001" title="Gets the third level compression color value." alt="" coords="344,23,526,65"/>
+<area shape="rect" id="Node000002" href="$namespacekm_1_1imageUtils.html#aef1b51decbf6f0f0ca5c53e20ebbfadb" title="Defines the value of K based on the color levels choice." alt="" coords="103,31,296,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="328,47,296,47,296,41,328,41"/>
+<area shape="rect" id="Node000003" href="$encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,30,55,25,55,20,92,25"/>
+<area shape="rect" id="Node000004" href="$encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="92,63,55,68,55,63,91,58"/>
+</map>

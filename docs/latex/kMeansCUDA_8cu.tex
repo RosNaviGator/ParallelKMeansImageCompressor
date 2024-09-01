@@ -1,0 +1,65 @@
+\doxysection{src/k\+Means\+CUDA.cu File Reference}
+\hypertarget{kMeansCUDA_8cu}{}\label{kMeansCUDA_8cu}\index{src/kMeansCUDA.cu@{src/kMeansCUDA.cu}}
+{\ttfamily \#include $<$k\+Means\+CUDA.\+cuh$>$}\newline
+Include dependency graph for k\+Means\+CUDA.\+cu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kMeansCUDA_8cu__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \mbox{\hyperlink{kMeansCUDA_8cu_a3e025d6ba15d1c9dcaba7e02eec74a74}{assign\+\_\+clusters}} (int \texorpdfstring{$\ast$}{*}data, int \texorpdfstring{$\ast$}{*}centroids, int \texorpdfstring{$\ast$}{*}labels, int n, int k, int dim)
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \mbox{\hyperlink{kMeansCUDA_8cu_a6ad4d08f25ddaaaf93cefca25f0f01b9}{calculate\+\_\+new\+\_\+centroids}} (int \texorpdfstring{$\ast$}{*}data, int \texorpdfstring{$\ast$}{*}centroids, int \texorpdfstring{$\ast$}{*}labels, int \texorpdfstring{$\ast$}{*}counts, int n, int k, int dim)
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \mbox{\hyperlink{kMeansCUDA_8cu_a79373eadd7ab0392c9f0f9385b50e67f}{average\+\_\+centroids}} (int \texorpdfstring{$\ast$}{*}centroids, int \texorpdfstring{$\ast$}{*}counts, int k, int dim)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{kMeansCUDA_8cu_a3e025d6ba15d1c9dcaba7e02eec74a74}\index{kMeansCUDA.cu@{kMeansCUDA.cu}!assign\_clusters@{assign\_clusters}}
+\index{assign\_clusters@{assign\_clusters}!kMeansCUDA.cu@{kMeansCUDA.cu}}
+\doxysubsubsection{\texorpdfstring{assign\_clusters()}{assign\_clusters()}}
+{\footnotesize\ttfamily \label{kMeansCUDA_8cu_a3e025d6ba15d1c9dcaba7e02eec74a74} 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void assign\+\_\+clusters (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{centroids}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{labels}{, }\item[{int}]{n}{, }\item[{int}]{k}{, }\item[{int}]{dim}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kMeansCUDA_8cu_a3e025d6ba15d1c9dcaba7e02eec74a74_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{kMeansCUDA_8cu_a79373eadd7ab0392c9f0f9385b50e67f}\index{kMeansCUDA.cu@{kMeansCUDA.cu}!average\_centroids@{average\_centroids}}
+\index{average\_centroids@{average\_centroids}!kMeansCUDA.cu@{kMeansCUDA.cu}}
+\doxysubsubsection{\texorpdfstring{average\_centroids()}{average\_centroids()}}
+{\footnotesize\ttfamily \label{kMeansCUDA_8cu_a79373eadd7ab0392c9f0f9385b50e67f} 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void average\+\_\+centroids (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{centroids}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{counts}{, }\item[{int}]{k}{, }\item[{int}]{dim}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kMeansCUDA_8cu_a79373eadd7ab0392c9f0f9385b50e67f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{kMeansCUDA_8cu_a6ad4d08f25ddaaaf93cefca25f0f01b9}\index{kMeansCUDA.cu@{kMeansCUDA.cu}!calculate\_new\_centroids@{calculate\_new\_centroids}}
+\index{calculate\_new\_centroids@{calculate\_new\_centroids}!kMeansCUDA.cu@{kMeansCUDA.cu}}
+\doxysubsubsection{\texorpdfstring{calculate\_new\_centroids()}{calculate\_new\_centroids()}}
+{\footnotesize\ttfamily \label{kMeansCUDA_8cu_a6ad4d08f25ddaaaf93cefca25f0f01b9} 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void calculate\+\_\+new\+\_\+centroids (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{centroids}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{labels}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{counts}{, }\item[{int}]{n}{, }\item[{int}]{k}{, }\item[{int}]{dim}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kMeansCUDA_8cu_a6ad4d08f25ddaaaf93cefca25f0f01b9_icgraph}
+\end{center}
+\end{figure}

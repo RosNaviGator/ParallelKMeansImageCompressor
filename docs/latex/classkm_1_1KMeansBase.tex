@@ -2,11 +2,6 @@
 \hypertarget{classkm_1_1KMeansBase}{}\label{classkm_1_1KMeansBase}\index{km::KMeansBase@{km::KMeansBase}}
 
 
-Base class for K-\/means clustering algorithm.  
-
-
-
-
 {\ttfamily \#include $<$k\+Means\+Base.\+hpp$>$}
 
 
@@ -40,11 +35,11 @@ virtual \mbox{\hyperlink{classkm_1_1KMeansBase_a295d214db11a3c799cb70b86baeb26ee
 \begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classkm_1_1KMeansBase}{KMeans\+Base}. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classkm_1_1KMeansBase_ada4d6b7154a5200a538c23f48acfc5bb}{run}} ()=0
 \begin{DoxyCompactList}\small\item\em Runs the K-\/means clustering algorithm. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classkm_1_1KMeansBase_af5fa8fabf72ebb17b4b711609946d74f}{get\+Points}} () const -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
+auto \mbox{\hyperlink{classkm_1_1KMeansBase_a5ec2ecf08e285a5e2d34b766b353ce1f}{get\+Points}} () const -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
 \begin{DoxyCompactList}\small\item\em Gets the poinots. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classkm_1_1KMeansBase_a9f04b8e213f35f3a526f806e070667d6}{get\+Centroids}} () const -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
+auto \mbox{\hyperlink{classkm_1_1KMeansBase_ac0ecde9c25587ef197069159c0b545df}{get\+Centroids}} () const -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
 \begin{DoxyCompactList}\small\item\em Gets the centroids. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classkm_1_1KMeansBase_a73e8e4656d66217a8890c48942800daa}{get\+Iterations}} () const -\/$>$ int
+auto \mbox{\hyperlink{classkm_1_1KMeansBase_a48d1ee4a7a671b200995c611fd349cd3}{get\+Iterations}} () const -\/$>$ int
 \begin{DoxyCompactList}\small\item\em Gets the number of iterations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -60,7 +55,15 @@ int \mbox{\hyperlink{classkm_1_1KMeansBase_a1a41bedae67c0ae03bca35fba3ff8aa3}{nu
 
 
 \doxysubsection{Detailed Description}
-Base class for K-\/means clustering algorithm. 
+\begin{DoxyVerb}   @class KMeansBase
+   @brief Base class for K-means clustering algorithm
+   @details The KMeansBase class, part of the km namespace, serves as a foundational class for implementing the K-means clustering algorithm. It is designed to manage and execute the clustering process, providing a base for derived classes to build upon with specific implementations.
+\end{DoxyVerb}
+
+
+The class includes several key functionalities\+: it allows for the construction of an object with either a predefined number of clusters and a set of points or just the number of clusters. The run method, which is a pure virtual function, must be implemented by any derived class to execute the K-\/means algorithm. This structure ensures that the base class can provide the essential setup and data management, while specific clustering logic is handled by subclasses.
+
+The \doxylink{classkm_1_1KMeansBase}{KMeans\+Base} class also includes methods to retrieve the points used for clustering, the centroids calculated by the algorithm, and the number of iterations the algorithm has undergone. These methods provide access to the internal state of the clustering process, enabling users to inspect and analyze the results. Protected member variables include the number of clusters, the points to be clustered, the centroids resulting from the clustering process, and the count of iterations performed, allowing derived classes to access and manipulate these values as needed. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{classkm_1_1KMeansBase_a88bebad949f5b6edff2af08ae74295cb}\index{km::KMeansBase@{km::KMeansBase}!KMeansBase@{KMeansBase}}
@@ -108,11 +111,11 @@ Virtual destructor for \doxylink{classkm_1_1KMeansBase}{KMeans\+Base}.
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classkm_1_1KMeansBase_a9f04b8e213f35f3a526f806e070667d6}\index{km::KMeansBase@{km::KMeansBase}!getCentroids@{getCentroids}}
+\Hypertarget{classkm_1_1KMeansBase_ac0ecde9c25587ef197069159c0b545df}\index{km::KMeansBase@{km::KMeansBase}!getCentroids@{getCentroids}}
 \index{getCentroids@{getCentroids}!km::KMeansBase@{km::KMeansBase}}
 \doxysubsubsection{\texorpdfstring{getCentroids()}{getCentroids()}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansBase_a9f04b8e213f35f3a526f806e070667d6} 
-auto km\+::\+KMeans\+Base\+::get\+Centroids (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$\hspace{0.3cm}{\ttfamily [nodiscard]}}
+{\footnotesize\ttfamily \label{classkm_1_1KMeansBase_ac0ecde9c25587ef197069159c0b545df} 
+std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{km\+::\+Point}} $>$ km\+::\+KMeans\+Base\+::get\+Centroids (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$ std\+::vector$<$\mbox{\hyperlink{classkm_1_1Point}{Point}}$>$\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
@@ -121,11 +124,19 @@ Gets the centroids.
 \begin{DoxyReturn}{Returns}
 Vector of centroids 
 \end{DoxyReturn}
-\Hypertarget{classkm_1_1KMeansBase_a73e8e4656d66217a8890c48942800daa}\index{km::KMeansBase@{km::KMeansBase}!getIterations@{getIterations}}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classkm_1_1KMeansBase_ac0ecde9c25587ef197069159c0b545df_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classkm_1_1KMeansBase_a48d1ee4a7a671b200995c611fd349cd3}\index{km::KMeansBase@{km::KMeansBase}!getIterations@{getIterations}}
 \index{getIterations@{getIterations}!km::KMeansBase@{km::KMeansBase}}
 \doxysubsubsection{\texorpdfstring{getIterations()}{getIterations()}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansBase_a73e8e4656d66217a8890c48942800daa} 
-auto km\+::\+KMeans\+Base\+::get\+Iterations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  int\hspace{0.3cm}{\ttfamily [nodiscard]}}
+{\footnotesize\ttfamily \label{classkm_1_1KMeansBase_a48d1ee4a7a671b200995c611fd349cd3} 
+int km\+::\+KMeans\+Base\+::get\+Iterations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$ int\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
@@ -134,11 +145,19 @@ Gets the number of iterations.
 \begin{DoxyReturn}{Returns}
 Number of iterations 
 \end{DoxyReturn}
-\Hypertarget{classkm_1_1KMeansBase_af5fa8fabf72ebb17b4b711609946d74f}\index{km::KMeansBase@{km::KMeansBase}!getPoints@{getPoints}}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classkm_1_1KMeansBase_a48d1ee4a7a671b200995c611fd349cd3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classkm_1_1KMeansBase_a5ec2ecf08e285a5e2d34b766b353ce1f}\index{km::KMeansBase@{km::KMeansBase}!getPoints@{getPoints}}
 \index{getPoints@{getPoints}!km::KMeansBase@{km::KMeansBase}}
 \doxysubsubsection{\texorpdfstring{getPoints()}{getPoints()}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansBase_af5fa8fabf72ebb17b4b711609946d74f} 
-auto km\+::\+KMeans\+Base\+::get\+Points (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$  std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$\hspace{0.3cm}{\ttfamily [nodiscard]}}
+{\footnotesize\ttfamily \label{classkm_1_1KMeansBase_a5ec2ecf08e285a5e2d34b766b353ce1f} 
+std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{km\+::\+Point}} $>$ km\+::\+KMeans\+Base\+::get\+Points (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const -\/$>$ std\+::vector$<$\mbox{\hyperlink{classkm_1_1Point}{Point}}$>$\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
@@ -147,6 +166,14 @@ Gets the poinots.
 \begin{DoxyReturn}{Returns}
 Vector of points 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classkm_1_1KMeansBase_a5ec2ecf08e285a5e2d34b766b353ce1f_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classkm_1_1KMeansBase_ada4d6b7154a5200a538c23f48acfc5bb}\index{km::KMeansBase@{km::KMeansBase}!run@{run}}
 \index{run@{run}!km::KMeansBase@{km::KMeansBase}}
 \doxysubsubsection{\texorpdfstring{run()}{run()}}
@@ -206,6 +233,7 @@ Vector of points.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/\mbox{\hyperlink{kMeansBase_8hpp}{k\+Means\+Base.\+hpp}}\end{DoxyCompactItemize}
+include/\mbox{\hyperlink{kMeansBase_8hpp}{k\+Means\+Base.\+hpp}}\item 
+src/\mbox{\hyperlink{kMeansBase_8cpp}{k\+Means\+Base.\+cpp}}\end{DoxyCompactItemize}

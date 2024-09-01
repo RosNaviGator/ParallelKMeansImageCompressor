@@ -18,6 +18,7 @@
 /**
  * @namespace km::filesUtils
  * @brief Provides utility functions for file handling
+ * @details The filesUtils namespace within the km namespace offers a set of utility functions designed to handle various file operations crucial for image processing and data management. It includes functionalities to create necessary output directories, ensuring that the required directory structure is in place before any file operations are performed. The namespace provides a function to write data to a binary file, which includes parameters for the file path, image dimensions, the number of clusters, and vectors of points and centroids. This is particularly useful for saving compressed image data or related binary information. Additionally, it includes a function to verify whether a file has the correct extension, which is essential for validating file types before processing. The createDecodingMenu function facilitates the creation of a decoding menu by accepting a directory path and a vector of image names, which may be used for setting up decoding options. Lastly, the readBinaryFile function reads from a binary file to reconstruct a compressed image into an OpenCV matrix, returning the number of clusters present in the file. This set of functions is designed to streamline and manage file-related tasks, particularly in the context of image processing.
  */
 
 namespace km

@@ -1,3 +1,13 @@
+/**
+ * @file main.cpp
+ * @brief Main entry point for the CUDA-based image compression application.
+ *
+ * This program compresses an image using the K-means clustering algorithm, leveraging CUDA for GPU acceleration.
+ * It reads input parameters from the command line, processes the image, applies compression using the GPU,
+ * and saves the compressed image to a binary file. The program also evaluates performance metrics and logs them to a CSV file.
+ *
+ * The application uses OpenCV for image processing and custom libraries for compression, file handling, and performance evaluation.
+ */
 
 #include <iostream>
 #include <vector>
@@ -25,6 +35,17 @@ using namespace km::filesUtils;
 using namespace km::utilsCLI;
 using namespace km::imageUtils;
 
+/**
+ * @brief Main function for the CUDA-based image compression application.
+ *
+ * This function initializes the program, processes input arguments, reads the input image,
+ * performs preprocessing, applies K-means clustering using CUDA for image compression, 
+ * and saves the compressed image to a binary file. It also evaluates and logs the performance metrics.
+ *
+ * @param argc The number of command-line arguments.
+ * @param argv The array of command-line arguments.
+ * @return Returns 0 on successful execution, or 1 if an error occurs.
+ */
 
 int main(int argc, char *argv[])
 {

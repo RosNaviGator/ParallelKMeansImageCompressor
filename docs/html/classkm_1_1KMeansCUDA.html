@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ParallelKmenasIgnageCompressor: km::KMeansCUDA Class Reference</title>
+<title>ParallelKmeansImageCompressor: km::KMeansCUDA Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ParallelKmenasIgnageCompressor
+   <div id="projectname">ParallelKmeansImageCompressor
    </div>
   </td>
  </tr>
@@ -95,15 +95,12 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">km::KMeansCUDA Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Represents the K-means clustering algorithm using CUDA.  
- <a href="#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for km::KMeansCUDA:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkm_1_1KMeansCUDA__coll__graph.png" border="0" usemap="#akm_1_1KMeansCUDA_coll__map" alt="Collaboration graph"/></div>
 <map name="akm_1_1KMeansCUDA_coll__map" id="akm_1_1KMeansCUDA_coll__map">
-<area shape="rect" title="Represents the K&#45;means clustering algorithm using CUDA." alt="" coords="5,5,169,395"/>
+<area shape="rect" title=" " alt="" coords="5,5,169,395"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -147,7 +144,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a362c330ba854bf83ecda420fea3e2e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents the K-means clustering algorithm using CUDA. </p>
+<div class="textblock"><pre class="fragment">   @class KMeansCUDA
+   @brief Represents the K-means clustering algorithm using CUDA
+   @details The KMeansCUDA class, located in the km namespace, is designed to implement the K-means clustering algorithm using CUDA for enhanced performance through parallel processing on GPUs. This class extends the functionality of traditional K-means clustering by leveraging CUDA to accelerate computations, making it suitable for large datasets and complex clustering tasks.
+</pre><p>The class provides a constructor that initializes the number of clusters and the vector of points to be clustered. It includes a run method that executes the K-means algorithm on the GPU, performing the clustering operations efficiently by taking advantage of parallel processing capabilities. Additionally, it offers methods to print and plot the clusters, allowing users to visualize the results of the clustering process. The getPoints, getCentroids, and getIterations methods provide access to the internal state of the clustering, including the input points, the resulting centroids, and the number of iterations the algorithm has undergone, respectively. This design ensures that users can both run and analyze the K-means clustering process using CUDA for improved performance. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a608552ec1e8673c5c35c7828400a401a" name="a608552ec1e8673c5c35c7828400a401a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a608552ec1e8673c5c35c7828400a401a">&#9670;&#160;</a></span>KMeansCUDA()</h2>
@@ -190,13 +190,23 @@ Private Attributes</h2></td></tr>
           <td class="memname">auto km::KMeansCUDA::getCentroids </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> -&gt;  std::vector&lt; <a class="el" href="classkm_1_1Point.html">Point</a> &gt;</td>
+          <td> -&gt; std::vector&lt;<a class="el" href="classkm_1_1Point.html">Point</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Gets the centroids. </p>
 <dl class="section return"><dt>Returns</dt><dd>Vector of centroids </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19_icgraph.png" border="0" usemap="#aclasskm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19_icgraph" alt=""/></div>
+<map name="aclasskm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19_icgraph" id="aclasskm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19_icgraph">
+<area shape="rect" title="Gets the centroids." alt="" coords="103,5,319,32"/>
+<area shape="rect" href="encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -210,13 +220,23 @@ Private Attributes</h2></td></tr>
           <td class="memname">auto km::KMeansCUDA::getIterations </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> -&gt;  int</td>
+          <td> -&gt; int</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Gets the number of iterations. </p>
 <dl class="section return"><dt>Returns</dt><dd>Number of iterations </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869_icgraph.png" border="0" usemap="#aclasskm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869_icgraph" alt=""/></div>
+<map name="aclasskm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869_icgraph" id="aclasskm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869_icgraph">
+<area shape="rect" title="Gets the number of iterations." alt="" coords="103,5,317,32"/>
+<area shape="rect" href="encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -230,13 +250,23 @@ Private Attributes</h2></td></tr>
           <td class="memname">auto km::KMeansCUDA::getPoints </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> -&gt;  std::vector&lt; <a class="el" href="classkm_1_1Point.html">Point</a> &gt;</td>
+          <td> -&gt; std::vector&lt;<a class="el" href="classkm_1_1Point.html">Point</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Gets the points. </p>
 <dl class="section return"><dt>Returns</dt><dd>Vector of points </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea_icgraph.png" border="0" usemap="#aclasskm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea_icgraph" alt=""/></div>
+<map name="aclasskm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea_icgraph" id="aclasskm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea_icgraph">
+<area shape="rect" title="Gets the points." alt="" coords="103,5,300,32"/>
+<area shape="rect" href="encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -294,6 +324,30 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Runs the K-means clustering algorithm using CUDA. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_cgraph.png" border="0" usemap="#aclasskm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_cgraph" alt=""/></div>
+<map name="aclasskm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_cgraph" id="aclasskm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_cgraph">
+<area shape="rect" title="Runs the K&#45;means clustering algorithm using CUDA." alt="" coords="5,56,166,83"/>
+<area shape="rect" href="kMeansCUDA_8cu.html#a3e025d6ba15d1c9dcaba7e02eec74a74" title=" " alt="" coords="240,5,352,32"/>
+<area shape="poly" title=" " alt="" coords="143,53,224,33,225,38,145,58"/>
+<area shape="rect" href="kMeansCUDA_8cu.html#a79373eadd7ab0392c9f0f9385b50e67f" title=" " alt="" coords="232,56,360,83"/>
+<area shape="poly" title=" " alt="" coords="166,67,217,67,217,72,166,72"/>
+<area shape="rect" href="kMeansCUDA_8cu.html#a6ad4d08f25ddaaaf93cefca25f0f01b9" title=" " alt="" coords="214,107,378,133"/>
+<area shape="poly" title=" " alt="" coords="145,81,223,100,222,105,143,86"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_icgraph.png" border="0" usemap="#aclasskm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_icgraph" alt=""/></div>
+<map name="aclasskm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_icgraph" id="aclasskm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_icgraph">
+<area shape="rect" title="Runs the K&#45;means clustering algorithm using CUDA." alt="" coords="103,5,263,32"/>
+<area shape="rect" href="encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -394,13 +448,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="kMeansCUDA_8cuh.html">kMeansCUDA.cuh</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>include/<a class="el" href="kMeansCUDA_8cuh_source.html">kMeansCUDA.cuh</a></li>
+<li>src/<a class="el" href="kMeansCUDA_8cu.html">kMeansCUDA.cu</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 1 2024 17:01:40 for ParallelKmenasIgnageCompressor by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

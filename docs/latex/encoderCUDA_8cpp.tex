@@ -1,0 +1,66 @@
+\doxysection{src/encoder\+CUDA.cpp File Reference}
+\hypertarget{encoderCUDA_8cpp}{}\label{encoderCUDA_8cpp}\index{src/encoderCUDA.cpp@{src/encoderCUDA.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$filesystem$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$point.\+hpp$>$}\newline
+{\ttfamily \#include $<$k\+Means\+CUDA.\+cuh$>$}\newline
+{\ttfamily \#include $<$utils\+CLI.\+hpp$>$}\newline
+{\ttfamily \#include $<$images\+Utils.\+hpp$>$}\newline
+{\ttfamily \#include $<$files\+Utils.\+hpp$>$}\newline
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
+{\ttfamily \#include $<$config\+Reader.\+hpp$>$}\newline
+{\ttfamily \#include $<$performance\+Evaluation.\+hpp$>$}\newline
+Include dependency graph for encoder\+CUDA.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{encoderCUDA_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{encoderCUDA_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main function for the CUDA-\/based image compression application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{encoderCUDA_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\index{encoderCUDA.cpp@{encoderCUDA.cpp}!main@{main}}
+\index{main@{main}!encoderCUDA.cpp@{encoderCUDA.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{encoderCUDA_8cpp_a0ddf1224851353fc92bfbff6f499fa97} 
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Main function for the CUDA-\/based image compression application. 
+
+This function initializes the program, processes input arguments, reads the input image, performs preprocessing, applies K-\/means clustering using CUDA for image compression, and saves the compressed image to a binary file. It also evaluates and logs the performance metrics.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & The number of command-\/line arguments. \\
+\hline
+{\em argv} & The array of command-\/line arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on successful execution, or 1 if an error occurs. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{encoderCUDA_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}

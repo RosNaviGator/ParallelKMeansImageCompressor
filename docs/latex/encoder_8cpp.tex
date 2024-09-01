@@ -1,0 +1,66 @@
+\doxysection{src/encoder.cpp File Reference}
+\hypertarget{encoder_8cpp}{}\label{encoder_8cpp}\index{src/encoder.cpp@{src/encoder.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$filesystem$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$point.\+hpp$>$}\newline
+{\ttfamily \#include $<$k\+Means\+Sequential.\+hpp$>$}\newline
+{\ttfamily \#include $<$utils\+CLI.\+hpp$>$}\newline
+{\ttfamily \#include $<$images\+Utils.\+hpp$>$}\newline
+{\ttfamily \#include $<$files\+Utils.\+hpp$>$}\newline
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
+{\ttfamily \#include $<$config\+Reader.\+hpp$>$}\newline
+{\ttfamily \#include $<$performance\+Evaluation.\+hpp$>$}\newline
+Include dependency graph for encoder.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{encoder_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+auto \mbox{\hyperlink{encoder_8cpp_a7114aa2dd6837734db57667a298dfcc4}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]}) -\/$>$ int
+\begin{DoxyCompactList}\small\item\em Main function for the image compression application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{encoder_8cpp_a7114aa2dd6837734db57667a298dfcc4}\index{encoder.cpp@{encoder.cpp}!main@{main}}
+\index{main@{main}!encoder.cpp@{encoder.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{encoder_8cpp_a7114aa2dd6837734db57667a298dfcc4} 
+auto main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption}) -\/$>$ int }
+
+
+
+Main function for the image compression application. 
+
+This function initializes the program, processes input arguments, reads the input image, performs preprocessing, applies K-\/means clustering for image compression, and saves the compressed image to a binary file. It also evaluates and logs the performance metrics.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & The number of command-\/line arguments. \\
+\hline
+{\em argv} & The array of command-\/line arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on successful execution, or 1 if an error occurs. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{encoder_8cpp_a7114aa2dd6837734db57667a298dfcc4_cgraph}
+\end{center}
+\end{figure}

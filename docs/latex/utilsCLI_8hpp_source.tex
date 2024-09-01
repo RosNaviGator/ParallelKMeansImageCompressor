@@ -9,31 +9,25 @@
 \DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
 \DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <opencv2/opencv.hpp>}}
 \DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{filesUtils_8hpp}{filesUtils.hpp}}>}}
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00018\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacekm}{km}}}
-\DoxyCodeLine{00019\ \{}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{namespace\ }utilsCLI}
-\DoxyCodeLine{00021\ \ \ \ \ \{}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_1_1utilsCLI_ae7ea0f57b4253f4e2f78104cb862b5d4}{sequentialEncoderHeader}}();}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_1_1utilsCLI_a1d81d20821e6036179418f619d9fa936}{mpiEncoderHeader}}();}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_1_1utilsCLI_ac8bfc1efcbc6bd6460864b7323e39c41}{ompEncoderHeader}}();}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_1_1utilsCLI_a587fc1cc3f9761ff58bd6e70f90bd1a1}{mainMenuHeader}}();}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_1_1utilsCLI_a49ee3c94571b62a729a2ba98db2b1a52}{decoderHeader}}();}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_1_1utilsCLI_ac67f75f5e367779691a03add1dceaaa7}{workDone}}();}
-\DoxyCodeLine{00051\ }
-\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_1_1utilsCLI_a520989c4e32a67049da3ebe712c6a18d}{compressionChoices}}(\textcolor{keywordtype}{int}\ \&levelsColorsChoice,\ \textcolor{keywordtype}{int}\ \&typeCompressionChoice,\ std::string\ \&outputPath,\ cv::Mat\ \&image,\ \textcolor{keywordtype}{int}\ executionStandard);}
-\DoxyCodeLine{00061\ }
-\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_1_1utilsCLI_ae362e74bbc04f2d92c857f4cb9c1373d}{printCompressionInformations}}(\textcolor{keywordtype}{int}\ \&originalWidth,\ \textcolor{keywordtype}{int}\ \&originalHeight,\ \textcolor{keywordtype}{int}\ \&width,\ \textcolor{keywordtype}{int}\ \&height,\ \textcolor{keywordtype}{int}\ \&k,\ \textcolor{keywordtype}{size\_t}\ \&different\_colors\_size);}
-\DoxyCodeLine{00072\ }
-\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_1_1utilsCLI_abc310e29d2e842694962a675c676c718}{displayDecodingMenu}}(std::string\ \&path,\ std::vector<std::filesystem::path>\ \&imageNames,\ std::filesystem::path\ \&decodeDir);}
-\DoxyCodeLine{00080\ \ \ \ \ \};}
-\DoxyCodeLine{00081\ \}}
-\DoxyCodeLine{00082\ }
-\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UTILSCLI\_HPP}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <boost/process.hpp>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacekm}{km}}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{namespace\ }utilsCLI}
+\DoxyCodeLine{00023\ \ \ \ \ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_1_1utilsCLI_a587fc1cc3f9761ff58bd6e70f90bd1a1}{mainMenuHeader}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_1_1utilsCLI_a49ee3c94571b62a729a2ba98db2b1a52}{decoderHeader}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_1_1utilsCLI_ac67f75f5e367779691a03add1dceaaa7}{workDone}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_1_1utilsCLI_ae362e74bbc04f2d92c857f4cb9c1373d}{printCompressionInformations}}(\textcolor{keywordtype}{int}\ \&originalWidth,\ \textcolor{keywordtype}{int}\ \&originalHeight,\ \textcolor{keywordtype}{int}\ \&width,\ \textcolor{keywordtype}{int}\ \&height,\ \textcolor{keywordtype}{int}\ \&k,\ \textcolor{keywordtype}{size\_t}\ \&different\_colors\_size);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_1_1utilsCLI_abc310e29d2e842694962a675c676c718}{displayDecodingMenu}}(std::string\ \&path,\ std::vector<std::filesystem::path>\ \&imageNames,\ std::filesystem::path\ \&decodeDir);}
+\DoxyCodeLine{00058\ \ \ \ \ \};}
+\DoxyCodeLine{00059\ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UTILSCLI\_HPP}}
 
 \end{DoxyCode}

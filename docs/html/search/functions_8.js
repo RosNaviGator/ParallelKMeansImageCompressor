@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['mainmenuheader_0',['mainMenuHeader',['../namespacekm_1_1utilsCLI.html#a587fc1cc3f9761ff58bd6e70f90bd1a1',1,'km::utilsCLI']]],
-  ['mpiencoderheader_1',['mpiEncoderHeader',['../namespacekm_1_1utilsCLI.html#a1d81d20821e6036179418f619d9fa936',1,'km::utilsCLI']]]
+  ['main_0',['main',['../decoder_8cpp.html#a8216c1645620cdb2f629cde3ac02ffef',1,'main() -&gt; int:&#160;decoder.cpp'],['../encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4',1,'main(int argc, char *argv[]) -&gt; int:&#160;encoder.cpp'],['../encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;encoderCUDA.cpp'],['../encoderMPI_8cpp.html#a7114aa2dd6837734db57667a298dfcc4',1,'main(int argc, char *argv[]) -&gt; int:&#160;encoderMPI.cpp'],['../encoderOMP_8cpp.html#a7114aa2dd6837734db57667a298dfcc4',1,'main(int argc, char *argv[]) -&gt; int:&#160;encoderOMP.cpp'],['../mainMenu_8cpp.html#a8216c1645620cdb2f629cde3ac02ffef',1,'main() -&gt; int:&#160;mainMenu.cpp']]],
+  ['mainmenuheader_1',['mainMenuHeader',['../namespacekm_1_1utilsCLI.html#a587fc1cc3f9761ff58bd6e70f90bd1a1',1,'km::utilsCLI']]]
 ];

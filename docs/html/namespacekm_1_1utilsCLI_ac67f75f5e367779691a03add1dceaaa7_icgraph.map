@@ -1,0 +1,9 @@
+<map id="km::utilsCLI::workDone" name="km::utilsCLI::workDone">
+<area shape="rect" id="Node000001" title="Displays the work done message." alt="" coords="103,56,262,83"/>
+<area shape="rect" id="Node000002" href="$decoder_8cpp.html#a8216c1645620cdb2f629cde3ac02ffef" title="Main function for the Decoder program." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,53,54,29,56,24,126,48"/>
+<area shape="rect" id="Node000003" href="$encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
+<area shape="rect" id="Node000004" href="$encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,107,55,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="126,91,56,114,54,109,125,86"/>
+</map>

@@ -1,0 +1,371 @@
+\begin{theindex}
+
+  \item {\texorpdfstring{$\sim$}{\string~}KMeansBase}
+    \subitem {km::KMeansBase}, \hyperpage{29}
+
+  \indexspace
+
+  \item {acl.sty}, \hyperpage{59}
+  \item {appendToCSV}
+    \subitem {km::Performance}, \hyperpage{50}
+  \item {assign\_clusters}
+    \subitem {kMeansCUDA.cu}, \hyperpage{89}
+  \item {average\_centroids}
+    \subitem {kMeansCUDA.cu}, \hyperpage{89}
+
+  \indexspace
+
+  \item {b}
+    \subitem {km::Point}, \hyperpage{57}
+
+  \indexspace
+
+  \item {calculate\_new\_centroids}
+    \subitem {kMeansCUDA.cu}, \hyperpage{89}
+  \item {centroids}
+    \subitem {km::KMeansBase}, \hyperpage{31}
+    \subitem {km::KMeansCUDA}, \hyperpage{36}
+  \item {checkVariableExists}
+    \subitem {km::ConfigReader}, \hyperpage{20}
+  \item {choice}
+    \subitem {km::Performance}, \hyperpage{53}
+  \item {clusterId}
+    \subitem {km::Point}, \hyperpage{57}
+  \item {color\_choice}
+    \subitem {km::ConfigReader}, \hyperpage{25}
+  \item {compression\_choice}
+    \subitem {km::ConfigReader}, \hyperpage{25}
+  \item {ConfigReader}
+    \subitem {km::ConfigReader}, \hyperpage{20}
+  \item {createDecodingMenu}
+    \subitem {km::filesUtils}, \hyperpage{6}
+  \item {createOrOpenCSV}
+    \subitem {km::Performance}, \hyperpage{51}
+  \item {createOutputDirectories}
+    \subitem {km::filesUtils}, \hyperpage{7}
+
+  \indexspace
+
+  \item {decoder.cpp}
+    \subitem {main}, \hyperpage{78}
+  \item {decoderHeader}
+    \subitem {km::utilsCLI}, \hyperpage{13}
+  \item {defineKValue}
+    \subitem {km::imageUtils}, \hyperpage{10}
+  \item {displayDecodingMenu}
+    \subitem {km::utilsCLI}, \hyperpage{13}
+  \item {distance}
+    \subitem {km::Point}, \hyperpage{55}
+
+  \indexspace
+
+  \item {encoder.cpp}
+    \subitem {main}, \hyperpage{79}
+  \item {encoderCUDA.cpp}
+    \subitem {main}, \hyperpage{81}
+  \item {encoderMPI.cpp}
+    \subitem {main}, \hyperpage{83}
+  \item {encoderOMP.cpp}
+    \subitem {main}, \hyperpage{85}
+  \item {extractFileName}
+    \subitem {km::Performance}, \hyperpage{51}
+
+  \indexspace
+
+  \item {fifth\_level\_compression\_color}
+    \subitem {km::ConfigReader}, \hyperpage{25}
+  \item {fillPerformance}
+    \subitem {km::Performance}, \hyperpage{51}
+  \item {first\_level\_compression\_color}
+    \subitem {km::ConfigReader}, \hyperpage{25}
+  \item {fourth\_level\_compression\_color}
+    \subitem {km::ConfigReader}, \hyperpage{25}
+
+  \indexspace
+
+  \item {g}
+    \subitem {km::Point}, \hyperpage{57}
+  \item {getCentroids}
+    \subitem {km::KMeansBase}, \hyperpage{30}
+    \subitem {km::KMeansCUDA}, \hyperpage{34}
+  \item {getColorChoice}
+    \subitem {km::ConfigReader}, \hyperpage{20}
+  \item {getCompressionChoice}
+    \subitem {km::ConfigReader}, \hyperpage{20}
+  \item {getFeature}
+    \subitem {km::Point}, \hyperpage{56}
+  \item {getFeature\_int}
+    \subitem {km::Point}, \hyperpage{56}
+  \item {getFifthLevelCompressionColor}
+    \subitem {km::ConfigReader}, \hyperpage{21}
+  \item {getFirstLevelCompressionColor}
+    \subitem {km::ConfigReader}, \hyperpage{21}
+  \item {getFourthLevelCompressionColor}
+    \subitem {km::ConfigReader}, \hyperpage{22}
+  \item {getInputImageFilePath}
+    \subitem {km::ConfigReader}, \hyperpage{22}
+  \item {getIterations}
+    \subitem {km::KMeansBase}, \hyperpage{30}
+    \subitem {km::KMeansCUDA}, \hyperpage{34}
+  \item {getPoints}
+    \subitem {km::KMeansBase}, \hyperpage{30}
+    \subitem {km::KMeansCUDA}, \hyperpage{34}
+  \item {getResizingFactor}
+    \subitem {km::ConfigReader}, \hyperpage{23}
+  \item {getSecondLevelCompressionColor}
+    \subitem {km::ConfigReader}, \hyperpage{23}
+  \item {getThirdLevelCompressionColor}
+    \subitem {km::ConfigReader}, \hyperpage{24}
+
+  \indexspace
+
+  \item {id}
+    \subitem {km::Point}, \hyperpage{57}
+  \item {img}
+    \subitem {km::Performance}, \hyperpage{53}
+  \item {include/configReader.hpp}, \hyperpage{59, 60}
+  \item {include/filesUtils.hpp}, \hyperpage{61, 62}
+  \item {include/imagesUtils.hpp}, \hyperpage{62, 63}
+  \item {include/kmDocs.hpp}, \hyperpage{64}
+  \item {include/kMeansBase.hpp}, \hyperpage{64, 65}
+  \item {include/kMeansCUDA.cuh}, \hyperpage{66, 67}
+  \item {include/kMeansMPI.hpp}, \hyperpage{67}, \hyperpage{69}
+  \item {include/kMeansOMP.hpp}, \hyperpage{69, 70}
+  \item {include/kMeansSequential.hpp}, \hyperpage{71, 72}
+  \item {include/performanceEvaluation.hpp}, \hyperpage{72, 73}
+  \item {include/point.hpp}, \hyperpage{73, 74}
+  \item {include/utilsCLI.hpp}, \hyperpage{75, 76}
+  \item {inputImageFilePath}
+    \subitem {km::ConfigReader}, \hyperpage{26}
+  \item {isCorrectExtension}
+    \subitem {km::filesUtils}, \hyperpage{7}
+
+  \indexspace
+
+  \item {k}
+    \subitem {km::KMeansBase}, \hyperpage{31}
+    \subitem {km::KMeansCUDA}, \hyperpage{36}
+  \item {km}, \hyperpage{5}
+  \item {km::ConfigReader}, \hyperpage{17}
+    \subitem {checkVariableExists}, \hyperpage{20}
+    \subitem {color\_choice}, \hyperpage{25}
+    \subitem {compression\_choice}, \hyperpage{25}
+    \subitem {ConfigReader}, \hyperpage{20}
+    \subitem {fifth\_level\_compression\_color}, \hyperpage{25}
+    \subitem {first\_level\_compression\_color}, \hyperpage{25}
+    \subitem {fourth\_level\_compression\_color}, \hyperpage{25}
+    \subitem {getColorChoice}, \hyperpage{20}
+    \subitem {getCompressionChoice}, \hyperpage{20}
+    \subitem {getFifthLevelCompressionColor}, \hyperpage{21}
+    \subitem {getFirstLevelCompressionColor}, \hyperpage{21}
+    \subitem {getFourthLevelCompressionColor}, \hyperpage{22}
+    \subitem {getInputImageFilePath}, \hyperpage{22}
+    \subitem {getResizingFactor}, \hyperpage{23}
+    \subitem {getSecondLevelCompressionColor}, \hyperpage{23}
+    \subitem {getThirdLevelCompressionColor}, \hyperpage{24}
+    \subitem {inputImageFilePath}, \hyperpage{26}
+    \subitem {pattern}, \hyperpage{26}
+    \subitem {readConfigFile}, \hyperpage{24}
+    \subitem {requiredVariables}, \hyperpage{26}
+    \subitem {resizing\_factor}, \hyperpage{26}
+    \subitem {second\_level\_compression\_color}, \hyperpage{26}
+    \subitem {third\_level\_compression\_color}, \hyperpage{26}
+  \item {km::filesUtils}, \hyperpage{5}
+    \subitem {createDecodingMenu}, \hyperpage{6}
+    \subitem {createOutputDirectories}, \hyperpage{7}
+    \subitem {isCorrectExtension}, \hyperpage{7}
+    \subitem {readBinaryFile}, \hyperpage{8}
+    \subitem {writeBinaryFile}, \hyperpage{8}
+  \item {km::imageUtils}, \hyperpage{9}
+    \subitem {defineKValue}, \hyperpage{10}
+    \subitem {pointsFromImage}, \hyperpage{10}
+    \subitem {preprocessing}, \hyperpage{11}
+  \item {km::KMeansBase}, \hyperpage{27}
+    \subitem {\texorpdfstring{$\sim$}{\string~}KMeansBase}, 
+		\hyperpage{29}
+    \subitem {centroids}, \hyperpage{31}
+    \subitem {getCentroids}, \hyperpage{30}
+    \subitem {getIterations}, \hyperpage{30}
+    \subitem {getPoints}, \hyperpage{30}
+    \subitem {k}, \hyperpage{31}
+    \subitem {KMeansBase}, \hyperpage{29}
+    \subitem {number\_of\_iterations}, \hyperpage{31}
+    \subitem {points}, \hyperpage{31}
+    \subitem {run}, \hyperpage{31}
+  \item {km::KMeansCUDA}, \hyperpage{32}
+    \subitem {centroids}, \hyperpage{36}
+    \subitem {getCentroids}, \hyperpage{34}
+    \subitem {getIterations}, \hyperpage{34}
+    \subitem {getPoints}, \hyperpage{34}
+    \subitem {k}, \hyperpage{36}
+    \subitem {KMeansCUDA}, \hyperpage{33}
+    \subitem {number\_of\_iterations}, \hyperpage{36}
+    \subitem {plotClusters}, \hyperpage{35}
+    \subitem {points}, \hyperpage{36}
+    \subitem {printClusters}, \hyperpage{35}
+    \subitem {run}, \hyperpage{35}
+  \item {km::KMeansMPI}, \hyperpage{37}
+    \subitem {KMeansMPI}, \hyperpage{39, 40}
+    \subitem {local\_points}, \hyperpage{40}
+    \subitem {run}, \hyperpage{40}
+  \item {km::KMeansOMP}, \hyperpage{41}
+    \subitem {KMeansOMP}, \hyperpage{43}
+    \subitem {run}, \hyperpage{44}
+  \item {km::KMeansSequential}, \hyperpage{44}
+    \subitem {KMeansSequential}, \hyperpage{47}
+    \subitem {run}, \hyperpage{48}
+  \item {km::Performance}, \hyperpage{48}
+    \subitem {appendToCSV}, \hyperpage{50}
+    \subitem {choice}, \hyperpage{53}
+    \subitem {createOrOpenCSV}, \hyperpage{51}
+    \subitem {extractFileName}, \hyperpage{51}
+    \subitem {fillPerformance}, \hyperpage{51}
+    \subitem {img}, \hyperpage{53}
+    \subitem {method}, \hyperpage{53}
+    \subitem {Performance}, \hyperpage{50}
+    \subitem {writeCSV}, \hyperpage{52}
+  \item {km::Point}, \hyperpage{54}
+    \subitem {b}, \hyperpage{57}
+    \subitem {clusterId}, \hyperpage{57}
+    \subitem {distance}, \hyperpage{55}
+    \subitem {g}, \hyperpage{57}
+    \subitem {getFeature}, \hyperpage{56}
+    \subitem {getFeature\_int}, \hyperpage{56}
+    \subitem {id}, \hyperpage{57}
+    \subitem {Point}, \hyperpage{55}
+    \subitem {r}, \hyperpage{57}
+    \subitem {setFeature}, \hyperpage{56}
+  \item {km::utilsCLI}, \hyperpage{12}
+    \subitem {decoderHeader}, \hyperpage{13}
+    \subitem {displayDecodingMenu}, \hyperpage{13}
+    \subitem {mainMenuHeader}, \hyperpage{13}
+    \subitem {printCompressionInformations}, \hyperpage{14}
+    \subitem {workDone}, \hyperpage{14}
+  \item {KMEANS\_CUDA\_HPP}
+    \subitem {kMeansCUDA.cuh}, \hyperpage{67}
+  \item {KMeansBase}
+    \subitem {km::KMeansBase}, \hyperpage{29}
+  \item {KMeansCUDA}
+    \subitem {km::KMeansCUDA}, \hyperpage{33}
+  \item {kMeansCUDA.cu}
+    \subitem {assign\_clusters}, \hyperpage{89}
+    \subitem {average\_centroids}, \hyperpage{89}
+    \subitem {calculate\_new\_centroids}, \hyperpage{89}
+  \item {kMeansCUDA.cuh}
+    \subitem {KMEANS\_CUDA\_HPP}, \hyperpage{67}
+  \item {KMeansMPI}
+    \subitem {km::KMeansMPI}, \hyperpage{39, 40}
+  \item {KMeansOMP}
+    \subitem {km::KMeansOMP}, \hyperpage{43}
+  \item {KMeansSequential}
+    \subitem {km::KMeansSequential}, \hyperpage{47}
+
+  \indexspace
+
+  \item {local\_points}
+    \subitem {km::KMeansMPI}, \hyperpage{40}
+
+  \indexspace
+
+  \item {main}
+    \subitem {decoder.cpp}, \hyperpage{78}
+    \subitem {encoder.cpp}, \hyperpage{79}
+    \subitem {encoderCUDA.cpp}, \hyperpage{81}
+    \subitem {encoderMPI.cpp}, \hyperpage{83}
+    \subitem {encoderOMP.cpp}, \hyperpage{85}
+    \subitem {mainMenu.cpp}, \hyperpage{92}
+  \item {mainMenu.cpp}
+    \subitem {main}, \hyperpage{92}
+  \item {mainMenuHeader}
+    \subitem {km::utilsCLI}, \hyperpage{13}
+  \item {method}
+    \subitem {km::Performance}, \hyperpage{53}
+
+  \indexspace
+
+  \item {number\_of\_iterations}
+    \subitem {km::KMeansBase}, \hyperpage{31}
+    \subitem {km::KMeansCUDA}, \hyperpage{36}
+
+  \indexspace
+
+  \item {Parallel Kmeans Images Compressor}, \hyperpage{1}
+  \item {pattern}
+    \subitem {km::ConfigReader}, \hyperpage{26}
+  \item {Performance}
+    \subitem {km::Performance}, \hyperpage{50}
+  \item {plotClusters}
+    \subitem {km::KMeansCUDA}, \hyperpage{35}
+  \item {Point}
+    \subitem {km::Point}, \hyperpage{55}
+  \item {points}
+    \subitem {km::KMeansBase}, \hyperpage{31}
+    \subitem {km::KMeansCUDA}, \hyperpage{36}
+  \item {pointsFromImage}
+    \subitem {km::imageUtils}, \hyperpage{10}
+  \item {preprocessing}
+    \subitem {km::imageUtils}, \hyperpage{11}
+  \item {printClusters}
+    \subitem {km::KMeansCUDA}, \hyperpage{35}
+  \item {printCompressionInformations}
+    \subitem {km::utilsCLI}, \hyperpage{14}
+
+  \indexspace
+
+  \item {r}
+    \subitem {km::Point}, \hyperpage{57}
+  \item {readBinaryFile}
+    \subitem {km::filesUtils}, \hyperpage{8}
+  \item {readConfigFile}
+    \subitem {km::ConfigReader}, \hyperpage{24}
+  \item {README.md}, \hyperpage{76}
+  \item {requiredVariables}
+    \subitem {km::ConfigReader}, \hyperpage{26}
+  \item {resizing\_factor}
+    \subitem {km::ConfigReader}, \hyperpage{26}
+  \item {run}
+    \subitem {km::KMeansBase}, \hyperpage{31}
+    \subitem {km::KMeansCUDA}, \hyperpage{35}
+    \subitem {km::KMeansMPI}, \hyperpage{40}
+    \subitem {km::KMeansOMP}, \hyperpage{44}
+    \subitem {km::KMeansSequential}, \hyperpage{48}
+
+  \indexspace
+
+  \item {second\_level\_compression\_color}
+    \subitem {km::ConfigReader}, \hyperpage{26}
+  \item {setFeature}
+    \subitem {km::Point}, \hyperpage{56}
+  \item {src/configReader.cpp}, \hyperpage{76}
+  \item {src/decoder.cpp}, \hyperpage{77}
+  \item {src/encoder.cpp}, \hyperpage{79}
+  \item {src/encoderCUDA.cpp}, \hyperpage{80}
+  \item {src/encoderMPI.cpp}, \hyperpage{82}
+  \item {src/encoderOMP.cpp}, \hyperpage{84}
+  \item {src/filesUtils.cpp}, \hyperpage{86}
+  \item {src/imagesUtils.cpp}, \hyperpage{87}
+  \item {src/kMeansBase.cpp}, \hyperpage{87}
+  \item {src/kMeansCUDA.cu}, \hyperpage{88}
+  \item {src/kMeansMPI.cpp}, \hyperpage{90}
+  \item {src/kMeansOMP.cpp}, \hyperpage{90}
+  \item {src/kMeansSequential.cpp}, \hyperpage{91}
+  \item {src/mainMenu.cpp}, \hyperpage{92}
+  \item {src/performanceEvaluation.cpp}, \hyperpage{93}
+  \item {src/point.cpp}, \hyperpage{93}
+  \item {src/utilsCLI.cpp}, \hyperpage{94}
+
+  \indexspace
+
+  \item {third\_level\_compression\_color}
+    \subitem {km::ConfigReader}, \hyperpage{26}
+
+  \indexspace
+
+  \item {workDone}
+    \subitem {km::utilsCLI}, \hyperpage{14}
+  \item {writeBinaryFile}
+    \subitem {km::filesUtils}, \hyperpage{8}
+  \item {writeCSV}
+    \subitem {km::Performance}, \hyperpage{52}
+
+\end{theindex}

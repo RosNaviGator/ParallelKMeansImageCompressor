@@ -8,12 +8,21 @@ Utility functions for the command-\/line interface.
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
 {\ttfamily \#include $<$files\+Utils.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/process.\+hpp$>$}\newline
 Include dependency graph for utils\+CLI.\+hpp\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{utilsCLI_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utilsCLI_8hpp__dep__incl}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Namespaces}
@@ -26,20 +35,12 @@ namespace \mbox{\hyperlink{namespacekm}{km}}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{namespacekm_1_1utilsCLI_ae7ea0f57b4253f4e2f78104cb862b5d4}{km\+::utils\+CLI\+::sequential\+Encoder\+Header}} ()
-\begin{DoxyCompactList}\small\item\em Displays the header for the sequential encoder. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{namespacekm_1_1utilsCLI_a1d81d20821e6036179418f619d9fa936}{km\+::utils\+CLI\+::mpi\+Encoder\+Header}} ()
-\begin{DoxyCompactList}\small\item\em Displays the header for the MPI encoder. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{namespacekm_1_1utilsCLI_ac8bfc1efcbc6bd6460864b7323e39c41}{km\+::utils\+CLI\+::omp\+Encoder\+Header}} ()
-\begin{DoxyCompactList}\small\item\em Displays the header for the Open\+MP encoder. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacekm_1_1utilsCLI_a587fc1cc3f9761ff58bd6e70f90bd1a1}{km\+::utils\+CLI\+::main\+Menu\+Header}} ()
 \begin{DoxyCompactList}\small\item\em Displays the main menu header. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacekm_1_1utilsCLI_a49ee3c94571b62a729a2ba98db2b1a52}{km\+::utils\+CLI\+::decoder\+Header}} ()
 \begin{DoxyCompactList}\small\item\em Displays the decoder header. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacekm_1_1utilsCLI_ac67f75f5e367779691a03add1dceaaa7}{km\+::utils\+CLI\+::work\+Done}} ()
 \begin{DoxyCompactList}\small\item\em Displays the work done message. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{namespacekm_1_1utilsCLI_a520989c4e32a67049da3ebe712c6a18d}{km\+::utils\+CLI\+::compression\+Choices}} (int \&levels\+Colors\+Choice, int \&type\+Compression\+Choice, std\+::string \&output\+Path, cv\+::\+Mat \&image, int execution\+Standard)
-\begin{DoxyCompactList}\small\item\em Handles the compression choices. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacekm_1_1utilsCLI_ae362e74bbc04f2d92c857f4cb9c1373d}{km\+::utils\+CLI\+::print\+Compression\+Informations}} (int \&original\+Width, int \&original\+Height, int \&width, int \&height, int \&k, size\+\_\+t \&different\+\_\+colors\+\_\+size)
 \begin{DoxyCompactList}\small\item\em Prints the compression information. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacekm_1_1utilsCLI_abc310e29d2e842694962a675c676c718}{km\+::utils\+CLI\+::display\+Decoding\+Menu}} (std\+::string \&path, std\+::vector$<$ std\+::filesystem\+::path $>$ \&image\+Names, std\+::filesystem\+::path \&decode\+Dir)

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ParallelKmenasIgnageCompressor: km::ConfigReader Class Reference</title>
+<title>ParallelKmeansImageCompressor: km::ConfigReader Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ParallelKmenasIgnageCompressor
+   <div id="projectname">ParallelKmeansImageCompressor
    </div>
   </td>
  </tr>
@@ -188,6 +188,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Reads and stores configuration values from a file. </p>
+<p>The <a class="el" href="classkm_1_1ConfigReader.html" title="Reads and stores configuration values from a file.">ConfigReader</a> class, located within the km namespace, is designed to handle the reading and storage of configuration settings from a file. This class is particularly focused on managing settings for image processing and compression. It holds various parameters such as compression color values for different levels, resizing factors, color choices, and compression choices, which are essential for tailoring the behavior of image processing operations. The class also manages the input image file path, allowing it to reference the specific files needed for processing. A regular expression pattern is included for validating or extracting configuration details, and a set of required variables is maintained to ensure that all necessary configuration options are present. The class provides several getter methods to access these stored settings, ensuring that they can be easily retrieved by other parts of the application. Additionally, it includes a method to read and validate the configuration file, ensuring that all required parameters are correctly set up before proceeding with any image processing tasks. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a90c639b06e53c898c9f394deee245a36" name="a90c639b06e53c898c9f394deee245a36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90c639b06e53c898c9f394deee245a36">&#9670;&#160;</a></span>ConfigReader()</h2>
@@ -203,6 +204,16 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1ConfigReader_a90c639b06e53c898c9f394deee245a36_cgraph.png" border="0" usemap="#aclasskm_1_1ConfigReader_a90c639b06e53c898c9f394deee245a36_cgraph" alt=""/></div>
+<map name="aclasskm_1_1ConfigReader_a90c639b06e53c898c9f394deee245a36_cgraph" id="aclasskm_1_1ConfigReader_a90c639b06e53c898c9f394deee245a36_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,179,48"/>
+<area shape="rect" href="classkm_1_1ConfigReader.html#a19f406128a55836228ef667670ecfe50" title="Reads the configuration file." alt="" coords="227,13,446,40"/>
+<area shape="poly" title=" " alt="" coords="179,24,211,24,211,29,179,29"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -220,7 +231,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">auto km::ConfigReader::checkVariableExists </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>variableName</em></span></td><td>)</td>
-          <td> const -&gt;  bool</td>
+          <td> const -&gt; bool</td>
         </tr>
       </table>
   </td>
@@ -245,7 +256,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">auto km::ConfigReader::getColorChoice </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt;  int</td>
+          <td> const -&gt; int</td>
         </tr>
       </table>
   </td>
@@ -257,6 +268,16 @@ Private Attributes</h2></td></tr>
 
 <p>Gets the color choice. </p>
 <dl class="section return"><dt>Returns</dt><dd>Color choice </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1ConfigReader_a15bc4894d9b8398a19ced91b3b75867e_icgraph.png" border="0" usemap="#aclasskm_1_1ConfigReader_a15bc4894d9b8398a19ced91b3b75867e_icgraph" alt=""/></div>
+<map name="aclasskm_1_1ConfigReader_a15bc4894d9b8398a19ced91b3b75867e_icgraph" id="aclasskm_1_1ConfigReader_a15bc4894d9b8398a19ced91b3b75867e_icgraph">
+<area shape="rect" title="Gets the color choice." alt="" coords="103,5,287,48"/>
+<area shape="rect" href="mainMenu_8cpp.html#a8216c1645620cdb2f629cde3ac02ffef" title="Main function that runs the Image Compressor application." alt="" coords="5,13,55,40"/>
+<area shape="poly" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -273,7 +294,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">auto km::ConfigReader::getCompressionChoice </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt;  int</td>
+          <td> const -&gt; int</td>
         </tr>
       </table>
   </td>
@@ -285,6 +306,16 @@ Private Attributes</h2></td></tr>
 
 <p>Gets the compression choice. </p>
 <dl class="section return"><dt>Returns</dt><dd>Compression choice </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1ConfigReader_acbca77b6a8383ac0ae6c28f1a34e2259_icgraph.png" border="0" usemap="#aclasskm_1_1ConfigReader_acbca77b6a8383ac0ae6c28f1a34e2259_icgraph" alt=""/></div>
+<map name="aclasskm_1_1ConfigReader_acbca77b6a8383ac0ae6c28f1a34e2259_icgraph" id="aclasskm_1_1ConfigReader_acbca77b6a8383ac0ae6c28f1a34e2259_icgraph">
+<area shape="rect" title="Gets the compression choice." alt="" coords="103,5,333,48"/>
+<area shape="rect" href="mainMenu_8cpp.html#a8216c1645620cdb2f629cde3ac02ffef" title="Main function that runs the Image Compressor application." alt="" coords="5,13,55,40"/>
+<area shape="poly" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -301,7 +332,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">auto km::ConfigReader::getFifthLevelCompressionColor </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt;  double</td>
+          <td> const -&gt; double</td>
         </tr>
       </table>
   </td>
@@ -313,6 +344,20 @@ Private Attributes</h2></td></tr>
 
 <p>Gets the fifth level compression color value. </p>
 <dl class="section return"><dt>Returns</dt><dd>Fifth level compression color value </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1ConfigReader_a532eced302fd72113c7359aa1d08faab_icgraph.png" border="0" usemap="#aclasskm_1_1ConfigReader_a532eced302fd72113c7359aa1d08faab_icgraph" alt=""/></div>
+<map name="aclasskm_1_1ConfigReader_a532eced302fd72113c7359aa1d08faab_icgraph" id="aclasskm_1_1ConfigReader_a532eced302fd72113c7359aa1d08faab_icgraph">
+<area shape="rect" title="Gets the fifth level compression color value." alt="" coords="344,23,523,65"/>
+<area shape="rect" href="namespacekm_1_1imageUtils.html#aef1b51decbf6f0f0ca5c53e20ebbfadb" title="Defines the value of K based on the color levels choice." alt="" coords="103,31,296,57"/>
+<area shape="poly" title=" " alt="" coords="328,47,297,47,297,41,328,41"/>
+<area shape="rect" href="encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="91,30,55,25,55,20,92,25"/>
+<area shape="rect" href="encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="92,63,55,68,55,63,91,58"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -329,7 +374,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">auto km::ConfigReader::getFirstLevelCompressionColor </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt;  double</td>
+          <td> const -&gt; double</td>
         </tr>
       </table>
   </td>
@@ -341,6 +386,20 @@ Private Attributes</h2></td></tr>
 
 <p>Gets the first level compression color value. </p>
 <dl class="section return"><dt>Returns</dt><dd>First level compression color value </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1ConfigReader_a787856a51a8817148108650a664f5738_icgraph.png" border="0" usemap="#aclasskm_1_1ConfigReader_a787856a51a8817148108650a664f5738_icgraph" alt=""/></div>
+<map name="aclasskm_1_1ConfigReader_a787856a51a8817148108650a664f5738_icgraph" id="aclasskm_1_1ConfigReader_a787856a51a8817148108650a664f5738_icgraph">
+<area shape="rect" title="Gets the first level compression color value." alt="" coords="344,23,523,65"/>
+<area shape="rect" href="namespacekm_1_1imageUtils.html#aef1b51decbf6f0f0ca5c53e20ebbfadb" title="Defines the value of K based on the color levels choice." alt="" coords="103,31,296,57"/>
+<area shape="poly" title=" " alt="" coords="328,47,297,47,297,41,328,41"/>
+<area shape="rect" href="encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="91,30,55,25,55,20,92,25"/>
+<area shape="rect" href="encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="92,63,55,68,55,63,91,58"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -357,7 +416,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">auto km::ConfigReader::getFourthLevelCompressionColor </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt;  double</td>
+          <td> const -&gt; double</td>
         </tr>
       </table>
   </td>
@@ -369,6 +428,20 @@ Private Attributes</h2></td></tr>
 
 <p>Gets the fourth level compression color value. </p>
 <dl class="section return"><dt>Returns</dt><dd>Fourth level compression color value </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1ConfigReader_a0a13dd20b33346486e13a87a9a52e4e5_icgraph.png" border="0" usemap="#aclasskm_1_1ConfigReader_a0a13dd20b33346486e13a87a9a52e4e5_icgraph" alt=""/></div>
+<map name="aclasskm_1_1ConfigReader_a0a13dd20b33346486e13a87a9a52e4e5_icgraph" id="aclasskm_1_1ConfigReader_a0a13dd20b33346486e13a87a9a52e4e5_icgraph">
+<area shape="rect" title="Gets the fourth level compression color value." alt="" coords="344,23,534,65"/>
+<area shape="rect" href="namespacekm_1_1imageUtils.html#aef1b51decbf6f0f0ca5c53e20ebbfadb" title="Defines the value of K based on the color levels choice." alt="" coords="103,31,296,57"/>
+<area shape="poly" title=" " alt="" coords="328,47,296,47,296,41,328,41"/>
+<area shape="rect" href="encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="91,30,55,25,55,20,92,25"/>
+<area shape="rect" href="encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="92,63,55,68,55,63,91,58"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -385,7 +458,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">auto km::ConfigReader::getInputImageFilePath </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt;  std::filesystem::path</td>
+          <td> const -&gt; std::filesystem::path</td>
         </tr>
       </table>
   </td>
@@ -397,6 +470,16 @@ Private Attributes</h2></td></tr>
 
 <p>Gets the input image file path. </p>
 <dl class="section return"><dt>Returns</dt><dd>Input image file path </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1ConfigReader_a237ced5b25d092bc8de9b55953f923be_icgraph.png" border="0" usemap="#aclasskm_1_1ConfigReader_a237ced5b25d092bc8de9b55953f923be_icgraph" alt=""/></div>
+<map name="aclasskm_1_1ConfigReader_a237ced5b25d092bc8de9b55953f923be_icgraph" id="aclasskm_1_1ConfigReader_a237ced5b25d092bc8de9b55953f923be_icgraph">
+<area shape="rect" title="Gets the input image file path." alt="" coords="103,5,285,48"/>
+<area shape="rect" href="mainMenu_8cpp.html#a8216c1645620cdb2f629cde3ac02ffef" title="Main function that runs the Image Compressor application." alt="" coords="5,13,55,40"/>
+<area shape="poly" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -413,7 +496,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">auto km::ConfigReader::getResizingFactor </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt;  double</td>
+          <td> const -&gt; double</td>
         </tr>
       </table>
   </td>
@@ -425,6 +508,20 @@ Private Attributes</h2></td></tr>
 
 <p>Gets the resizing factor. </p>
 <dl class="section return"><dt>Returns</dt><dd>Resizing factor </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1ConfigReader_a6067e8491ad1fdbb5f62b33ef215208e_icgraph.png" border="0" usemap="#aclasskm_1_1ConfigReader_a6067e8491ad1fdbb5f62b33ef215208e_icgraph" alt=""/></div>
+<map name="aclasskm_1_1ConfigReader_a6067e8491ad1fdbb5f62b33ef215208e_icgraph" id="aclasskm_1_1ConfigReader_a6067e8491ad1fdbb5f62b33ef215208e_icgraph">
+<area shape="rect" title="Gets the resizing factor." alt="" coords="349,23,553,65"/>
+<area shape="rect" href="namespacekm_1_1imageUtils.html#aa01205ffe26b0f4c815d5750a4ff0e1c" title="Performs preprocessing on an image." alt="" coords="103,31,301,57"/>
+<area shape="poly" title=" " alt="" coords="333,47,301,47,301,41,333,41"/>
+<area shape="rect" href="encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="92,30,55,25,55,20,93,25"/>
+<area shape="rect" href="encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="93,63,55,68,55,63,92,58"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -441,7 +538,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">auto km::ConfigReader::getSecondLevelCompressionColor </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt;  double</td>
+          <td> const -&gt; double</td>
         </tr>
       </table>
   </td>
@@ -453,6 +550,20 @@ Private Attributes</h2></td></tr>
 
 <p>Gets the second level compression color value. </p>
 <dl class="section return"><dt>Returns</dt><dd>Second level compression color value </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1ConfigReader_a12968b54f38b17586d6e65be5158d275_icgraph.png" border="0" usemap="#aclasskm_1_1ConfigReader_a12968b54f38b17586d6e65be5158d275_icgraph" alt=""/></div>
+<map name="aclasskm_1_1ConfigReader_a12968b54f38b17586d6e65be5158d275_icgraph" id="aclasskm_1_1ConfigReader_a12968b54f38b17586d6e65be5158d275_icgraph">
+<area shape="rect" title="Gets the second level compression color value." alt="" coords="344,23,541,65"/>
+<area shape="rect" href="namespacekm_1_1imageUtils.html#aef1b51decbf6f0f0ca5c53e20ebbfadb" title="Defines the value of K based on the color levels choice." alt="" coords="103,31,296,57"/>
+<area shape="poly" title=" " alt="" coords="328,47,297,47,297,41,328,41"/>
+<area shape="rect" href="encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="91,30,55,25,55,20,92,25"/>
+<area shape="rect" href="encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="92,63,55,68,55,63,91,58"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -469,7 +580,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">auto km::ConfigReader::getThirdLevelCompressionColor </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt;  double</td>
+          <td> const -&gt; double</td>
         </tr>
       </table>
   </td>
@@ -481,6 +592,20 @@ Private Attributes</h2></td></tr>
 
 <p>Gets the third level compression color value. </p>
 <dl class="section return"><dt>Returns</dt><dd>Third level compression color value </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1ConfigReader_a0e355597d2a6f4c1f01e91da11fbd577_icgraph.png" border="0" usemap="#aclasskm_1_1ConfigReader_a0e355597d2a6f4c1f01e91da11fbd577_icgraph" alt=""/></div>
+<map name="aclasskm_1_1ConfigReader_a0e355597d2a6f4c1f01e91da11fbd577_icgraph" id="aclasskm_1_1ConfigReader_a0e355597d2a6f4c1f01e91da11fbd577_icgraph">
+<area shape="rect" title="Gets the third level compression color value." alt="" coords="344,23,526,65"/>
+<area shape="rect" href="namespacekm_1_1imageUtils.html#aef1b51decbf6f0f0ca5c53e20ebbfadb" title="Defines the value of K based on the color levels choice." alt="" coords="103,31,296,57"/>
+<area shape="poly" title=" " alt="" coords="328,47,296,47,296,41,328,41"/>
+<area shape="rect" href="encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="91,30,55,25,55,20,92,25"/>
+<area shape="rect" href="encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="92,63,55,68,55,63,91,58"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -497,7 +622,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">auto km::ConfigReader::readConfigFile </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> -&gt;  bool</td>
+          <td> -&gt; bool</td>
         </tr>
       </table>
   </td>
@@ -509,6 +634,16 @@ Private Attributes</h2></td></tr>
 
 <p>Reads the configuration file. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the configuration file is read successfully, false otherwise </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50_icgraph.png" border="0" usemap="#aclasskm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50_icgraph" alt=""/></div>
+<map name="aclasskm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50_icgraph" id="aclasskm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50_icgraph">
+<area shape="rect" title="Reads the configuration file." alt="" coords="227,13,446,40"/>
+<area shape="rect" href="classkm_1_1ConfigReader.html#a90c639b06e53c898c9f394deee245a36" title=" " alt="" coords="5,5,179,48"/>
+<area shape="poly" title=" " alt="" coords="211,29,179,29,179,24,211,24"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -777,13 +912,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/<a class="el" href="configReader_8hpp_source.html">configReader.hpp</a></li>
+<li>src/<a class="el" href="configReader_8cpp.html">configReader.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 1 2024 17:01:40 for ParallelKmenasIgnageCompressor by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

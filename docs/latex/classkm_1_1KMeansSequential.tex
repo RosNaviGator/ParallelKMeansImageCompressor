@@ -2,11 +2,6 @@
 \hypertarget{classkm_1_1KMeansSequential}{}\label{classkm_1_1KMeansSequential}\index{km::KMeansSequential@{km::KMeansSequential}}
 
 
-Represents the K-\/means clustering algorithm.  
-
-
-
-
 {\ttfamily \#include $<$k\+Means\+Sequential.\+hpp$>$}
 
 
@@ -45,11 +40,11 @@ void \mbox{\hyperlink{classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208f901
 \begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classkm_1_1KMeansBase}{KMeans\+Base} object only with the specified number of clusters. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classkm_1_1KMeansBase_a295d214db11a3c799cb70b86baeb26ee}{\texorpdfstring{$\sim$}{\string~}\+KMeans\+Base}} ()=default
 \begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classkm_1_1KMeansBase}{KMeans\+Base}. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classkm_1_1KMeansBase_af5fa8fabf72ebb17b4b711609946d74f}{get\+Points}} () const -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
+auto \mbox{\hyperlink{classkm_1_1KMeansBase_a5ec2ecf08e285a5e2d34b766b353ce1f}{get\+Points}} () const -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
 \begin{DoxyCompactList}\small\item\em Gets the poinots. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classkm_1_1KMeansBase_a9f04b8e213f35f3a526f806e070667d6}{get\+Centroids}} () const -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
+auto \mbox{\hyperlink{classkm_1_1KMeansBase_ac0ecde9c25587ef197069159c0b545df}{get\+Centroids}} () const -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
 \begin{DoxyCompactList}\small\item\em Gets the centroids. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classkm_1_1KMeansBase_a73e8e4656d66217a8890c48942800daa}{get\+Iterations}} () const -\/$>$ int
+auto \mbox{\hyperlink{classkm_1_1KMeansBase_a48d1ee4a7a671b200995c611fd349cd3}{get\+Iterations}} () const -\/$>$ int
 \begin{DoxyCompactList}\small\item\em Gets the number of iterations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classkm_1_1KMeansBase}{km\+::\+KMeans\+Base}}}
@@ -66,7 +61,15 @@ int \mbox{\hyperlink{classkm_1_1KMeansBase_a1a41bedae67c0ae03bca35fba3ff8aa3}{nu
 
 
 \doxysubsection{Detailed Description}
-Represents the K-\/means clustering algorithm. 
+\begin{DoxyVerb}   @class KMeansSequential
+   @brief Represents the K-means clustering algorithm
+   @details The KMeansSequential class, within the km namespace, provides a straightforward implementation of the K-means clustering algorithm. This class extends the KMeansBase class to implement the algorithm in a sequential manner, meaning that it performs all computations in a single-threaded, non-parallel fashion.
+\end{DoxyVerb}
+
+
+The class includes a constructor that initializes the number of clusters and the vector of points to be clustered. The run method, which overrides the virtual method from \doxylink{classkm_1_1KMeansBase}{KMeans\+Base}, is responsible for executing the K-\/means clustering algorithm in a sequential, step-\/by-\/step process. This implementation is suitable for environments where parallel processing is not available or necessary, and it provides a foundational approach to K-\/means clustering that can be used for benchmarking or as a baseline for more complex implementations.
+
+The \doxylink{classkm_1_1KMeansSequential}{KMeans\+Sequential} class serves as a basic and direct implementation of K-\/means clustering, focusing on clarity and correctness of the algorithm in a non-\/parallelized context. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{classkm_1_1KMeansSequential_a0c8a679e5df18f0ec4050a66d2a62a74}\index{km::KMeansSequential@{km::KMeansSequential}!KMeansSequential@{KMeansSequential}}
@@ -103,8 +106,17 @@ Runs the K-\/means clustering algorithm.
 
 Implements \mbox{\hyperlink{classkm_1_1KMeansBase_ada4d6b7154a5200a538c23f48acfc5bb}{km\+::\+KMeans\+Base}}.
 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208f901a7b_icgraph}
+\end{center}
+\end{figure}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/\mbox{\hyperlink{kMeansSequential_8hpp}{k\+Means\+Sequential.\+hpp}}\end{DoxyCompactItemize}
+include/\mbox{\hyperlink{kMeansSequential_8hpp}{k\+Means\+Sequential.\+hpp}}\item 
+src/\mbox{\hyperlink{kMeansSequential_8cpp}{k\+Means\+Sequential.\+cpp}}\end{DoxyCompactItemize}

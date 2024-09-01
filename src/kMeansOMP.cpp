@@ -22,6 +22,7 @@ void km::KMeansOMP::run()
         counts = std::vector<int>(k, 0);
         #pragma omp parallel
         {
+            
             #pragma omp for
             for (Point& p : points)
             {

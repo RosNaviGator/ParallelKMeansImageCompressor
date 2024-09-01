@@ -2,11 +2,6 @@
 \hypertarget{classkm_1_1KMeansMPI}{}\label{classkm_1_1KMeansMPI}\index{km::KMeansMPI@{km::KMeansMPI}}
 
 
-Represents the K-\/means clustering algorithm using MPI.  
-
-
-
-
 {\ttfamily \#include $<$k\+Means\+MPI.\+hpp$>$}
 
 
@@ -47,11 +42,11 @@ void \mbox{\hyperlink{classkm_1_1KMeansMPI_a776852d58db859f83090ba45c1bd7034}{ru
 \begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classkm_1_1KMeansBase}{KMeans\+Base} object only with the specified number of clusters. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classkm_1_1KMeansBase_a295d214db11a3c799cb70b86baeb26ee}{\texorpdfstring{$\sim$}{\string~}\+KMeans\+Base}} ()=default
 \begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classkm_1_1KMeansBase}{KMeans\+Base}. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classkm_1_1KMeansBase_af5fa8fabf72ebb17b4b711609946d74f}{get\+Points}} () const -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
+auto \mbox{\hyperlink{classkm_1_1KMeansBase_a5ec2ecf08e285a5e2d34b766b353ce1f}{get\+Points}} () const -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
 \begin{DoxyCompactList}\small\item\em Gets the poinots. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classkm_1_1KMeansBase_a9f04b8e213f35f3a526f806e070667d6}{get\+Centroids}} () const -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
+auto \mbox{\hyperlink{classkm_1_1KMeansBase_ac0ecde9c25587ef197069159c0b545df}{get\+Centroids}} () const -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
 \begin{DoxyCompactList}\small\item\em Gets the centroids. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classkm_1_1KMeansBase_a73e8e4656d66217a8890c48942800daa}{get\+Iterations}} () const -\/$>$ int
+auto \mbox{\hyperlink{classkm_1_1KMeansBase_a48d1ee4a7a671b200995c611fd349cd3}{get\+Iterations}} () const -\/$>$ int
 \begin{DoxyCompactList}\small\item\em Gets the number of iterations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -73,7 +68,15 @@ int \mbox{\hyperlink{classkm_1_1KMeansBase_a1a41bedae67c0ae03bca35fba3ff8aa3}{nu
 
 
 \doxysubsection{Detailed Description}
-Represents the K-\/means clustering algorithm using MPI. 
+\begin{DoxyVerb}   @class KMeansMPI
+   @brief Represents the K-means clustering algorithm using MPI
+   @details The KMeansMPI class, located in the km namespace, is designed to implement the K-means clustering algorithm using MPI (Message Passing Interface) for parallel and distributed computing. This class extends the base KMeansBase class to enable clustering operations across multiple processes, leveraging MPI to handle large-scale data and computational tasks more efficiently.
+\end{DoxyVerb}
+
+
+The class includes two constructors\+: one that initializes the number of clusters, a vector of points, and a vector of local points distributed across MPI processes; and another that initializes only the number of clusters and local points. The run method, overridden from \doxylink{classkm_1_1KMeansBase}{KMeans\+Base}, is responsible for executing the K-\/means clustering algorithm using MPI, coordinating the clustering process across different processes in a distributed computing environment.
+
+The local\+\_\+points member variable holds the points assigned to each MPI process, enabling the parallel execution of clustering tasks. This class is designed to handle clustering in a distributed setting, allowing for efficient processing of large datasets by distributing the workload across multiple computing nodes. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{classkm_1_1KMeansMPI_ae01b6db4c486db5d8b20f1178a2b44f0}\index{km::KMeansMPI@{km::KMeansMPI}!KMeansMPI@{KMeansMPI}}
@@ -140,6 +143,7 @@ Vector of local points.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/\mbox{\hyperlink{kMeansMPI_8hpp}{k\+Means\+MPI.\+hpp}}\end{DoxyCompactItemize}
+include/\mbox{\hyperlink{kMeansMPI_8hpp}{k\+Means\+MPI.\+hpp}}\item 
+src/\mbox{\hyperlink{kMeansMPI_8cpp}{k\+Means\+MPI.\+cpp}}\end{DoxyCompactItemize}

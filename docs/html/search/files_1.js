@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['filesutils_2ehpp_0',['filesUtils.hpp',['../filesUtils_8hpp.html',1,'']]]
+  ['configreader_2ecpp_0',['configReader.cpp',['../configReader_8cpp.html',1,'']]],
+  ['configreader_2ehpp_1',['configReader.hpp',['../configReader_8hpp.html',1,'']]]
 ];

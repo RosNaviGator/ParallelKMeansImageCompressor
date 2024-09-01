@@ -1,0 +1,5 @@
+<map id="km::imageUtils::preprocessing" name="km::imageUtils::preprocessing">
+<area shape="rect" id="Node000001" title="Performs preprocessing on an image." alt="" coords="5,13,204,40"/>
+<area shape="rect" id="Node000002" href="$classkm_1_1ConfigReader.html#a6067e8491ad1fdbb5f62b33ef215208e" title="Gets the resizing factor." alt="" coords="252,5,456,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,24,236,24,236,29,204,29"/>
+</map>

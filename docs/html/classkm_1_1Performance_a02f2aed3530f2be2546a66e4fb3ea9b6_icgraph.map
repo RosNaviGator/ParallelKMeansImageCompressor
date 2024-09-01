@@ -1,0 +1,7 @@
+<map id="km::Performance::fillPerformance" name="km::Performance::fillPerformance">
+<area shape="rect" id="Node000001" title="Fills the performance data." alt="" coords="103,31,319,57"/>
+<area shape="rect" id="Node000002" href="$encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,31,55,25,56,19,97,25"/>
+<area shape="rect" id="Node000003" href="$encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,63,56,69,55,63,96,57"/>
+</map>

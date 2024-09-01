@@ -14,6 +14,7 @@ namespace km
     /**
      * @class Point
      * @brief Represents a point in a feature space
+     * @details The Point class in the km namespace represents a point in a feature space, with attributes including an ID, RGB color components, and a cluster ID. It features a default constructor and a parameterized constructor for initializing points with specific IDs and coordinates. The class includes methods to compute the distance between two points, retrieve and set feature values, and access feature values as integers. These functionalities facilitate the manipulation and analysis of points within clustering algorithms and other feature-based computations.
      */
 
     class Point

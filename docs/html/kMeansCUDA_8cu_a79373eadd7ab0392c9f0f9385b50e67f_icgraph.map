@@ -1,0 +1,7 @@
+<map id="average_centroids" name="average_centroids">
+<area shape="rect" id="Node000001" title=" " alt="" coords="311,5,438,32"/>
+<area shape="rect" id="Node000002" href="$classkm_1_1KMeansCUDA.html#a4d748e05b8ebad9ec535d0c33ec3f3ab" title="Runs the K&#45;means clustering algorithm using CUDA." alt="" coords="103,5,263,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,21,263,21,263,16,295,16"/>
+<area shape="rect" id="Node000003" href="$encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

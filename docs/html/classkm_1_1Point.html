@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ParallelKmenasIgnageCompressor: km::Point Class Reference</title>
+<title>ParallelKmeansImageCompressor: km::Point Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ParallelKmenasIgnageCompressor
+   <div id="projectname">ParallelKmeansImageCompressor
    </div>
   </td>
  </tr>
@@ -126,9 +126,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a365fe57674e245fd49e300cddb6050d1" id="r_a365fe57674e245fd49e300cddb6050d1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a365fe57674e245fd49e300cddb6050d1">getFeature_int</a> (int index) const -&gt; int</td></tr>
 <tr class="memdesc:a365fe57674e245fd49e300cddb6050d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a feature value as an integer at the specified index.  <br /></td></tr>
 <tr class="separator:a365fe57674e245fd49e300cddb6050d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64d17ea345411db2662d787fb1d8f0cb" id="r_a64d17ea345411db2662d787fb1d8f0cb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64d17ea345411db2662d787fb1d8f0cb">setFeature</a> (int index, int x) -&gt; void</td></tr>
-<tr class="memdesc:a64d17ea345411db2662d787fb1d8f0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a feature value at the specified index.  <br /></td></tr>
-<tr class="separator:a64d17ea345411db2662d787fb1d8f0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5779b9b295a1b9ba707f262fdec275" id="r_abf5779b9b295a1b9ba707f262fdec275"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf5779b9b295a1b9ba707f262fdec275">setFeature</a> (int index, int x) -&gt; void</td></tr>
+<tr class="memdesc:abf5779b9b295a1b9ba707f262fdec275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a feature value at the specified index.  <br /></td></tr>
+<tr class="separator:abf5779b9b295a1b9ba707f262fdec275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -150,12 +150,16 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a point in a feature space. </p>
+<p>The <a class="el" href="classkm_1_1Point.html" title="Represents a point in a feature space.">Point</a> class in the km namespace represents a point in a feature space, with attributes including an ID, RGB color components, and a cluster ID. It features a default constructor and a parameterized constructor for initializing points with specific IDs and coordinates. The class includes methods to compute the distance between two points, retrieve and set feature values, and access feature values as integers. These functionalities facilitate the manipulation and analysis of points within clustering algorithms and other feature-based computations. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa891dfb4d34712d231583e513d08333e" name="aa891dfb4d34712d231583e513d08333e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa891dfb4d34712d231583e513d08333e">&#9670;&#160;</a></span>Point() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">km::Point::Point </td>
@@ -164,6 +168,11 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Constructor for <a class="el" href="classkm_1_1Point.html" title="Represents a point in a feature space.">Point</a>. </p>
@@ -220,7 +229,7 @@ Public Attributes</h2></td></tr>
           <td class="memname">auto km::Point::distance </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classkm_1_1Point.html">Point</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
-          <td> const -&gt;  double</td>
+          <td> const -&gt; double</td>
         </tr>
       </table>
   </td>
@@ -251,7 +260,7 @@ Public Attributes</h2></td></tr>
           <td class="memname">auto km::Point::getFeature </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
-          <td> -&gt;  unsigned char &amp;</td>
+          <td> -&gt; unsigned char &amp;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -280,7 +289,7 @@ Public Attributes</h2></td></tr>
           <td class="memname">auto km::Point::getFeature_int </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
-          <td> const -&gt;  int</td>
+          <td> const -&gt; int</td>
         </tr>
       </table>
   </td>
@@ -301,21 +310,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a64d17ea345411db2662d787fb1d8f0cb" name="a64d17ea345411db2662d787fb1d8f0cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64d17ea345411db2662d787fb1d8f0cb">&#9670;&#160;</a></span>setFeature()</h2>
+<a id="abf5779b9b295a1b9ba707f262fdec275" name="abf5779b9b295a1b9ba707f262fdec275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf5779b9b295a1b9ba707f262fdec275">&#9670;&#160;</a></span>setFeature()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto km::Point::setFeature </td>
+          <td class="memname">void km::Point::setFeature </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>&#160;) -&gt;  void</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>&#160;) -&gt; void</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -412,13 +421,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/<a class="el" href="point_8hpp_source.html">point.hpp</a></li>
+<li>src/<a class="el" href="point_8cpp.html">point.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 1 2024 17:01:40 for ParallelKmenasIgnageCompressor by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -1,0 +1,11 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="Main function that runs the Image Compressor application." alt="" coords="5,113,55,140"/>
+<area shape="rect" id="Node000002" href="$classkm_1_1ConfigReader.html#a15bc4894d9b8398a19ced91b3b75867e" title="Gets the color choice." alt="" coords="126,5,310,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="41,111,67,84,101,58,112,52,114,57,104,62,70,88,44,115"/>
+<area shape="rect" id="Node000003" href="$classkm_1_1ConfigReader.html#acbca77b6a8383ac0ae6c28f1a34e2259" title="Gets the compression choice." alt="" coords="103,72,333,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,120,87,114,88,119,56,125"/>
+<area shape="rect" id="Node000004" href="$classkm_1_1ConfigReader.html#a237ced5b25d092bc8de9b55953f923be" title="Gets the input image file path." alt="" coords="127,139,309,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="56,128,112,138,111,144,55,134"/>
+<area shape="rect" id="Node000005" href="$namespacekm_1_1utilsCLI.html#a587fc1cc3f9761ff58bd6e70f90bd1a1" title="Displays the main menu header." alt="" coords="117,205,319,232"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="44,138,69,166,104,191,117,197,115,202,101,196,66,170,40,142"/>
+</map>

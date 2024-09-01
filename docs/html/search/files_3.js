@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['kmdocs_2ehpp_0',['kmDocs.hpp',['../kmDocs_8hpp.html',1,'']]],
-  ['kmeansbase_2ehpp_1',['kMeansBase.hpp',['../kMeansBase_8hpp.html',1,'']]],
-  ['kmeanscuda_2ecuh_2',['kMeansCUDA.cuh',['../kMeansCUDA_8cuh.html',1,'']]],
-  ['kmeansmpi_2ehpp_3',['kMeansMPI.hpp',['../kMeansMPI_8hpp.html',1,'']]],
-  ['kmeansomp_2ehpp_4',['kMeansOMP.hpp',['../kMeansOMP_8hpp.html',1,'']]],
-  ['kmeanssequential_2ehpp_5',['kMeansSequential.hpp',['../kMeansSequential_8hpp.html',1,'']]]
+  ['encoder_2ecpp_0',['encoder.cpp',['../encoder_8cpp.html',1,'']]],
+  ['encodercuda_2ecpp_1',['encoderCUDA.cpp',['../encoderCUDA_8cpp.html',1,'']]],
+  ['encodermpi_2ecpp_2',['encoderMPI.cpp',['../encoderMPI_8cpp.html',1,'']]],
+  ['encoderomp_2ecpp_3',['encoderOMP.cpp',['../encoderOMP_8cpp.html',1,'']]]
 ];

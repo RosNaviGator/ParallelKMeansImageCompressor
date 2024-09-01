@@ -124,7 +124,7 @@ if weakScalability:
 
     # Define number of simulations
     OMP = True
-    MPI = True
+    MPI = False
 
     # Define number of processes (only MPI)
     processorStart = 1
@@ -154,7 +154,7 @@ if weakScalability:
                     for threads in range(threadsStart, threadsEnd + 1):
                         file_path = folder_path + "/" + str(threads) + ".png"
                         os.system(f"../build/ompEncoder {file_path} {colors} {compression} {threads}")
-                        os.system(f"../build/seqEncoder {file_path} {colors} {compression}")
+                        # os.system(f"../build/seqEncoder {file_path} {colors} {compression}")
         os.system("rm -rf performanceImages/")
 
     if MPI:

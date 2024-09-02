@@ -1,5 +1,5 @@
 /**
- * @file main.cpp
+ * @file encoderOMP.cpp
  * @brief Main entry point for the OpenMP-based image compression application.
  *
  * This program compresses an image using the K-means clustering algorithm with OpenMP 

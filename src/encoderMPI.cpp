@@ -1,5 +1,5 @@
 /**
- * @file main.cpp
+ * @file encoderMPI.cpp
  * @brief Main entry point for the MPI-based image compression application.
  *
  * This program compresses an image using the K-means clustering algorithm with MPI (Message Passing Interface) 

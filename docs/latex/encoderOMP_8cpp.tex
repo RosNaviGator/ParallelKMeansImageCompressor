@@ -1,5 +1,10 @@
 \doxysection{src/encoder\+OMP.cpp File Reference}
 \hypertarget{encoderOMP_8cpp}{}\label{encoderOMP_8cpp}\index{src/encoderOMP.cpp@{src/encoderOMP.cpp}}
+
+
+Main entry point for the Open\+MP-\/based image compression application.  
+
+
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include $<$cmath$>$}\newline
@@ -32,6 +37,13 @@ Include dependency graph for encoder\+OMP.\+cpp\+:
 auto \mbox{\hyperlink{encoderOMP_8cpp_a7114aa2dd6837734db57667a298dfcc4}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]}) -\/$>$ int
 \begin{DoxyCompactList}\small\item\em Main function for the Open\+MP-\/based image compression application. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Main entry point for the Open\+MP-\/based image compression application. 
+
+This program compresses an image using the K-\/means clustering algorithm with Open\+MP for parallel processing across multiple threads. It reads input parameters from the command line, processes the image, applies compression, and saves the compressed image to a binary file. The program also evaluates performance metrics and writes them to a CSV file.
+
+The application uses Open\+CV for image processing and custom libraries for compression, file handling, and performance evaluation. 
 
 \doxysubsection{Function Documentation}
 \Hypertarget{encoderOMP_8cpp_a7114aa2dd6837734db57667a298dfcc4}\index{encoderOMP.cpp@{encoderOMP.cpp}!main@{main}}

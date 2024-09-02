@@ -93,6 +93,9 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">encoder.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Main entry point for the image compression application.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
@@ -116,7 +119,7 @@ Include dependency graph for encoder.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="encoder_8cpp__incl.png" border="0" usemap="#asrc_2encoder_8cpp" alt=""/></div>
 <map name="asrc_2encoder_8cpp" id="asrc_2encoder_8cpp">
-<area shape="rect" title=" " alt="" coords="542,5,657,32"/>
+<area shape="rect" title="Main entry point for the image compression application." alt="" coords="542,5,657,32"/>
 <area shape="rect" title=" " alt="" coords="592,229,663,256"/>
 <area shape="poly" title=" " alt="" coords="607,31,616,67,616,88,610,108,601,119,591,127,570,133,549,140,540,146,533,156,529,168,533,180,553,204,579,221,576,225,549,208,528,183,523,168,528,153,537,142,547,135,568,128,589,122,598,116,605,105,611,87,611,67,602,33"/>
 <area shape="rect" title=" " alt="" coords="386,304,443,331"/>
@@ -203,7 +206,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:a7114aa2dd6837734db57667a298dfcc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function for the image compression application.  <br /></td></tr>
 <tr class="separator:a7114aa2dd6837734db57667a298dfcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Main entry point for the image compression application. </p>
+<p>This program compresses an image using the K-means clustering algorithm in sequential mode. It reads input parameters from the command line, processes the image, applies compression, and saves the compressed image to a binary file. The program also evaluates performance metrics and writes them to a CSV file.</p>
+<p>The application uses OpenCV for image processing and custom libraries for compression and file handling. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a7114aa2dd6837734db57667a298dfcc4" name="a7114aa2dd6837734db57667a298dfcc4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7114aa2dd6837734db57667a298dfcc4">&#9670;&#160;</a></span>main()</h2>
 

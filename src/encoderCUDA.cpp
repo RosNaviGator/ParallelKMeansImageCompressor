@@ -1,5 +1,5 @@
 /**
- * @file main.cpp
+ * @file encoderCUDA.cpp
  * @brief Main entry point for the CUDA-based image compression application.
  *
  * This program compresses an image using the K-means clustering algorithm, leveraging CUDA for GPU acceleration.

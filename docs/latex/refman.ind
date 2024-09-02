@@ -5,7 +5,6 @@
 
   \indexspace
 
-  \item {acl.sty}, \hyperpage{59}
   \item {appendToCSV}
     \subitem {km::Performance}, \hyperpage{50}
   \item {assign\_clusters}
@@ -124,11 +123,11 @@
   \item {img}
     \subitem {km::Performance}, \hyperpage{53}
   \item {include/configReader.hpp}, \hyperpage{59, 60}
-  \item {include/filesUtils.hpp}, \hyperpage{61, 62}
+  \item {include/filesUtils.hpp}, \hyperpage{60}, \hyperpage{62}
   \item {include/imagesUtils.hpp}, \hyperpage{62, 63}
-  \item {include/kmDocs.hpp}, \hyperpage{64}
+  \item {include/kmDocs.hpp}, \hyperpage{63, 64}
   \item {include/kMeansBase.hpp}, \hyperpage{64, 65}
-  \item {include/kMeansCUDA.cuh}, \hyperpage{66, 67}
+  \item {include/kMeansCUDA.cuh}, \hyperpage{65}, \hyperpage{67}
   \item {include/kMeansMPI.hpp}, \hyperpage{67}, \hyperpage{69}
   \item {include/kMeansOMP.hpp}, \hyperpage{69, 70}
   \item {include/kMeansSequential.hpp}, \hyperpage{71, 72}

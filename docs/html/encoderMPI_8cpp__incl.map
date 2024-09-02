@@ -1,5 +1,5 @@
 <map id="src/encoderMPI.cpp" name="src/encoderMPI.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="663,5,801,32"/>
+<area shape="rect" id="Node000001" title="Main entry point for the MPI&#45;based image compression application." alt="" coords="663,5,801,32"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="879,229,1019,256"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="802,19,879,24,963,34,1036,51,1064,63,1083,78,1094,99,1094,119,1086,140,1071,160,1031,195,988,223,985,219,1028,191,1067,156,1081,137,1089,118,1089,100,1079,82,1061,68,1035,56,962,39,879,29,801,24"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="769,229,841,256"/>

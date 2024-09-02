@@ -1,5 +1,10 @@
 \doxysection{src/encoder\+CUDA.cpp File Reference}
 \hypertarget{encoderCUDA_8cpp}{}\label{encoderCUDA_8cpp}\index{src/encoderCUDA.cpp@{src/encoderCUDA.cpp}}
+
+
+Main entry point for the CUDA-\/based image compression application.  
+
+
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include $<$cmath$>$}\newline
@@ -32,6 +37,13 @@ Include dependency graph for encoder\+CUDA.\+cpp\+:
 int \mbox{\hyperlink{encoderCUDA_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
 \begin{DoxyCompactList}\small\item\em Main function for the CUDA-\/based image compression application. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Main entry point for the CUDA-\/based image compression application. 
+
+This program compresses an image using the K-\/means clustering algorithm, leveraging CUDA for GPU acceleration. It reads input parameters from the command line, processes the image, applies compression using the GPU, and saves the compressed image to a binary file. The program also evaluates performance metrics and logs them to a CSV file.
+
+The application uses Open\+CV for image processing and custom libraries for compression, file handling, and performance evaluation. 
 
 \doxysubsection{Function Documentation}
 \Hypertarget{encoderCUDA_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\index{encoderCUDA.cpp@{encoderCUDA.cpp}!main@{main}}

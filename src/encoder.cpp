@@ -1,5 +1,5 @@
 /**
- * @file main.cpp
+ * @file encoder.cpp
  * @brief Main entry point for the image compression application.
  *
  * This program compresses an image using the K-means clustering algorithm in sequential mode.

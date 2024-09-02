@@ -1,5 +1,5 @@
 <map id="src/encoder.cpp" name="src/encoder.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="542,5,657,32"/>
+<area shape="rect" id="Node000001" title="Main entry point for the image compression application." alt="" coords="542,5,657,32"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="592,229,663,256"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="607,31,616,67,616,88,610,108,601,119,591,127,570,133,549,140,540,146,533,156,529,168,533,180,553,204,579,221,576,225,549,208,528,183,523,168,528,153,537,142,547,135,568,128,589,122,598,116,605,105,611,87,611,67,602,33"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="386,304,443,331"/>

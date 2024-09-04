@@ -58,7 +58,7 @@ class PerformancePlotter:
         plt.plot(omp_data_speedup['img'], omp_data_speedup['speedup'], marker='o', linestyle='-', label='OMP')
         plt.xlabel('Number of Processes/Threads')
         plt.ylabel('Speedup')
-        plt.title('Speedup vs Number of Processes/Threads')
+        plt.title('Weak Scalability')
         plt.legend()
         plt.grid(True)
 
@@ -82,9 +82,9 @@ class PerformancePlotter:
             grouped_data = 0.224533 / method_data.groupby('world_size')['time'].mean()
             plt.plot(grouped_data.index, grouped_data.values, marker='o', linestyle='-', label=method)
 
-        plt.xlabel('World Size')
-        plt.ylabel('Mean Time')
-        plt.title(f'Time vs World Size (n_points={n_points})')
+        plt.xlabel('Number of Processes/Threads')
+        plt.ylabel('Speedup')
+        plt.title(f'Strong Scalability (n_points={n_points})')
         plt.legend()
         plt.grid(True)
 
@@ -112,11 +112,12 @@ class ImageGenerator:
             # print(f"Number of unique colors in the image: {unique_colors}")
         print("Image generation completed.")
 
-weakScalability = True
+weakScalability = False
 strongScalability = False
-generalPerformanceEvaluation = False
-plotWeakScalability = True
+generalPerformanceEvaluation = True
+plotWeakScalability = False
 plotStrongScalability = False
+plotGeneralPerformanceEvaluation = True
 
 if weakScalability:
 
@@ -223,3 +224,84 @@ if plotWeakScalability:
 if plotStrongScalability:
     performance_plotter = PerformancePlotter('performanceData.csv')
     performance_plotter.plot_strong_scalability(1000000)
+
+
+if generalPerformanceEvaluation:
+    numer_of_points_on_plot = 12;
+    image_generator = ImageGenerator(numer_of_points_on_plot, "../benchmarkImages/lena-512x512.png")
+    # Define number of simulations
+    OMP     = False
+    MPI     = False
+    SEQ     = False
+    CUDA    = True
+
+    # Define number of processes (only MPI)
+    processorStart = 2
+    processorEnd = 4
+
+    # Define number of threads (only OMP)
+    threadsStart = 2
+    threadsEnd = 4
+
+    number_simulations = 10
+
+    for y in range(1, number_simulations):
+        for i in range(numer_of_points_on_plot):
+            image_generator.create_images("generalPerformanceEvaluation")
+            file_path = f"./performanceImages/generalPerformanceEvaluation/{i + 1}.png"
+            if OMP:
+                for x in range(threadsStart, threadsEnd + 1):
+                    os.system(f"../build/ompEncoder {file_path} 3 1 {x}")
+            if MPI:
+                for x in range(processorStart, processorEnd + 1):
+                    os.system(f"mpirun -n {x} ../build/mpiEncoder {file_path} 3 1")
+            if SEQ:
+                os.system(f"../build/seqEncoder {file_path} 3 1")
+            if CUDA:
+                os.system(f"../build/cudaEncoder {file_path} 3 1")
+
+if plotGeneralPerformanceEvaluation:
+    import pandas as pd
+    import matplotlib.pyplot as plt
+
+    # Load the CSV data into a pandas DataFrame
+    data = pd.read_csv('performanceData.csv')
+
+    # Group by the necessary columns and calculate the mean time
+    grouped_data = data.groupby(['n_points', 'method', 'world_size']).agg({'time': 'mean'}).reset_index()
+
+    # Create separate DataFrames for each method
+    omp_data = grouped_data[grouped_data['method'] == 'OMP']
+    mpi_data = grouped_data[grouped_data['method'] == 'MPI']
+    seq_data = grouped_data[grouped_data['method'] == 'Sequential']
+    # Assuming you have CUDA data, add it similarly:
+    # cuda_data = grouped_data[grouped_data['method'] == 'CUDA']
+
+    # Plotting
+    plt.figure(figsize=(10, 6))
+
+    # OMP line plot
+    for world_size in omp_data['world_size'].unique():
+        subset = omp_data[omp_data['world_size'] == world_size]
+        plt.plot(subset['n_points'], subset['time'], label=f'OMP (world_size={world_size})', marker='o')
+
+    # MPI line plot
+    for world_size in mpi_data['world_size'].unique():
+        subset = mpi_data[mpi_data['world_size'] == world_size]
+        plt.plot(subset['n_points'], subset['time'], label=f'MPI (world_size={world_size})', marker='o')
+
+    # Sequential line plot
+    plt.plot(seq_data['n_points'], seq_data['time'], label='Sequential', marker='o')
+
+    # Assuming you have CUDA data, you can plot it similarly:
+    # plt.plot(cuda_data['n_points'], cuda_data['time'], label='CUDA', marker='o')
+
+    # Plot settings
+    plt.xlabel('Number of Points')
+    plt.ylabel('Time (s)')
+    plt.title('Compression Time vs Number of Points')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
+    

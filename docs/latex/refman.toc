@@ -1,242 +1,248 @@
 \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
-\contentsline {chapter}{\numberline {1}Parallel Kmeans Images Compressor}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Doxygen Documentation}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Prerequisites}{1}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Open\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CV C++ Library}{1}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Mpicc}{1}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Open\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}MP}{1}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}Getting Started}{1}{section.1.3}%
-\contentsline {section}{\numberline {1.4}What to expect}{2}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Project Structure}{2}{section.1.5}%
-\contentsline {subsubsection}{\numberline {1.5.0.1}Folders}{2}{subsubsection.1.5.0.1}%
-\contentsline {subsubsection}{\numberline {1.5.0.2}Files and Executables}{2}{subsubsection.1.5.0.2}%
-\contentsline {section}{\numberline {1.6}How does it work?}{3}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Parallelization Techniques}{3}{section.1.7}%
-\contentsline {section}{\numberline {1.8}Benchmarking}{4}{section.1.8}%
-\contentsline {section}{\numberline {1.9}Authors}{4}{section.1.9}%
-\contentsline {chapter}{\numberline {2}Namespace Documentation}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}km Namespace Reference}{5}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Detailed Description}{6}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Function Documentation}{6}{subsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.2.1}assign\_clusters()}{6}{subsubsection.2.1.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.2.2}average\_centroids()}{7}{subsubsection.2.1.2.2}%
-\contentsline {subsubsection}{\numberline {2.1.2.3}calculate\_new\_centroids()}{8}{subsubsection.2.1.2.3}%
-\contentsline {section}{\numberline {2.2}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::files\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils Namespace Reference}{8}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Detailed Description}{8}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Function Documentation}{9}{subsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.1}createDecodingMenu()}{9}{subsubsection.2.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2.2}createOutputDirectories()}{9}{subsubsection.2.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.3}isCorrectExtension()}{10}{subsubsection.2.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.2.4}readBinaryFile()}{10}{subsubsection.2.2.2.4}%
-\contentsline {subsubsection}{\numberline {2.2.2.5}writeBinaryFile()}{11}{subsubsection.2.2.2.5}%
-\contentsline {section}{\numberline {2.3}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::image\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils Namespace Reference}{12}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Detailed Description}{12}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Function Documentation}{12}{subsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.2.1}defineKValue()}{12}{subsubsection.2.3.2.1}%
-\contentsline {subsubsection}{\numberline {2.3.2.2}pointsFromImage()}{13}{subsubsection.2.3.2.2}%
-\contentsline {subsubsection}{\numberline {2.3.2.3}preprocessing()}{14}{subsubsection.2.3.2.3}%
-\contentsline {section}{\numberline {2.4}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::utils\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CLI Namespace Reference}{15}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Detailed Description}{15}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Function Documentation}{16}{subsection.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.4.2.1}decoderHeader()}{16}{subsubsection.2.4.2.1}%
-\contentsline {subsubsection}{\numberline {2.4.2.2}displayDecodingMenu()}{16}{subsubsection.2.4.2.2}%
-\contentsline {subsubsection}{\numberline {2.4.2.3}mainMenuHeader()}{16}{subsubsection.2.4.2.3}%
-\contentsline {subsubsection}{\numberline {2.4.2.4}printCompressionInformations()}{17}{subsubsection.2.4.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.2.5}workDone()}{17}{subsubsection.2.4.2.5}%
-\contentsline {chapter}{\numberline {3}Class Documentation}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::Config\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Reader Class Reference}{19}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{21}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Constructor \& Destructor Documentation}{22}{subsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.2.1}ConfigReader()}{22}{subsubsection.3.1.2.1}%
-\contentsline {subsection}{\numberline {3.1.3}Member Function Documentation}{22}{subsection.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.1.3.1}checkVariableExists()}{22}{subsubsection.3.1.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.3.2}getColorChoice()}{22}{subsubsection.3.1.3.2}%
-\contentsline {subsubsection}{\numberline {3.1.3.3}getCompressionChoice()}{23}{subsubsection.3.1.3.3}%
-\contentsline {subsubsection}{\numberline {3.1.3.4}getFifthLevelCompressionColor()}{23}{subsubsection.3.1.3.4}%
-\contentsline {subsubsection}{\numberline {3.1.3.5}getFirstLevelCompressionColor()}{23}{subsubsection.3.1.3.5}%
-\contentsline {subsubsection}{\numberline {3.1.3.6}getFourthLevelCompressionColor()}{24}{subsubsection.3.1.3.6}%
-\contentsline {subsubsection}{\numberline {3.1.3.7}getInputImageFilePath()}{24}{subsubsection.3.1.3.7}%
-\contentsline {subsubsection}{\numberline {3.1.3.8}getResizingFactor()}{24}{subsubsection.3.1.3.8}%
-\contentsline {subsubsection}{\numberline {3.1.3.9}getSecondLevelCompressionColor()}{25}{subsubsection.3.1.3.9}%
-\contentsline {subsubsection}{\numberline {3.1.3.10}getThirdLevelCompressionColor()}{25}{subsubsection.3.1.3.10}%
-\contentsline {subsubsection}{\numberline {3.1.3.11}readConfigFile()}{26}{subsubsection.3.1.3.11}%
-\contentsline {subsection}{\numberline {3.1.4}Member Data Documentation}{26}{subsection.3.1.4}%
-\contentsline {subsubsection}{\numberline {3.1.4.1}color\_choice}{26}{subsubsection.3.1.4.1}%
-\contentsline {subsubsection}{\numberline {3.1.4.2}compression\_choice}{26}{subsubsection.3.1.4.2}%
-\contentsline {subsubsection}{\numberline {3.1.4.3}fifth\_level\_compression\_color}{26}{subsubsection.3.1.4.3}%
-\contentsline {subsubsection}{\numberline {3.1.4.4}first\_level\_compression\_color}{26}{subsubsection.3.1.4.4}%
-\contentsline {subsubsection}{\numberline {3.1.4.5}fourth\_level\_compression\_color}{27}{subsubsection.3.1.4.5}%
-\contentsline {subsubsection}{\numberline {3.1.4.6}inputImageFilePath}{27}{subsubsection.3.1.4.6}%
-\contentsline {subsubsection}{\numberline {3.1.4.7}pattern}{27}{subsubsection.3.1.4.7}%
-\contentsline {subsubsection}{\numberline {3.1.4.8}requiredVariables}{27}{subsubsection.3.1.4.8}%
-\contentsline {subsubsection}{\numberline {3.1.4.9}resizing\_factor}{27}{subsubsection.3.1.4.9}%
-\contentsline {subsubsection}{\numberline {3.1.4.10}second\_level\_compression\_color}{27}{subsubsection.3.1.4.10}%
-\contentsline {subsubsection}{\numberline {3.1.4.11}third\_level\_compression\_color}{27}{subsubsection.3.1.4.11}%
-\contentsline {section}{\numberline {3.2}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::KMeans\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Base Class Reference}{28}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{30}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Constructor \& Destructor Documentation}{30}{subsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.2.1}KMeansBase()\hspace {0.1cm}{\fontsize {7}{8}\selectfont \ttfamily [1/2]}}{30}{subsubsection.3.2.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2.2}KMeansBase()\hspace {0.1cm}{\fontsize {7}{8}\selectfont \ttfamily [2/2]}}{30}{subsubsection.3.2.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.2.3}$\sim $KMeansBase()}{31}{subsubsection.3.2.2.3}%
-\contentsline {subsection}{\numberline {3.2.3}Member Function Documentation}{31}{subsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.3.1}getCentroids()}{31}{subsubsection.3.2.3.1}%
-\contentsline {subsubsection}{\numberline {3.2.3.2}getIterations()}{31}{subsubsection.3.2.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.3.3}getPoints()}{32}{subsubsection.3.2.3.3}%
-\contentsline {subsubsection}{\numberline {3.2.3.4}run()}{32}{subsubsection.3.2.3.4}%
-\contentsline {subsection}{\numberline {3.2.4}Member Data Documentation}{32}{subsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.4.1}centroids}{32}{subsubsection.3.2.4.1}%
-\contentsline {subsubsection}{\numberline {3.2.4.2}k}{32}{subsubsection.3.2.4.2}%
-\contentsline {subsubsection}{\numberline {3.2.4.3}number\_of\_iterations}{32}{subsubsection.3.2.4.3}%
-\contentsline {subsubsection}{\numberline {3.2.4.4}points}{33}{subsubsection.3.2.4.4}%
-\contentsline {section}{\numberline {3.3}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::KMeans\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CUDA Class Reference}{33}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{34}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Constructor \& Destructor Documentation}{34}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}KMeansCUDA()}{34}{subsubsection.3.3.2.1}%
-\contentsline {subsection}{\numberline {3.3.3}Member Function Documentation}{35}{subsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.3.1}getCentroids()}{35}{subsubsection.3.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.3.2}getIterations()}{35}{subsubsection.3.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3.3}getPoints()}{36}{subsubsection.3.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.3.4}plotClusters()}{36}{subsubsection.3.3.3.4}%
-\contentsline {subsubsection}{\numberline {3.3.3.5}printClusters()}{36}{subsubsection.3.3.3.5}%
-\contentsline {subsubsection}{\numberline {3.3.3.6}run()}{36}{subsubsection.3.3.3.6}%
-\contentsline {subsection}{\numberline {3.3.4}Member Data Documentation}{37}{subsection.3.3.4}%
-\contentsline {subsubsection}{\numberline {3.3.4.1}centroids}{37}{subsubsection.3.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.3.4.2}k}{37}{subsubsection.3.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.3.4.3}number\_of\_iterations}{37}{subsubsection.3.3.4.3}%
-\contentsline {subsubsection}{\numberline {3.3.4.4}points}{37}{subsubsection.3.3.4.4}%
-\contentsline {section}{\numberline {3.4}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::KMeans\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}MPI Class Reference}{38}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{40}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Constructor \& Destructor Documentation}{40}{subsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.2.1}KMeansMPI()\hspace {0.1cm}{\fontsize {7}{8}\selectfont \ttfamily [1/2]}}{40}{subsubsection.3.4.2.1}%
-\contentsline {subsubsection}{\numberline {3.4.2.2}KMeansMPI()\hspace {0.1cm}{\fontsize {7}{8}\selectfont \ttfamily [2/2]}}{41}{subsubsection.3.4.2.2}%
-\contentsline {subsection}{\numberline {3.4.3}Member Function Documentation}{41}{subsection.3.4.3}%
-\contentsline {subsubsection}{\numberline {3.4.3.1}run()}{41}{subsubsection.3.4.3.1}%
-\contentsline {subsection}{\numberline {3.4.4}Member Data Documentation}{41}{subsection.3.4.4}%
-\contentsline {subsubsection}{\numberline {3.4.4.1}local\_points}{41}{subsubsection.3.4.4.1}%
-\contentsline {section}{\numberline {3.5}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::KMeans\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}OMP Class Reference}{42}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{44}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Constructor \& Destructor Documentation}{44}{subsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.1}KMeansOMP()}{44}{subsubsection.3.5.2.1}%
-\contentsline {subsection}{\numberline {3.5.3}Member Function Documentation}{45}{subsection.3.5.3}%
-\contentsline {subsubsection}{\numberline {3.5.3.1}run()}{45}{subsubsection.3.5.3.1}%
-\contentsline {section}{\numberline {3.6}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::KMeans\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Sequential Class Reference}{45}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{48}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Constructor \& Destructor Documentation}{48}{subsection.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.2.1}KMeansSequential()}{48}{subsubsection.3.6.2.1}%
-\contentsline {subsection}{\numberline {3.6.3}Member Function Documentation}{49}{subsection.3.6.3}%
-\contentsline {subsubsection}{\numberline {3.6.3.1}run()}{49}{subsubsection.3.6.3.1}%
-\contentsline {section}{\numberline {3.7}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::Performance Class Reference}{49}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{51}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Constructor \& Destructor Documentation}{51}{subsection.3.7.2}%
-\contentsline {subsubsection}{\numberline {3.7.2.1}Performance()}{51}{subsubsection.3.7.2.1}%
-\contentsline {subsection}{\numberline {3.7.3}Member Function Documentation}{51}{subsection.3.7.3}%
-\contentsline {subsubsection}{\numberline {3.7.3.1}appendToCSV()}{51}{subsubsection.3.7.3.1}%
-\contentsline {subsubsection}{\numberline {3.7.3.2}createOrOpenCSV()}{52}{subsubsection.3.7.3.2}%
-\contentsline {subsubsection}{\numberline {3.7.3.3}extractFileName()}{52}{subsubsection.3.7.3.3}%
-\contentsline {subsubsection}{\numberline {3.7.3.4}fillPerformance()}{53}{subsubsection.3.7.3.4}%
-\contentsline {subsubsection}{\numberline {3.7.3.5}writeCSV()}{54}{subsubsection.3.7.3.5}%
-\contentsline {subsection}{\numberline {3.7.4}Member Data Documentation}{55}{subsection.3.7.4}%
-\contentsline {subsubsection}{\numberline {3.7.4.1}choice}{55}{subsubsection.3.7.4.1}%
-\contentsline {subsubsection}{\numberline {3.7.4.2}img}{55}{subsubsection.3.7.4.2}%
-\contentsline {subsubsection}{\numberline {3.7.4.3}method}{55}{subsubsection.3.7.4.3}%
-\contentsline {section}{\numberline {3.8}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::Point Class Reference}{56}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{57}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}Constructor \& Destructor Documentation}{57}{subsection.3.8.2}%
-\contentsline {subsubsection}{\numberline {3.8.2.1}Point()\hspace {0.1cm}{\fontsize {7}{8}\selectfont \ttfamily [1/2]}}{57}{subsubsection.3.8.2.1}%
-\contentsline {subsubsection}{\numberline {3.8.2.2}Point()\hspace {0.1cm}{\fontsize {7}{8}\selectfont \ttfamily [2/2]}}{57}{subsubsection.3.8.2.2}%
-\contentsline {subsection}{\numberline {3.8.3}Member Function Documentation}{58}{subsection.3.8.3}%
-\contentsline {subsubsection}{\numberline {3.8.3.1}distance()}{58}{subsubsection.3.8.3.1}%
-\contentsline {subsubsection}{\numberline {3.8.3.2}getFeature()}{58}{subsubsection.3.8.3.2}%
-\contentsline {subsubsection}{\numberline {3.8.3.3}getFeature\_int()}{58}{subsubsection.3.8.3.3}%
-\contentsline {subsubsection}{\numberline {3.8.3.4}setFeature()}{59}{subsubsection.3.8.3.4}%
-\contentsline {subsection}{\numberline {3.8.4}Member Data Documentation}{59}{subsection.3.8.4}%
-\contentsline {subsubsection}{\numberline {3.8.4.1}b}{59}{subsubsection.3.8.4.1}%
-\contentsline {subsubsection}{\numberline {3.8.4.2}clusterId}{59}{subsubsection.3.8.4.2}%
-\contentsline {subsubsection}{\numberline {3.8.4.3}g}{59}{subsubsection.3.8.4.3}%
-\contentsline {subsubsection}{\numberline {3.8.4.4}id}{60}{subsubsection.3.8.4.4}%
-\contentsline {subsubsection}{\numberline {3.8.4.5}r}{60}{subsubsection.3.8.4.5}%
-\contentsline {chapter}{\numberline {4}File Documentation}{61}{chapter.4}%
-\contentsline {section}{\numberline {4.1}include/config\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Reader.hpp File Reference}{61}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{62}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}config\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Reader.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{62}{section.4.2}%
-\contentsline {section}{\numberline {4.3}include/files\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils.hpp File Reference}{62}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{63}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}files\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{64}{section.4.4}%
-\contentsline {section}{\numberline {4.5}include/images\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils.hpp File Reference}{64}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{65}{subsection.4.5.1}%
-\contentsline {section}{\numberline {4.6}images\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{65}{section.4.6}%
-\contentsline {section}{\numberline {4.7}include/km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Docs.hpp File Reference}{65}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{66}{subsection.4.7.1}%
-\contentsline {section}{\numberline {4.8}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Docs.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{66}{section.4.8}%
-\contentsline {section}{\numberline {4.9}include/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Base.hpp File Reference}{66}{section.4.9}%
-\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{67}{subsection.4.9.1}%
-\contentsline {section}{\numberline {4.10}k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Base.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{67}{section.4.10}%
-\contentsline {section}{\numberline {4.11}include/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CUDA.cuh File Reference}{67}{section.4.11}%
-\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{69}{subsection.4.11.1}%
-\contentsline {section}{\numberline {4.12}k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CUDA.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}cuh}{69}{section.4.12}%
-\contentsline {section}{\numberline {4.13}include/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}MPI.hpp File Reference}{69}{section.4.13}%
-\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{70}{subsection.4.13.1}%
-\contentsline {section}{\numberline {4.14}k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}MPI.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{71}{section.4.14}%
-\contentsline {section}{\numberline {4.15}include/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}OMP.hpp File Reference}{71}{section.4.15}%
-\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{72}{subsection.4.15.1}%
-\contentsline {section}{\numberline {4.16}k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}OMP.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{72}{section.4.16}%
-\contentsline {section}{\numberline {4.17}include/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Sequential.hpp File Reference}{73}{section.4.17}%
-\contentsline {subsection}{\numberline {4.17.1}Detailed Description}{74}{subsection.4.17.1}%
-\contentsline {section}{\numberline {4.18}k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Sequential.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{74}{section.4.18}%
-\contentsline {section}{\numberline {4.19}include/performance\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Evaluation.hpp File Reference}{74}{section.4.19}%
-\contentsline {subsection}{\numberline {4.19.1}Detailed Description}{75}{subsection.4.19.1}%
-\contentsline {section}{\numberline {4.20}performance\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Evaluation.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{75}{section.4.20}%
-\contentsline {section}{\numberline {4.21}include/point.hpp File Reference}{75}{section.4.21}%
-\contentsline {subsection}{\numberline {4.21.1}Detailed Description}{76}{subsection.4.21.1}%
-\contentsline {section}{\numberline {4.22}point.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{76}{section.4.22}%
-\contentsline {section}{\numberline {4.23}include/utils\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CLI.hpp File Reference}{77}{section.4.23}%
-\contentsline {subsection}{\numberline {4.23.1}Detailed Description}{78}{subsection.4.23.1}%
-\contentsline {section}{\numberline {4.24}utils\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CLI.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{78}{section.4.24}%
-\contentsline {section}{\numberline {4.25}README.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}md File Reference}{78}{section.4.25}%
-\contentsline {section}{\numberline {4.26}src/config\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Reader.cpp File Reference}{78}{section.4.26}%
-\contentsline {subsection}{\numberline {4.26.1}Detailed Description}{79}{subsection.4.26.1}%
-\contentsline {section}{\numberline {4.27}src/decoder.cpp File Reference}{79}{section.4.27}%
-\contentsline {subsection}{\numberline {4.27.1}Detailed Description}{79}{subsection.4.27.1}%
-\contentsline {subsection}{\numberline {4.27.2}Function Documentation}{80}{subsection.4.27.2}%
-\contentsline {subsubsection}{\numberline {4.27.2.1}main()}{80}{subsubsection.4.27.2.1}%
-\contentsline {section}{\numberline {4.28}src/encoder.cpp File Reference}{80}{section.4.28}%
-\contentsline {subsection}{\numberline {4.28.1}Detailed Description}{81}{subsection.4.28.1}%
-\contentsline {subsection}{\numberline {4.28.2}Function Documentation}{81}{subsection.4.28.2}%
-\contentsline {subsubsection}{\numberline {4.28.2.1}main()}{81}{subsubsection.4.28.2.1}%
-\contentsline {section}{\numberline {4.29}src/encoder\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CUDA.cpp File Reference}{82}{section.4.29}%
-\contentsline {subsection}{\numberline {4.29.1}Detailed Description}{83}{subsection.4.29.1}%
-\contentsline {subsection}{\numberline {4.29.2}Function Documentation}{83}{subsection.4.29.2}%
-\contentsline {subsubsection}{\numberline {4.29.2.1}main()}{83}{subsubsection.4.29.2.1}%
-\contentsline {section}{\numberline {4.30}src/encoder\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}MPI.cpp File Reference}{84}{section.4.30}%
-\contentsline {subsection}{\numberline {4.30.1}Detailed Description}{85}{subsection.4.30.1}%
-\contentsline {subsection}{\numberline {4.30.2}Function Documentation}{85}{subsection.4.30.2}%
-\contentsline {subsubsection}{\numberline {4.30.2.1}main()}{85}{subsubsection.4.30.2.1}%
-\contentsline {section}{\numberline {4.31}src/encoder\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}OMP.cpp File Reference}{86}{section.4.31}%
-\contentsline {subsection}{\numberline {4.31.1}Detailed Description}{87}{subsection.4.31.1}%
-\contentsline {subsection}{\numberline {4.31.2}Function Documentation}{87}{subsection.4.31.2}%
-\contentsline {subsubsection}{\numberline {4.31.2.1}main()}{87}{subsubsection.4.31.2.1}%
-\contentsline {section}{\numberline {4.32}src/files\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils.cpp File Reference}{88}{section.4.32}%
-\contentsline {subsection}{\numberline {4.32.1}Detailed Description}{89}{subsection.4.32.1}%
-\contentsline {section}{\numberline {4.33}src/images\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils.cpp File Reference}{89}{section.4.33}%
-\contentsline {subsection}{\numberline {4.33.1}Detailed Description}{89}{subsection.4.33.1}%
-\contentsline {section}{\numberline {4.34}src/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Base.cpp File Reference}{90}{section.4.34}%
-\contentsline {subsection}{\numberline {4.34.1}Detailed Description}{90}{subsection.4.34.1}%
-\contentsline {section}{\numberline {4.35}src/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CUDA.cu File Reference}{90}{section.4.35}%
-\contentsline {subsection}{\numberline {4.35.1}Detailed Description}{91}{subsection.4.35.1}%
-\contentsline {section}{\numberline {4.36}src/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}MPI.cpp File Reference}{91}{section.4.36}%
-\contentsline {subsection}{\numberline {4.36.1}Detailed Description}{92}{subsection.4.36.1}%
-\contentsline {section}{\numberline {4.37}src/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}OMP.cpp File Reference}{92}{section.4.37}%
-\contentsline {subsection}{\numberline {4.37.1}Detailed Description}{93}{subsection.4.37.1}%
-\contentsline {section}{\numberline {4.38}src/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Sequential.cpp File Reference}{93}{section.4.38}%
-\contentsline {subsection}{\numberline {4.38.1}Detailed Description}{93}{subsection.4.38.1}%
-\contentsline {section}{\numberline {4.39}src/main\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Menu.cpp File Reference}{94}{section.4.39}%
-\contentsline {subsection}{\numberline {4.39.1}Detailed Description}{94}{subsection.4.39.1}%
-\contentsline {subsection}{\numberline {4.39.2}Function Documentation}{94}{subsection.4.39.2}%
-\contentsline {subsubsection}{\numberline {4.39.2.1}main()}{94}{subsubsection.4.39.2.1}%
-\contentsline {section}{\numberline {4.40}src/performance\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Evaluation.cpp File Reference}{95}{section.4.40}%
-\contentsline {subsection}{\numberline {4.40.1}Detailed Description}{95}{subsection.4.40.1}%
-\contentsline {section}{\numberline {4.41}src/point.cpp File Reference}{96}{section.4.41}%
-\contentsline {subsection}{\numberline {4.41.1}Detailed Description}{96}{subsection.4.41.1}%
-\contentsline {section}{\numberline {4.42}src/utils\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CLI.cpp File Reference}{96}{section.4.42}%
-\contentsline {subsection}{\numberline {4.42.1}Detailed Description}{97}{subsection.4.42.1}%
-\contentsline {chapter}{Index}{99}{section*.170}%
+\contentsline {chapter}{\numberline {1}Parallel Kmeans-\/based Images Compressor}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Authors}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Doxygen Documentation}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Prerequisites}{2}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}TO DO}{2}{subsection.1.3.1}%
+\contentsline {section}{\numberline {1.4}Getting Started}{2}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Cloning repo}{2}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Install dependencies}{2}{subsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.2.1}Debian based}{2}{subsubsection.1.4.2.1}%
+\contentsline {subsubsection}{\numberline {1.4.2.2}Arch based}{2}{subsubsection.1.4.2.2}%
+\contentsline {subsection}{\numberline {1.4.3}Compile\&\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Run}{2}{subsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.3.1}Without CUDA}{2}{subsubsection.1.4.3.1}%
+\contentsline {subsubsection}{\numberline {1.4.3.2}With cuda}{2}{subsubsection.1.4.3.2}%
+\contentsline {subsubsection}{\numberline {1.4.3.3}Geek stuff}{3}{subsubsection.1.4.3.3}%
+\contentsline {section}{\numberline {1.5}What to expect}{3}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Project Structure}{3}{section.1.6}%
+\contentsline {subsubsection}{\numberline {1.6.0.1}Folders}{3}{subsubsection.1.6.0.1}%
+\contentsline {subsubsection}{\numberline {1.6.0.2}Files and Executables}{3}{subsubsection.1.6.0.2}%
+\contentsline {section}{\numberline {1.7}How does it work?}{4}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Parallelization Techniques}{4}{section.1.8}%
+\contentsline {section}{\numberline {1.9}Benchmarking}{5}{section.1.9}%
+\contentsline {chapter}{\numberline {2}Namespace Documentation}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}km Namespace Reference}{7}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Detailed Description}{8}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Function Documentation}{8}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}assign\_clusters()}{8}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}average\_centroids()}{9}{subsubsection.2.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.3}calculate\_new\_centroids()}{10}{subsubsection.2.1.2.3}%
+\contentsline {section}{\numberline {2.2}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::files\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils Namespace Reference}{10}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Detailed Description}{10}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Function Documentation}{11}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}createDecodingMenu()}{11}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}createOutputDirectories()}{11}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}isCorrectExtension()}{12}{subsubsection.2.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.2.4}readBinaryFile()}{12}{subsubsection.2.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.2.5}writeBinaryFile()}{13}{subsubsection.2.2.2.5}%
+\contentsline {section}{\numberline {2.3}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::image\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils Namespace Reference}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Detailed Description}{14}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Function Documentation}{14}{subsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}defineKValue()}{14}{subsubsection.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}pointsFromImage()}{15}{subsubsection.2.3.2.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.3}preprocessing()}{16}{subsubsection.2.3.2.3}%
+\contentsline {section}{\numberline {2.4}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::utils\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CLI Namespace Reference}{17}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Detailed Description}{17}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Function Documentation}{18}{subsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.1}decoderHeader()}{18}{subsubsection.2.4.2.1}%
+\contentsline {subsubsection}{\numberline {2.4.2.2}displayDecodingMenu()}{18}{subsubsection.2.4.2.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.3}mainMenuHeader()}{18}{subsubsection.2.4.2.3}%
+\contentsline {subsubsection}{\numberline {2.4.2.4}printCompressionInformations()}{19}{subsubsection.2.4.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.2.5}workDone()}{19}{subsubsection.2.4.2.5}%
+\contentsline {chapter}{\numberline {3}Class Documentation}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::Config\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Reader Class Reference}{21}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{23}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Constructor \& Destructor Documentation}{24}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}ConfigReader()}{24}{subsubsection.3.1.2.1}%
+\contentsline {subsection}{\numberline {3.1.3}Member Function Documentation}{24}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.1}checkVariableExists()}{24}{subsubsection.3.1.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.3.2}getColorChoice()}{24}{subsubsection.3.1.3.2}%
+\contentsline {subsubsection}{\numberline {3.1.3.3}getCompressionChoice()}{25}{subsubsection.3.1.3.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.4}getFifthLevelCompressionColor()}{25}{subsubsection.3.1.3.4}%
+\contentsline {subsubsection}{\numberline {3.1.3.5}getFirstLevelCompressionColor()}{25}{subsubsection.3.1.3.5}%
+\contentsline {subsubsection}{\numberline {3.1.3.6}getFourthLevelCompressionColor()}{26}{subsubsection.3.1.3.6}%
+\contentsline {subsubsection}{\numberline {3.1.3.7}getInputImageFilePath()}{26}{subsubsection.3.1.3.7}%
+\contentsline {subsubsection}{\numberline {3.1.3.8}getResizingFactor()}{26}{subsubsection.3.1.3.8}%
+\contentsline {subsubsection}{\numberline {3.1.3.9}getSecondLevelCompressionColor()}{27}{subsubsection.3.1.3.9}%
+\contentsline {subsubsection}{\numberline {3.1.3.10}getThirdLevelCompressionColor()}{27}{subsubsection.3.1.3.10}%
+\contentsline {subsubsection}{\numberline {3.1.3.11}readConfigFile()}{28}{subsubsection.3.1.3.11}%
+\contentsline {subsection}{\numberline {3.1.4}Member Data Documentation}{28}{subsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.4.1}color\_choice}{28}{subsubsection.3.1.4.1}%
+\contentsline {subsubsection}{\numberline {3.1.4.2}compression\_choice}{28}{subsubsection.3.1.4.2}%
+\contentsline {subsubsection}{\numberline {3.1.4.3}fifth\_level\_compression\_color}{28}{subsubsection.3.1.4.3}%
+\contentsline {subsubsection}{\numberline {3.1.4.4}first\_level\_compression\_color}{28}{subsubsection.3.1.4.4}%
+\contentsline {subsubsection}{\numberline {3.1.4.5}fourth\_level\_compression\_color}{29}{subsubsection.3.1.4.5}%
+\contentsline {subsubsection}{\numberline {3.1.4.6}inputImageFilePath}{29}{subsubsection.3.1.4.6}%
+\contentsline {subsubsection}{\numberline {3.1.4.7}pattern}{29}{subsubsection.3.1.4.7}%
+\contentsline {subsubsection}{\numberline {3.1.4.8}requiredVariables}{29}{subsubsection.3.1.4.8}%
+\contentsline {subsubsection}{\numberline {3.1.4.9}resizing\_factor}{29}{subsubsection.3.1.4.9}%
+\contentsline {subsubsection}{\numberline {3.1.4.10}second\_level\_compression\_color}{29}{subsubsection.3.1.4.10}%
+\contentsline {subsubsection}{\numberline {3.1.4.11}third\_level\_compression\_color}{29}{subsubsection.3.1.4.11}%
+\contentsline {section}{\numberline {3.2}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::KMeans\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Base Class Reference}{30}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{32}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Constructor \& Destructor Documentation}{32}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}KMeansBase()\hspace {0.1cm}{\fontsize {7}{8}\selectfont \ttfamily [1/2]}}{32}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}KMeansBase()\hspace {0.1cm}{\fontsize {7}{8}\selectfont \ttfamily [2/2]}}{32}{subsubsection.3.2.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.3}$\sim $KMeansBase()}{33}{subsubsection.3.2.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}Member Function Documentation}{33}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}getCentroids()}{33}{subsubsection.3.2.3.1}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}getIterations()}{33}{subsubsection.3.2.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.3.3}getPoints()}{34}{subsubsection.3.2.3.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.4}run()}{34}{subsubsection.3.2.3.4}%
+\contentsline {subsection}{\numberline {3.2.4}Member Data Documentation}{34}{subsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.4.1}centroids}{34}{subsubsection.3.2.4.1}%
+\contentsline {subsubsection}{\numberline {3.2.4.2}k}{34}{subsubsection.3.2.4.2}%
+\contentsline {subsubsection}{\numberline {3.2.4.3}number\_of\_iterations}{34}{subsubsection.3.2.4.3}%
+\contentsline {subsubsection}{\numberline {3.2.4.4}points}{35}{subsubsection.3.2.4.4}%
+\contentsline {section}{\numberline {3.3}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::KMeans\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CUDA Class Reference}{35}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{36}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Constructor \& Destructor Documentation}{36}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}KMeansCUDA()}{36}{subsubsection.3.3.2.1}%
+\contentsline {subsection}{\numberline {3.3.3}Member Function Documentation}{37}{subsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}getCentroids()}{37}{subsubsection.3.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}getIterations()}{37}{subsubsection.3.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}getPoints()}{38}{subsubsection.3.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.4}plotClusters()}{38}{subsubsection.3.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.3.5}printClusters()}{38}{subsubsection.3.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.3.6}run()}{38}{subsubsection.3.3.3.6}%
+\contentsline {subsection}{\numberline {3.3.4}Member Data Documentation}{39}{subsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.4.1}centroids}{39}{subsubsection.3.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.3.4.2}k}{39}{subsubsection.3.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.3.4.3}number\_of\_iterations}{39}{subsubsection.3.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.3.4.4}points}{39}{subsubsection.3.3.4.4}%
+\contentsline {section}{\numberline {3.4}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::KMeans\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}MPI Class Reference}{40}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{42}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Constructor \& Destructor Documentation}{42}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}KMeansMPI()\hspace {0.1cm}{\fontsize {7}{8}\selectfont \ttfamily [1/2]}}{42}{subsubsection.3.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}KMeansMPI()\hspace {0.1cm}{\fontsize {7}{8}\selectfont \ttfamily [2/2]}}{43}{subsubsection.3.4.2.2}%
+\contentsline {subsection}{\numberline {3.4.3}Member Function Documentation}{43}{subsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.3.1}run()}{43}{subsubsection.3.4.3.1}%
+\contentsline {subsection}{\numberline {3.4.4}Member Data Documentation}{43}{subsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.4.1}local\_points}{43}{subsubsection.3.4.4.1}%
+\contentsline {section}{\numberline {3.5}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::KMeans\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}OMP Class Reference}{44}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{46}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Constructor \& Destructor Documentation}{46}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}KMeansOMP()}{46}{subsubsection.3.5.2.1}%
+\contentsline {subsection}{\numberline {3.5.3}Member Function Documentation}{47}{subsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.3.1}run()}{47}{subsubsection.3.5.3.1}%
+\contentsline {section}{\numberline {3.6}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::KMeans\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Sequential Class Reference}{47}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{50}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Constructor \& Destructor Documentation}{50}{subsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.1}KMeansSequential()}{50}{subsubsection.3.6.2.1}%
+\contentsline {subsection}{\numberline {3.6.3}Member Function Documentation}{51}{subsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.3.1}run()}{51}{subsubsection.3.6.3.1}%
+\contentsline {section}{\numberline {3.7}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::Performance Class Reference}{51}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{53}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Constructor \& Destructor Documentation}{53}{subsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.2.1}Performance()}{53}{subsubsection.3.7.2.1}%
+\contentsline {subsection}{\numberline {3.7.3}Member Function Documentation}{53}{subsection.3.7.3}%
+\contentsline {subsubsection}{\numberline {3.7.3.1}appendToCSV()}{53}{subsubsection.3.7.3.1}%
+\contentsline {subsubsection}{\numberline {3.7.3.2}createOrOpenCSV()}{54}{subsubsection.3.7.3.2}%
+\contentsline {subsubsection}{\numberline {3.7.3.3}extractFileName()}{54}{subsubsection.3.7.3.3}%
+\contentsline {subsubsection}{\numberline {3.7.3.4}fillPerformance()}{55}{subsubsection.3.7.3.4}%
+\contentsline {subsubsection}{\numberline {3.7.3.5}writeCSV()}{56}{subsubsection.3.7.3.5}%
+\contentsline {subsection}{\numberline {3.7.4}Member Data Documentation}{57}{subsection.3.7.4}%
+\contentsline {subsubsection}{\numberline {3.7.4.1}choice}{57}{subsubsection.3.7.4.1}%
+\contentsline {subsubsection}{\numberline {3.7.4.2}img}{57}{subsubsection.3.7.4.2}%
+\contentsline {subsubsection}{\numberline {3.7.4.3}method}{57}{subsubsection.3.7.4.3}%
+\contentsline {section}{\numberline {3.8}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}::Point Class Reference}{58}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{59}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Constructor \& Destructor Documentation}{59}{subsection.3.8.2}%
+\contentsline {subsubsection}{\numberline {3.8.2.1}Point()\hspace {0.1cm}{\fontsize {7}{8}\selectfont \ttfamily [1/2]}}{59}{subsubsection.3.8.2.1}%
+\contentsline {subsubsection}{\numberline {3.8.2.2}Point()\hspace {0.1cm}{\fontsize {7}{8}\selectfont \ttfamily [2/2]}}{59}{subsubsection.3.8.2.2}%
+\contentsline {subsection}{\numberline {3.8.3}Member Function Documentation}{60}{subsection.3.8.3}%
+\contentsline {subsubsection}{\numberline {3.8.3.1}distance()}{60}{subsubsection.3.8.3.1}%
+\contentsline {subsubsection}{\numberline {3.8.3.2}getFeature()}{60}{subsubsection.3.8.3.2}%
+\contentsline {subsubsection}{\numberline {3.8.3.3}getFeature\_int()}{60}{subsubsection.3.8.3.3}%
+\contentsline {subsubsection}{\numberline {3.8.3.4}setFeature()}{61}{subsubsection.3.8.3.4}%
+\contentsline {subsection}{\numberline {3.8.4}Member Data Documentation}{61}{subsection.3.8.4}%
+\contentsline {subsubsection}{\numberline {3.8.4.1}b}{61}{subsubsection.3.8.4.1}%
+\contentsline {subsubsection}{\numberline {3.8.4.2}clusterId}{61}{subsubsection.3.8.4.2}%
+\contentsline {subsubsection}{\numberline {3.8.4.3}g}{61}{subsubsection.3.8.4.3}%
+\contentsline {subsubsection}{\numberline {3.8.4.4}id}{62}{subsubsection.3.8.4.4}%
+\contentsline {subsubsection}{\numberline {3.8.4.5}r}{62}{subsubsection.3.8.4.5}%
+\contentsline {chapter}{\numberline {4}File Documentation}{63}{chapter.4}%
+\contentsline {section}{\numberline {4.1}include/config\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Reader.hpp File Reference}{63}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{64}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}config\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Reader.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{64}{section.4.2}%
+\contentsline {section}{\numberline {4.3}include/files\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils.hpp File Reference}{64}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{65}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}files\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{66}{section.4.4}%
+\contentsline {section}{\numberline {4.5}include/images\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils.hpp File Reference}{66}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{67}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}images\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{67}{section.4.6}%
+\contentsline {section}{\numberline {4.7}include/km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Docs.hpp File Reference}{67}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{68}{subsection.4.7.1}%
+\contentsline {section}{\numberline {4.8}km\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Docs.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{68}{section.4.8}%
+\contentsline {section}{\numberline {4.9}include/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Base.hpp File Reference}{68}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{69}{subsection.4.9.1}%
+\contentsline {section}{\numberline {4.10}k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Base.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{69}{section.4.10}%
+\contentsline {section}{\numberline {4.11}include/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CUDA.cuh File Reference}{69}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{71}{subsection.4.11.1}%
+\contentsline {section}{\numberline {4.12}k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CUDA.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}cuh}{71}{section.4.12}%
+\contentsline {section}{\numberline {4.13}include/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}MPI.hpp File Reference}{71}{section.4.13}%
+\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{72}{subsection.4.13.1}%
+\contentsline {section}{\numberline {4.14}k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}MPI.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{73}{section.4.14}%
+\contentsline {section}{\numberline {4.15}include/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}OMP.hpp File Reference}{73}{section.4.15}%
+\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{74}{subsection.4.15.1}%
+\contentsline {section}{\numberline {4.16}k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}OMP.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{74}{section.4.16}%
+\contentsline {section}{\numberline {4.17}include/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Sequential.hpp File Reference}{75}{section.4.17}%
+\contentsline {subsection}{\numberline {4.17.1}Detailed Description}{76}{subsection.4.17.1}%
+\contentsline {section}{\numberline {4.18}k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Sequential.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{76}{section.4.18}%
+\contentsline {section}{\numberline {4.19}include/performance\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Evaluation.hpp File Reference}{76}{section.4.19}%
+\contentsline {subsection}{\numberline {4.19.1}Detailed Description}{77}{subsection.4.19.1}%
+\contentsline {section}{\numberline {4.20}performance\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Evaluation.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{77}{section.4.20}%
+\contentsline {section}{\numberline {4.21}include/point.hpp File Reference}{77}{section.4.21}%
+\contentsline {subsection}{\numberline {4.21.1}Detailed Description}{78}{subsection.4.21.1}%
+\contentsline {section}{\numberline {4.22}point.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{78}{section.4.22}%
+\contentsline {section}{\numberline {4.23}include/utils\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CLI.hpp File Reference}{79}{section.4.23}%
+\contentsline {subsection}{\numberline {4.23.1}Detailed Description}{80}{subsection.4.23.1}%
+\contentsline {section}{\numberline {4.24}utils\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CLI.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}hpp}{80}{section.4.24}%
+\contentsline {section}{\numberline {4.25}README.\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}md File Reference}{80}{section.4.25}%
+\contentsline {section}{\numberline {4.26}src/config\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Reader.cpp File Reference}{80}{section.4.26}%
+\contentsline {subsection}{\numberline {4.26.1}Detailed Description}{81}{subsection.4.26.1}%
+\contentsline {section}{\numberline {4.27}src/decoder.cpp File Reference}{81}{section.4.27}%
+\contentsline {subsection}{\numberline {4.27.1}Detailed Description}{81}{subsection.4.27.1}%
+\contentsline {subsection}{\numberline {4.27.2}Function Documentation}{82}{subsection.4.27.2}%
+\contentsline {subsubsection}{\numberline {4.27.2.1}main()}{82}{subsubsection.4.27.2.1}%
+\contentsline {section}{\numberline {4.28}src/encoder.cpp File Reference}{82}{section.4.28}%
+\contentsline {subsection}{\numberline {4.28.1}Detailed Description}{83}{subsection.4.28.1}%
+\contentsline {subsection}{\numberline {4.28.2}Function Documentation}{83}{subsection.4.28.2}%
+\contentsline {subsubsection}{\numberline {4.28.2.1}main()}{83}{subsubsection.4.28.2.1}%
+\contentsline {section}{\numberline {4.29}src/encoder\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CUDA.cpp File Reference}{84}{section.4.29}%
+\contentsline {subsection}{\numberline {4.29.1}Detailed Description}{85}{subsection.4.29.1}%
+\contentsline {subsection}{\numberline {4.29.2}Function Documentation}{85}{subsection.4.29.2}%
+\contentsline {subsubsection}{\numberline {4.29.2.1}main()}{85}{subsubsection.4.29.2.1}%
+\contentsline {section}{\numberline {4.30}src/encoder\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}MPI.cpp File Reference}{86}{section.4.30}%
+\contentsline {subsection}{\numberline {4.30.1}Detailed Description}{87}{subsection.4.30.1}%
+\contentsline {subsection}{\numberline {4.30.2}Function Documentation}{87}{subsection.4.30.2}%
+\contentsline {subsubsection}{\numberline {4.30.2.1}main()}{87}{subsubsection.4.30.2.1}%
+\contentsline {section}{\numberline {4.31}src/encoder\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}OMP.cpp File Reference}{88}{section.4.31}%
+\contentsline {subsection}{\numberline {4.31.1}Detailed Description}{89}{subsection.4.31.1}%
+\contentsline {subsection}{\numberline {4.31.2}Function Documentation}{89}{subsection.4.31.2}%
+\contentsline {subsubsection}{\numberline {4.31.2.1}main()}{89}{subsubsection.4.31.2.1}%
+\contentsline {section}{\numberline {4.32}src/files\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils.cpp File Reference}{90}{section.4.32}%
+\contentsline {subsection}{\numberline {4.32.1}Detailed Description}{91}{subsection.4.32.1}%
+\contentsline {section}{\numberline {4.33}src/images\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Utils.cpp File Reference}{91}{section.4.33}%
+\contentsline {subsection}{\numberline {4.33.1}Detailed Description}{91}{subsection.4.33.1}%
+\contentsline {section}{\numberline {4.34}src/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Base.cpp File Reference}{92}{section.4.34}%
+\contentsline {subsection}{\numberline {4.34.1}Detailed Description}{92}{subsection.4.34.1}%
+\contentsline {section}{\numberline {4.35}src/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CUDA.cu File Reference}{92}{section.4.35}%
+\contentsline {subsection}{\numberline {4.35.1}Detailed Description}{93}{subsection.4.35.1}%
+\contentsline {section}{\numberline {4.36}src/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}MPI.cpp File Reference}{93}{section.4.36}%
+\contentsline {subsection}{\numberline {4.36.1}Detailed Description}{94}{subsection.4.36.1}%
+\contentsline {section}{\numberline {4.37}src/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}OMP.cpp File Reference}{94}{section.4.37}%
+\contentsline {subsection}{\numberline {4.37.1}Detailed Description}{95}{subsection.4.37.1}%
+\contentsline {section}{\numberline {4.38}src/k\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Means\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Sequential.cpp File Reference}{95}{section.4.38}%
+\contentsline {subsection}{\numberline {4.38.1}Detailed Description}{95}{subsection.4.38.1}%
+\contentsline {section}{\numberline {4.39}src/main\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Menu.cpp File Reference}{96}{section.4.39}%
+\contentsline {subsection}{\numberline {4.39.1}Detailed Description}{96}{subsection.4.39.1}%
+\contentsline {subsection}{\numberline {4.39.2}Function Documentation}{96}{subsection.4.39.2}%
+\contentsline {subsubsection}{\numberline {4.39.2.1}main()}{96}{subsubsection.4.39.2.1}%
+\contentsline {section}{\numberline {4.40}src/performance\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}Evaluation.cpp File Reference}{97}{section.4.40}%
+\contentsline {subsection}{\numberline {4.40.1}Detailed Description}{97}{subsection.4.40.1}%
+\contentsline {section}{\numberline {4.41}src/point.cpp File Reference}{98}{section.4.41}%
+\contentsline {subsection}{\numberline {4.41.1}Detailed Description}{98}{subsection.4.41.1}%
+\contentsline {section}{\numberline {4.42}src/utils\discretionary {\mbox {\fontsize {6}{7}\selectfont $\hookleftarrow $}}{}{}CLI.cpp File Reference}{98}{section.4.42}%
+\contentsline {subsection}{\numberline {4.42.1}Detailed Description}{99}{subsection.4.42.1}%
+\contentsline {chapter}{Index}{101}{section*.171}%

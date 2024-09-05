@@ -154,3 +154,6 @@ The program uses several parallelization techniques to enhance performance. Thes
 That is a really good question... as everithing in computer science __it depends__.
 Here you can see an overview of the execution time behaviour for increasing complexity tasks:
 ![perf_eval](.readmePictures/performance.jpeg)
+
+## Report 
+For more details about the program, please refer to the [report](report/report.pdf)

@@ -6,7 +6,7 @@ var searchData=
   ['km_3a_3aimageutils_3',['imageUtils',['../namespacekm_1_1imageUtils.html',1,'km']]],
   ['km_3a_3autilscli_4',['utilsCLI',['../namespacekm_1_1utilsCLI.html',1,'km']]],
   ['kmdocs_2ehpp_5',['kmDocs.hpp',['../kmDocs_8hpp.html',1,'']]],
-  ['kmeans_20images_20compressor_6',['Parallel Kmeans Images Compressor',['../index.html',1,'']]],
+  ['kmeans_20based_20images_20compressor_6',['Parallel Kmeans-based Images Compressor',['../index.html',1,'']]],
   ['kmeansbase_7',['kmeansbase',['../classkm_1_1KMeansBase.html#a6fd298e173124aa1ed7c11be7d451a1a',1,'km::KMeansBase::KMeansBase(const int &amp;k)'],['../classkm_1_1KMeansBase.html#a88bebad949f5b6edff2af08ae74295cb',1,'km::KMeansBase::KMeansBase(const int &amp;k, const std::vector&lt; Point &gt; &amp;points)'],['../classkm_1_1KMeansBase.html',1,'km::KMeansBase']]],
   ['kmeansbase_2ecpp_8',['kMeansBase.cpp',['../kMeansBase_8cpp.html',1,'']]],
   ['kmeansbase_2ehpp_9',['kMeansBase.hpp',['../kMeansBase_8hpp.html',1,'']]],

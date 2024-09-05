@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ParallelKmeansImageCompressor: Parallel Kmeans Images Compressor</title>
+<title>ParallelKmeansImageCompressor: Parallel Kmeans-based Images Compressor</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,33 +69,84 @@ $(function() {
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Parallel Kmeans Images Compressor </div></div>
+  <div class="headertitle"><div class="title">Parallel Kmeans-based Images Compressor </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a><img src="milanoCompressed.png" alt="" class="inline" title="milano"/>    </p>
-<p>This program compresses images by reducing the number of colors using k-means clustering. It offers enhanced performance through the implementation of several parallelization techniques. By clustering pixels into k color groups, the program reduces the image's color palette, thereby compressing the image while maintaining visual quality.</p>
+<div class="textblock"><p><a class="anchor" id="md_README"></a> </p><div class="image">
+<img src="milanoCompressed.png" alt=""/>
+<div class="caption">
+milano</div></div>
+    <p>This project implements a <b>parallel KMeans-based image colors compressor</b>, aimed at reducing the number of colors in a natural image while preserving its overall visual appearance. The program clusters similar colors using the <b>KMeans algorithm</b> and applies <b>parallel computing techniques</b> to compress the image through the <b>color quantization</b> technique. It supports <b>sequential</b>, <b>OpenMP</b>, <b>MPI</b>, and <b>CUDA</b> implementations to explore different levels of performance and scalability.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
+Authors</h1>
+<ul>
+<li><p class="startli"><b>Leonardo Ignazio Pagliochini</b> Master's Degree student in High-Performance Computing Engineering at <b>Politecnico di Milano</b></p>
+<p class="startli">GitHub: <a href="https://github.com/leonardopagliochini">leonardopagliochini</a> <br  />
+ Email: <a href="#" onclick="location.href='mai'+'lto:'+'leo'+'na'+'rdo'+'ig'+'naz'+'io'+'.pa'+'gl'+'ioc'+'hi'+'ni@'+'ma'+'il.'+'po'+'lim'+'i.'+'it'; return false;">leona<span class="obfuscator">.nosp@m.</span>rdoi<span class="obfuscator">.nosp@m.</span>gnazi<span class="obfuscator">.nosp@m.</span>o.pa<span class="obfuscator">.nosp@m.</span>glioc<span class="obfuscator">.nosp@m.</span>hini<span class="obfuscator">.nosp@m.</span>@mail<span class="obfuscator">.nosp@m.</span>.pol<span class="obfuscator">.nosp@m.</span>imi.i<span class="obfuscator">.nosp@m.</span>t</a></p>
+</li>
+<li><p class="startli"><b>Francesco Rosnati</b> Master's Degree student in High-Performance Computing Engineering at <b>Politecnico di Milano</b></p>
+<p class="startli">GitHub: <a href="https://github.com/RosNaviGator">RosNaviGator</a> <br  />
+ Email: <a href="#" onclick="location.href='mai'+'lto:'+'fra'+'nc'+'esc'+'o.'+'ros'+'na'+'ti@'+'ma'+'il.'+'po'+'lim'+'i.'+'it'; return false;">franc<span class="obfuscator">.nosp@m.</span>esco<span class="obfuscator">.nosp@m.</span>.rosn<span class="obfuscator">.nosp@m.</span>ati@<span class="obfuscator">.nosp@m.</span>mail.<span class="obfuscator">.nosp@m.</span>poli<span class="obfuscator">.nosp@m.</span>mi.it</a></p>
+</li>
+</ul>
+<p>This project was developed for the course <b>Advanced Methods for Scientific Computing</b>, <br  />
+ Professor: <b>Luca Formaggia</b> <br  />
+ Assistant Professor: <b>Matteo Caldana</b> <br  />
+ <b>Politecnico di Milano</b></p>
+<h1><a class="anchor" id="autotoc_md2"></a>
 Doxygen Documentation</h1>
 <p>The documentation of the project can be found <a href="docs/html/index.html">here</a>.</p>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md3"></a>
 Prerequisites</h1>
-<p>In order to be able to compile and run the program, there are a few programs that need to be installed.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
-OpenCV C++ Library</h2>
-<p>A comprehensive library for computer vision and image processing tasks.</p>
-<p>You can refer to the <a href="https://opencv.org/releases/">official page</a> to download.</p>
 <h2><a class="anchor" id="autotoc_md4"></a>
-Mpicc</h2>
-<p>A C compiler wrapper for parallel programming with the MPI library.</p>
-<h2><a class="anchor" id="autotoc_md5"></a>
-OpenMP</h2>
-<p>A C++ API for parallel programming on shared-memory systems.</p>
-<h1><a class="anchor" id="autotoc_md6"></a>
+TO DO</h2>
+<ul>
+<li>testare con VM, alla fine!</li>
+<li>scrivere effettivamente bash commands per installare quant orichiesto (boost/process, opencv, etc ...)</li>
+<li>DISATTIVARE mk modules, va detto</li>
+<li>versione di g++ giusta per nostro MPIC++, quella che vada con <code>span</code> e altre cose nuove dello standard 20 o maggiore (mi pare)</li>
+<li>verrsione giusta di g++ per la versione di cuda nostra (ste robe le vedi anche dalle flag del compilatore nel Makefile)</li>
+<li>c++ 20? 23? Checckare non ricordo</li>
+<li>meglio usare <code>openMPI</code> rispetto a <code>mpich</code>, ha sempre funzionato il primo, il secondo ha dato problemi talvolta</li>
+<li>le librerie che mi vengono in mente sono <code>boost/process</code>, <code>opencv2</code>, se ce ne sono altre saranno negli <code>#include</code></li>
+<li>puiler dalla mierda lo repo!</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md8"></a>
 Getting Started</h1>
-<p>To compile the project, navigate to the project root directory in your terminal and run the following command:</p>
-<div class="fragment"><div class="line">make</div>
-</div><!-- fragment --><p>Once you have compiled you can execute the main program by: </p><div class="fragment"><div class="line">./exe</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md9"></a>
+Cloning repo</h2>
+<p>Standard coloning with <code>git clone</code>, no <em>submodules</em> are implemented in this repo. </p>
+<h2><a class="anchor" id="autotoc_md10"></a>
+Install dependencies</h2>
+<h3><a class="anchor" id="autotoc_md11"></a>
+Debian based</h3>
+<div class="fragment"><div class="line"># Run commands from PROJECT ROOT DIRECTORY</div>
+<div class="line">sudo chmod +x ./dependencyInstaller/dependencyInstallerDebianBased.sh</div>
+<div class="line">source ./dependencyInstaller/dependencyInstallerDebianBased.sh</div>
+</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md12"></a>
+Arch based</h3>
+<div class="fragment"><div class="line"># Run commands from PROJECT ROOT DIRECTORY</div>
+<div class="line">sudo chmod +x ./dependencyInstaller/dependencyInstallerArchBased.sh</div>
+<div class="line">source ./dependencyInstaller/dependencyInstallerArchBased.sh</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md13"></a>
+Compile&amp;Run</h2>
+<p>Program can be built with or without <b>CUDA</b>, you obviously <em>need</em> <code>nvcc</code> to be able to compile with <b>CUDA</b>. To compile the project, navigate to the <b>project root directory</b> in your terminal and run the following commands. </p>
+<h3><a class="anchor" id="autotoc_md14"></a>
+Without CUDA</h3>
+<div class="fragment"><div class="line"># make without running</div>
+<div class="line">make</div>
+<div class="line"># make and run the menu (or simply run if already built)</div>
+<div class="line">make run</div>
+</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md15"></a>
+With cuda</h3>
+<div class="fragment"><div class="line"># make without running (bulding also CUDA)</div>
+<div class="line">make cuda</div>
+<div class="line"># make and run the menu (building also CUDA)</div>
+<div class="line">make cudarun</div>
+</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md16"></a>
+Geek stuff</h3>
+<p>For a standard run program will guide you to choose an <em>image path</em>, <em>parallel method</em>, <em>configuration settings</em>. See section "What to expect" for more infromation.</p>
+<h1><a class="anchor" id="autotoc_md17"></a>
 What to expect</h1>
 <p>Once the program is started, the following screen appears, through which it is possible to compress a new image or decompress an already compressed image.</p>
 <div class="image">
@@ -104,10 +155,10 @@ What to expect</h1>
 alt text</div></div>
     <p>If you choose the "Compress an image" option you can select one type of compressor (sequential, MPI or OpenMP), the type of compression and the path of the original image.</p>
 <p>The result image will be created in the output folder and you can rerun <code>./exe</code> selecting the decoding function to decode it.</p>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<h1><a class="anchor" id="autotoc_md18"></a>
 Project Structure</h1>
 <p>The project is organized as follows: </p>
-<h3><a class="anchor" id="autotoc_md9"></a>
+<h3><a class="anchor" id="autotoc_md19"></a>
 Folders</h3>
 <ul>
 <li><code>benchmarkImages</code>: This folder contains the images used for benchmarking the program. It can be used to test the program's performance.</li>
@@ -116,14 +167,14 @@ Folders</h3>
 <li><code>src</code>: This folder contains the source files of the project. These files contain the implementation of the classes and functions defined in the header files.</li>
 <li><code>build</code>: This folder contains the object files generated during the compilation process.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md10"></a>
+<h3><a class="anchor" id="autotoc_md20"></a>
 Files and Executables</h3>
 <ul>
 <li><code>exe</code>: This is the executable file generated after compiling the project. It is the main program that can be executed to compress or decompress images.</li>
 <li><code>Makefile</code>: This file contains the instructions for compiling the project. It specifies the dependencies and the commands to compile the project.</li>
 <li><code>.config</code>: This file contains the configuration of the program. It is used to store some hyperparameters that can be modified to change the behavior of the program.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md11"></a>
+<h1><a class="anchor" id="autotoc_md21"></a>
 How does it work?</h1>
 <p>The program compresses images by reducing the number of colors in the image. It does this by clustering the pixels into k color groups using the k-means clustering algorithm. The k-means algorithm is an unsupervised learning algorithm that partitions the data into k clusters based on the similarity of the data points. In the context of image compression, the data points are the pixels of the image, and the clusters are the colors that represent the image.</p>
 <div class="image">
@@ -137,21 +188,15 @@ tree</div></div>
 <li>Repeat steps 2 and 3 until convergence.</li>
 </ol>
 <p>The k-means algorithm is an iterative algorithm that converges to a local minimum. The quality of the compression depends on the value of k, the number of clusters. A higher value of k will result in a better representation of the image but will require more memory to store the centroids.</p>
-<h1><a class="anchor" id="autotoc_md12"></a>
+<h1><a class="anchor" id="autotoc_md22"></a>
 Parallelization Techniques</h1>
 <p>The program uses several parallelization techniques to enhance performance. These techniques include:</p><ul>
 <li><b>OpenMP</b>: OpenMP is an API for parallel programming on shared-memory systems. It allows the program to parallelize the computation of the k-means algorithm by distributing the work among multiple threads.</li>
 <li><b>MPI</b>: MPI is a message-passing library for parallel programming on distributed-memory systems. It allows the program to parallelize the computation of the k-means algorithm by distributing the work among multiple processes running on different nodes.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md13"></a>
+<h1><a class="anchor" id="autotoc_md23"></a>
 Benchmarking</h1>
-<p>The program includes a benchmarking feature that allows you to test the performance of the program on different images. The benchmarking feature measures the time taken to compress an image using different compression techniques and different values of k. The benchmarking results are displayed in a table that shows the time taken to compress the image for each value of k and each compression technique.</p>
-<h1><a class="anchor" id="autotoc_md14"></a>
-Authors</h1>
-<ul>
-<li><a href="https://github.com/leonardopagliochini">Leonardo Ignazio Pagliochini</a></li>
-<li><a href="https://github.com/RosNaviGator">Francesco Rosnati</a> </li>
-</ul>
+<p>The program includes a benchmarking feature that allows you to test the performance of the program on different images. The benchmarking feature measures the time taken to compress an image using different compression techniques and different values of k. The benchmarking results are displayed in a table that shows the time taken to compress the image for each value of k and each compression technique. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

@@ -88,7 +88,7 @@ If you want to avoid having to input all the information through the prompts req
 Once the program is started, the following screen appears, through which it is possible to compress a new image or decompress an already compressed image.
 
 <div align="center">
-<img src=".readmePictures/gnomeLight.png" width="1000" height="auto">
+<img src=".readmePictures/archBark.png" width="1000" height="auto">
 </div>
 
 ### Compress an image

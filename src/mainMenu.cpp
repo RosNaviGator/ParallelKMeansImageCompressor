@@ -107,7 +107,7 @@ auto main() -> int
         {
             std::cout << "Perfect! Now let's choose the type of compression for your image." << std::endl
                     << "\n"
-                    << "(1)\tLight Compression (it may take more time bot the result will be more defined) <-- Suggested for Small Images\n"
+                    << "(1)\tLight Compression (it may take more time but the result will be more defined) <-- Suggested for Small Images\n"
                     << "(2)\tMedium Compression (it applies chroma subsampling to reduce the dimension of the image and the time needed for the computation)\n"
                     << "(3)\tHeavy Compression (it applies chroma subsampling and image resizing) <-- Suggested for Big Images\n";
             std::cout << std::endl;

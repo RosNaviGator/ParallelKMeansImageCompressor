@@ -13,7 +13,7 @@ km::KMeansCUDA::KMeansCUDA(const int &k, const std::vector<Point> &points) : k(k
     }
 }
 
-__global__ void assign_clusters(int *data, int *centroids, int *labels, int n, int k, int dim) {
+__global__ void km::KMeansCUDA::assign_clusters(int *data, int *centroids, int *labels, int n, int k, int dim) {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
     if (idx >= n) return;
 
@@ -40,7 +40,7 @@ __global__ void assign_clusters(int *data, int *centroids, int *labels, int n, i
     //printf("Point %d assigned to cluster %d\n", idx, closest);
 }
 
-__global__ void calculate_new_centroids(int *data, int *centroids, int *labels, int *counts, int n, int k, int dim) {
+__global__ void km::KMeansCUDA::calculate_new_centroids(int *data, int *centroids, int *labels, int *counts, int n, int k, int dim) {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
     if (idx >= n) return;
 
@@ -51,7 +51,7 @@ __global__ void calculate_new_centroids(int *data, int *centroids, int *labels, 
     atomicAdd(&counts[cluster_id], 1);
 }
 
-__global__ void average_centroids(int *centroids, int *counts, int k, int dim) {
+__global__ void km::KMeansCUDA::average_centroids(int *centroids, int *counts, int k, int dim) {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
     if (idx >= k) return;
 

@@ -2,59 +2,60 @@
 \hypertarget{classkm_1_1KMeansCUDA}{}\label{classkm_1_1KMeansCUDA}\index{km::KMeansCUDA@{km::KMeansCUDA}}
 
 
+Represents the K-\/means clustering algorithm using CUDA.  
+
+
+
+
 Collaboration diagram for km\+::KMeans\+CUDA\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=203pt]{classkm_1_1KMeansCUDA__coll__graph}
+\includegraphics[width=222pt]{classkm_1_1KMeansCUDA__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classkm_1_1KMeansCUDA_a608552ec1e8673c5c35c7828400a401a}{KMeans\+CUDA}} (const int \&\mbox{\hyperlink{classkm_1_1KMeansCUDA_a08d22f802b50936c20228b9d0a07d8b0}{k}}, const std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&\mbox{\hyperlink{classkm_1_1KMeansCUDA_a0999290e0b7623ccce65d11abf0c4a44}{points}})
+\mbox{\hyperlink{classkm_1_1KMeansCUDA_a608552ec1e8673c5c35c7828400a401a}{KMeans\+CUDA}} (\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \&\mbox{\hyperlink{classkm_1_1KMeansCUDA_a08d22f802b50936c20228b9d0a07d8b0}{k}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&\mbox{\hyperlink{classkm_1_1KMeansCUDA_a0999290e0b7623ccce65d11abf0c4a44}{points}})
 \begin{DoxyCompactList}\small\item\em Constructor for KMeans. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab}{run}} ()
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} \mbox{\hyperlink{classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab}{run}} ()
 \begin{DoxyCompactList}\small\item\em Runs the K-\/means clustering algorithm using CUDA. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classkm_1_1KMeansCUDA_ab744aaeae716cb1bb591663160c0dfe0}{print\+Clusters}} () const
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} \mbox{\hyperlink{classkm_1_1KMeansCUDA_ab744aaeae716cb1bb591663160c0dfe0}{print\+Clusters}} () \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}}
 \begin{DoxyCompactList}\small\item\em Prints the clusters. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classkm_1_1KMeansCUDA_a0d0053ec128a846d849778fb2a745f93}{plot\+Clusters}} ()
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} \mbox{\hyperlink{classkm_1_1KMeansCUDA_a0d0053ec128a846d849778fb2a745f93}{plot\+Clusters}} ()
 \begin{DoxyCompactList}\small\item\em Plots the clusters. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classkm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea}{get\+Points}} () -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{auto}} \mbox{\hyperlink{classkm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea}{get\+Points}} () -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
 \begin{DoxyCompactList}\small\item\em Gets the points. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classkm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19}{get\+Centroids}} () -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{auto}} \mbox{\hyperlink{classkm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19}{get\+Centroids}} () -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
 \begin{DoxyCompactList}\small\item\em Gets the centroids. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classkm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869}{get\+Iterations}} () -\/$>$ int
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{auto}} \mbox{\hyperlink{classkm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869}{get\+Iterations}} () -\/$>$ \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}}
 \begin{DoxyCompactList}\small\item\em Gets the number of iterations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{classkm_1_1KMeansCUDA_a08d22f802b50936c20228b9d0a07d8b0}{k}}
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \mbox{\hyperlink{classkm_1_1KMeansCUDA_a08d22f802b50936c20228b9d0a07d8b0}{k}}
 \begin{DoxyCompactList}\small\item\em Number of clusters. \end{DoxyCompactList}\item 
 std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a0999290e0b7623ccce65d11abf0c4a44}{points}}
 \begin{DoxyCompactList}\small\item\em Vector of points. \end{DoxyCompactList}\item 
 std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a7a303e26ed1f13a4d57598d6dee4e05b}{centroids}}
 \begin{DoxyCompactList}\small\item\em Vector of centroids. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classkm_1_1KMeansCUDA_a362c330ba854bf83ecda420fea3e2e32}{number\+\_\+of\+\_\+iterations}}
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \mbox{\hyperlink{classkm_1_1KMeansCUDA_a362c330ba854bf83ecda420fea3e2e32}{number\+\_\+of\+\_\+iterations}}
 \begin{DoxyCompactList}\small\item\em Number of iterations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-\begin{DoxyVerb}   @class KMeansCUDA
-   @brief Represents the K-means clustering algorithm using CUDA
-   @details The KMeansCUDA class, located in the km namespace, is designed to implement the K-means clustering algorithm using CUDA for enhanced performance through parallel processing on GPUs. This class extends the functionality of traditional K-means clustering by leveraging CUDA to accelerate computations, making it suitable for large datasets and complex clustering tasks.
-\end{DoxyVerb}
+Represents the K-\/means clustering algorithm using CUDA. 
 
-
-The class provides a constructor that initializes the number of clusters and the vector of points to be clustered. It includes a run method that executes the K-\/means algorithm on the GPU, performing the clustering operations efficiently by taking advantage of parallel processing capabilities. Additionally, it offers methods to print and plot the clusters, allowing users to visualize the results of the clustering process. The get\+Points, get\+Centroids, and get\+Iterations methods provide access to the internal state of the clustering, including the input points, the resulting centroids, and the number of iterations the algorithm has undergone, respectively. This design ensures that users can both run and analyze the K-\/means clustering process using CUDA for improved performance. 
+The \doxylink{classkm_1_1KMeansCUDA}{KMeans\+CUDA} class, located in the km namespace, is designed to implement the K-\/means clustering algorithm using CUDA for enhanced performance through parallel processing on GPUs. This class extends the functionality of traditional K-\/means clustering by leveraging CUDA to accelerate computations, making it suitable for large datasets and complex clustering tasks. The class provides a constructor that initializes the number of clusters and the vector of points to be clustered. It includes a run method that executes the K-\/means algorithm on the GPU, performing the clustering operations efficiently by taking advantage of parallel processing capabilities. Additionally, it offers methods to print and plot the clusters, allowing users to visualize the results of the clustering process. The get\+Points, get\+Centroids, and get\+Iterations methods provide access to the internal state of the clustering, including the input points, the resulting centroids, and the number of iterations the algorithm has undergone, respectively. This design ensures that users can both run and analyze the K-\/means clustering process using CUDA for improved performance. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classkm_1_1KMeansCUDA_a608552ec1e8673c5c35c7828400a401a}\index{km::KMeansCUDA@{km::KMeansCUDA}!KMeansCUDA@{KMeansCUDA}}
+\Hypertarget{classkm_1_1KMeansCUDA_a608552ec1e8673c5c35c7828400a401a}\label{classkm_1_1KMeansCUDA_a608552ec1e8673c5c35c7828400a401a} 
+\index{km::KMeansCUDA@{km::KMeansCUDA}!KMeansCUDA@{KMeansCUDA}}
 \index{KMeansCUDA@{KMeansCUDA}!km::KMeansCUDA@{km::KMeansCUDA}}
 \doxysubsubsection{\texorpdfstring{KMeansCUDA()}{KMeansCUDA()}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansCUDA_a608552ec1e8673c5c35c7828400a401a} 
-km\+::\+KMeans\+CUDA\+::\+KMeans\+CUDA (\begin{DoxyParamCaption}\item[{const int \&}]{k}{, }\item[{const std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&}]{points}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily km\+::\+KMeans\+CUDA\+::\+KMeans\+CUDA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \&}]{k,  }\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&}]{points }\end{DoxyParamCaption})}
 
 
 
@@ -70,11 +71,11 @@ Constructor for KMeans.
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classkm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19}\index{km::KMeansCUDA@{km::KMeansCUDA}!getCentroids@{getCentroids}}
+\Hypertarget{classkm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19}\label{classkm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19} 
+\index{km::KMeansCUDA@{km::KMeansCUDA}!getCentroids@{getCentroids}}
 \index{getCentroids@{getCentroids}!km::KMeansCUDA@{km::KMeansCUDA}}
 \doxysubsubsection{\texorpdfstring{getCentroids()}{getCentroids()}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19} 
-auto km\+::\+KMeans\+CUDA\+::get\+Centroids (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) -\/$>$ std\+::vector$<$\mbox{\hyperlink{classkm_1_1Point}{Point}}$>$}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{auto}} km\+::\+KMeans\+CUDA\+::get\+Centroids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ std\+::vector$<$\mbox{\hyperlink{classkm_1_1Point}{Point}}$>$}
 
 
 
@@ -83,19 +84,18 @@ Gets the centroids.
 \begin{DoxyReturn}{Returns}
 Vector of centroids 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=315pt]{classkm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classkm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869}\index{km::KMeansCUDA@{km::KMeansCUDA}!getIterations@{getIterations}}
+\Hypertarget{classkm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869}\label{classkm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869} 
+\index{km::KMeansCUDA@{km::KMeansCUDA}!getIterations@{getIterations}}
 \index{getIterations@{getIterations}!km::KMeansCUDA@{km::KMeansCUDA}}
 \doxysubsubsection{\texorpdfstring{getIterations()}{getIterations()}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869} 
-auto km\+::\+KMeans\+CUDA\+::get\+Iterations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) -\/$>$ int}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{auto}} km\+::\+KMeans\+CUDA\+::get\+Iterations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}}}
 
 
 
@@ -104,19 +104,18 @@ Gets the number of iterations.
 \begin{DoxyReturn}{Returns}
 Number of iterations 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=314pt]{classkm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classkm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea}\index{km::KMeansCUDA@{km::KMeansCUDA}!getPoints@{getPoints}}
+\Hypertarget{classkm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea}\label{classkm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea} 
+\index{km::KMeansCUDA@{km::KMeansCUDA}!getPoints@{getPoints}}
 \index{getPoints@{getPoints}!km::KMeansCUDA@{km::KMeansCUDA}}
 \doxysubsubsection{\texorpdfstring{getPoints()}{getPoints()}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea} 
-auto km\+::\+KMeans\+CUDA\+::get\+Points (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) -\/$>$ std\+::vector$<$\mbox{\hyperlink{classkm_1_1Point}{Point}}$>$}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{auto}} km\+::\+KMeans\+CUDA\+::get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ std\+::vector$<$\mbox{\hyperlink{classkm_1_1Point}{Point}}$>$}
 
 
 
@@ -125,54 +124,51 @@ Gets the points.
 \begin{DoxyReturn}{Returns}
 Vector of points 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=301pt]{classkm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classkm_1_1KMeansCUDA_a0d0053ec128a846d849778fb2a745f93}\index{km::KMeansCUDA@{km::KMeansCUDA}!plotClusters@{plotClusters}}
+\Hypertarget{classkm_1_1KMeansCUDA_a0d0053ec128a846d849778fb2a745f93}\label{classkm_1_1KMeansCUDA_a0d0053ec128a846d849778fb2a745f93} 
+\index{km::KMeansCUDA@{km::KMeansCUDA}!plotClusters@{plotClusters}}
 \index{plotClusters@{plotClusters}!km::KMeansCUDA@{km::KMeansCUDA}}
 \doxysubsubsection{\texorpdfstring{plotClusters()}{plotClusters()}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansCUDA_a0d0053ec128a846d849778fb2a745f93} 
-void km\+::\+KMeans\+CUDA\+::plot\+Clusters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} km\+::\+KMeans\+CUDA\+::plot\+Clusters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 Plots the clusters. 
 
-\Hypertarget{classkm_1_1KMeansCUDA_ab744aaeae716cb1bb591663160c0dfe0}\index{km::KMeansCUDA@{km::KMeansCUDA}!printClusters@{printClusters}}
+\Hypertarget{classkm_1_1KMeansCUDA_ab744aaeae716cb1bb591663160c0dfe0}\label{classkm_1_1KMeansCUDA_ab744aaeae716cb1bb591663160c0dfe0} 
+\index{km::KMeansCUDA@{km::KMeansCUDA}!printClusters@{printClusters}}
 \index{printClusters@{printClusters}!km::KMeansCUDA@{km::KMeansCUDA}}
 \doxysubsubsection{\texorpdfstring{printClusters()}{printClusters()}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansCUDA_ab744aaeae716cb1bb591663160c0dfe0} 
-void km\+::\+KMeans\+CUDA\+::print\+Clusters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} km\+::\+KMeans\+CUDA\+::print\+Clusters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
 Prints the clusters. 
 
-\Hypertarget{classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab}\index{km::KMeansCUDA@{km::KMeansCUDA}!run@{run}}
+\Hypertarget{classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab}\label{classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab} 
+\index{km::KMeansCUDA@{km::KMeansCUDA}!run@{run}}
 \index{run@{run}!km::KMeansCUDA@{km::KMeansCUDA}}
 \doxysubsubsection{\texorpdfstring{run()}{run()}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab} 
-void km\+::\+KMeans\+CUDA\+::run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} km\+::\+KMeans\+CUDA\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 Runs the K-\/means clustering algorithm using CUDA. 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -182,41 +178,41 @@ Here is the caller graph for this function\+:
 
 
 \doxysubsection{Member Data Documentation}
-\Hypertarget{classkm_1_1KMeansCUDA_a7a303e26ed1f13a4d57598d6dee4e05b}\index{km::KMeansCUDA@{km::KMeansCUDA}!centroids@{centroids}}
+\Hypertarget{classkm_1_1KMeansCUDA_a7a303e26ed1f13a4d57598d6dee4e05b}\label{classkm_1_1KMeansCUDA_a7a303e26ed1f13a4d57598d6dee4e05b} 
+\index{km::KMeansCUDA@{km::KMeansCUDA}!centroids@{centroids}}
 \index{centroids@{centroids}!km::KMeansCUDA@{km::KMeansCUDA}}
 \doxysubsubsection{\texorpdfstring{centroids}{centroids}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansCUDA_a7a303e26ed1f13a4d57598d6dee4e05b} 
-std\+::vector$<$\mbox{\hyperlink{classkm_1_1Point}{Point}}$>$ km\+::\+KMeans\+CUDA\+::centroids\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classkm_1_1Point}{Point}}$>$ km\+::\+KMeans\+CUDA\+::centroids\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
 Vector of centroids. 
 
-\Hypertarget{classkm_1_1KMeansCUDA_a08d22f802b50936c20228b9d0a07d8b0}\index{km::KMeansCUDA@{km::KMeansCUDA}!k@{k}}
+\Hypertarget{classkm_1_1KMeansCUDA_a08d22f802b50936c20228b9d0a07d8b0}\label{classkm_1_1KMeansCUDA_a08d22f802b50936c20228b9d0a07d8b0} 
+\index{km::KMeansCUDA@{km::KMeansCUDA}!k@{k}}
 \index{k@{k}!km::KMeansCUDA@{km::KMeansCUDA}}
 \doxysubsubsection{\texorpdfstring{k}{k}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansCUDA_a08d22f802b50936c20228b9d0a07d8b0} 
-int km\+::\+KMeans\+CUDA\+::k\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} km\+::\+KMeans\+CUDA\+::k\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
 Number of clusters. 
 
-\Hypertarget{classkm_1_1KMeansCUDA_a362c330ba854bf83ecda420fea3e2e32}\index{km::KMeansCUDA@{km::KMeansCUDA}!number\_of\_iterations@{number\_of\_iterations}}
+\Hypertarget{classkm_1_1KMeansCUDA_a362c330ba854bf83ecda420fea3e2e32}\label{classkm_1_1KMeansCUDA_a362c330ba854bf83ecda420fea3e2e32} 
+\index{km::KMeansCUDA@{km::KMeansCUDA}!number\_of\_iterations@{number\_of\_iterations}}
 \index{number\_of\_iterations@{number\_of\_iterations}!km::KMeansCUDA@{km::KMeansCUDA}}
 \doxysubsubsection{\texorpdfstring{number\_of\_iterations}{number\_of\_iterations}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansCUDA_a362c330ba854bf83ecda420fea3e2e32} 
-int km\+::\+KMeans\+CUDA\+::number\+\_\+of\+\_\+iterations\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} km\+::\+KMeans\+CUDA\+::number\+\_\+of\+\_\+iterations\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
 Number of iterations. 
 
-\Hypertarget{classkm_1_1KMeansCUDA_a0999290e0b7623ccce65d11abf0c4a44}\index{km::KMeansCUDA@{km::KMeansCUDA}!points@{points}}
+\Hypertarget{classkm_1_1KMeansCUDA_a0999290e0b7623ccce65d11abf0c4a44}\label{classkm_1_1KMeansCUDA_a0999290e0b7623ccce65d11abf0c4a44} 
+\index{km::KMeansCUDA@{km::KMeansCUDA}!points@{points}}
 \index{points@{points}!km::KMeansCUDA@{km::KMeansCUDA}}
 \doxysubsubsection{\texorpdfstring{points}{points}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansCUDA_a0999290e0b7623ccce65d11abf0c4a44} 
-std\+::vector$<$\mbox{\hyperlink{classkm_1_1Point}{Point}}$>$ km\+::\+KMeans\+CUDA\+::points\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classkm_1_1Point}{Point}}$>$ km\+::\+KMeans\+CUDA\+::points\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

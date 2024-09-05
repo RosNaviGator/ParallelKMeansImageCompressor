@@ -8,27 +8,25 @@ Provides utility functions for image processing.
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c}{preprocessing}} (cv\+::\+Mat \&image, int \&type\+Compression\+Choice)
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} \mbox{\hyperlink{namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c}{preprocessing}} (cv\+::\+Mat \&\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{image}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \&\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{type\+Compression\+Choice}})
 \begin{DoxyCompactList}\small\item\em Performs preprocessing on an image. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb}{define\+KValue}} (int \&k, int levels\+Colors\+Choice, std\+::set$<$ std\+::vector$<$ unsigned char $>$ $>$ \&different\+\_\+colors)
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} \mbox{\hyperlink{namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb}{define\+KValue}} (\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \&k, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{levels\+Colors\+Choice}}, std\+::set$<$ std\+::vector$<$ \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{unsigned}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{char}} $>$ $>$ \&\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{different\+\_\+colors}})
 \begin{DoxyCompactList}\small\item\em Defines the value of K based on the color levels choice. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244f}{points\+From\+Image}} (cv\+::\+Mat \&image, std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&points, std\+::set$<$ std\+::vector$<$ unsigned char $>$ $>$ \&different\+\_\+colors)
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} \mbox{\hyperlink{namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244f}{points\+From\+Image}} (cv\+::\+Mat \&\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{image}}, std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&points, std\+::set$<$ std\+::vector$<$ \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{unsigned}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{char}} $>$ $>$ \&\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{different\+\_\+colors}})
 \begin{DoxyCompactList}\small\item\em Extracts points from an image. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Provides utility functions for image processing. 
 
-The \doxylink{namespacekm_1_1imageUtils}{image\+Utils} namespace within the km namespace provides a suite of utility functions aimed at facilitating various image processing tasks. This namespace encompasses functions designed to preprocess images, determine the appropriate number of clusters for color-\/based compression, and extract points from images for further analysis.
-
-The preprocessing function is responsible for preparing an image for subsequent processing steps, adjusting it according to the specified type of compression. The define\+KValue function calculates the number of clusters, or K, based on the chosen levels of colors and the distinct colors present in the image. This function helps in determining the optimal number of clusters for tasks such as color quantization. Lastly, the points\+From\+Image function extracts points from the image and organizes them into a vector, using the set of distinct colors found in the image to aid in this process. These functions collectively support various aspects of image processing, ensuring efficient handling and analysis of image data. 
+The \doxylink{namespacekm_1_1imageUtils}{image\+Utils} namespace within the km namespace provides a suite of utility functions aimed at facilitating various image processing tasks. This namespace encompasses functions designed to preprocess images, determine the appropriate number of clusters for color-\/based compression, and extract points from images for further analysis. The preprocessing function is responsible for preparing an image for subsequent processing steps, adjusting it according to the specified type of compression. The define\+KValue function calculates the number of clusters, or K, based on the chosen levels of colors and the distinct colors present in the image. This function helps in determining the optimal number of clusters for tasks such as color quantization. Lastly, the points\+From\+Image function extracts points from the image and organizes them into a vector, using the set of distinct colors found in the image to aid in this process. These functions collectively support various aspects of image processing, ensuring efficient handling and analysis of image data. 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb}\index{km::imageUtils@{km::imageUtils}!defineKValue@{defineKValue}}
+\Hypertarget{namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb}\label{namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb} 
+\index{km::imageUtils@{km::imageUtils}!defineKValue@{defineKValue}}
 \index{defineKValue@{defineKValue}!km::imageUtils@{km::imageUtils}}
 \doxysubsubsection{\texorpdfstring{defineKValue()}{defineKValue()}}
-{\footnotesize\ttfamily \label{namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb} 
-void km\+::image\+Utils\+::define\+KValue (\begin{DoxyParamCaption}\item[{int \&}]{k}{, }\item[{int}]{levels\+Colors\+Choice}{, }\item[{std\+::set$<$ std\+::vector$<$ unsigned char $>$ $>$ \&}]{different\+\_\+colors}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} km\+::image\+Utils\+::define\+KValue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \&}]{k,  }\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}}}]{levels\+Colors\+Choice,  }\item[{std\+::set$<$ std\+::vector$<$ \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{unsigned}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{char}} $>$ $>$ \&}]{different\+\_\+colors }\end{DoxyParamCaption})}
 
 
 
@@ -43,27 +41,25 @@ Defines the value of K based on the color levels choice.
 {\em different\+\_\+colors} & Set of different colors in the image \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=298pt]{namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244f}\index{km::imageUtils@{km::imageUtils}!pointsFromImage@{pointsFromImage}}
+\Hypertarget{namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244f}\label{namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244f} 
+\index{km::imageUtils@{km::imageUtils}!pointsFromImage@{pointsFromImage}}
 \index{pointsFromImage@{pointsFromImage}!km::imageUtils@{km::imageUtils}}
 \doxysubsubsection{\texorpdfstring{pointsFromImage()}{pointsFromImage()}}
-{\footnotesize\ttfamily \label{namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244f} 
-void km\+::image\+Utils\+::points\+From\+Image (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{image}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&}]{points}{, }\item[{std\+::set$<$ std\+::vector$<$ unsigned char $>$ $>$ \&}]{different\+\_\+colors}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} km\+::image\+Utils\+::points\+From\+Image (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{image,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&}]{points,  }\item[{std\+::set$<$ std\+::vector$<$ \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{unsigned}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{char}} $>$ $>$ \&}]{different\+\_\+colors }\end{DoxyParamCaption})}
 
 
 
@@ -78,19 +74,18 @@ Extracts points from an image.
 {\em different\+\_\+colors} & Set of different colors in the image \\
 \hline
 \end{DoxyParams}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=290pt]{namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244f_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c}\index{km::imageUtils@{km::imageUtils}!preprocessing@{preprocessing}}
+\Hypertarget{namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c}\label{namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c} 
+\index{km::imageUtils@{km::imageUtils}!preprocessing@{preprocessing}}
 \index{preprocessing@{preprocessing}!km::imageUtils@{km::imageUtils}}
 \doxysubsubsection{\texorpdfstring{preprocessing()}{preprocessing()}}
-{\footnotesize\ttfamily \label{namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c} 
-void km\+::image\+Utils\+::preprocessing (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{image}{, }\item[{int \&}]{type\+Compression\+Choice}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} km\+::image\+Utils\+::preprocessing (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{image,  }\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \&}]{type\+Compression\+Choice }\end{DoxyParamCaption})}
 
 
 
@@ -103,16 +98,14 @@ Performs preprocessing on an image.
 {\em type\+Compression\+Choice} & Type of compression choice \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

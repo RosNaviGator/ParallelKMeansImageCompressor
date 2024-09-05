@@ -14,11 +14,13 @@ namespace km
     /**
      * @class KMeansMPI
      * @brief Represents the K-means clustering algorithm using MPI
-     * @details The KMeansMPI class, located in the km namespace, is designed to implement the K-means clustering algorithm using MPI (Message Passing Interface) for parallel and distributed computing. This class extends the base KMeansBase class to enable clustering operations across multiple processes, leveraging MPI to handle large-scale data and computational tasks more efficiently.
-
-The class includes two constructors: one that initializes the number of clusters, a vector of points, and a vector of local points distributed across MPI processes; and another that initializes only the number of clusters and local points. The run method, overridden from KMeansBase, is responsible for executing the K-means clustering algorithm using MPI, coordinating the clustering process across different processes in a distributed computing environment.
-
-The local_points member variable holds the points assigned to each MPI process, enabling the parallel execution of clustering tasks. This class is designed to handle clustering in a distributed setting, allowing for efficient processing of large datasets by distributing the workload across multiple computing nodes.
+     * @details The KMeansMPI class, located in the km namespace, is designed to implement the K-means clustering algorithm using MPI (Message Passing Interface) for parallel and distributed computing.
+     *          This class extends the base KMeansBase class to enable clustering operations across multiple processes, leveraging MPI to handle large-scale data and computational tasks more efficiently. 
+     *          The class includes two constructors: one that initializes the number of clusters, a vector of points, and a vector of local points distributed across MPI processes; and another that initializes
+     *          only the number of clusters and local points. The run method, overridden from KMeansBase, is responsible for executing the K-means clustering algorithm using MPI, coordinating the clustering
+     *          process across different processes in a distributed computing environment.
+     *          The local_points member variable holds the points assigned to each MPI process, enabling the parallel execution of clustering tasks. This class is designed to handle clustering in a distributed
+     *          setting, allowing for efficient processing of large datasets by distributing the workload across multiple computing nodes.
      */
 
     class KMeansMPI : public KMeansBase

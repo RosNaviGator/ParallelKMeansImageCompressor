@@ -15,31 +15,39 @@
 \DoxyCodeLine{00015\ }
 \DoxyCodeLine{00016\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacekm}{km}}}
 \DoxyCodeLine{00017\ \{}
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classkm_1_1KMeansCUDA}{KMeansCUDA}}}
-\DoxyCodeLine{00027\ \ \ \ \ \{}
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a608552ec1e8673c5c35c7828400a401a}{KMeansCUDA}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&\mbox{\hyperlink{classkm_1_1KMeansCUDA_a08d22f802b50936c20228b9d0a07d8b0}{k}},\ \textcolor{keyword}{const}\ std::vector<Point>\ \&\mbox{\hyperlink{classkm_1_1KMeansCUDA_a0999290e0b7623ccce65d11abf0c4a44}{points}});}
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab}{run}}();}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_ab744aaeae716cb1bb591663160c0dfe0}{printClusters}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a0d0053ec128a846d849778fb2a745f93}{plotClusters}}();}
-\DoxyCodeLine{00051\ }
-\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea}{getPoints}}()\ -\/>\ std::vector<Point>;}
+\DoxyCodeLine{00030\ \ \ \ \ \_\_global\_\_\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_a252943e6e4cb275d5df0a929655d5a24}{calculate\_new\_centroids}}(\textcolor{keywordtype}{int}\ *data,\ \textcolor{keywordtype}{int}\ *centroids,\ \textcolor{keywordtype}{int}\ *labels,\ \textcolor{keywordtype}{int}\ *counts,\ \textcolor{keywordtype}{int}\ n,\ \textcolor{keywordtype}{int}\ k,\ \textcolor{keywordtype}{int}\ dim);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00041\ \ \ \ \ \_\_global\_\_\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_ada9a9580e3fc9b145acaab2b0d5c4b9c}{average\_centroids}}(\textcolor{keywordtype}{int}\ *centroids,\ \textcolor{keywordtype}{int}\ *counts,\ \textcolor{keywordtype}{int}\ k,\ \textcolor{keywordtype}{int}\ dim);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00054\ \ \ \ \ \_\_global\_\_\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{assign\_clusters}}(\textcolor{keywordtype}{int}\ *data,\ \textcolor{keywordtype}{int}\ *centroids,\ \textcolor{keywordtype}{int}\ *labels,\ \textcolor{keywordtype}{int}\ n,\ \textcolor{keywordtype}{int}\ k,\ \textcolor{keywordtype}{int}\ dim);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
 \DoxyCodeLine{00057\ }
-\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19}{getCentroids}}()\ -\/>\ std::vector<Point>;}
-\DoxyCodeLine{00064\ }
-\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869}{getIterations}}()\ -\/>\ int;}
-\DoxyCodeLine{00070\ }
-\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a08d22f802b50936c20228b9d0a07d8b0}{k}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ std::vector<Point>\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a0999290e0b7623ccce65d11abf0c4a44}{points}};\ \ \ \ }
-\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ std::vector<Point>\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a7a303e26ed1f13a4d57598d6dee4e05b}{centroids}};\ }
-\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a362c330ba854bf83ecda420fea3e2e32}{number\_of\_iterations}};\ \ \ \ \ }
-\DoxyCodeLine{00076\ \ \ \ \ \};}
-\DoxyCodeLine{00077\ \}\ \textcolor{comment}{//\ namespace\ km}}
-\DoxyCodeLine{00078\ }
-\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ KMEANS\_CUDA\_HPP}}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classkm_1_1KMeansCUDA}{KMeansCUDA}}}
+\DoxyCodeLine{00071\ \ \ \ \ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classkm_1_1KMeansCUDA}{KMeansCUDA}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&\mbox{\hyperlink{classkm_1_1KMeansCUDA_a08d22f802b50936c20228b9d0a07d8b0}{k}},\ \textcolor{keyword}{const}\ std::vector<Point>\ \&\mbox{\hyperlink{classkm_1_1KMeansCUDA_a0999290e0b7623ccce65d11abf0c4a44}{points}});}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab}{run}}();}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_ab744aaeae716cb1bb591663160c0dfe0}{printClusters}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a0d0053ec128a846d849778fb2a745f93}{plotClusters}}();}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea}{getPoints}}()\ -\/>\ std::vector<Point>;}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19}{getCentroids}}()\ -\/>\ std::vector<Point>;}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869}{getIterations}}()\ -\/>\ int;}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a08d22f802b50936c20228b9d0a07d8b0}{k}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ std::vector<Point>\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a0999290e0b7623ccce65d11abf0c4a44}{points}};\ \ \ \ }
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ std::vector<Point>\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a7a303e26ed1f13a4d57598d6dee4e05b}{centroids}};\ }
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classkm_1_1KMeansCUDA_a362c330ba854bf83ecda420fea3e2e32}{number\_of\_iterations}};\ \ \ \ \ }
+\DoxyCodeLine{00120\ \ \ \ \ \};}
+\DoxyCodeLine{00121\ \}\ \textcolor{comment}{//\ namespace\ km}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ KMEANS\_CUDA\_HPP}}
 
 \end{DoxyCode}

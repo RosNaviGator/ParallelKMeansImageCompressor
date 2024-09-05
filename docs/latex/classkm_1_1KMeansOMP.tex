@@ -2,6 +2,11 @@
 \hypertarget{classkm_1_1KMeansOMP}{}\label{classkm_1_1KMeansOMP}\index{km::KMeansOMP@{km::KMeansOMP}}
 
 
+Represents the K-\/means clustering algorithm using Open\+MP.  
+
+
+
+
 {\ttfamily \#include $<$k\+Means\+OMP.\+hpp$>$}
 
 
@@ -11,7 +16,7 @@ Inheritance diagram for km\+::KMeans\+OMP\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=215pt]{classkm_1_1KMeansOMP__inherit__graph}
+\includegraphics[width=231pt]{classkm_1_1KMeansOMP__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -21,62 +26,56 @@ Collaboration diagram for km\+::KMeans\+OMP\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=215pt]{classkm_1_1KMeansOMP__coll__graph}
+\includegraphics[width=231pt]{classkm_1_1KMeansOMP__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classkm_1_1KMeansOMP_a2c8486b5090f560b9f3a5e35b0a638cd}{KMeans\+OMP}} (const int \&\mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}}, const std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&\mbox{\hyperlink{classkm_1_1KMeansBase_a73dfe23dfbb0c544cd128255e291aa05}{points}})
+\mbox{\hyperlink{classkm_1_1KMeansOMP_a2c8486b5090f560b9f3a5e35b0a638cd}{KMeans\+OMP}} (\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \&\mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&\mbox{\hyperlink{classkm_1_1KMeansBase_a73dfe23dfbb0c544cd128255e291aa05}{points}})
 \begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classkm_1_1KMeansOMP}{KMeans\+OMP}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06}{run}} () override
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} \mbox{\hyperlink{classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06}{run}} () \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{override}}
 \begin{DoxyCompactList}\small\item\em Runs the K-\/means clustering algorithm using Open\+MP. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classkm_1_1KMeansBase}{km\+::\+KMeans\+Base}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classkm_1_1KMeansBase_a88bebad949f5b6edff2af08ae74295cb}{KMeans\+Base}} (const int \&\mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}}, const std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&\mbox{\hyperlink{classkm_1_1KMeansBase_a73dfe23dfbb0c544cd128255e291aa05}{points}})
+\mbox{\hyperlink{classkm_1_1KMeansBase_a88bebad949f5b6edff2af08ae74295cb}{KMeans\+Base}} (\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \&\mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&\mbox{\hyperlink{classkm_1_1KMeansBase_a73dfe23dfbb0c544cd128255e291aa05}{points}})
 \begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classkm_1_1KMeansBase}{KMeans\+Base}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classkm_1_1KMeansBase_a6fd298e173124aa1ed7c11be7d451a1a}{KMeans\+Base}} (const int \&\mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}})
+\mbox{\hyperlink{classkm_1_1KMeansBase_a6fd298e173124aa1ed7c11be7d451a1a}{KMeans\+Base}} (\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \&\mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}})
 \begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classkm_1_1KMeansBase}{KMeans\+Base} object only with the specified number of clusters. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{classkm_1_1KMeansBase_a295d214db11a3c799cb70b86baeb26ee}{\texorpdfstring{$\sim$}{\string~}\+KMeans\+Base}} ()=default
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{virtual}} \mbox{\hyperlink{classkm_1_1KMeansBase_a295d214db11a3c799cb70b86baeb26ee}{\texorpdfstring{$\sim$}{\string~}\+KMeans\+Base}} ()=\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{default}}
 \begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classkm_1_1KMeansBase}{KMeans\+Base}. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classkm_1_1KMeansBase_a5ec2ecf08e285a5e2d34b766b353ce1f}{get\+Points}} () const -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{auto}} \mbox{\hyperlink{classkm_1_1KMeansBase_a5ec2ecf08e285a5e2d34b766b353ce1f}{get\+Points}} () \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
 \begin{DoxyCompactList}\small\item\em Gets the poinots. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classkm_1_1KMeansBase_ac0ecde9c25587ef197069159c0b545df}{get\+Centroids}} () const -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{auto}} \mbox{\hyperlink{classkm_1_1KMeansBase_ac0ecde9c25587ef197069159c0b545df}{get\+Centroids}} () \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} -\/$>$ std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$
 \begin{DoxyCompactList}\small\item\em Gets the centroids. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{classkm_1_1KMeansBase_a48d1ee4a7a671b200995c611fd349cd3}{get\+Iterations}} () const -\/$>$ int
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{auto}} \mbox{\hyperlink{classkm_1_1KMeansBase_a48d1ee4a7a671b200995c611fd349cd3}{get\+Iterations}} () \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} -\/$>$ \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}}
 \begin{DoxyCompactList}\small\item\em Gets the number of iterations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classkm_1_1KMeansBase}{km\+::\+KMeans\+Base}}}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}}
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}}
 \begin{DoxyCompactList}\small\item\em Number of clusters. \end{DoxyCompactList}\item 
 std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \mbox{\hyperlink{classkm_1_1KMeansBase_a73dfe23dfbb0c544cd128255e291aa05}{points}}
 \begin{DoxyCompactList}\small\item\em Vector of points. \end{DoxyCompactList}\item 
 std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \mbox{\hyperlink{classkm_1_1KMeansBase_ab23d5830a45ba956fc43b549884b327b}{centroids}}
 \begin{DoxyCompactList}\small\item\em Vector of centroids. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classkm_1_1KMeansBase_a1a41bedae67c0ae03bca35fba3ff8aa3}{number\+\_\+of\+\_\+iterations}}
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \mbox{\hyperlink{classkm_1_1KMeansBase_a1a41bedae67c0ae03bca35fba3ff8aa3}{number\+\_\+of\+\_\+iterations}}
 \begin{DoxyCompactList}\small\item\em Number of iterations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-\begin{DoxyVerb}   @class KMeansOMP
-   @brief Represents the K-means clustering algorithm using OpenMP
-   @details The KMeansOMP class, part of the km namespace, is designed to implement the K-means clustering algorithm using OpenMP, a parallel programming model for shared-memory architectures. This class extends the KMeansBase class to utilize OpenMP for parallelizing the clustering process, which can significantly speed up computations by leveraging multi-core processors.
-\end{DoxyVerb}
+Represents the K-\/means clustering algorithm using Open\+MP. 
 
-
-The class features a constructor that initializes the number of clusters and the vector of points to be clustered. The run method, which overrides the base class method, is responsible for executing the K-\/means clustering algorithm with parallelization support provided by Open\+MP. This allows the algorithm to handle clustering operations more efficiently by distributing computational tasks across multiple threads.
-
-By integrating Open\+MP, the \doxylink{classkm_1_1KMeansOMP}{KMeans\+OMP} class aims to enhance the performance of the K-\/means clustering algorithm, making it suitable for processing larger datasets and improving computational efficiency in environments with multi-\/core CPUs. 
+The \doxylink{classkm_1_1KMeansOMP}{KMeans\+OMP} class, part of the km namespace, is designed to implement the K-\/means clustering algorithm using Open\+MP, a parallel programming model for shared-\/memory architectures. This class extends the \doxylink{classkm_1_1KMeansBase}{KMeans\+Base} class to utilize Open\+MP for parallelizing the clustering process, which can significantly speed up computations by leveraging multi-\/core processors. The class features a constructor that initializes the number of clusters and the vector of points to be clustered. The run method, which overrides the base class method, is responsible for executing the K-\/means clustering algorithm with parallelization support provided by Open\+MP. This allows the algorithm to handle clustering operations more efficiently by distributing computational tasks across multiple threads. By integrating Open\+MP, the \doxylink{classkm_1_1KMeansOMP}{KMeans\+OMP} class aims to enhance the performance of the K-\/means clustering algorithm, making it suitable for processing larger datasets and improving computational efficiency in environments with multi-\/core CPUs. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classkm_1_1KMeansOMP_a2c8486b5090f560b9f3a5e35b0a638cd}\index{km::KMeansOMP@{km::KMeansOMP}!KMeansOMP@{KMeansOMP}}
+\Hypertarget{classkm_1_1KMeansOMP_a2c8486b5090f560b9f3a5e35b0a638cd}\label{classkm_1_1KMeansOMP_a2c8486b5090f560b9f3a5e35b0a638cd} 
+\index{km::KMeansOMP@{km::KMeansOMP}!KMeansOMP@{KMeansOMP}}
 \index{KMeansOMP@{KMeansOMP}!km::KMeansOMP@{km::KMeansOMP}}
 \doxysubsubsection{\texorpdfstring{KMeansOMP()}{KMeansOMP()}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansOMP_a2c8486b5090f560b9f3a5e35b0a638cd} 
-km\+::\+KMeans\+OMP\+::\+KMeans\+OMP (\begin{DoxyParamCaption}\item[{const int \&}]{k}{, }\item[{const std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&}]{points}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily km\+::\+KMeans\+OMP\+::\+KMeans\+OMP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \&}]{k,  }\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ \&}]{points }\end{DoxyParamCaption})}
 
 
 
@@ -92,11 +91,11 @@ Constructor for \doxylink{classkm_1_1KMeansOMP}{KMeans\+OMP}.
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06}\index{km::KMeansOMP@{km::KMeansOMP}!run@{run}}
+\Hypertarget{classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06}\label{classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06} 
+\index{km::KMeansOMP@{km::KMeansOMP}!run@{run}}
 \index{run@{run}!km::KMeansOMP@{km::KMeansOMP}}
 \doxysubsubsection{\texorpdfstring{run()}{run()}}
-{\footnotesize\ttfamily \label{classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06} 
-void km\+::\+KMeans\+OMP\+::run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} km\+::\+KMeans\+OMP\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -106,8 +105,14 @@ Runs the K-\/means clustering algorithm using Open\+MP.
 
 Implements \mbox{\hyperlink{classkm_1_1KMeansBase_ada4d6b7154a5200a538c23f48acfc5bb}{km\+::\+KMeans\+Base}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

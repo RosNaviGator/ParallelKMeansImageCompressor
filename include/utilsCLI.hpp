@@ -14,7 +14,12 @@
 /**
  * @namespace km::utilsCLI
  * @brief Provides utility functions for the command-line interface
- * @details The utilsCLI namespace within the km namespace provides a collection of utility functions for enhancing command-line interface (CLI) interactions. The mainMenuHeader function displays the main menu header, while decoderHeader shows the header for the decoder section. The workDone function outputs a completion message to indicate that work has been finished. The printCompressionInformations function prints detailed compression data, including the original and compressed image dimensions, the number of clusters, and the count of different colors. Lastly, the displayDecodingMenu function presents a menu for decoding, showing image names and the path of the decoding directory. These functions facilitate user interaction and provide essential information during CLI operations.
+ * @details The utilsCLI namespace within the km namespace provides a collection of utility functions for enhancing command-line interface(CLI)
+ *          interactions. The mainMenuHeader function displays the main menu header, while decoderHeader shows the header for the decoder section.
+ *          The workDone function outputs a completion message to indicate that work has been finished. The printCompressionInformations function
+ *          prints detailed compression data, including the original and compressed image dimensions, the number of clusters, and the count of
+ *          different colors. Lastly, the displayDecodingMenu function presents a menu for decoding, showing image names and the path of the decoding
+ *          directory. These functions facilitate user interaction and provide essential information during CLI operations.
  */
 
 namespace km
@@ -39,7 +44,8 @@ namespace km
 
         /**
          * @brief Prints the compression information
-         * @param originalWidth Original width of the image
+         * @param originalWidth Original width of the image\subsection{Utilities Overview}
+
          * @param originalHeight Original height of the image
          * @param width Width of the compressed image
          * @param height Height of the compressed image

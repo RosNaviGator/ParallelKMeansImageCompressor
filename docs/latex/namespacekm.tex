@@ -20,22 +20,114 @@ namespace \mbox{\hyperlink{namespacekm_1_1utilsCLI}{utils\+CLI}}
 class \mbox{\hyperlink{classkm_1_1ConfigReader}{Config\+Reader}}
 \begin{DoxyCompactList}\small\item\em Reads and stores configuration values from a file. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classkm_1_1KMeansBase}{KMeans\+Base}}
-\item 
+\begin{DoxyCompactList}\small\item\em Base class for K-\/means clustering algorithm. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classkm_1_1KMeansCUDA}{KMeans\+CUDA}}
-\item 
+\begin{DoxyCompactList}\small\item\em Represents the K-\/means clustering algorithm using CUDA. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classkm_1_1KMeansMPI}{KMeans\+MPI}}
-\item 
+\begin{DoxyCompactList}\small\item\em Represents the K-\/means clustering algorithm using MPI. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classkm_1_1KMeansOMP}{KMeans\+OMP}}
-\item 
+\begin{DoxyCompactList}\small\item\em Represents the K-\/means clustering algorithm using Open\+MP. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classkm_1_1KMeansSequential}{KMeans\+Sequential}}
-\item 
+\begin{DoxyCompactList}\small\item\em Represents the K-\/means clustering algorithm. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classkm_1_1Performance}{Performance}}
 \begin{DoxyCompactList}\small\item\em Represents the performance evaluation. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classkm_1_1Point}{Point}}
 \begin{DoxyCompactList}\small\item\em Represents a point in a feature space. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{\+\_\+\+\_\+global\+\_\+\+\_\+}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} \mbox{\hyperlink{namespacekm_a252943e6e4cb275d5df0a929655d5a24}{calculate\+\_\+new\+\_\+centroids}} (\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{data}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}centroids, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{labels}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{counts}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{n}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} k, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{dim}})
+\begin{DoxyCompactList}\small\item\em CUDA kernel to calculate the new centroids based on the assigned clusters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{\+\_\+\+\_\+global\+\_\+\+\_\+}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} \mbox{\hyperlink{namespacekm_ada9a9580e3fc9b145acaab2b0d5c4b9c}{average\+\_\+centroids}} (\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}centroids, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{counts}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} k, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{dim}})
+\begin{DoxyCompactList}\small\item\em CUDA kernel to average the calculated centroids. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{assign\+\_\+clusters}} (int \texorpdfstring{$\ast$}{*}data, int \texorpdfstring{$\ast$}{*}centroids, int \texorpdfstring{$\ast$}{*}labels, int n, int k, int dim)
+\begin{DoxyCompactList}\small\item\em CUDA kernel to assign each point to the nearest centroid. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Main namespace for the project. 
 
 The {\ttfamily km} namespace encapsulates various functionalities related to data clustering, file manipulation, and image processing. It is designed to organize core utilities and algorithms used across different modules of the project. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacekm_ac70fb347e212b3faa7a25356556dcd10}\label{namespacekm_ac70fb347e212b3faa7a25356556dcd10} 
+\index{km@{km}!assign\_clusters@{assign\_clusters}}
+\index{assign\_clusters@{assign\_clusters}!km@{km}}
+\doxysubsubsection{\texorpdfstring{assign\_clusters()}{assign\_clusters()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+global\+\_\+\+\_\+ void km\+::assign\+\_\+clusters (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{data,  }\item[{int \texorpdfstring{$\ast$}{*}}]{centroids,  }\item[{int \texorpdfstring{$\ast$}{*}}]{labels,  }\item[{int}]{n,  }\item[{int}]{k,  }\item[{int}]{dim }\end{DoxyParamCaption})}
+
+
+
+CUDA kernel to assign each point to the nearest centroid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to the data points \\
+\hline
+{\em centroids} & Pointer to the current centroids \\
+\hline
+{\em labels} & Pointer to the labels (cluster assignments) \\
+\hline
+{\em n} & Number of data points \\
+\hline
+{\em k} & Number of clusters \\
+\hline
+{\em dim} & Number of dimensions for each data point\\
+\hline
+\end{DoxyParams}
+This kernel assigns each point to the nearest centroid by calculating the Euclidean distance between each point and the centroids. The closest centroid\textquotesingle{}s index is assigned to the corresponding position in the labels array. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacekm_ac70fb347e212b3faa7a25356556dcd10_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacekm_ada9a9580e3fc9b145acaab2b0d5c4b9c}\label{namespacekm_ada9a9580e3fc9b145acaab2b0d5c4b9c} 
+\index{km@{km}!average\_centroids@{average\_centroids}}
+\index{average\_centroids@{average\_centroids}!km@{km}}
+\doxysubsubsection{\texorpdfstring{average\_centroids()}{average\_centroids()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{\+\_\+\+\_\+global\+\_\+\+\_\+}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} km\+::average\+\_\+centroids (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}}]{centroids,  }\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}}]{counts,  }\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}}}]{k,  }\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}}}]{dim }\end{DoxyParamCaption})}
+
+
+
+CUDA kernel to average the calculated centroids. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em centroids} & Pointer to the current centroids \\
+\hline
+{\em counts} & Pointer to the counts of points per cluster \\
+\hline
+{\em k} & Number of clusters \\
+\hline
+{\em dim} & Number of dimensions for each data point\\
+\hline
+\end{DoxyParams}
+This kernel averages the sum of the centroids from the {\ttfamily calculate\+\_\+new\+\_\+centroids} kernel by dividing the summed values by the number of points in each cluster. \Hypertarget{namespacekm_a252943e6e4cb275d5df0a929655d5a24}\label{namespacekm_a252943e6e4cb275d5df0a929655d5a24} 
+\index{km@{km}!calculate\_new\_centroids@{calculate\_new\_centroids}}
+\index{calculate\_new\_centroids@{calculate\_new\_centroids}!km@{km}}
+\doxysubsubsection{\texorpdfstring{calculate\_new\_centroids()}{calculate\_new\_centroids()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{\+\_\+\+\_\+global\+\_\+\+\_\+}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} km\+::calculate\+\_\+new\+\_\+centroids (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}}]{data,  }\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}}]{centroids,  }\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}}]{labels,  }\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}}]{counts,  }\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}}}]{n,  }\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}}}]{k,  }\item[{\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}}}]{dim }\end{DoxyParamCaption})}
+
+
+
+CUDA kernel to calculate the new centroids based on the assigned clusters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to the data points \\
+\hline
+{\em centroids} & Pointer to the current centroids \\
+\hline
+{\em labels} & Pointer to the labels (cluster assignments) \\
+\hline
+{\em counts} & Pointer to the counts of points per cluster \\
+\hline
+{\em n} & Number of data points \\
+\hline
+{\em k} & Number of clusters \\
+\hline
+{\em dim} & Number of dimensions for each data point\\
+\hline
+\end{DoxyParams}
+This kernel calculates the new centroids by summing the data points assigned to each centroid. The results are stored in the centroids array and the counts array records the number of points assigned to each centroid. 

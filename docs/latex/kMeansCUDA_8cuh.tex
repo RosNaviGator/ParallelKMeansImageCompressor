@@ -10,16 +10,14 @@ Implementation of the K-\/means clustering algorithm using CUDA.
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include $<$cuda\+\_\+runtime.\+h$>$}\newline
 {\ttfamily \#include $<$point.\+hpp$>$}\newline
-Include dependency graph for k\+Means\+CUDA.\+cuh\+:
-\nopagebreak
+Include dependency graph for k\+Means\+CUDA.\+cuh\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{kMeansCUDA_8cuh__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -30,7 +28,7 @@ This graph shows which files directly or indirectly include this file\+:
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classkm_1_1KMeansCUDA}{km\+::\+KMeans\+CUDA}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Represents the K-\/means clustering algorithm using CUDA. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
@@ -41,6 +39,15 @@ namespace \mbox{\hyperlink{namespacekm}{km}}
 \item 
 \#define \mbox{\hyperlink{kMeansCUDA_8cuh_a887aff3dd5cbf6c65f07d59c767075c6}{KMEANS\+\_\+\+CUDA\+\_\+\+HPP}}
 \end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{\+\_\+\+\_\+global\+\_\+\+\_\+}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} \mbox{\hyperlink{namespacekm_a252943e6e4cb275d5df0a929655d5a24}{km\+::calculate\+\_\+new\+\_\+centroids}} (\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{data}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}centroids, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{labels}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{counts}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{n}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} k, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{dim}})
+\begin{DoxyCompactList}\small\item\em CUDA kernel to calculate the new centroids based on the assigned clusters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{\+\_\+\+\_\+global\+\_\+\+\_\+}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}} \mbox{\hyperlink{namespacekm_ada9a9580e3fc9b145acaab2b0d5c4b9c}{km\+::average\+\_\+centroids}} (\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}centroids, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{counts}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} k, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{dim}})
+\begin{DoxyCompactList}\small\item\em CUDA kernel to average the calculated centroids. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{km\+::assign\+\_\+clusters}} (int \texorpdfstring{$\ast$}{*}data, int \texorpdfstring{$\ast$}{*}centroids, int \texorpdfstring{$\ast$}{*}labels, int n, int k, int dim)
+\begin{DoxyCompactList}\small\item\em CUDA kernel to assign each point to the nearest centroid. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -49,9 +56,9 @@ Implementation of the K-\/means clustering algorithm using CUDA.
 
 
 \doxysubsection{Macro Definition Documentation}
-\Hypertarget{kMeansCUDA_8cuh_a887aff3dd5cbf6c65f07d59c767075c6}\index{kMeansCUDA.cuh@{kMeansCUDA.cuh}!KMEANS\_CUDA\_HPP@{KMEANS\_CUDA\_HPP}}
+\Hypertarget{kMeansCUDA_8cuh_a887aff3dd5cbf6c65f07d59c767075c6}\label{kMeansCUDA_8cuh_a887aff3dd5cbf6c65f07d59c767075c6} 
+\index{kMeansCUDA.cuh@{kMeansCUDA.cuh}!KMEANS\_CUDA\_HPP@{KMEANS\_CUDA\_HPP}}
 \index{KMEANS\_CUDA\_HPP@{KMEANS\_CUDA\_HPP}!kMeansCUDA.cuh@{kMeansCUDA.cuh}}
 \doxysubsubsection{\texorpdfstring{KMEANS\_CUDA\_HPP}{KMEANS\_CUDA\_HPP}}
-{\footnotesize\ttfamily \label{kMeansCUDA_8cuh_a887aff3dd5cbf6c65f07d59c767075c6} 
-\#define KMEANS\+\_\+\+CUDA\+\_\+\+HPP}
+{\footnotesize\ttfamily \#define KMEANS\+\_\+\+CUDA\+\_\+\+HPP}
 

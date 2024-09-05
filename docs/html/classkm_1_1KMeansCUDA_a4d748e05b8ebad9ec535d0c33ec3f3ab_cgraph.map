@@ -1,9 +1,5 @@
 <map id="km::KMeansCUDA::run" name="km::KMeansCUDA::run">
-<area shape="rect" id="Node000001" title="Runs the K&#45;means clustering algorithm using CUDA." alt="" coords="5,56,166,83"/>
-<area shape="rect" id="Node000002" href="$kMeansCUDA_8cu.html#a3e025d6ba15d1c9dcaba7e02eec74a74" title=" " alt="" coords="240,5,352,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,53,224,33,225,38,145,58"/>
-<area shape="rect" id="Node000003" href="$kMeansCUDA_8cu.html#a79373eadd7ab0392c9f0f9385b50e67f" title=" " alt="" coords="232,56,360,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,67,217,67,217,72,166,72"/>
-<area shape="rect" id="Node000004" href="$kMeansCUDA_8cu.html#a6ad4d08f25ddaaaf93cefca25f0f01b9" title=" " alt="" coords="214,107,378,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,81,223,100,222,105,143,86"/>
+<area shape="rect" id="Node000001" title="Runs the K&#45;means clustering algorithm using CUDA." alt="" coords="5,5,176,31"/>
+<area shape="rect" id="Node000002" href="$namespacekm.html#ac70fb347e212b3faa7a25356556dcd10" title="CUDA kernel to assign each point to the nearest centroid." alt="" coords="224,5,375,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,15,210,15,210,21,176,21"/>
 </map>

@@ -19,7 +19,12 @@ namespace km
     /**
      * @class Performance
      * @brief Represents the performance evaluation
-     * @details The Performance class in the km namespace is designed for evaluating and recording the performance of clustering algorithms. It includes methods to write performance data to a CSV file, extract file names from paths, and fill in performance metrics based on various criteria. The class has a default constructor and methods for writing data to a CSV file, such as writeCSV for recording performance metrics, and fillPerformance for populating evaluation data. Private methods handle file operations, including creating or opening CSV files and appending data. The class manages internal details like image names and evaluation choices for performance analysis.
+     * @details The Performance class in the km namespace is designed for evaluating and recording the performance of clustering algorithms.
+     *          It includes methods to write performance data to a CSV file, extract file names from paths, and fill in performance metrics
+     *          based on various criteria. The class has a default constructor and methods for writing data to a CSV file, such as writeCSV
+     *          for recording performance metrics, and fillPerformance for populating evaluation data. Private methods handle file operations,
+     *          including creating or opening CSV files and appending data. The class manages internal details like image names and evaluation
+     *          choices for performance analysis.
      */
 
     class Performance

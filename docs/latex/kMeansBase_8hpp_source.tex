@@ -11,32 +11,32 @@
 \DoxyCodeLine{00011\ }
 \DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacekm}{km}}}
 \DoxyCodeLine{00013\ \{}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classkm_1_1KMeansBase}{KMeansBase}}}
-\DoxyCodeLine{00025\ \ \ \ \ \{}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classkm_1_1KMeansBase_a88bebad949f5b6edff2af08ae74295cb}{KMeansBase}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&\mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}},\ \textcolor{keyword}{const}\ std::vector<Point>\ \&\mbox{\hyperlink{classkm_1_1KMeansBase_a73dfe23dfbb0c544cd128255e291aa05}{points}});}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classkm_1_1KMeansBase_a88bebad949f5b6edff2af08ae74295cb}{KMeansBase}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&\mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}});}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classkm_1_1KMeansBase_a295d214db11a3c799cb70b86baeb26ee}{\string~KMeansBase}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classkm_1_1KMeansBase}{KMeansBase}}}
+\DoxyCodeLine{00030\ \ \ \ \ \{}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classkm_1_1KMeansBase_a88bebad949f5b6edff2af08ae74295cb}{KMeansBase}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&\mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}},\ \textcolor{keyword}{const}\ std::vector<Point>\ \&\mbox{\hyperlink{classkm_1_1KMeansBase_a73dfe23dfbb0c544cd128255e291aa05}{points}});}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classkm_1_1KMeansBase}{KMeansBase}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&\mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}});}
 \DoxyCodeLine{00046\ }
-\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classkm_1_1KMeansBase_ada4d6b7154a5200a538c23f48acfc5bb}{run}}()\ =\ 0;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classkm_1_1KMeansBase_a295d214db11a3c799cb70b86baeb26ee}{\string~KMeansBase}}()\ =\ \textcolor{keywordflow}{default};}
 \DoxyCodeLine{00051\ }
-\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classkm_1_1KMeansBase_a5ec2ecf08e285a5e2d34b766b353ce1f}{getPoints}}()\ const\ -\/>\ std::vector<\mbox{\hyperlink{classkm_1_1Point}{Point}}>;}
-\DoxyCodeLine{00057\ }
-\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classkm_1_1KMeansBase_ac0ecde9c25587ef197069159c0b545df}{getCentroids}}()\ const\ -\/>\ std::vector<\mbox{\hyperlink{classkm_1_1Point}{Point}}>;}
-\DoxyCodeLine{00063\ }
-\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classkm_1_1KMeansBase_a48d1ee4a7a671b200995c611fd349cd3}{getIterations}}()\ const\ -\/>\ \textcolor{keywordtype}{int};}
-\DoxyCodeLine{00069\ }
-\DoxyCodeLine{00070\ \ \ \ \ protected:}
-\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ std::vector<\mbox{\hyperlink{classkm_1_1Point}{Point}}>\ \mbox{\hyperlink{classkm_1_1KMeansBase_a73dfe23dfbb0c544cd128255e291aa05}{points}};\ \ \ \ }
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ std::vector<\mbox{\hyperlink{classkm_1_1Point}{Point}}>\ \mbox{\hyperlink{classkm_1_1KMeansBase_ab23d5830a45ba956fc43b549884b327b}{centroids}};\ }
-\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classkm_1_1KMeansBase_a1a41bedae67c0ae03bca35fba3ff8aa3}{number\_of\_iterations}};\ \ \ \ \ }
-\DoxyCodeLine{00075\ \ \ \ \ \};}
-\DoxyCodeLine{00076\ \}\ \textcolor{comment}{//\ namespace\ k}}
-\DoxyCodeLine{00077\ }
-\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ KMEANS\_BASE\_HPP}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classkm_1_1KMeansBase_ada4d6b7154a5200a538c23f48acfc5bb}{run}}()\ =\ 0;}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classkm_1_1KMeansBase_a5ec2ecf08e285a5e2d34b766b353ce1f}{getPoints}}()\ const\ -\/>\ std::vector<\mbox{\hyperlink{classkm_1_1Point}{Point}}>;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classkm_1_1KMeansBase_ac0ecde9c25587ef197069159c0b545df}{getCentroids}}()\ const\ -\/>\ std::vector<\mbox{\hyperlink{classkm_1_1Point}{Point}}>;}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ [[nodiscard]]\ auto\ \mbox{\hyperlink{classkm_1_1KMeansBase_a48d1ee4a7a671b200995c611fd349cd3}{getIterations}}()\ const\ -\/>\ \textcolor{keywordtype}{int};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ protected:}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classkm_1_1KMeansBase_a56cbdb8d5a06abbf5dcbe8212519a412}{k}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ std::vector<\mbox{\hyperlink{classkm_1_1Point}{Point}}>\ \mbox{\hyperlink{classkm_1_1KMeansBase_a73dfe23dfbb0c544cd128255e291aa05}{points}};\ \ \ \ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ std::vector<\mbox{\hyperlink{classkm_1_1Point}{Point}}>\ \mbox{\hyperlink{classkm_1_1KMeansBase_ab23d5830a45ba956fc43b549884b327b}{centroids}};\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classkm_1_1KMeansBase_a1a41bedae67c0ae03bca35fba3ff8aa3}{number\_of\_iterations}};\ \ \ \ \ }
+\DoxyCodeLine{00080\ \ \ \ \ \};}
+\DoxyCodeLine{00081\ \}\ \textcolor{comment}{//\ namespace\ k}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ KMEANS\_BASE\_HPP}}
 
 \end{DoxyCode}

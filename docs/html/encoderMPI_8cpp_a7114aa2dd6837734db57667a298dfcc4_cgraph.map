@@ -1,35 +1,38 @@
 <map id="main" name="main">
-<area shape="rect" id="Node000001" title="Main function for the MPI&#45;based image compression application." alt="" coords="5,352,55,379"/>
-<area shape="rect" id="Node000002" href="$namespacekm_1_1filesUtils.html#ad2f18ea57b4e601ce8cfa2db15d8bbd7" title="Creates output directories." alt="" coords="120,80,302,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="29,352,32,310,41,251,63,188,80,159,101,133,106,128,109,132,105,136,84,162,68,190,47,252,37,310,34,352"/>
-<area shape="rect" id="Node000003" href="$namespacekm_1_1imageUtils.html#aef1b51decbf6f0f0ca5c53e20ebbfadb" title="Defines the value of K based on the color levels choice." alt="" coords="114,147,308,173"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="30,351,35,317,47,272,68,224,83,202,101,183,106,180,109,184,104,187,87,206,73,227,52,274,40,318,35,352"/>
-<area shape="rect" id="Node000009" href="$classkm_1_1Performance.html#a3145fecb00fa5d567d13a0f808f6be7e" title="Extracts the file name from the output path." alt="" coords="126,197,296,240"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="34,350,58,302,77,274,101,250,111,243,114,248,104,254,81,277,62,304,39,353"/>
-<area shape="rect" id="Node000010" href="$classkm_1_1Performance.html#a02f2aed3530f2be2546a66e4fb3ea9b6" title="Fills the performance data." alt="" coords="103,264,319,291"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="41,350,67,324,101,300,115,294,118,299,104,305,70,328,45,354"/>
-<area shape="rect" id="Node000011" href="$namespacekm_1_1imageUtils.html#a5a09c5c3205050498f807852bafe244f" title="Extracts points from an image." alt="" coords="120,315,302,357"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="55,359,104,351,105,356,55,364"/>
-<area shape="rect" id="Node000012" href="$namespacekm_1_1imageUtils.html#aa01205ffe26b0f4c815d5750a4ff0e1c" title="Performs preprocessing on an image." alt="" coords="112,381,310,408"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="55,367,110,376,109,381,55,372"/>
-<area shape="rect" id="Node000014" href="$namespacekm_1_1utilsCLI.html#ae362e74bbc04f2d92c857f4cb9c1373d" title="Prints the compression information." alt="" coords="110,432,312,475"/>
-<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="48,377,73,398,104,418,116,423,113,428,101,422,70,402,44,381"/>
-<area shape="rect" id="Node000015" href="$namespacekm_1_1utilsCLI.html#ac67f75f5e367779691a03add1dceaaa7" title="Displays the work done message." alt="" coords="131,499,290,525"/>
-<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="38,378,60,431,79,460,104,485,118,493,116,498,101,489,75,463,56,433,33,380"/>
-<area shape="rect" id="Node000016" href="$namespacekm_1_1filesUtils.html#a53d25bfe40b892af0c4f049bdb6a5773" title="Writes data to a binary file." alt="" coords="115,549,307,576"/>
-<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="35,378,41,411,53,453,74,498,88,518,104,535,109,539,106,543,101,539,83,521,69,501,48,455,36,412,30,379"/>
-<area shape="rect" id="Node000017" href="$classkm_1_1Performance.html#ab3ba15c019e82d392539f6b2a48fa761" title="Writes performance data to a CSV file." alt="" coords="118,600,304,627"/>
-<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="34,379,37,420,47,476,68,535,84,563,105,586,108,589,105,593,101,590,80,566,63,538,41,477,31,421,29,379"/>
-<area shape="rect" id="Node000004" href="$classkm_1_1ConfigReader.html#a532eced302fd72113c7359aa1d08faab" title="Gets the fifth level compression color value." alt="" coords="380,5,559,48"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="296,144,317,133,333,115,341,97,349,77,365,58,371,54,374,58,369,62,353,80,346,99,338,118,321,137,299,149"/>
-<area shape="rect" id="Node000005" href="$classkm_1_1ConfigReader.html#a787856a51a8817148108650a664f5738" title="Gets the first level compression color value." alt="" coords="380,72,559,115"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="272,143,318,132,376,117,377,122,320,137,273,149"/>
-<area shape="rect" id="Node000006" href="$classkm_1_1ConfigReader.html#a0a13dd20b33346486e13a87a9a52e4e5" title="Gets the fourth level compression color value." alt="" coords="374,139,564,181"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="308,157,358,157,358,163,308,163"/>
-<area shape="rect" id="Node000007" href="$classkm_1_1ConfigReader.html#a12968b54f38b17586d6e65be5158d275" title="Gets the second level compression color value." alt="" coords="370,205,568,248"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="273,171,320,183,377,198,376,203,318,188,272,177"/>
-<area shape="rect" id="Node000008" href="$classkm_1_1ConfigReader.html#a0e355597d2a6f4c1f01e91da11fbd577" title="Gets the third level compression color value." alt="" coords="378,272,560,315"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="299,171,321,183,338,202,346,221,353,240,369,258,374,262,371,266,365,262,349,243,341,223,333,205,317,187,296,176"/>
-<area shape="rect" id="Node000013" href="$classkm_1_1ConfigReader.html#a6067e8491ad1fdbb5f62b33ef215208e" title="Gets the resizing factor." alt="" coords="367,373,571,416"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="311,392,351,392,351,397,311,397"/>
+<area shape="rect" id="Node000001" title="Main function for the MPI&#45;based image compression application." alt="" coords="5,358,60,383"/>
+<area shape="rect" id="Node000002" href="$namespacekm_1_1filesUtils.html#ad2f18ea57b4e601ce8cfa2db15d8bbd7" title="Creates output directories." alt="" coords="128,108,331,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="32,357,36,318,47,265,69,208,86,181,106,158,114,151,118,155,110,162,90,184,74,210,52,266,41,319,37,358"/>
+<area shape="rect" id="Node000003" href="$namespacekm_1_1imageUtils.html#aef1b51decbf6f0f0ca5c53e20ebbfadb" title="Defines the value of K based on the color levels choice." alt="" coords="121,173,338,198"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="33,357,40,326,53,285,75,243,89,224,106,207,113,202,116,207,110,211,93,227,79,246,58,288,45,328,39,358"/>
+<area shape="rect" id="Node000009" href="$classkm_1_1Performance.html#a3145fecb00fa5d567d13a0f808f6be7e" title="Extracts the file name from the output path." alt="" coords="135,600,323,640"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="37,383,41,423,52,478,73,536,90,563,110,586,125,597,121,601,106,590,85,566,69,538,46,479,35,424,32,384"/>
+<area shape="rect" id="Node000011" href="$classkm_1_1Performance.html#a02f2aed3530f2be2546a66e4fb3ea9b6" title="Fills the performance data." alt="" coords="108,271,351,297"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="44,356,71,331,107,307,128,298,130,303,109,312,74,335,48,360"/>
+<area shape="rect" id="Node000012" href="$namespacekm_1_1imageUtils.html#a5a09c5c3205050498f807852bafe244f" title="Extracts points from an image." alt="" coords="128,321,331,361"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="60,364,114,356,115,361,61,369"/>
+<area shape="rect" id="Node000013" href="$namespacekm_1_1imageUtils.html#aa01205ffe26b0f4c815d5750a4ff0e1c" title="Performs preprocessing on an image." alt="" coords="119,222,340,247"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="36,357,61,307,81,280,106,257,116,251,119,255,110,261,85,283,65,310,41,359"/>
+<area shape="rect" id="Node000015" href="$namespacekm_1_1utilsCLI.html#ae362e74bbc04f2d92c857f4cb9c1373d" title="Prints the compression information." alt="" coords="118,436,341,476"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="50,381,77,402,109,422,127,429,125,434,107,426,73,406,47,386"/>
+<area shape="rect" id="Node000016" href="$namespacekm_1_1utilsCLI.html#ac67f75f5e367779691a03add1dceaaa7" title="Displays the work done message." alt="" coords="143,501,316,526"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="41,383,64,434,84,462,110,486,131,497,128,502,106,490,80,466,60,436,36,385"/>
+<area shape="rect" id="Node000017" href="$namespacekm_1_1filesUtils.html#a53d25bfe40b892af0c4f049bdb6a5773" title="Writes data to a binary file." alt="" coords="122,550,337,575"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="38,383,44,415,57,457,78,500,93,520,110,537,115,541,112,545,106,541,89,523,74,503,52,459,39,416,33,384"/>
+<area shape="rect" id="Node000018" href="$classkm_1_1Performance.html#ab3ba15c019e82d392539f6b2a48fa761" title="Writes performance data to a CSV file." alt="" coords="129,386,330,411"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="61,372,127,381,126,387,60,377"/>
+<area shape="rect" id="Node000004" href="$classkm_1_1ConfigReader.html#a532eced302fd72113c7359aa1d08faab" title="Gets the fifth level compression color value." alt="" coords="412,133,608,173"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="338,170,398,163,399,169,338,176"/>
+<area shape="rect" id="Node000005" href="$classkm_1_1ConfigReader.html#a787856a51a8817148108650a664f5738" title="Gets the first level compression color value." alt="" coords="413,197,607,237"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="338,195,399,202,398,207,338,200"/>
+<area shape="rect" id="Node000006" href="$classkm_1_1ConfigReader.html#a0a13dd20b33346486e13a87a9a52e4e5" title="Gets the fourth level compression color value." alt="" coords="405,261,615,301"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="321,196,352,207,367,217,377,227,386,237,400,247,414,254,412,259,397,252,383,241,373,231,364,221,349,212,319,201"/>
+<area shape="rect" id="Node000007" href="$classkm_1_1ConfigReader.html#a12968b54f38b17586d6e65be5158d275" title="Gets the second level compression color value." alt="" coords="403,5,617,45"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="328,170,349,158,360,146,367,134,373,109,378,82,385,68,397,55,403,51,406,55,400,59,389,71,383,84,378,110,372,136,365,150,352,162,331,175"/>
+<area shape="rect" id="Node000008" href="$classkm_1_1ConfigReader.html#a0e355597d2a6f4c1f01e91da11fbd577" title="Gets the third level compression color value." alt="" coords="409,69,611,109"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="315,170,349,158,364,149,373,139,383,129,397,119,412,112,415,117,400,124,386,133,377,143,367,153,352,162,316,175"/>
+<area shape="rect" id="Node000010" href="$namespacekm.html#ac70fb347e212b3faa7a25356556dcd10" title="CUDA kernel to assign each point to the nearest centroid." alt="" coords="435,482,585,507"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="317,597,350,586,420,550,478,513,481,518,423,554,352,590,318,602"/>
+<area shape="rect" id="Node000014" href="$classkm_1_1ConfigReader.html#a6067e8491ad1fdbb5f62b33ef215208e" title="Gets the resizing factor." alt="" coords="399,325,621,365"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="326,245,352,256,368,270,377,284,386,298,400,311,411,317,408,322,397,315,382,301,373,287,364,273,349,261,324,250"/>
+<area shape="poly" id="edge18_Node000018_Node000010" title=" " alt="" coords="304,409,351,421,417,447,474,473,471,478,415,452,350,427,302,414"/>
 </map>

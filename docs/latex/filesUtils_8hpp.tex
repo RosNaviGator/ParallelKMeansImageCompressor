@@ -13,16 +13,14 @@ Utility functions for file handling.
 {\ttfamily \#include $<$filesystem$>$}\newline
 {\ttfamily \#include $<$point.\+hpp$>$}\newline
 {\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
-Include dependency graph for files\+Utils.\+hpp\+:
-\nopagebreak
+Include dependency graph for files\+Utils.\+hpp\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{filesUtils_8hpp__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -39,15 +37,15 @@ namespace \mbox{\hyperlink{namespacekm}{km}}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-auto \mbox{\hyperlink{namespacekm_1_1filesUtils_ad2f18ea57b4e601ce8cfa2db15d8bbd7}{km\+::files\+Utils\+::create\+Output\+Directories}} () -\/$>$ void
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{auto}} \mbox{\hyperlink{namespacekm_1_1filesUtils_ad2f18ea57b4e601ce8cfa2db15d8bbd7}{km\+::files\+Utils\+::create\+Output\+Directories}} () -\/$>$ \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}}
 \begin{DoxyCompactList}\small\item\em Creates output directories. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{namespacekm_1_1filesUtils_a53d25bfe40b892af0c4f049bdb6a5773}{km\+::files\+Utils\+::write\+Binary\+File}} (std\+::string \&output\+Path, int \&width, int \&height, int \&k, std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ points, std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ centroids) -\/$>$ void
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{auto}} \mbox{\hyperlink{namespacekm_1_1filesUtils_a53d25bfe40b892af0c4f049bdb6a5773}{km\+::files\+Utils\+::write\+Binary\+File}} (std\+::string \&\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{output\+Path}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \&\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{width}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \&\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{height}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}} \&k, std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ points, std\+::vector$<$ \mbox{\hyperlink{classkm_1_1Point}{Point}} $>$ centroids) -\/$>$ \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}}
 \begin{DoxyCompactList}\small\item\em Writes data to a binary file. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{namespacekm_1_1filesUtils_ae4460cd35ec43306592474e9dd919a16}{km\+::files\+Utils\+::is\+Correct\+Extension}} (const std\+::filesystem\+::path \&file\+Path, const std\+::string \&correct\+Extension) -\/$>$ bool
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{auto}} \mbox{\hyperlink{namespacekm_1_1filesUtils_ae4460cd35ec43306592474e9dd919a16}{km\+::files\+Utils\+::is\+Correct\+Extension}} (\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} std\+::filesystem\+::path \&\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{file\+Path}}, \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{const}} std\+::string \&\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{correct\+Extension}}) -\/$>$ \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{bool}}
 \begin{DoxyCompactList}\small\item\em Checks if a file has the correct extension. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{namespacekm_1_1filesUtils_a623d05ffa66beb3bf12abc6cac112487}{km\+::files\+Utils\+::create\+Decoding\+Menu}} (std\+::filesystem\+::path \&decode\+Dir, std\+::vector$<$ std\+::filesystem\+::path $>$ \&image\+Names) -\/$>$ void
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{auto}} \mbox{\hyperlink{namespacekm_1_1filesUtils_a623d05ffa66beb3bf12abc6cac112487}{km\+::files\+Utils\+::create\+Decoding\+Menu}} (std\+::filesystem\+::path \&\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{decode\+Dir}}, std\+::vector$<$ std\+::filesystem\+::path $>$ \&\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{image\+Names}}) -\/$>$ \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{void}}
 \begin{DoxyCompactList}\small\item\em Creates a decoding menu. \end{DoxyCompactList}\item 
-auto \mbox{\hyperlink{namespacekm_1_1filesUtils_a210cdb1e22d18e8fa05c3a4c0d9708e2}{km\+::files\+Utils\+::read\+Binary\+File}} (std\+::string \&path, cv\+::\+Mat \&image\+Compressed) -\/$>$ int
+\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{auto}} \mbox{\hyperlink{namespacekm_1_1filesUtils_a210cdb1e22d18e8fa05c3a4c0d9708e2}{km\+::files\+Utils\+::read\+Binary\+File}} (std\+::string \&\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{path}}, cv\+::\+Mat \&\mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{image\+Compressed}}) -\/$>$ \mbox{\hyperlink{namespacekm_ac70fb347e212b3faa7a25356556dcd10}{int}}
 \begin{DoxyCompactList}\small\item\em Reads a binary file and reconstructs the compressed image. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 

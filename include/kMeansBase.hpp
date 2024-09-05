@@ -14,11 +14,16 @@ namespace km
     /**
      * @class KMeansBase
      * @brief Base class for K-means clustering algorithm
-     * @details The KMeansBase class, part of the km namespace, serves as a foundational class for implementing the K-means clustering algorithm. It is designed to manage and execute the clustering process, providing a base for derived classes to build upon with specific implementations.
-
-The class includes several key functionalities: it allows for the construction of an object with either a predefined number of clusters and a set of points or just the number of clusters. The run method, which is a pure virtual function, must be implemented by any derived class to execute the K-means algorithm. This structure ensures that the base class can provide the essential setup and data management, while specific clustering logic is handled by subclasses.
-
-The KMeansBase class also includes methods to retrieve the points used for clustering, the centroids calculated by the algorithm, and the number of iterations the algorithm has undergone. These methods provide access to the internal state of the clustering process, enabling users to inspect and analyze the results. Protected member variables include the number of clusters, the points to be clustered, the centroids resulting from the clustering process, and the count of iterations performed, allowing derived classes to access and manipulate these values as needed.
+     * @details The KMeansBase class, part of the km namespace, serves as a foundational class for implementing the K-means clustering algorithm.
+     *          It is designed to manage and execute the clustering process, providing a base for derived classes to build upon with specific implementations.
+     *          The class includes several key functionalities: it allows for the construction of an object with either a predefined number of clusters and a
+     *          set of points or just the number of clusters. The run method, which is a pure virtual function, must be implemented by any derived class to execute
+     *          the K-means algorithm. This structure ensures that the base class can provide the essential setup and data management, while specific clustering
+     *          logic is handled by subclasses.
+     *          The KMeansBase class also includes methods to retrieve the points used for clustering, the centroids calculated by the algorithm, and the number
+     *          of iterations the algorithm has undergone. These methods provide access to the internal state of the clustering process, enabling users to inspect
+     *          and analyze the results. Protected member variables include the number of clusters, the points to be clustered, the centroids resulting from the
+     *          clustering process, and the count of iterations performed, allowing derived classes to access and manipulate these values as needed.
      */
     
     class KMeansBase

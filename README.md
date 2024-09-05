@@ -153,7 +153,11 @@ The program uses several parallelization techniques to enhance performance. Thes
 ### What Parallelization Technique Should I Choose?
 That is a really good question... as everithing in computer science __it depends__.
 Here you can see an overview of the execution time behaviour for increasing complexity tasks:
-![perf_eval](.readmePictures/performance.jpeg)
+
+<div align="center">
+<img src=".readmePictures/generalPerformanceEvaluation.png" width="700" height="auto">
+</div>
+
 
 ## Report 
 For more details about the program, please refer to the [report](report/report.pdf)

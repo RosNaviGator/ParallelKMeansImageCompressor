@@ -1,12 +1,45 @@
-# Parallel Kmeans Images Compressor 
+# Parallel Kmeans-based Images Compressor 
+
 ![milano](.readmePictures/milanoCompressed.png)
 
-This program compresses images by reducing the number of colors using k-means clustering. It offers enhanced performance through the implementation of several parallelization techniques. By clustering pixels into k color groups, the program reduces the image's color palette, thereby compressing the image while maintaining visual quality.
+This project implements a __parallel KMeans-based image colors compressor__, aimed at reducing the number of colors in a natural image while preserving its overall visual appearance. The program clusters similar colors using the __KMeans algorithm__ and applies __parallel computing techniques__ to compress the image through the __color quantization__ technique. It supports __sequential__, __OpenMP__, __MPI__, and __CUDA__ implementations to explore different levels of performance and scalability.
+
+
+## Authors 
+- __Leonardo Ignazio Pagliochini__  Master's Degree student in High-Performance Computing Engineering  at __Politecnico di Milano__
+  
+  GitHub: [leonardopagliochini](https://github.com/leonardopagliochini)  
+  Email: leonardoignazio.pagliochini@mail.polimi.it
+
+- __Francesco Rosnati__  Master's Degree student in High-Performance Computing Engineering at __Politecnico di Milano__
+  
+  GitHub: [RosNaviGator](https://github.com/RosNaviGator)  
+  Email: francesco.rosnati@mail.polimi.it
+
+This project was developed for the course __Advanced Methods for Scientific Computing__,  
+Professor: __Luca Formaggia__  
+Assistant Professor: __Matteo Caldana__  
+__Politecnico di Milano__
+
+
 
 ## Doxygen Documentation
 The documentation of the project can be found [here](docs/html/index.html).
 
 ## Prerequisites 
+
+### TO DO
+- testare con VM, alla fine!
+- scrivere effettivamente bash commands per installare quant orichiesto (boost/process, opencv, etc ...)
+- DISATTIVARE mk modules, va detto
+- versione di g++ giusta per nostro MPIC++, quella che vada con `span` e altre cose nuove dello standard 20 o maggiore (mi pare)
+- verrsione giusta di g++ per la versione di cuda nostra (ste robe le vedi anche dalle flag del compilatore nel Makefile)
+- c++ 20? 23? Checckare non ricordo
+- meglio usare `openMPI` rispetto a `mpich`, ha sempre funzionato il primo, il secondo ha dato problemi talvolta
+- le librerie che mi vengono in mente sono `boost/process`, `opencv2`, se ce ne sono altre saranno negli `#include`
+- puiler dalla mierda lo repo!
+
+<!--
 In order to be able to compile and run the program, there are a few programs that need to be installed.
 
 ### OpenCV C++ Library
@@ -21,17 +54,47 @@ A C compiler wrapper for parallel programming with the MPI library.
 ### OpenMP
 A C++ API for parallel programming on shared-memory systems.
 
-## Getting Started 
-To compile the project, navigate to the project root directory in your terminal and run the following command:
+-->
 
+## Getting Started
+
+### Cloning repo
+Standard coloning with `git clone`, no _submodules_ are implemented in this repo.
+### Install dependencies
+#### Debian based
+```bash
+# Run commands from PROJECT ROOT DIRECTORY
+sudo chmod +x ./dependencyInstaller/dependencyInstallerDebianBased.sh
+source ./dependencyInstaller/dependencyInstallerDebianBased.sh
 ```
+#### Arch based
+```bash
+# Run commands from PROJECT ROOT DIRECTORY
+sudo chmod +x ./dependencyInstaller/dependencyInstallerArchBased.sh
+source ./dependencyInstaller/dependencyInstallerArchBased.sh
+```
+
+### Compile&Run
+Program can be built with or without __CUDA__, you obviously _need_ `nvcc` to be able to compile with __CUDA__.
+To compile the project, navigate to the __project root directory__ in your terminal and run the following commands.
+#### Without CUDA
+```bash
+# make without running
 make
+# make and run the menu (or simply run if already built)
+make run
 ```
+#### With cuda
+```bash
+# make without running (bulding also CUDA)
+make cuda
+# make and run the menu (building also CUDA)
+make cudarun
+```
+#### Geek stuff
+For a standard run program will guide you to choose an _image path_, _parallel method_, _configuration settings_. See section "What to expect" for more infromation.
 
-Once you have compiled you can execute the main program by:
-```
-./exe
-```
+
 
 ## What to expect
 Once the program is started, the following screen appears, through which it is possible to compress a new image or decompress an already compressed image.
@@ -72,12 +135,8 @@ The k-means algorithm is an iterative algorithm that converges to a local minimu
 
 ## Parallelization Techniques
 The program uses several parallelization techniques to enhance performance. These techniques include:
-- **OpenMP**: OpenMP is an API for parallel programming on shared-memory systems. It allows the program to parallelize the computation of the k-means algorithm by distributing the work among multiple threads.
-- **MPI**: MPI is a message-passing library for parallel programming on distributed-memory systems. It allows the program to parallelize the computation of the k-means algorithm by distributing the work among multiple processes running on different nodes.
+- __OpenMP__: OpenMP is an API for parallel programming on shared-memory systems. It allows the program to parallelize the computation of the k-means algorithm by distributing the work among multiple threads.
+- __MPI__: MPI is a message-passing library for parallel programming on distributed-memory systems. It allows the program to parallelize the computation of the k-means algorithm by distributing the work among multiple processes running on different nodes.
 
 ## Benchmarking
 The program includes a benchmarking feature that allows you to test the performance of the program on different images. The benchmarking feature measures the time taken to compress an image using different compression techniques and different values of k. The benchmarking results are displayed in a table that shows the time taken to compress the image for each value of k and each compression technique.
-
-## Authors
-- [Leonardo Ignazio Pagliochini](https://github.com/leonardopagliochini)
-- [Francesco Rosnati](https://github.com/RosNaviGator)

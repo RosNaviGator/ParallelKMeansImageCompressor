@@ -1,0 +1,13 @@
+<map id="include/kMeansBase.hpp" name="include/kMeansBase.hpp">
+<area shape="rect" id="node1" title="Base class for K&#45;means clustering algorithm." alt="" coords="557,5,741,31"/>
+<area shape="rect" id="node2" href="$kMeansMPI_8hpp.html" title="Implementation of the K&#45;means clustering algorithm using MPI." alt="" coords="163,79,339,104"/>
+<area shape="rect" id="node5" href="$kMeansOMP_8hpp.html" title="Implementation of the K&#45;means clustering algorithm using OpenMP." alt="" coords="447,79,627,104"/>
+<area shape="rect" id="node8" href="$kMeansSequential_8hpp.html" title="Implementation of the K&#45;means clustering algorithm." alt="" coords="651,79,873,104"/>
+<area shape="rect" id="node11" href="$kMeansBase_8cpp.html" title="Base class implementation for the K&#45;means clustering algorithm." alt="" coords="897,79,1051,104"/>
+<area shape="rect" id="node3" href="$encoderMPI_8cpp.html" title="Main entry point for the MPI&#45;based image compression application." alt="" coords="5,152,153,177"/>
+<area shape="rect" id="node4" href="$kMeansMPI_8cpp.html" title="MPI implementation of the K&#45;means clustering algorithm." alt="" coords="178,152,325,177"/>
+<area shape="rect" id="node6" href="$encoderOMP_8cpp.html" title="Main entry point for the OpenMP&#45;based image compression application." alt="" coords="349,152,501,177"/>
+<area shape="rect" id="node7" href="$kMeansOMP_8cpp.html" title="OpenMP implementation of the K&#45;means clustering algorithm." alt="" coords="525,152,676,177"/>
+<area shape="rect" id="node9" href="$encoder_8cpp.html" title="Main entry point for the image compression application." alt="" coords="701,152,823,177"/>
+<area shape="rect" id="node10" href="$kMeansSequential_8cpp.html" title="Sequential implementation of the K&#45;means clustering algorithm." alt="" coords="847,152,1039,177"/>
+</map>

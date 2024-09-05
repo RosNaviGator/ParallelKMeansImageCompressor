@@ -1,0 +1,5 @@
+<map id="km::Point::distance" name="km::Point::distance">
+<area shape="rect" id="Node000001" title="Calculates the distance between this point and another point." alt="" coords="5,5,152,31"/>
+<area shape="rect" id="Node000002" href="$namespacekm.html#ac70fb347e212b3faa7a25356556dcd10" title="CUDA kernel to assign each point to the nearest centroid." alt="" coords="200,5,351,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,15,186,15,186,21,152,21"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="include/configReader.hpp" name="include/configReader.hpp">
+<area shape="rect" id="node1" title="ConfigReader class declaration." alt="" coords="449,5,634,31"/>
+<area shape="rect" id="node2" href="$imagesUtils_8hpp.html" title="Utility functions for image processing." alt="" coords="325,79,504,104"/>
+<area shape="rect" id="node3" href="$encoder_8cpp.html" title="Main entry point for the image compression application." alt="" coords="5,152,128,177"/>
+<area shape="rect" id="node4" href="$encoderCUDA_8cpp.html" title="Main entry point for the CUDA&#45;based image compression application." alt="" coords="152,152,315,177"/>
+<area shape="rect" id="node5" href="$encoderMPI_8cpp.html" title="Main entry point for the MPI&#45;based image compression application." alt="" coords="514,152,662,177"/>
+<area shape="rect" id="node6" href="$encoderOMP_8cpp.html" title="Main entry point for the OpenMP&#45;based image compression application." alt="" coords="687,152,839,177"/>
+<area shape="rect" id="node8" href="$configReader_8cpp.html" title="Implementation of the ConfigReader class for reading and parsing configuration files." alt="" coords="630,79,786,104"/>
+<area shape="rect" id="node9" href="$mainMenu_8cpp.html" title="Main entry point for the Image Compressor application." alt="" coords="811,79,952,104"/>
+<area shape="rect" id="node7" href="$imagesUtils_8cpp.html" title="Utility functions for image processing." alt="" coords="339,152,490,177"/>
+</map>

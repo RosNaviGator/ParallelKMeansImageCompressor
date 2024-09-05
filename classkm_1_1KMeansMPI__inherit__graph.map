@@ -1,0 +1,4 @@
+<map id="km::KMeansMPI" name="km::KMeansMPI">
+<area shape="rect" id="node1" title="Represents the K&#45;means clustering algorithm using MPI." alt="" coords="22,395,198,633"/>
+<area shape="rect" id="node2" href="$classkm_1_1KMeansBase.html" title="Base class for K&#45;means clustering algorithm." alt="" coords="5,5,215,347"/>
+</map>

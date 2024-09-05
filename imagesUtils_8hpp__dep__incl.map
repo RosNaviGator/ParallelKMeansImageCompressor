@@ -1,0 +1,8 @@
+<map id="include/imagesUtils.hpp" name="include/imagesUtils.hpp">
+<area shape="rect" id="node1" title="Utility functions for image processing." alt="" coords="324,5,503,31"/>
+<area shape="rect" id="node2" href="$encoder_8cpp.html" title="Main entry point for the image compression application." alt="" coords="5,79,128,104"/>
+<area shape="rect" id="node3" href="$encoderCUDA_8cpp.html" title="Main entry point for the CUDA&#45;based image compression application." alt="" coords="152,79,315,104"/>
+<area shape="rect" id="node4" href="$encoderMPI_8cpp.html" title="Main entry point for the MPI&#45;based image compression application." alt="" coords="339,79,487,104"/>
+<area shape="rect" id="node5" href="$encoderOMP_8cpp.html" title="Main entry point for the OpenMP&#45;based image compression application." alt="" coords="512,79,664,104"/>
+<area shape="rect" id="node6" href="$imagesUtils_8cpp.html" title="Utility functions for image processing." alt="" coords="689,79,839,104"/>
+</map>

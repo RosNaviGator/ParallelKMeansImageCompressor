@@ -1,0 +1,6 @@
+<map id="km::KMeansBase" name="km::KMeansBase">
+<area shape="rect" id="node1" title="Base class for K&#45;means clustering algorithm." alt="" coords="191,5,401,347"/>
+<area shape="rect" id="node2" href="$classkm_1_1KMeansMPI.html" title="Represents the K&#45;means clustering algorithm using MPI." alt="" coords="5,395,181,633"/>
+<area shape="rect" id="node3" href="$classkm_1_1KMeansOMP.html" title="Represents the K&#45;means clustering algorithm using OpenMP." alt="" coords="206,453,386,575"/>
+<area shape="rect" id="node4" href="$classkm_1_1KMeansSequential.html" title="Represents the K&#45;means clustering algorithm." alt="" coords="410,453,609,575"/>
+</map>

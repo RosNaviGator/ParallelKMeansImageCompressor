@@ -1,0 +1,5 @@
+<map id="include/kMeansMPI.hpp" name="include/kMeansMPI.hpp">
+<area shape="rect" id="node1" title="Implementation of the K&#45;means clustering algorithm using MPI." alt="" coords="77,5,253,31"/>
+<area shape="rect" id="node2" href="$encoderMPI_8cpp.html" title="Main entry point for the MPI&#45;based image compression application." alt="" coords="5,79,153,104"/>
+<area shape="rect" id="node3" href="$kMeansMPI_8cpp.html" title="MPI implementation of the K&#45;means clustering algorithm." alt="" coords="178,79,325,104"/>
+</map>

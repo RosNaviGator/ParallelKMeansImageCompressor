@@ -1,0 +1,5 @@
+<map id="km::Performance::appendToCSV" name="km::Performance::appendToCSV">
+<area shape="rect" id="Node000001" title="Appends performance data to the CSV file." alt="" coords="5,5,236,31"/>
+<area shape="rect" id="Node000002" href="$namespacekm.html#ac70fb347e212b3faa7a25356556dcd10" title="CUDA kernel to assign each point to the nearest centroid." alt="" coords="284,5,435,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,15,271,15,271,21,236,21"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="include/kMeansMPI.hpp" name="include/kMeansMPI.hpp">
+<area shape="rect" id="node1" title="Implementation of the K&#45;means clustering algorithm using MPI." alt="" coords="47,5,223,31"/>
+<area shape="rect" id="node2" href="$kMeansBase_8hpp.html" title="Base class for K&#45;means clustering algorithm." alt="" coords="9,79,142,104"/>
+<area shape="rect" id="node6" title=" " alt="" coords="166,79,225,104"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,225,68,251"/>
+<area shape="rect" id="node4" href="$point_8hpp.html" title="Point class representing a point in a feature space." alt="" coords="74,152,157,177"/>
+<area shape="rect" id="node5" title=" " alt="" coords="92,225,155,251"/>
+</map>

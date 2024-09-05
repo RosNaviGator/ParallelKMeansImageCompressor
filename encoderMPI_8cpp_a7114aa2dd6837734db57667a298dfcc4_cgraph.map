@@ -1,0 +1,19 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="Main function for the MPI&#45;based image compression application." alt="" coords="5,342,60,367"/>
+<area shape="rect" id="node2" href="$namespacekm_1_1filesUtils.html#ad2f18ea57b4e601ce8cfa2db15d8bbd7" title="Creates output directories." alt="" coords="128,76,329,116"/>
+<area shape="rect" id="node3" href="$namespacekm_1_1imageUtils.html#aef1b51decbf6f0f0ca5c53e20ebbfadb" title="Defines the value of K based on the color levels choice." alt="" coords="121,141,336,166"/>
+<area shape="rect" id="node9" href="$classkm_1_1Performance.html#a3145fecb00fa5d567d13a0f808f6be7e" title="Extracts the file name from the output path." alt="" coords="135,191,323,231"/>
+<area shape="rect" id="node10" href="$classkm_1_1Performance.html#a02f2aed3530f2be2546a66e4fb3ea9b6" title="Fills the performance data." alt="" coords="108,255,349,281"/>
+<area shape="rect" id="node11" href="$namespacekm_1_1imageUtils.html#a5a09c5c3205050498f807852bafe244f" title="Extracts points from an image." alt="" coords="127,305,330,345"/>
+<area shape="rect" id="node12" href="$namespacekm_1_1imageUtils.html#aa01205ffe26b0f4c815d5750a4ff0e1c" title="Performs preprocessing on an image." alt="" coords="118,370,339,395"/>
+<area shape="rect" id="node14" href="$namespacekm_1_1utilsCLI.html#ae362e74bbc04f2d92c857f4cb9c1373d" title="Prints the compression information." alt="" coords="117,420,340,460"/>
+<area shape="rect" id="node15" href="$namespacekm_1_1utilsCLI.html#ac67f75f5e367779691a03add1dceaaa7" title="Displays the work done message." alt="" coords="142,485,315,510"/>
+<area shape="rect" id="node16" href="$namespacekm_1_1filesUtils.html#a53d25bfe40b892af0c4f049bdb6a5773" title="Writes data to a binary file." alt="" coords="121,534,336,559"/>
+<area shape="rect" id="node17" href="$classkm_1_1Performance.html#ab3ba15c019e82d392539f6b2a48fa761" title="Writes performance data to a CSV file." alt="" coords="128,583,329,609"/>
+<area shape="rect" id="node4" href="$classkm_1_1ConfigReader.html#a532eced302fd72113c7359aa1d08faab" title="Gets the fifth level compression color value." alt="" coords="411,5,606,45"/>
+<area shape="rect" id="node5" href="$classkm_1_1ConfigReader.html#a787856a51a8817148108650a664f5738" title="Gets the first level compression color value." alt="" coords="411,69,606,109"/>
+<area shape="rect" id="node6" href="$classkm_1_1ConfigReader.html#a0a13dd20b33346486e13a87a9a52e4e5" title="Gets the fourth level compression color value." alt="" coords="405,133,613,173"/>
+<area shape="rect" id="node7" href="$classkm_1_1ConfigReader.html#a12968b54f38b17586d6e65be5158d275" title="Gets the second level compression color value." alt="" coords="401,197,616,237"/>
+<area shape="rect" id="node8" href="$classkm_1_1ConfigReader.html#a0e355597d2a6f4c1f01e91da11fbd577" title="Gets the third level compression color value." alt="" coords="409,261,609,301"/>
+<area shape="rect" id="node13" href="$classkm_1_1ConfigReader.html#a6067e8491ad1fdbb5f62b33ef215208e" title="Gets the resizing factor." alt="" coords="397,363,620,403"/>
+</map>

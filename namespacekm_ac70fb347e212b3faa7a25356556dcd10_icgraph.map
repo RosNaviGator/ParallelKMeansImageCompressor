@@ -1,0 +1,35 @@
+<map id="km::assign_clusters" name="km::assign_clusters">
+<area shape="rect" id="Node000001" title="CUDA kernel to assign each point to the nearest centroid." alt="" coords="387,276,537,301"/>
+<area shape="rect" id="Node000002" href="$classkm_1_1Performance.html#a9bc46562bd8dfe817c8be57d0959c08a" title="Appends performance data to the CSV file." alt="" coords="108,5,339,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="453,263,440,216,418,156,384,96,362,69,337,45,316,33,318,28,340,41,366,65,388,93,422,154,445,214,458,262"/>
+<area shape="rect" id="Node000003" href="$classkm_1_1Performance.html#ac22133918a8445c7230e15621b4dd999" title="Creates or opens a CSV file." alt="" coords="124,55,323,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="448,264,431,229,407,187,376,145,337,109,317,98,319,93,340,105,379,142,411,184,436,227,453,262"/>
+<area shape="rect" id="Node000004" href="$classkm_1_1Point.html#a28d9829e3fe624bd511814ab7a1cd445" title="Calculates the distance between this point and another point." alt="" coords="150,120,297,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="443,266,400,211,371,183,337,159,296,143,298,138,340,154,374,178,404,207,447,263"/>
+<area shape="rect" id="Node000005" href="$classkm_1_1Performance.html#a3145fecb00fa5d567d13a0f808f6be7e" title="Extracts the file name from the output path." alt="" coords="129,269,317,309"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="373,291,318,291,318,286,373,286"/>
+<area shape="rect" id="Node000008" href="$mainMenu_8cpp.html#a8216c1645620cdb2f629cde3ac02ffef" title="Main function that runs the Image Compressor application." alt="" coords="196,383,251,408"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="437,312,393,343,340,372,294,387,251,395,250,390,292,382,338,368,390,339,434,308"/>
+<area shape="rect" id="Node000009" href="$classkm_1_1KMeansCUDA.html#a4d748e05b8ebad9ec535d0c33ec3f3ab" title="Runs the K&#45;means clustering algorithm using CUDA." alt="" coords="138,169,309,195"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="434,269,391,238,338,208,304,197,306,192,340,204,393,233,437,265"/>
+<area shape="rect" id="Node000010" href="$classkm_1_1KMeansMPI.html#a776852d58db859f83090ba45c1bd7034" title="Runs the K&#45;means clustering algorithm using MPI." alt="" coords="145,432,301,457"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="447,315,403,369,374,398,340,422,303,437,301,432,337,417,370,394,400,366,443,311"/>
+<area shape="rect" id="Node000011" href="$classkm_1_1KMeansOMP.html#a8bb6bca3f78d72b3976d27e1abf28e06" title="Runs the K&#45;means clustering algorithm using OpenMP." alt="" coords="142,481,305,507"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="453,315,437,351,413,394,380,437,340,472,306,488,304,483,337,468,376,433,408,391,432,349,449,313"/>
+<area shape="rect" id="Node000013" href="$classkm_1_1KMeansSequential.html#a322350cd5d3dcd0e428fb4208f901a7b" title="Runs the K&#45;means clustering algorithm." alt="" coords="123,333,324,359"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="401,307,339,323,285,336,283,331,338,318,400,302"/>
+<area shape="rect" id="Node000014" href="$classkm_1_1Point.html#abf5779b9b295a1b9ba707f262fdec275" title="Sets a feature value at the specified index." alt="" coords="143,531,304,556"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="457,316,444,361,420,417,387,474,365,499,340,522,305,538,303,534,337,517,361,496,382,471,416,414,438,359,452,314"/>
+<area shape="rect" id="Node000015" href="$classkm_1_1Performance.html#ab3ba15c019e82d392539f6b2a48fa761" title="Writes performance data to a CSV file." alt="" coords="123,219,324,244"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="400,275,338,259,283,247,285,241,339,254,401,270"/>
+<area shape="rect" id="Node000006" href="$encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,219,60,244"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="138,267,107,258,59,243,61,238,109,253,140,262"/>
+<area shape="rect" id="Node000007" href="$encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,276,60,301"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="115,291,60,291,60,286,115,286"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="142,200,109,209,61,224,59,219,107,203,141,195"/>
+<area shape="rect" id="Node000012" href="$encoderOMP_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the OpenMP&#45;based image compression application." alt="" coords="5,481,60,507"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="128,497,60,497,60,491,128,491"/>
+<area shape="poly" id="edge14_Node000013_Node000007" title=" " alt="" coords="141,333,107,323,59,304,61,299,109,318,142,328"/>
+<area shape="poly" id="edge17_Node000015_Node000006" title=" " alt="" coords="109,234,60,234,60,229,109,229"/>
+<area shape="poly" id="edge18_Node000015_Node000007" title=" " alt="" coords="142,250,109,259,61,278,59,273,107,254,141,245"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="km::ConfigReader::getInputImageFilePath" name="km::ConfigReader::getInputImageFilePath">
+<area shape="rect" id="node1" title="Gets the input image file path." alt="" coords="108,5,308,45"/>
+<area shape="rect" id="node2" href="$mainMenu_8cpp.html#a8216c1645620cdb2f629cde3ac02ffef" title="Main function that runs the Image Compressor application." alt="" coords="5,13,60,38"/>
+</map>

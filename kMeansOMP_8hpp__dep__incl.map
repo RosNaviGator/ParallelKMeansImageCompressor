@@ -1,0 +1,5 @@
+<map id="include/kMeansOMP.hpp" name="include/kMeansOMP.hpp">
+<area shape="rect" id="node1" title="Implementation of the K&#45;means clustering algorithm using OpenMP." alt="" coords="79,5,259,31"/>
+<area shape="rect" id="node2" href="$encoderOMP_8cpp.html" title="Main entry point for the OpenMP&#45;based image compression application." alt="" coords="5,79,157,104"/>
+<area shape="rect" id="node3" href="$kMeansOMP_8cpp.html" title="OpenMP implementation of the K&#45;means clustering algorithm." alt="" coords="182,79,333,104"/>
+</map>

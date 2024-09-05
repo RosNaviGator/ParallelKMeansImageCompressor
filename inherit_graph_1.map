@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classkm_1_1KMeansBase.html" title="Base class for K&#45;means clustering algorithm." alt="" coords="5,55,140,80"/>
+<area shape="rect" id="node2" href="$classkm_1_1KMeansMPI.html" title="Represents the K&#45;means clustering algorithm using MPI." alt="" coords="211,5,337,31"/>
+<area shape="rect" id="node3" href="$classkm_1_1KMeansOMP.html" title="Represents the K&#45;means clustering algorithm using OpenMP." alt="" coords="207,55,341,80"/>
+<area shape="rect" id="node4" href="$classkm_1_1KMeansSequential.html" title="Represents the K&#45;means clustering algorithm." alt="" coords="188,104,360,129"/>
+</map>

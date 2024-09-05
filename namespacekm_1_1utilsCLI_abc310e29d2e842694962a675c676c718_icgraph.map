@@ -1,0 +1,4 @@
+<map id="km::utilsCLI::displayDecodingMenu" name="km::utilsCLI::displayDecodingMenu">
+<area shape="rect" id="node1" title="Displays the decoding menu." alt="" coords="108,5,359,31"/>
+<area shape="rect" id="node2" href="$decoder_8cpp.html#a8216c1645620cdb2f629cde3ac02ffef" title="Main function for the Decoder program." alt="" coords="5,5,60,31"/>
+</map>

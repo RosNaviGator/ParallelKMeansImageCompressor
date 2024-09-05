@@ -1,0 +1,4 @@
+<map id="km::filesUtils::readBinaryFile" name="km::filesUtils::readBinaryFile">
+<area shape="rect" id="node1" title="Reads a binary file and reconstructs the compressed image." alt="" coords="108,5,319,31"/>
+<area shape="rect" id="node2" href="$decoder_8cpp.html#a8216c1645620cdb2f629cde3ac02ffef" title="Main function for the Decoder program." alt="" coords="5,5,60,31"/>
+</map>

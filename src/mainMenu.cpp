@@ -1,9 +1,11 @@
 /**
- * @file main.cpp
- * @brief Main entry point for the Image Compressor application. 
+ * @file mainMenu.cpp
+ * @brief Main entry point for the Image Compressor application.
+ * @details This file contains the main function that initializes the Image Compressor application. 
+ *          It reads configuration settings, displays a command-line interface for users to choose 
+ *          between image compression and decompression, and handles user input to run the appropriate 
+ *          compression or decompression processes.
  */
-
-
 
 #include <iostream>
 #include <utilsCLI.hpp>
@@ -17,12 +19,14 @@ using namespace km::filesUtils;
 
 /**
  * @brief Main function that runs the Image Compressor application.
- * 
- * This function initializes necessary components, reads configuration settings, and provides 
- * a command-line interface for users to choose image compression or decompression options.
+ * @details This function initializes necessary components, reads configuration settings, and provides 
+ *          a command-line interface for users to choose between image compression and decompression options.
+ *          It handles user inputs to determine the desired operation and calls the appropriate functions 
+ *          or external processes to execute the selected option.
  * 
  * @return Returns 0 on successful execution.
  */
+
 
 auto main() -> int
 {

@@ -1,18 +1,18 @@
 <map id="src/kMeansCUDA.cu" name="src/kMeansCUDA.cu">
-<area shape="rect" id="Node000001" title=" " alt="" coords="130,5,276,32"/>
-<area shape="rect" id="Node000002" href="$kMeansCUDA_8cuh.html" title="Implementation of the K&#45;means clustering algorithm using CUDA." alt="" coords="137,80,268,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,33,206,64,200,64,200,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,70,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="175,110,82,150,80,145,173,105"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="94,155,165,181"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="192,109,155,145,151,142,188,105"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="238,229,296,256"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="208,106,216,140,231,180,251,215,246,218,226,182,211,142,203,107"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="240,155,350,181"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="221,105,269,143,266,147,217,109"/>
-<area shape="rect" id="Node000007" href="$point_8hpp.html" title="Point class representing a point in a feature space." alt="" coords="374,155,448,181"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="240,105,361,147,359,152,238,110"/>
-<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="387,184,307,224,305,219,385,179"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="382,229,440,256"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="414,182,414,214,408,214,408,182"/>
+<area shape="rect" id="Node000001" title="CUDA implementation of the K&#45;means clustering algorithm." alt="" coords="142,5,295,31"/>
+<area shape="rect" id="Node000002" href="$kMeansCUDA_8cuh.html" title="Implementation of the K&#45;means clustering algorithm using CUDA." alt="" coords="149,79,288,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,31,221,65,216,65,216,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,77,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="191,106,84,149,82,144,189,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="101,152,181,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="208,106,166,144,162,141,204,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="257,225,319,251"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="223,103,232,137,246,176,271,213,267,216,242,179,226,139,218,105"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="256,152,379,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="236,102,292,142,289,146,233,106"/>
+<area shape="rect" id="Node000007" href="$point_8hpp.html" title="Point class representing a point in a feature space." alt="" coords="403,152,485,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="256,101,395,145,394,150,254,107"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="420,180,327,222,325,217,418,175"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="413,225,475,251"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="447,178,447,212,441,212,441,178"/>
 </map>

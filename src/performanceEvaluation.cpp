@@ -1,3 +1,14 @@
+/**
+ * @file performanceEvaluation.cpp
+ * @brief Utility functions for evaluating and recording the performance of image compression algorithms.
+ * @details This file contains the implementation of the `Performance` class, which provides functionalities 
+ *          to record performance metrics such as time taken for compression, number of iterations, and other 
+ *          relevant statistics. The class includes methods to fill performance data, write results to a CSV file, 
+ *          and manage the creation and appending of data to the CSV file for easy analysis.
+ */
+
+
+
 #include <performanceEvaluation.hpp>
 #include <utility>
 

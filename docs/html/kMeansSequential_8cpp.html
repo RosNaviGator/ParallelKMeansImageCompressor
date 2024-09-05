@@ -76,6 +76,9 @@ $(function() {
   <div class="headertitle"><div class="title">kMeansSequential.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Sequential implementation of the K-means clustering algorithm.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="kMeansSequential_8hpp_source.html">kMeansSequential.hpp</a>&quot;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
@@ -86,28 +89,31 @@ Include dependency graph for kMeansSequential.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="kMeansSequential_8cpp__incl.png" border="0" usemap="#asrc_2kMeansSequential_8cpp" alt=""/></div>
 <map name="asrc_2kMeansSequential_8cpp" id="asrc_2kMeansSequential_8cpp">
-<area shape="rect" title=" " alt="" coords="220,5,395,32"/>
-<area shape="rect" href="kMeansSequential_8hpp.html" title="Implementation of the K&#45;means clustering algorithm." alt="" coords="5,80,159,107"/>
-<area shape="poly" title=" " alt="" coords="269,35,137,77,135,72,267,30"/>
-<area shape="rect" title=" " alt="" coords="182,80,256,107"/>
-<area shape="poly" title=" " alt="" coords="294,35,248,72,244,68,290,30"/>
-<area shape="rect" title=" " alt="" coords="281,80,334,107"/>
-<area shape="poly" title=" " alt="" coords="310,33,310,64,305,64,305,33"/>
-<area shape="rect" title=" " alt="" coords="357,80,418,107"/>
-<area shape="poly" title=" " alt="" coords="323,31,364,68,361,72,319,35"/>
-<area shape="rect" title=" " alt="" coords="441,80,512,107"/>
-<area shape="poly" title=" " alt="" coords="338,30,434,71,432,76,336,35"/>
-<area shape="rect" href="kMeansBase_8hpp.html" title="Base class for K&#45;means clustering algorithm." alt="" coords="21,155,143,181"/>
-<area shape="poly" title=" " alt="" coords="85,107,85,139,79,139,79,107"/>
-<area shape="rect" title=" " alt="" coords="16,304,73,331"/>
-<area shape="poly" title=" " alt="" coords="81,182,54,290,49,288,76,181"/>
-<area shape="rect" href="point_8hpp.html" title="Point class representing a point in a feature space." alt="" coords="82,229,156,256"/>
-<area shape="poly" title=" " alt="" coords="91,181,108,214,104,217,86,183"/>
-<area shape="poly" title=" " alt="" coords="108,258,70,295,66,291,104,255"/>
-<area shape="rect" title=" " alt="" coords="97,304,155,331"/>
-<area shape="poly" title=" " alt="" coords="123,256,126,288,121,289,118,257"/>
+<area shape="rect" title="Sequential implementation of the K&#45;means clustering algorithm." alt="" coords="243,5,435,31"/>
+<area shape="rect" href="kMeansSequential_8hpp.html" title="Implementation of the K&#45;means clustering algorithm." alt="" coords="5,79,176,104"/>
+<area shape="poly" title=" " alt="" coords="300,33,145,77,143,72,298,28"/>
+<area shape="rect" title=" " alt="" coords="200,79,285,104"/>
+<area shape="poly" title=" " alt="" coords="325,33,271,72,268,68,322,29"/>
+<area shape="rect" title=" " alt="" coords="309,79,368,104"/>
+<area shape="poly" title=" " alt="" coords="341,31,341,65,336,65,336,31"/>
+<area shape="rect" title=" " alt="" coords="392,79,459,104"/>
+<area shape="poly" title=" " alt="" coords="354,29,402,68,399,72,351,33"/>
+<area shape="rect" title=" " alt="" coords="483,79,563,104"/>
+<area shape="poly" title=" " alt="" coords="369,28,481,71,479,76,367,33"/>
+<area shape="rect" href="kMeansBase_8hpp.html" title="Base class for K&#45;means clustering algorithm." alt="" coords="24,152,157,177"/>
+<area shape="poly" title=" " alt="" coords="93,104,93,138,88,138,88,104"/>
+<area shape="rect" title=" " alt="" coords="21,299,83,324"/>
+<area shape="poly" title=" " alt="" coords="90,178,61,286,56,285,85,177"/>
+<area shape="rect" href="point_8hpp.html" title="Point class representing a point in a feature space." alt="" coords="89,225,172,251"/>
+<area shape="poly" title=" " alt="" coords="100,176,120,212,115,215,95,179"/>
+<area shape="poly" title=" " alt="" coords="120,253,77,291,73,288,116,249"/>
+<area shape="rect" title=" " alt="" coords="107,299,170,324"/>
+<area shape="poly" title=" " alt="" coords="135,251,139,285,133,285,129,251"/>
 </map>
 </div>
+</div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Sequential implementation of the K-means clustering algorithm. </p>
+<p>This file contains the implementation of the <code>KMeansSequential</code> class, which performs the K-means clustering algorithm in a sequential manner without parallelization. The class handles tasks such as initializing centroids, assigning points to clusters, recalculating centroids, and determining convergence. This implementation is intended for environments where parallel processing is not available or needed. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

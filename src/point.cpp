@@ -1,3 +1,13 @@
+/**
+ * @file point.cpp
+ * @brief Implementation of the Point class for image compression algorithms.
+ * @details This file contains the implementation of the `Point` class, which represents a pixel or data point in 
+ *          a color space for use in image compression algorithms. The class provides methods to access and modify 
+ *          color features, calculate distances between points, and manage cluster assignments. It is a core component 
+ *          for K-means clustering and similar algorithms.
+ */
+
+
 #include <point.hpp>
 #include <stdexcept>
 

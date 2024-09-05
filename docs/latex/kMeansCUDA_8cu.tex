@@ -1,3 +1,22 @@
 \doxysection{src/k\+Means\+CUDA.cu File Reference}
 \hypertarget{kMeansCUDA_8cu}{}\label{kMeansCUDA_8cu}\index{src/kMeansCUDA.cu@{src/kMeansCUDA.cu}}
+
+
+CUDA implementation of the K-\/means clustering algorithm.  
+
+
 {\ttfamily \#include $<$k\+Means\+CUDA.\+cuh$>$}\newline
+Include dependency graph for k\+Means\+CUDA.\+cu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kMeansCUDA_8cu__incl}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
+CUDA implementation of the K-\/means clustering algorithm. 
+
+This file contains the implementation of the {\ttfamily KMeans\+CUDA} class, which leverages CUDA to perform the K-\/means clustering algorithm on the GPU. The class includes functions for initializing centroids, assigning clusters, calculating new centroids, and averaging centroids, all using CUDA kernels for parallel processing. This implementation allows for efficient processing of large datasets by utilizing GPU acceleration. 

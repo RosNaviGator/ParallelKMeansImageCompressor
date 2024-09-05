@@ -1,3 +1,13 @@
+/**
+ * @file kMeansSequential.cpp
+ * @brief Sequential implementation of the K-means clustering algorithm.
+ * @details This file contains the implementation of the `KMeansSequential` class, which performs the K-means clustering algorithm 
+ *          in a sequential manner without parallelization. The class handles tasks such as initializing centroids, assigning points 
+ *          to clusters, recalculating centroids, and determining convergence. This implementation is intended for environments where 
+ *          parallel processing is not available or needed.
+ */
+
+
 #include "kMeansSequential.hpp"
 #include <algorithm>
 #include <limits>

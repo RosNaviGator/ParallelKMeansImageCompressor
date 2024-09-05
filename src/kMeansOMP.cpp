@@ -1,3 +1,13 @@
+/**
+ * @file kMeansOMP.cpp
+ * @brief OpenMP implementation of the K-means clustering algorithm.
+ * @details This file contains the implementation of the `KMeansOMP` class, which utilizes OpenMP for parallel processing 
+ *          to perform the K-means clustering algorithm using multiple threads. The class includes methods for initializing 
+ *          centroids, updating cluster assignments, recalculating centroids, and synchronizing results across threads. 
+ *          This implementation leverages multi-threading to enhance performance in shared-memory environments.
+ */
+
+
 #include "kMeansOMP.hpp"
 #include <algorithm>
 #include <limits>

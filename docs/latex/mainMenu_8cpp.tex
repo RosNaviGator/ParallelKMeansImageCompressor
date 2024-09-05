@@ -1,5 +1,10 @@
 \doxysection{src/main\+Menu.cpp File Reference}
 \hypertarget{mainMenu_8cpp}{}\label{mainMenu_8cpp}\index{src/mainMenu.cpp@{src/mainMenu.cpp}}
+
+
+Main entry point for the Image Compressor application.  
+
+
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$utils\+CLI.\+hpp$>$}\newline
 {\ttfamily \#include $<$filesystem$>$}\newline
@@ -19,6 +24,11 @@ auto \mbox{\hyperlink{mainMenu_8cpp_a8216c1645620cdb2f629cde3ac02ffef}{main}} ()
 \begin{DoxyCompactList}\small\item\em Main function that runs the Image Compressor application. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Main entry point for the Image Compressor application. 
+
+This file contains the main function that initializes the Image Compressor application. It reads configuration settings, displays a command-\/line interface for users to choose between image compression and decompression, and handles user input to run the appropriate compression or decompression processes. 
+
 \doxysubsection{Function Documentation}
 \Hypertarget{mainMenu_8cpp_a8216c1645620cdb2f629cde3ac02ffef}\label{mainMenu_8cpp_a8216c1645620cdb2f629cde3ac02ffef} 
 \index{mainMenu.cpp@{mainMenu.cpp}!main@{main}}
@@ -30,7 +40,7 @@ auto \mbox{\hyperlink{mainMenu_8cpp_a8216c1645620cdb2f629cde3ac02ffef}{main}} ()
 
 Main function that runs the Image Compressor application. 
 
-This function initializes necessary components, reads configuration settings, and provides a command-\/line interface for users to choose image compression or decompression options.
+This function initializes necessary components, reads configuration settings, and provides a command-\/line interface for users to choose between image compression and decompression options. It handles user inputs to determine the desired operation and calls the appropriate functions or external processes to execute the selected option.
 
 \begin{DoxyReturn}{Returns}
 Returns 0 on successful execution. 

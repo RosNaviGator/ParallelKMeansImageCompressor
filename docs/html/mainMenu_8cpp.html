@@ -78,6 +78,9 @@ $(function() {
   <div class="headertitle"><div class="title">mainMenu.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Main entry point for the Image Compressor application.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;<a class="el" href="utilsCLI_8hpp_source.html">utilsCLI.hpp</a>&gt;</code><br />
 <code>#include &lt;filesystem&gt;</code><br />
@@ -88,45 +91,45 @@ Include dependency graph for mainMenu.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="mainMenu_8cpp__incl.png" border="0" usemap="#asrc_2mainMenu_8cpp" alt=""/></div>
 <map name="asrc_2mainMenu_8cpp" id="asrc_2mainMenu_8cpp">
-<area shape="rect" title=" " alt="" coords="569,5,697,32"/>
-<area shape="rect" title=" " alt="" coords="544,229,615,256"/>
-<area shape="poly" title=" " alt="" coords="635,33,628,97,610,182,596,216,591,214,605,181,623,96,629,32"/>
-<area shape="rect" href="utilsCLI_8hpp.html" title="Utility functions for the command&#45;line interface." alt="" coords="384,80,476,107"/>
-<area shape="poly" title=" " alt="" coords="598,35,481,77,479,72,597,30"/>
-<area shape="rect" title=" " alt="" coords="643,229,724,256"/>
-<area shape="poly" title=" " alt="" coords="640,32,654,79,682,213,676,214,649,81,635,33"/>
-<area shape="rect" title=" " alt="" coords="467,155,596,181"/>
-<area shape="poly" title=" " alt="" coords="626,34,551,143,547,140,622,31"/>
-<area shape="rect" href="configReader_8hpp.html" title="ConfigReader class declaration." alt="" coords="788,80,912,107"/>
-<area shape="poly" title=" " alt="" coords="672,30,799,72,797,77,670,35"/>
-<area shape="poly" title=" " alt="" coords="433,106,439,142,446,162,458,180,473,195,491,207,530,225,528,230,489,212,470,199,453,183,442,164,434,143,428,107"/>
-<area shape="rect" title=" " alt="" coords="5,229,146,256"/>
-<area shape="poly" title=" " alt="" coords="400,110,283,157,120,225,118,220,281,152,398,105"/>
-<area shape="rect" href="filesUtils_8hpp.html" title="Utility functions for file handling." alt="" coords="295,155,392,181"/>
-<area shape="poly" title=" " alt="" coords="417,109,372,147,368,143,413,105"/>
-<area shape="poly" title=" " alt="" coords="449,105,503,143,500,147,446,109"/>
-<area shape="poly" title=" " alt="" coords="385,179,530,223,528,229,384,184"/>
-<area shape="poly" title=" " alt="" coords="298,184,138,227,136,222,296,179"/>
-<area shape="rect" title=" " alt="" coords="170,229,235,256"/>
-<area shape="poly" title=" " alt="" coords="320,184,242,224,239,219,318,179"/>
-<area shape="rect" title=" " alt="" coords="278,304,335,331"/>
-<area shape="poly" title=" " alt="" coords="332,183,315,204,301,230,297,260,301,289,295,289,292,260,296,229,310,201,328,180"/>
-<area shape="rect" title=" " alt="" coords="376,304,434,331"/>
-<area shape="poly" title=" " alt="" coords="361,180,382,201,399,228,407,259,409,289,404,289,402,260,394,230,377,204,357,184"/>
-<area shape="rect" title=" " alt="" coords="460,229,520,256"/>
-<area shape="poly" title=" " alt="" coords="370,179,452,220,450,224,368,184"/>
-<area shape="poly" title=" " alt="" coords="393,177,628,227,629,227,627,232,627,232,392,182"/>
-<area shape="rect" href="point_8hpp.html" title="Point class representing a point in a feature space." alt="" coords="310,229,385,256"/>
-<area shape="poly" title=" " alt="" coords="347,182,349,214,343,214,342,182"/>
-<area shape="poly" title=" " alt="" coords="343,258,323,292,318,289,338,255"/>
-<area shape="poly" title=" " alt="" coords="360,255,388,290,383,293,355,258"/>
-<area shape="poly" title=" " alt="" coords="872,105,893,120,912,139,922,161,922,172,916,183,905,193,888,202,842,218,740,237,739,232,841,212,885,198,902,189,912,180,917,171,917,162,908,142,890,124,869,109"/>
-<area shape="rect" title=" " alt="" coords="977,155,1030,181"/>
-<area shape="poly" title=" " alt="" coords="878,105,964,145,962,150,876,110"/>
-<area shape="rect" title=" " alt="" coords="721,155,774,181"/>
-<area shape="poly" title=" " alt="" coords="834,109,780,147,777,143,831,105"/>
-<area shape="rect" title=" " alt="" coords="798,155,902,181"/>
-<area shape="poly" title=" " alt="" coords="853,107,853,139,848,139,848,107"/>
+<area shape="rect" title="Main entry point for the Image Compressor application." alt="" coords="611,5,752,31"/>
+<area shape="rect" title=" " alt="" coords="581,225,661,251"/>
+<area shape="poly" title=" " alt="" coords="683,31,677,95,669,137,657,178,639,215,634,212,652,176,664,135,671,94,678,30"/>
+<area shape="rect" href="utilsCLI_8hpp.html" title="Utility functions for the command&#45;line interface." alt="" coords="416,79,515,104"/>
+<area shape="poly" title=" " alt="" coords="647,33,514,77,512,72,646,28"/>
+<area shape="rect" title=" " alt="" coords="687,225,777,251"/>
+<area shape="poly" title=" " alt="" coords="688,30,703,78,730,211,725,212,697,79,683,32"/>
+<area shape="rect" title=" " alt="" coords="503,152,643,177"/>
+<area shape="poly" title=" " alt="" coords="675,33,592,142,588,139,670,30"/>
+<area shape="rect" href="configReader_8hpp.html" title="ConfigReader class declaration." alt="" coords="841,79,977,104"/>
+<area shape="poly" title=" " alt="" coords="719,28,860,72,858,77,717,33"/>
+<area shape="poly" title=" " alt="" coords="468,104,474,139,482,158,493,176,509,191,528,203,569,221,567,226,526,208,506,195,489,179,477,161,469,140,463,105"/>
+<area shape="rect" title=" " alt="" coords="5,225,160,251"/>
+<area shape="poly" title=" " alt="" coords="436,107,308,154,126,223,124,218,306,150,434,102"/>
+<area shape="rect" href="filesUtils_8hpp.html" title="Utility functions for file handling." alt="" coords="319,152,427,177"/>
+<area shape="poly" title=" " alt="" coords="452,106,401,146,397,141,449,102"/>
+<area shape="poly" title=" " alt="" coords="484,102,546,142,543,147,481,106"/>
+<area shape="poly" title=" " alt="" coords="414,175,569,219,567,224,412,180"/>
+<area shape="poly" title=" " alt="" coords="327,180,143,225,142,219,326,175"/>
+<area shape="rect" title=" " alt="" coords="185,225,258,251"/>
+<area shape="poly" title=" " alt="" coords="350,180,259,222,257,217,348,175"/>
+<area shape="rect" title=" " alt="" coords="299,299,362,324"/>
+<area shape="poly" title=" " alt="" coords="361,179,340,200,324,226,320,256,325,285,320,286,315,256,319,224,336,196,357,175"/>
+<area shape="rect" title=" " alt="" coords="403,299,466,324"/>
+<area shape="poly" title=" " alt="" coords="390,175,412,196,430,224,438,255,440,285,434,285,433,256,426,226,408,200,386,179"/>
+<area shape="rect" title=" " alt="" coords="491,225,557,251"/>
+<area shape="poly" title=" " alt="" coords="399,175,488,217,486,222,396,180"/>
+<area shape="poly" title=" " alt="" coords="428,174,674,222,673,228,427,179"/>
+<area shape="rect" href="point_8hpp.html" title="Point class representing a point in a feature space." alt="" coords="333,225,416,251"/>
+<area shape="poly" title=" " alt="" coords="376,178,377,212,372,212,371,178"/>
+<area shape="poly" title=" " alt="" coords="370,252,347,288,343,286,365,250"/>
+<area shape="poly" title=" " alt="" coords="387,249,418,286,414,290,383,253"/>
+<area shape="poly" title=" " alt="" coords="932,102,954,116,975,135,986,156,986,168,981,179,968,190,950,199,902,215,792,233,791,228,900,209,948,194,965,185,977,176,981,167,981,158,971,138,951,121,929,106"/>
+<area shape="rect" title=" " alt="" coords="1041,152,1100,177"/>
+<area shape="poly" title=" " alt="" coords="936,102,1033,144,1031,149,934,106"/>
+<area shape="rect" title=" " alt="" coords="769,152,828,177"/>
+<area shape="poly" title=" " alt="" coords="893,106,830,147,827,142,890,102"/>
+<area shape="rect" title=" " alt="" coords="852,152,967,177"/>
+<area shape="poly" title=" " alt="" coords="912,104,912,138,907,138,907,104"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -136,7 +139,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a8216c1645620cdb2f629cde3ac02ffef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function that runs the Image Compressor application.  <br /></td></tr>
 <tr class="separator:a8216c1645620cdb2f629cde3ac02ffef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Main entry point for the Image Compressor application. </p>
+<p>This file contains the main function that initializes the Image Compressor application. It reads configuration settings, displays a command-line interface for users to choose between image compression and decompression, and handles user input to run the appropriate compression or decompression processes. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a8216c1645620cdb2f629cde3ac02ffef" name="a8216c1645620cdb2f629cde3ac02ffef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8216c1645620cdb2f629cde3ac02ffef">&#9670;&#160;</a></span>main()</h2>
 
@@ -154,7 +160,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Main function that runs the Image Compressor application. </p>
-<p>This function initializes necessary components, reads configuration settings, and provides a command-line interface for users to choose image compression or decompression options.</p>
+<p>This function initializes necessary components, reads configuration settings, and provides a command-line interface for users to choose between image compression and decompression options. It handles user inputs to determine the desired operation and calls the appropriate functions or external processes to execute the selected option.</p>
 <dl class="section return"><dt>Returns</dt><dd>Returns 0 on successful execution. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>

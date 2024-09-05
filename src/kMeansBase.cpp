@@ -1,3 +1,12 @@
+/**
+ * @file kMeansBase.cpp
+ * @brief Base class implementation for the K-means clustering algorithm.
+ * @details This file contains the implementation of the `KMeansBase` class, which serves as the base class
+ *          for different versions of the K-means clustering algorithm. It provides fundamental functionalities
+ *          such as initialization of centroids, getters for points, centroids, and the number of iterations.
+ */
+
+
 #include "kMeansBase.hpp"
 #include <random>
 #include <chrono>

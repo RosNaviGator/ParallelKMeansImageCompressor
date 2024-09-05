@@ -1,14 +1,26 @@
 \doxysection{src/k\+Means\+Sequential.cpp File Reference}
 \hypertarget{kMeansSequential_8cpp}{}\label{kMeansSequential_8cpp}\index{src/kMeansSequential.cpp@{src/kMeansSequential.cpp}}
+
+
+Sequential implementation of the K-\/means clustering algorithm.  
+
+
 {\ttfamily \#include "{}k\+Means\+Sequential.\+hpp"{}}\newline
 {\ttfamily \#include $<$algorithm$>$}\newline
 {\ttfamily \#include $<$limits$>$}\newline
 {\ttfamily \#include $<$chrono$>$}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
-Include dependency graph for k\+Means\+Sequential.\+cpp\+:\nopagebreak
+Include dependency graph for k\+Means\+Sequential.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{kMeansSequential_8cpp__incl}
 \end{center}
 \end{figure}
+
+
+\doxysubsection{Detailed Description}
+Sequential implementation of the K-\/means clustering algorithm. 
+
+This file contains the implementation of the {\ttfamily KMeans\+Sequential} class, which performs the K-\/means clustering algorithm in a sequential manner without parallelization. The class handles tasks such as initializing centroids, assigning points to clusters, recalculating centroids, and determining convergence. This implementation is intended for environments where parallel processing is not available or needed. 

@@ -1,7 +1,7 @@
 <map id="include/kMeansCUDA.cuh" name="include/kMeansCUDA.cuh">
-<area shape="rect" id="Node000001" title="Implementation of the K&#45;means clustering algorithm using CUDA." alt="" coords="80,5,257,32"/>
-<area shape="rect" id="Node000002" href="$encoderCUDA_8cpp.html" title="Main entry point for the CUDA&#45;based image compression application." alt="" coords="5,80,159,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,44,99,82,95,78,140,40"/>
-<area shape="rect" id="Node000003" href="$kMeansCUDA_8cu.html" title=" " alt="" coords="182,80,328,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,40,242,78,239,82,194,44"/>
+<area shape="rect" id="Node000001" title="Implementation of the K&#45;means clustering algorithm using CUDA." alt="" coords="83,5,272,31"/>
+<area shape="rect" id="Node000002" href="$encoderCUDA_8cpp.html" title="Main entry point for the CUDA&#45;based image compression application." alt="" coords="5,79,168,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,41,103,81,100,76,150,37"/>
+<area shape="rect" id="Node000003" href="$kMeansCUDA_8cu.html" title="CUDA implementation of the K&#45;means clustering algorithm." alt="" coords="193,79,346,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,37,256,76,253,81,201,41"/>
 </map>

@@ -1,3 +1,12 @@
+/**
+ * @file utilsCLI.cpp
+ * @brief Utility functions for command-line interface operations.
+ * @details This file contains implementations of utility functions that facilitate command-line interactions 
+ *          for the Image Compressor application. It includes functions to display headers, manage user inputs, 
+ *          and provide feedback during compression and decompression processes.
+ */
+
+
 #include <utilsCLI.hpp>
 
 void km::utilsCLI::mainMenuHeader()

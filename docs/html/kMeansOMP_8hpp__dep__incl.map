@@ -1,7 +1,7 @@
 <map id="include/kMeansOMP.hpp" name="include/kMeansOMP.hpp">
-<area shape="rect" id="Node000001" title="Implementation of the K&#45;means clustering algorithm using OpenMP." alt="" coords="76,5,242,32"/>
-<area shape="rect" id="Node000002" href="$encoderOMP_8cpp.html" title="Main entry point for the OpenMP&#45;based image compression application." alt="" coords="5,80,148,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,45,92,82,89,78,132,40"/>
-<area shape="rect" id="Node000003" href="$kMeansOMP_8cpp.html" title=" " alt="" coords="172,80,314,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="187,40,230,78,227,82,184,45"/>
+<area shape="rect" id="Node000001" title="Implementation of the K&#45;means clustering algorithm using OpenMP." alt="" coords="79,5,259,31"/>
+<area shape="rect" id="Node000002" href="$encoderOMP_8cpp.html" title="Main entry point for the OpenMP&#45;based image compression application." alt="" coords="5,79,157,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,41,97,81,94,76,143,37"/>
+<area shape="rect" id="Node000003" href="$kMeansOMP_8cpp.html" title="OpenMP implementation of the K&#45;means clustering algorithm." alt="" coords="182,79,333,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,37,245,76,241,81,192,41"/>
 </map>

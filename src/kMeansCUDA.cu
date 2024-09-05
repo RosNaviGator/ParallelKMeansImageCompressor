@@ -1,3 +1,12 @@
+/**
+ * @file kMeansCUDA.cu
+ * @brief CUDA implementation of the K-means clustering algorithm.
+ * @details This file contains the implementation of the `KMeansCUDA` class, which leverages CUDA to perform the K-means clustering algorithm on the GPU. 
+ *          The class includes functions for initializing centroids, assigning clusters, calculating new centroids, and averaging centroids, all using CUDA kernels for parallel processing. 
+ *          This implementation allows for efficient processing of large datasets by utilizing GPU acceleration.
+ */
+
+
 #include <kMeansCUDA.cuh>
 
 km::KMeansCUDA::KMeansCUDA(const int &k, const std::vector<Point> &points) : k(k), points(points)

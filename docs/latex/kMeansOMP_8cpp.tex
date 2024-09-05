@@ -1,14 +1,26 @@
 \doxysection{src/k\+Means\+OMP.cpp File Reference}
 \hypertarget{kMeansOMP_8cpp}{}\label{kMeansOMP_8cpp}\index{src/kMeansOMP.cpp@{src/kMeansOMP.cpp}}
+
+
+Open\+MP implementation of the K-\/means clustering algorithm.  
+
+
 {\ttfamily \#include "{}k\+Means\+OMP.\+hpp"{}}\newline
 {\ttfamily \#include $<$algorithm$>$}\newline
 {\ttfamily \#include $<$limits$>$}\newline
 {\ttfamily \#include $<$chrono$>$}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
-Include dependency graph for k\+Means\+OMP.\+cpp\+:\nopagebreak
+Include dependency graph for k\+Means\+OMP.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{kMeansOMP_8cpp__incl}
 \end{center}
 \end{figure}
+
+
+\doxysubsection{Detailed Description}
+Open\+MP implementation of the K-\/means clustering algorithm. 
+
+This file contains the implementation of the {\ttfamily KMeans\+OMP} class, which utilizes Open\+MP for parallel processing to perform the K-\/means clustering algorithm using multiple threads. The class includes methods for initializing centroids, updating cluster assignments, recalculating centroids, and synchronizing results across threads. This implementation leverages multi-\/threading to enhance performance in shared-\/memory environments. 

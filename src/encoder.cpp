@@ -1,13 +1,11 @@
 /**
  * @file encoder.cpp
  * @brief Main entry point for the image compression application.
- *
- * This program compresses an image using the K-means clustering algorithm in sequential mode.
- * It reads input parameters from the command line, processes the image, applies compression,
- * and saves the compressed image to a binary file. The program also evaluates performance metrics
- * and writes them to a CSV file.
- *
- * The application uses OpenCV for image processing and custom libraries for compression and file handling.
+ * @details This program compresses an image using the K-means clustering algorithm in sequential mode.
+ *          It reads input parameters from the command line, processes the image, applies compression,
+ *          and saves the compressed image to a binary file. The program also evaluates performance metrics
+ *          and writes them to a CSV file. The application uses OpenCV for image processing and custom libraries 
+ *          for compression and file handling.
  */
 
 #include <iostream>
@@ -39,10 +37,9 @@ using namespace km::imageUtils;
 
 /**
  * @brief Main function for the image compression application.
- *
- * This function initializes the program, processes input arguments, reads the input image,
- * performs preprocessing, applies K-means clustering for image compression, and saves the
- * compressed image to a binary file. It also evaluates and logs the performance metrics.
+ * @details This function initializes the program, processes input arguments, reads the input image,
+ *          performs preprocessing, applies K-means clustering for image compression, and saves the
+ *          compressed image to a binary file. It also evaluates and logs the performance metrics.
  *
  * @param argc The number of command-line arguments.
  * @param argv The array of command-line arguments.

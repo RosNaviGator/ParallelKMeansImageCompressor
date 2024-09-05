@@ -1,3 +1,11 @@
+/**
+ * @file imagesUtils.cpp
+ * @brief Utility functions for image processing.
+ * @details This file contains implementations of utility functions used for preprocessing images,
+ *          defining compression levels, and extracting data points from images for the image compression application.
+ */
+
+
 #include <imagesUtils.hpp>
 
 void km::imageUtils::preprocessing(cv::Mat& image, int& typeCompressionChoice)

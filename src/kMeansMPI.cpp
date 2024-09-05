@@ -1,3 +1,14 @@
+/**
+ * @file kMeansMPI.cpp
+ * @brief MPI implementation of the K-means clustering algorithm.
+ * @details This file contains the implementation of the `KMeansMPI` class, which uses MPI (Message Passing Interface) 
+ *          for parallel processing to perform the K-means clustering algorithm across multiple processors. 
+ *          The class handles tasks such as initializing centroids, distributing data, computing new centroids, 
+ *          and synchronizing results among different MPI processes. This implementation is designed for efficient 
+ *          distributed computation in a high-performance computing environment.
+ */
+
+
 #include "kMeansMPI.hpp"
 #include <algorithm>
 #include <limits>

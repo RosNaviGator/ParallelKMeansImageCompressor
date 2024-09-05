@@ -1,3 +1,11 @@
+/**
+ * @file configReader.cpp
+ * @brief Implementation of the ConfigReader class for reading and parsing configuration files.
+ * @details This source file contains the implementation of the ConfigReader class, which provides functionalities
+ *          for reading, validating, and storing configuration settings from a .config file. The class is designed
+ *          to handle configuration variables related to image processing, such as compression colors and resizing
+ *          factors, and stores them for use in other parts of the application.
+ */
 
 #include <configReader.hpp>
 #include <iostream>

@@ -76,6 +76,9 @@ $(function() {
   <div class="headertitle"><div class="title">kMeansMPI.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>MPI implementation of the K-means clustering algorithm.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="kMeansMPI_8hpp_source.html">kMeansMPI.hpp</a>&quot;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
@@ -87,32 +90,35 @@ Include dependency graph for kMeansMPI.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="kMeansMPI_8cpp__incl.png" border="0" usemap="#asrc_2kMeansMPI_8cpp" alt=""/></div>
 <map name="asrc_2kMeansMPI_8cpp" id="asrc_2kMeansMPI_8cpp">
-<area shape="rect" title=" " alt="" coords="306,5,444,32"/>
-<area shape="rect" href="kMeansMPI_8hpp.html" title="Implementation of the K&#45;means clustering algorithm using MPI." alt="" coords="69,80,186,107"/>
-<area shape="poly" title=" " alt="" coords="333,35,186,78,185,73,331,30"/>
-<area shape="rect" title=" " alt="" coords="210,80,284,107"/>
-<area shape="poly" title=" " alt="" coords="354,35,284,74,282,70,352,30"/>
-<area shape="rect" title=" " alt="" coords="309,80,362,107"/>
-<area shape="poly" title=" " alt="" coords="371,34,352,68,347,65,366,31"/>
-<area shape="rect" title=" " alt="" coords="385,80,446,107"/>
-<area shape="poly" title=" " alt="" coords="385,31,403,65,399,68,380,34"/>
-<area shape="rect" title=" " alt="" coords="469,80,540,107"/>
-<area shape="poly" title=" " alt="" coords="399,30,470,70,467,74,397,35"/>
-<area shape="rect" title=" " alt="" coords="564,80,629,107"/>
-<area shape="poly" title=" " alt="" coords="415,30,550,74,549,79,413,35"/>
-<area shape="rect" href="kMeansBase_8hpp.html" title="Base class for K&#45;means clustering algorithm." alt="" coords="10,155,132,181"/>
-<area shape="poly" title=" " alt="" coords="120,109,92,144,88,141,115,106"/>
-<area shape="rect" title=" " alt="" coords="157,155,210,181"/>
-<area shape="poly" title=" " alt="" coords="139,106,167,141,162,144,135,109"/>
-<area shape="rect" title=" " alt="" coords="5,304,63,331"/>
-<area shape="poly" title=" " alt="" coords="71,182,43,290,38,288,66,181"/>
-<area shape="rect" href="point_8hpp.html" title="Point class representing a point in a feature space." alt="" coords="72,229,146,256"/>
-<area shape="poly" title=" " alt="" coords="80,181,98,214,93,217,75,183"/>
-<area shape="poly" title=" " alt="" coords="98,258,59,295,56,291,94,255"/>
-<area shape="rect" title=" " alt="" coords="87,304,144,331"/>
-<area shape="poly" title=" " alt="" coords="112,256,115,288,110,289,107,257"/>
+<area shape="rect" title="MPI implementation of the K&#45;means clustering algorithm." alt="" coords="330,5,477,31"/>
+<area shape="rect" href="kMeansMPI_8hpp.html" title="Implementation of the K&#45;means clustering algorithm using MPI." alt="" coords="73,79,198,104"/>
+<area shape="poly" title=" " alt="" coords="361,33,192,78,191,73,360,28"/>
+<area shape="rect" title=" " alt="" coords="222,79,307,104"/>
+<area shape="poly" title=" " alt="" coords="382,33,301,75,298,70,380,28"/>
+<area shape="rect" title=" " alt="" coords="331,79,390,104"/>
+<area shape="poly" title=" " alt="" coords="399,32,377,68,372,66,394,30"/>
+<area shape="rect" title=" " alt="" coords="414,79,481,104"/>
+<area shape="poly" title=" " alt="" coords="413,30,435,66,431,68,408,32"/>
+<area shape="rect" title=" " alt="" coords="505,79,585,104"/>
+<area shape="poly" title=" " alt="" coords="427,28,511,70,508,75,425,33"/>
+<area shape="rect" title=" " alt="" coords="609,79,681,104"/>
+<area shape="poly" title=" " alt="" coords="443,28,596,73,594,78,441,33"/>
+<area shape="rect" href="kMeansBase_8hpp.html" title="Base class for K&#45;means clustering algorithm." alt="" coords="9,152,142,177"/>
+<area shape="poly" title=" " alt="" coords="127,106,96,143,92,140,123,103"/>
+<area shape="rect" title=" " alt="" coords="166,152,225,177"/>
+<area shape="poly" title=" " alt="" coords="147,103,179,140,175,143,143,106"/>
+<area shape="rect" title=" " alt="" coords="5,299,68,324"/>
+<area shape="poly" title=" " alt="" coords="75,178,46,286,41,285,70,177"/>
+<area shape="rect" href="point_8hpp.html" title="Point class representing a point in a feature space." alt="" coords="74,225,157,251"/>
+<area shape="poly" title=" " alt="" coords="84,176,104,212,100,215,80,179"/>
+<area shape="poly" title=" " alt="" coords="104,253,61,291,58,288,101,249"/>
+<area shape="rect" title=" " alt="" coords="92,299,155,324"/>
+<area shape="poly" title=" " alt="" coords="119,251,123,285,118,285,114,251"/>
 </map>
 </div>
+</div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>MPI implementation of the K-means clustering algorithm. </p>
+<p>This file contains the implementation of the <code>KMeansMPI</code> class, which uses MPI (Message Passing Interface) for parallel processing to perform the K-means clustering algorithm across multiple processors. The class handles tasks such as initializing centroids, distributing data, computing new centroids, and synchronizing results among different MPI processes. This implementation is designed for efficient distributed computation in a high-performance computing environment. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

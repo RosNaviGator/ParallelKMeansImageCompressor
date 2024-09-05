@@ -76,7 +76,36 @@ $(function() {
   <div class="headertitle"><div class="title">kMeansCUDA.cu File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>CUDA implementation of the K-means clustering algorithm.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="kMeansCUDA_8cuh_source.html">kMeansCUDA.cuh</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for kMeansCUDA.cu:</div>
+<div class="dyncontent">
+<div class="center"><img src="kMeansCUDA_8cu__incl.png" border="0" usemap="#asrc_2kMeansCUDA_8cu" alt=""/></div>
+<map name="asrc_2kMeansCUDA_8cu" id="asrc_2kMeansCUDA_8cu">
+<area shape="rect" title="CUDA implementation of the K&#45;means clustering algorithm." alt="" coords="142,5,295,31"/>
+<area shape="rect" href="kMeansCUDA_8cuh.html" title="Implementation of the K&#45;means clustering algorithm using CUDA." alt="" coords="149,79,288,104"/>
+<area shape="poly" title=" " alt="" coords="221,31,221,65,216,65,216,31"/>
+<area shape="rect" title=" " alt="" coords="5,152,77,177"/>
+<area shape="poly" title=" " alt="" coords="191,106,84,149,82,144,189,102"/>
+<area shape="rect" title=" " alt="" coords="101,152,181,177"/>
+<area shape="poly" title=" " alt="" coords="208,106,166,144,162,141,204,102"/>
+<area shape="rect" title=" " alt="" coords="257,225,319,251"/>
+<area shape="poly" title=" " alt="" coords="223,103,232,137,246,176,271,213,267,216,242,179,226,139,218,105"/>
+<area shape="rect" title=" " alt="" coords="256,152,379,177"/>
+<area shape="poly" title=" " alt="" coords="236,102,292,142,289,146,233,106"/>
+<area shape="rect" href="point_8hpp.html" title="Point class representing a point in a feature space." alt="" coords="403,152,485,177"/>
+<area shape="poly" title=" " alt="" coords="256,101,395,145,394,150,254,107"/>
+<area shape="poly" title=" " alt="" coords="420,180,327,222,325,217,418,175"/>
+<area shape="rect" title=" " alt="" coords="413,225,475,251"/>
+<area shape="poly" title=" " alt="" coords="447,178,447,212,441,212,441,178"/>
+</map>
+</div>
+</div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>CUDA implementation of the K-means clustering algorithm. </p>
+<p>This file contains the implementation of the <code>KMeansCUDA</code> class, which leverages CUDA to perform the K-means clustering algorithm on the GPU. The class includes functions for initializing centroids, assigning clusters, calculating new centroids, and averaging centroids, all using CUDA kernels for parallel processing. This implementation allows for efficient processing of large datasets by utilizing GPU acceleration. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

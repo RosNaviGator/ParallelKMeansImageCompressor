@@ -205,8 +205,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main entry point for the MPI-based image compression application. </p>
-<p>This program compresses an image using the K-means clustering algorithm with MPI (Message Passing Interface) for parallel processing across multiple processors. It reads input parameters from the command line, processes the image, applies compression, and saves the compressed image to a binary file. The program also evaluates performance metrics and writes them to a CSV file.</p>
-<p>The application uses OpenCV for image processing and custom libraries for compression, file handling, and performance evaluation. </p>
+<p>This program compresses an image using the K-means clustering algorithm, leveraging CUDA for GPU acceleration. It reads input parameters from the command line, processes the image, applies compression using the GPU, and saves the compressed image to a binary file. The program also evaluates performance metrics and logs them to a CSV file. The application uses OpenCV for image processing and custom libraries for compression, file handling, and performance evaluation. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a7114aa2dd6837734db57667a298dfcc4" name="a7114aa2dd6837734db57667a298dfcc4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7114aa2dd6837734db57667a298dfcc4">&#9670;&#160;</a></span>main()</h2>
@@ -236,7 +235,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Main function for the MPI-based image compression application. </p>
-<p>This function initializes MPI, processes input arguments, reads the input image, performs preprocessing, distributes data among MPI processes, applies K-means clustering for image compression, and saves the compressed image to a binary file. It also evaluates and logs the performance metrics.</p>
+<p>This function initializes the program, processes input arguments, reads the input image, performs preprocessing, applies K-means clustering using CUDA for image compression, and saves the compressed image to a binary file. It also evaluates and logs the performance metrics.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argc</td><td>The number of command-line arguments. </td></tr>

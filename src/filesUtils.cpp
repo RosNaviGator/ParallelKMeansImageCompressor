@@ -1,3 +1,11 @@
+/**
+ * @file filesUtils.cpp
+ * @brief Utility functions for file operations.
+ * @details This file contains implementations of various utility functions used for file handling, 
+ *          including creating output directories, writing and reading binary files, checking file extensions,
+ *          and managing decoding menus for the image compression application.
+ */
+
 #include <filesUtils.hpp>
 
 void km::filesUtils::createOutputDirectories()

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kmeans_5fcuda_5fhpp_0',['KMEANS_CUDA_HPP',['../kMeansCUDA_8cuh.html#a887aff3dd5cbf6c65f07d59c767075c6',1,'kMeansCUDA.cuh']]]
+  ['kmeans_5fcuda_5fcuh_0',['KMEANS_CUDA_CUH',['../kMeansCUDA_8cuh.html#af1394a57a946d28fdfbe403d85d51554',1,'kMeansCUDA.cuh']]]
 ];

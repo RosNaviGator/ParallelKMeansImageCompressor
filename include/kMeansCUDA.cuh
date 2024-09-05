@@ -3,8 +3,11 @@
  * @brief Implementation of the K-means clustering algorithm using CUDA
  */
 
+
+/// @cond DOXYGEN_IGNORE
 #ifndef KMEANS_CUDA_HPP
 #define KMEANS_CUDA_HPP
+/// @endcond
 
 #include <random>
 #include <iostream>
@@ -120,4 +123,7 @@ namespace km
     };
 } // namespace km
 
+
+/// @cond DOXYGEN_IGNORE
 #endif // KMEANS_CUDA_HPP
+/// @endcond

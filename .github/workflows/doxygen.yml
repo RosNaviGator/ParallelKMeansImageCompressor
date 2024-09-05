@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3  # Uses the latest version of the checkout action
+      uses: actions/checkout@v4  # Updated to the latest version to support Node.js 20
 
     - name: Set up Doxygen
       run: sudo apt-get install doxygen
@@ -20,7 +20,7 @@ jobs:
       run: doxygen ./Doxyfile  # Points to Doxyfile in the root directory
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-gh-pages@v4  # Updated to the latest version to support Node.js 20
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs/html  # Folder containing the generated HTML (adjust if needed)

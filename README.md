@@ -161,4 +161,7 @@ Here you can see an overview of the execution time behaviour for increasing comp
 
 
 ## Report 
-For more details about the program, please refer to the [report](report/report.pdf)
+For any additional information on the _methods_ and _implementation_, please refer to the [report](report/report.pdf)
+
+## Instruction manual
+For a thorough and detailed explanation of the _code_, please refer to the code manual (_doxygen_) in [html](https://leonardopagliochini.github.io/ParallelKMeansImageCompressor/) or in [pdf](report/code_instruction_manual.pdf)

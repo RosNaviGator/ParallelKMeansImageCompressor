@@ -30,17 +30,17 @@ namespace km
         /**
          * @brief Displays the main menu header
          */
-        void mainMenuHeader();
+        auto mainMenuHeader() -> void;
 
         /**
          * @brief Displays the decoder header
          */
-        void decoderHeader();
+        auto decoderHeader() -> void;
 
         /**
          * @brief Displays the work done message
          */
-        void workDone();
+        auto workDone() -> void;
 
         /**
          * @brief Prints the compression information
@@ -52,7 +52,7 @@ namespace km
          * @param k Number of clusters
          * @param different_colors_size Number of different colors
          */
-        void printCompressionInformations(int &originalWidth, int &originalHeight, int &width, int &height, int &k, size_t &different_colors_size);
+        auto printCompressionInformations(int &originalWidth, int &originalHeight, int &width, int &height, int &k, size_t &different_colors_size) -> void;
 
         /**
          * @brief Displays the decoding menu
@@ -60,7 +60,7 @@ namespace km
          * @param imageNames Vector of image names
          * @param decodeDir Path of the decoding directory
          */
-        void displayDecodingMenu(std::string &path, std::vector<std::filesystem::path> &imageNames, std::filesystem::path &decodeDir);
+        auto displayDecodingMenu(std::string &path, std::vector<std::filesystem::path> &imageNames, std::filesystem::path &decodeDir) -> void;
     };
 }
 

@@ -44,7 +44,7 @@ jobs:
       # Move the PDF to the report directory
       - name: Move PDF to report directory
         run: |
-          mv doxygenDocs.pdf report/code_instruction_manual.pdf
+          mv code_instruction_manual.pdf report/code_instruction_manual.pdf
 
       # Commit and push the PDF to the repository
       - name: Commit and push PDF

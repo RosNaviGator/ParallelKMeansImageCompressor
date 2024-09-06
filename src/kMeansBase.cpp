@@ -32,17 +32,27 @@ km::KMeansBase::KMeansBase(const int& k)
     this->centroids = std::vector<Point>(k, Point());
 }
 
-std::vector<km::Point> km::KMeansBase::getPoints() const
+auto km::KMeansBase::getPoints() const -> const std::vector<km::Point>& 
 {
     return points;
 }
 
-std::vector<km::Point> km::KMeansBase::getCentroids() const
+auto km::KMeansBase::getCentroids() const -> const std::vector<km::Point>&
 {
     return centroids;
 }
 
-int km::KMeansBase::getIterations() const
+auto km::KMeansBase::getPoints()  ->  std::vector<km::Point>& 
+{
+    return points;
+}
+
+auto km::KMeansBase::getCentroids()  ->  std::vector<km::Point>&
+{
+    return centroids;
+}
+
+auto km::KMeansBase::getIterations() const -> const int&
 {
     return number_of_iterations;
 }

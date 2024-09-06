@@ -9,7 +9,7 @@
 
 #include <utilsCLI.hpp>
 
-void km::utilsCLI::mainMenuHeader()
+auto km::utilsCLI::mainMenuHeader() -> void
 {
     namespace bp = boost::process;
     bp::system("clear -x");
@@ -26,7 +26,7 @@ void km::utilsCLI::mainMenuHeader()
     std::cout << std::endl;
 }
 
-void km::utilsCLI::decoderHeader()
+auto km::utilsCLI::decoderHeader() -> void
 {
     namespace bp = boost::process;
     bp::system("clear -x");
@@ -46,7 +46,7 @@ void km::utilsCLI::decoderHeader()
     std::cout << "                                                                                                                                    \n";
 }
 
-void km::utilsCLI::workDone()
+auto km::utilsCLI::workDone() -> void
 {
     namespace bp = boost::process;
     bp::system("clear -x");
@@ -63,7 +63,7 @@ void km::utilsCLI::workDone()
     std::cout << std::endl;
 }
 
-void km::utilsCLI::printCompressionInformations(int &originalWidth, int &originalHeight, int &width, int &height, int &k, size_t &different_colors_size)
+auto km::utilsCLI::printCompressionInformations(const int &originalWidth, const int &originalHeight, const int &width, const int &height, const int &k, const size_t &different_colors_size)  -> void
 {
     std::cout << "Your original image was " << originalWidth << "x" << originalHeight << " pixels and it has " << different_colors_size << " different colors." << std::endl;
     std::cout << std::endl;
@@ -72,7 +72,7 @@ void km::utilsCLI::printCompressionInformations(int &originalWidth, int &origina
     std::cout << std::endl;
 }
 
-void km::utilsCLI::displayDecodingMenu(std::string &path, std::vector<std::filesystem::path> &imageNames, std::filesystem::path &decodeDir)
+auto km::utilsCLI::displayDecodingMenu(std::string &path, const std::vector<std::filesystem::path> &imageNames, const std::filesystem::path &decodeDir) -> void
 {
     std::cout << "Select an image:" << std::endl;
     std::cout << std::endl;

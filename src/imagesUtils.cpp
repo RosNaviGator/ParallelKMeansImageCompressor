@@ -8,7 +8,7 @@
 
 #include <imagesUtils.hpp>
 
-void km::imageUtils::preprocessing(cv::Mat& image, int& typeCompressionChoice)
+void km::imageUtils::preprocessing(cv::Mat& image,const int& typeCompressionChoice)
 {
     ConfigReader configReader;
     double resizing_factor = configReader.getResizingFactor();
@@ -33,7 +33,7 @@ void km::imageUtils::preprocessing(cv::Mat& image, int& typeCompressionChoice)
     } 
 }
 
-void km::imageUtils::defineKValue(int& k, int levelsColorsChoice, std::set<std::vector<unsigned char>>& different_colors)
+void km::imageUtils::defineKValue(int& k, const int& levelsColorsChoice, const std::set<std::vector<unsigned char>>& different_colors)
 {
     const int PERCENTAGE_SCALING_FACTOR = 100;
 
@@ -62,11 +62,11 @@ void km::imageUtils::defineKValue(int& k, int levelsColorsChoice, std::set<std::
     }
 }
 
-void km::imageUtils::pointsFromImage(cv::Mat& image, std::vector<Point>& points, std::set<std::vector<unsigned char>>& different_colors)
+void km::imageUtils::pointsFromImage(const cv::Mat& image, std::vector<Point>& points, std::set<std::vector<unsigned char>>& different_colors)
 {
-    int height = image.rows;
-    int width = image.cols;
-    int id = 0;
+    const int height = image.rows;
+    const int width = image.cols;
+    unsigned int id = 0;
     for (int y = 0; y < height; y++)
     {
         for (int x = 0; x < width; x++)

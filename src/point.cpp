@@ -13,11 +13,16 @@
 
 km::Point::Point() = default;
 //Point::Point(const int& id, const double& x, const double& y) : id(id), x(x), y(y), clusterId(-1) /*, minDist(std::numeric_limits<double>::max())*/ {}
-km::Point::Point(const int &id, const std::vector<int> &coordinates) : id(id), r(static_cast<unsigned char>(coordinates[0])), g(static_cast<unsigned char>(coordinates[1])), b(static_cast<unsigned char>(coordinates[2])) 
-{
-}
+km::Point::Point(
+    const int &id, 
+    const std::vector<int> &coordinates) : 
+    id(id), 
+    r(static_cast<unsigned char>(coordinates[0])), 
+    g(static_cast<unsigned char>(coordinates[1])), 
+    b(static_cast<unsigned char>(coordinates[2])) 
+{}
 
-auto km::Point::getFeature(int index) -> unsigned char&
+auto km::Point::getFeature(const int& index) -> unsigned char&
 {
      switch (index) 
      {
@@ -32,7 +37,7 @@ auto km::Point::getFeature(int index) -> unsigned char&
      }
 }
 
-auto km::Point::getFeature_int(int index) const -> int
+auto km::Point::getFeature_int(const int& index) const -> int
 {
     switch (index) 
     {
@@ -57,7 +62,7 @@ auto km::Point::distance(const Point &p) const -> double
 }
 
 
-void km::Point::setFeature(int index, int value)
+auto km::Point::setFeature(const int& index, const int& value) -> void
 {
     if (index == 0)
         this->r = static_cast<unsigned char>(value);

@@ -54,21 +54,21 @@ namespace km
          * @param index Index of the feature
          * @return Feature value
          */
-        auto getFeature(int index) -> unsigned char &;
+        auto getFeature(const int& index) -> unsigned char &;
 
         /**
          * @brief Gets a feature value as an integer at the specified index
          * @param index Index of the feature
          * @return Feature value as an integer
          */
-        [[nodiscard]] auto getFeature_int(int index) const -> int;
+        [[nodiscard]] auto getFeature_int(const int& index) const -> int;
 
         /**
          * @brief Sets a feature value at the specified index
          * @param index Index of the feature
          * @param x Feature value
          */
-        auto setFeature(int index, int x) -> void;
+        auto setFeature(const int& index, const int& x) -> void;
     };
 } // namespace km
 

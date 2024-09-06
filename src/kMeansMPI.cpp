@@ -16,13 +16,13 @@
 #include <iostream>
 #include <random>
 
-km::KMeansMPI::KMeansMPI(const int& k, const std::vector<Point>& points, std::vector<std::pair<int, Point>> local_points)
+km::KMeansMPI::KMeansMPI(const int& k, const std::vector<Point>& points, const std::vector<std::pair<int, Point>>& local_points)
     : KMeansBase(k, points) , local_points(local_points){}
 
-km::KMeansMPI::KMeansMPI(const int& k, std::vector<std::pair<int, Point>> local_points)
+km::KMeansMPI::KMeansMPI(const int& k, const std::vector<std::pair<int, Point>>& local_points)
     : KMeansBase(k) , local_points(local_points) {}
 
-void km::KMeansMPI::run()
+auto km::KMeansMPI::run() -> void
 {
     int rank = 0 , world_size = 0;
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
@@ -70,7 +70,7 @@ void km::KMeansMPI::run()
         std::vector<std::vector<double> > partial_sum(k, {0.0,0.0,0.0});
         std::vector<int> cluster_size(k,0);
 
-        for (const auto& point : local_points)
+        for (auto& point : local_points)
         {
             for (int i = 0; i < k; ++i)
             {

@@ -43,7 +43,7 @@ namespace km
          * @param elapsedKmeans Elapsed time for K-means clustering
          * @param num_processes Number of processes (optional, default=0)
          */
-        auto writeCSV(int different_colors_size, int k, int n_points, double elapsedKmeans, int number_of_iterations, int num_processes = 0) -> void;
+        auto writeCSV(const int& different_colors_size, const int& k, const int& n_points, const double& elapsedKmeans, const int& number_of_iterations, const int& num_processes = 0) -> void;
 
         /**
          * @brief Extracts the file name from the output path
@@ -58,7 +58,7 @@ namespace km
          * @param img Image name
          * @param method Method used
          */
-        auto fillPerformance(int choice, const std::string &img, const std::string &method) -> void;
+        auto fillPerformance(const int& choice, const std::string &img, const std::string &method) -> void;
 
     private:
         /**
@@ -77,7 +77,7 @@ namespace km
          * @param time Elapsed time
          * @param num_processes Number of processes
          */
-        auto appendToCSV(const std::string &filename, int n_diff_colors, int k, int n_colors, const std::string &compType, double time, int num_processes, int number_of_iteratios) -> void;
+        auto appendToCSV(const std::string &filename, const int& n_diff_colors, const int& k, const int& n_colors, const std::string &compType, const double& time, const int& num_processes, const int& number_of_iteratios) -> void;
 
         std::string img;    ///< Image name
         int choice{};       ///< Choice of performance evaluation

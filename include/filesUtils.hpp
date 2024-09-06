@@ -46,7 +46,7 @@ namespace km
          * @param points Vector of points
          * @param centroids Vector of centroids
          */
-        auto writeBinaryFile(std::string &outputPath, int &width, int &height, int &k, std::vector<Point> points, std::vector<Point> centroids) -> void;
+        auto writeBinaryFile(const std::string &outputPath,const int &width,const int &height,const int &k, std::vector<Point>& points, std::vector<Point>& centroids) -> void;
 
         /**
          * @brief Checks if a file has the correct extension
@@ -69,7 +69,7 @@ namespace km
          * @param imageCompressed Compressed image matrix
          * @return Number of clusters
          */
-        auto readBinaryFile(std::string &path, cv::Mat &imageCompressed) -> int;
+        auto readBinaryFile(const std::string &path, cv::Mat &imageCompressed) -> int;
     };
 }
 

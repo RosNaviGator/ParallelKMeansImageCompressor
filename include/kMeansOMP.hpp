@@ -36,7 +36,7 @@ namespace km
         /**
          * @brief Runs the K-means clustering algorithm using OpenMP
          */
-        void run() override;
+        auto run() -> void override;
     };
 } // namespace km
 

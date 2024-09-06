@@ -87,33 +87,36 @@ namespace km
         void run();
 
         /**
-         * @brief Prints the clusters
-         */
-        void printClusters() const;
-
-        /**
-         * @brief Plots the clusters
-         */
-        void plotClusters();
-
-        /**
          * @brief Gets the points
-         * @return Vector of points
+         * @return Vector of constant points
          */
-        auto getPoints() -> std::vector<Point>;
+        auto getPoints() const -> const std::vector<Point>&;
 
         /**
          * @brief Gets the centroids
-         * @return Vector of centroids
+         * @return Vector of constant centroids
          *
          */
-        auto getCentroids() -> std::vector<Point>;
+        auto getCentroids() const -> const std::vector<Point>&;
+
+        /**
+         * @brief Gets the points
+         * @return Vector of modifiable points
+         */
+        auto getPoints() -> std::vector<Point>&;
+
+        /**
+         * @brief Gets the centroids
+         * @return Vector of modifiable centroids
+         *
+         */
+        auto getCentroids() -> std::vector<Point>&;
 
         /**
          * @brief Gets the number of iterations
          * @return Number of iterations
          */
-        auto getIterations() -> int;
+        auto getIterations() const -> const int&;
 
     private:
         int k;                        ///< Number of clusters

@@ -17,7 +17,7 @@
     km::KMeansOMP::KMeansOMP(const int& k, const std::vector<Point>& points)
         : KMeansBase(k, points) {}
 
-void km::KMeansOMP::run()
+auto km::KMeansOMP::run() -> void
 {
     bool change = true;
     int iter = 0;
@@ -34,7 +34,7 @@ void km::KMeansOMP::run()
         {
             
             #pragma omp for
-            for (Point& p : points)
+            for (auto& p : points)
             {
                 double minDist = std::numeric_limits<double>::max();
                 int nearest = 0;

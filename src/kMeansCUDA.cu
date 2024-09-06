@@ -71,7 +71,7 @@ __global__ void km::average_centroids(int *centroids, int *counts, int k, int di
     }
 }
 
-void km::KMeansCUDA::run()
+auto km::KMeansCUDA::run() -> void
 {
     int MAX_ITER = 100;
     int n = points.size();
@@ -178,17 +178,27 @@ void km::KMeansCUDA::run()
     cudaFree(d_counts);
 }
 
-auto km::KMeansCUDA::getCentroids() -> std::vector<Point>
+auto km::KMeansCUDA::getCentroids() const -> const std::vector<Point>&
 {
     return centroids;
 }
 
-auto km::KMeansCUDA::getPoints() -> std::vector<Point>
+auto km::KMeansCUDA::getPoints() const -> const std::vector<Point>&
 {
     return points;
 }
 
-auto km::KMeansCUDA::getIterations() -> int
+auto km::KMeansCUDA::getCentroids() -> std::vector<Point>&
+{
+    return centroids;
+}
+
+auto km::KMeansCUDA::getPoints() -> std::vector<Point>&
+{
+    return points;
+}
+
+auto km::KMeansCUDA::getIterations() const -> const int&
 {
     return number_of_iterations;
 }

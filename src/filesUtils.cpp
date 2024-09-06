@@ -8,7 +8,7 @@
 
 #include <filesUtils.hpp>
 
-void km::filesUtils::createOutputDirectories()
+auto km::filesUtils::createOutputDirectories() -> void
 {
     // Obtain the path of the executable file
     std::filesystem::path exePath = std::filesystem::canonical("/proc/self/exe");
@@ -43,7 +43,7 @@ void km::filesUtils::createOutputDirectories()
     }
 }
 
-void km::filesUtils::writeBinaryFile(std::string& outputPath, int& width, int& height, int& k, std::vector<Point> points , std::vector<Point> centroids)
+auto km::filesUtils::writeBinaryFile(const std::string& outputPath, const int& width, const int& height, const int& k, std::vector<Point>& points , std::vector<Point>& centroids) -> void
 {
     std::cout << "Saving the Compressed Image..." << std::endl;
     std::ofstream outputFile(outputPath, std::ios::app);
@@ -109,7 +109,7 @@ auto km::filesUtils::isCorrectExtension(const std::filesystem::path &filePath, c
                         { return extension == ext; }) != imageExtensions.end();
 }
 
-void km::filesUtils::createDecodingMenu(std::filesystem::path& decodeDir, std::vector<std::filesystem::path>& imageNames)
+auto km::filesUtils::createDecodingMenu(std::filesystem::path& decodeDir, std::vector<std::filesystem::path>& imageNames) -> void
 {
     std::filesystem::path exePath = std::filesystem::canonical("/proc/self/exe");
     std::filesystem::path buildPath = exePath.parent_path();
@@ -140,7 +140,7 @@ void km::filesUtils::createDecodingMenu(std::filesystem::path& decodeDir, std::v
     }
 }
 
-auto km::filesUtils::readBinaryFile(std::string &path, cv::Mat &imageCompressed) -> int
+auto km::filesUtils::readBinaryFile(const std::string &path, cv::Mat &imageCompressed) -> int
 {
     std::ifstream inputFile(path, std::ios::binary);
     if (!inputFile.is_open())

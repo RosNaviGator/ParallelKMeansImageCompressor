@@ -55,22 +55,34 @@ namespace km
         virtual void run() = 0;
 
         /**
-         * @brief Gets the poinots
-         * @return Vector of points
+         * @brief Gets the points
+         * @return Vector of constant points
          */
-        [[nodiscard]] auto getPoints() const -> std::vector<Point>;
+        [[nodiscard]] auto getPoints() const -> const std::vector<Point>&;
 
         /**
          * @brief Gets the centroids
-         * @return Vector of centroids
+         * @return Vector of constant centroids
          */
-        [[nodiscard]] auto getCentroids() const -> std::vector<Point>;
+        [[nodiscard]] auto getCentroids() const -> const std::vector<Point>&;
+
+        /**
+         * @brief Gets the points
+         * @return Vector of modifiable points
+         */
+        [[nodiscard]] auto getPoints() -> std::vector<Point>&;
+
+        /**
+         * @brief Gets the centroids
+         * @return Vector of modifiable centroids
+         */
+        [[nodiscard]] auto getCentroids() ->  std::vector<Point>&;
 
         /**
          * @brief Gets the number of iterations
          * @return Number of iterations
          */
-        [[nodiscard]] auto getIterations() const -> int;
+        [[nodiscard]] auto getIterations() const -> const int&;
 
     protected:
         int k;                        ///< Number of clusters

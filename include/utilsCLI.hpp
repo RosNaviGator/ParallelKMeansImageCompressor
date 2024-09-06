@@ -52,7 +52,7 @@ namespace km
          * @param k Number of clusters
          * @param different_colors_size Number of different colors
          */
-        auto printCompressionInformations(int &originalWidth, int &originalHeight, int &width, int &height, int &k, size_t &different_colors_size) -> void;
+        auto printCompressionInformations(const int &originalWidth, const int &originalHeight, const int &width, const int &height, const int &k, const size_t &different_colors_size) -> void;
 
         /**
          * @brief Displays the decoding menu
@@ -60,7 +60,7 @@ namespace km
          * @param imageNames Vector of image names
          * @param decodeDir Path of the decoding directory
          */
-        auto displayDecodingMenu(std::string &path, std::vector<std::filesystem::path> &imageNames, std::filesystem::path &decodeDir) -> void;
+        auto displayDecodingMenu(std::string &path, const std::vector<std::filesystem::path> &imageNames, const std::filesystem::path &decodeDir) -> void;
     };
 }
 

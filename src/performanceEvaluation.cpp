@@ -14,14 +14,14 @@
 
 km::Performance::Performance() = default;
 
-void km::Performance::fillPerformance(int choice, const std::string &img, const std::string &method)
+auto km::Performance::fillPerformance(const int& choice, const std::string &img, const std::string &method) -> void
 {
     this->choice = choice;
     this->img = std::move(img);
     this->method = std::move(method);
 }
 
-void km::Performance::writeCSV(int different_colors_size, int k, int n_points, double elapsedKmeans, int number_of_iterations, int num_processes)
+auto km::Performance::writeCSV(const int& different_colors_size, const int& k, const int& n_points, const double& elapsedKmeans, const int& number_of_iterations, const int& num_processes) -> void
 {
     std::string filename = "./performanceData.csv";
     createOrOpenCSV(filename);
@@ -44,7 +44,7 @@ void km::Performance::writeCSV(int different_colors_size, int k, int n_points, d
     appendToCSV(filename, different_colors_size, k, n_points, compType, elapsedKmeans, number_of_iterations, num_processes);
 }
 
-void km::Performance::createOrOpenCSV(const std::string &filename)
+auto km::Performance::createOrOpenCSV(const std::string &filename) -> void
 {
     std::ifstream infile(filename);
     if (!infile.good())
@@ -60,7 +60,7 @@ void km::Performance::createOrOpenCSV(const std::string &filename)
     }
 }
 
-void km::Performance::appendToCSV(const std::string &filename, int startingColors, int remainingColors, int num_points, const std::string &compType, double time, int number_of_iterations, int num_processes)
+auto km::Performance::appendToCSV(const std::string &filename, const int& startingColors, const int& remainingColors, const int& num_points, const std::string &compType, const double& time, const int& number_of_iterations, const int& num_processes) -> void
 {
     std::ofstream file(filename, std::ios::app); // Open file for appending
     if (!file.is_open())

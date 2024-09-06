@@ -17,7 +17,7 @@
 km::KMeansSequential::KMeansSequential(const int& k, const std::vector<Point>& points)
     : KMeansBase(k, points) {}
 
-void km::KMeansSequential::run()
+auto km::KMeansSequential::run() -> void 
 {
     bool change = true;
     int iter = 0;
@@ -31,7 +31,7 @@ void km::KMeansSequential::run()
 
         counts = std::vector<int>(k, 0);
 
-        for (Point& p : points)
+        for (auto& p : points)
         {
             double minDist = std::numeric_limits<double>::max();
             int nearest = 0;

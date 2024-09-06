@@ -62,7 +62,11 @@ auto main() -> int
 
     cv::Mat imageCompressed; 
 
-    readBinaryFile(path, imageCompressed);
+    if (readBinaryFile(path, imageCompressed) == 1)
+    {
+        std::cerr << "Error reading the file." << std::endl;
+        return 1;
+    }
 
     cv::cvtColor(imageCompressed, imageCompressed, cv::COLOR_YCrCb2BGR);
 

@@ -35,7 +35,7 @@ namespace km
         /**
          * @brief Runs the K-means clustering algorithm
          */
-        void run() override;
+        auto run() -> void override;
     };
 }
 

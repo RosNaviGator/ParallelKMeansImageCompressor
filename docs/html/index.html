@@ -72,11 +72,7 @@ $(function() {
   <div class="headertitle"><div class="title">Parallel Kmeans-based Images Compressor </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a> </p><div class="image">
-<img src="milanoCompressed.png" alt=""/>
-<div class="caption">
-milano</div></div>
-    <p>This project implements a <b>parallel KMeans-based image colors compressor</b>, aimed at reducing the number of colors in a natural image while preserving its overall visual appearance. The program clusters similar colors using the <b>KMeans algorithm</b> and applies <b>parallel computing techniques</b> to compress the image through the <b>color quantization</b> technique. It supports <b>sequential</b>, <b>OpenMP</b>, <b>MPI</b>, and <b>CUDA</b> implementations to explore different levels of performance and scalability.</p>
+<div class="textblock"><p><a class="anchor" id="md_README"></a> </p><div align="center"> <img src=".readmePictures/milanoCompressed.png" alt="" width="1200" height="auto" class="inline"/> </div><p>This project implements a <b>parallel KMeans-based image colors compressor</b>, aimed at reducing the number of colors in a natural image while preserving its overall visual appearance. The program clusters similar colors using the <b>KMeans algorithm</b> and applies <b>parallel computing techniques</b> to compress the image through the <b>color quantization</b> technique. It supports <b>sequential</b>, <b>OpenMP</b>, <b>MPI</b>, and <b>CUDA</b> implementations to explore different levels of performance and scalability.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Authors</h1>
 <ul>
@@ -95,22 +91,21 @@ Authors</h1>
  <b>Politecnico di Milano</b></p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Doxygen Documentation</h1>
-<p>The documentation of the project can be found <a href="docs/html/index.html">here</a>.</p>
+<p>The documentation of the project can be found <a href="https://leonardopagliochini.github.io/ParallelKMeansImageCompressor/">here</a>.</p>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Prerequisites</h1>
 <h2><a class="anchor" id="autotoc_md4"></a>
-TO DO</h2>
-<ul>
-<li>testare con VM, alla fine!</li>
-<li>scrivere effettivamente bash commands per installare quant orichiesto (boost/process, opencv, etc ...)</li>
-<li>DISATTIVARE mk modules, va detto</li>
-<li>versione di g++ giusta per nostro MPIC++, quella che vada con <code>span</code> e altre cose nuove dello standard 20 o maggiore (mi pare)</li>
-<li>verrsione giusta di g++ per la versione di cuda nostra (ste robe le vedi anche dalle flag del compilatore nel Makefile)</li>
-<li>c++ 20? 23? Checckare non ricordo</li>
-<li>meglio usare <code>openMPI</code> rispetto a <code>mpich</code>, ha sempre funzionato il primo, il secondo ha dato problemi talvolta</li>
-<li>le librerie che mi vengono in mente sono <code>boost/process</code>, <code>opencv2</code>, se ce ne sono altre saranno negli <code>#include</code></li>
-<li>puiler dalla mierda lo repo!</li>
-</ul>
+OpenCV C++ Library</h2>
+<p>A comprehensive library for computer vision and image processing tasks. You can refer to the <a href="https://opencv.org/releases/">official page</a> to download. </p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Mpicc</h2>
+<p>A C compiler wrapper for parallel programming with the MPI library. It is advised to use <code>openmpi</code>, <a href="https://www.open-mpi.org/">official page</a>, as we experienced some bugs with <code>mpich</code> due to experimental version of <code>g++</code>. </p>
+<h2><a class="anchor" id="autotoc_md6"></a>
+OpenMP</h2>
+<p>A C++ API for parallel programming on shared-memory systems. </p>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Boost</h2>
+<p>Boost is a versatile, cross-platform, and comprehensive collection of highly optimized, portable, reliable, and robust C++ libraries designed to enhance software development efficiency and extensibility.</p>
 <h1><a class="anchor" id="autotoc_md8"></a>
 Getting Started</h1>
 <h2><a class="anchor" id="autotoc_md9"></a>
@@ -132,71 +127,96 @@ Arch based</h3>
 Compile&amp;Run</h2>
 <p>Program can be built with or without <b>CUDA</b>, you obviously <em>need</em> <code>nvcc</code> to be able to compile with <b>CUDA</b>. To compile the project, navigate to the <b>project root directory</b> in your terminal and run the following commands. </p>
 <h3><a class="anchor" id="autotoc_md14"></a>
+DO NOT USE &lt;tt&gt;mkmodules&lt;/tt&gt;</h3>
+<p>Program uses a version of <code>g++</code> with very recent standards, that were not supported by <code>mkmodules</code>, it is important to <b>unload</b> modules, including <code>gcc-glibc</code> in order to succesfully compile. </p>
+<h3><a class="anchor" id="autotoc_md15"></a>
 Without CUDA</h3>
 <div class="fragment"><div class="line"># make without running</div>
 <div class="line">make</div>
 <div class="line"># make and run the menu (or simply run if already built)</div>
 <div class="line">make run</div>
-</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md15"></a>
+</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md16"></a>
 With cuda</h3>
 <div class="fragment"><div class="line"># make without running (bulding also CUDA)</div>
 <div class="line">make cuda</div>
 <div class="line"># make and run the menu (building also CUDA)</div>
 <div class="line">make cudarun</div>
-</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md16"></a>
-Geek stuff</h3>
+</div><!-- fragment --> <h3><a class="anchor" id="autotoc_md17"></a>
+Standard Run</h3>
 <p>For a standard run program will guide you to choose an <em>image path</em>, <em>parallel method</em>, <em>configuration settings</em>. See section "What to expect" for more infromation.</p>
-<h1><a class="anchor" id="autotoc_md17"></a>
+<h3><a class="anchor" id="autotoc_md18"></a>
+Debug/Preconfigured Run</h3>
+<p>If you want to avoid having to input all the information through the prompts requested by the program, you can preconfigure the options in the <code>.config</code> file.</p>
+<h1><a class="anchor" id="autotoc_md19"></a>
 What to expect</h1>
 <p>Once the program is started, the following screen appears, through which it is possible to compress a new image or decompress an already compressed image.</p>
-<div class="image">
-<img src="mainMenuScreenshot.png" alt=""/>
-<div class="caption">
-alt text</div></div>
-    <p>If you choose the "Compress an image" option you can select one type of compressor (sequential, MPI or OpenMP), the type of compression and the path of the original image.</p>
-<p>The result image will be created in the output folder and you can rerun <code>./exe</code> selecting the decoding function to decode it.</p>
-<h1><a class="anchor" id="autotoc_md18"></a>
+<div align="center"> <img src=".readmePictures/archBark.png" alt="" width="1000" height="auto" class="inline"/> </div><h2><a class="anchor" id="autotoc_md20"></a>
+Compress an image</h2>
+<h3><a class="anchor" id="autotoc_md21"></a>
+Set</h3>
+<p>If you choose the "Compress an image" option you will be asked to select:</p><ol type="1">
+<li><b>Type of parallelization</b> among <em>sequential</em>, <em>MPI</em>, <em>OpenMP</em> (also CUDA if <code>nvcc</code> was used during the compiling process), the type of compression, and the path of the original image.</li>
+<li><b>Color level</b>: five levels of compression, each corresponding to a certain <em>percentage of retained colors</em> (it's possible to visualize such percentages in the <code>.config</code> file).</li>
+<li><b>Image path</b>: The location of the original image file to be compressed.</li>
+<li><b>Three methods of compression</b>:<ul>
+<li><b>Light Compression</b>: Preserves the most detail, recommended for smaller images where maintaining high quality is a priority. This level may take more time to process.</li>
+<li><b>Medium Compression</b>: Uses chroma subsampling to reduce image size and processing time. This is a balanced option for moderate size reduction while retaining good image quality.</li>
+<li><b>Heavy Compression</b>: Applies both chroma subsampling and resizing, significantly reducing the image size. Suitable for larger images where file size reduction is more important than retaining the highest possible quality. </li>
+</ul>
+</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md22"></a>
+Launch</h3>
+<p>After prompting all required settings the <code>menu</code> executable will exploit <code>boost/process</code> to <em>launch</em> a specific <em>process</em> (executable) relative to the chosen method, using the given <em>settings as arguments</em>. </p>
+<h2><a class="anchor" id="autotoc_md23"></a>
+Decode image</h2>
+<p>The menu will launch the <code>decoder</code> <em>process</em> (again with <code>boost/process</code>), there you will be asked to choose which <code>.kc</code> ('kmeans-compressed') to decode and visualize. Program creates list of <code>.kc</code> available to decode from the <code>output</code> folder.</p>
+<div align="center"> <img src=".readmePictures/mainMenu_flow.jpg" alt="" width="600" height="auto" class="inline"/> </div><h1><a class="anchor" id="autotoc_md24"></a>
 Project Structure</h1>
 <p>The project is organized as follows: </p>
-<h3><a class="anchor" id="autotoc_md19"></a>
+<h3><a class="anchor" id="autotoc_md25"></a>
 Folders</h3>
 <ul>
-<li><code>benchmarkImages</code>: This folder contains the images used for benchmarking the program. It can be used to test the program's performance.</li>
-<li><code>outputs</code>: This folder contains the compressed images. After installing the program, you may notice that the outputs folder is not present. However, don't worry! It will be automatically created during the first execution of the program.</li>
-<li><code>include</code>: This folder contains the header files of the project. These define the classes and functions that are used in the program.</li>
-<li><code>src</code>: This folder contains the source files of the project. These files contain the implementation of the classes and functions defined in the header files.</li>
-<li><code>build</code>: This folder contains the object files generated during the compilation process.</li>
+<li><code>benchmarkImages</code>: Images used for benchmarking the program. It can be used to test the program's performance.</li>
+<li><code>outputs</code>: Contains the compressed images. After installing the program, you may notice that the outputs folder is not present. However, don't worry! It will be automatically created during the first execution of the program.</li>
+<li><code>include</code>: Header files of the project. These define the classes and functions that are used in the program.</li>
+<li><code>src</code>: Contains the source files of the project. These files contain the implementation of the classes and functions defined in the header files.</li>
+<li><code>build</code>: Object files generated during the compilation process.</li>
+<li><code>dependencyInstaller</code>: This folder contains the two scripts that can be used to install the required libraries.</li>
+<li><code>performanceEvaluation</code>: Python codes used to evaluate performance and scalability of the four type of executions.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md20"></a>
+<h3><a class="anchor" id="autotoc_md26"></a>
 Files and Executables</h3>
 <ul>
-<li><code>exe</code>: This is the executable file generated after compiling the project. It is the main program that can be executed to compress or decompress images.</li>
+<li><code>menu</code>: This is the executable file generated after compiling the project. It is the main program that can be executed to compress or decompress images.</li>
 <li><code>Makefile</code>: This file contains the instructions for compiling the project. It specifies the dependencies and the commands to compile the project.</li>
 <li><code>.config</code>: This file contains the configuration of the program. It is used to store some hyperparameters that can be modified to change the behavior of the program.</li>
+<li><code>Doxyfile</code>: Is a configuration file used by Doxygen to customize the generation of documentation from annotated source code.</li>
+<li><code>Readme.md</code>: You already know that buddy ;)</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md21"></a>
+<h1><a class="anchor" id="autotoc_md27"></a>
 How does it work?</h1>
-<p>The program compresses images by reducing the number of colors in the image. It does this by clustering the pixels into k color groups using the k-means clustering algorithm. The k-means algorithm is an unsupervised learning algorithm that partitions the data into k clusters based on the similarity of the data points. In the context of image compression, the data points are the pixels of the image, and the clusters are the colors that represent the image.</p>
-<div class="image">
-<img src="Albero-removebg-preview.png" alt=""/>
-<div class="caption">
-tree</div></div>
-    <p>The k-means algorithm works as follows:</p><ol type="1">
-<li>Initialize k centroids randomly.</li>
+<p>KMeans is a widely used clustering technique that partitions data into a given number K of clusters. In the context of image <b>compression</b> KMeans is employed to reduce the color palette by grouping similar colors (<b>color quantization</b>), possibly minimizing the data required to represent the image.</p>
+<div align="center"> <img src=".readmePictures/macchinina.jpg" alt="" width="600" height="auto" class="inline"/> </div><h2><a class="anchor" id="autotoc_md28"></a>
+Kmeans</h2>
+<p>The algorithm begins with an initialization phase, where $k$ initial cluster centers (means) $\mu_1^0, \mu_2^0, \ldots, \mu_k^0$ are chosen. After initialization, the algorithm enters an iterative phase, often referred to as <b>Lloyd’s algorithm</b>, which repeatedly executes two main steps until convergence is reached.</p><ol type="1">
 <li>Assign each data point to the nearest centroid.</li>
 <li>Recompute the centroids based on the data points assigned to them.</li>
-<li>Repeat steps 2 and 3 until convergence.</li>
 </ol>
-<p>The k-means algorithm is an iterative algorithm that converges to a local minimum. The quality of the compression depends on the value of k, the number of clusters. A higher value of k will result in a better representation of the image but will require more memory to store the centroids.</p>
-<h1><a class="anchor" id="autotoc_md22"></a>
-Parallelization Techniques</h1>
+<p>It is important to note that <b>K-means-based compression</b> is a form of <b>lossy compression</b>. Unlike lossless compression techniques, where the original data can be perfectly reconstructed,lossy compression involves some level of data loss. In the context of K-means, each pixel's color is approximated by the nearest centroid among the $k$ chosen colors. This approximation inevitably leads to a loss of some color information, making the <b>compression irreversible</b>. The degree of perceptible data loss is often minimal when the number of clusters $k$ is adequately chosen, but it can become noticeable if $k$ is too low, resulting in a more significant approximation error</p>
+<h2><a class="anchor" id="autotoc_md29"></a>
+Parallelization Techniques</h2>
 <p>The program uses several parallelization techniques to enhance performance. These techniques include:</p><ul>
 <li><b>OpenMP</b>: OpenMP is an API for parallel programming on shared-memory systems. It allows the program to parallelize the computation of the k-means algorithm by distributing the work among multiple threads.</li>
 <li><b>MPI</b>: MPI is a message-passing library for parallel programming on distributed-memory systems. It allows the program to parallelize the computation of the k-means algorithm by distributing the work among multiple processes running on different nodes.</li>
+<li><b>CUDA</b>: is a parallel computing platform and programming model developed by NVIDIA for general-purpose computing on GPUs (Graphics Processing Units). CUDA enables the acceleration of computationally intensive algorithms, like k-means clustering, by offloading the work to GPUs, which can process thousands of threads simultaneously. This results in a significant speedup, especially for tasks that involve large datasets and require high computational throughput.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md23"></a>
-Benchmarking</h1>
-<p>The program includes a benchmarking feature that allows you to test the performance of the program on different images. The benchmarking feature measures the time taken to compress an image using different compression techniques and different values of k. The benchmarking results are displayed in a table that shows the time taken to compress the image for each value of k and each compression technique. </p>
+<h2><a class="anchor" id="autotoc_md30"></a>
+What Parallelization Technique Should I Choose?</h2>
+<p>That is a really good question... as everithing in computer science <b>it depends</b>. Here you can see an overview of the execution time behaviour for increasing complexity tasks:</p>
+<div align="center"> <img src=".readmePictures/generalPerformanceEvaluation.png" alt="" width="800" height="auto" class="inline"/> </div><h1><a class="anchor" id="autotoc_md31"></a>
+Report</h1>
+<p>For more details about the program, please refer to the <a href="report/report.pdf">report</a> </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

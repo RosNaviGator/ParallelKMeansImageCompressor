@@ -1,0 +1,46 @@
+name: Generate and Deploy LaTeX PDF
+
+on:
+  push:
+    branches:
+      - main # Replace with your branch if different
+  workflow_dispatch:
+
+jobs:
+  compile-latex:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Install LaTeX tools
+      - name: Install LaTeX tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-latex-recommended texlive-latex-extra texlive-lang-all
+
+      # Compile the LaTeX files into PDF
+      - name: Compile LaTeX to PDF
+        run: |
+          cd docs/latex
+          make
+
+      # Copy the generated PDF to the root directory
+      - name: Copy PDF to root directory
+        run: |
+          cp docs/latex/refman.pdf refman.pdf
+
+      # Rename the PDF in the root directory
+      - name: Rename PDF in root directory
+        run: |
+          mv refman.pdf doxygenDocs.pdf
+
+      # Commit and push the PDF to the repository
+      - name: Commit and push PDF
+        run: |
+          git config --global user.name "GitHub Action" # Use a generic name for commits
+          git config --global user.email "action@github.com" # Generic email for commits
+          git add doxygenDocs.pdf
+          git commit -m "Add generated Doxygen PDF"
+          git push origin main # Ensure this is the correct branch

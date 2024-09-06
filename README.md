@@ -8,6 +8,7 @@ This project implements a __parallel KMeans-based image colors compressor__, aim
 
 
 ## Authors 
+5 September 2024
 - __Leonardo Ignazio Pagliochini__  Master's Degree student in High-Performance Computing Engineering  at __Politecnico di Milano__
   
   GitHub: [leonardopagliochini](https://github.com/leonardopagliochini)  

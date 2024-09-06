@@ -1,11 +1,22 @@
 var searchData=
 [
-  ['r_0',['r',['../classkm_1_1Point.html#a75a4010e07878ca708794bc2be9f8d86',1,'km::Point']]],
-  ['readbinaryfile_1',['readBinaryFile',['../namespacekm_1_1filesUtils.html#a210cdb1e22d18e8fa05c3a4c0d9708e2',1,'km::filesUtils']]],
-  ['readconfigfile_2',['readConfigFile',['../classkm_1_1ConfigReader.html#a19f406128a55836228ef667670ecfe50',1,'km::ConfigReader']]],
-  ['readme_2emd_3',['README.md',['../README_8md.html',1,'']]],
-  ['repo_4',['Cloning repo',['../index.html#autotoc_md9',1,'']]],
-  ['requiredvariables_5',['requiredVariables',['../classkm_1_1ConfigReader.html#acaf9b9f64500ea2a143a227528ca62d5',1,'km::ConfigReader']]],
-  ['resizing_5ffactor_6',['resizing_factor',['../classkm_1_1ConfigReader.html#a3e33469633eb5220b3556b76682856ed',1,'km::ConfigReader']]],
-  ['run_7',['run',['../index.html#autotoc_md13',1,'Compile&amp;Run'],['../classkm_1_1KMeansBase.html#ada4d6b7154a5200a538c23f48acfc5bb',1,'km::KMeansBase::run()'],['../classkm_1_1KMeansCUDA.html#a4d748e05b8ebad9ec535d0c33ec3f3ab',1,'km::KMeansCUDA::run()'],['../classkm_1_1KMeansMPI.html#a776852d58db859f83090ba45c1bd7034',1,'km::KMeansMPI::run()'],['../classkm_1_1KMeansOMP.html#a8bb6bca3f78d72b3976d27e1abf28e06',1,'km::KMeansOMP::run()'],['../classkm_1_1KMeansSequential.html#a322350cd5d3dcd0e428fb4208f901a7b',1,'km::KMeansSequential::run()']]]
+  ['parallel_20kmeans_20based_20images_20compressor_0',['Parallel Kmeans-based Images Compressor',['../index.html',1,'']]],
+  ['parallelization_20technique_20should_20i_20choose_1',['What Parallelization Technique Should I Choose?',['../index.html#autotoc_md30',1,'']]],
+  ['parallelization_20techniques_2',['Parallelization Techniques',['../index.html#autotoc_md29',1,'']]],
+  ['pattern_3',['pattern',['../classkm_1_1ConfigReader.html#a4ea327118b44faeebb08e385d5e15de8',1,'km::ConfigReader']]],
+  ['performance_4',['performance',['../classkm_1_1Performance.html',1,'km::Performance'],['../classkm_1_1Performance.html#ad39563b2eef7cbec7b47b8de9c28f16f',1,'km::Performance::Performance()']]],
+  ['performanceevaluation_2ecpp_5',['performanceEvaluation.cpp',['../performanceEvaluation_8cpp.html',1,'']]],
+  ['performanceevaluation_2ehpp_6',['performanceEvaluation.hpp',['../performanceEvaluation_8hpp.html',1,'']]],
+  ['plotclusters_7',['plotClusters',['../classkm_1_1KMeansCUDA.html#a0d0053ec128a846d849778fb2a745f93',1,'km::KMeansCUDA']]],
+  ['point_8',['point',['../classkm_1_1Point.html',1,'km::Point'],['../classkm_1_1Point.html#af027bc12e0fa059a646f7c2f55037593',1,'km::Point::Point(const int &amp;id, const std::vector&lt; int &gt; &amp;coordinates)'],['../classkm_1_1Point.html#aa891dfb4d34712d231583e513d08333e',1,'km::Point::Point()']]],
+  ['point_2ecpp_9',['point.cpp',['../point_8cpp.html',1,'']]],
+  ['point_2ehpp_10',['point.hpp',['../point_8hpp.html',1,'']]],
+  ['points_11',['points',['../classkm_1_1KMeansBase.html#a73dfe23dfbb0c544cd128255e291aa05',1,'km::KMeansBase::points'],['../classkm_1_1KMeansCUDA.html#a0999290e0b7623ccce65d11abf0c4a44',1,'km::KMeansCUDA::points']]],
+  ['pointsfromimage_12',['pointsFromImage',['../namespacekm_1_1imageUtils.html#a5a09c5c3205050498f807852bafe244f',1,'km::imageUtils']]],
+  ['preconfigured_20run_13',['Debug/Preconfigured Run',['../index.html#autotoc_md18',1,'']]],
+  ['preprocessing_14',['preprocessing',['../namespacekm_1_1imageUtils.html#aa01205ffe26b0f4c815d5750a4ff0e1c',1,'km::imageUtils']]],
+  ['prerequisites_15',['Prerequisites',['../index.html#autotoc_md3',1,'']]],
+  ['printclusters_16',['printClusters',['../classkm_1_1KMeansCUDA.html#ab744aaeae716cb1bb591663160c0dfe0',1,'km::KMeansCUDA']]],
+  ['printcompressioninformations_17',['printCompressionInformations',['../namespacekm_1_1utilsCLI.html#ae362e74bbc04f2d92c857f4cb9c1373d',1,'km::utilsCLI']]],
+  ['project_20structure_18',['Project Structure',['../index.html#autotoc_md24',1,'']]]
 ];

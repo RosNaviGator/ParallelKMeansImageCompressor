@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.6.19)  6 SEP 2024 01:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.6.19)  6 SEP 2024 01:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -857,16 +857,18 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 205.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 5.39996pt on input line 205.
- [1]
+ [1] [2]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 6.29996pt on input line 205.
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 20
 5.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [2] [3] [4] [5] [6]
+) [3] [4] [5] [6]
 Package hyperref Info: Option `pageanchor' set `true' on input line 208.
- (./index.tex
+
+(./index.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 14.3999pt on input line 1.
@@ -874,48 +876,34 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 14.3999pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 16.19989pt on input line 1.
- <./milanoCompressed.png>
-<milanoCompressed.png, id=1277, 1827.82875pt x 367.3725pt>
-File: milanoCompressed.png Graphic file (type png)
-<use milanoCompressed.png>
-Package pdftex.def Info: milanoCompressed.png  used on input line 7.
-(pdftex.def)             Requested size: 455.22687pt x 91.49533pt.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 12.
+(Font)              scaled to size 10.79993pt on input line 7.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
-5.
-
+0.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 15.
+(Font)              scaled to size 8.09995pt on input line 10.
  [1
 
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 44.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 44.
- <./mainMenuScreenshot.png (PNG copy)>
-<mainMenuScreenshot.png, id=1295, 1608.0075pt x 380.42125pt>
-File: mainMenuScreenshot.png Graphic file (type png)
-<use mainMenuScreenshot.png>
-Package pdftex.def Info: mainMenuScreenshot.png  used on input line 86.
-(pdftex.def)             Requested size: 455.24442pt x 107.70139pt.
+(Font)              scaled to size 8.09995pt on input line 31.
  [2]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 77.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 5.39996pt on input line 77.
+
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 94.
+(hyperref)                than one, level fixed on input line 91.
 
-[3] <./Albero-removebg-preview.png>
-<Albero-removebg-preview.png, id=1322, 622.325pt x 403.5075pt>
-File: Albero-removebg-preview.png Graphic file (type png)
-<use Albero-removebg-preview.png>
-Package pdftex.def Info: Albero-removebg-preview.png  used on input line 113.
-(pdftex.def)             Requested size: 455.24306pt x 295.17372pt.
-) [4] [5] [6
+[3] [4]) [5] [6
 
 ]
 Chapter 2.
@@ -926,15 +914,11 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 7.19995pt on input line 12.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 29.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 5.39996pt on input line 29.
  [7]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 57.
  <./namespacekm_ac70fb347e212b3faa7a25356556dcd10_icgraph.pdf>
-<namespacekm_ac70fb347e212b3faa7a25356556dcd10_icgraph.pdf, id=1402, 480.79625p
+<namespacekm_ac70fb347e212b3faa7a25356556dcd10_icgraph.pdf, id=1468, 480.79625p
 t x 494.84875pt>
 File: namespacekm_ac70fb347e212b3faa7a25356556dcd10_icgraph.pdf Graphic file (t
 ype pdf)
@@ -947,8 +931,8 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <6> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 33.
  [10] <./namespacekm_1_1filesUtils_a623d05ffa66beb3bf12abc6cac112487_cgraph.pdf
 >
-<namespacekm_1_1filesUtils_a623d05ffa66beb3bf12abc6cac112487_cgraph.pdf, id=148
-7, 409.53pt x 112.42pt>
+<namespacekm_1_1filesUtils_a623d05ffa66beb3bf12abc6cac112487_cgraph.pdf, id=155
+2, 409.53pt x 112.42pt>
 File: namespacekm_1_1filesUtils_a623d05ffa66beb3bf12abc6cac112487_cgraph.pdf Gr
 aphic file (type pdf)
 <use namespacekm_1_1filesUtils_a623d05ffa66beb3bf12abc6cac112487_cgraph.pdf>
@@ -956,8 +940,8 @@ Package pdftex.def Info: namespacekm_1_1filesUtils_a623d05ffa66beb3bf12abc6cac1
 12487_cgraph.pdf  used on input line 50.
 (pdftex.def)             Requested size: 350.0pt x 96.08406pt.
  <./namespacekm_1_1filesUtils_a623d05ffa66beb3bf12abc6cac112487_icgraph.pdf>
-<namespacekm_1_1filesUtils_a623d05ffa66beb3bf12abc6cac112487_icgraph.pdf, id=14
-95, 326.21875pt x 100.375pt>
+<namespacekm_1_1filesUtils_a623d05ffa66beb3bf12abc6cac112487_icgraph.pdf, id=15
+60, 326.21875pt x 100.375pt>
 File: namespacekm_1_1filesUtils_a623d05ffa66beb3bf12abc6cac112487_icgraph.pdf G
 raphic file (type pdf)
 <use namespacekm_1_1filesUtils_a623d05ffa66beb3bf12abc6cac112487_icgraph.pdf>
@@ -966,7 +950,7 @@ Package pdftex.def Info: namespacekm_1_1filesUtils_a623d05ffa66beb3bf12abc6cac1
 (pdftex.def)             Requested size: 325.0pt x 100.00868pt.
  <./namespacekm_1_1filesUtils_ad2f18ea57b4e601ce8cfa2db15d8bbd7_icgraph.pdf>
 <namespacekm_1_1filesUtils_ad2f18ea57b4e601ce8cfa2db15d8bbd7_icgraph.pdf, id=15
-05, 290.08376pt x 176.66pt>
+70, 290.08376pt x 176.66pt>
 File: namespacekm_1_1filesUtils_ad2f18ea57b4e601ce8cfa2db15d8bbd7_icgraph.pdf G
 raphic file (type pdf)
 <use namespacekm_1_1filesUtils_ad2f18ea57b4e601ce8cfa2db15d8bbd7_icgraph.pdf>
@@ -980,7 +964,7 @@ Underfull \hbox (badness 10000) detected at line 94
 
  <./namespacekm_1_1filesUtils_ae4460cd35ec43306592474e9dd919a16_icgraph.pdf>
 <namespacekm_1_1filesUtils_ae4460cd35ec43306592474e9dd919a16_icgraph.pdf, id=15
-27, 482.80376pt x 112.42pt>
+92, 482.80376pt x 112.42pt>
 File: namespacekm_1_1filesUtils_ae4460cd35ec43306592474e9dd919a16_icgraph.pdf G
 raphic file (type pdf)
 <use namespacekm_1_1filesUtils_ae4460cd35ec43306592474e9dd919a16_icgraph.pdf>
@@ -994,8 +978,8 @@ Underfull \hbox (badness 10000) detected at line 121
  []
 
  <./namespacekm_1_1filesUtils_a210cdb1e22d18e8fa05c3a4c0d9708e2_icgraph.pdf>
-<namespacekm_1_1filesUtils_a210cdb1e22d18e8fa05c3a4c0d9708e2_icgraph.pdf, id=15
-46, 296.10625pt x 100.375pt>
+<namespacekm_1_1filesUtils_a210cdb1e22d18e8fa05c3a4c0d9708e2_icgraph.pdf, id=16
+10, 296.10625pt x 100.375pt>
 File: namespacekm_1_1filesUtils_a210cdb1e22d18e8fa05c3a4c0d9708e2_icgraph.pdf G
 raphic file (type pdf)
 <use namespacekm_1_1filesUtils_a210cdb1e22d18e8fa05c3a4c0d9708e2_icgraph.pdf>
@@ -1003,8 +987,8 @@ Package pdftex.def Info: namespacekm_1_1filesUtils_a210cdb1e22d18e8fa05c3a4c0d9
 708e2_icgraph.pdf  used on input line 128.
 (pdftex.def)             Requested size: 295.0pt x 100.00255pt.
  <./namespacekm_1_1filesUtils_a53d25bfe40b892af0c4f049bdb6a5773_icgraph.pdf>
-<namespacekm_1_1filesUtils_a53d25bfe40b892af0c4f049bdb6a5773_icgraph.pdf, id=15
-61, 298.11375pt x 138.5175pt>
+<namespacekm_1_1filesUtils_a53d25bfe40b892af0c4f049bdb6a5773_icgraph.pdf, id=16
+25, 298.11375pt x 138.5175pt>
 File: namespacekm_1_1filesUtils_a53d25bfe40b892af0c4f049bdb6a5773_icgraph.pdf G
 raphic file (type pdf)
 <use namespacekm_1_1filesUtils_a53d25bfe40b892af0c4f049bdb6a5773_icgraph.pdf>
@@ -1014,8 +998,8 @@ a5773_icgraph.pdf  used on input line 160.
 )
 (./namespacekm_1_1imageUtils.tex [13] [14] <./namespacekm_1_1imageUtils_aef1b51
 decbf6f0f0ca5c53e20ebbfadb_cgraph.pdf>
-<namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb_cgraph.pdf, id=161
-3, 410.53375pt x 313.17pt>
+<namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb_cgraph.pdf, id=167
+8, 410.53375pt x 313.17pt>
 File: namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb_cgraph.pdf Gr
 aphic file (type pdf)
 <use namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb_cgraph.pdf>
@@ -1024,7 +1008,7 @@ bfadb_cgraph.pdf  used on input line 48.
 (pdftex.def)             Requested size: 350.0pt x 266.98898pt.
  <./namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb_icgraph.pdf>
 <namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb_icgraph.pdf, id=16
-21, 299.1175pt x 138.5175pt>
+86, 299.1175pt x 138.5175pt>
 File: namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb_icgraph.pdf G
 raphic file (type pdf)
 <use namespacekm_1_1imageUtils_aef1b51decbf6f0f0ca5c53e20ebbfadb_icgraph.pdf>
@@ -1033,8 +1017,8 @@ bfadb_icgraph.pdf  used on input line 55.
 (pdftex.def)             Requested size: 298.0pt x 138.00987pt.
  [15] <./namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244f_icgraph.pd
 f>
-<namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244f_icgraph.pdf, id=16
-41, 291.0875pt x 138.5175pt>
+<namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244f_icgraph.pdf, id=17
+06, 291.0875pt x 138.5175pt>
 File: namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244f_icgraph.pdf G
 raphic file (type pdf)
 <use namespacekm_1_1imageUtils_a5a09c5c3205050498f807852bafe244f_icgraph.pdf>
@@ -1042,8 +1026,8 @@ Package pdftex.def Info: namespacekm_1_1imageUtils_a5a09c5c3205050498f807852baf
 e244f_icgraph.pdf  used on input line 81.
 (pdftex.def)             Requested size: 290.0pt x 138.00987pt.
  <./namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c_cgraph.pdf>
-<namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c_cgraph.pdf, id=165
-1, 419.5675pt x 112.42pt>
+<namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c_cgraph.pdf, id=171
+6, 419.5675pt x 112.42pt>
 File: namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c_cgraph.pdf Gr
 aphic file (type pdf)
 <use namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c_cgraph.pdf>
@@ -1051,8 +1035,8 @@ Package pdftex.def Info: namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4f
 f0e1c_cgraph.pdf  used on input line 105.
 (pdftex.def)             Requested size: 350.0pt x 93.7803pt.
  <./namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c_icgraph.pdf>
-<namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c_icgraph.pdf, id=16
-60, 303.1325pt x 138.5175pt>
+<namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c_icgraph.pdf, id=17
+24, 303.1325pt x 138.5175pt>
 File: namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c_icgraph.pdf G
 raphic file (type pdf)
 <use namespacekm_1_1imageUtils_aa01205ffe26b0f4c815d5750a4ff0e1c_icgraph.pdf>
@@ -1061,7 +1045,7 @@ f0e1c_icgraph.pdf  used on input line 112.
 (pdftex.def)             Requested size: 302.0pt x 138.00142pt.
 ) (./namespacekm_1_1utilsCLI.tex [16] <./namespacekm_1_1utilsCLI_a49ee3c94571b6
 2a729a2ba98db2b1a52_icgraph.pdf>
-<namespacekm_1_1utilsCLI_a49ee3c94571b62a729a2ba98db2b1a52_icgraph.pdf, id=1703
+<namespacekm_1_1utilsCLI_a49ee3c94571b62a729a2ba98db2b1a52_icgraph.pdf, id=1767
 , 295.1025pt x 100.375pt>
 File: namespacekm_1_1utilsCLI_a49ee3c94571b62a729a2ba98db2b1a52_icgraph.pdf Gra
 phic file (type pdf)
@@ -1070,7 +1054,7 @@ Package pdftex.def Info: namespacekm_1_1utilsCLI_a49ee3c94571b62a729a2ba98db2b1
 a52_icgraph.pdf  used on input line 43.
 (pdftex.def)             Requested size: 294.0pt x 100.00255pt.
  [17] <./namespacekm_1_1utilsCLI_abc310e29d2e842694962a675c676c718_icgraph.pdf>
-<namespacekm_1_1utilsCLI_abc310e29d2e842694962a675c676c718_icgraph.pdf, id=1725
+<namespacekm_1_1utilsCLI_abc310e29d2e842694962a675c676c718_icgraph.pdf, id=1790
 , 325.215pt x 100.375pt>
 File: namespacekm_1_1utilsCLI_abc310e29d2e842694962a675c676c718_icgraph.pdf Gra
 phic file (type pdf)
@@ -1079,7 +1063,7 @@ Package pdftex.def Info: namespacekm_1_1utilsCLI_abc310e29d2e842694962a675c676c
 718_icgraph.pdf  used on input line 69.
 (pdftex.def)             Requested size: 324.0pt x 100.00716pt.
  <./namespacekm_1_1utilsCLI_a587fc1cc3f9761ff58bd6e70f90bd1a1_icgraph.pdf>
-<namespacekm_1_1utilsCLI_a587fc1cc3f9761ff58bd6e70f90bd1a1_icgraph.pdf, id=1734
+<namespacekm_1_1utilsCLI_a587fc1cc3f9761ff58bd6e70f90bd1a1_icgraph.pdf, id=1799
 , 306.14375pt x 100.375pt>
 File: namespacekm_1_1utilsCLI_a587fc1cc3f9761ff58bd6e70f90bd1a1_icgraph.pdf Gra
 phic file (type pdf)
@@ -1088,7 +1072,7 @@ Package pdftex.def Info: namespacekm_1_1utilsCLI_a587fc1cc3f9761ff58bd6e70f90bd
 1a1_icgraph.pdf  used on input line 86.
 (pdftex.def)             Requested size: 305.0pt x 100.00562pt.
  [18] <./namespacekm_1_1utilsCLI_ae362e74bbc04f2d92c857f4cb9c1373d_icgraph.pdf>
-<namespacekm_1_1utilsCLI_ae362e74bbc04f2d92c857f4cb9c1373d_icgraph.pdf, id=1757
+<namespacekm_1_1utilsCLI_ae362e74bbc04f2d92c857f4cb9c1373d_icgraph.pdf, id=1822
 , 325.215pt x 136.51pt>
 File: namespacekm_1_1utilsCLI_ae362e74bbc04f2d92c857f4cb9c1373d_icgraph.pdf Gra
 phic file (type pdf)
@@ -1097,7 +1081,7 @@ Package pdftex.def Info: namespacekm_1_1utilsCLI_ae362e74bbc04f2d92c857f4cb9c13
 73d_icgraph.pdf  used on input line 108.
 (pdftex.def)             Requested size: 324.0pt x 136.00974pt.
  <./namespacekm_1_1utilsCLI_ac67f75f5e367779691a03add1dceaaa7_icgraph.pdf>
-<namespacekm_1_1utilsCLI_ac67f75f5e367779691a03add1dceaaa7_icgraph.pdf, id=1766
+<namespacekm_1_1utilsCLI_ac67f75f5e367779691a03add1dceaaa7_icgraph.pdf, id=1831
 , 274.02374pt x 176.66pt>
 File: namespacekm_1_1utilsCLI_ac67f75f5e367779691a03add1dceaaa7_icgraph.pdf Gra
 phic file (type pdf)
@@ -1108,7 +1092,7 @@ aa7_icgraph.pdf  used on input line 125.
 ) [19] [20]
 Chapter 3.
 (./classkm_1_1ConfigReader.tex <./classkm_1_1ConfigReader__coll__graph.pdf>
-<classkm_1_1ConfigReader__coll__graph.pdf, id=1789, 247.92625pt x 698.61pt>
+<classkm_1_1ConfigReader__coll__graph.pdf, id=1853, 247.92625pt x 698.61pt>
 File: classkm_1_1ConfigReader__coll__graph.pdf Graphic file (type pdf)
 <use classkm_1_1ConfigReader__coll__graph.pdf>
 Package pdftex.def Info: classkm_1_1ConfigReader__coll__graph.pdf  used on inpu
@@ -1119,7 +1103,7 @@ t line 18.
 
 ] [22] [23] <./classkm_1_1ConfigReader_a90c639b06e53c898c9f394deee245a36_cgraph
 .pdf>
-<classkm_1_1ConfigReader_a90c639b06e53c898c9f394deee245a36_cgraph.pdf, id=1904,
+<classkm_1_1ConfigReader_a90c639b06e53c898c9f394deee245a36_cgraph.pdf, id=1968,
  412.54124pt x 112.42pt>
 File: classkm_1_1ConfigReader_a90c639b06e53c898c9f394deee245a36_cgraph.pdf Grap
 hic file (type pdf)
@@ -1133,7 +1117,7 @@ Underfull \hbox (badness 10000) detected at line 116
  []
 
  <./classkm_1_1ConfigReader_a15bc4894d9b8398a19ced91b3b75867e_icgraph.pdf>
-<classkm_1_1ConfigReader_a15bc4894d9b8398a19ced91b3b75867e_icgraph.pdf, id=1917
+<classkm_1_1ConfigReader_a15bc4894d9b8398a19ced91b3b75867e_icgraph.pdf, id=1981
 , 292.09125pt x 112.42pt>
 File: classkm_1_1ConfigReader_a15bc4894d9b8398a19ced91b3b75867e_icgraph.pdf Gra
 phic file (type pdf)
@@ -1152,7 +1136,7 @@ Underfull \hbox (badness 10000) detected at line 149
  []
 
  <./classkm_1_1ConfigReader_a532eced302fd72113c7359aa1d08faab_icgraph.pdf>
-<classkm_1_1ConfigReader_a532eced302fd72113c7359aa1d08faab_icgraph.pdf, id=1936
+<classkm_1_1ConfigReader_a532eced302fd72113c7359aa1d08faab_icgraph.pdf, id=2000
 , 470.75874pt x 138.5175pt>
 File: classkm_1_1ConfigReader_a532eced302fd72113c7359aa1d08faab_icgraph.pdf Gra
 phic file (type pdf)
@@ -1166,7 +1150,7 @@ Underfull \hbox (badness 10000) detected at line 169
  []
 
  <./classkm_1_1ConfigReader_a787856a51a8817148108650a664f5738_icgraph.pdf>
-<classkm_1_1ConfigReader_a787856a51a8817148108650a664f5738_icgraph.pdf, id=1946
+<classkm_1_1ConfigReader_a787856a51a8817148108650a664f5738_icgraph.pdf, id=2010
 , 470.75874pt x 138.5175pt>
 File: classkm_1_1ConfigReader_a787856a51a8817148108650a664f5738_icgraph.pdf Gra
 phic file (type pdf)
@@ -1181,7 +1165,7 @@ Underfull \hbox (badness 10000) detected at line 189
  []
 
  <./classkm_1_1ConfigReader_a0a13dd20b33346486e13a87a9a52e4e5_icgraph.pdf>
-<classkm_1_1ConfigReader_a0a13dd20b33346486e13a87a9a52e4e5_icgraph.pdf, id=1963
+<classkm_1_1ConfigReader_a0a13dd20b33346486e13a87a9a52e4e5_icgraph.pdf, id=2028
 , 478.78876pt x 138.5175pt>
 File: classkm_1_1ConfigReader_a0a13dd20b33346486e13a87a9a52e4e5_icgraph.pdf Gra
 phic file (type pdf)
@@ -1200,7 +1184,7 @@ Underfull \hbox (badness 10000) detected at line 222
  []
 
  <./classkm_1_1ConfigReader_a6067e8491ad1fdbb5f62b33ef215208e_icgraph.pdf>
-<classkm_1_1ConfigReader_a6067e8491ad1fdbb5f62b33ef215208e_icgraph.pdf, id=1974
+<classkm_1_1ConfigReader_a6067e8491ad1fdbb5f62b33ef215208e_icgraph.pdf, id=2039
 , 492.84125pt x 138.5175pt>
 File: classkm_1_1ConfigReader_a6067e8491ad1fdbb5f62b33ef215208e_icgraph.pdf Gra
 phic file (type pdf)
@@ -1214,7 +1198,7 @@ Underfull \hbox (badness 10000) detected at line 242
  []
 
  <./classkm_1_1ConfigReader_a12968b54f38b17586d6e65be5158d275_icgraph.pdf>
-<classkm_1_1ConfigReader_a12968b54f38b17586d6e65be5158d275_icgraph.pdf, id=1984
+<classkm_1_1ConfigReader_a12968b54f38b17586d6e65be5158d275_icgraph.pdf, id=2049
 , 483.8075pt x 138.5175pt>
 File: classkm_1_1ConfigReader_a12968b54f38b17586d6e65be5158d275_icgraph.pdf Gra
 phic file (type pdf)
@@ -1229,7 +1213,7 @@ Underfull \hbox (badness 10000) detected at line 262
  []
 
  <./classkm_1_1ConfigReader_a0e355597d2a6f4c1f01e91da11fbd577_icgraph.pdf>
-<classkm_1_1ConfigReader_a0e355597d2a6f4c1f01e91da11fbd577_icgraph.pdf, id=2001
+<classkm_1_1ConfigReader_a0e355597d2a6f4c1f01e91da11fbd577_icgraph.pdf, id=2066
 , 472.76625pt x 138.5175pt>
 File: classkm_1_1ConfigReader_a0e355597d2a6f4c1f01e91da11fbd577_icgraph.pdf Gra
 phic file (type pdf)
@@ -1243,7 +1227,7 @@ Underfull \hbox (badness 10000) detected at line 282
  []
 
  <./classkm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50_icgraph.pdf>
-<classkm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50_icgraph.pdf, id=2012
+<classkm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50_icgraph.pdf, id=2076
 , 412.54124pt x 112.42pt>
 File: classkm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50_icgraph.pdf Gra
 phic file (type pdf)
@@ -1254,7 +1238,7 @@ e50_icgraph.pdf  used on input line 289.
 
 [27] [28]) (./classkm_1_1KMeansBase.tex <./classkm_1_1KMeansBase__inherit__grap
 h.pdf>
-<classkm_1_1KMeansBase__inherit__graph.pdf, id=2043, 526.96875pt x 579.16376pt>
+<classkm_1_1KMeansBase__inherit__graph.pdf, id=2107, 526.96875pt x 579.16376pt>
 
 File: classkm_1_1KMeansBase__inherit__graph.pdf Graphic file (type pdf)
 <use classkm_1_1KMeansBase__inherit__graph.pdf>
@@ -1262,7 +1246,7 @@ Package pdftex.def Info: classkm_1_1KMeansBase__inherit__graph.pdf  used on inp
 ut line 18.
 (pdftex.def)             Requested size: 350.0pt x 384.68835pt.
  [29] <./classkm_1_1KMeansBase__coll__graph.pdf>
-<classkm_1_1KMeansBase__coll__graph.pdf, id=2058, 231.86626pt x 364.36125pt>
+<classkm_1_1KMeansBase__coll__graph.pdf, id=2123, 231.86626pt x 364.36125pt>
 File: classkm_1_1KMeansBase__coll__graph.pdf Graphic file (type pdf)
 <use classkm_1_1KMeansBase__coll__graph.pdf>
 Package pdftex.def Info: classkm_1_1KMeansBase__coll__graph.pdf  used on input 
@@ -1277,7 +1261,7 @@ Underfull \hbox (badness 10000) detected at line 121
  []
 
  <./classkm_1_1KMeansBase_ac0ecde9c25587ef197069159c0b545df_icgraph.pdf>
-<classkm_1_1KMeansBase_ac0ecde9c25587ef197069159c0b545df_icgraph.pdf, id=2153, 
+<classkm_1_1KMeansBase_ac0ecde9c25587ef197069159c0b545df_icgraph.pdf, id=2218, 
 310.15875pt x 100.375pt>
 File: classkm_1_1KMeansBase_ac0ecde9c25587ef197069159c0b545df_icgraph.pdf Graph
 ic file (type pdf)
@@ -1291,7 +1275,7 @@ Underfull \hbox (badness 10000) detected at line 141
  []
 
  <./classkm_1_1KMeansBase_a48d1ee4a7a671b200995c611fd349cd3_icgraph.pdf>
-<classkm_1_1KMeansBase_a48d1ee4a7a671b200995c611fd349cd3_icgraph.pdf, id=2163, 
+<classkm_1_1KMeansBase_a48d1ee4a7a671b200995c611fd349cd3_icgraph.pdf, id=2228, 
 308.15125pt x 100.375pt>
 File: classkm_1_1KMeansBase_a48d1ee4a7a671b200995c611fd349cd3_icgraph.pdf Graph
 ic file (type pdf)
@@ -1305,7 +1289,7 @@ Underfull \hbox (badness 10000) detected at line 161
  []
 
  <./classkm_1_1KMeansBase_a5ec2ecf08e285a5e2d34b766b353ce1f_icgraph.pdf>
-<classkm_1_1KMeansBase_a5ec2ecf08e285a5e2d34b766b353ce1f_icgraph.pdf, id=2173, 
+<classkm_1_1KMeansBase_a5ec2ecf08e285a5e2d34b766b353ce1f_icgraph.pdf, id=2238, 
 295.1025pt x 100.375pt>
 File: classkm_1_1KMeansBase_a5ec2ecf08e285a5e2d34b766b353ce1f_icgraph.pdf Graph
 ic file (type pdf)
@@ -1315,7 +1299,7 @@ f_icgraph.pdf  used on input line 168.
 (pdftex.def)             Requested size: 294.0pt x 100.00255pt.
 
 [33]) (./classkm_1_1KMeansCUDA.tex <./classkm_1_1KMeansCUDA__coll__graph.pdf>
-<classkm_1_1KMeansCUDA__coll__graph.pdf, id=2199, 222.8325pt x 353.32pt>
+<classkm_1_1KMeansCUDA__coll__graph.pdf, id=2264, 222.8325pt x 353.32pt>
 File: classkm_1_1KMeansCUDA__coll__graph.pdf Graphic file (type pdf)
 <use classkm_1_1KMeansCUDA__coll__graph.pdf>
 Package pdftex.def Info: classkm_1_1KMeansCUDA__coll__graph.pdf  used on input 
@@ -1328,7 +1312,7 @@ Underfull \hbox (badness 10000) detected at line 83
  []
 
  <./classkm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19_icgraph.pdf>
-<classkm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19_icgraph.pdf, id=2281, 
+<classkm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19_icgraph.pdf, id=2346, 
 316.18124pt x 100.375pt>
 File: classkm_1_1KMeansCUDA_a89841b99536b3dfa0df3f169a465ac19_icgraph.pdf Graph
 ic file (type pdf)
@@ -1342,7 +1326,7 @@ Underfull \hbox (badness 10000) detected at line 103
  []
 
  <./classkm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869_icgraph.pdf>
-<classkm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869_icgraph.pdf, id=2291, 
+<classkm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869_icgraph.pdf, id=2356, 
 315.1775pt x 100.375pt>
 File: classkm_1_1KMeansCUDA_a2dbd2d4266644116e8783f5aa5b34869_icgraph.pdf Graph
 ic file (type pdf)
@@ -1356,7 +1340,7 @@ Underfull \hbox (badness 10000) detected at line 123
  []
 
  <./classkm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea_icgraph.pdf>
-<classkm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea_icgraph.pdf, id=2301, 
+<classkm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea_icgraph.pdf, id=2366, 
 302.12875pt x 100.375pt>
 File: classkm_1_1KMeansCUDA_a9ec0cacc3e692cd39b8285982a238dea_icgraph.pdf Graph
 ic file (type pdf)
@@ -1366,7 +1350,7 @@ a_icgraph.pdf  used on input line 130.
 (pdftex.def)             Requested size: 301.0pt x 99.9995pt.
 
 [37] <./classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_cgraph.pdf>
-<classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_cgraph.pdf, id=2320, 3
+<classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_cgraph.pdf, id=2385, 3
 58.33875pt x 99.37125pt>
 File: classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_cgraph.pdf Graphi
 c file (type pdf)
@@ -1375,7 +1359,7 @@ Package pdftex.def Info: classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3a
 b_cgraph.pdf  used on input line 167.
 (pdftex.def)             Requested size: 350.0pt x 97.06473pt.
  <./classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_icgraph.pdf>
-<classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_icgraph.pdf, id=2329, 
+<classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_icgraph.pdf, id=2393, 
 274.02374pt x 100.375pt>
 File: classkm_1_1KMeansCUDA_a4d748e05b8ebad9ec535d0c33ec3f3ab_icgraph.pdf Graph
 ic file (type pdf)
@@ -1385,7 +1369,7 @@ b_icgraph.pdf  used on input line 174.
 (pdftex.def)             Requested size: 273.0pt x 100.00716pt.
  [38])
 (./classkm_1_1KMeansMPI.tex <./classkm_1_1KMeansMPI__inherit__graph.pdf>
-<classkm_1_1KMeansMPI__inherit__graph.pdf, id=2350, 231.86626pt x 579.16376pt>
+<classkm_1_1KMeansMPI__inherit__graph.pdf, id=2414, 231.86626pt x 579.16376pt>
 File: classkm_1_1KMeansMPI__inherit__graph.pdf Graphic file (type pdf)
 <use classkm_1_1KMeansMPI__inherit__graph.pdf>
 Package pdftex.def Info: classkm_1_1KMeansMPI__inherit__graph.pdf  used on inpu
@@ -1393,7 +1377,7 @@ t line 18.
 (pdftex.def)             Requested size: 220.20445pt x 550.0pt.
 
 [39] <./classkm_1_1KMeansMPI__coll__graph.pdf>
-<classkm_1_1KMeansMPI__coll__graph.pdf, id=2366, 231.86626pt x 579.16376pt>
+<classkm_1_1KMeansMPI__coll__graph.pdf, id=2431, 231.86626pt x 579.16376pt>
 File: classkm_1_1KMeansMPI__coll__graph.pdf Graphic file (type pdf)
 <use classkm_1_1KMeansMPI__coll__graph.pdf>
 Package pdftex.def Info: classkm_1_1KMeansMPI__coll__graph.pdf  used on input l
@@ -1401,7 +1385,7 @@ ine 27.
 (pdftex.def)             Requested size: 220.20445pt x 550.0pt.
  [40] [41] [42] <./classkm_1_1KMeansMPI_a776852d58db859f83090ba45c1bd7034_cgrap
 h.pdf>
-<classkm_1_1KMeansMPI_a776852d58db859f83090ba45c1bd7034_cgraph.pdf, id=2481, 34
+<classkm_1_1KMeansMPI_a776852d58db859f83090ba45c1bd7034_cgraph.pdf, id=2546, 34
 7.2975pt x 99.37125pt>
 File: classkm_1_1KMeansMPI_a776852d58db859f83090ba45c1bd7034_cgraph.pdf Graphic
  file (type pdf)
@@ -1411,7 +1395,7 @@ _cgraph.pdf  used on input line 132.
 (pdftex.def)             Requested size: 346.0pt x 99.00406pt.
 )
 (./classkm_1_1KMeansOMP.tex <./classkm_1_1KMeansOMP__inherit__graph.pdf>
-<classkm_1_1KMeansOMP__inherit__graph.pdf, id=2493, 231.86626pt x 486.81876pt>
+<classkm_1_1KMeansOMP__inherit__graph.pdf, id=2558, 231.86626pt x 486.81876pt>
 File: classkm_1_1KMeansOMP__inherit__graph.pdf Graphic file (type pdf)
 <use classkm_1_1KMeansOMP__inherit__graph.pdf>
 Package pdftex.def Info: classkm_1_1KMeansOMP__inherit__graph.pdf  used on inpu
@@ -1419,7 +1403,7 @@ t line 18.
 (pdftex.def)             Requested size: 231.0pt x 485.0125pt.
 
 [43] <./classkm_1_1KMeansOMP__coll__graph.pdf>
-<classkm_1_1KMeansOMP__coll__graph.pdf, id=2511, 231.86626pt x 486.81876pt>
+<classkm_1_1KMeansOMP__coll__graph.pdf, id=2576, 231.86626pt x 486.81876pt>
 File: classkm_1_1KMeansOMP__coll__graph.pdf Graphic file (type pdf)
 <use classkm_1_1KMeansOMP__coll__graph.pdf>
 Package pdftex.def Info: classkm_1_1KMeansOMP__coll__graph.pdf  used on input l
@@ -1427,7 +1411,7 @@ ine 27.
 (pdftex.def)             Requested size: 231.0pt x 485.0125pt.
  [44] [45] [46] <./classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06_cgrap
 h.pdf>
-<classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06_cgraph.pdf, id=2604, 35
+<classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06_cgraph.pdf, id=2667, 35
 2.31625pt x 99.37125pt>
 File: classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06_cgraph.pdf Graphic
  file (type pdf)
@@ -1436,7 +1420,7 @@ Package pdftex.def Info: classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06
 _cgraph.pdf  used on input line 110.
 (pdftex.def)             Requested size: 350.0pt x 98.71748pt.
  <./classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06_icgraph.pdf>
-<classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06_icgraph.pdf, id=2612, 2
+<classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06_icgraph.pdf, id=2675, 2
 68.00125pt x 100.375pt>
 File: classkm_1_1KMeansOMP_a8bb6bca3f78d72b3976d27e1abf28e06_icgraph.pdf Graphi
 c file (type pdf)
@@ -1447,7 +1431,7 @@ _icgraph.pdf  used on input line 117.
 )
 (./classkm_1_1KMeansSequential.tex <./classkm_1_1KMeansSequential__inherit__gra
 ph.pdf>
-<classkm_1_1KMeansSequential__inherit__graph.pdf, id=2622, 231.86626pt x 486.81
+<classkm_1_1KMeansSequential__inherit__graph.pdf, id=2685, 231.86626pt x 486.81
 876pt>
 File: classkm_1_1KMeansSequential__inherit__graph.pdf Graphic file (type pdf)
 <use classkm_1_1KMeansSequential__inherit__graph.pdf>
@@ -1455,7 +1439,7 @@ Package pdftex.def Info: classkm_1_1KMeansSequential__inherit__graph.pdf  used
 on input line 18.
 (pdftex.def)             Requested size: 231.0pt x 485.0125pt.
  [47] <./classkm_1_1KMeansSequential__coll__graph.pdf>
-<classkm_1_1KMeansSequential__coll__graph.pdf, id=2641, 231.86626pt x 486.81876
+<classkm_1_1KMeansSequential__coll__graph.pdf, id=2703, 231.86626pt x 486.81876
 pt>
 File: classkm_1_1KMeansSequential__coll__graph.pdf Graphic file (type pdf)
 <use classkm_1_1KMeansSequential__coll__graph.pdf>
@@ -1466,7 +1450,7 @@ input line 27.
 [50] <./classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208f901a7b_cgraph.pd
 f>
 <classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208f901a7b_cgraph.pdf, id=2
-732, 381.425pt x 99.37125pt>
+795, 381.425pt x 99.37125pt>
 File: classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208f901a7b_cgraph.pdf 
 Graphic file (type pdf)
 <use classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208f901a7b_cgraph.pdf>
@@ -1475,7 +1459,7 @@ f901a7b_cgraph.pdf  used on input line 110.
 (pdftex.def)             Requested size: 350.0pt x 91.18762pt.
  <./classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208f901a7b_icgraph.pdf>
 <classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208f901a7b_icgraph.pdf, id=
-2740, 291.0875pt x 100.375pt>
+2803, 291.0875pt x 100.375pt>
 File: classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208f901a7b_icgraph.pdf
  Graphic file (type pdf)
 <use classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208f901a7b_icgraph.pdf>
@@ -1484,7 +1468,7 @@ Package pdftex.def Info: classkm_1_1KMeansSequential_a322350cd5d3dcd0e428fb4208
 f901a7b_icgraph.pdf  used on input line 117.
 (pdftex.def)             Requested size: 290.0pt x 100.00716pt.
 ) (./classkm_1_1Performance.tex <./classkm_1_1Performance__coll__graph.pdf>
-<classkm_1_1Performance__coll__graph.pdf, id=2750, 248.93pt x 449.68pt>
+<classkm_1_1Performance__coll__graph.pdf, id=2813, 248.93pt x 449.68pt>
 File: classkm_1_1Performance__coll__graph.pdf Graphic file (type pdf)
 <use classkm_1_1Performance__coll__graph.pdf>
 Package pdftex.def Info: classkm_1_1Performance__coll__graph.pdf  used on input
@@ -1493,7 +1477,7 @@ Package pdftex.def Info: classkm_1_1Performance__coll__graph.pdf  used on input
 
 [51] [52] [53] <./classkm_1_1Performance_a9bc46562bd8dfe817c8be57d0959c08a_cgra
 ph.pdf>
-<classkm_1_1Performance_a9bc46562bd8dfe817c8be57d0959c08a_cgraph.pdf, id=2859, 
+<classkm_1_1Performance_a9bc46562bd8dfe817c8be57d0959c08a_cgraph.pdf, id=2921, 
 403.5075pt x 99.37125pt>
 File: classkm_1_1Performance_a9bc46562bd8dfe817c8be57d0959c08a_cgraph.pdf Graph
 ic file (type pdf)
@@ -1502,7 +1486,7 @@ Package pdftex.def Info: classkm_1_1Performance_a9bc46562bd8dfe817c8be57d0959c0
 8a_cgraph.pdf  used on input line 103.
 (pdftex.def)             Requested size: 350.0pt x 86.1945pt.
  <./classkm_1_1Performance_ac22133918a8445c7230e15621b4dd999_cgraph.pdf>
-<classkm_1_1Performance_ac22133918a8445c7230e15621b4dd999_cgraph.pdf, id=2870, 
+<classkm_1_1Performance_ac22133918a8445c7230e15621b4dd999_cgraph.pdf, id=2932, 
 379.4175pt x 110.4125pt>
 File: classkm_1_1Performance_ac22133918a8445c7230e15621b4dd999_cgraph.pdf Graph
 ic file (type pdf)
@@ -1516,7 +1500,7 @@ Underfull \hbox (badness 10000) detected at line 143
  []
 
  <./classkm_1_1Performance_a3145fecb00fa5d567d13a0f808f6be7e_cgraph.pdf>
-<classkm_1_1Performance_a3145fecb00fa5d567d13a0f808f6be7e_cgraph.pdf, id=2889, 
+<classkm_1_1Performance_a3145fecb00fa5d567d13a0f808f6be7e_cgraph.pdf, id=2951, 
 371.3875pt x 110.4125pt>
 File: classkm_1_1Performance_a3145fecb00fa5d567d13a0f808f6be7e_cgraph.pdf Graph
 ic file (type pdf)
@@ -1525,7 +1509,7 @@ Package pdftex.def Info: classkm_1_1Performance_a3145fecb00fa5d567d13a0f808f6be
 7e_cgraph.pdf  used on input line 150.
 (pdftex.def)             Requested size: 350.0pt x 104.05562pt.
  <./classkm_1_1Performance_a3145fecb00fa5d567d13a0f808f6be7e_icgraph.pdf>
-<classkm_1_1Performance_a3145fecb00fa5d567d13a0f808f6be7e_icgraph.pdf, id=2897,
+<classkm_1_1Performance_a3145fecb00fa5d567d13a0f808f6be7e_icgraph.pdf, id=2959,
  281.05pt x 138.5175pt>
 File: classkm_1_1Performance_a3145fecb00fa5d567d13a0f808f6be7e_icgraph.pdf Grap
 hic file (type pdf)
@@ -1534,7 +1518,7 @@ Package pdftex.def Info: classkm_1_1Performance_a3145fecb00fa5d567d13a0f808f6be
 7e_icgraph.pdf  used on input line 157.
 (pdftex.def)             Requested size: 280.0pt x 138.00777pt.
  <./classkm_1_1Performance_a02f2aed3530f2be2546a66e4fb3ea9b6_icgraph.pdf>
-<classkm_1_1Performance_a02f2aed3530f2be2546a66e4fb3ea9b6_icgraph.pdf, id=2910,
+<classkm_1_1Performance_a02f2aed3530f2be2546a66e4fb3ea9b6_icgraph.pdf, id=2972,
  316.18124pt x 138.5175pt>
 File: classkm_1_1Performance_a02f2aed3530f2be2546a66e4fb3ea9b6_icgraph.pdf Grap
 hic file (type pdf)
@@ -1543,7 +1527,7 @@ Package pdftex.def Info: classkm_1_1Performance_a02f2aed3530f2be2546a66e4fb3ea9
 b6_icgraph.pdf  used on input line 183.
 (pdftex.def)             Requested size: 315.0pt x 138.00987pt.
  [55] <./classkm_1_1Performance_ab3ba15c019e82d392539f6b2a48fa761_cgraph.pdf>
-<classkm_1_1Performance_ab3ba15c019e82d392539f6b2a48fa761_cgraph.pdf, id=2935, 
+<classkm_1_1Performance_ab3ba15c019e82d392539f6b2a48fa761_cgraph.pdf, id=2998, 
 381.425pt x 99.37125pt>
 File: classkm_1_1Performance_ab3ba15c019e82d392539f6b2a48fa761_cgraph.pdf Graph
 ic file (type pdf)
@@ -1552,7 +1536,7 @@ Package pdftex.def Info: classkm_1_1Performance_ab3ba15c019e82d392539f6b2a48fa7
 61_cgraph.pdf  used on input line 213.
 (pdftex.def)             Requested size: 350.0pt x 91.18762pt.
  <./classkm_1_1Performance_ab3ba15c019e82d392539f6b2a48fa761_icgraph.pdf>
-<classkm_1_1Performance_ab3ba15c019e82d392539f6b2a48fa761_icgraph.pdf, id=2943,
+<classkm_1_1Performance_ab3ba15c019e82d392539f6b2a48fa761_icgraph.pdf, id=3006,
  293.095pt x 138.5175pt>
 File: classkm_1_1Performance_ab3ba15c019e82d392539f6b2a48fa761_icgraph.pdf Grap
 hic file (type pdf)
@@ -1562,7 +1546,7 @@ Package pdftex.def Info: classkm_1_1Performance_ab3ba15c019e82d392539f6b2a48fa7
 (pdftex.def)             Requested size: 292.0pt x 137.99931pt.
  [56])
 (./classkm_1_1Point.tex <./classkm_1_1Point__coll__graph.pdf>
-<classkm_1_1Point__coll__graph.pdf, id=2962, 194.7275pt x 373.395pt>
+<classkm_1_1Point__coll__graph.pdf, id=3025, 194.7275pt x 373.395pt>
 File: classkm_1_1Point__coll__graph.pdf Graphic file (type pdf)
 <use classkm_1_1Point__coll__graph.pdf>
 Package pdftex.def Info: classkm_1_1Point__coll__graph.pdf  used on input line 
@@ -1575,7 +1559,7 @@ Underfull \hbox (badness 10000) detected at line 107
  []
 
  <./classkm_1_1Point_a28d9829e3fe624bd511814ab7a1cd445_cgraph.pdf>
-<classkm_1_1Point_a28d9829e3fe624bd511814ab7a1cd445_cgraph.pdf, id=3062, 340.27
+<classkm_1_1Point_a28d9829e3fe624bd511814ab7a1cd445_cgraph.pdf, id=3125, 340.27
 126pt x 99.37125pt>
 File: classkm_1_1Point_a28d9829e3fe624bd511814ab7a1cd445_cgraph.pdf Graphic fil
 e (type pdf)
@@ -1594,7 +1578,7 @@ Underfull \hbox (badness 10000) detected at line 150
  []
 
  <./classkm_1_1Point_abf5779b9b295a1b9ba707f262fdec275_cgraph.pdf>
-<classkm_1_1Point_abf5779b9b295a1b9ba707f262fdec275_cgraph.pdf, id=3090, 351.31
+<classkm_1_1Point_abf5779b9b295a1b9ba707f262fdec275_cgraph.pdf, id=3152, 351.31
 25pt x 99.37125pt>
 File: classkm_1_1Point_abf5779b9b295a1b9ba707f262fdec275_cgraph.pdf Graphic fil
 e (type pdf)
@@ -1606,13 +1590,13 @@ aph.pdf  used on input line 174.
 [62]
 Chapter 4.
 (./configReader_8hpp.tex <./configReader_8hpp__incl.pdf>
-<configReader_8hpp__incl.pdf, id=3122, 354.32375pt x 156.585pt>
+<configReader_8hpp__incl.pdf, id=3185, 354.32375pt x 156.585pt>
 File: configReader_8hpp__incl.pdf Graphic file (type pdf)
 <use configReader_8hpp__incl.pdf>
 Package pdftex.def Info: configReader_8hpp__incl.pdf  used on input line 16.
 (pdftex.def)             Requested size: 350.0pt x 154.67795pt.
  <./configReader_8hpp__dep__incl.pdf>
-<configReader_8hpp__dep__incl.pdf, id=3130, 796.9775pt x 209.78375pt>
+<configReader_8hpp__dep__incl.pdf, id=3193, 796.9775pt x 209.78375pt>
 File: configReader_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use configReader_8hpp__dep__incl.pdf>
 Package pdftex.def Info: configReader_8hpp__dep__incl.pdf  used on input line 2
@@ -1621,13 +1605,13 @@ Package pdftex.def Info: configReader_8hpp__dep__incl.pdf  used on input line 2
 ) (./configReader_8hpp_source.tex [63
 
 ]) (./filesUtils_8hpp.tex <./filesUtils_8hpp__incl.pdf>
-<filesUtils_8hpp__incl.pdf, id=3174, 619.31375pt x 212.795pt>
+<filesUtils_8hpp__incl.pdf, id=3237, 619.31375pt x 212.795pt>
 File: filesUtils_8hpp__incl.pdf Graphic file (type pdf)
 <use filesUtils_8hpp__incl.pdf>
 Package pdftex.def Info: filesUtils_8hpp__incl.pdf  used on input line 20.
 (pdftex.def)             Requested size: 350.0pt x 120.2651pt.
  [64] <./filesUtils_8hpp__dep__incl.pdf>
-<filesUtils_8hpp__dep__incl.pdf, id=3190, 922.44624pt x 209.78375pt>
+<filesUtils_8hpp__dep__incl.pdf, id=3252, 922.44624pt x 209.78375pt>
 File: filesUtils_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use filesUtils_8hpp__dep__incl.pdf>
 Package pdftex.def Info: filesUtils_8hpp__dep__incl.pdf  used on input line 27.
@@ -1641,13 +1625,13 @@ it/9 <$ \T1/phv/m/n/9 std[]::filesystem[]::path $\OML/cmm/m/it/9 >$
 
 ) (./filesUtils_8hpp_source.tex [65]) (./imagesUtils_8hpp.tex <./imagesUtils_8h
 pp__incl.pdf>
-<imagesUtils_8hpp__incl.pdf, id=3249, 666.49pt x 212.795pt>
+<imagesUtils_8hpp__incl.pdf, id=3312, 666.49pt x 212.795pt>
 File: imagesUtils_8hpp__incl.pdf Graphic file (type pdf)
 <use imagesUtils_8hpp__incl.pdf>
 Package pdftex.def Info: imagesUtils_8hpp__incl.pdf  used on input line 18.
 (pdftex.def)             Requested size: 350.0pt x 111.74826pt.
  <./imagesUtils_8hpp__dep__incl.pdf>
-<imagesUtils_8hpp__dep__incl.pdf, id=3257, 709.65125pt x 154.5775pt>
+<imagesUtils_8hpp__dep__incl.pdf, id=3320, 709.65125pt x 154.5775pt>
 File: imagesUtils_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use imagesUtils_8hpp__dep__incl.pdf>
 Package pdftex.def Info: imagesUtils_8hpp__dep__incl.pdf  used on input line 25
@@ -1661,13 +1645,13 @@ Underfull \hbox (badness 2042) in paragraph at lines 40--41
 
 ) (./imagesUtils_8hpp_source.tex) (./kmDocs_8hpp.tex) (./kmDocs_8hpp_source.tex
 [67]) (./kMeansBase_8hpp.tex <./kMeansBase_8hpp__incl.pdf>
-<kMeansBase_8hpp__incl.pdf, id=3316, 206.7725pt x 212.795pt>
+<kMeansBase_8hpp__incl.pdf, id=3378, 206.7725pt x 212.795pt>
 File: kMeansBase_8hpp__incl.pdf Graphic file (type pdf)
 <use kMeansBase_8hpp__incl.pdf>
 Package pdftex.def Info: kMeansBase_8hpp__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 206.0pt x 212.00543pt.
  <./kMeansBase_8hpp__dep__incl.pdf>
-<kMeansBase_8hpp__dep__incl.pdf, id=3324, 868.24374pt x 209.78375pt>
+<kMeansBase_8hpp__dep__incl.pdf, id=3386, 868.24374pt x 209.78375pt>
 File: kMeansBase_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use kMeansBase_8hpp__dep__incl.pdf>
 Package pdftex.def Info: kMeansBase_8hpp__dep__incl.pdf  used on input line 21.
@@ -1675,13 +1659,13 @@ Package pdftex.def Info: kMeansBase_8hpp__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 350.0pt x 84.5682pt.
  [68]) (./kMeansBase_8hpp_source.tex) (./kMeansCUDA_8cuh.tex <./kMeansCUDA_8cuh
 __incl.pdf>
-<kMeansCUDA_8cuh__incl.pdf, id=3364, 413.545pt x 212.795pt>
+<kMeansCUDA_8cuh__incl.pdf, id=3427, 413.545pt x 212.795pt>
 File: kMeansCUDA_8cuh__incl.pdf Graphic file (type pdf)
 <use kMeansCUDA_8cuh__incl.pdf>
 Package pdftex.def Info: kMeansCUDA_8cuh__incl.pdf  used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 180.10056pt.
  [69] <./kMeansCUDA_8cuh__dep__incl.pdf>
-<kMeansCUDA_8cuh__dep__incl.pdf, id=3379, 337.26pt x 154.5775pt>
+<kMeansCUDA_8cuh__dep__incl.pdf, id=3442, 337.26pt x 154.5775pt>
 File: kMeansCUDA_8cuh__dep__incl.pdf Graphic file (type pdf)
 <use kMeansCUDA_8cuh__dep__incl.pdf>
 Package pdftex.def Info: kMeansCUDA_8cuh__dep__incl.pdf  used on input line 24.
@@ -1690,40 +1674,40 @@ Package pdftex.def Info: kMeansCUDA_8cuh__dep__incl.pdf  used on input line 24.
 )
 (./kMeansCUDA_8cuh_source.tex [70]) (./kMeansMPI_8hpp.tex <./kMeansMPI_8hpp__in
 cl.pdf>
-<kMeansMPI_8hpp__incl.pdf, id=3445, 234.8775pt x 269.005pt>
+<kMeansMPI_8hpp__incl.pdf, id=3507, 234.8775pt x 269.005pt>
 File: kMeansMPI_8hpp__incl.pdf Graphic file (type pdf)
 <use kMeansMPI_8hpp__incl.pdf>
 Package pdftex.def Info: kMeansMPI_8hpp__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 234.0pt x 267.99867pt.
  [71] <./kMeansMPI_8hpp__dep__incl.pdf>
-<kMeansMPI_8hpp__dep__incl.pdf, id=3459, 321.2pt x 154.5775pt>
+<kMeansMPI_8hpp__dep__incl.pdf, id=3522, 321.2pt x 154.5775pt>
 File: kMeansMPI_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use kMeansMPI_8hpp__dep__incl.pdf>
 Package pdftex.def Info: kMeansMPI_8hpp__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 320.0pt x 154.00394pt.
 ) (./kMeansMPI_8hpp_source.tex
 [72]) (./kMeansOMP_8hpp.tex <./kMeansOMP_8hpp__incl.pdf>
-<kMeansOMP_8hpp__incl.pdf, id=3492, 236.885pt x 269.005pt>
+<kMeansOMP_8hpp__incl.pdf, id=3555, 236.885pt x 269.005pt>
 File: kMeansOMP_8hpp__incl.pdf Graphic file (type pdf)
 <use kMeansOMP_8hpp__incl.pdf>
 Package pdftex.def Info: kMeansOMP_8hpp__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 236.0pt x 268.00688pt.
  <./kMeansOMP_8hpp__dep__incl.pdf>
-<kMeansOMP_8hpp__dep__incl.pdf, id=3500, 327.2225pt x 154.5775pt>
+<kMeansOMP_8hpp__dep__incl.pdf, id=3563, 327.2225pt x 154.5775pt>
 File: kMeansOMP_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use kMeansOMP_8hpp__dep__incl.pdf>
 Package pdftex.def Info: kMeansOMP_8hpp__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 326.0pt x 153.99922pt.
  [73]) (./kMeansOMP_8hpp_source.tex) (./kMeansSequential_8hpp.tex <./kMeansSequ
 ential_8hpp__incl.pdf>
-<kMeansSequential_8hpp__incl.pdf, id=3527, 229.85875pt x 269.005pt>
+<kMeansSequential_8hpp__incl.pdf, id=3589, 229.85875pt x 269.005pt>
 File: kMeansSequential_8hpp__incl.pdf Graphic file (type pdf)
 <use kMeansSequential_8hpp__incl.pdf>
 Package pdftex.def Info: kMeansSequential_8hpp__incl.pdf  used on input line 13
 .
 (pdftex.def)             Requested size: 229.0pt x 268.01509pt.
  [74] <./kMeansSequential_8hpp__dep__incl.pdf>
-<kMeansSequential_8hpp__dep__incl.pdf, id=3544, 337.26pt x 154.5775pt>
+<kMeansSequential_8hpp__dep__incl.pdf, id=3606, 337.26pt x 154.5775pt>
 File: kMeansSequential_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use kMeansSequential_8hpp__dep__incl.pdf>
 Package pdftex.def Info: kMeansSequential_8hpp__dep__incl.pdf  used on input li
@@ -1731,14 +1715,14 @@ ne 20.
 (pdftex.def)             Requested size: 336.0pt x 154.00394pt.
 ) (./kMeansSequential_8hpp_source.tex [75]) (./performanceEvaluation_8hpp.tex <
 ./performanceEvaluation_8hpp__incl.pdf>
-<performanceEvaluation_8hpp__incl.pdf, id=3572, 600.2425pt x 156.585pt>
+<performanceEvaluation_8hpp__incl.pdf, id=3635, 600.2425pt x 156.585pt>
 File: performanceEvaluation_8hpp__incl.pdf Graphic file (type pdf)
 <use performanceEvaluation_8hpp__incl.pdf>
 Package pdftex.def Info: performanceEvaluation_8hpp__incl.pdf  used on input li
 ne 19.
 (pdftex.def)             Requested size: 350.0pt x 91.30676pt.
  <./performanceEvaluation_8hpp__dep__incl.pdf>
-<performanceEvaluation_8hpp__dep__incl.pdf, id=3580, 764.8575pt x 154.5775pt>
+<performanceEvaluation_8hpp__dep__incl.pdf, id=3643, 764.8575pt x 154.5775pt>
 File: performanceEvaluation_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use performanceEvaluation_8hpp__dep__incl.pdf>
 Package pdftex.def Info: performanceEvaluation_8hpp__dep__incl.pdf  used on inp
@@ -1746,40 +1730,40 @@ ut line 26.
 (pdftex.def)             Requested size: 350.0pt x 70.73383pt.
  [76]) (./performanceEvaluation_8hpp_source.tex) (./point_8hpp.tex <./point_8hp
 p__incl.pdf>
-<point_8hpp__incl.pdf, id=3614, 184.69pt x 156.585pt>
+<point_8hpp__incl.pdf, id=3677, 184.69pt x 156.585pt>
 File: point_8hpp__incl.pdf Graphic file (type pdf)
 <use point_8hpp__incl.pdf>
 Package pdftex.def Info: point_8hpp__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 184.0pt x 156.00162pt.
  <./point_8hpp__dep__incl.pdf>
-<point_8hpp__dep__incl.pdf, id=3622, 1578.89874pt x 264.99pt>
+<point_8hpp__dep__incl.pdf, id=3685, 1578.89874pt x 264.99pt>
 File: point_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use point_8hpp__dep__incl.pdf>
 Package pdftex.def Info: point_8hpp__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 350.0pt x 58.73871pt.
  [77]) (./point_8hpp_source.tex) (./utilsCLI_8hpp.tex <./utilsCLI_8hpp__incl.pd
 f>
-<utilsCLI_8hpp__incl.pdf, id=3656, 618.31pt x 269.005pt>
+<utilsCLI_8hpp__incl.pdf, id=3718, 618.31pt x 269.005pt>
 File: utilsCLI_8hpp__incl.pdf Graphic file (type pdf)
 <use utilsCLI_8hpp__incl.pdf>
 Package pdftex.def Info: utilsCLI_8hpp__incl.pdf  used on input line 16.
 (pdftex.def)             Requested size: 350.0pt x 152.27542pt.
  [78] <./utilsCLI_8hpp__dep__incl.pdf>
-<utilsCLI_8hpp__dep__incl.pdf, id=3673, 922.44624pt x 154.5775pt>
+<utilsCLI_8hpp__dep__incl.pdf, id=3736, 922.44624pt x 154.5775pt>
 File: utilsCLI_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use utilsCLI_8hpp__dep__incl.pdf>
 Package pdftex.def Info: utilsCLI_8hpp__dep__incl.pdf  used on input line 23.
 (pdftex.def)             Requested size: 350.0pt x 58.65042pt.
 ) (./utilsCLI_8hpp_source.tex [79]) (./README_8md.tex)
 (./configReader_8cpp.tex <./configReader_8cpp__incl.pdf>
-<configReader_8cpp__incl.pdf, id=3725, 385.44pt x 209.78375pt>
+<configReader_8cpp__incl.pdf, id=3788, 385.44pt x 209.78375pt>
 File: configReader_8cpp__incl.pdf Graphic file (type pdf)
 <use configReader_8cpp__incl.pdf>
 Package pdftex.def Info: configReader_8cpp__incl.pdf  used on input line 16.
 (pdftex.def)             Requested size: 350.0pt x 190.49376pt.
 ) (./decoder_8cpp.tex
 [80] <./decoder_8cpp__incl.pdf>
-<decoder_8cpp__incl.pdf, id=3742, 660.4675pt x 325.215pt>
+<decoder_8cpp__incl.pdf, id=3804, 660.4675pt x 325.215pt>
 File: decoder_8cpp__incl.pdf Graphic file (type pdf)
 <use decoder_8cpp__incl.pdf>
 Package pdftex.def Info: decoder_8cpp__incl.pdf  used on input line 23.
@@ -1790,7 +1774,7 @@ Underfull \hbox (badness 10000) detected at line 51
  []
 
  <./decoder_8cpp_a8216c1645620cdb2f629cde3ac02ffef_cgraph.pdf>
-<decoder_8cpp_a8216c1645620cdb2f629cde3ac02ffef_cgraph.pdf, id=3760, 482.80376p
+<decoder_8cpp_a8216c1645620cdb2f629cde3ac02ffef_cgraph.pdf, id=3822, 482.80376p
 t x 309.155pt>
 File: decoder_8cpp_a8216c1645620cdb2f629cde3ac02ffef_cgraph.pdf Graphic file (t
 ype pdf)
@@ -1800,7 +1784,7 @@ pdf  used on input line 58.
 (pdftex.def)             Requested size: 350.0pt x 224.12454pt.
 )
 (./encoder_8cpp.tex <./encoder_8cpp__incl.pdf>
-<encoder_8cpp__incl.pdf, id=3768, 1208.515pt x 325.215pt>
+<encoder_8cpp__incl.pdf, id=3830, 1208.515pt x 325.215pt>
 File: encoder_8cpp__incl.pdf Graphic file (type pdf)
 <use encoder_8cpp__incl.pdf>
 Package pdftex.def Info: encoder_8cpp__incl.pdf  used on input line 30.
@@ -1811,7 +1795,7 @@ Underfull \hbox (badness 10000) detected at line 65
  []
 
  <./encoder_8cpp_a7114aa2dd6837734db57667a298dfcc4_cgraph.pdf>
-<encoder_8cpp_a7114aa2dd6837734db57667a298dfcc4_cgraph.pdf, id=3784, 544.0325pt
+<encoder_8cpp_a7114aa2dd6837734db57667a298dfcc4_cgraph.pdf, id=3847, 544.0325pt
  x 706.64pt>
 File: encoder_8cpp_a7114aa2dd6837734db57667a298dfcc4_cgraph.pdf Graphic file (t
 ype pdf)
@@ -1821,7 +1805,7 @@ pdf  used on input line 72.
 (pdftex.def)             Requested size: 350.0pt x 454.63098pt.
 )
 (./encoderCUDA_8cpp.tex [83] <./encoderCUDA_8cpp__incl.pdf>
-<encoderCUDA_8cpp__incl.pdf, id=3802, 1441.385pt x 325.215pt>
+<encoderCUDA_8cpp__incl.pdf, id=3865, 1441.385pt x 325.215pt>
 File: encoderCUDA_8cpp__incl.pdf Graphic file (type pdf)
 <use encoderCUDA_8cpp__incl.pdf>
 Package pdftex.def Info: encoderCUDA_8cpp__incl.pdf  used on input line 30.
@@ -1832,7 +1816,7 @@ Underfull \hbox (badness 10000) detected at line 65
  []
 
  <./encoderCUDA_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf>
-<encoderCUDA_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf, id=3827, 544.03
+<encoderCUDA_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf, id=3890, 544.03
 25pt x 706.64pt>
 File: encoderCUDA_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf Graphic fil
 e (type pdf)
@@ -1842,7 +1826,7 @@ aph.pdf  used on input line 72.
 (pdftex.def)             Requested size: 350.0pt x 454.63098pt.
 )
 (./encoderMPI_8cpp.tex <./encoderMPI_8cpp__incl.pdf>
-<encoderMPI_8cpp__incl.pdf, id=3835, 1406.25375pt x 325.215pt>
+<encoderMPI_8cpp__incl.pdf, id=3898, 1406.25375pt x 325.215pt>
 File: encoderMPI_8cpp__incl.pdf Graphic file (type pdf)
 <use encoderMPI_8cpp__incl.pdf>
 Package pdftex.def Info: encoderMPI_8cpp__incl.pdf  used on input line 34.
@@ -1853,7 +1837,7 @@ Underfull \hbox (badness 10000) detected at line 69
  []
 
  <./encoderMPI_8cpp_a7114aa2dd6837734db57667a298dfcc4_cgraph.pdf>
-<encoderMPI_8cpp_a7114aa2dd6837734db57667a298dfcc4_cgraph.pdf, id=3860, 544.032
+<encoderMPI_8cpp_a7114aa2dd6837734db57667a298dfcc4_cgraph.pdf, id=3922, 544.032
 5pt x 558.085pt>
 File: encoderMPI_8cpp_a7114aa2dd6837734db57667a298dfcc4_cgraph.pdf Graphic file
  (type pdf)
@@ -1863,7 +1847,7 @@ ph.pdf  used on input line 76.
 (pdftex.def)             Requested size: 350.0pt x 359.05515pt.
 )
 (./encoderOMP_8cpp.tex <./encoderOMP_8cpp__incl.pdf>
-<encoderOMP_8cpp__incl.pdf, id=3868, 1325.95375pt x 325.215pt>
+<encoderOMP_8cpp__incl.pdf, id=3930, 1325.95375pt x 325.215pt>
 File: encoderOMP_8cpp__incl.pdf Graphic file (type pdf)
 <use encoderOMP_8cpp__incl.pdf>
 Package pdftex.def Info: encoderOMP_8cpp__incl.pdf  used on input line 30.
@@ -1874,7 +1858,7 @@ Underfull \hbox (badness 10000) detected at line 65
  []
 
  <./encoderOMP_8cpp_a7114aa2dd6837734db57667a298dfcc4_cgraph.pdf>
-<encoderOMP_8cpp_a7114aa2dd6837734db57667a298dfcc4_cgraph.pdf, id=3895, 544.032
+<encoderOMP_8cpp_a7114aa2dd6837734db57667a298dfcc4_cgraph.pdf, id=3958, 544.032
 5pt x 706.64pt>
 File: encoderOMP_8cpp_a7114aa2dd6837734db57667a298dfcc4_cgraph.pdf Graphic file
  (type pdf)
@@ -1884,46 +1868,46 @@ ph.pdf  used on input line 72.
 (pdftex.def)             Requested size: 350.0pt x 454.63098pt.
 )
 (./filesUtils_8cpp.tex <./filesUtils_8cpp__incl.pdf>
-<filesUtils_8cpp__incl.pdf, id=3903, 660.4675pt x 264.99pt>
+<filesUtils_8cpp__incl.pdf, id=3966, 660.4675pt x 264.99pt>
 File: filesUtils_8cpp__incl.pdf Graphic file (type pdf)
 <use filesUtils_8cpp__incl.pdf>
 Package pdftex.def Info: filesUtils_8cpp__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 140.42786pt.
  [90])
 (./imagesUtils_8cpp.tex <./imagesUtils_8cpp__incl.pdf>
-<imagesUtils_8cpp__incl.pdf, id=3918, 711.65875pt x 264.99pt>
+<imagesUtils_8cpp__incl.pdf, id=3981, 711.65875pt x 264.99pt>
 File: imagesUtils_8cpp__incl.pdf Graphic file (type pdf)
 <use imagesUtils_8cpp__incl.pdf>
 Package pdftex.def Info: imagesUtils_8cpp__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 130.32335pt.
 ) (./kMeansBase_8cpp.tex <./kMeansBase_8cpp__incl.pdf>
-<kMeansBase_8cpp__incl.pdf, id=3926, 402.50375pt x 264.99pt>
+<kMeansBase_8cpp__incl.pdf, id=3989, 402.50375pt x 264.99pt>
 File: kMeansBase_8cpp__incl.pdf Graphic file (type pdf)
 <use kMeansBase_8cpp__incl.pdf>
 Package pdftex.def Info: kMeansBase_8cpp__incl.pdf  used on input line 16.
 (pdftex.def)             Requested size: 350.0pt x 230.42218pt.
  [91]) (./kMeansCUDA_8cu.tex <./kMeansCUDA_8cu__incl.pdf>
-<kMeansCUDA_8cu__incl.pdf, id=3942, 441.65pt x 264.99pt>
+<kMeansCUDA_8cu__incl.pdf, id=4005, 441.65pt x 264.99pt>
 File: kMeansCUDA_8cu__incl.pdf Graphic file (type pdf)
 <use kMeansCUDA_8cu__incl.pdf>
 Package pdftex.def Info: kMeansCUDA_8cu__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 210.011pt.
  [92]) (./kMeansMPI_8cpp.tex <./kMeansMPI_8cpp__incl.pdf>
-<kMeansMPI_8cpp__incl.pdf, id=3957, 589.20125pt x 320.19624pt>
+<kMeansMPI_8cpp__incl.pdf, id=4019, 589.20125pt x 320.19624pt>
 File: kMeansMPI_8cpp__incl.pdf Graphic file (type pdf)
 <use kMeansMPI_8cpp__incl.pdf>
 Package pdftex.def Info: kMeansMPI_8cpp__incl.pdf  used on input line 18.
 (pdftex.def)             Requested size: 350.0pt x 190.20398pt.
  [93])
 (./kMeansOMP_8cpp.tex <./kMeansOMP_8cpp__incl.pdf>
-<kMeansOMP_8cpp__incl.pdf, id=3971, 519.9425pt x 320.19624pt>
+<kMeansOMP_8cpp__incl.pdf, id=4033, 519.9425pt x 320.19624pt>
 File: kMeansOMP_8cpp__incl.pdf Graphic file (type pdf)
 <use kMeansOMP_8cpp__incl.pdf>
 Package pdftex.def Info: kMeansOMP_8cpp__incl.pdf  used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 215.54172pt.
  [94])
 (./kMeansSequential_8cpp.tex <./kMeansSequential_8cpp__incl.pdf>
-<kMeansSequential_8cpp__incl.pdf, id=3986, 499.8675pt x 320.19624pt>
+<kMeansSequential_8cpp__incl.pdf, id=4048, 499.8675pt x 320.19624pt>
 File: kMeansSequential_8cpp__incl.pdf Graphic file (type pdf)
 <use kMeansSequential_8cpp__incl.pdf>
 Package pdftex.def Info: kMeansSequential_8cpp__incl.pdf  used on input line 17
@@ -1931,7 +1915,7 @@ Package pdftex.def Info: kMeansSequential_8cpp__incl.pdf  used on input line 17
 (pdftex.def)             Requested size: 350.0pt x 224.20422pt.
 )
 (./mainMenu_8cpp.tex <./mainMenu_8cpp__incl.pdf>
-<mainMenu_8cpp__incl.pdf, id=3994, 904.37875pt x 320.19624pt>
+<mainMenu_8cpp__incl.pdf, id=4056, 904.37875pt x 320.19624pt>
 File: mainMenu_8cpp__incl.pdf Graphic file (type pdf)
 <use mainMenu_8cpp__incl.pdf>
 Package pdftex.def Info: mainMenu_8cpp__incl.pdf  used on input line 17.
@@ -1942,7 +1926,7 @@ Underfull \hbox (badness 10000) detected at line 45
  []
 
  <./mainMenu_8cpp_a8216c1645620cdb2f629cde3ac02ffef_cgraph.pdf>
-<mainMenu_8cpp_a8216c1645620cdb2f629cde3ac02ffef_cgraph.pdf, id=4010, 325.215pt
+<mainMenu_8cpp_a8216c1645620cdb2f629cde3ac02ffef_cgraph.pdf, id=4073, 325.215pt
  x 185.69376pt>
 File: mainMenu_8cpp_a8216c1645620cdb2f629cde3ac02ffef_cgraph.pdf Graphic file (
 type pdf)
@@ -1952,20 +1936,20 @@ Package pdftex.def Info: mainMenu_8cpp_a8216c1645620cdb2f629cde3ac02ffef_cgraph
 (pdftex.def)             Requested size: 324.0pt x 185.01326pt.
 )
 (./performanceEvaluation_8cpp.tex [96] <./performanceEvaluation_8cpp__incl.pdf>
-<performanceEvaluation_8cpp__incl.pdf, id=4027, 646.415pt x 209.78375pt>
+<performanceEvaluation_8cpp__incl.pdf, id=4090, 646.415pt x 209.78375pt>
 File: performanceEvaluation_8cpp__incl.pdf Graphic file (type pdf)
 <use performanceEvaluation_8cpp__incl.pdf>
 Package pdftex.def Info: performanceEvaluation_8cpp__incl.pdf  used on input li
 ne 14.
 (pdftex.def)             Requested size: 350.0pt x 113.58562pt.
 ) (./point_8cpp.tex <./point_8cpp__incl.pdf>
-<point_8cpp__incl.pdf, id=4035, 250.9375pt x 209.78375pt>
+<point_8cpp__incl.pdf, id=4098, 250.9375pt x 209.78375pt>
 File: point_8cpp__incl.pdf Graphic file (type pdf)
 <use point_8cpp__incl.pdf>
 Package pdftex.def Info: point_8cpp__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 250.0pt x 209.01176pt.
  [97]) (./utilsCLI_8cpp.tex <./utilsCLI_8cpp__incl.pdf>
-<utilsCLI_8cpp__incl.pdf, id=4050, 660.4675pt x 320.19624pt>
+<utilsCLI_8cpp__incl.pdf, id=4113, 660.4675pt x 320.19624pt>
 File: utilsCLI_8cpp__incl.pdf Graphic file (type pdf)
 <use utilsCLI_8cpp__incl.pdf>
 Package pdftex.def Info: utilsCLI_8cpp__incl.pdf  used on input line 13.
@@ -1985,13 +1969,13 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: A140A9CA2BD6EF423D6DC91FC0B3D122;51354.
+(rerunfilecheck)             Checksum: FF878883528D079E158EB812AA359D96;53386.
  ) 
 Here is how much of TeX's memory you used:
- 20329 strings out of 476182
- 373848 string characters out of 5795595
- 1948975 words of memory out of 5000000
- 41141 multiletter control sequences out of 15000+600000
+ 20347 strings out of 476182
+ 373916 string characters out of 5795595
+ 1949975 words of memory out of 5000000
+ 41138 multiletter control sequences out of 15000+600000
  614043 words of font info for 103 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  101i,16n,117p,1484b,744s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2007,10 +1991,10 @@ r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb
 /texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (111 pages, 3102106 bytes).
+Output written on refman.pdf (111 pages, 1649021 bytes).
 PDF statistics:
- 4546 PDF objects out of 5155 (max. 8388607)
- 4021 compressed objects within 41 object streams
- 731 named destinations out of 1000 (max. 500000)
- 2517 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4612 PDF objects out of 5155 (max. 8388607)
+ 4092 compressed objects within 41 object streams
+ 752 named destinations out of 1000 (max. 500000)
+ 2590 words of extra memory for PDF output out of 10000 (max. 10000000)
 

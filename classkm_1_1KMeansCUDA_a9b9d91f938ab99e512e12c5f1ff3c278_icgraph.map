@@ -1,0 +1,4 @@
+<map id="km::KMeansCUDA::getCentroids" name="km::KMeansCUDA::getCentroids">
+<area shape="rect" id="node1" title="Gets the centroids." alt="" coords="108,5,340,31"/>
+<area shape="rect" id="node2" href="$encoderCUDA_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,60,31"/>
+</map>

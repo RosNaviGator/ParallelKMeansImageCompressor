@@ -84,22 +84,22 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aec94f841783c423055cb74271e6a9676"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekm_1_1imageUtils.html#aec94f841783c423055cb74271e6a9676">preprocessing</a> (cv::Mat &amp;image, int &amp;typeCompressionChoice) -&gt; void</td></tr>
-<tr class="memdesc:aec94f841783c423055cb74271e6a9676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs preprocessing on an image.  <br /></td></tr>
-<tr class="separator:aec94f841783c423055cb74271e6a9676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa4e871e88ecc8504883593dbc1f5090"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekm_1_1imageUtils.html#aaa4e871e88ecc8504883593dbc1f5090">defineKValue</a> (int &amp;k, int levelsColorsChoice, std::set&lt; std::vector&lt; unsigned char &gt; &gt; &amp;different_colors) -&gt; void</td></tr>
-<tr class="memdesc:aaa4e871e88ecc8504883593dbc1f5090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the value of K based on the color levels choice.  <br /></td></tr>
-<tr class="separator:aaa4e871e88ecc8504883593dbc1f5090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35a30d3d91dc18ef7af71cc2afbfcda7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekm_1_1imageUtils.html#a35a30d3d91dc18ef7af71cc2afbfcda7">pointsFromImage</a> (cv::Mat &amp;image, std::vector&lt; <a class="el" href="classkm_1_1Point.html">Point</a> &gt; &amp;points, std::set&lt; std::vector&lt; unsigned char &gt; &gt; &amp;different_colors) -&gt; void</td></tr>
-<tr class="memdesc:a35a30d3d91dc18ef7af71cc2afbfcda7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts points from an image.  <br /></td></tr>
-<tr class="separator:a35a30d3d91dc18ef7af71cc2afbfcda7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a479c1e0885b13cd6cc9d7b42af44f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekm_1_1imageUtils.html#a91a479c1e0885b13cd6cc9d7b42af44f">preprocessing</a> (cv::Mat &amp;image, const int &amp;typeCompressionChoice) -&gt; void</td></tr>
+<tr class="memdesc:a91a479c1e0885b13cd6cc9d7b42af44f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs preprocessing on an image.  <br /></td></tr>
+<tr class="separator:a91a479c1e0885b13cd6cc9d7b42af44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc202ded39af533b4f6c8e9ec5882359"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekm_1_1imageUtils.html#adc202ded39af533b4f6c8e9ec5882359">defineKValue</a> (int &amp;k, const int &amp;levelsColorsChoice, const std::set&lt; std::vector&lt; unsigned char &gt; &gt; &amp;different_colors) -&gt; void</td></tr>
+<tr class="memdesc:adc202ded39af533b4f6c8e9ec5882359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the value of K based on the color levels choice.  <br /></td></tr>
+<tr class="separator:adc202ded39af533b4f6c8e9ec5882359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d8a4836b1c38a39f61935b31e8d8fd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekm_1_1imageUtils.html#a69d8a4836b1c38a39f61935b31e8d8fd">pointsFromImage</a> (const cv::Mat &amp;image, std::vector&lt; <a class="el" href="classkm_1_1Point.html">Point</a> &gt; &amp;points, std::set&lt; std::vector&lt; unsigned char &gt; &gt; &amp;different_colors) -&gt; void</td></tr>
+<tr class="memdesc:a69d8a4836b1c38a39f61935b31e8d8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts points from an image.  <br /></td></tr>
+<tr class="separator:a69d8a4836b1c38a39f61935b31e8d8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides utility functions for image processing. </p>
 <p>The <a class="el" href="namespacekm_1_1imageUtils.html" title="Provides utility functions for image processing.">imageUtils</a> namespace within the km namespace provides a suite of utility functions aimed at facilitating various image processing tasks. This namespace encompasses functions designed to preprocess images, determine the appropriate number of clusters for color-based compression, and extract points from images for further analysis. The preprocessing function is responsible for preparing an image for subsequent processing steps, adjusting it according to the specified type of compression. The defineKValue function calculates the number of clusters, or K, based on the chosen levels of colors and the distinct colors present in the image. This function helps in determining the optimal number of clusters for tasks such as color quantization. Lastly, the pointsFromImage function extracts points from the image and organizes them into a vector, using the set of distinct colors found in the image to aid in this process. These functions collectively support various aspects of image processing, ensuring efficient handling and analysis of image data. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="aaa4e871e88ecc8504883593dbc1f5090" name="aaa4e871e88ecc8504883593dbc1f5090"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa4e871e88ecc8504883593dbc1f5090">&#9670;&#160;</a></span>defineKValue()</h2>
+<a id="adc202ded39af533b4f6c8e9ec5882359" name="adc202ded39af533b4f6c8e9ec5882359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc202ded39af533b4f6c8e9ec5882359">&#9670;&#160;</a></span>defineKValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -113,13 +113,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>levelsColorsChoice</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::set&lt; std::vector&lt; unsigned char &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::set&lt; std::vector&lt; unsigned char &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>different_colors</em>&#160;</td>
         </tr>
         <tr>
@@ -142,8 +142,8 @@ Functions</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespacekm_1_1imageUtils_aaa4e871e88ecc8504883593dbc1f5090_cgraph.png" border="0" usemap="#anamespacekm_1_1imageUtils_aaa4e871e88ecc8504883593dbc1f5090_cgraph" alt=""/></div>
-<map name="anamespacekm_1_1imageUtils_aaa4e871e88ecc8504883593dbc1f5090_cgraph" id="anamespacekm_1_1imageUtils_aaa4e871e88ecc8504883593dbc1f5090_cgraph">
+<div class="center"><img src="namespacekm_1_1imageUtils_adc202ded39af533b4f6c8e9ec5882359_cgraph.png" border="0" usemap="#anamespacekm_1_1imageUtils_adc202ded39af533b4f6c8e9ec5882359_cgraph" alt=""/></div>
+<map name="anamespacekm_1_1imageUtils_adc202ded39af533b4f6c8e9ec5882359_cgraph" id="anamespacekm_1_1imageUtils_adc202ded39af533b4f6c8e9ec5882359_cgraph">
 <area shape="rect" title="Defines the value of K based on the color levels choice." alt="" coords="5,141,220,166"/>
 <area shape="rect" href="classkm_1_1ConfigReader.html#a532eced302fd72113c7359aa1d08faab" title="Gets the fifth level compression color value." alt="" coords="278,5,473,45"/>
 <area shape="rect" href="classkm_1_1ConfigReader.html#a787856a51a8817148108650a664f5738" title="Gets the first level compression color value." alt="" coords="278,69,473,109"/>
@@ -155,8 +155,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespacekm_1_1imageUtils_aaa4e871e88ecc8504883593dbc1f5090_icgraph.png" border="0" usemap="#anamespacekm_1_1imageUtils_aaa4e871e88ecc8504883593dbc1f5090_icgraph" alt=""/></div>
-<map name="anamespacekm_1_1imageUtils_aaa4e871e88ecc8504883593dbc1f5090_icgraph" id="anamespacekm_1_1imageUtils_aaa4e871e88ecc8504883593dbc1f5090_icgraph">
+<div class="center"><img src="namespacekm_1_1imageUtils_adc202ded39af533b4f6c8e9ec5882359_icgraph.png" border="0" usemap="#anamespacekm_1_1imageUtils_adc202ded39af533b4f6c8e9ec5882359_icgraph" alt=""/></div>
+<map name="anamespacekm_1_1imageUtils_adc202ded39af533b4f6c8e9ec5882359_icgraph" id="anamespacekm_1_1imageUtils_adc202ded39af533b4f6c8e9ec5882359_icgraph">
 <area shape="rect" title="Defines the value of K based on the color levels choice." alt="" coords="108,5,323,31"/>
 <area shape="rect" href="encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,5,60,31"/>
 </map>
@@ -164,8 +164,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a35a30d3d91dc18ef7af71cc2afbfcda7" name="a35a30d3d91dc18ef7af71cc2afbfcda7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35a30d3d91dc18ef7af71cc2afbfcda7">&#9670;&#160;</a></span>pointsFromImage()</h2>
+<a id="a69d8a4836b1c38a39f61935b31e8d8fd" name="a69d8a4836b1c38a39f61935b31e8d8fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69d8a4836b1c38a39f61935b31e8d8fd">&#9670;&#160;</a></span>pointsFromImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,7 +173,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void km::imageUtils::pointsFromImage </td>
           <td>(</td>
-          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramtype">const cv::Mat &amp;&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
@@ -208,8 +208,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespacekm_1_1imageUtils_a35a30d3d91dc18ef7af71cc2afbfcda7_icgraph.png" border="0" usemap="#anamespacekm_1_1imageUtils_a35a30d3d91dc18ef7af71cc2afbfcda7_icgraph" alt=""/></div>
-<map name="anamespacekm_1_1imageUtils_a35a30d3d91dc18ef7af71cc2afbfcda7_icgraph" id="anamespacekm_1_1imageUtils_a35a30d3d91dc18ef7af71cc2afbfcda7_icgraph">
+<div class="center"><img src="namespacekm_1_1imageUtils_a69d8a4836b1c38a39f61935b31e8d8fd_icgraph.png" border="0" usemap="#anamespacekm_1_1imageUtils_a69d8a4836b1c38a39f61935b31e8d8fd_icgraph" alt=""/></div>
+<map name="anamespacekm_1_1imageUtils_a69d8a4836b1c38a39f61935b31e8d8fd_icgraph" id="anamespacekm_1_1imageUtils_a69d8a4836b1c38a39f61935b31e8d8fd_icgraph">
 <area shape="rect" title="Extracts points from an image." alt="" coords="108,5,311,45"/>
 <area shape="rect" href="encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
 </map>
@@ -217,8 +217,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aec94f841783c423055cb74271e6a9676" name="aec94f841783c423055cb74271e6a9676"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec94f841783c423055cb74271e6a9676">&#9670;&#160;</a></span>preprocessing()</h2>
+<a id="a91a479c1e0885b13cd6cc9d7b42af44f" name="a91a479c1e0885b13cd6cc9d7b42af44f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91a479c1e0885b13cd6cc9d7b42af44f">&#9670;&#160;</a></span>preprocessing()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +232,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>typeCompressionChoice</em>&#160;</td>
         </tr>
         <tr>
@@ -254,8 +254,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespacekm_1_1imageUtils_aec94f841783c423055cb74271e6a9676_cgraph.png" border="0" usemap="#anamespacekm_1_1imageUtils_aec94f841783c423055cb74271e6a9676_cgraph" alt=""/></div>
-<map name="anamespacekm_1_1imageUtils_aec94f841783c423055cb74271e6a9676_cgraph" id="anamespacekm_1_1imageUtils_aec94f841783c423055cb74271e6a9676_cgraph">
+<div class="center"><img src="namespacekm_1_1imageUtils_a91a479c1e0885b13cd6cc9d7b42af44f_cgraph.png" border="0" usemap="#anamespacekm_1_1imageUtils_a91a479c1e0885b13cd6cc9d7b42af44f_cgraph" alt=""/></div>
+<map name="anamespacekm_1_1imageUtils_a91a479c1e0885b13cd6cc9d7b42af44f_cgraph" id="anamespacekm_1_1imageUtils_a91a479c1e0885b13cd6cc9d7b42af44f_cgraph">
 <area shape="rect" title="Performs preprocessing on an image." alt="" coords="5,13,227,38"/>
 <area shape="rect" href="classkm_1_1ConfigReader.html#a6067e8491ad1fdbb5f62b33ef215208e" title="Gets the resizing factor." alt="" coords="275,5,497,45"/>
 </map>
@@ -263,8 +263,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespacekm_1_1imageUtils_aec94f841783c423055cb74271e6a9676_icgraph.png" border="0" usemap="#anamespacekm_1_1imageUtils_aec94f841783c423055cb74271e6a9676_icgraph" alt=""/></div>
-<map name="anamespacekm_1_1imageUtils_aec94f841783c423055cb74271e6a9676_icgraph" id="anamespacekm_1_1imageUtils_aec94f841783c423055cb74271e6a9676_icgraph">
+<div class="center"><img src="namespacekm_1_1imageUtils_a91a479c1e0885b13cd6cc9d7b42af44f_icgraph.png" border="0" usemap="#anamespacekm_1_1imageUtils_a91a479c1e0885b13cd6cc9d7b42af44f_icgraph" alt=""/></div>
+<map name="anamespacekm_1_1imageUtils_a91a479c1e0885b13cd6cc9d7b42af44f_icgraph" id="anamespacekm_1_1imageUtils_a91a479c1e0885b13cd6cc9d7b42af44f_icgraph">
 <area shape="rect" title="Performs preprocessing on an image." alt="" coords="108,5,329,31"/>
 <area shape="rect" href="encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,5,60,31"/>
 </map>

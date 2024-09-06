@@ -1,19 +1,19 @@
 <map id="main" name="main">
 <area shape="rect" id="node1" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,433,60,458"/>
-<area shape="rect" id="node2" href="$namespacekm_1_1filesUtils.html#ad2f18ea57b4e601ce8cfa2db15d8bbd7" title="Creates output directories." alt="" coords="128,76,329,116"/>
-<area shape="rect" id="node3" href="$namespacekm_1_1imageUtils.html#aaa4e871e88ecc8504883593dbc1f5090" title="Defines the value of K based on the color levels choice." alt="" coords="121,141,336,166"/>
+<area shape="rect" id="node2" href="$namespacekm_1_1filesUtils.html#a7adae051e53e3d42b24cfdd07623189d" title="Creates output directories." alt="" coords="128,76,329,116"/>
+<area shape="rect" id="node3" href="$namespacekm_1_1imageUtils.html#adc202ded39af533b4f6c8e9ec5882359" title="Defines the value of K based on the color levels choice." alt="" coords="121,141,336,166"/>
 <area shape="rect" id="node9" href="$classkm_1_1Performance.html#a3145fecb00fa5d567d13a0f808f6be7e" title="Extracts the file name from the output path." alt="" coords="135,191,323,231"/>
-<area shape="rect" id="node10" href="$classkm_1_1Performance.html#a02f2aed3530f2be2546a66e4fb3ea9b6" title="Fills the performance data." alt="" coords="108,255,349,281"/>
-<area shape="rect" id="node11" href="$classkm_1_1KMeansCUDA.html#a89841b99536b3dfa0df3f169a465ac19" title="Gets the centroids." alt="" coords="113,305,345,330"/>
-<area shape="rect" id="node12" href="$classkm_1_1KMeansCUDA.html#a2dbd2d4266644116e8783f5aa5b34869" title="Gets the number of iterations." alt="" coords="113,354,345,379"/>
-<area shape="rect" id="node13" href="$classkm_1_1KMeansCUDA.html#a9ec0cacc3e692cd39b8285982a238dea" title="Gets the points." alt="" coords="123,403,334,429"/>
-<area shape="rect" id="node14" href="$namespacekm_1_1imageUtils.html#a35a30d3d91dc18ef7af71cc2afbfcda7" title="Extracts points from an image." alt="" coords="127,453,330,493"/>
-<area shape="rect" id="node15" href="$namespacekm_1_1imageUtils.html#aec94f841783c423055cb74271e6a9676" title="Performs preprocessing on an image." alt="" coords="118,518,339,543"/>
-<area shape="rect" id="node17" href="$namespacekm_1_1utilsCLI.html#a879bfe8d67773840b208b8e12d8bd4a1" title="Prints the compression information." alt="" coords="117,568,340,608"/>
-<area shape="rect" id="node18" href="$classkm_1_1KMeansCUDA.html#a4d748e05b8ebad9ec535d0c33ec3f3ab" title="Runs the K&#45;means clustering algorithm using CUDA." alt="" coords="143,633,314,658"/>
-<area shape="rect" id="node19" href="$namespacekm_1_1utilsCLI.html#aa146da1e32e38bd74c716ce73eae19ae" title="Displays the work done message." alt="" coords="142,682,315,707"/>
-<area shape="rect" id="node20" href="$namespacekm_1_1filesUtils.html#a53d25bfe40b892af0c4f049bdb6a5773" title="Writes data to a binary file." alt="" coords="121,731,336,757"/>
-<area shape="rect" id="node21" href="$classkm_1_1Performance.html#ab3ba15c019e82d392539f6b2a48fa761" title="Writes performance data to a CSV file." alt="" coords="128,781,329,806"/>
+<area shape="rect" id="node10" href="$classkm_1_1Performance.html#abd2a1a4e8dd386c0ea671256f7eff9d9" title="Fills the performance data." alt="" coords="108,255,349,281"/>
+<area shape="rect" id="node11" href="$classkm_1_1KMeansCUDA.html#a9b9d91f938ab99e512e12c5f1ff3c278" title="Gets the centroids." alt="" coords="113,305,345,330"/>
+<area shape="rect" id="node12" href="$classkm_1_1KMeansCUDA.html#acd290edcbff393e0ae9e1833089f5e50" title="Gets the number of iterations." alt="" coords="113,354,345,379"/>
+<area shape="rect" id="node13" href="$classkm_1_1KMeansCUDA.html#a768ada854a14e9ba00a392600331ebf6" title="Gets the points." alt="" coords="123,403,334,429"/>
+<area shape="rect" id="node14" href="$namespacekm_1_1imageUtils.html#a69d8a4836b1c38a39f61935b31e8d8fd" title="Extracts points from an image." alt="" coords="127,453,330,493"/>
+<area shape="rect" id="node15" href="$namespacekm_1_1imageUtils.html#a91a479c1e0885b13cd6cc9d7b42af44f" title="Performs preprocessing on an image." alt="" coords="118,518,339,543"/>
+<area shape="rect" id="node17" href="$namespacekm_1_1utilsCLI.html#a1b2880a366afdfab838efc6cdc7c8b5c" title="Prints the compression information." alt="" coords="117,568,340,608"/>
+<area shape="rect" id="node18" href="$classkm_1_1KMeansCUDA.html#ae29d37494a2e2a9f8583fc6943dc58f6" title="Runs the K&#45;means clustering algorithm using CUDA." alt="" coords="143,633,314,658"/>
+<area shape="rect" id="node19" href="$namespacekm_1_1utilsCLI.html#a253058d17f8f6bc1b3dee9252d043fdd" title="Displays the work done message." alt="" coords="142,682,315,707"/>
+<area shape="rect" id="node20" href="$namespacekm_1_1filesUtils.html#a0759e813c40c555641660c7b79e34766" title="Writes data to a binary file." alt="" coords="121,731,336,757"/>
+<area shape="rect" id="node21" href="$classkm_1_1Performance.html#ae2b8135c4bf78ca422ec01348859037a" title="Writes performance data to a CSV file." alt="" coords="128,781,329,806"/>
 <area shape="rect" id="node4" href="$classkm_1_1ConfigReader.html#a532eced302fd72113c7359aa1d08faab" title="Gets the fifth level compression color value." alt="" coords="411,5,606,45"/>
 <area shape="rect" id="node5" href="$classkm_1_1ConfigReader.html#a787856a51a8817148108650a664f5738" title="Gets the first level compression color value." alt="" coords="411,69,606,109"/>
 <area shape="rect" id="node6" href="$classkm_1_1ConfigReader.html#a0a13dd20b33346486e13a87a9a52e4e5" title="Gets the fourth level compression color value." alt="" coords="405,133,613,173"/>

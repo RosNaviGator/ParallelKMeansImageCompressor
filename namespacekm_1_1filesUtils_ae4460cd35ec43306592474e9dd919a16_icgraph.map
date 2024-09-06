@@ -1,5 +1,5 @@
 <map id="km::filesUtils::isCorrectExtension" name="km::filesUtils::isCorrectExtension">
 <area shape="rect" id="node1" title="Checks if a file has the correct extension." alt="" coords="411,5,585,45"/>
-<area shape="rect" id="node2" href="$namespacekm_1_1filesUtils.html#a623d05ffa66beb3bf12abc6cac112487" title="Creates a decoding menu." alt="" coords="108,13,363,38"/>
+<area shape="rect" id="node2" href="$namespacekm_1_1filesUtils.html#a57a5180e651f1cfe50f2eadeea1f0438" title="Creates a decoding menu." alt="" coords="108,13,363,38"/>
 <area shape="rect" id="node3" href="$decoder_8cpp.html#a8216c1645620cdb2f629cde3ac02ffef" title="Main function for the Decoder program." alt="" coords="5,13,60,38"/>
 </map>

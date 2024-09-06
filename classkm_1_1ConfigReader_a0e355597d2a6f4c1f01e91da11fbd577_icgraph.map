@@ -1,5 +1,5 @@
 <map id="km::ConfigReader::getThirdLevelCompressionColor" name="km::ConfigReader::getThirdLevelCompressionColor">
 <area shape="rect" id="node1" title="Gets the third level compression color value." alt="" coords="371,5,571,45"/>
-<area shape="rect" id="node2" href="$namespacekm_1_1imageUtils.html#aaa4e871e88ecc8504883593dbc1f5090" title="Defines the value of K based on the color levels choice." alt="" coords="108,13,323,38"/>
+<area shape="rect" id="node2" href="$namespacekm_1_1imageUtils.html#adc202ded39af533b4f6c8e9ec5882359" title="Defines the value of K based on the color levels choice." alt="" coords="108,13,323,38"/>
 <area shape="rect" id="node3" href="$encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
 </map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setfeature_0',['setFeature',['../classkm_1_1Point.html#abf5779b9b295a1b9ba707f262fdec275',1,'km::Point']]]
+  ['setfeature_0',['setFeature',['../classkm_1_1Point.html#ab75c03e666b20529270f1a6091918e91',1,'km::Point']]]
 ];

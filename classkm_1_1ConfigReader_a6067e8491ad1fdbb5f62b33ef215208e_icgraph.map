@@ -1,5 +1,5 @@
 <map id="km::ConfigReader::getResizingFactor" name="km::ConfigReader::getResizingFactor">
 <area shape="rect" id="node1" title="Gets the resizing factor." alt="" coords="377,5,600,45"/>
-<area shape="rect" id="node2" href="$namespacekm_1_1imageUtils.html#aec94f841783c423055cb74271e6a9676" title="Performs preprocessing on an image." alt="" coords="108,13,329,38"/>
+<area shape="rect" id="node2" href="$namespacekm_1_1imageUtils.html#a91a479c1e0885b13cd6cc9d7b42af44f" title="Performs preprocessing on an image." alt="" coords="108,13,329,38"/>
 <area shape="rect" id="node3" href="$encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
 </map>

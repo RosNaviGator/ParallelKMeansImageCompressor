@@ -1,0 +1,4 @@
+<map id="km::KMeansOMP::run" name="km::KMeansOMP::run">
+<area shape="rect" id="node1" title="Runs the K&#45;means clustering algorithm using OpenMP." alt="" coords="108,5,271,31"/>
+<area shape="rect" id="node2" href="$encoderOMP_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the OpenMP&#45;based image compression application." alt="" coords="5,5,60,31"/>
+</map>

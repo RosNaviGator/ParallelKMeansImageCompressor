@@ -9,9 +9,9 @@
 <area shape="rect" id="node13" href="$classkm_1_1KMeansCUDA.html#a9ec0cacc3e692cd39b8285982a238dea" title="Gets the points." alt="" coords="123,403,334,429"/>
 <area shape="rect" id="node14" href="$namespacekm_1_1imageUtils.html#a5a09c5c3205050498f807852bafe244f" title="Extracts points from an image." alt="" coords="127,453,330,493"/>
 <area shape="rect" id="node15" href="$namespacekm_1_1imageUtils.html#aa01205ffe26b0f4c815d5750a4ff0e1c" title="Performs preprocessing on an image." alt="" coords="118,518,339,543"/>
-<area shape="rect" id="node17" href="$namespacekm_1_1utilsCLI.html#ae362e74bbc04f2d92c857f4cb9c1373d" title="Prints the compression information." alt="" coords="117,568,340,608"/>
+<area shape="rect" id="node17" href="$namespacekm_1_1utilsCLI.html#a879bfe8d67773840b208b8e12d8bd4a1" title="Prints the compression information." alt="" coords="117,568,340,608"/>
 <area shape="rect" id="node18" href="$classkm_1_1KMeansCUDA.html#a4d748e05b8ebad9ec535d0c33ec3f3ab" title="Runs the K&#45;means clustering algorithm using CUDA." alt="" coords="143,633,314,658"/>
-<area shape="rect" id="node19" href="$namespacekm_1_1utilsCLI.html#ac67f75f5e367779691a03add1dceaaa7" title="Displays the work done message." alt="" coords="142,682,315,707"/>
+<area shape="rect" id="node19" href="$namespacekm_1_1utilsCLI.html#aa146da1e32e38bd74c716ce73eae19ae" title="Displays the work done message." alt="" coords="142,682,315,707"/>
 <area shape="rect" id="node20" href="$namespacekm_1_1filesUtils.html#a53d25bfe40b892af0c4f049bdb6a5773" title="Writes data to a binary file." alt="" coords="121,731,336,757"/>
 <area shape="rect" id="node21" href="$classkm_1_1Performance.html#ab3ba15c019e82d392539f6b2a48fa761" title="Writes performance data to a CSV file." alt="" coords="128,781,329,806"/>
 <area shape="rect" id="node4" href="$classkm_1_1ConfigReader.html#a532eced302fd72113c7359aa1d08faab" title="Gets the fifth level compression color value." alt="" coords="411,5,606,45"/>

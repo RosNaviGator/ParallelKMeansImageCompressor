@@ -13,5 +13,5 @@ var searchData=
   ['pointsfromimage_10',['pointsFromImage',['../namespacekm_1_1imageUtils.html#a5a09c5c3205050498f807852bafe244f',1,'km::imageUtils']]],
   ['preprocessing_11',['preprocessing',['../namespacekm_1_1imageUtils.html#aa01205ffe26b0f4c815d5750a4ff0e1c',1,'km::imageUtils']]],
   ['printclusters_12',['printClusters',['../classkm_1_1KMeansCUDA.html#ab744aaeae716cb1bb591663160c0dfe0',1,'km::KMeansCUDA']]],
-  ['printcompressioninformations_13',['printCompressionInformations',['../namespacekm_1_1utilsCLI.html#ae362e74bbc04f2d92c857f4cb9c1373d',1,'km::utilsCLI']]]
+  ['printcompressioninformations_13',['printCompressionInformations',['../namespacekm_1_1utilsCLI.html#a879bfe8d67773840b208b8e12d8bd4a1',1,'km::utilsCLI']]]
 ];

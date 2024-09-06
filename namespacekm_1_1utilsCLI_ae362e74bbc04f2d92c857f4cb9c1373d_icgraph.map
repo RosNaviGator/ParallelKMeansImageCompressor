@@ -1,4 +1,7 @@
 <map id="km::utilsCLI::printCompressionInformations" name="km::utilsCLI::printCompressionInformations">
-<area shape="rect" id="node1" title="Prints the compression information." alt="" coords="108,5,331,45"/>
-<area shape="rect" id="node2" href="$encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
+<area shape="rect" id="Node000001" title="Prints the compression information." alt="" coords="108,23,331,63"/>
+<area shape="rect" id="Node000002" href="$encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,29,60,24,60,19,95,24"/>
+<area shape="rect" id="Node000003" href="$encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,55,60,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="95,62,60,67,60,61,94,57"/>
 </map>

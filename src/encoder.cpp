@@ -46,7 +46,7 @@ using namespace km::imageUtils;
  * @return Returns 0 on successful execution, or 1 if an error occurs.
  */
 
-auto main(int argc, char** argv) -> int
+auto main(int argc, char* argv[]) -> int
 {
     int k = 0;
     std::string path;

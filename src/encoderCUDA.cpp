@@ -45,32 +45,34 @@ using namespace km::imageUtils;
  * @return Returns 0 on successful execution, or 1 if an error occurs.
  */
 
-int main(int argc, char *argv[])
+auto main(int argc, char *argv[]) -> int
 {
-    int deviceID;
+    int deviceID = 0;
     cudaGetDevice(&deviceID);
-    cudaDeviceProp props;
+    cudaDeviceProp props{};
     cudaGetDeviceProperties(&props, deviceID);
     std::cout << "Device: " << props.name << std::endl;
 
-    int k;
+    int k = 0;
     std::string path;
     std::string outputPath;
     std::string fileName;
     std::vector<Point> points;
-    int height;
-    int width;
-    int n_points;
+    int height = 0;
+    int width = 0;
+    int n_points = 0;
     std::vector<std::pair<int, Point>> local_points;
-    int levelsColorsChioce;
-    int typeCompressionChoice;
+    int levelsColorsChioce = 0;
+    int typeCompressionChoice = 0;
     cv::Mat image;
     Performance performance;
 
+
+    auto args = std::span(argv, size_t(argc));
     // pass inputs as args for performance evaluation
     if (4 == argc)
     {
-        path = argv[1];
+        path = std::string(args[1]);
         levelsColorsChioce = std::stoi(argv[2]);
         typeCompressionChoice = std::stoi(argv[3]);
 
@@ -105,7 +107,8 @@ int main(int argc, char *argv[])
 
     defineKValue(k, levelsColorsChioce, different_colors);
 
-    size_t different_colors_size = different_colors.size();
+    size_t different_colors_size = 0;
+    different_colors_size = different_colors.size();
 
     printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
 
@@ -139,7 +142,7 @@ int main(int argc, char *argv[])
     std::cout << std::endl;
     std::cout << "The compressed image has been saved in the outputs directory." << std::endl;
 
-    cudaError_t lastError;
+    cudaError_t lastError{};
     lastError = cudaGetLastError();
     if (lastError != cudaSuccess)
     {

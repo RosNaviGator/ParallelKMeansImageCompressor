@@ -47,7 +47,6 @@ using namespace km::imageUtils;
 
 int main(int argc, char *argv[])
 {
-
     int deviceID;
     cudaGetDevice(&deviceID);
     cudaDeviceProp props;

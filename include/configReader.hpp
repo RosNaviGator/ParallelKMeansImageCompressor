@@ -37,7 +37,7 @@ namespace km
         int color_choice = 0;                                   ///< Color choice
         int compression_choice = 0;                             ///< Compression choice
         std::filesystem::path inputImageFilePath;               ///< Input image file path
-        std::regex pattern;                                     ///< Regular expression pattern
+        std::regex pattern{};                                   ///< Regular expression pattern
         std::unordered_set<std::string> requiredVariables = {}; ///< Set of required variables
 
         [[nodiscard]] auto checkVariableExists(const std::string &variableName) const -> bool;
@@ -104,6 +104,9 @@ namespace km
          */
         [[nodiscard]] auto readConfigFile() -> bool;
 
+        /**
+         * @brief Default constructor
+         */
         ConfigReader();
     };
 } // namespace km

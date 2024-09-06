@@ -51,6 +51,6 @@ jobs:
         run: |
           git config --global user.name "GitHub Action" # Use a generic name for commits
           git config --global user.email "action@github.com" # Generic email for commits
-          git add doxygenDocs.pdf
+          git add report/code_instruction_manual.pdf
           git commit -m "Add generated Doxygen PDF"
           git push origin main # Ensure this is the correct branch

@@ -1,4 +1,7 @@
 <map id="km::imageUtils::preprocessing" name="km::imageUtils::preprocessing">
-<area shape="rect" id="node1" title="Performs preprocessing on an image." alt="" coords="108,5,329,31"/>
-<area shape="rect" id="node2" href="$encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,5,60,31"/>
+<area shape="rect" id="Node000001" title="Performs preprocessing on an image." alt="" coords="103,31,301,57"/>
+<area shape="rect" id="Node000002" href="$encoderCUDA_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main function for the CUDA&#45;based image compression application." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,30,55,25,55,20,93,25"/>
+<area shape="rect" id="Node000003" href="$encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="93,63,55,68,55,63,92,58"/>
 </map>

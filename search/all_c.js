@@ -10,8 +10,8 @@ var searchData=
   ['point_2ecpp_7',['point.cpp',['../point_8cpp.html',1,'']]],
   ['point_2ehpp_8',['point.hpp',['../point_8hpp.html',1,'']]],
   ['points_9',['points',['../classkm_1_1KMeansBase.html#a73dfe23dfbb0c544cd128255e291aa05',1,'km::KMeansBase::points()'],['../classkm_1_1KMeansCUDA.html#a0999290e0b7623ccce65d11abf0c4a44',1,'km::KMeansCUDA::points()']]],
-  ['pointsfromimage_10',['pointsFromImage',['../namespacekm_1_1imageUtils.html#a5a09c5c3205050498f807852bafe244f',1,'km::imageUtils']]],
-  ['preprocessing_11',['preprocessing',['../namespacekm_1_1imageUtils.html#aa01205ffe26b0f4c815d5750a4ff0e1c',1,'km::imageUtils']]],
+  ['pointsfromimage_10',['pointsFromImage',['../namespacekm_1_1imageUtils.html#a35a30d3d91dc18ef7af71cc2afbfcda7',1,'km::imageUtils']]],
+  ['preprocessing_11',['preprocessing',['../namespacekm_1_1imageUtils.html#aec94f841783c423055cb74271e6a9676',1,'km::imageUtils']]],
   ['printclusters_12',['printClusters',['../classkm_1_1KMeansCUDA.html#ab744aaeae716cb1bb591663160c0dfe0',1,'km::KMeansCUDA']]],
   ['printcompressioninformations_13',['printCompressionInformations',['../namespacekm_1_1utilsCLI.html#a879bfe8d67773840b208b8e12d8bd4a1',1,'km::utilsCLI']]]
 ];

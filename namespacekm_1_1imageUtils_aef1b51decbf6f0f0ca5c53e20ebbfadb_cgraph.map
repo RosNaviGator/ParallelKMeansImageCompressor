@@ -1,8 +1,13 @@
 <map id="km::imageUtils::defineKValue" name="km::imageUtils::defineKValue">
-<area shape="rect" id="node1" title="Defines the value of K based on the color levels choice." alt="" coords="5,141,220,166"/>
-<area shape="rect" id="node2" href="$classkm_1_1ConfigReader.html#a532eced302fd72113c7359aa1d08faab" title="Gets the fifth level compression color value." alt="" coords="278,5,473,45"/>
-<area shape="rect" id="node3" href="$classkm_1_1ConfigReader.html#a787856a51a8817148108650a664f5738" title="Gets the first level compression color value." alt="" coords="278,69,473,109"/>
-<area shape="rect" id="node4" href="$classkm_1_1ConfigReader.html#a0a13dd20b33346486e13a87a9a52e4e5" title="Gets the fourth level compression color value." alt="" coords="271,133,479,173"/>
-<area shape="rect" id="node5" href="$classkm_1_1ConfigReader.html#a12968b54f38b17586d6e65be5158d275" title="Gets the second level compression color value." alt="" coords="268,197,483,237"/>
-<area shape="rect" id="node6" href="$classkm_1_1ConfigReader.html#a0e355597d2a6f4c1f01e91da11fbd577" title="Gets the third level compression color value." alt="" coords="275,261,475,301"/>
+<area shape="rect" id="Node000001" title="Defines the value of K based on the color levels choice." alt="" coords="5,147,199,173"/>
+<area shape="rect" id="Node000002" href="$classkm_1_1ConfigReader.html#a532eced302fd72113c7359aa1d08faab" title="Gets the fifth level compression color value." alt="" coords="256,5,435,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,144,173,102,245,58,257,52,260,57,248,62,176,107,122,148"/>
+<area shape="rect" id="Node000003" href="$classkm_1_1ConfigReader.html#a787856a51a8817148108650a664f5738" title="Gets the first level compression color value." alt="" coords="256,72,435,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,143,250,117,251,122,154,149"/>
+<area shape="rect" id="Node000004" href="$classkm_1_1ConfigReader.html#a0a13dd20b33346486e13a87a9a52e4e5" title="Gets the fourth level compression color value." alt="" coords="250,139,440,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="199,157,234,157,234,163,199,163"/>
+<area shape="rect" id="Node000005" href="$classkm_1_1ConfigReader.html#a12968b54f38b17586d6e65be5158d275" title="Gets the second level compression color value." alt="" coords="247,205,444,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="154,171,251,198,250,203,153,177"/>
+<area shape="rect" id="Node000006" href="$classkm_1_1ConfigReader.html#a0e355597d2a6f4c1f01e91da11fbd577" title="Gets the third level compression color value." alt="" coords="254,272,436,315"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="122,172,176,213,248,258,260,263,257,268,245,262,173,218,118,176"/>
 </map>

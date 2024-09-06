@@ -34,7 +34,17 @@ jobs:
       # Rename the PDF in the root directory
       - name: Rename PDF in root directory
         run: |
-          mv refman.pdf doxygenDocs.pdf
+          mv refman.pdf code_instruction_manual.pdf
+
+      # Create report directory
+      - name: Create report directory
+        run: |
+          mkdir -p report
+      
+      # Move the PDF to the report directory
+      - name: Move PDF to report directory
+        run: |
+          mv doxygenDocs.pdf report/code_instruction_manual.pdf
 
       # Commit and push the PDF to the repository
       - name: Commit and push PDF

@@ -125,7 +125,8 @@ auto main(int argc, char *argv[]) -> int
 
     defineKValue(k, levelsColorsChioce, different_colors);
 
-    size_t different_colors_size = different_colors.size();
+    size_t different_colors_size = 0;
+    different_colors_size = different_colors.size();
 
     printCompressionInformations(originalWidth, originalHeight, width, height, k, different_colors_size);
 

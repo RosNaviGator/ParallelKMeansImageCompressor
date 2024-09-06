@@ -69,6 +69,7 @@ auto main(int argc, char *argv[]) -> int
 
 
     auto args = std::span(argv, size_t(argc));
+    
     // pass inputs as args for performance evaluation
     if (4 == argc)
     {

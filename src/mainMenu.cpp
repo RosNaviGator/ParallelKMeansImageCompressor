@@ -27,7 +27,6 @@ using namespace km::filesUtils;
  * @return Returns 0 on successful execution.
  */
 
-
 auto main() -> int
 {
     namespace bp = boost::process;

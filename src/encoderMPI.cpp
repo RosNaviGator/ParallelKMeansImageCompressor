@@ -55,7 +55,7 @@ using namespace km::imageUtils;
 
 auto main(int argc, char *argv[]) -> int
 {
-    MPI_Init(NULL, NULL);
+    MPI_Init(nullptr, nullptr);  // used nullptr, safer and implicitly convertible to any pointer type.
     int world_size = 0;
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
     int rank = 0;

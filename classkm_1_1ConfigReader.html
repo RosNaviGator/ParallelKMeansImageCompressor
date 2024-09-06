@@ -128,6 +128,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a19f406128a55836228ef667670ecfe50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the configuration file.  <br /></td></tr>
 <tr class="separator:a19f406128a55836228ef667670ecfe50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90c639b06e53c898c9f394deee245a36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkm_1_1ConfigReader.html#a90c639b06e53c898c9f394deee245a36">ConfigReader</a> ()</td></tr>
+<tr class="memdesc:a90c639b06e53c898c9f394deee245a36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
 <tr class="separator:a90c639b06e53c898c9f394deee245a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -164,7 +165,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a86572dc7ec14e871223278dc090c7bd1"><td class="memItemLeft" align="right" valign="top">std::filesystem::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkm_1_1ConfigReader.html#a86572dc7ec14e871223278dc090c7bd1">inputImageFilePath</a></td></tr>
 <tr class="memdesc:a86572dc7ec14e871223278dc090c7bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input image file path.  <br /></td></tr>
 <tr class="separator:a86572dc7ec14e871223278dc090c7bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ea327118b44faeebb08e385d5e15de8"><td class="memItemLeft" align="right" valign="top">std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkm_1_1ConfigReader.html#a4ea327118b44faeebb08e385d5e15de8">pattern</a></td></tr>
+<tr class="memitem:a4ea327118b44faeebb08e385d5e15de8"><td class="memItemLeft" align="right" valign="top">std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkm_1_1ConfigReader.html#a4ea327118b44faeebb08e385d5e15de8">pattern</a> {}</td></tr>
 <tr class="memdesc:a4ea327118b44faeebb08e385d5e15de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular expression pattern.  <br /></td></tr>
 <tr class="separator:a4ea327118b44faeebb08e385d5e15de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaf9b9f64500ea2a143a227528ca62d5"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkm_1_1ConfigReader.html#acaf9b9f64500ea2a143a227528ca62d5">requiredVariables</a> = {}</td></tr>
@@ -189,12 +190,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Default constructor. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkm_1_1ConfigReader_a90c639b06e53c898c9f394deee245a36_cgraph.png" border="0" usemap="#aclasskm_1_1ConfigReader_a90c639b06e53c898c9f394deee245a36_cgraph" alt=""/></div>
 <map name="aclasskm_1_1ConfigReader_a90c639b06e53c898c9f394deee245a36_cgraph" id="aclasskm_1_1ConfigReader_a90c639b06e53c898c9f394deee245a36_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" title="Default constructor." alt="" coords="5,5,192,45"/>
 <area shape="rect" href="classkm_1_1ConfigReader.html#a19f406128a55836228ef667670ecfe50" title="Reads the configuration file." alt="" coords="240,13,479,38"/>
 </map>
 </div>
@@ -310,7 +313,7 @@ Here is the caller graph for this function:</div>
 <map name="aclasskm_1_1ConfigReader_a532eced302fd72113c7359aa1d08faab_icgraph" id="aclasskm_1_1ConfigReader_a532eced302fd72113c7359aa1d08faab_icgraph">
 <area shape="rect" title="Gets the fifth level compression color value." alt="" coords="371,5,565,45"/>
 <area shape="rect" href="namespacekm_1_1imageUtils.html#aef1b51decbf6f0f0ca5c53e20ebbfadb" title="Defines the value of K based on the color levels choice." alt="" coords="108,13,323,38"/>
-<area shape="rect" href="encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
+<area shape="rect" href="encoder_8cpp.html#a808f40e2e9d6eb5463165c031dfa3eb1" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
 </map>
 </div>
 
@@ -340,7 +343,7 @@ Here is the caller graph for this function:</div>
 <map name="aclasskm_1_1ConfigReader_a787856a51a8817148108650a664f5738_icgraph" id="aclasskm_1_1ConfigReader_a787856a51a8817148108650a664f5738_icgraph">
 <area shape="rect" title="Gets the first level compression color value." alt="" coords="371,5,565,45"/>
 <area shape="rect" href="namespacekm_1_1imageUtils.html#aef1b51decbf6f0f0ca5c53e20ebbfadb" title="Defines the value of K based on the color levels choice." alt="" coords="108,13,323,38"/>
-<area shape="rect" href="encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
+<area shape="rect" href="encoder_8cpp.html#a808f40e2e9d6eb5463165c031dfa3eb1" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
 </map>
 </div>
 
@@ -370,7 +373,7 @@ Here is the caller graph for this function:</div>
 <map name="aclasskm_1_1ConfigReader_a0a13dd20b33346486e13a87a9a52e4e5_icgraph" id="aclasskm_1_1ConfigReader_a0a13dd20b33346486e13a87a9a52e4e5_icgraph">
 <area shape="rect" title="Gets the fourth level compression color value." alt="" coords="371,5,579,45"/>
 <area shape="rect" href="namespacekm_1_1imageUtils.html#aef1b51decbf6f0f0ca5c53e20ebbfadb" title="Defines the value of K based on the color levels choice." alt="" coords="108,13,323,38"/>
-<area shape="rect" href="encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
+<area shape="rect" href="encoder_8cpp.html#a808f40e2e9d6eb5463165c031dfa3eb1" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
 </map>
 </div>
 
@@ -429,7 +432,7 @@ Here is the caller graph for this function:</div>
 <map name="aclasskm_1_1ConfigReader_a6067e8491ad1fdbb5f62b33ef215208e_icgraph" id="aclasskm_1_1ConfigReader_a6067e8491ad1fdbb5f62b33ef215208e_icgraph">
 <area shape="rect" title="Gets the resizing factor." alt="" coords="377,5,600,45"/>
 <area shape="rect" href="namespacekm_1_1imageUtils.html#aa01205ffe26b0f4c815d5750a4ff0e1c" title="Performs preprocessing on an image." alt="" coords="108,13,329,38"/>
-<area shape="rect" href="encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
+<area shape="rect" href="encoder_8cpp.html#a808f40e2e9d6eb5463165c031dfa3eb1" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
 </map>
 </div>
 
@@ -459,7 +462,7 @@ Here is the caller graph for this function:</div>
 <map name="aclasskm_1_1ConfigReader_a12968b54f38b17586d6e65be5158d275_icgraph" id="aclasskm_1_1ConfigReader_a12968b54f38b17586d6e65be5158d275_icgraph">
 <area shape="rect" title="Gets the second level compression color value." alt="" coords="371,5,585,45"/>
 <area shape="rect" href="namespacekm_1_1imageUtils.html#aef1b51decbf6f0f0ca5c53e20ebbfadb" title="Defines the value of K based on the color levels choice." alt="" coords="108,13,323,38"/>
-<area shape="rect" href="encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
+<area shape="rect" href="encoder_8cpp.html#a808f40e2e9d6eb5463165c031dfa3eb1" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
 </map>
 </div>
 
@@ -489,7 +492,7 @@ Here is the caller graph for this function:</div>
 <map name="aclasskm_1_1ConfigReader_a0e355597d2a6f4c1f01e91da11fbd577_icgraph" id="aclasskm_1_1ConfigReader_a0e355597d2a6f4c1f01e91da11fbd577_icgraph">
 <area shape="rect" title="Gets the third level compression color value." alt="" coords="371,5,571,45"/>
 <area shape="rect" href="namespacekm_1_1imageUtils.html#aef1b51decbf6f0f0ca5c53e20ebbfadb" title="Defines the value of K based on the color levels choice." alt="" coords="108,13,323,38"/>
-<area shape="rect" href="encoder_8cpp.html#a7114aa2dd6837734db57667a298dfcc4" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
+<area shape="rect" href="encoder_8cpp.html#a808f40e2e9d6eb5463165c031dfa3eb1" title="Main function for the image compression application." alt="" coords="5,13,60,38"/>
 </map>
 </div>
 
@@ -518,7 +521,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classkm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50_icgraph.png" border="0" usemap="#aclasskm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50_icgraph" alt=""/></div>
 <map name="aclasskm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50_icgraph" id="aclasskm_1_1ConfigReader_a19f406128a55836228ef667670ecfe50_icgraph">
 <area shape="rect" title="Reads the configuration file." alt="" coords="240,13,479,38"/>
-<area shape="rect" href="classkm_1_1ConfigReader.html#a90c639b06e53c898c9f394deee245a36" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classkm_1_1ConfigReader.html#a90c639b06e53c898c9f394deee245a36" title="Default constructor." alt="" coords="5,5,192,45"/>
 </map>
 </div>
 
@@ -679,7 +682,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::regex km::ConfigReader::pattern</td>
+          <td class="memname">std::regex km::ConfigReader::pattern {}</td>
         </tr>
       </table>
   </td>

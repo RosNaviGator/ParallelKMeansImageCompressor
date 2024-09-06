@@ -34,7 +34,7 @@ namespace km
          * @param image Input image
          * @param typeCompressionChoice Type of compression choice
          */
-         void preprocessing(cv::Mat& image, int& typeCompressionChoice);
+         auto preprocessing(cv::Mat& image, int& typeCompressionChoice) -> void;
 
         /**
          * @brief Defines the value of K based on the color levels choice
@@ -42,7 +42,7 @@ namespace km
          * @param levelsColorsChoice Levels of colors choice
          * @param different_colors Set of different colors in the image
          */
-         void defineKValue(int& k, int levelsColorsChoice, std::set<std::vector<unsigned char>>& different_colors);
+         auto defineKValue(int& k, int levelsColorsChoice, std::set<std::vector<unsigned char>>& different_colors) -> void;
 
         /**
          * @brief Extracts points from an image
@@ -50,7 +50,7 @@ namespace km
          * @param points Vector of points
          * @param different_colors Set of different colors in the image
          */
-         void pointsFromImage(cv::Mat& image, std::vector<Point>& points, std::set<std::vector<unsigned char>>& different_colors);
+         auto pointsFromImage(cv::Mat& image, std::vector<Point>& points, std::set<std::vector<unsigned char>>& different_colors) -> void;
     };
 
 }

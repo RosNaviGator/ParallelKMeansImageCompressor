@@ -14,8 +14,8 @@
 #include <chrono>
 #include <iostream>
 
-    km::KMeansOMP::KMeansOMP(const int& k, const std::vector<Point>& points)
-        : KMeansBase(k, points) {}
+km::KMeansOMP::KMeansOMP(const int& k, const std::vector<Point>& points)
+    : KMeansBase(k, points) {}
 
 auto km::KMeansOMP::run() -> void
 {
@@ -32,7 +32,7 @@ auto km::KMeansOMP::run() -> void
         counts = std::vector<int>(k, 0);
         #pragma omp parallel
         {
-            
+
             #pragma omp for
             for (auto& p : points)
             {
@@ -53,33 +53,35 @@ auto km::KMeansOMP::run() -> void
                     change = true;
                 }
             }
-            #pragma omp master
+        }
+            std::vector<std::vector<double>> partial_sum(k, {0.0, 0.0, 0.0});
+            std::vector<int> cluster_size(k, 0);
+            
+        #pragma omp parallel
+        {
+            #pragma omp for
+            for (int i = 0; i < k; ++i)
             {
-                std::vector<std::vector<double>> partial_sum(k, {0.0, 0.0, 0.0});
-                std::vector<int> cluster_size(k, 0);
-
-                for (int i = 0; i < k; ++i)
+                for (auto& point : points)
                 {
-                    for (auto& point : points)
+                    if (point.clusterId == i)
                     {
-                        if (point.clusterId == i)
+                        for (int x = 0; x < 3; x++)
                         {
-                            for (int x = 0; x < 3; x++)
-                            {
-                                partial_sum[i][x] += point.getFeature_int(x);
-                            }
-                            cluster_size[i]++;
+                            partial_sum[i][x] += point.getFeature_int(x);
                         }
+                        cluster_size[i]++;
                     }
                 }
+            }
 
-                for (int i = 0; i < k; ++i)
+            #pragma omp for
+            for (int i = 0; i < k; ++i)
+            {
+                for (int j = 0; j < 3; j++)
                 {
-                    for (int j = 0; j < 3; j++)
-                    {
-                        int result = static_cast<int>(partial_sum[i][j] / cluster_size[i]);
-                        centroids[i].setFeature(j, result);
-                    }
+                    int result = static_cast<int>(partial_sum[i][j] / cluster_size[i]);
+                    centroids[i].setFeature(j, result);
                 }
             }
         }
